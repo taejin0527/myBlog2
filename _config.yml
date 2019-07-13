@@ -1,0 +1,127 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: AttackOnNunu
+subtitle: Once more into the fray
+description: 개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다. #introduction 밑에 내용
+keywords:
+author: NUNU
+language: en  #기본언어. 다국어 지원
+timezone: Asia/Seoul  #해당 타임존 설정(https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: https://taejin0527.github.io
+root: /
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :year:month:day-:title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link: true # Open external links in new tab
+filename_case: 0
+render_drafts: false  #true로 바꾸면 draft로 작생된 작업을 hexo server --draft 입력 없이 자동으로 로컬에서도 확인
+post_asset_folder: false  #post마다 각각 folder를 만들어 관리
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace:
+
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 10
+pagination_dir: page
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: hexo-theme-next
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type: git
+  repo: https://github.com/taejin0527/taejin0527.github.io.git
+  branch: master
+
+  ## Live2D
+## https://github.com/EYHN/hexo-helper-live2d
+live2d:
+    enable:  true
+    # enable: false
+    scriptFrom: local
+    # default
+    pluginRootPath: live2dw/
+    # The root directory of the plugin on the site (relative path)
+    pluginJsPath: lib/
+    # script file relative to the plugin root directory path
+    pluginModelPath: assets/
+    # model file relative to the plugin root directory path
+    # scriptFrom: jsdelivr
+    # jsdelivr CDN
+    # scriptFrom: unpkg
+    # unpkg CDN
+    # scriptFrom: https://cdn.jsdelivr .net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js
+    # Your custom url
+    tagMode: false
+    # tag mode, whether to replace only the live2d tag tag instead of inserting it into all pages
+    log: false
+    # Debug, whether to output the log
+    model:
+      use: live2d-widget-model-wanko
+      #http://sites.cybernoids.jp/cubism2_en/samples 여기 참고
+      # use: wanko
+      # The directory name under the blog root directory /live2d_models/
+      # use: ./wives/wanko
+      # The path relative to the blog root directory
+      # use: https ://cdn.jsdelivr.net/npm/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json
+    display:
+      superSample: 2
+      width: 200
+      height: 400
+      position: right
+      hOffset: 0
+      vOffset: -50
+      mobile:
+        # Whether it is suitable for mobile
+        show: false
+        scale: 0.5
+        motion: true
