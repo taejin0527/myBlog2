@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="en">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+
+<link rel="stylesheet" href="/css/main.css?v=7.2.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.2.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.2.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.2.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.2.0" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.2.0',
+    sidebar: {"position":"right","display":"post","offset":12,"onmobile":false},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    translation: {
+      copy_button: 'Copy',
+      copy_success: 'Copied',
+      copy_failure: 'Copy failed'
+    }
+  };
+</script>
+
+
+
+  <meta name="description" content="김재수 교수님, 컴퓨터망(Data Communications and Networking) 수업 내용수업 복습 겸 ppt 내용 정리  수업 목표 데이터 통신과 컴퓨터 통신에 대한 기본 원리 및 구조, 표준을 이해 컴퓨터 네트워크와 관련된 기술과 개념을 이해   교수님 曰 : Data transmission(communication) 에서 제일 중요한 것은">
+<meta name="keywords" content="networking,컴퓨터망">
+<meta property="og:type" content="article">
+<meta property="og:title" content="데이터망 - 데이터통신 개요">
+<meta property="og:url" content="https://taejin0527.github.io/2019/03/07/networking-01/index.html">
+<meta property="og:site_name" content="AttackOnNunu">
+<meta property="og:description" content="김재수 교수님, 컴퓨터망(Data Communications and Networking) 수업 내용수업 복습 겸 ppt 내용 정리  수업 목표 데이터 통신과 컴퓨터 통신에 대한 기본 원리 및 구조, 표준을 이해 컴퓨터 네트워크와 관련된 기술과 개념을 이해   교수님 曰 : Data transmission(communication) 에서 제일 중요한 것은">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="http://www.myreadingroom.co.in/images/stories/docs/dcn/Components%20of%20Data%20Communication.jpg">
+<meta property="og:image" content="http://www.opentextbooks.org.hk/system/files/resource/10/10132/10137/media/ct332_01.gif">
+<meta property="og:image" content="https://systemzone.net/wp-content/uploads/2017/09/network-topology.png">
+<meta property="og:image" content="https://www.researchgate.net/profile/Viet_Hung_Nguyen3/publication/225349001/figure/fig1/AS:302593634648075@1449155352384/Global-view-of-metropolitan-area-network.png">
+<meta property="og:image" content="https://www.thecrazyprogrammer.com/wp-content/uploads/2018/01/Difference-between-Circuit-Switching-and-Packet-Switching.gif">
+<meta property="og:updated_time" content="2019-07-13T09:41:13.625Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="데이터망 - 데이터통신 개요">
+<meta name="twitter:description" content="김재수 교수님, 컴퓨터망(Data Communications and Networking) 수업 내용수업 복습 겸 ppt 내용 정리  수업 목표 데이터 통신과 컴퓨터 통신에 대한 기본 원리 및 구조, 표준을 이해 컴퓨터 네트워크와 관련된 기술과 개념을 이해   교수님 曰 : Data transmission(communication) 에서 제일 중요한 것은">
+<meta name="twitter:image" content="http://www.myreadingroom.co.in/images/stories/docs/dcn/Components%20of%20Data%20Communication.jpg">
+
+
+
+
+
+  
+  
+  <link rel="canonical" href="https://taejin0527.github.io/2019/03/07/networking-01/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>데이터망 - 데이터통신 개요 | AttackOnNunu</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">AttackOnNunu</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">Once more into the fray</p>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Home</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>About</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>Tags</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>Categories</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/2019/03/07/networking-01/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="NUNU">
+      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="AttackOnNunu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">데이터망 - 데이터통신 개요
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-03-07 16:02:57" itemprop="dateCreated datePublished" datetime="2019-03-07T16:02:57+09:00">2019-03-07</time>
+            </span>
+          
+
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-07-13 18:41:13" itemprop="dateModified" datetime="2019-07-13T18:41:13+09:00">2019-07-13</time>
+              </span>
+            
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/STUDY/" itemprop="url" rel="index"><span itemprop="name">STUDY</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/STUDY/컴퓨터망/" itemprop="url" rel="index"><span itemprop="name">컴퓨터망</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">Comments: </span>
+                <a href="/2019/03/07/networking-01/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/03/07/networking-01/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote>
+<p>김재수 교수님, 컴퓨터망(Data Communications and Networking) 수업 내용<br>수업 복습 겸 ppt 내용 정리</p>
+</blockquote>
+<h3 id="수업-목표"><a href="#수업-목표" class="headerlink" title="수업 목표"></a>수업 목표</h3><ul>
+<li>데이터 통신과 컴퓨터 통신에 대한 기본 원리 및 구조, 표준을 이해</li>
+<li>컴퓨터 네트워크와 관련된 기술과 개념을 이해</li>
+</ul>
+<blockquote>
+<p>교수님 曰 : Data transmission(communication) 에서 제일 중요한 것은 protocol 이다!</p>
+</blockquote>
+<h1 id="Chapter-1-Introduction-개요"><a href="#Chapter-1-Introduction-개요" class="headerlink" title="Chapter 1 Introduction(개요)"></a><span style="color:blue">Chapter 1</span> Introduction(개요)</h1><p>:book: Index :book:</p>
+<p>1.1 <a href="#11-데이터-통신">데이터 통신</a></p>
+<p>1.2 <a href="#12-네트워크">네트워크</a></p>
+<p>1.3 <a href="#13-네트워크-유형">네트워크 유형</a></p>
+<h2 id="1-1-데이터-통신"><a href="#1-1-데이터-통신" class="headerlink" title="1.1 데이터 통신"></a>1.1 데이터 통신</h2><p><strong>데이터 통신(Data communication)</strong> 은 전선과 같은 통신 매체를 통하여 두 장치간에 데이터를 교환하는 것<br>데이터(data) : 데이터를 만들어 사용하는 사용자 간에 합의된 형태로 표현된 정보</p>
+<p>​      <strong>기본 특성</strong></p>
+<ul>
+<li>delivery - 올바른 목적지, 원하는 장치나 사용자에게 전달</li>
+<li>accuracy - 요류, 손실 없이 정확하게 데이터를 전달</li>
+<li>timeliness - 적정 시간 내에 데이터를 전달</li>
+<li>jitter(파형 난조) - 패킷의 도착 시간이 서로 차이가 나서 품질(quality)이 일정치 못함</li>
+</ul>
+<blockquote>
+<p>DATJi(닷지)…???ㅋㅋ</p>
+</blockquote>
+<h3 id="1-1-1-데이터-통신-구성-요소"><a href="#1-1-1-데이터-통신-구성-요소" class="headerlink" title="1.1.1 데이터 통신 구성 요소"></a>1.1.1 데이터 통신 구성 요소</h3><img align="middle" src="http://www.myreadingroom.co.in/images/stories/docs/dcn/Components%20of%20Data%20Communication.jpg">
+
+<p><strong>5개의 구성 요소</strong> 가 있다</p>
+<ul>
+<li><span style="color:green">메세지(Message)</span><br>– 통신의 대상이 되는 정보(데이터)<br>ex) text, number, image, audio, video</li>
+<li><span style="color:green">송신자(Sender)</span><br>– 데이터 메시지를 보내는 장치<br> ex) computer, telephone, camera</li>
+<li><span style="color:green">수신자(Receiver)</span><br>– 메시지를 받는 장치<br> ex) computer, telephone, television</li>
+<li><span style="color:green">전송매체(Medium)</span><br>– sender부터 receiver까지 이동하는 물리적인 경로<br> ex) twisted pair wire, coaxial cable, fiber-optic cable, laser, wireless wave</li>
+<li><span style="color:green">프로토콜(Protocol)</span><br>– 통신하는 기기간의 약속(통신 규약)</li>
+</ul>
+<h3 id="1-1-2-데이터-표현"><a href="#1-1-2-데이터-표현" class="headerlink" title="1.1.2 데이터 표현"></a>1.1.2 데이터 표현</h3><ul>
+<li>Text         -&gt; Bit Pattern</li>
+<li>Number     -&gt; Bit Pattern</li>
+<li>Image         -&gt; Pixel, Resolution</li>
+<li>Audio         -&gt; 연속 신호</li>
+<li>Video         -&gt; 연속적인 개체 또는 여러 화상의 조합</li>
+</ul>
+<h3 id="1-1-3-데이터-흐름-방향"><a href="#1-1-3-데이터-흐름-방향" class="headerlink" title="1.1.3 데이터 흐름 방향"></a>1.1.3 데이터 흐름 방향</h3><img align="center" src="http://www.opentextbooks.org.hk/system/files/resource/10/10132/10137/media/ct332_01.gif">
+
+<p>a. <span style="color:blue">Simplex</span></p>
+<ul>
+<li>한쪽 방향으로만 통신 가능</li>
+<li><span style="color:red"> Keyboard, Monitor, Radio, TV</span></li>
+</ul>
+<p>b. <span style="color:blue">Half-duplex</span></p>
+<ul>
+<li>양 방향 송신 가능하지만 <strong>동시에</strong> 송신 불가</li>
+<li><span style="color:red"> Walkie-talkie(무전기)</span></li>
+</ul>
+<p>c. <span style="color:blue">Full-duplex</span></p>
+<ul>
+<li>양 방향 송/수신 가능(2차선 도로와 같음)</li>
+<li><span style="color:red">Telephone, Internet</span></li>
+</ul>
+<hr>
+<h2 id="1-2-네트워크"><a href="#1-2-네트워크" class="headerlink" title="1.2 네트워크"></a>1.2 네트워크</h2><p><strong>통신 링크에 서로 연결된 장치(Node)의 모임</strong><br>The interconnection of a set of devices capable of communication</p>
+<h3 id="1-2-1-네트워크-성능-평가"><a href="#1-2-1-네트워크-성능-평가" class="headerlink" title="1.2.1 네트워크 성능 평가"></a>1.2.1 <del>네트워크 성능 평가</del></h3><p>생략</p>
+<h3 id="1-2-2-물리적-구조-Physical-Structures-연결-방식"><a href="#1-2-2-물리적-구조-Physical-Structures-연결-방식" class="headerlink" title="1.2.2 물리적 구조(Physical Structures) : 연결 방식"></a>1.2.2 물리적 구조(Physical Structures) : 연결 방식</h3><img align="center" src="https://systemzone.net/wp-content/uploads/2017/09/network-topology.png">
+
+<p><strong>Physical Topology</strong> : 네트워크가 물리적으로 어떻게 구성 되었는가<br>(하이브리드 토폴로지 같은 것은 제외하고 기본적인 종류만 다룬다)</p>
+<ul>
+<li>Point-to-point    - 기본적인 연결</li>
+<li>Multipoint        - tree와 같은 것 아닐까??</li>
+<li><span style="color:red">Mesh</span></li>
+<li><span style="color:red">Star</span></li>
+<li><span style="color:red">Bus</span></li>
+<li><span style="color:red">Ring</span></li>
+</ul>
+<h2 id="1-3-네트워크-유형"><a href="#1-3-네트워크-유형" class="headerlink" title="1.3 네트워크 유형"></a>1.3 네트워크 유형</h2><img align="center" src="https://www.researchgate.net/profile/Viet_Hung_Nguyen3/publication/225349001/figure/fig1/AS:302593634648075@1449155352384/Global-view-of-metropolitan-area-network.png">
+
+<ul>
+<li><span style="color:blue">Local-area Network</span> <strong>LAN</strong><br>개인(기관)이 소유함 : Office, Building, Campus<br>단순히 2개만 연결하는 것에서 부터, 여러 대 까지 확장이 가능<br>각각의 host는 <strong>identifier와 address</strong>를 가지고 있다<br>과거에는 bus type으로 구성했다면, 현대에는 switch를 사용해서 star type으로 구성한다!</li>
+</ul>
+<ul>
+<li><span style="color:blue">Metropolitan-area Network</span> <strong>MAN</strong><br>우리나라에 해당 없으니 생략</li>
+</ul>
+<ul>
+<li><span style="color:blue">Wide-area Network</span> <strong>WAN</strong><br>아주 넓은 지역의 네트워크 : town, state, country, the world<br>communicational organization이 소유<br>Point-to-point WAN, Switched WAN</li>
+</ul>
+<h3 id="1-3-3-스위칭-Switching"><a href="#1-3-3-스위칭-Switching" class="headerlink" title="1.3.3 스위칭(Switching)"></a>1.3.3 스위칭(Switching)</h3><p><strong>2개 이상의 입력 단자와 출력 단자를 연결시켜 주는 기능</strong></p>
+<img src="https://www.thecrazyprogrammer.com/wp-content/uploads/2018/01/Difference-between-Circuit-Switching-and-Packet-Switching.gif">
+
+<ul>
+<li><p><span style="color:red">회선교환망(Circuit Switched Network)</span> - 음성 전화<br>dedicated connection(전용으로 할당) 을 circuit 이라고 한다<br>과거에는 <em>Telephone network</em> 라고 했다</p>
+<p>(지금 telephone network는 packet switching의 일부)<br>활성화 비활성화만 할 수 있다</p>
+</li>
+</ul>
+<ul>
+<li><span style="color:red">패킷 교환망(Packet Switched Network)</span> - 인터넷<br>blocks of data 로 이루어진 packets 라고 한다<br>switches fuction의 <em>storing</em> 과 <em>forwarding</em> 을 사용해서 데이터를 주고 받음<br>즉, 저장했다 보내는 것</li>
+</ul>
+<h3 id="1-3-4-인터넷"><a href="#1-3-4-인터넷" class="headerlink" title="1.3.4 인터넷"></a>1.3.4 인터넷</h3><p> <span style="color: red">Internet Service Provider(ISP) </span> : LG, KT, SK 같은 인터넷을 제공해 주는 곳</p>
+<p>주로 물리적인 연결 방법으로 point-to-point WAN 방식을 사용한다</p>
+<h2 id="정리"><a href="#정리" class="headerlink" title="정리"></a>정리</h2><ul>
+<li>Data Communication<br>Components, Data Type, Data Flow</li>
+<li>Network Topology<br>Mesh, Star, Bus, Ring</li>
+<li>The Configuration of Internet</li>
+</ul>
+
+      
+    </div>
+
+    
+
+    
+      
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        
+          
+        
+        <div class="post-tags">
+          
+            <a href="/tags/networking/" rel="tag"># networking</a>
+          
+            <a href="/tags/컴퓨터망/" rel="tag"># 컴퓨터망</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/02/12/os-overview-2/" rel="next" title="운영체제 - Overview_2">
+                <i class="fa fa-chevron-left"></i> 운영체제 - Overview_2
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/07/12/01-hello-python/" rel="prev" title="01 HELLO, PYTHON!">
+                01 HELLO, PYTHON! <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+      </div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.gif" alt="NUNU">
+            
+              <p class="site-author-name" itemprop="name">NUNU</p>
+              <div class="site-description motion-element" itemprop="description">개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.</div>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">15</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">12</span>
+                    <span class="site-state-item-name">categories</span>
+                  
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">25</span>
+                    <span class="site-state-item-name">tags</span>
+                  
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#수업-목표"><span class="nav-number">1.</span> <span class="nav-text">수업 목표</span></a></li></ol><li class="nav-item nav-level-1"><a class="nav-link" href="#Chapter-1-Introduction-개요"><span class="nav-number"></span> <span class="nav-text">Chapter 1 Introduction(개요)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1-데이터-통신"><span class="nav-number"></span> <span class="nav-text">1.1 데이터 통신</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-1-데이터-통신-구성-요소"><span class="nav-number">1.</span> <span class="nav-text">1.1.1 데이터 통신 구성 요소</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-2-데이터-표현"><span class="nav-number">2.</span> <span class="nav-text">1.1.2 데이터 표현</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-3-데이터-흐름-방향"><span class="nav-number">3.</span> <span class="nav-text">1.1.3 데이터 흐름 방향</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-2-네트워크"><span class="nav-number"></span> <span class="nav-text">1.2 네트워크</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-1-네트워크-성능-평가"><span class="nav-number">1.</span> <span class="nav-text">1.2.1 네트워크 성능 평가</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-2-물리적-구조-Physical-Structures-연결-방식"><span class="nav-number">2.</span> <span class="nav-text">1.2.2 물리적 구조(Physical Structures) : 연결 방식</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-3-네트워크-유형"><span class="nav-number"></span> <span class="nav-text">1.3 네트워크 유형</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3-3-스위칭-Switching"><span class="nav-number">1.</span> <span class="nav-text">1.3.3 스위칭(Switching)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3-4-인터넷"><span class="nav-number">2.</span> <span class="nav-text">1.3.4 인터넷</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#정리"><span class="nav-number"></span> <span class="nav-text">정리</span></a></li></ol></li></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">NUNU</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.9.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.2.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=3.4.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+
+
+  <script src="/js/utils.js?v=7.2.0"></script>
+
+  <script src="/js/motion.js?v=7.2.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/affix.js?v=7.2.0"></script>
+
+  <script src="/js/schemes/pisces.js?v=7.2.0"></script>
+
+
+
+
+  
+  <script src="/js/scrollspy.js?v=7.2.0"></script>
+<script src="/js/post-details.js?v=7.2.0"></script>
+
+
+
+  <script src="/js/next-boot.js?v=7.2.0"></script>
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://aon-1.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+
+
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://taejin0527.github.io/2019/03/07/networking-01/";
+    this.page.identifier = "2019/03/07/networking-01/";
+    this.page.title = '데이터망 - 데이터통신 개요';
+    };
+  function loadComments() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://aon-1.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', '' + +new Date());
+    (d.head || d.body).appendChild(s);
+  }
+  
+    window.addEventListener('load', loadComments, false);
+  
+</script>
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"superSample":2,"width":200,"height":400,"position":"right","hOffset":0,"vOffset":-50,"mobile":{"show":false,"scale":0.5,"motion":true}}});</script></body>
+</html>
