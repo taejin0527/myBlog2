@@ -14,7 +14,7 @@
   
 
 
-<html class="theme-next gemini use-motion" lang="en">
+<html class="theme-next gemini use-motion" lang="ko">
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -86,7 +86,7 @@
       labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     },
     translation: {
-      copy_button: 'Copy',
+      copy_button: '복사',
       copy_success: 'Copied',
       copy_failure: 'Copy failed'
     }
@@ -95,14 +95,14 @@
 
 
 
-  <meta name="description" content=":book: 목차 :book:  컴퓨터 시스템 구조2.1 컴퓨터 시스템의 동작2.2 I/O 구조2.3 저장 구조2.4 저장장치의 계층구조   컴퓨터 시스템 구조2.1 컴퓨터 시스템의 동작   컴퓨터는 공유된 주기억장치에 접근을 제공하는 공통 버스에 의해 연결된 CPU와 여러 개의 장치 제어기(Device controller)로 구성되어 있습니다. 장치 제어">
+  <meta name="description" content="컴퓨터 시스템 구조2.1 컴퓨터 시스템의 동작   컴퓨터는 공유된 주기억장치에 접근을 제공하는 공통 버스에 의해 연결된 CPU와 여러 개의 장치 제어기(Device controller)로 구성되어 있습니다. 장치 제어기(Device Controller)각 장치(디스크, 오디오 장치, 비디오 디스플레이)를 관리 장치 제어기와 CPU는 병행으로 수행되므로 이들">
 <meta name="keywords" content="OS,운영체">
 <meta property="og:type" content="article">
 <meta property="og:title" content="운영체제 - Overview_2">
 <meta property="og:url" content="https://taejin0527.github.io/2019/02/12/os-overview-2/index.html">
 <meta property="og:site_name" content="AttackOnNunu">
-<meta property="og:description" content=":book: 목차 :book:  컴퓨터 시스템 구조2.1 컴퓨터 시스템의 동작2.2 I/O 구조2.3 저장 구조2.4 저장장치의 계층구조   컴퓨터 시스템 구조2.1 컴퓨터 시스템의 동작   컴퓨터는 공유된 주기억장치에 접근을 제공하는 공통 버스에 의해 연결된 CPU와 여러 개의 장치 제어기(Device controller)로 구성되어 있습니다. 장치 제어">
-<meta property="og:locale" content="en">
+<meta property="og:description" content="컴퓨터 시스템 구조2.1 컴퓨터 시스템의 동작   컴퓨터는 공유된 주기억장치에 접근을 제공하는 공통 버스에 의해 연결된 CPU와 여러 개의 장치 제어기(Device controller)로 구성되어 있습니다. 장치 제어기(Device Controller)각 장치(디스크, 오디오 장치, 비디오 디스플레이)를 관리 장치 제어기와 CPU는 병행으로 수행되므로 이들">
+<meta property="og:locale" content="ko">
 <meta property="og:image" content="https://i.imgur.com/8JAIHTg.png">
 <meta property="og:image" content="http://pediaa.com/wp-content/uploads/2018/08/Difference-Between-Trap-and-Interrupt_Figure-1.png">
 <meta property="og:image" content="https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/images/Chapter13/13_09_DeviceStatusTable.jpg">
@@ -112,10 +112,10 @@
 <meta property="og:image" content="https://www.applexsoft.com/glossary/harddisk.jpg">
 <meta property="og:image" content="http://mblogthumb1.phinf.naver.net/20141226_132/capemay_1419579186649T86jM_PNG/010edsector.png?type=w2">
 <meta property="og:image" content="https://eunhyejung.github.io/assets/contents/content03.PNG">
-<meta property="og:updated_time" content="2019-07-13T09:41:13.621Z">
+<meta property="og:updated_time" content="2019-07-14T10:17:04.348Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="운영체제 - Overview_2">
-<meta name="twitter:description" content=":book: 목차 :book:  컴퓨터 시스템 구조2.1 컴퓨터 시스템의 동작2.2 I/O 구조2.3 저장 구조2.4 저장장치의 계층구조   컴퓨터 시스템 구조2.1 컴퓨터 시스템의 동작   컴퓨터는 공유된 주기억장치에 접근을 제공하는 공통 버스에 의해 연결된 CPU와 여러 개의 장치 제어기(Device controller)로 구성되어 있습니다. 장치 제어">
+<meta name="twitter:description" content="컴퓨터 시스템 구조2.1 컴퓨터 시스템의 동작   컴퓨터는 공유된 주기억장치에 접근을 제공하는 공통 버스에 의해 연결된 CPU와 여러 개의 장치 제어기(Device controller)로 구성되어 있습니다. 장치 제어기(Device Controller)각 장치(디스크, 오디오 장치, 비디오 디스플레이)를 관리 장치 제어기와 CPU는 병행으로 수행되므로 이들">
 <meta name="twitter:image" content="https://i.imgur.com/8JAIHTg.png">
 
 
@@ -175,7 +175,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+<body itemscope itemtype="http://schema.org/WebPage" lang="ko">
 
   
   
@@ -233,7 +233,7 @@
 
     
 
-    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Home</a>
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>홈</a>
 
   </li>
         
@@ -265,7 +265,7 @@
 
     
 
-    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>Tags</a>
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>태그</a>
 
   </li>
         
@@ -281,7 +281,7 @@
 
     
 
-    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>Categories</a>
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>카테고리</a>
 
   </li>
         
@@ -297,7 +297,7 @@
 
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives</a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>아카이브</a>
 
   </li>
 
@@ -381,14 +381,14 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">작성일</span>
               
 
               
                 
               
 
-              <time title="Created: 2019-02-12 18:51:53" itemprop="dateCreated datePublished" datetime="2019-02-12T18:51:53+09:00">2019-02-12</time>
+              <time title="Post created: 2019-02-12 18:51:53" itemprop="dateCreated datePublished" datetime="2019-02-12T18:51:53+09:00">2019-02-12</time>
             </span>
           
 
@@ -403,7 +403,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-07-13 18:41:13" itemprop="dateModified" datetime="2019-07-13T18:41:13+09:00">2019-07-13</time>
+                <time title="Updated at: 2019-07-14 19:17:04" itemprop="dateModified" datetime="2019-07-14T19:17:04+09:00">2019-07-14</time>
               </span>
             
           
@@ -434,7 +434,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
             
-                <span class="post-meta-item-text">Comments: </span>
+                <span class="post-meta-item-text">댓글: </span>
                 <a href="/2019/02/12/os-overview-2/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/02/12/os-overview-2/" itemprop="commentCount"></span>
                 </a>
@@ -469,12 +469,7 @@
       
 
       
-        <p>:book: <strong>목차</strong> :book:</p>
-<ol>
-<li><a href="#컴퓨터-시스템-구조">컴퓨터 시스템 구조</a><br>2.1 <a href="#21-컴퓨터-시스템의-동작">컴퓨터 시스템의 동작</a><br>2.2 <a href="#22-io-구조">I/O 구조</a><br>2.3 <a href="#23-저장-구조">저장 구조</a><br>2.4 <a href="#24-저장장치의-계층구조">저장장치의 계층구조</a></li>
-</ol>
-<hr>
-<h1 id="컴퓨터-시스템-구조"><a href="#컴퓨터-시스템-구조" class="headerlink" title="컴퓨터 시스템 구조"></a>컴퓨터 시스템 구조</h1><h2 id="2-1-컴퓨터-시스템의-동작"><a href="#2-1-컴퓨터-시스템의-동작" class="headerlink" title="2.1 컴퓨터 시스템의 동작"></a>2.1 컴퓨터 시스템의 동작</h2><img style="height:450px; align:center;" src="https://i.imgur.com/8JAIHTg.png">
+        <h1 id="컴퓨터-시스템-구조"><a href="#컴퓨터-시스템-구조" class="headerlink" title="컴퓨터 시스템 구조"></a>컴퓨터 시스템 구조</h1><h2 id="2-1-컴퓨터-시스템의-동작"><a href="#2-1-컴퓨터-시스템의-동작" class="headerlink" title="2.1 컴퓨터 시스템의 동작"></a>2.1 컴퓨터 시스템의 동작</h2><img style="height:450px; align:center;" src="https://i.imgur.com/8JAIHTg.png">
 
 <ul>
 <li>컴퓨터는 <u>공유된 주기억장치에 접근을 제공하는 공통 버스에 의해 연결된 CPU와 여러 개의 장치 제어기(Device controller)로 구성</u>되어 있습니다.<ul>
@@ -598,8 +593,8 @@
 <li>한번에 하나의 프로세스만 동작하면 아무 문제가 되지 않지만!<br>여러 프로세스가 같은 데이터를 접근하고자 하면 모든 프로세스가 최신의 데이터를 얻을 수 있도록 해야 합니다<br><u>이 문제는 다중프로세서 시스템에서 더욱 심각합니다</u></li>
 <li>분산 환경에서는 여러 파일의 복사본이 여러 컴퓨터에 분산되어 있을 수 있습니다. 따라서 하나의 복사본에 대한 갱신이 이루어지면 다른 복사본도 갱신되도록 하여야 합니다</li>
 </ul>
-<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p><a href="http://pediaa.com/difference-between-trap-and-interrupt/" target="_blank" rel="noopener">Difference between Trap and Interrupt</a></p>
-<p><a href="http://recipes.egloos.com/5152867" target="_blank" rel="noopener">DMA-CPU몰래 영차영차</a></p>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p><span class="exturl" data-url="aHR0cDovL3BlZGlhYS5jb20vZGlmZmVyZW5jZS1iZXR3ZWVuLXRyYXAtYW5kLWludGVycnVwdC8=" title="http://pediaa.com/difference-between-trap-and-interrupt/">Difference between Trap and Interrupt<i class="fa fa-external-link"></i></span></p>
+<p><span class="exturl" data-url="aHR0cDovL3JlY2lwZXMuZWdsb29zLmNvbS81MTUyODY3" title="http://recipes.egloos.com/5152867">DMA-CPU몰래 영차영차<i class="fa fa-external-link"></i></span></p>
 <p><br><br><br></p>
 
       
@@ -711,10 +706,10 @@
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Table of Contents
+            목차
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Overview
+            흝어보기
           </li>
         </ul>
       
@@ -736,8 +731,8 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">15</span>
-                    <span class="site-state-item-name">posts</span>
+                    <span class="site-state-item-count">14</span>
+                    <span class="site-state-item-name">포스트</span>
                   </a>
                 </div>
               
@@ -746,6 +741,10 @@
                 
                 
                 <div class="site-state-item site-state-categories">
+                  
+                    
+                      <a href="/categories/">
+                    
                   
                     
                     
@@ -774,8 +773,8 @@
                       
                     
                     <span class="site-state-item-count">12</span>
-                    <span class="site-state-item-name">categories</span>
-                  
+                    <span class="site-state-item-name">카테고리</span>
+                  </a>
                 </div>
               
 
@@ -785,60 +784,66 @@
                 <div class="site-state-item site-state-tags">
                   
                     
+                      <a href="/tags/">
                     
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">25</span>
-                    <span class="site-state-item-name">tags</span>
                   
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">26</span>
+                    <span class="site-state-item-name">태그</span>
+                  </a>
                 </div>
               
             </nav>
@@ -903,7 +908,7 @@
 </div>
 
 
-  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.9.0</div>
+  <div class="powered-by">Powered by <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> v3.9.0</div>
 
 
 
@@ -911,7 +916,7 @@
 
 
 
-  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.2.0</div>
+  <div class="theme-info">Theme – <span class="exturl theme-link" data-url="aHR0cHM6Ly90aGVtZS1uZXh0Lm9yZw==">NexT.Gemini</span> v7.2.0</div>
 
 
 
@@ -1013,6 +1018,8 @@
   
 
   
+  <script src="/js/exturl.js?v=7.2.0"></script>
+
 
   
 
