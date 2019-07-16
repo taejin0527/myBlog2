@@ -24,6 +24,13 @@
 
 
 
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2">
+
 
 
 
@@ -72,7 +79,7 @@
     version: '7.2.0',
     sidebar: {"position":"right","display":"post","offset":12,"onmobile":false},
     back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
-    copycode: {"enable":false,"show_result":false,"style":null},
+    copycode: {"enable":true,"show_result":true,"style":null},
     fancybox: false,
     fastclick: false,
     lazyload: false,
@@ -112,7 +119,7 @@
 <meta property="og:image" content="https://www.applexsoft.com/glossary/harddisk.jpg">
 <meta property="og:image" content="http://mblogthumb1.phinf.naver.net/20141226_132/capemay_1419579186649T86jM_PNG/010edsector.png?type=w2">
 <meta property="og:image" content="https://eunhyejung.github.io/assets/contents/content03.PNG">
-<meta property="og:updated_time" content="2019-07-14T10:17:04.348Z">
+<meta property="og:updated_time" content="2019-07-16T13:49:16.772Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="운영체제 - Overview_2">
 <meta name="twitter:description" content="컴퓨터 시스템 구조2.1 컴퓨터 시스템의 동작   컴퓨터는 공유된 주기억장치에 접근을 제공하는 공통 버스에 의해 연결된 CPU와 여러 개의 장치 제어기(Device controller)로 구성되어 있습니다. 장치 제어기(Device Controller)각 장치(디스크, 오디오 장치, 비디오 디스플레이)를 관리 장치 제어기와 CPU는 병행으로 수행되므로 이들">
@@ -403,7 +410,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Updated at: 2019-07-14 19:17:04" itemprop="dateModified" datetime="2019-07-14T19:17:04+09:00">2019-07-14</time>
+                <time title="Updated at: 2019-07-16 22:49:16" itemprop="dateModified" datetime="2019-07-16T22:49:16+09:00">2019-07-16</time>
               </span>
             
           
@@ -554,20 +561,17 @@
 
 
 
-<h3 id="2-3-2-보조기억장치-자기-디스크"><a href="#2-3-2-보조기억장치-자기-디스크" class="headerlink" title="2.3.2 보조기억장치(자기 디스크)"></a>2.3.2 보조기억장치(자기 디스크)</h3><img style="height:150px; float:right;" src="https://www.applexsoft.com/glossary/harddisk.jpg">
+<h3 id="2-3-2-보조기억장치-자기-디스크"><a href="#2-3-2-보조기억장치-자기-디스크" class="headerlink" title="2.3.2 보조기억장치(자기 디스크)"></a>2.3.2 보조기억장치(자기 디스크)</h3><img style="height:120px; float:right;" src="https://www.applexsoft.com/glossary/harddisk.jpg">
 
 <ul>
-<li>자기 디스크는 <strong>플래터(platter)</strong> 라고 하는 여러 개의 원형 판으로 구성<br>이 플래터는 다시 원형 모양의 <strong>트랙(track)</strong> 으로 구성<br>트랙은 다시 여러 개의 <strong>섹터(sector)</strong> 로 나뉘어짐</li>
-</ul>
-<img style="height:200px; float:right;" src="http://mblogthumb1.phinf.naver.net/20141226_132/capemay_1419579186649T86jM_PNG/010edsector.png?type=w2">
-
-<ul>
-<li>단순하게 섹터를 여러 개를 하나로 묶은 것을 <strong>클러스터(cluster)</strong> 라 하고,<br>같은 위치에 있는 트랙의 모음을 <strong>실린더(cylinder)</strong> 라고 합니다<br>– 클러스터는 <u>운영체제에서 사용하는 데이터 저장의 최소 단위</u></li>
-</ul>
-<ul>
-<li><p><strong>디스크의 속도</strong> = 컴퓨터로 데이터를 전송하는 비율인 전송률(transfer rate)</p>
-<pre><code>+plus+
-임의접근 시간(random-access time)이라고 하는 위치결정 시간(positioning time)</code></pre><p>에 의해 결정됩니다</p>
+<li><p>자기 디스크는 <strong>플래터(platter)</strong> 라고 하는 여러 개의 원형 판으로 구성이 플래터는 다시 원형 모양의 <strong>트랙(track)</strong> 으로 구성<br>트랙은 다시 여러 개의 <strong>섹터(sector)</strong> 로 나뉘어짐</p>
+<br>
+<img style="height:150px; float:right;" src="http://mblogthumb1.phinf.naver.net/20141226_132/capemay_1419579186649T86jM_PNG/010edsector.png?type=w2">
+</li>
+<li><p>단순하게 섹터를 여러 개를 하나로 묶은 것을 <strong>클러스터(cluster)</strong> 라 하고, 같은 위치에 있는 트랙의 모음을 <strong>실린더(cylinder)</strong> 라고 합니다<br>– 클러스터는 <u>운영체제에서 사용하는 데이터 저장의 최소 단위</u></p>
+<br>
+<br></li>
+<li><p><strong>디스크의 속도</strong> = 컴퓨터로 데이터를 전송하는 비율인 전송률(transfer rate) + 임의접근 시간(random-access time)이라고 하는 위치결정 시간(positioning time)에 의해 결정됩니다</p>
 </li>
 <li><p>데이터의 교환은 특수한 제어기를 통해 이루어집니다<br>컴퓨터 연결 끝에는 호스트 제어기<br>디스크 자체 내에는 디스크 제어기 가 있습니다</p>
 </li>
@@ -651,8 +655,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/03/07/networking-01/" rel="prev" title="데이터망 - 데이터통신 개요">
-                데이터망 - 데이터통신 개요 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/07/12/01-hello-python/" rel="prev" title="01 HELLO, PYTHON!">
+                01 HELLO, PYTHON! <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -772,7 +776,7 @@
                     
                       
                     
-                    <span class="site-state-item-count">12</span>
+                    <span class="site-state-item-count">10</span>
                     <span class="site-state-item-name">카테고리</span>
                   </a>
                 </div>
@@ -841,7 +845,7 @@
                     
                       
                     
-                    <span class="site-state-item-count">26</span>
+                    <span class="site-state-item-count">24</span>
                     <span class="site-state-item-name">태그</span>
                   </a>
                 </div>

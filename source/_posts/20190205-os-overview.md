@@ -14,18 +14,6 @@ cover: https://safebytes.com/wp-content/uploads/2016/10/OperatingSystem-min.jpg
 
 ---
 
-
-
-:book: **목차** :book:
-
-1. [소개](#소개)
-   1.1 [운영체제](#11-운영체제)
-   1.2 [메인프레임 시스템](#12-메인프레임-시스템)
-   1.3 [실시간 처리 시스템](#13-실시간-처리-시스템)
-   1.4 [분산 처리 시스템](#14-분산-처리-시스템)
-   1.5 [다중처리 시스템](#15-다중처리-시스템)
-   1.6 [집단 시스템](16-집단-시스템)
-
 ------
 
 # 1. 소개
@@ -40,17 +28,17 @@ cover: https://safebytes.com/wp-content/uploads/2016/10/OperatingSystem-min.jpg
 
   -- 컴퓨터 하드웨어를 관리하는 프로그램
   -- 응용 프로그램의 토대를 제공해주는 프로그램
-  -- **<span style="color:orange;">사용자</span>와 <span style="color:red;">하드웨어</span> 사이에 중간 매개체 역할**을 해주는 프로그램
+  -- **<span style="color:orange;">사용자</span>와 <span style="color:red;">하드웨어</span> 사이에 중간 매개체 역할** 을 해주는 프로그램
 
 - 운영체제 범위에 대한 정의
-  :octopus: 하드웨어의 종류와 용도가 다양해서 OS의 범위는 모호하게 정의됩니다​
+  하드웨어의 종류와 용도가 다양해서 OS의 범위는 모호하게 정의됩니다​
   정의 1) 운영체제를 구입하였을 때 포함되어 있는 모든 것
   <u>정의 2) 항상 수행되고 있는 유일한 프로그램(보통 **Kernel** 이라고 한다)</u>
-  :white_check_mark: 대체로 2번 째 정의를 사용함
+  **대체로 2번 째 정의를 사용함**
 
 
 
-:heavy_exclamation_mark: 그림에서 처럼 운영체제는 컴퓨터의 사용자와 컴퓨터 하드웨어 사이에 있기 때문에 운영체제를 바라보는 관점도 두 가지로 분류할 수 있습니다.
+그림에서 처럼 운영체제는 컴퓨터의 사용자와 컴퓨터 하드웨어 사이에 있기 때문에 운영체제를 바라보는 관점도 두 가지로 분류할 수 있습니다.
 
 ### 1.1.1 <span style="color:orange;">사용자 관점</span>
 
@@ -75,7 +63,7 @@ cover: https://safebytes.com/wp-content/uploads/2016/10/OperatingSystem-min.jpg
 - <span style="color:orange;">사용자</span>에게 편리성 제공
 - <span style="color:red;">컴퓨터 시스템</span>의 효율적 운영
 
-:octopus: **사용자에게 컴퓨터에서 프로그램을 효율적이고 편리하게 실행할 수 있는 환경을 제공** 하는 것 입니다!!
+**사용자에게 컴퓨터에서 프로그램을 효율적이고 편리하게 실행할 수 있는 환경을 제공** 하는 것 입니다!!
 
 
 
@@ -83,7 +71,7 @@ cover: https://safebytes.com/wp-content/uploads/2016/10/OperatingSystem-min.jpg
 
 ### 1.2.1 일괄처리 시스템(1950)
 
-:octopus: **Batch processing system이란 처리속도를 향상 시키기 위해 유사한 요구를 필요로 하는 여러개의 작업을 함께 모아 단일 작업으로 일괄 처리하는 시스템입니다**
+**Batch processing system이란 처리속도를 향상 시키기 위해 유사한 요구를 필요로 하는 여러개의 작업을 함께 모아 단일 작업으로 일괄 처리하는 시스템입니다**
 
 - 운영체제는 항상 **메모리** 에 상주하고, 주 임무는 **하나의 작업에서 다음 작업으로 제어를 자동적으로 옮기는 것**
 
@@ -97,7 +85,7 @@ cover: https://safebytes.com/wp-content/uploads/2016/10/OperatingSystem-min.jpg
 
 ### 1.2.2 다중 프로그램 시스템(1960)
 
-:octopus: **Multi-program system 이란 여러 개의 프로그램을 동시에 메모리에 적재하여 하나의 프로그램이 대기 상태가 되면 그 동안 다른 프로그램을 실행하는 시스템입니다**
+**Multi-program system 이란 여러 개의 프로그램을 동시에 메모리에 적재하여 하나의 프로그램이 대기 상태가 되면 그 동안 다른 프로그램을 실행하는 시스템입니다**
 
 - 입출력과 프로그램의 실행을 병행으로 수행할 수 있어 CPU의 사용 효율(utilization)이 증가
 - 다중 프로그래밍에서 운영체제는 사용자를 대신하여 의사결정을 수행해야 함
@@ -110,7 +98,7 @@ cover: https://safebytes.com/wp-content/uploads/2016/10/OperatingSystem-min.jpg
 
 ### 1.2.3 시분할 시스템(1960)
 
-:octopus: **시분할(Time sharing) 또는 멀티태스킹(multi-tasking)은 다중 프로그래밍과 달리 정해진 시간이 되면 무조건 다음 순서의 작업을 실행하는 방식** 으로 교대하는 시간이 매우 짧아 프로그램이 실행되는 동안 사용자는 컴퓨터와 상호작용이 가능한 시스템입니다
+**시분할(Time sharing) 또는 멀티태스킹(multi-tasking)은 다중 프로그래밍과 달리 정해진 시간이 되면 무조건 다음 순서의 작업을 실행하는 방식** 으로 교대하는 시간이 매우 짧아 프로그램이 실행되는 동안 사용자는 컴퓨터와 상호작용이 가능한 시스템입니다
 
 - 사용자와 시스템 간에 직접 상호작용이 가능한 시스템을 **대화식 컴퓨터 시스템(inter-active computer system)** 이라 하고 이런 시스템은 응답시간(response time)이 짧아야 함
 - 여러 사용자가 동시에 컴퓨터를 사용할 수 있음
@@ -122,7 +110,7 @@ cover: https://safebytes.com/wp-content/uploads/2016/10/OperatingSystem-min.jpg
 
 ## 1.3 실시간 처리 시스템
 
-:octopus: **Real time processing system 이란** 프로세서 작동이나 데이터 흐름에 엄격한 시간 제약이 있을 때 사용되는 방식으로 **데이터 처리 요구가 있는 즉시 수행하여 결과를 산출하는 시스템입니다**
+**Real time processing system 이란** 프로세서 작동이나 데이터 흐름에 엄격한 시간 제약이 있을 때 사용되는 방식으로 **데이터 처리 요구가 있는 즉시 수행하여 결과를 산출하는 시스템입니다**
 
 - 보통 특수 목적용(우주선 운행, 레이더 추적기, 핵물리학 실험, 은행의 온라인 업무)
   주의) <u>실시간과 빠르다는 것은 다른 개념!!</u>
@@ -133,7 +121,7 @@ cover: https://safebytes.com/wp-content/uploads/2016/10/OperatingSystem-min.jpg
 
 ## 1.4 분산 처리 시스템
 
-:octopus: **Distributed processing system 이란** 다중처리 시스템과 마찬가지로 **여러 프로세서(컴퓨터)를 사용**하지만 밀결합 형태가 아닌 소결합(loosely coupled) 형태로 컴퓨터 버스나 클럭을 공유하지 않고, **네트워크를 통해 통신하여 하나의 작업을 처리하는 시스템입니다**
+**Distributed processing system 이란** 다중처리 시스템과 마찬가지로 **여러 프로세서(컴퓨터)를 사용**하지만 밀결합 형태가 아닌 소결합(loosely coupled) 형태로 컴퓨터 버스나 클럭을 공유하지 않고, **네트워크를 통해 통신하여 하나의 작업을 처리하는 시스템입니다**
 
 - 네트워크는 사용하는 프로토콜, 망의 크기, 전송 매체에 따라 분류
   Ex) 망의 크기 : LAN, MAN, WAN
@@ -152,7 +140,7 @@ cover: https://safebytes.com/wp-content/uploads/2016/10/OperatingSystem-min.jpg
 
 ## 1.5 다중처리 시스템
 
-:octopus: **Multi-processing system 이란 여러 개의 CPU와 하나의 주기억장치를 이용하여 여러 개의 프로그램을 동시에 처리하는 방식을 취하는 시스템입니다**
+**Multi-processing system 이란 여러 개의 CPU와 하나의 주기억장치를 이용하여 여러 개의 프로그램을 동시에 처리하는 방식을 취하는 시스템입니다**
 
 - 병렬 시스템(parallel system) 또는 밀결합 시스템(tightly coupled system) 이라고도 함
 - **처리율(throughput)** : <u>N개의 프로세서를 사용한다고 처리율이 N배 증가하지는 않음 </u>
@@ -164,7 +152,7 @@ cover: https://safebytes.com/wp-content/uploads/2016/10/OperatingSystem-min.jpg
 
 ## 1.6 집단 시스템
 
-:octopus: **Clustered system 이란 병렬 시스템, 분산 시스템과 마찬가지로 다중 CPU를 사용하지만 여러 개의 시스템을 밀결합하여 사용한다는 측면에서 다른 시스템입니다**
+**Clustered system 이란 병렬 시스템, 분산 시스템과 마찬가지로 다중 CPU를 사용하지만 여러 개의 시스템을 밀결합하여 사용한다는 측면에서 다른 시스템입니다**
 
 - 집단화(clustering)의 목적은 높은 가용성
 - 대칭형 방식 : 각 컴퓨터는 모두 응용 프로그램을 수행하는 동시에 다른 컴퓨터의 상태를 감시

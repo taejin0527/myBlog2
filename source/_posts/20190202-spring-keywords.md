@@ -35,14 +35,6 @@ cover: https://spring.io/img/spring-by-pivotal.png
 
 ------
 
-:book: **목차** :book:
-
-- [POJO](#pojo)
-- [IoC / DI](#ioc-/-di)
-- [AOP](#aop)
-- [PSA](#psa)
-
-
 
 ## 핵심 개념들
 

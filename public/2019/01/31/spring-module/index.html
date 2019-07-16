@@ -24,6 +24,13 @@
 
 
 
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2">
+
 
 
 
@@ -72,7 +79,7 @@
     version: '7.2.0',
     sidebar: {"position":"right","display":"post","offset":12,"onmobile":false},
     back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
-    copycode: {"enable":false,"show_result":false,"style":null},
+    copycode: {"enable":true,"show_result":true,"style":null},
     fancybox: false,
     fastclick: false,
     lazyload: false,
@@ -95,21 +102,21 @@
 
 
 
-  <meta name="description" content=":blue_book: 목차 :book: 스프링 프레임워크 모듈  스프링 프레임워크 모듈 위 그림에 나와있듯이 스프링 프레임워크는 약 20개의 모듈들로 이루어져 있습니다.  Data Access/Integration; Web; AOP; Aspects; Instrumentation; Messaging; Core Container; and Test;     모듈">
+  <meta name="description" content="스프링 프레임워크 모듈 위 그림에 나와있듯이 스프링 프레임워크는 약 20개의 모듈들로 이루어져 있습니다.  Data Access/Integration; Web; AOP; Aspects; Instrumentation; Messaging; Core Container; and Test;     모듈 그룹 설명    Core Container * 스프링 프레임워">
 <meta name="keywords" content="FRAMEWORK,MODULES">
 <meta property="og:type" content="article">
 <meta property="og:title" content="스프링 프레임워크 모듈">
 <meta property="og:url" content="https://taejin0527.github.io/2019/01/31/spring-module/index.html">
 <meta property="og:site_name" content="AttackOnNunu">
-<meta property="og:description" content=":blue_book: 목차 :book: 스프링 프레임워크 모듈  스프링 프레임워크 모듈 위 그림에 나와있듯이 스프링 프레임워크는 약 20개의 모듈들로 이루어져 있습니다.  Data Access/Integration; Web; AOP; Aspects; Instrumentation; Messaging; Core Container; and Test;     모듈">
+<meta property="og:description" content="스프링 프레임워크 모듈 위 그림에 나와있듯이 스프링 프레임워크는 약 20개의 모듈들로 이루어져 있습니다.  Data Access/Integration; Web; AOP; Aspects; Instrumentation; Messaging; Core Container; and Test;     모듈 그룹 설명    Core Container * 스프링 프레임워">
 <meta property="og:locale" content="ko">
 <meta property="og:image" content="https://docs.spring.io/spring/docs/4.3.22.RELEASE/spring-framework-reference/htmlsingle/images/spring-overview.png">
 <meta property="og:image" content="https://1.bp.blogspot.com/-8MEJX0VwvO8/Wi0I3qLwk7I/AAAAAAAAgo0/nu7QGP77ZjA8hgCHdwDmjdgKNMJYjf_EACLcBGAs/s1600/1.1.png">
 <meta property="og:image" content="https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/sites/2/2018/06/Spring-Framework-Modules-01.jpg">
-<meta property="og:updated_time" content="2019-07-13T09:41:13.601Z">
+<meta property="og:updated_time" content="2019-07-16T13:50:08.744Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="스프링 프레임워크 모듈">
-<meta name="twitter:description" content=":blue_book: 목차 :book: 스프링 프레임워크 모듈  스프링 프레임워크 모듈 위 그림에 나와있듯이 스프링 프레임워크는 약 20개의 모듈들로 이루어져 있습니다.  Data Access/Integration; Web; AOP; Aspects; Instrumentation; Messaging; Core Container; and Test;     모듈">
+<meta name="twitter:description" content="스프링 프레임워크 모듈 위 그림에 나와있듯이 스프링 프레임워크는 약 20개의 모듈들로 이루어져 있습니다.  Data Access/Integration; Web; AOP; Aspects; Instrumentation; Messaging; Core Container; and Test;     모듈 그룹 설명    Core Container * 스프링 프레임워">
 <meta name="twitter:image" content="https://docs.spring.io/spring/docs/4.3.22.RELEASE/spring-framework-reference/htmlsingle/images/spring-overview.png">
 
 
@@ -397,7 +404,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Updated at: 2019-07-13 18:41:13" itemprop="dateModified" datetime="2019-07-13T18:41:13+09:00">2019-07-13</time>
+                <time title="Updated at: 2019-07-16 22:50:08" itemprop="dateModified" datetime="2019-07-16T22:50:08+09:00">2019-07-16</time>
               </span>
             
           
@@ -470,9 +477,7 @@
       
 
       
-        <p>:blue_book: <strong>목차</strong> :book:</p>
-<p><a href="#스프링-프레임워크-모듈">스프링 프레임워크 모듈</a></p>
-<hr>
+        <hr>
 <h2 id="스프링-프레임워크-모듈"><a href="#스프링-프레임워크-모듈" class="headerlink" title="스프링 프레임워크 모듈"></a>스프링 프레임워크 모듈</h2><p><img src="https://docs.spring.io/spring/docs/4.3.22.RELEASE/spring-framework-reference/htmlsingle/images/spring-overview.png" alt="framework modules"></p>
 <p>위 그림에 나와있듯이 스프링 프레임워크는 약 20개의 모듈들로 이루어져 있습니다.</p>
 <ul>
@@ -701,7 +706,7 @@
                     
                       
                     
-                    <span class="site-state-item-count">12</span>
+                    <span class="site-state-item-count">10</span>
                     <span class="site-state-item-name">카테고리</span>
                   </a>
                 </div>
@@ -770,7 +775,7 @@
                     
                       
                     
-                    <span class="site-state-item-count">26</span>
+                    <span class="site-state-item-count">24</span>
                     <span class="site-state-item-name">태그</span>
                   </a>
                 </div>

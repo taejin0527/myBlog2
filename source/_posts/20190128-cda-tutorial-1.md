@@ -25,12 +25,6 @@ cover: 'http://vico.org/CDAR22005_HL7SP/infrastructure/cda/graphics/L-POCD_RM000
 
 ------
 
-:book:**목차**:book:
------
-1.[Pre-Consolidation context](#pre-consolidation-context)
-2.[Consolidated CDA](#consolidated-cda)
-3.[C-CDA IG Navigation](#c-cda-ig-navigation)
-
 
 ## Pre-Consolidation context
 

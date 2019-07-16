@@ -128,24 +128,18 @@ cover: https://safebytes.com/wp-content/uploads/2016/10/OperatingSystem-min.jpg
 
 ### 2.3.2 보조기억장치(자기 디스크)
 
-<img style="height:150px; float:right;" src="https://www.applexsoft.com/glossary/harddisk.jpg">
+<img style="height:120px; float:right;" src="https://www.applexsoft.com/glossary/harddisk.jpg">
 
-- 자기 디스크는 **플래터(platter)** 라고 하는 여러 개의 원형 판으로 구성
-  이 플래터는 다시 원형 모양의 **트랙(track)** 으로 구성
+- 자기 디스크는 **플래터(platter)** 라고 하는 여러 개의 원형 판으로 구성이 플래터는 다시 원형 모양의 **트랙(track)** 으로 구성
   트랙은 다시 여러 개의 **섹터(sector)** 로 나뉘어짐
+<br>
+<img style="height:150px; float:right;" src="http://mblogthumb1.phinf.naver.net/20141226_132/capemay_1419579186649T86jM_PNG/010edsector.png?type=w2">
 
-<img style="height:200px; float:right;" src="http://mblogthumb1.phinf.naver.net/20141226_132/capemay_1419579186649T86jM_PNG/010edsector.png?type=w2">
-
-- 단순하게 섹터를 여러 개를 하나로 묶은 것을 **클러스터(cluster)** 라 하고,
-  같은 위치에 있는 트랙의 모음을 **실린더(cylinder)** 라고 합니다
+- 단순하게 섹터를 여러 개를 하나로 묶은 것을 **클러스터(cluster)** 라 하고, 같은 위치에 있는 트랙의 모음을 **실린더(cylinder)** 라고 합니다
   -- 클러스터는 <u>운영체제에서 사용하는 데이터 저장의 최소 단위</u>
-
-
-
-- **디스크의 속도** = 컴퓨터로 데이터를 전송하는 비율인 전송률(transfer rate)
-  			 +plus+
-  			 임의접근 시간(random-access time)이라고 하는 위치결정 시간(positioning time)
-  에 의해 결정됩니다
+<br>
+<br>
+- **디스크의 속도** = 컴퓨터로 데이터를 전송하는 비율인 전송률(transfer rate) + 임의접근 시간(random-access time)이라고 하는 위치결정 시간(positioning time)에 의해 결정됩니다
 
 - 데이터의 교환은 특수한 제어기를 통해 이루어집니다
   컴퓨터 연결 끝에는 호스트 제어기

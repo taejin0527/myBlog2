@@ -23,15 +23,6 @@ cover: https://spring.io/img/spring-by-pivotal.png
 
 ------
 
-:book: **목차** :book:
-
-- [POJO](#pojo)
-  - [POJO의 탄생](#pojo의-탄생)
-  - [Enterprise JavaBean의 등장](#enterprise-javaBean의-등장)
-  - [POJO 프레임워크](#pojo-프레임워크)
-
-
-
 ` 아직 많은 것을 알지 못하기 때문에 자세하고 정확한 내용은 제가 참조한 사이트나 따로 검색 또는 책을 통해 알아보는 것을 권장드립니다.`
 
 ## POJO

@@ -15,12 +15,6 @@ cover: https://spring.io/img/spring-by-pivotal.png
 
 ---
 
-:blue_book: **목차** :book:
-
-[스프링 프레임워크 모듈](#스프링-프레임워크-모듈)
-
-
-
 ------
 
 ## 스프링 프레임워크 모듈

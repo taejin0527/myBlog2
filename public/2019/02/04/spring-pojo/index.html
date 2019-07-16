@@ -24,6 +24,13 @@
 
 
 
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2">
+
 
 
 
@@ -72,7 +79,7 @@
     version: '7.2.0',
     sidebar: {"position":"right","display":"post","offset":12,"onmobile":false},
     back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
-    copycode: {"enable":false,"show_result":false,"style":null},
+    copycode: {"enable":true,"show_result":true,"style":null},
     fancybox: false,
     fastclick: false,
     lazyload: false,
@@ -95,19 +102,19 @@
 
 
 
-  <meta name="description" content="ReferencePlain Old Java Object-위키POJO(Plain Old Java Object)  :book: 목차 :book:  POJO POJO의 탄생 Enterprise JavaBean의 등장 POJO 프레임워크    아직 많은 것을 알지 못하기 때문에 자세하고 정확한 내용은 제가 참조한 사이트나 따로 검색 또는 책을 통해 알아보는 것을">
+  <meta name="description" content="ReferencePlain Old Java Object-위키POJO(Plain Old Java Object)  아직 많은 것을 알지 못하기 때문에 자세하고 정확한 내용은 제가 참조한 사이트나 따로 검색 또는 책을 통해 알아보는 것을 권장드립니다. POJO:heavy_check_mark: Plain Old Java Object : (직역) 평범한 옛날 자바">
 <meta name="keywords" content="SPRING,POJO">
 <meta property="og:type" content="article">
 <meta property="og:title" content="스프링 - POJO">
 <meta property="og:url" content="https://taejin0527.github.io/2019/02/04/spring-pojo/index.html">
 <meta property="og:site_name" content="AttackOnNunu">
-<meta property="og:description" content="ReferencePlain Old Java Object-위키POJO(Plain Old Java Object)  :book: 목차 :book:  POJO POJO의 탄생 Enterprise JavaBean의 등장 POJO 프레임워크    아직 많은 것을 알지 못하기 때문에 자세하고 정확한 내용은 제가 참조한 사이트나 따로 검색 또는 책을 통해 알아보는 것을">
+<meta property="og:description" content="ReferencePlain Old Java Object-위키POJO(Plain Old Java Object)  아직 많은 것을 알지 못하기 때문에 자세하고 정확한 내용은 제가 참조한 사이트나 따로 검색 또는 책을 통해 알아보는 것을 권장드립니다. POJO:heavy_check_mark: Plain Old Java Object : (직역) 평범한 옛날 자바">
 <meta property="og:locale" content="ko">
 <meta property="og:image" content="https://martinfowler.com/img/mf-cologne.jpg">
-<meta property="og:updated_time" content="2019-07-13T09:41:13.609Z">
+<meta property="og:updated_time" content="2019-07-16T13:49:47.560Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="스프링 - POJO">
-<meta name="twitter:description" content="ReferencePlain Old Java Object-위키POJO(Plain Old Java Object)  :book: 목차 :book:  POJO POJO의 탄생 Enterprise JavaBean의 등장 POJO 프레임워크    아직 많은 것을 알지 못하기 때문에 자세하고 정확한 내용은 제가 참조한 사이트나 따로 검색 또는 책을 통해 알아보는 것을">
+<meta name="twitter:description" content="ReferencePlain Old Java Object-위키POJO(Plain Old Java Object)  아직 많은 것을 알지 못하기 때문에 자세하고 정확한 내용은 제가 참조한 사이트나 따로 검색 또는 책을 통해 알아보는 것을 권장드립니다. POJO:heavy_check_mark: Plain Old Java Object : (직역) 평범한 옛날 자바">
 <meta name="twitter:image" content="https://martinfowler.com/img/mf-cologne.jpg">
 
 
@@ -395,7 +402,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Updated at: 2019-07-13 18:41:13" itemprop="dateModified" datetime="2019-07-13T18:41:13+09:00">2019-07-13</time>
+                <time title="Updated at: 2019-07-16 22:49:47" itemprop="dateModified" datetime="2019-07-16T22:49:47+09:00">2019-07-16</time>
               </span>
             
           
@@ -468,17 +475,8 @@
       
 
       
-        <h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><p><a href="https://ko.wikipedia.org/wiki/Plain_Old_Java_Object" target="_blank" rel="noopener">Plain Old Java Object-위키</a><br><a href="https://itewbm.tistory.com/entry/POJOPlain-Old-Java-Object" target="_blank" rel="noopener">POJO(Plain Old Java Object)</a></p>
+        <h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><p><span class="exturl" data-url="aHR0cHM6Ly9rby53aWtpcGVkaWEub3JnL3dpa2kvUGxhaW5fT2xkX0phdmFfT2JqZWN0" title="https://ko.wikipedia.org/wiki/Plain_Old_Java_Object">Plain Old Java Object-위키<i class="fa fa-external-link"></i></span><br><span class="exturl" data-url="aHR0cHM6Ly9pdGV3Ym0udGlzdG9yeS5jb20vZW50cnkvUE9KT1BsYWluLU9sZC1KYXZhLU9iamVjdA==" title="https://itewbm.tistory.com/entry/POJOPlain-Old-Java-Object">POJO(Plain Old Java Object)<i class="fa fa-external-link"></i></span></p>
 <hr>
-<p>:book: <strong>목차</strong> :book:</p>
-<ul>
-<li><a href="#pojo">POJO</a><ul>
-<li><a href="#pojo의-탄생">POJO의 탄생</a></li>
-<li><a href="#enterprise-javaBean의-등장">Enterprise JavaBean의 등장</a></li>
-<li><a href="#pojo-프레임워크">POJO 프레임워크</a></li>
-</ul>
-</li>
-</ul>
 <p><code>아직 많은 것을 알지 못하기 때문에 자세하고 정확한 내용은 제가 참조한 사이트나 따로 검색 또는 책을 통해 알아보는 것을 권장드립니다.</code></p>
 <h2 id="POJO"><a href="#POJO" class="headerlink" title="POJO"></a>POJO</h2><p>:heavy_check_mark: <strong>Plain Old Java Object</strong> : (직역) 평범한 옛날 자바 객체</p>
 <p> 처음에 단순히 정의를 검색하다보니 정말 단순한 자바 객체인 것 같은데 왜 굳이 POJO라는 단어를 사용하는지 혼란스러웠습니다. Stack Overflow 같은데서도 자바빈과 비교하는 토론이 있기도하고 솔직히 현재도 완전히 이해했다고는 할 수 없지만 제가 생각하는 내용을 적었습니다.</p>
@@ -697,7 +695,7 @@
                     
                       
                     
-                    <span class="site-state-item-count">12</span>
+                    <span class="site-state-item-count">10</span>
                     <span class="site-state-item-name">카테고리</span>
                   </a>
                 </div>
@@ -766,7 +764,7 @@
                     
                       
                     
-                    <span class="site-state-item-count">26</span>
+                    <span class="site-state-item-count">24</span>
                     <span class="site-state-item-name">태그</span>
                   </a>
                 </div>
