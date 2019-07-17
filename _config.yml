@@ -82,7 +82,35 @@ deploy:
   repo: https://github.com/taejin0527/taejin0527.github.io.git
   branch: master
 
-  ## Live2D
+# RSS
+## https://github.com/hexojs/hexo-generator-feed
+## atom이 기본값이지만, 네이버에서는 atom을 지원하지 않는다고 한다.. 18.8월 기준
+feed:
+  type: rss2
+  path: rss2.xml
+  limit: false
+  hub:
+  content: true
+
+# Sitemap
+## https://iseongho.github.io/posts/hexo-seo/ 참고
+## path - sitemap이 생성될 경로
+## tag - sitemap에 tag 포함 여부
+## category - sitemap에 category 포함 여부
+sitemap:
+  path: sitemap.xml
+  tag: true
+  category: false
+
+# robots.txt
+robotstxt:
+  useragent: "*"
+  allow:
+    - /
+  sitemap:
+
+
+## Live2D
 ## https://github.com/EYHN/hexo-helper-live2d
 live2d:
     enable:  true
