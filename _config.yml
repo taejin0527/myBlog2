@@ -6,7 +6,7 @@
 title: AttackOnNunu
 subtitle: Once more into the fray
 description: 개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다. #introduction 밑에 내용
-keywords:
+keywords: programming
 author: NUNU
 language: ko  #기본언어. 다국어 지원
 timezone: Asia/Seoul  #해당 타임존 설정(https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)

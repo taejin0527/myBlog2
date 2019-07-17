@@ -35,6 +35,8 @@
 
 
 
+  <meta name="google-site-verification" content="1AoB1Oj70vYeXdFCLMbgUhTbU9kMwMXDsCNGRrqqvhM">
+
 
 
 
@@ -103,6 +105,7 @@
 
 
   <meta name="description" content="Reference Spring IoC Containers – Types of Spring Container Spring 공식 문서 Spring - IoC &amp;amp; DI   아직 많은 것을 알지 못하기 때문에 자세하고 정확한 내용은 제가 참조한 사이트나 따로 검색 또는 책을 통해 알아보는 것을 권장드립니다. 용어정리Bean - 빌더 형식의 개발도구에서 가시">
+<meta name="keywords" content="programming">
 <meta property="og:type" content="article">
 <meta property="og:title" content="스프링 - IoC Containers">
 <meta property="og:url" content="https://taejin0527.github.io/2019/02/11/spring-IoC/index.html">
@@ -198,7 +201,7 @@
     </div>
     
       
-        <p class="site-subtitle">Once more into the fray</p>
+        <h1 class="site-subtitle" itemprop="description">Once more into the fray</h1>
       
     
     
@@ -361,11 +364,11 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">스프링 - IoC Containers
+          <h2 class="post-title" itemprop="name headline">스프링 - IoC Containers
 
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
@@ -653,7 +656,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">14</span>
+                    <span class="site-state-item-count">15</span>
                     <span class="site-state-item-name">포스트</span>
                   </a>
                 </div>
@@ -974,7 +977,25 @@
     (d.head || d.body).appendChild(s);
   }
   
-    window.addEventListener('load', loadComments, false);
+    $(function() {
+      var offsetTop = $('#comments').offset().top - $(window).height();
+      if (offsetTop <= 0) {
+        // load directly when there's no a scrollbar
+        window.addEventListener('load', loadComments, false);
+      } else {
+        $(window).on('scroll.disqus_scroll', function() {
+          // offsetTop may changes because of manually resizing browser window or lazy loading images.
+          var offsetTop = $('#comments').offset().top - $(window).height();
+          var scrollTop = $(window).scrollTop();
+
+          // pre-load comments a bit? (margin or anything else)
+          if (offsetTop - scrollTop < 60) {
+            $(window).off('.disqus_scroll');
+            loadComments();
+          }
+        });
+      }
+    });
   
 </script>
 

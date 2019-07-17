@@ -35,6 +35,8 @@
 
 
 
+  <meta name="google-site-verification" content="1AoB1Oj70vYeXdFCLMbgUhTbU9kMwMXDsCNGRrqqvhM">
+
 
 
 
@@ -110,7 +112,7 @@
 <meta property="og:site_name" content="AttackOnNunu">
 <meta property="og:description" content="Reference Kaggle 홈페이지 - Kaggle 3강 ‘Functions and Getting Help’ - Python Micro-Course Home Page   개요(Intro)앞서 print 나 abs 와 같은 함수를 사용해 보았습니다. 파이썬에는 이 외에도 수 많은 내장 함수들을 가지고 있고 자신만의 함수를 정의하여 사용할 수도 있습니다.">
 <meta property="og:locale" content="ko">
-<meta property="og:updated_time" content="2019-07-16T13:51:42.479Z">
+<meta property="og:updated_time" content="2019-07-17T02:38:28.650Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="02 Functions and Getting Help">
 <meta name="twitter:description" content="Reference Kaggle 홈페이지 - Kaggle 3강 ‘Functions and Getting Help’ - Python Micro-Course Home Page   개요(Intro)앞서 print 나 abs 와 같은 함수를 사용해 보았습니다. 파이썬에는 이 외에도 수 많은 내장 함수들을 가지고 있고 자신만의 함수를 정의하여 사용할 수도 있습니다.">
@@ -196,7 +198,7 @@
     </div>
     
       
-        <p class="site-subtitle">Once more into the fray</p>
+        <h1 class="site-subtitle" itemprop="description">Once more into the fray</h1>
       
     
     
@@ -359,11 +361,11 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">02 Functions and Getting Help
+          <h2 class="post-title" itemprop="name headline">02 Functions and Getting Help
 
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
@@ -400,7 +402,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Updated at: 2019-07-16 22:51:42" itemprop="dateModified" datetime="2019-07-16T22:51:42+09:00">2019-07-16</time>
+                <time title="Updated at: 2019-07-17 11:38:28" itemprop="dateModified" datetime="2019-07-17T11:38:28+09:00">2019-07-17</time>
               </span>
             
           
@@ -544,7 +546,34 @@
 <p><code>return</code> 문이 없으면 <code>least_difference</code> 는 완전히 무의미해 보이지만 이 함수를 통해 아무 것도 반환하지 않고 유용한 작업을 수행 할 수 있습니다.<br>우리는 이러한 함수를 2개나 봤습니다: <code>print()</code>와 <code>help()</code>함수는 아무 것도 반환하지 않았습니다.<br>우리는 함수들의 부작용(side effect - 화면에 텍스트를 넣는 것)을 위해서만 호출합니다. 유용한 부작용의 다른 예는 파일에 쓰거나 입력을 수정하는 것을 포함합니다.</p>
 <div class="tabs" id="mystery"><ul class="nav-tabs"><li class="tab active"><a href="#mystery-1"><i class="fa fa-code"></i>CODE</a></li><li class="tab"><a href="#mystery-2"><i class="fa fa-terminal"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane active" id="mystery-1"><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">mystery = print()</span><br><span class="line">print(mystery)</span><br><span class="line">      </span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="mystery-2"><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">None</span><br><span class="line">      </span><br></pre></td></tr></table></figure></div></div></div></div></div></div>
 
-<h2 id="기본-매개변수-Default-arguments"><a href="#기본-매개변수-Default-arguments" class="headerlink" title="기본 매개변수(Default arguments)"></a>기본 매개변수(Default arguments)</h2><h2 id="함수들에-적용되는-함수들-Functions-Applied-to-Functions"><a href="#함수들에-적용되는-함수들-Functions-Applied-to-Functions" class="headerlink" title="함수들에 적용되는 함수들(Functions Applied to Functions)"></a>함수들에 적용되는 함수들(Functions Applied to Functions)</h2><p><br><br><br></p>
+<h2 id="기본-매개변수-Default-arguments"><a href="#기본-매개변수-Default-arguments" class="headerlink" title="기본 매개변수(Default arguments)"></a>기본 매개변수(Default arguments)</h2><p><code>help(print)</code> 를 호출하면 <code>print</code> 함수에는 몇 가지의 선택적 매개변수들(optinal arguments)이 있는 것을 볼 수 있습니다.<br>예를 들어, 출력하고자 하는 값들 사이에 우리가 원하는 특별한 <code>sep</code> 값을 지정할 수 있습니다.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, sep=<span class="string">' &lt; '</span>)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1 &lt; 2 &lt; 3</span><br></pre></td></tr></table></figure>
+
+<p>만약 특정한 값을 명시하지 않으면, <code>sep</code> 에는 기본값인 <code>&#39; &#39;</code>(공백) 이 들어갑니다.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1 2 3</span><br></pre></td></tr></table></figure>
+
+<p>우리가 정의한 함수에 선택적 매개변수를 기본값으로 추가하는 것은 꽤 간단합니다.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">greet</span><span class="params">(who=<span class="string">"Colin"</span>)</span>:</span></span><br><span class="line">    print(<span class="string">"Hello,"</span>, who)</span><br><span class="line"></span><br><span class="line">greet()</span><br><span class="line">greet(who=<span class="string">"Kaggle"</span>)</span><br><span class="line"><span class="comment"># (In this case, we don't need to specify the name of the argument, because it's unambiguous.)</span></span><br><span class="line">greet(<span class="string">"world"</span>)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Hello, colin</span><br><span class="line">Hello, Kaggle</span><br><span class="line">Hello, world</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="함수들에-적용되는-함수들-Functions-Applied-to-Functions"><a href="#함수들에-적용되는-함수들-Functions-Applied-to-Functions" class="headerlink" title="함수들에 적용되는 함수들(Functions Applied to Functions)"></a>함수들에 적용되는 함수들(Functions Applied to Functions)</h2><p>처음에는 매우 추상적이라고 느낄 수 있지만 매우 매우 유용한 기술이 있습니다.<br>함수는 다른 함수의 매개변수로 사용될 수 있습니다. 몇 가지 예를 들어 보면 다음과 같습니다.</p>
+<div class="tabs" id="functions_example"><ul class="nav-tabs"><li class="tab active"><a href="#functions_example-1"><i class="fa fa-eye"></i>EXAMPLE 1</a></li><li class="tab"><a href="#functions_example-2"><i class="fa fa-eye"></i>EXAMPLE 2</a></li></ul><div class="tab-content"><div class="tab-pane active" id="functions_example-1"><div class="tabs" id="squared_call"><ul class="nav-tabs"><li class="tab active"><a href="#squared_call-1"><i class="fa fa-code"></i>CODE</a></li><li class="tab"><a href="#squared_call-2"><i class="fa fa-terminal"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane active" id="squared_call-1"><div class="note primary">
+          <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">mult_by_five</span><span class="params">(x)</span>:</span></span><br><span class="line">  <span class="keyword">return</span> <span class="number">5</span> * x</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">call</span><span class="params">(fn, arg)</span>:</span></span><br><span class="line">  <span class="string">"""Call fn on arg"""</span></span><br><span class="line">  <span class="keyword">return</span> fn(arg)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">squared_call</span><span class="params">(fn, arg)</span>:</span></span><br><span class="line">  <span class="string">"""Call fn on the result of calling fn on arg"""</span></span><br><span class="line">  <span class="keyword">return</span> fn(fn(arg))</span><br><span class="line"></span><br><span class="line">print(</span><br><span class="line">  call(mult_by_five, <span class="number">1</span>),</span><br><span class="line">  squared_call(mult_by_five, <span class="number">1</span>),</span><br><span class="line">  sep=<span class="string">'\n'</span>, <span class="comment"># '\n' is the newline character - it starts a new line</span></span><br><span class="line">)</span><br><span class="line">      </span><br></pre></td></tr></table></figure>
+        </div></div><div class="tab-pane" id="squared_call-2"><div class="note success">
+          <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">5</span><br><span class="line">25</span><br></pre></td></tr></table></figure><p>다른 함수에서 작동하는 함수를 “Higher order function”이라고합니다.<br>아마 지금 당장은 잘 사용하지 않으시겠지만 파이썬에 내장된 매우 유용한 고차 함수들(higher order function)이 있습니다.</p>
+        </div></div></div></div></div><div class="tab-pane" id="functions_example-2"><div class="tabs" id="max"><ul class="nav-tabs"><li class="tab active"><a href="#max-1"><i class="fa fa-code"></i>CODE</a></li><li class="tab"><a href="#max-2"><i class="fa fa-terminal"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane active" id="max-1"><div class="note primary">
+          <p><code>max</code> 함수에 대한 흥미로운 예제입니다,</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">mod_5</span><span class="params">(x)</span>:</span></span><br><span class="line">  <span class="string">"""Return the remainder of x after dividing by 5"""</span></span><br><span class="line">  <span class="keyword">return</span> x % <span class="number">5</span></span><br><span class="line"></span><br><span class="line">print(</span><br><span class="line">  <span class="string">'Which number is biggest?'</span>,</span><br><span class="line">  max(<span class="number">100</span>, <span class="number">51</span>, <span class="number">14</span>),</span><br><span class="line">  <span class="string">'Which number is the biggest modulo 5?'</span>,</span><br><span class="line">  max(<span class="number">100</span>, <span class="number">51</span>, <span class="number">14</span>, key=mod_5),</span><br><span class="line">  sep=<span class="string">'\n'</span>,</span><br><span class="line">)</span><br><span class="line">    </span><br></pre></td></tr></table></figure>
+        </div></div><div class="tab-pane" id="max-2"><div class="note success">
+          <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Which number is biggest?</span><br><span class="line">100</span><br><span class="line">Which number is the biggest modulo 5?</span><br><span class="line">14</span><br></pre></td></tr></table></figure><p>기본적으로 <code>max</code> 함수는 가장 큰 인수를 반환합니다.<br>그러나 선택적 <code>key</code> 인자를 사용하여 함수를 전달하면 <code>key(x)</code> (일명 ‘argmax’)를 최대화하는 인자 <code>x</code>를 반환합니다.</p>
+        </div></div></div></div></div></div></div>
+
+<p><br><br><br></p>
 <h1 id="연습문제-Your-Turn"><a href="#연습문제-Your-Turn" class="headerlink" title="연습문제(Your Turn)"></a>연습문제(Your Turn)</h1><p>함수(Function)는 파이썬 프로그래밍의 새로운 세상을 열어줍니다. <strong><span class="exturl" data-url="aHR0cHM6Ly93d3cua2FnZ2xlLmNvbS9rZXJuZWxzL2ZvcmsvMTI3NTE1OA==" title="https://www.kaggle.com/kernels/fork/1275158">second Python programming exercise<i class="fa fa-external-link"></i></span></strong></p>
 
       
@@ -606,6 +635,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/07/17/03-booleans-and-conditionals/" rel="prev" title="03 Booleans and Conditionals">
+                03 Booleans and Conditionals <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -683,7 +716,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">14</span>
+                    <span class="site-state-item-count">15</span>
                     <span class="site-state-item-name">포스트</span>
                   </a>
                 </div>
@@ -1004,7 +1037,25 @@
     (d.head || d.body).appendChild(s);
   }
   
-    window.addEventListener('load', loadComments, false);
+    $(function() {
+      var offsetTop = $('#comments').offset().top - $(window).height();
+      if (offsetTop <= 0) {
+        // load directly when there's no a scrollbar
+        window.addEventListener('load', loadComments, false);
+      } else {
+        $(window).on('scroll.disqus_scroll', function() {
+          // offsetTop may changes because of manually resizing browser window or lazy loading images.
+          var offsetTop = $('#comments').offset().top - $(window).height();
+          var scrollTop = $(window).scrollTop();
+
+          // pre-load comments a bit? (margin or anything else)
+          if (offsetTop - scrollTop < 60) {
+            $(window).off('.disqus_scroll');
+            loadComments();
+          }
+        });
+      }
+    });
   
 </script>
 

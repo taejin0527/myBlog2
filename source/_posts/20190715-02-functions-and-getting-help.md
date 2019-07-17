@@ -529,13 +529,136 @@ help(print)
     <!-- endtab -->
   {% endsubtabs %}
   <!-- endtab -->
-
 {% endtabs %}
 
 ## 기본 매개변수(Default arguments)
 
+`help(print)` 를 호출하면 `print` 함수에는 몇 가지의 선택적 매개변수들(optinal arguments)이 있는 것을 볼 수 있습니다.
+예를 들어, 출력하고자 하는 값들 사이에 우리가 원하는 특별한 `sep` 값을 지정할 수 있습니다.
+
+{% code lang:python %}
+print(1, 2, 3, sep=' < ')
+{% endcode %}
+
+{% code %}
+1 < 2 < 3
+{% endcode %}
+
+만약 특정한 값을 명시하지 않으면, `sep` 에는 기본값인 `' '`(공백) 이 들어갑니다.
+
+{% code lang:python %}
+print(1, 2, 3)
+{% endcode %}
+
+{% code %}
+1 2 3
+{% endcode %}
+
+우리가 정의한 함수에 선택적 매개변수를 기본값으로 추가하는 것은 꽤 간단합니다.
+
+{% code lang:python %}
+def greet(who="Colin"):
+    print("Hello,", who)
+
+greet()
+greet(who="Kaggle")
+# (In this case, we don't need to specify the name of the argument, because it's unambiguous.)
+greet("world")
+{% endcode %}
+
+{% code %}
+Hello, colin
+Hello, Kaggle
+Hello, world
+{% endcode %}
+
 
 ## 함수들에 적용되는 함수들(Functions Applied to Functions)
+
+처음에는 매우 추상적이라고 느낄 수 있지만 매우 매우 유용한 기술이 있습니다.
+함수는 다른 함수의 매개변수로 사용될 수 있습니다. 몇 가지 예를 들어 보면 다음과 같습니다.
+
+{% tabs functions_example %}
+<!-- tab EXAMPLE 1 @eye -->
+  {% subtabs squared_call %}
+  <!-- tab CODE @code -->
+    {% note primary %}
+      {% code lang:python %}
+        def mult_by_five(x):
+          return 5 * x
+
+        def call(fn, arg):
+          """Call fn on arg"""
+          return fn(arg)
+
+        def squared_call(fn, arg):
+          """Call fn on the result of calling fn on arg"""
+          return fn(fn(arg))
+
+        print(
+          call(mult_by_five, 1),
+          squared_call(mult_by_five, 1),
+          sep='\n', # '\n' is the newline character - it starts a new line
+        )
+      {% endcode %}
+    {% endnote %}
+  <!-- endtab -->
+
+  <!-- tab OUTPUT @terminal -->
+  {% note success %}
+    {% code %}
+    5
+    25
+    {% endcode %}
+
+    다른 함수에서 작동하는 함수를 "Higher order function"이라고합니다.
+    아마 지금 당장은 잘 사용하지 않으시겠지만 파이썬에 내장된 매우 유용한 고차 함수들(higher order function)이 있습니다.
+
+  {% endnote %}
+  <!-- endtab -->
+  {% endsubtabs %}
+<!-- endtab -->
+
+<!-- tab EXAMPLE 2 @eye -->
+{% subtabs max %}
+  <!-- tab CODE @code -->
+
+  {% note primary %}
+    `max` 함수에 대한 흥미로운 예제입니다,
+
+    {% code lang:python %}
+      def mod_5(x):
+        """Return the remainder of x after dividing by 5"""
+        return x % 5
+
+      print(
+        'Which number is biggest?',
+        max(100, 51, 14),
+        'Which number is the biggest modulo 5?',
+        max(100, 51, 14, key=mod_5),
+        sep='\n',
+      )
+    {% endcode %}
+  {% endnote %}
+  <!-- endtab -->
+
+  <!-- tab OUTPUT @terminal -->
+  {% note success %}
+    {% code %}
+    Which number is biggest?
+    100
+    Which number is the biggest modulo 5?
+    14
+    {% endcode %}
+
+    기본적으로 `max` 함수는 가장 큰 인수를 반환합니다. 
+    그러나 선택적 `key` 인자를 사용하여 함수를 전달하면 `key(x)` (일명 'argmax')를 최대화하는 인자 `x`를 반환합니다.
+
+  {% endnote %}
+  <!-- endtab -->
+  {% endsubtabs %}
+<!-- endtab -->
+{% endtabs %}
 
 <br><br><br>
 

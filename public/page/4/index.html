@@ -35,6 +35,8 @@
 
 
 
+  <meta name="google-site-verification" content="1AoB1Oj70vYeXdFCLMbgUhTbU9kMwMXDsCNGRrqqvhM">
+
 
 
 
@@ -103,6 +105,7 @@
 
 
   <meta name="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
+<meta name="keywords" content="programming">
 <meta property="og:type" content="website">
 <meta property="og:title" content="AttackOnNunu">
 <meta property="og:url" content="https://taejin0527.github.io/page/4/index.html">
@@ -195,7 +198,7 @@
     </div>
     
       
-        <p class="site-subtitle">Once more into the fray</p>
+        <h1 class="site-subtitle" itemprop="description">Once more into the fray</h1>
       
     
     
@@ -341,6 +344,252 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/2019/01/31/spring-module/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="NUNU">
+      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="AttackOnNunu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/01/31/spring-module/" class="post-title-link" itemprop="url">스프링 프레임워크 모듈</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2019-01-31 19:08:32" itemprop="dateCreated datePublished" datetime="2019-01-31T19:08:32+09:00">2019-01-31</time>
+            </span>
+          
+
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Updated at: 2019-07-16 22:50:08" itemprop="dateModified" datetime="2019-07-16T22:50:08+09:00">2019-07-16</time>
+              </span>
+            
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/WEB/" itemprop="url" rel="index"><span itemprop="name">WEB</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/WEB/SPRING/" itemprop="url" rel="index"><span itemprop="name">SPRING</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">댓글: </span>
+                <a href="/2019/01/31/spring-module/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/01/31/spring-module/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <hr>
+<h2 id="스프링-프레임워크-모듈"><a href="#스프링-프레임워크-모듈" class="headerlink" title="스프링 프레임워크 모듈"></a>스프링 프레임워크 모듈</h2><p><img src="https://docs.spring.io/spring/docs/4.3.22.RELEASE/spring-framework-reference/htmlsingle/images/spring-overview.png" alt="framework modules"></p>
+<p>위 그림에 나와있듯이 스프링 프레임워크는 약 20개의 모듈들로 이루어져 있습니다.</p>
+<ul>
+<li>Data Access/Integration; Web; AOP; Aspects; Instrumentation; Messaging; Core Container; and Test;</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">모듈 그룹</th>
+<th align="center">설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Core Container</td>
+<td align="center">* 스프링 프레임워크의 기본 모듈을 포함</td>
+</tr>
+<tr>
+<td align="center">AOP 및 Instrumentation</td>
+<td align="center">* 관점 지향 프로그래밍(AOP; Aspect-Oriented Programming) 및 Class Instrumentation을 지원하는 모듈을 포함</td>
+</tr>
+<tr>
+<td align="center">Messaging</td>
+<td align="center">* 프로그래밍 모듈을 기반으로한 스프링 MVC 어노테이션 처럼 메세지를 메소드에 맵핑 시키는 어노테이션의 세트를 포함</td>
+</tr>
+<tr>
+<td align="center">Data Access/Inegration</td>
+<td align="center">* DB 및 메시징 공급자와의 상호작용을 간소화하는 모듈을 포함</td>
+</tr>
+<tr>
+<td align="center">Web</td>
+<td align="center">* 웹 및 포틀릿 애플리케이션 개발을 간소화하는 모듈을 포함</td>
+</tr>
+<tr>
+<td align="center">Test</td>
+<td align="center">* 단위 및 통합 테스트 생성을 간소화하는 모듈 하나를 포함</td>
+</tr>
+</tbody></table>
+<p> 이처럼 스프링은 <strong>웹 애플리케이션 개발, 데이터베이스 접근, 트랜잭션 관리, 단위 및 통합 테스트 생성</strong> 등등 엔터프라이즈 애플리케이션 개발의 모든 측면을 지원하고 이렇게 다양한 기능 중 우리는 필요한 것만 선택적으로 사용하면 됩니다.</p>
+<p>만약 개발하고 있는 애플리케이션에서 스프링의 DI 기능[^1]을 사용하려면 Core Container 모듈 그룹에 속한 Spring-Core나 Spring-Beans 모듈을 선택해 사용하면 됩니다.</p>
+<h3 id="스프링-프레임워크-모듈-간-상호의존성"><a href="#스프링-프레임워크-모듈-간-상호의존성" class="headerlink" title="스프링 프레임워크 모듈 간 상호의존성"></a>스프링 프레임워크 모듈 간 상호의존성</h3><p><img src="https://1.bp.blogspot.com/-8MEJX0VwvO8/Wi0I3qLwk7I/AAAAAAAAgo0/nu7QGP77ZjA8hgCHdwDmjdgKNMJYjf_EACLcBGAs/s1600/1.1.png" alt="dependency"></p>
+<ul>
+<li><strong>Core Container</strong> 그룹이 스프링 프레임워크의 중심</li>
+<li><strong>AOP 및 Instrumentation</strong> 그룹에 포함된 모듈도 이를 의존하는 다른 모듈이 많기에 중요도가 높음</li>
+</ul>
+<p>지금은 이해가 잘 안되지만 앞으로 각각의 모듈들에 대해 자세히 알아볼 예정입니다.</p>
+<p>다음 포스팅에서는 각각의 모듈들을 알아가기 전에 꼭 알아둬야하는 개념들을 가볍게 집고 넘어가겠습니다.</p>
+<ul>
+<li>제어의 역적(IoC); 의존성 주입(DI); 관전 지향 프로그래밍(AOP); Model View Control(MVC);</li>
+</ul>
+<p><img src="https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/sites/2/2018/06/Spring-Framework-Modules-01.jpg" alt="modules todo"></p>
+<p><br><br><br></p>
+<p>[^1]: DI 기능에 대해서는 다음에 따로 포스트할 예정(포스팅 하면 수정!!)</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/2019/01/28/cda-tutorial-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -358,13 +607,13 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
+          <h2 class="post-title" itemprop="name headline">
                 
                 
                 <a href="/2019/01/28/cda-tutorial-1/" class="post-title-link" itemprop="url">C-CDA 란?</a>
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
@@ -574,13 +823,13 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
+          <h2 class="post-title" itemprop="name headline">
                 
                 
                 <a href="/2019/01/23/markdown-plugin/" class="post-title-link" itemprop="url">포스트 작성을 위한 Hexo Plugins</a>
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
@@ -735,241 +984,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/2019/01/22/spring/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="NUNU">
-      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="AttackOnNunu">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/01/22/spring/" class="post-title-link" itemprop="url">Spring 개요</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">작성일</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2019-01-22 17:30:00" itemprop="dateCreated datePublished" datetime="2019-01-22T17:30:00+09:00">2019-01-22</time>
-            </span>
-          
-
-          
-            
-
-            
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Updated at: 2019-07-16 22:50:22" itemprop="dateModified" datetime="2019-07-16T22:50:22+09:00">2019-07-16</time>
-              </span>
-            
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/WEB/" itemprop="url" rel="index"><span itemprop="name">WEB</span></a></span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/WEB/SPRING/" itemprop="url" rel="index"><span itemprop="name">SPRING</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">댓글: </span>
-                <a href="/2019/01/22/spring/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/01/22/spring/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          <br>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <blockquote>
-<p>가장 좋은 문서는 spring.io 공식 홈페이지에서 제공하는 documents 입니다. 개인적으로 공부하면서 작성하는 문서라 틀린 부분이 있을 수 있으니, 반드시 공식 문서를 참조하시기 바랍니다.</p>
-<blockquote>
-<p><span class="exturl" data-url="aHR0cHM6Ly9zcHJpbmcuaW8=" title="https://spring.io">스프링 공식 홈페이지<i class="fa fa-external-link"></i></span><br><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3NwcmluZy1wcm9qZWN0cw==" title="https://github.com/spring-projects">소스코드<i class="fa fa-external-link"></i></span><br><span class="exturl" data-url="aHR0cHM6Ly9zcHJpbmcuaW8vZ3VpZGVz" title="https://spring.io/guides">가이드<i class="fa fa-external-link"></i></span></p>
-</blockquote>
-</blockquote>
-<hr>
-<h3 id="1-스프링"><a href="#1-스프링" class="headerlink" title="1. 스프링"></a>1. 스프링</h3><p>공식 홈페이지 첫 화면을 보면 <u>Spring : the source for modern java</u> 라고 적혀있습니다.</p>
-<p>이 문장만으로는 이해하기 어려워서 구글에 검색을 해도 우리나라에서는 스프링하면 <u>스프링 프레임워크(Spring framework)</u>를 주로 이야기해서 스프링의 정의에 대해 다루는 자료는 그렇게 많지 않았습니다.</p>
-<p>그럼에도 스프링이란 무엇인지 명확하게 짚고 넘어가는 것이 좋을 것 같습니다.</p>
-<p><strong>스프링(Spring)</strong> 은</p>
-<div style="border:3px; border-style:dashed; color:grey; text-align:center">
-  <br>자바 엔터프라이즈 개발을 편하게 해주는 오픈소스 경량급 애플리케이션 프레임워크<br><br>
-</div>
-
-<p>라는 정의를 가지고 있습니다.</p>
-<p> 얼핏 보면 감이 잘 안 잡히기 때문에 시간을 내셔서 제가 참조했던 ‘12bme’님의 포스트[^1] 를 자세히 읽어보시고 이해하시면 좋을 것 같습니다.</p>
-<p> 또한 공식 홈페이지에 따르면 Spring 개발진의 철학이 Rod Johnson이 2002년 10월에 출판한 ‘Expert One-on-One J2EE Design and Develpment’에 요약되어 있다고 하니 여유가 있다면 한번 읽어보면 깊은 이해를 하는데 도움이 될 것 같습니다.</p>
-<p>스프링 개발진의 <strong>목표(Aim)</strong> 로는,</p>
-<ul>
-<li>스프링은 사용하기 즐거워야 하고</li>
-<li>여러분의 애플리케이션 코드가 스프링 API들에 의존해서는 안되며</li>
-<li>JDO, Toplink, Hibernate와 같은 훌륭한 O/R mapping solution들과 경쟁하지 않지만, 통합을 촉진하는 것 입니다.</li>
-</ul>
-<p> 또한 공식 홈페이지에서 <strong>PROJECTS</strong> 탭을 보면 스프링을 활용한 다양한 프로젝트들을 보실 수 있습니다.</p>
-<ul>
-<li>Spring Boot</li>
-<li>Spring Framework</li>
-<li>Spring Cloud</li>
-<li>Etc …</li>
-</ul>
-<p>이처럼 스프링은 <u>어디서나 간단하고, 이식하기 쉬우며, 신속하고, 유연하게 JVM 기반의 시스템과 애플리케이션을 구축</u>할 수 있어  ==다양한 프로젝트들의 디자인이 되는 모듈==이라고 생각할 수 있습니다.</p>
-<p>[^1]: <span class="exturl" data-url="aHR0cHM6Ly8xMmJtZS50aXN0b3J5LmNvbS8xNTc=" title="https://12bme.tistory.com/157">스프링이란 무엇인가? - 12bme<i class="fa fa-external-link"></i></span></p>
-<h3 id="2-스프링-프레임워크란"><a href="#2-스프링-프레임워크란" class="headerlink" title="2. 스프링 프레임워크란"></a>2. 스프링 프레임워크란</h3><p> 위에서 언급한 12bme님의 포스트를 보셨으면 쉽게 이해하시겠지만, <em>엔터프라이즈 애플리케이션</em> 개발이 어려운 이유는 사회가 점점 복잡해지고, 시스템에서 다루어야 하는 업무의 복잡도와 의존도가 높아져 <u>개발의 복잡성이 증가</u>했기 때문입니다. 이에 사용자의 요구를 빠르고 안정적이면서 확장 가능한 형태로 유지가히 위한 로우레벨(Low level) 수준의 기술적 처리가 필요해졌고 우리는 스프링 프레임워크를 통해 쉽게 자바 엔터프라이즈 애플리케이션을 개발할 수 있게 되었습니다.</p>
-<p><img src="/img/history.png" alt="history"></p>
-<p> 2004년 3월 Spring Framework 1.0 버전을 시작으로, 포스트 작성일 기준(2019년 1월) Spring Framework는 5.1.4 버전이 최신 버전입니다.</p>
-<p> 짧게 스프링(Spring)이라고 불리는 스프링 프레임워크는 <strong>모든 플랫폼에서 자바 기반 엔터프라이즈 애플리케이션(JAVA EE) 개발을 편하게 해주는 종합적인 프로그래밍 및 구성 모델을 제공</strong>합니다.</p>
-<p> 프레임워크의 바탕인 <em>스프링</em> 의 핵심 요소가 <u>애플리케이션 수준에서의 인프라 지원</u>이기 때문에 스프링 프레임워크에서는 개발 환경 구축에 필요한 하부구조(Infrastructure)를 포괄적으로 제공하고 처리하기 때문에 <u>개발자는 애플리케이션 개발(plumbing[^2])에 집중</u>할 수 있게 되었습니다.</p>
-<p><img src="https://www.jbrothershi.com/wp-content/uploads/2018/10/SpringPlumbingLogo.png" alt="plumbing"></p>
-<p> 참고로 스프링 프레임워크는 대한민국 공공기관의 웹 서비스 개발 시 사용을 권장하고 있는 전자 정부 표준 프레임워크의 기반 기술입니다.</p>
-<p>[^2]: 원문에는 plumbing이라는 단어로 표현하는데, 프레임워크가 부품들 다 만들어 놓으면 개발자는 그것들을 조립하는 느낌이라 이런 단어를 사용한 것 같습니다.</p>
-<p><br><br><br></p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1018,7 +1032,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">14</span>
+                    <span class="site-state-item-count">15</span>
                     <span class="site-state-item-name">포스트</span>
                   </a>
                 </div>
