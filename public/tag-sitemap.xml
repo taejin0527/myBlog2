@@ -3,36 +3,141 @@
 
 
     <url>
-        <loc>https://taejin0527.github.io/tags/%EC%96%B8%EC%96%B4/</loc>
-        <lastmod>2019-07-17T02:50:49.995Z</lastmod>
+        <loc>https://taejin0527.github.io/tags/SEO/</loc>
+        <lastmod>2019-07-18T02:29:20.044Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC/</loc>
-        <lastmod>2019-07-17T02:50:49.995Z</lastmod>
+        <loc>https://taejin0527.github.io/tags/github-page/</loc>
+        <lastmod>2019-07-18T02:29:20.044Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://taejin0527.github.io/tags/next-theme/</loc>
+        <lastmod>2019-07-18T02:29:20.044Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://taejin0527.github.io/tags/blog/</loc>
+        <lastmod>2019-07-18T02:29:20.044Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://taejin0527.github.io/tags/%ED%85%8C%EB%A7%88/</loc>
+        <lastmod>2019-07-18T02:29:20.044Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://taejin0527.github.io/tags/%EB%B8%94%EB%A1%9C%EA%B7%B8/</loc>
+        <lastmod>2019-07-18T02:29:20.044Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://taejin0527.github.io/tags/%ED%97%A5%EC%86%8C/</loc>
+        <lastmod>2019-07-18T02:29:20.044Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://taejin0527.github.io/tags/hexo/</loc>
+        <lastmod>2019-07-18T02:29:20.044Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://taejin0527.github.io/tags/adsense/</loc>
+        <lastmod>2019-07-17T05:26:14.657Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://taejin0527.github.io/tags/conditionals/</loc>
+        <lastmod>2019-07-17T03:27:43.575Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://taejin0527.github.io/tags/booleans/</loc>
+        <lastmod>2019-07-17T03:27:43.575Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://taejin0527.github.io/tags/tutorial/</loc>
+        <lastmod>2019-07-17T03:27:43.575Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://taejin0527.github.io/tags/language/</loc>
-        <lastmod>2019-07-17T02:50:49.995Z</lastmod>
+        <lastmod>2019-07-17T03:27:43.575Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://taejin0527.github.io/tags/python/</loc>
-        <lastmod>2019-07-17T02:50:49.995Z</lastmod>
+        <lastmod>2019-07-17T03:27:43.575Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://taejin0527.github.io/tags/programming-language/</loc>
-        <lastmod>2019-07-17T02:50:49.995Z</lastmod>
+        <lastmod>2019-07-17T03:27:43.575Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://taejin0527.github.io/tags/kaggle/</loc>
+        <lastmod>2019-07-17T03:27:43.575Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://taejin0527.github.io/tags/%ED%8A%9C%ED%86%A0%EB%A6%AC%EC%96%BC/</loc>
+        <lastmod>2019-07-17T03:27:43.575Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://taejin0527.github.io/tags/%EC%BA%90%EA%B8%80/</loc>
+        <lastmod>2019-07-17T03:27:43.575Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://taejin0527.github.io/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC/</loc>
+        <lastmod>2019-07-17T03:27:43.575Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://taejin0527.github.io/tags/functions/</loc>
+        <lastmod>2019-07-17T03:27:29.861Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -117,34 +222,6 @@
     <url>
         <loc>https://taejin0527.github.io/tags/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/</loc>
         <lastmod>2019-07-16T13:44:52.627Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://taejin0527.github.io/tags/%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8/</loc>
-        <lastmod>2019-07-13T09:41:13.593Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://taejin0527.github.io/tags/%ED%97%A5%EC%86%8C/</loc>
-        <lastmod>2019-07-13T09:41:13.593Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://taejin0527.github.io/tags/plugins/</loc>
-        <lastmod>2019-07-13T09:41:13.593Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://taejin0527.github.io/tags/hexo/</loc>
-        <lastmod>2019-07-13T09:41:13.593Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

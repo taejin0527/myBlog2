@@ -4,12 +4,7 @@ date: 2019-07-17 11:45:34
 categories:
   - LANGUAGE
   - PYTHON
-tags:
-  - programming language
-  - python
-  - language
-  - 파이썬
-  - 언어
+tags: [파이썬, 캐글, 튜토리얼, kaggle, programming language, python, language, booleans, conditionals, tutorial]
 subtitle: Kaggle 홈페이지 Python 강좌 참고
 ---
 

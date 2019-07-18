@@ -6,12 +6,7 @@ author:
 categories:
   - LANGUAGE
   - PYTHON
-tags:
-  - programming language
-  - python
-  - language
-  - 파이썬
-  - 언어
+tags: [파이썬, 캐글, 튜토리얼, kaggle, programming language, python, language, tutorial]
 date: 2019-07-12 14:11:51
 subtitle: Kaggle 홈페이지 Python 강좌 참고
 cover: '/img/kaggle_python.png'

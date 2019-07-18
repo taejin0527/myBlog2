@@ -3,12 +3,7 @@ title: 02 Functions and Getting Help
 categories:
   - LANGUAGE
   - PYTHON
-tags:
-  - programming language
-  - python
-  - language
-  - 파이썬
-  - 언어
+tags: [파이썬, 캐글, 튜토리얼, kaggle, programming language, python, language, functions, tutorial]
 date: 2019-07-15 15:06:03
 subtitle: Kaggle 홈페이지 Python 강좌 참고
 
@@ -651,7 +646,7 @@ Hello, world
     14
     {% endcode %}
 
-    기본적으로 `max` 함수는 가장 큰 인수를 반환합니다. 
+    기본적으로 `max` 함수는 가장 큰 인수를 반환합니다.
     그러나 선택적 `key` 인자를 사용하여 함수를 전달하면 `key(x)` (일명 'argmax')를 최대화하는 인자 `x`를 반환합니다.
 
   {% endnote %}
