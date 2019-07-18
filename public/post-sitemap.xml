@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://taejin0527.github.io/2019/07/17/03-booleans-and-conditionals/</loc>
+        <lastmod>2019-07-18T06:18:46.284Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://taejin0527.github.io/2019/07/17/hexo-adsense/</loc>
         <lastmod>2019-07-18T05:11:26.452Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -18,14 +26,6 @@
     <url>
         <loc>https://taejin0527.github.io/2019/07/17/hexo-seo/</loc>
         <lastmod>2019-07-18T02:29:20.044Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://taejin0527.github.io/2019/07/17/03-booleans-and-conditionals/</loc>
-        <lastmod>2019-07-17T03:27:43.575Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
