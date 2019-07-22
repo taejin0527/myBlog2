@@ -1,5 +1,5 @@
 ---
-title: 02 Functions and Getting Help
+title: (파이썬) 02 Functions and Getting Help
 categories:
   - LANGUAGE
   - PYTHON

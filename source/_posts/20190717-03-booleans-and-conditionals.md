@@ -1,5 +1,5 @@
 ---
-title: 03 Booleans and Conditionals
+title: (파이썬) 03 Booleans and Conditionals
 date: 2019-07-17 11:45:34
 categories:
   - LANGUAGE

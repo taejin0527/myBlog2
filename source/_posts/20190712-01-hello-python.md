@@ -1,5 +1,5 @@
 ---
-title: 01 HELLO, PYTHON!
+title: (파이썬) 01 HELLO, PYTHON!
 author:
   nick: TAEJIN
   link: null

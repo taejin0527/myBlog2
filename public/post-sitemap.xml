@@ -8,8 +8,32 @@
     </url>
 
     <url>
+        <loc>https://taejin0527.github.io/2019/07/22/04-lists/</loc>
+        <lastmod>2019-07-22T07:49:48.400Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://taejin0527.github.io/2019/07/12/01-hello-python/</loc>
+        <lastmod>2019-07-22T07:08:07.819Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://taejin0527.github.io/2019/07/15/02-functions-and-getting-help/</loc>
+        <lastmod>2019-07-22T07:08:00.936Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://taejin0527.github.io/2019/07/17/03-booleans-and-conditionals/</loc>
-        <lastmod>2019-07-21T07:09:18.463Z</lastmod>
+        <lastmod>2019-07-22T07:07:55.234Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -26,22 +50,6 @@
     <url>
         <loc>https://taejin0527.github.io/2019/07/17/hexo-seo/</loc>
         <lastmod>2019-07-18T02:29:20.044Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://taejin0527.github.io/2019/07/15/02-functions-and-getting-help/</loc>
-        <lastmod>2019-07-17T03:27:29.861Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://taejin0527.github.io/2019/07/12/01-hello-python/</loc>
-        <lastmod>2019-07-17T03:27:18.735Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
