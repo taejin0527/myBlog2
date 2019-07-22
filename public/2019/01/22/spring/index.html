@@ -84,7 +84,7 @@
     copycode: {"enable":true,"show_result":true,"style":"flat"},
     fancybox: false,
     fastclick: false,
-    lazyload: false,
+    lazyload: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     algolia: {
@@ -112,13 +112,10 @@
 <meta property="og:site_name" content="AttackOnNunu">
 <meta property="og:description" content="가장 좋은 문서는 spring.io 공식 홈페이지에서 제공하는 documents 입니다. 개인적으로 공부하면서 작성하는 문서라 틀린 부분이 있을 수 있으니, 반드시 공식 문서를 참조하시기 바랍니다.  스프링 공식 홈페이지소스코드가이드    1. 스프링공식 홈페이지 첫 화면을 보면 Spring : the source for modern java 라고 적혀있">
 <meta property="og:locale" content="ko">
-<meta property="og:image" content="https://taejin0527.github.io/img/history.png">
-<meta property="og:image" content="https://www.jbrothershi.com/wp-content/uploads/2018/10/SpringPlumbingLogo.png">
 <meta property="og:updated_time" content="2019-07-16T13:50:22.973Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Spring 개요">
 <meta name="twitter:description" content="가장 좋은 문서는 spring.io 공식 홈페이지에서 제공하는 documents 입니다. 개인적으로 공부하면서 작성하는 문서라 틀린 부분이 있을 수 있으니, 반드시 공식 문서를 참조하시기 바랍니다.  스프링 공식 홈페이지소스코드가이드    1. 스프링공식 홈페이지 첫 화면을 보면 Spring : the source for modern java 라고 적혀있">
-<meta name="twitter:image" content="https://taejin0527.github.io/img/history.png">
 
 
 
@@ -510,11 +507,11 @@
 <p>이처럼 스프링은 <u>어디서나 간단하고, 이식하기 쉬우며, 신속하고, 유연하게 JVM 기반의 시스템과 애플리케이션을 구축</u>할 수 있어  ==다양한 프로젝트들의 디자인이 되는 모듈==이라고 생각할 수 있습니다.</p>
 <p>[^1]: <span class="exturl" data-url="aHR0cHM6Ly8xMmJtZS50aXN0b3J5LmNvbS8xNTc=" title="https://12bme.tistory.com/157">스프링이란 무엇인가? - 12bme<i class="fa fa-external-link"></i></span></p>
 <h3 id="2-스프링-프레임워크란"><a href="#2-스프링-프레임워크란" class="headerlink" title="2. 스프링 프레임워크란"></a>2. 스프링 프레임워크란</h3><p> 위에서 언급한 12bme님의 포스트를 보셨으면 쉽게 이해하시겠지만, <em>엔터프라이즈 애플리케이션</em> 개발이 어려운 이유는 사회가 점점 복잡해지고, 시스템에서 다루어야 하는 업무의 복잡도와 의존도가 높아져 <u>개발의 복잡성이 증가</u>했기 때문입니다. 이에 사용자의 요구를 빠르고 안정적이면서 확장 가능한 형태로 유지가히 위한 로우레벨(Low level) 수준의 기술적 처리가 필요해졌고 우리는 스프링 프레임워크를 통해 쉽게 자바 엔터프라이즈 애플리케이션을 개발할 수 있게 되었습니다.</p>
-<p><img src="/img/history.png" alt="history"></p>
+<p><img alt="history" data-src="/img/history.png"></p>
 <p> 2004년 3월 Spring Framework 1.0 버전을 시작으로, 포스트 작성일 기준(2019년 1월) Spring Framework는 5.1.4 버전이 최신 버전입니다.</p>
 <p> 짧게 스프링(Spring)이라고 불리는 스프링 프레임워크는 <strong>모든 플랫폼에서 자바 기반 엔터프라이즈 애플리케이션(JAVA EE) 개발을 편하게 해주는 종합적인 프로그래밍 및 구성 모델을 제공</strong>합니다.</p>
 <p> 프레임워크의 바탕인 <em>스프링</em> 의 핵심 요소가 <u>애플리케이션 수준에서의 인프라 지원</u>이기 때문에 스프링 프레임워크에서는 개발 환경 구축에 필요한 하부구조(Infrastructure)를 포괄적으로 제공하고 처리하기 때문에 <u>개발자는 애플리케이션 개발(plumbing[^2])에 집중</u>할 수 있게 되었습니다.</p>
-<p><img src="https://www.jbrothershi.com/wp-content/uploads/2018/10/SpringPlumbingLogo.png" alt="plumbing"></p>
+<p><img alt="plumbing" data-src="https://www.jbrothershi.com/wp-content/uploads/2018/10/SpringPlumbingLogo.png"></p>
 <p> 참고로 스프링 프레임워크는 대한민국 공공기관의 웹 서비스 개발 시 사용을 권장하고 있는 전자 정부 표준 프레임워크의 기반 기술입니다.</p>
 <p>[^2]: 원문에는 plumbing이라는 단어로 표현하는데, 프레임워크가 부품들 다 만들어 놓으면 개발자는 그것들을 조립하는 느낌이라 이런 단어를 사용한 것 같습니다.</p>
 <p><br><br><br></p>
@@ -924,6 +921,8 @@
 
 
 
+  
+
 
 
   
@@ -943,6 +942,9 @@
 
   
   <script src="/lib/jquery/index.js?v=3.4.1"></script>
+
+  
+  <script src="/lib/lazyload/lozad.min.js?v=1.10.0"></script>
 
   
   <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>

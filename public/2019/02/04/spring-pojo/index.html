@@ -84,7 +84,7 @@
     copycode: {"enable":true,"show_result":true,"style":"flat"},
     fancybox: false,
     fastclick: false,
-    lazyload: false,
+    lazyload: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     algolia: {
@@ -112,12 +112,10 @@
 <meta property="og:site_name" content="AttackOnNunu">
 <meta property="og:description" content="ReferencePlain Old Java Object-위키POJO(Plain Old Java Object)  아직 많은 것을 알지 못하기 때문에 자세하고 정확한 내용은 제가 참조한 사이트나 따로 검색 또는 책을 통해 알아보는 것을 권장드립니다. POJO:heavy_check_mark: Plain Old Java Object : (직역) 평범한 옛날 자바">
 <meta property="og:locale" content="ko">
-<meta property="og:image" content="https://martinfowler.com/img/mf-cologne.jpg">
 <meta property="og:updated_time" content="2019-07-16T13:49:47.560Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="스프링 - POJO">
 <meta name="twitter:description" content="ReferencePlain Old Java Object-위키POJO(Plain Old Java Object)  아직 많은 것을 알지 못하기 때문에 자세하고 정확한 내용은 제가 참조한 사이트나 따로 검색 또는 책을 통해 알아보는 것을 권장드립니다. POJO:heavy_check_mark: Plain Old Java Object : (직역) 평범한 옛날 자바">
-<meta name="twitter:image" content="https://martinfowler.com/img/mf-cologne.jpg">
 
 
 
@@ -486,7 +484,7 @@
 <p>Martin Fowler, &lt;&lt;리팩토링&gt;&gt;</p>
 </blockquote>
 </blockquote>
-<img style="float:right; height:150px;" src="https://martinfowler.com/img/mf-cologne.jpg">
+<img style="float:right; height:150px;" data-src="https://martinfowler.com/img/mf-cologne.jpg">
 
 <p> POJO는 리팩토링과 애자일 소프트웨어 개발로 유명한 영국의 소프트웨어 개발자 <strong>마틴 파울러</strong> 가 2000년 가을에 열렸던 어느 컨퍼런스의 발표를 준비하면서 처음 사용한 단어입니다. 그는 당시 <u>EJB(Enterprise JavaBean) 보다는 단순한 자바 오브젝트에 도메인 로직을 넣어 사용하는 것이 여러가지 장점이 있는데 왜 사람들이 EJB가 아닌 ‘평범한 자바 오브젝트’를 사용하기를 꺼려하하는지에 대해 의문을 가졌습니다</u> 그래서 그의 생각을 널리 알리기 위해 그는 개발자들의 심리를 이용한 기발한 전략을 세웠습니다. POJO라는 용어를 만들고 이를 기반으로한 기술을 사용한다고 발표하여 다른 개발자들에게 마치 새로운 첨단 기술인 듯한 인상을 주었습니다.<br> 정리하자면, 마틴 파울러는</p>
 <ul>
@@ -925,6 +923,8 @@
 
 
 
+  
+
 
 
   
@@ -944,6 +944,9 @@
 
   
   <script src="/lib/jquery/index.js?v=3.4.1"></script>
+
+  
+  <script src="/lib/lazyload/lozad.min.js?v=1.10.0"></script>
 
   
   <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>

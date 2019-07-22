@@ -84,7 +84,7 @@
     copycode: {"enable":true,"show_result":true,"style":"flat"},
     fancybox: false,
     fastclick: false,
-    lazyload: false,
+    lazyload: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     algolia: {
@@ -112,13 +112,10 @@
 <meta property="og:site_name" content="AttackOnNunu">
 <meta property="og:description" content="Reference Spring IoC Containers – Types of Spring Container Spring 공식 문서 Spring - IoC &amp;amp; DI   아직 많은 것을 알지 못하기 때문에 자세하고 정확한 내용은 제가 참조한 사이트나 따로 검색 또는 책을 통해 알아보는 것을 권장드립니다. 용어정리Bean - 빌더 형식의 개발도구에서 가시">
 <meta property="og:locale" content="ko">
-<meta property="og:image" content="https://img1.daumcdn.net/thumb/R720x0.q80/?scode=mtistory&fname=http%3A%2F%2Fcfile10.uf.tistory.com%2Fimage%2F252FCF3B5231689B17B553">
-<meta property="og:image" content="http://www.javachain.com/wp-content/uploads/2014/07/Beanfactory1.png">
 <meta property="og:updated_time" content="2019-07-16T13:49:37.943Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="스프링 - IoC Containers">
 <meta name="twitter:description" content="Reference Spring IoC Containers – Types of Spring Container Spring 공식 문서 Spring - IoC &amp;amp; DI   아직 많은 것을 알지 못하기 때문에 자세하고 정확한 내용은 제가 참조한 사이트나 따로 검색 또는 책을 통해 알아보는 것을 권장드립니다. 용어정리Bean - 빌더 형식의 개발도구에서 가시">
-<meta name="twitter:image" content="https://img1.daumcdn.net/thumb/R720x0.q80/?scode=mtistory&fname=http%3A%2F%2Fcfile10.uf.tistory.com%2Fimage%2F252FCF3B5231689B17B553">
 
 
 
@@ -484,7 +481,7 @@
 <hr>
 <p><code>아직 많은 것을 알지 못하기 때문에 자세하고 정확한 내용은 제가 참조한 사이트나 따로 검색 또는 책을 통해 알아보는 것을 권장드립니다.</code></p>
 <h2 id="용어정리"><a href="#용어정리" class="headerlink" title="용어정리"></a>용어정리</h2><dl><dt><span style="color:green">Bean</span> - <strong>빌더 형식의 개발도구에서 가시적으로 조작이 가능하고 또한 재사용이 가능한 소프트웨어 컴포넌트</strong></dt><dd>썬 마이크로시스템즈에서 정의한 자바빈. 명칭의 유래는 자바(java)를 개발할 때 개발자들이 커피를 너무 많이 소비하여 커피가 그들의 상징으로 사용하였고, 커피콩(beans)은 작은 커피콩처럼 코딩의 작은 부분들을 나타냅니다.</dd></dl><dl><dt><span style="color:green">Spring Bean</span> - <strong>스프링 IoC 컨테이너로 DI(의존성 주입)을 통해 구성 요소를 관리하는 객체</strong></dt><dd>자바빈, EJB의 빈과 비슷한 오브젝트 단위의 애플리케이션 컴포넌트를 말합니다. 하지만 스프링을 사용하는 애플리케이션에서 만들어지는 모든 오브젝트가 빈은 아닙니다. <strong>스프링의 빈은 컨테이너가 생성과 관계 설정, 사용 등을 제어해주는 오브젝트를 가리킵니다.</strong></dd></dl><dl><dt><span style="color:green">Container(IoC container)</span> - <strong>개발자가 작성한 코드의 처리과정을 위임받은 독립적인 존재</strong></dt><dd>적절한 설정만 되어 있다면 누구의 도움 없이도 개발자가 작성한 코드를 스스로 참조한 뒤 알아서 객체의 생성과 소멸을 컨트롤 해줍니다. 스프링에서는 IoC 방식으로 bean을 관리한다는 의미에서 bean factory나 application context를 가리킵니다.</dd></dl><h2 id="IoC-Inversion-of-Control-제어의-역전"><a href="#IoC-Inversion-of-Control-제어의-역전" class="headerlink" title="IoC(Inversion of Control - 제어의 역전)"></a>IoC(Inversion of Control - 제어의 역전)</h2><p>Inversion of Control(<strong>IoC</strong>)은 Dependency Injection(<strong>DI</strong>)라고 알려져 있기도 합니다. 엄밀하게는 DI는 아래의 그림과 같이 IoC 패턴 중 하나이지만 IoC의 개념을 잡는데 흔히 마틴 파울러의 <em>‘Dependency Injection Pattern’</em> 글( <span class="exturl" data-url="aHR0cDovL3dpa2kuamF2YWppZ2kubmV0L3BhZ2VzL3ZpZXdwYWdlLmFjdGlvbj9wYWdlSWQ9Njg=" title="http://wiki.javajigi.net/pages/viewpage.action?pageId=68">번역<i class="fa fa-external-link"></i></span> )을 참고하다 보니 그런 것 같습니다.</p>
-<p><img src="https://img1.daumcdn.net/thumb/R720x0.q80/?scode=mtistory&fname=http%3A%2F%2Fcfile10.uf.tistory.com%2Fimage%2F252FCF3B5231689B17B553" alt="ioc"></p>
+<p><img alt="ioc" data-src="https://img1.daumcdn.net/thumb/R720x0.q80/?scode=mtistory&fname=http%3A%2F%2Fcfile10.uf.tistory.com%2Fimage%2F252FCF3B5231689B17B553"></p>
 <p> <span style="color:red;">DL (Dependency Lookup) - 의존성 검색</span></p>
 <ul>
 <li><p>저장소에 저장되어 있는 빈(Bean)에 접근하기 위하여 개발자들이 컨테이너에서 제공하는 API를 이용하여 사용하고자 하는 빈을 검색(Lookup)하는 것</p>
@@ -521,7 +518,7 @@
 <ul>
 <li>Singleton 인스턴스와 Non-Singleton 인스턴스의 의존 관계를 연결 시킬 필요가 있을 경우 사용하지만, 많이 사용되지는 않습니다.</li>
 </ul>
-<h2 id="Spring-IoC-Container"><a href="#Spring-IoC-Container" class="headerlink" title="Spring IoC Container"></a>Spring IoC Container</h2><img src="http://www.javachain.com/wp-content/uploads/2014/07/Beanfactory1.png">
+<h2 id="Spring-IoC-Container"><a href="#Spring-IoC-Container" class="headerlink" title="Spring IoC Container"></a>Spring IoC Container</h2><img data-src="http://www.javachain.com/wp-content/uploads/2014/07/Beanfactory1.png">
 
 <p>스프링 프레임워크의 IoC 컨테이너에는 크게</p>
 <ul>
@@ -925,6 +922,8 @@
 
 
 
+  
+
 
 
   
@@ -944,6 +943,9 @@
 
   
   <script src="/lib/jquery/index.js?v=3.4.1"></script>
+
+  
+  <script src="/lib/lazyload/lozad.min.js?v=1.10.0"></script>
 
   
   <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>

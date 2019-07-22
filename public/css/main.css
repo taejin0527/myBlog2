@@ -514,12 +514,10 @@ body {
   outline: 0;
   transition: opacity 0.3s ease-in-out;
   opacity: 0;
-  background-color: #eee;
-  background-image: linear-gradient(#fcfcfc, #eee);
-  border: 1px solid #d5d5d5;
-  border-radius: 3px;
-  right: 4px;
-  top: 8px;
+  background-color: #fff;
+  border: none;
+  right: 0px;
+  height: 42px;
 }
 pre,
 .highlight {
@@ -553,7 +551,7 @@ pre code {
   text-shadow: none;
 }
 .highlight {
-  border-radius: 1px;
+  border-radius: 10px;
 }
 .highlight pre {
   border: none;
@@ -1772,7 +1770,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #5b036a;
+  background: #09ffa4;
 }
 .feed-link,
 .chat {
