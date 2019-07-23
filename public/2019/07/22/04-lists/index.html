@@ -104,18 +104,18 @@
 
 
 
-  <meta name="description" content="Reference Kaggle 홈페이지 - Kaggle 7강 ‘Lists’ - Python Micro-Course Home Page     리스트(Lists)파이썬의 Lists 는 정렬된 순서의 값을 나냅니다. 아래의 예제를 통해 어떻게 생성하는지 살펴보겠습니다. INT_typestring_typelist_of_listsmix_typeprimes = [2,">
+  <meta name="description" content="Reference Kaggle 홈페이지 - Kaggle 7강 ‘Lists’ - Python Micro-Course Home Page   영어 실력이 부족하여 문맥이 이해가 가지 않는 부분은 원본을 참고하시길 바랍니다…언젠가는 실력이 나아지기를…     리스트(Lists)파이썬의 Lists 는 정렬된 순서의 값을 나냅니다. 아래의 예제를 통해 어떻게 생성하는">
 <meta name="keywords" content="파이썬,캐글,튜토리얼,kaggle,programming language,python,language,tutorial,booleans,conditionals">
 <meta property="og:type" content="article">
 <meta property="og:title" content="(파이썬) 04 Lists">
 <meta property="og:url" content="https://taejin0527.github.io/2019/07/22/04-lists/index.html">
 <meta property="og:site_name" content="AttackOnNunu">
-<meta property="og:description" content="Reference Kaggle 홈페이지 - Kaggle 7강 ‘Lists’ - Python Micro-Course Home Page     리스트(Lists)파이썬의 Lists 는 정렬된 순서의 값을 나냅니다. 아래의 예제를 통해 어떻게 생성하는지 살펴보겠습니다. INT_typestring_typelist_of_listsmix_typeprimes = [2,">
+<meta property="og:description" content="Reference Kaggle 홈페이지 - Kaggle 7강 ‘Lists’ - Python Micro-Course Home Page   영어 실력이 부족하여 문맥이 이해가 가지 않는 부분은 원본을 참고하시길 바랍니다…언젠가는 실력이 나아지기를…     리스트(Lists)파이썬의 Lists 는 정렬된 순서의 값을 나냅니다. 아래의 예제를 통해 어떻게 생성하는">
 <meta property="og:locale" content="ko">
-<meta property="og:updated_time" content="2019-07-22T07:49:48.400Z">
+<meta property="og:updated_time" content="2019-07-23T11:07:04.353Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="(파이썬) 04 Lists">
-<meta name="twitter:description" content="Reference Kaggle 홈페이지 - Kaggle 7강 ‘Lists’ - Python Micro-Course Home Page     리스트(Lists)파이썬의 Lists 는 정렬된 순서의 값을 나냅니다. 아래의 예제를 통해 어떻게 생성하는지 살펴보겠습니다. INT_typestring_typelist_of_listsmix_typeprimes = [2,">
+<meta name="twitter:description" content="Reference Kaggle 홈페이지 - Kaggle 7강 ‘Lists’ - Python Micro-Course Home Page   영어 실력이 부족하여 문맥이 이해가 가지 않는 부분은 원본을 참고하시길 바랍니다…언젠가는 실력이 나아지기를…     리스트(Lists)파이썬의 Lists 는 정렬된 순서의 값을 나냅니다. 아래의 예제를 통해 어떻게 생성하는">
 
 
 
@@ -477,6 +477,9 @@
 <li>Kaggle 홈페이지 - <span class="exturl" data-url="aHR0cHM6Ly93d3cua2FnZ2xlLmNvbQ==" title="https://www.kaggle.com">Kaggle<i class="fa fa-external-link"></i></span></li>
 <li>7강 ‘Lists’ - <span class="exturl" data-url="aHR0cHM6Ly93d3cua2FnZ2xlLmNvbS9jb2xpbm1vcnJpcy9saXN0cw==" title="https://www.kaggle.com/colinmorris/lists">Python Micro-Course Home Page<i class="fa fa-external-link"></i></span></li>
 </ul>
+<blockquote>
+<p>영어 실력이 부족하여 문맥이 이해가 가지 않는 부분은 원본을 참고하시길 바랍니다…<br>언젠가는 실력이 나아지기를…</p>
+</blockquote>
 <hr>
 <br>
 
@@ -517,7 +520,74 @@
             <p>마지막 행성 3개</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># The last 3 planets</span></span><br><span class="line">planets[<span class="number">-3</span>:]</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[&apos;Saturn&apos;, &apos;Uranus&apos;, &apos;Neptune&apos;]</span><br></pre></td></tr></table></figure>
           </div>
 
-<h2 id="리스트-수정-Changing-lists"><a href="#리스트-수정-Changing-lists" class="headerlink" title="리스트 수정(Changing lists)"></a>리스트 수정(Changing lists)</h2><h2 id="리스트-함수-List-functions"><a href="#리스트-함수-List-functions" class="headerlink" title="리스트 함수(List functions)"></a>리스트 함수(List functions)</h2><p><br><br><br></p>
+<h2 id="리스트-수정-Changing-lists"><a href="#리스트-수정-Changing-lists" class="headerlink" title="리스트 수정(Changing lists)"></a>리스트 수정(Changing lists)</h2><p>리스트는 “변경 가능(mutable)” 하며, 이는 “제자리(in place)”에서 수정할 수 있음을 의미합니다.</p>
+<p>리스트를 수정하는 한 가지 방법은 인덱스 또는 슬라이스를 사용하는 방법입니다.</p>
+<p>예를 들어 Mars(화성)의 이름을 바꾸고 싶다고합시다 :</p>
+<div class="note no-icon">
+              <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">planets[<span class="number">3</span>] = <span class="string">'Malacandra'</span></span><br><span class="line">planets</span><br></pre></td></tr></table></figure>  <div class="spoiler collapsed"><div class="spoiler-title">Malacandra가_뭐지?</div><div class="spoiler-content"><p>나니아 연대기로 유명한 C. S. Lewis의 소설 <span class="exturl" data-url="aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvT3V0X29mX3RoZV9TaWxlbnRfUGxhbmV0" title="https://en.wikipedia.org/wiki/Out_of_the_Silent_Planet">침묵의 행성 밖으로(Out of the Silent Planet)<i class="fa fa-external-link"></i></span>에서 화성인들을 Ma’aleca’andra 라고 부릅니다.</p></div></div></div>  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[&apos;Mercury&apos;, &apos;Venus&apos;, &apos;Earth&apos;, &apos;Malacandra&apos;, &apos;Jupiter&apos;, &apos;Saturn&apos;, &apos;Uranus&apos;, &apos;Neptune&apos;]</span><br></pre></td></tr></table></figure>
+          
+
+<p>음… 이름이 너무 긴 것 같군요. 첫 3개 행성들의 이름을 줄여보겠습니다.</p>
+<div class="note no-icon">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">planets[:<span class="number">3</span>] = [<span class="string">'Mur'</span>, <span class="string">'Vee'</span>, <span class="string">'Ur'</span>]</span><br><span class="line">print(planets)</span><br><span class="line"><span class="comment"># 출력 이후 변경 사항들을 되돌려 놓겠습니다.</span></span><br><span class="line">planets[:<span class="number">4</span>] = [<span class="string">'Mercury'</span>, <span class="string">'Venus'</span>, <span class="string">'Earth'</span>, <span class="string">'Mars'</span>,]</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[&apos;Mur&apos;, &apos;Vee&apos;, &apos;Ur&apos;, &apos;Malacandra&apos;, &apos;Jupiter&apos;, &apos;Saturn&apos;, &apos;Uranus&apos;, &apos;Neptune&apos;]</span><br></pre></td></tr></table></figure>
+          </div>
+
+<h2 id="리스트-함수-List-functions"><a href="#리스트-함수-List-functions" class="headerlink" title="리스트 함수(List functions)"></a>리스트 함수(List functions)</h2><p>파이썬은 리스트를 사용하는데 매우 유용한 몇 가지 함수들을 제공합니다.</p>
+<div class="tabs" id="list_functions"><ul class="nav-tabs"><li class="tab active"><a href="#list_functions-1"><i class="fa fa-code"></i>LEN</a></li><li class="tab"><a href="#list_functions-2"><i class="fa fa-code"></i>SORT</a></li><li class="tab"><a href="#list_functions-3"><i class="fa fa-code"></i>SUM</a></li><li class="tab"><a href="#list_functions-4"><i class="fa fa-code"></i>MAX</a></li></ul><div class="tab-content"><div class="tab-pane active" id="list_functions-1"><div class="note primary no-icon">
+            <p><code>len</code> 은 리스트의 길이를 알려줍니다.</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># How many planets are there?</span></span><br><span class="line">len(planets)  </span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">8 </span><br></pre></td></tr></table></figure>
+          </div></div><div class="tab-pane" id="list_functions-2"><div class="note primary no-icon">
+            <p><code>sorted</code> 는 정렬된 리스트를 반환합니다.</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># The planets sorted in alphabetical order</span></span><br><span class="line">sorted(planets) </span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[&apos;Earth&apos;, &apos;Jupiter&apos;, &apos;Mars&apos;, &apos;Mercury&apos;, &apos;Neptune&apos;, &apos;Saturn&apos;, &apos;Uranus&apos;, &apos;Venus&apos;] </span><br></pre></td></tr></table></figure>
+          </div></div><div class="tab-pane" id="list_functions-3"><div class="note primary no-icon">
+            <p><code>sum</code> 은 무엇을 반환할지 눈치채셨을 겁니다.</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">primes = [<span class="number">2</span>, <span class="number">3</span>, <span class="number">5</span>, <span class="number">7</span>]</span><br><span class="line">sum(primes) </span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">17 </span><br></pre></td></tr></table></figure>
+          </div></div><div class="tab-pane" id="list_functions-4"><div class="note primary no-icon">
+            <p>이전에 <code>min</code> 및 <code>max</code> 를 사용하여 최소 또는 최대 인수를 구해봤습니다. 우리는 하나의 리스트를 매개 변수로 전달할 수도 있습니다.</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">max(primes) </span><br></pre></td></tr></table></figure>  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">7 </span><br></pre></td></tr></table></figure>
+          </div></div></div></div>
+
+<h2 id="참고-객체-Interlude-objects"><a href="#참고-객체-Interlude-objects" class="headerlink" title="참고: 객체(Interlude: objects)"></a>참고: 객체(Interlude: objects)</h2><p>지금까지 ‘Object(객체)’라는 용어를 많이 사용했습니다 - 파이썬에서 모든 것이 객체라는 것을 들어보셨을 수도 있습니다. 이것이 무엇을 의미할까요?<br>간단히 말해서, 객체들은 무언가(변수, 함수 등)를 주변에 가지고 다닙니다. 그리고 우리는 파이썬의 도트 구문(dot syntax)을 사용하여 그것들에 액세스 할 수 있습니다.</p>
+<p>예를 들어 파이썬의 numbers에는 <code>imag</code> 라는 허수를 나타내는 변수를 가지고 있습니다. (특별한 경우의 수학 연산을 하지 않는 한, 이것을 사용할 필요는 없을 것입니다.)</p>
+<div class="note no-icon">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x = <span class="number">12</span></span><br><span class="line"><span class="comment"># x is a real number, so its imaginary part is 0.</span></span><br><span class="line">print(x.imag)</span><br><span class="line"><span class="comment"># Here's how to make a complex number, in case you've ever been curious:</span></span><br><span class="line">c = <span class="number">12</span> + <span class="number">3j</span></span><br><span class="line">print(c.imag) </span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">0</span><br><span class="line">3.0 </span><br></pre></td></tr></table></figure>
+          </div>
+
+<p>객체가 운반하는 것들 중에는 함수들도 포함되어 있습니다. 객체에 속한 함수를 <strong>메소드(method)</strong> 라고합니다. (<code>imag</code> 와 같이 객체에 속한 기능이 없는 객체를 <strong>속성(attribute)</strong> 이라고 합니다.)</p>
+<p>예를 들어 numbers에는 <code>bit_length</code> 라는 메서드가 있습니다. 다시 말하지만, 도트 ​​구문을 사용하여 액세스할 수 있습니다.</p>
+<div class="note danger">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x.bit_length  </span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;function int.bit_length&gt; </span><br></pre></td></tr></table></figure>
+          </div>
+
+<p>메소드를 호출하기 위해서는 괄호를 추가해야 합니다.</p>
+<div class="note no-icon">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x.bit_length()  </span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">4 </span><br></pre></td></tr></table></figure>
+          </div>
+
+<p><code>help</code> 함수에 함수들을 전달했듯이(e.g. <code>help(max)</code>), 메소드들도 똑같이 전달할 수 있습니다.</p>
+<div class="note no-icon">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">help(x.bit_length)  </span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Help on built-in function bit_length:</span><br><span class="line"></span><br><span class="line">bit_length(...) method of builtins.int instance</span><br><span class="line">    int.bit_length() -&gt; int</span><br><span class="line"></span><br><span class="line">    Number of bits necessary to represent self in binary.</span><br><span class="line">    &gt;&gt;&gt; bin(37)</span><br><span class="line">    &apos;0b100101&apos;</span><br><span class="line">    &gt;&gt;&gt; (37).bit_length()</span><br><span class="line">    6 </span><br></pre></td></tr></table></figure>
+          </div>
+
+<p>앞선 예들은 매우 애매한 것들이였습니다. 지금까지 살펴본 객체 유형들(numbers, functions, booleans)의 속성이나 메소드들은 흔히 사용되지 않는 것들이기 때문입니다.</p>
+<p>하지만 리스트에는 항상 자주 사용되는 몇 가지 메소드들이 있습니다.</p>
+<h2 id="리스트-메소드들-List-methods"><a href="#리스트-메소드들-List-methods" class="headerlink" title="리스트 메소드들(List methods)"></a>리스트 메소드들(List methods)</h2><p><code>list.append</code> 를 사용하여 리스트의 마지막에 item을 추가할 수 있습니다:</p>
+<div class="tabs" id="list_append"><ul class="nav-tabs"><li class="tab active"><a href="#list_append-1"><i class="fa fa-code"></i>.APPEND</a></li><li class="tab"><a href="#list_append-2"><i class="fa fa-book"></i>HELP</a></li></ul><div class="tab-content"><div class="tab-pane active" id="list_append-1"><div class="note no-icon">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Pluto is a planet darn it!</span></span><br><span class="line">planets.append(<span class="string">'Pluto'</span>)</span><br><span class="line">planets </span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[&apos;Mercury&apos;, &apos;Venus&apos;, &apos;Earth&apos;, &apos;Mars&apos;, &apos;Jupiter&apos;, &apos;Saturn&apos;, &apos;Uranus&apos;, &apos;Neptune&apos;, &apos;Pluto&apos;] </span><br></pre></td></tr></table></figure>
+          </div>
+
+
+<p>왜 <code>append()</code> 함수에는 반환값이 없을까요? <code>help(planets.append)</code> 를 호출하여 설명서를 확인해 보세요.</p>
+<blockquote>
+<p><strong>잠깐</strong> : <code>append</code>는 <code>planets</code>에만 있는 메소드가 아니라 모든 리스트 타입의 객체가 가지고 다니는 메소드이므로 <code>help(list.append)</code>를 호출해도 됩니다. 하지만 <code>help(append)</code>는 호출하면 Python에서 “append”라는 변수가 없다고 응답할 것 입니다. “append”는 리스트 내에만 존재합니다 - 내장 함수인 <code>max</code> 나 <code>len</code> 와 같이 독립적으로 존재하지 않습니다.</p>
+</blockquote></div><div class="tab-pane" id="list_append-2"><div class="note info no-icon">
+            <p><code>-&gt; None</code> 은 <code>list.append</code> 가 아무것도 반환하지 않는다는 것을 말합니다. 하지만 <code>planets</code>를 확인해보면 메소드의 호출로 값이 제대로 추가된 것을 볼 수 있습니다 :</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">help(planets.append) </span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Help on built-in function append:</span><br><span class="line"></span><br><span class="line">append(...) method of builtins.list instance</span><br><span class="line">    L.append(object) -&gt; None -- append object to end </span><br></pre></td></tr></table></figure>
+          </div></div></div></div>
+
+
+<p><code>list.pop</code> 은 리스트의 마지막 element를 제거하고 반환합니다:</p>
+<div class="note no-icon">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">planets.pop()</span><br><span class="line">planets  </span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&apos;Pluto&apos;</span><br><span class="line">[&apos;Mercury&apos;, &apos;Venus&apos;, &apos;Earth&apos;, &apos;Mars&apos;, &apos;Jupiter&apos;, &apos;Saturn&apos;, &apos;Uranus&apos;, &apos;Neptune&apos;] </span><br></pre></td></tr></table></figure>
+          </div>
+
+
+<h3 id="리스트-검색-Searching-lists"><a href="#리스트-검색-Searching-lists" class="headerlink" title="리스트 검색(Searching lists)"></a>리스트 검색(Searching lists)</h3><h2 id="튜플-Tuples"><a href="#튜플-Tuples" class="headerlink" title="튜플(Tuples)"></a>튜플(Tuples)</h2><p><br><br><br></p>
 <h1 id="연습문제-Your-Turn"><a href="#연습문제-Your-Turn" class="headerlink" title="연습문제(Your Turn)"></a>연습문제(Your Turn)</h1><p><span class="exturl" data-url="aHR0cHM6Ly93d3cua2FnZ2xlLmNvbS9rZXJuZWxzL2ZvcmsvMTI3NTE3Mw==" title="https://www.kaggle.com/kernels/fork/1275173">리스트(lists) 예제<i class="fa fa-external-link"></i></span></p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
       
@@ -855,7 +925,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Reference"><span class="nav-text">Reference</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#리스트-Lists"><span class="nav-text">리스트(Lists)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#색인-Indexing"><span class="nav-text">색인(Indexing)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#슬라이싱-Slicing"><span class="nav-text">슬라이싱(Slicing)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#리스트-수정-Changing-lists"><span class="nav-text">리스트 수정(Changing lists)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#리스트-함수-List-functions"><span class="nav-text">리스트 함수(List functions)</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#연습문제-Your-Turn"><span class="nav-text">연습문제(Your Turn)</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Reference"><span class="nav-text">Reference</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#리스트-Lists"><span class="nav-text">리스트(Lists)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#색인-Indexing"><span class="nav-text">색인(Indexing)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#슬라이싱-Slicing"><span class="nav-text">슬라이싱(Slicing)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#리스트-수정-Changing-lists"><span class="nav-text">리스트 수정(Changing lists)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#리스트-함수-List-functions"><span class="nav-text">리스트 함수(List functions)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#참고-객체-Interlude-objects"><span class="nav-text">참고: 객체(Interlude: objects)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#리스트-메소드들-List-methods"><span class="nav-text">리스트 메소드들(List methods)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#리스트-검색-Searching-lists"><span class="nav-text">리스트 검색(Searching lists)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#튜플-Tuples"><span class="nav-text">튜플(Tuples)</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#연습문제-Your-Turn"><span class="nav-text">연습문제(Your Turn)</span></a></li></ol></div>
             
 
           </div>
