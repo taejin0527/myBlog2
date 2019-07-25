@@ -8,6 +8,22 @@
     </url>
 
     <url>
+        <loc>https://taejin0527.github.io/2019/01/28/cda-tutorial-1/</loc>
+        <lastmod>2019-07-25T15:49:21.526Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://taejin0527.github.io/2019/01/19/cda-tutorial/</loc>
+        <lastmod>2019-07-25T15:49:09.298Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://taejin0527.github.io/2019/07/25/05-loops-and-list-comprehensions/</loc>
         <lastmod>2019-07-25T07:33:15.457Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -80,14 +96,6 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/2019/01/28/cda-tutorial-1/</loc>
-        <lastmod>2019-07-16T13:50:15.354Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://taejin0527.github.io/2019/01/31/spring-module/</loc>
         <lastmod>2019-07-16T13:50:08.744Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -130,14 +138,6 @@
     <url>
         <loc>https://taejin0527.github.io/2019/02/05/os-overview/</loc>
         <lastmod>2019-07-16T13:44:52.627Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://taejin0527.github.io/2019/01/19/cda-tutorial/</loc>
-        <lastmod>2019-07-13T09:41:13.585Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

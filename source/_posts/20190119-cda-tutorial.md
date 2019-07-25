@@ -9,7 +9,7 @@ categories:
   - HL7
 tags:
   - HL7
-  - cda
+  - CDA
 cover: 'https://images.slideplayer.com/25/7958574/slides/slide_1.jpg'
 date: 2019-01-19 19:07:59
 

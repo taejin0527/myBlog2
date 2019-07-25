@@ -3,6 +3,27 @@
 
 
     <url>
+        <loc>https://taejin0527.github.io/tags/HL7/</loc>
+        <lastmod>2019-07-25T15:49:21.526Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://taejin0527.github.io/tags/CDA/</loc>
+        <lastmod>2019-07-25T15:49:21.526Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://taejin0527.github.io/tags/tutorial/</loc>
+        <lastmod>2019-07-25T07:33:15.457Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://taejin0527.github.io/tags/conditionals/</loc>
         <lastmod>2019-07-25T07:33:15.457Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -11,13 +32,6 @@
 
     <url>
         <loc>https://taejin0527.github.io/tags/booleans/</loc>
-        <lastmod>2019-07-25T07:33:15.457Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://taejin0527.github.io/tags/tutorial/</loc>
         <lastmod>2019-07-25T07:33:15.457Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -178,27 +192,6 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/tags/C-CDA/</loc>
-        <lastmod>2019-07-16T13:50:15.354Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://taejin0527.github.io/tags/CDA/</loc>
-        <lastmod>2019-07-16T13:50:15.354Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://taejin0527.github.io/tags/HL7/</loc>
-        <lastmod>2019-07-16T13:50:15.354Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://taejin0527.github.io/tags/MODULES/</loc>
         <lastmod>2019-07-16T13:50:08.744Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -243,13 +236,6 @@
     <url>
         <loc>https://taejin0527.github.io/tags/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/</loc>
         <lastmod>2019-07-16T13:44:52.627Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://taejin0527.github.io/tags/cda/</loc>
-        <lastmod>2019-07-13T09:41:13.585Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

@@ -8,7 +8,6 @@ categories:
   - HL7
 tags:
   - CDA
-  - C-CDA
   - HL7
 date: 2019-01-28 16:08:17
 subtitle:
