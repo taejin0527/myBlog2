@@ -356,6 +356,270 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/2019/07/26/06-strings-and-dictionaries/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="NUNU">
+      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="AttackOnNunu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/07/26/06-strings-and-dictionaries/" class="post-title-link" itemprop="url">(파이썬) 06 Strings and Dictionaries</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2019-07-26 22:11:36" itemprop="dateCreated datePublished" datetime="2019-07-26T22:11:36+09:00">2019-07-26</time>
+            </span>
+          
+
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/" itemprop="url" rel="index"><span itemprop="name">LANGUAGE</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/" itemprop="url" rel="index"><span itemprop="name">PYTHON</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">댓글: </span>
+                <a href="/2019/07/26/06-strings-and-dictionaries/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/07/26/06-strings-and-dictionaries/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
+<li>Kaggle 홈페이지 - <span class="exturl" data-url="aHR0cHM6Ly93d3cua2FnZ2xlLmNvbQ==" title="https://www.kaggle.com">Kaggle<i class="fa fa-external-link"></i></span></li>
+<li>11강 ‘Strings and Dictionaries’ - <span class="exturl" data-url="aHR0cHM6Ly93d3cua2FnZ2xlLmNvbS9jb2xpbm1vcnJpcy9zdHJpbmdzLWFuZC1kaWN0aW9uYXJpZXM=" title="https://www.kaggle.com/colinmorris/strings-and-dictionaries">Python Micro-Course Home Page<i class="fa fa-external-link"></i></span></li>
+</ul>
+<blockquote>
+<p>영어 실력이 부족하여 문맥이 이해가 가지 않는 부분은 원문을 참고하시길 바랍니다…<br>언젠가는 실력이 나아지기를…</p>
+</blockquote>
+<hr>
+<p>이번 강에서는 파이썬의 필수적인 타입인 <strong>strings</strong> 와 <strong>dictionaries</strong> 에 대해 알아보겠습니다.</p>
+<h1 id="문자열-Strings"><a href="#문자열-Strings" class="headerlink" title="문자열(Strings)"></a>문자열(Strings)</h1><p>파이썬의 장점이 빛나는 순간 중 하나는 문자열을 조작할 때 입니다. 이번 섹션에서 파이썬에 내장된 문자열 함수들과 포맷팅 작업들에 대해 알아보겠습니다.</p>
+<p>문자열 조작 패턴들은 데이터 사이언스(데이터 분석/마이닝) 작업할 때 자주 등장하는데, 이런 맥락에서 볼 때 문자열 조작은 파이썬의 큰 장점 중 하나라고 할 수 있습니다.</p>
+<h2 id="문자열-문법-String-syntax"><a href="#문자열-문법-String-syntax" class="headerlink" title="문자열 문법(String syntax)"></a>문자열 문법(String syntax)</h2><p>이전 수업들의 예제에서 많은 문자열들을 다루며 이미 아시겠지만, 간단히 요약하자면 파이썬의 문자열은 작은 따옴표나 큰 따옴표 중 하나를 사용하여 정의 할 수 있습니다. 둘은 기능적으로 동일합니다.</p>
+<div class="note no-icon">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x = <span class="string">'Pluto is a planet'</span></span><br><span class="line">y = <span class="string">"Pluto is a planet"</span></span><br><span class="line">x == y  </span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="literal">True</span>  </span><br></pre></td></tr></table></figure>
+          </div>
+
+<p>문자열에 작은 따옴표가 들어가는 경우(e.g. apostrophe) 큰 따옴표를 사용하면 편리합니다.<br>마찬가지로 큰 따옴표가 포함된 문자열은 작은 따옴표로 묶으면 쉽게 만들 수 있습니다.</p>
+<div class="note no-icon">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(<span class="string">"Pluto's a planet!"</span>)</span><br><span class="line">print(<span class="string">'My dog is named "Pluto"'</span>) </span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">Pluto<span class="string">'s a planet!</span></span><br><span class="line"><span class="string">My dog is named "Pluto" </span></span><br></pre></td></tr></table></figure>
+          </div>
+
+<p>만약 작은 따옴표로 묶은 문자열에 작은 따옴표 문자를 넣으면 우리가 원하는 것과는 다르게 파이썬은 잘못 이해할 수 있습니다.</p>
+<div class="note warning no-icon">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="string">'Pluto'</span>s a planet!<span class="string">' </span></span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">File <span class="string">"&lt;ipython-input-3-a43631749f52&gt;"</span>, line <span class="number">1</span></span><br><span class="line">  <span class="string">'Pluto'</span>s a planet!<span class="string">'</span></span><br><span class="line"><span class="string">         ^</span></span><br><span class="line"><span class="string">SyntaxError: invalid syntax</span></span><br></pre></td></tr></table></figure>
+          </div>
+
+<p>작은 따옴표 문자에 백슬래시로 “예외” 처리하여 이를 해결할 수는 있습니다.</p>
+<div class="note no-icon">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="string">'Pluto\'s a planet!'</span> </span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="string">'Pluto'</span>s a planet!<span class="string">' </span></span><br></pre></td></tr></table></figure>
+          </div>
+
+<p>아래의 표는 백슬래시 문자 사용법의 요약입니다.</p>
+<table>
+<thead>
+<tr>
+<th align="left">What you type…</th>
+<th align="left">What you get</th>
+<th align="left">example</th>
+<th align="left"><code>print(example)</code></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>\&#39;</code></td>
+<td align="left"><code>&#39;</code></td>
+<td align="left"><code>&#39;What\&#39;s up?&#39;</code></td>
+<td align="left"><code>What&#39;s up?</code></td>
+</tr>
+<tr>
+<td align="left"><code>\&quot;</code></td>
+<td align="left"><code>&quot;</code></td>
+<td align="left"><code>&quot;That&#39;s \&quot;cool\&quot;&quot;</code></td>
+<td align="left"><code>That&#39;s &quot;cool&quot;</code></td>
+</tr>
+<tr>
+<td align="left"><code>\\</code></td>
+<td align="left"><code>\</code></td>
+<td align="left"><code>&quot;Look, a mountain: /\\&quot;</code></td>
+<td align="left"><code>Look, a mountain: /\</code></td>
+</tr>
+<tr>
+<td align="left"><code>\n</code></td>
+<td align="left"></td>
+<td align="left"><code>&quot;1\n2 3&quot;</code></td>
+<td align="left"><code>1</code> <code>2 3</code></td>
+</tr>
+</tbody></table>
+<p>표 마지막의 <code>\n</code> 은 개행 문자를 나타냅니다. 이를 통해 파이썬에서 줄 바꿈이 발생합니다.</p>
+<div class="note no-icon">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">hello = <span class="string">"hello\nworld"</span></span><br><span class="line">print(hello) </span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">hello</span><br><span class="line">world </span><br></pre></td></tr></table></figure>
+          </div>
+
+<p>또 다른 방법으로, 파이썬에서 문자열에 따옴표 세 개(triple quote syntax for strings)를 사용하면 입력하는 문자 그대로 개행 문자도 포함 할 수 있습니다.(즉, ‘\n’ 시퀀스를 사용하지 않고 키보드에서 ‘Enter’키를 치는 것만으로 줄 바꿈이 일어납니다). 우리는 함수를 문서화하는 데 사용하는 docstrings 을 배우면서 이것을 한번 본적이 있는데 사실 문자열을 정의하고자 하는 곳이면 어디에서나 사용할 수 있습니다.</p>
+<div class="note no-icon">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">triplequoted_hello = <span class="string">"""hello</span></span><br><span class="line"><span class="string">world"""</span></span><br><span class="line">print(triplequoted_hello)</span><br><span class="line">triplequoted_hello == hello </span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hello</span><br><span class="line">world</span><br><span class="line"></span><br><span class="line">True </span><br></pre></td></tr></table></figure>
+          </div>
+
+<p><code>print()</code> 함수는 <code>end</code> 키워드 인자에 특별한 값을 지정하지 않는한 기본값으로 <code>&#39;\n&#39;</code> 을 가지기 때문에 자동으로 개행 문자를 추가합니다.</p>
+<div class="note no-icon">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(<span class="string">"hello"</span>)</span><br><span class="line">print(<span class="string">"world"</span>)</span><br><span class="line">print(<span class="string">"hello"</span>, end=<span class="string">''</span>)</span><br><span class="line">print(<span class="string">"pluto"</span>, end=<span class="string">''</span>) </span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hello</span><br><span class="line">world</span><br><span class="line">hellopluto </span><br></pre></td></tr></table></figure>
+          </div>
+
+<h2 id="Strings-are-sequences"><a href="#Strings-are-sequences" class="headerlink" title="Strings are sequences"></a>Strings are sequences</h2><h2 id="String-methods"><a href="#String-methods" class="headerlink" title="String methods"></a>String methods</h2><h3 id="Going-between-strings-and-lists-split-and-join"><a href="#Going-between-strings-and-lists-split-and-join" class="headerlink" title="Going between strings and lists: .split() and .join()"></a>Going between strings and lists: .split() and .join()</h3><h3 id="Building-strings-with-format"><a href="#Building-strings-with-format" class="headerlink" title="Building strings with .format()"></a>Building strings with .format()</h3><hr>
+<h1 id="딕셔너리-Dictionaries"><a href="#딕셔너리-Dictionaries" class="headerlink" title="딕셔너리(Dictionaries)"></a>딕셔너리(Dictionaries)</h1><hr>
+<p><br><br><br></p>
+<h1 id="연습문제-Your-Turn"><a href="#연습문제-Your-Turn" class="headerlink" title="연습문제(Your Turn)"></a>연습문제(Your Turn)</h1><p><span class="exturl" data-url="aHR0cHM6Ly93d3cua2FnZ2xlLmNvbS9rZXJuZWxzL2ZvcmsvMTI3NTE4NQ==" title="https://www.kaggle.com/kernels/fork/1275185">strings and dictionaries 예제<i class="fa fa-external-link"></i></span></p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/2019/07/25/05-loops-and-list-comprehensions/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -482,7 +746,7 @@
 <li>9강 ‘Loops and List Comprehensions’ - <span class="exturl" data-url="aHR0cHM6Ly93d3cua2FnZ2xlLmNvbS9jb2xpbm1vcnJpcy9sb29wcy1hbmQtbGlzdC1jb21wcmVoZW5zaW9ucw==" title="https://www.kaggle.com/colinmorris/loops-and-list-comprehensions">Python Micro-Course Home Page<i class="fa fa-external-link"></i></span></li>
 </ul>
 <blockquote>
-<p>영어 실력이 부족하여 문맥이 이해가 가지 않는 부분은 원본을 참고하시길 바랍니다…<br>언젠가는 실력이 나아지기를…</p>
+<p>영어 실력이 부족하여 문맥이 이해가 가지 않는 부분은 원문을 참고하시길 바랍니다…<br>언젠가는 실력이 나아지기를…</p>
 </blockquote>
 <hr>
 <br>
@@ -829,346 +1093,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/2019/07/22/04-lists/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="NUNU">
-      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="AttackOnNunu">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/07/22/04-lists/" class="post-title-link" itemprop="url">(파이썬) 04 Lists</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">작성일</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2019-07-22 16:05:45" itemprop="dateCreated datePublished" datetime="2019-07-22T16:05:45+09:00">2019-07-22</time>
-            </span>
-          
-
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/" itemprop="url" rel="index"><span itemprop="name">LANGUAGE</span></a></span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/" itemprop="url" rel="index"><span itemprop="name">PYTHON</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">댓글: </span>
-                <a href="/2019/07/22/04-lists/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/07/22/04-lists/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          <br>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
-<li>Kaggle 홈페이지 - <span class="exturl" data-url="aHR0cHM6Ly93d3cua2FnZ2xlLmNvbQ==" title="https://www.kaggle.com">Kaggle<i class="fa fa-external-link"></i></span></li>
-<li>7강 ‘Lists’ - <span class="exturl" data-url="aHR0cHM6Ly93d3cua2FnZ2xlLmNvbS9jb2xpbm1vcnJpcy9saXN0cw==" title="https://www.kaggle.com/colinmorris/lists">Python Micro-Course Home Page<i class="fa fa-external-link"></i></span></li>
-</ul>
-<blockquote>
-<p>영어 실력이 부족하여 문맥이 이해가 가지 않는 부분은 원본을 참고하시길 바랍니다…<br>언젠가는 실력이 나아지기를…</p>
-</blockquote>
-<hr>
-<br>
-
-<h1 id="리스트-Lists"><a href="#리스트-Lists" class="headerlink" title="리스트(Lists)"></a>리스트(Lists)</h1><p>파이썬의 Lists 는 정렬된 순서의 값을 나냅니다. 아래의 예제를 통해 어떻게 생성하는지 살펴보겠습니다.</p>
-<div class="tabs" id="create_lists"><ul class="nav-tabs"><li class="tab active"><a href="#create_lists-1"><i class="fa fa-code"></i>INT_type</a></li><li class="tab"><a href="#create_lists-2"><i class="fa fa-code"></i>string_type</a></li><li class="tab"><a href="#create_lists-3"><i class="fa fa-code"></i>list_of_lists</a></li><li class="tab"><a href="#create_lists-4"><i class="fa fa-code"></i>mix_type</a></li></ul><div class="tab-content"><div class="tab-pane active" id="create_lists-1"><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">primes = [<span class="number">2</span>, <span class="number">3</span>, <span class="number">5</span>, <span class="number">7</span>]</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="create_lists-2"><p>lists 에는 다른 타입의 데이터도 넣을 수 있습니다.</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">planets = [<span class="string">'Mercury'</span>, <span class="string">'Venus'</span>, <span class="string">'Earth'</span>, <span class="string">'Mars'</span>, <span class="string">'Jupiter'</span>, <span class="string">'Saturn'</span>, <span class="string">'Uranus'</span>, <span class="string">'Neptune'</span>]</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="create_lists-3"><p>list의 list를 만들 수도 있습니다.</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">hands = [</span><br><span class="line">    [<span class="string">'J'</span>, <span class="string">'Q'</span>, <span class="string">'K'</span>],</span><br><span class="line">    [<span class="string">'2'</span>, <span class="string">'2'</span>, <span class="string">'2'</span>],</span><br><span class="line">    [<span class="string">'6'</span>, <span class="string">'A'</span>, <span class="string">'K'</span>], <span class="comment"># (Comma after the last element is optional)</span></span><br><span class="line">]</span><br><span class="line"><span class="comment"># (I could also have written this on one line, but it can get hard to read)</span></span><br><span class="line">hands = [[<span class="string">'J'</span>, <span class="string">'Q'</span>, <span class="string">'K'</span>], [<span class="string">'2'</span>, <span class="string">'2'</span>, <span class="string">'2'</span>], [<span class="string">'6'</span>, <span class="string">'A'</span>, <span class="string">'K'</span>]]</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="create_lists-4"><p>서로 다른 타입의 변수들도 같이 넣을 수 있습니다.</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">my_favourite_things = [<span class="number">32</span>, <span class="string">'raindrops on roses'</span>, help]</span><br><span class="line"><span class="comment"># (Yes, Python's help function is *definitely* one of my favourite things)</span></span><br></pre></td></tr></table></figure></div></div></div>
-
-<h2 id="색인-Indexing"><a href="#색인-Indexing" class="headerlink" title="색인(Indexing)"></a>색인(Indexing)</h2><p>대괄호를 사용하여 list의 각 요소에 접근할 수 있습니다.</p>
-<p><strong>어떤 행성이 태양과 가장 가까울까요?</strong></p>
-<div class="tabs" id="indexing"><ul class="nav-tabs"><li class="tab active"><a href="#indexing-1"><i class="fa fa-code"></i>CLOSEST</a></li><li class="tab"><a href="#indexing-2"><i class="fa fa-code"></i>NEXT_CLOSEST</a></li><li class="tab"><a href="#indexing-3"><i class="fa fa-code"></i>FURTHEST</a></li><li class="tab"><a href="#indexing-4"><i class="fa fa-code"></i>NEXT_FURTHEST</a></li></ul><div class="tab-content"><div class="tab-pane active" id="indexing-1"><p>파이썬은 0부터 시작하는 인덱싱을 사용하므로 첫 번째 요소의 인덱스는 0 입니다.</p>
-  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">planets[<span class="number">0</span>]</span><br></pre></td></tr></table></figure>
-  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&apos;Mercury&apos;</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="indexing-2"><p>다음으로 가까운 행성은 어디일까요?</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">planets[<span class="number">1</span>]</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&apos;Venus&apos;</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="indexing-3"><p>태양으로 부터 가장 먼 행성은 어느 것일까요?<br>목록의 끝에있는 요소는 -1부터 시작하여 음수로 액세스 할 수 있습니다.</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">planets[<span class="number">-1</span>]</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&apos;Neptune&apos;</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="indexing-4"><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">planets[<span class="number">-2</span>]</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&apos;Uranus&apos;</span><br></pre></td></tr></table></figure></div></div></div>
-
-<h2 id="슬라이싱-Slicing"><a href="#슬라이싱-Slicing" class="headerlink" title="슬라이싱(Slicing)"></a>슬라이싱(Slicing)</h2><p>첫 3개의 행성은 어떤 것인가요? <code>slicing</code> 을 통해 우리는 답을 얻을 수 있습니다.</p>
-<div class="tabs" id="slicing_1"><ul class="nav-tabs"><li class="tab active"><a href="#slicing_1-1"><i class="fa fa-code"></i>CODE_1</a></li><li class="tab"><a href="#slicing_1-2"><i class="fa fa-code"></i>CODE_2</a></li></ul><div class="tab-content"><div class="tab-pane active" id="slicing_1-1"><p><code>planets[0:3]</code> 은 인덱스 0 이상 3 미만의 <code>planet</code> 의 요소들을 가리킵니다.</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">planets[<span class="number">0</span>:<span class="number">3</span>]</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[&apos;Mercury&apos;, &apos;Venus&apos;, &apos;Earth&apos;]</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="slicing_1-2"><p>시작과 끝 인덱스는 모두 선택사항(optional)입니다. 시작 인덱스를 생략하면 0 으로 간주됩니다. 따라서 다음과 같이 작성할 수도 있습니다.</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">planets[:<span class="number">3</span>]</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[&apos;Mercury&apos;, &apos;Venus&apos;, &apos;Earth&apos;]</span><br></pre></td></tr></table></figure>  
-
-<div class="note default no-icon">
-          <p>마지막 인덱스를 생략하면 범위를 list의 길이로 간주합니다.</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">planets[<span class="number">3</span>:]</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[&apos;Mars&apos;, &apos;Jupiter&apos;, &apos;Saturn&apos;, &apos;Uranus&apos;, &apos;Neptune&apos;]</span><br></pre></td></tr></table></figure>즉, 인덱스 3부터 시작하는 모든 요소들을 나타냅니다.
-        </div></div></div></div>
-
-<p>슬라이싱할 때 음수 인덱스를 사용할 수도 있습니다.</p>
-<div class="note no-icon">
-            <p>처음과 마지막을 제외한 모든 행성</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># All the planets except the first and last</span></span><br><span class="line">planets[<span class="number">1</span>:<span class="number">-1</span>]</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[&apos;Venus&apos;, &apos;Earth&apos;, &apos;Mars&apos;, &apos;Jupiter&apos;, &apos;Saturn&apos;, &apos;Uranus&apos;]</span><br></pre></td></tr></table></figure>
-          </div>
-
-<div class="note no-icon">
-            <p>마지막 행성 3개</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># The last 3 planets</span></span><br><span class="line">planets[<span class="number">-3</span>:]</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[&apos;Saturn&apos;, &apos;Uranus&apos;, &apos;Neptune&apos;]</span><br></pre></td></tr></table></figure>
-          </div>
-
-<h2 id="리스트-수정-Changing-lists"><a href="#리스트-수정-Changing-lists" class="headerlink" title="리스트 수정(Changing lists)"></a>리스트 수정(Changing lists)</h2><p>list는 “변경 가능(mutable)” 하며, 이는 “제자리(in place)”에서 수정할 수 있음을 의미합니다.</p>
-<p>list를 수정하는 한 가지 방법은 인덱스 또는 슬라이스를 사용하는 방법입니다.</p>
-<p>예를 들어 Mars(화성)의 이름을 바꾸고 싶다고합시다 :</p>
-<div class="note no-icon">
-              <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">planets[<span class="number">3</span>] = <span class="string">'Malacandra'</span></span><br><span class="line">planets</span><br></pre></td></tr></table></figure>  <div class="spoiler collapsed"><div class="spoiler-title">Malacandra가_뭐지?</div><div class="spoiler-content"><p>나니아 연대기로 유명한 C. S. Lewis의 소설 <span class="exturl" data-url="aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvT3V0X29mX3RoZV9TaWxlbnRfUGxhbmV0" title="https://en.wikipedia.org/wiki/Out_of_the_Silent_Planet">침묵의 행성 밖으로(Out of the Silent Planet)<i class="fa fa-external-link"></i></span>에서 화성인들을 Ma’aleca’andra 라고 부릅니다.</p></div></div></div>  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[&apos;Mercury&apos;, &apos;Venus&apos;, &apos;Earth&apos;, &apos;Malacandra&apos;, &apos;Jupiter&apos;, &apos;Saturn&apos;, &apos;Uranus&apos;, &apos;Neptune&apos;]</span><br></pre></td></tr></table></figure>
-          
-
-<p>음… 이름이 너무 긴 것 같군요. 첫 3개 행성들의 이름을 줄여보겠습니다.</p>
-<div class="note no-icon">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">planets[:<span class="number">3</span>] = [<span class="string">'Mur'</span>, <span class="string">'Vee'</span>, <span class="string">'Ur'</span>]</span><br><span class="line">print(planets)</span><br><span class="line"><span class="comment"># 출력 이후 변경 사항들을 되돌려 놓겠습니다.</span></span><br><span class="line">planets[:<span class="number">4</span>] = [<span class="string">'Mercury'</span>, <span class="string">'Venus'</span>, <span class="string">'Earth'</span>, <span class="string">'Mars'</span>,]</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[&apos;Mur&apos;, &apos;Vee&apos;, &apos;Ur&apos;, &apos;Malacandra&apos;, &apos;Jupiter&apos;, &apos;Saturn&apos;, &apos;Uranus&apos;, &apos;Neptune&apos;]</span><br></pre></td></tr></table></figure>
-          </div>
-
-<h2 id="리스트-함수-List-functions"><a href="#리스트-함수-List-functions" class="headerlink" title="리스트 함수(List functions)"></a>리스트 함수(List functions)</h2><p>파이썬은 list를 사용하는데 매우 유용한 몇 가지 함수들을 제공합니다.</p>
-<div class="tabs" id="list_functions"><ul class="nav-tabs"><li class="tab active"><a href="#list_functions-1"><i class="fa fa-code"></i>LEN</a></li><li class="tab"><a href="#list_functions-2"><i class="fa fa-code"></i>SORT</a></li><li class="tab"><a href="#list_functions-3"><i class="fa fa-code"></i>SUM</a></li><li class="tab"><a href="#list_functions-4"><i class="fa fa-code"></i>MAX</a></li></ul><div class="tab-content"><div class="tab-pane active" id="list_functions-1"><div class="note primary no-icon">
-            <p><code>len</code> 은 list의 길이를 알려줍니다.</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># How many planets are there?</span></span><br><span class="line">len(planets)  </span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">8 </span><br></pre></td></tr></table></figure>
-          </div></div><div class="tab-pane" id="list_functions-2"><div class="note primary no-icon">
-            <p><code>sorted</code> 는 정렬된 list를 반환합니다.</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># The planets sorted in alphabetical order</span></span><br><span class="line">sorted(planets) </span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[&apos;Earth&apos;, &apos;Jupiter&apos;, &apos;Mars&apos;, &apos;Mercury&apos;, &apos;Neptune&apos;, &apos;Saturn&apos;, &apos;Uranus&apos;, &apos;Venus&apos;] </span><br></pre></td></tr></table></figure>
-          </div></div><div class="tab-pane" id="list_functions-3"><div class="note primary no-icon">
-            <p><code>sum</code> 은 무엇을 반환할지 눈치채셨을 겁니다.</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">primes = [<span class="number">2</span>, <span class="number">3</span>, <span class="number">5</span>, <span class="number">7</span>]</span><br><span class="line">sum(primes) </span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">17 </span><br></pre></td></tr></table></figure>
-          </div></div><div class="tab-pane" id="list_functions-4"><div class="note primary no-icon">
-            <p>이전에 <code>min</code> 및 <code>max</code> 를 사용하여 최소 또는 최대 인수를 구해봤습니다. 우리는 하나의 list를 매개 변수로 전달할 수도 있습니다.</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">max(primes) </span><br></pre></td></tr></table></figure>  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">7 </span><br></pre></td></tr></table></figure>
-          </div></div></div></div>
-
-<h2 id="참고-객체-Interlude-objects"><a href="#참고-객체-Interlude-objects" class="headerlink" title="참고: 객체(Interlude: objects)"></a>참고: 객체(Interlude: objects)</h2><p>지금까지 ‘Object(객체)’라는 용어를 많이 사용했습니다 - 파이썬에서 모든 것이 객체라는 것을 들어보셨을 수도 있습니다. 이것이 무엇을 의미할까요?<br>간단히 말해서, 객체들은 무언가(변수, 함수 등)를 주변에 가지고 다닙니다. 그리고 우리는 파이썬의 도트 구문(dot syntax)을 사용하여 그것들에 액세스 할 수 있습니다.</p>
-<p>예를 들어 파이썬의 numbers에는 <code>imag</code> 라는 허수를 나타내는 변수를 가지고 있습니다. (특별한 경우의 수학 연산을 하지 않는 한, 이것을 사용할 필요는 없을 것입니다.)</p>
-<div class="note no-icon">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x = <span class="number">12</span></span><br><span class="line"><span class="comment"># x is a real number, so its imaginary part is 0.</span></span><br><span class="line">print(x.imag)</span><br><span class="line"><span class="comment"># Here's how to make a complex number, in case you've ever been curious:</span></span><br><span class="line">c = <span class="number">12</span> + <span class="number">3j</span></span><br><span class="line">print(c.imag) </span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">0</span><br><span class="line">3.0 </span><br></pre></td></tr></table></figure>
-          </div>
-
-<p>객체가 운반하는 것들 중에는 함수들도 포함되어 있습니다. 객체에 속한 함수를 <strong>메소드(method)</strong> 라고합니다. (<code>imag</code> 와 같이 객체에 속한 기능이 없는 객체를 <strong>속성(attribute)</strong> 이라고 합니다.)</p>
-<p>예를 들어 numbers에는 <code>bit_length</code> 라는 메서드가 있습니다. 다시 말하지만, 도트 ​​구문을 사용하여 액세스할 수 있습니다.</p>
-<div class="note danger">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x.bit_length  </span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;function int.bit_length&gt; </span><br></pre></td></tr></table></figure>
-          </div>
-
-<p>메소드를 호출하기 위해서는 괄호를 추가해야 합니다.</p>
-<div class="note no-icon">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x.bit_length()  </span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">4 </span><br></pre></td></tr></table></figure>
-          </div>
-
-<p><code>help</code> 함수에 함수들을 전달했듯이(e.g. <code>help(max)</code>), 메소드들도 똑같이 전달할 수 있습니다.</p>
-<div class="note no-icon">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">help(x.bit_length)  </span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Help on built-in function bit_length:</span><br><span class="line"></span><br><span class="line">bit_length(...) method of builtins.int instance</span><br><span class="line">    int.bit_length() -&gt; int</span><br><span class="line"></span><br><span class="line">    Number of bits necessary to represent self in binary.</span><br><span class="line">    &gt;&gt;&gt; bin(37)</span><br><span class="line">    &apos;0b100101&apos;</span><br><span class="line">    &gt;&gt;&gt; (37).bit_length()</span><br><span class="line">    6 </span><br></pre></td></tr></table></figure>
-          </div>
-
-<p>앞선 예들은 매우 애매한 것들이였습니다. 지금까지 살펴본 객체 유형들(numbers, functions, booleans)의 속성이나 메소드들은 흔히 사용되지 않는 것들이기 때문입니다.</p>
-<p>하지만 list에는 항상 자주 사용되는 몇 가지 메소드들이 있습니다.</p>
-<h2 id="리스트-메소드들-List-methods"><a href="#리스트-메소드들-List-methods" class="headerlink" title="리스트 메소드들(List methods)"></a>리스트 메소드들(List methods)</h2><p><code>list.append</code> 를 사용하여 list의 마지막에 item을 추가할 수 있습니다:</p>
-<div class="tabs" id="list_append"><ul class="nav-tabs"><li class="tab active"><a href="#list_append-1"><i class="fa fa-code"></i>.APPEND</a></li><li class="tab"><a href="#list_append-2"><i class="fa fa-book"></i>HELP</a></li></ul><div class="tab-content"><div class="tab-pane active" id="list_append-1"><div class="note no-icon">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Pluto is a planet darn it!</span></span><br><span class="line">planets.append(<span class="string">'Pluto'</span>)</span><br><span class="line">planets </span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[&apos;Mercury&apos;, &apos;Venus&apos;, &apos;Earth&apos;, &apos;Mars&apos;, &apos;Jupiter&apos;, &apos;Saturn&apos;, &apos;Uranus&apos;, &apos;Neptune&apos;, &apos;Pluto&apos;] </span><br></pre></td></tr></table></figure>
-          </div>
-
-
-<p>왜 <code>append()</code> 함수에는 반환값이 없을까요? <code>help(planets.append)</code> 를 호출하여 설명서를 확인해 보세요.</p>
-<blockquote>
-<p><strong>잠깐</strong> : <code>append</code>는 <code>planets</code>에만 있는 메소드가 아니라 모든 리스트 타입의 객체가 가지고 다니는 메소드이므로 <code>help(list.append)</code>를 호출해도 됩니다. 하지만 <code>help(append)</code>는 호출하면 Python에서 “append”라는 변수가 없다고 응답할 것 입니다. “append”는 리스트 내에만 존재합니다 - 내장 함수인 <code>max</code> 나 <code>len</code> 와 같이 독립적으로 존재하지 않습니다.</p>
-</blockquote></div><div class="tab-pane" id="list_append-2"><div class="note info no-icon">
-            <p><code>-&gt; None</code> 은 <code>list.append</code> 가 아무것도 반환하지 않는다는 것을 말합니다. 하지만 <code>planets</code>를 확인해보면 메소드의 호출로 값이 제대로 추가된 것을 볼 수 있습니다 :</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">help(planets.append) </span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Help on built-in function append:</span><br><span class="line"></span><br><span class="line">append(...) method of builtins.list instance</span><br><span class="line">    L.append(object) -&gt; None -- append object to end </span><br></pre></td></tr></table></figure>
-          </div></div></div></div>
-
-
-<p><code>list.pop</code> 은 list의 마지막 element를 제거하고 반환합니다:</p>
-<div class="note no-icon">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">planets.pop()</span><br><span class="line">planets  </span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&apos;Pluto&apos;</span><br><span class="line">[&apos;Mercury&apos;, &apos;Venus&apos;, &apos;Earth&apos;, &apos;Mars&apos;, &apos;Jupiter&apos;, &apos;Saturn&apos;, &apos;Uranus&apos;, &apos;Neptune&apos;] </span><br></pre></td></tr></table></figure>
-          </div>
-
-
-<h3 id="리스트-검색-Searching-lists"><a href="#리스트-검색-Searching-lists" class="headerlink" title="리스트 검색(Searching lists)"></a>리스트 검색(Searching lists)</h3><p>지구는 태양계의 몇 번째 행성일까요? <code>list.index</code> 를 사용해서 해당 색인(index)을 알아낼 수 있습니다.</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">planets.index(<span class="string">'Earth'</span>)</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">2</span><br></pre></td></tr></table></figure>
-
-<p>3번째 행성이군요.(i.e. 색인은 0에서 시작하기 때문)<br>그렇다면 플루토 행성은 몇 번째 일까요?</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">planets.index(<span class="string">'Pluto'</span>)</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">---------------------------------------------------------------------------</span><br><span class="line">ValueError                                Traceback (most recent call last)</span><br><span class="line">&lt;ipython-input<span class="number">-30</span><span class="number">-3</span>a8584cba91a&gt; <span class="keyword">in</span> &lt;module&gt;()</span><br><span class="line">----&gt; 1 planets.index('Pluto')</span><br><span class="line"></span><br><span class="line">ValueError: <span class="string">'Pluto'</span> <span class="keyword">is</span> <span class="keyword">not</span> <span class="keyword">in</span> list</span><br></pre></td></tr></table></figure>
-
-<p>저런, 이전 예제에서 ‘Pluto’를 삭제 했었다는걸 까먹었군요<br>이와 같은 예상치 못한 상황을 피하기 위해 <code>in</code> 연산자를 사용하여 목록에 특정한 값이 들어 있는지를 확인할 수 있습니다.</p>
-<div class="tabs" id="search_examples"><ul class="nav-tabs"><li class="tab active"><a href="#search_examples-1"><i class="fa fa-eye"></i>EXAMPLE_1</a></li><li class="tab"><a href="#search_examples-2"><i class="fa fa-eye"></i>EXAMPLE_2</a></li></ul><div class="tab-content"><div class="tab-pane active" id="search_examples-1"><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Is Earth a planet?</span></span><br><span class="line"><span class="string">"Earth"</span> <span class="keyword">in</span> planets  </span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">True  </span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="search_examples-2"><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Is Calbefraques a planet?</span></span><br><span class="line"><span class="string">"Calbefraques"</span> <span class="keyword">in</span> planets </span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">False </span><br></pre></td></tr></table></figure></div></div></div>
-
-<p>이 외에도 여기서 다루지 않은 몇 가지 흥미로운 list 메소드들이 있습니다. 특정 객체에 포함된 모든 메소드와 속성들을 알고 싶다면 객체 자체에서 <code>help()</code> 를 호출하시면 됩니다. 예를 들어, <code>help(planets)</code> 는 모든 list 메서드에 대해 알려줍니다.</p>
-<div class="tabs" id="help_planets"><ul class="nav-tabs"><li class="tab active"><a href="#help_planets-1"><i class="fa fa-code"></i>CODE</a></li><li class="tab"><a href="#help_planets-2"><i class="fa fa-terminal"></i>output</a></li></ul><div class="tab-content"><div class="tab-pane active" id="help_planets-1"><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">help(planets) </span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="help_planets-2"><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">Help on list object:</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">list</span><span class="params">(object)</span></span></span><br><span class="line"><span class="class"> |  <span class="title">list</span><span class="params">()</span> -&gt; new empty list</span></span><br><span class="line"><span class="class"> |  list(iterable) -&gt; new list initialized from iterable's items</span></span><br><span class="line"><span class="class"> |  </span></span><br><span class="line"><span class="class"> |  Methods defined here:</span></span><br><span class="line"> |  </span><br><span class="line"> |  __add__(self, value, /)</span><br><span class="line"> |      Return self+value.</span><br><span class="line"> |  </span><br><span class="line"> |  __contains__(self, key, /)</span><br><span class="line"> |      Return key <span class="keyword">in</span> self.</span><br><span class="line"> |  </span><br><span class="line"> |  __delitem__(self, key, /)</span><br><span class="line"> |      Delete self[key].</span><br><span class="line"> |  </span><br><span class="line"> |  __eq__(self, value, /)</span><br><span class="line"> |      Return self==value.</span><br><span class="line"> |  </span><br><span class="line"> |  __ge__(self, value, /)</span><br><span class="line"> |      Return self&gt;=value.</span><br><span class="line"> |  </span><br><span class="line"> |  __getattribute__(self, name, /)</span><br><span class="line"> |      Return getattr(self, name).</span><br><span class="line"> |  </span><br><span class="line"> |  __getitem__(...)</span><br><span class="line"> |      x.__getitem__(y) &lt;==&gt; x[y]</span><br><span class="line"> |  </span><br><span class="line"> |  __gt__(self, value, /)</span><br><span class="line"> |      Return self&gt;value.</span><br><span class="line"> |  </span><br><span class="line"> |  __iadd__(self, value, /)</span><br><span class="line"> |      Implement self+=value.</span><br><span class="line"> |  </span><br><span class="line"> |  __imul__(self, value, /)</span><br><span class="line"> |      Implement self*=value.</span><br><span class="line"> |  </span><br><span class="line"> |  __init__(self, /, *args, **kwargs)</span><br><span class="line"> |      Initialize self.  See help(type(self)) <span class="keyword">for</span> accurate signature.</span><br><span class="line"> |  </span><br><span class="line"> |  __iter__(self, /)</span><br><span class="line"> |      Implement iter(self).</span><br><span class="line"> |  </span><br><span class="line"> |  __le__(self, value, /)</span><br><span class="line"> |      Return self&lt;=value.</span><br><span class="line"> |  </span><br><span class="line"> |  __len__(self, /)</span><br><span class="line"> |      Return len(self).</span><br><span class="line"> |  </span><br><span class="line"> |  __lt__(self, value, /)</span><br><span class="line"> |      Return self&lt;value.</span><br><span class="line"> |  </span><br><span class="line"> |  __mul__(self, value, /)</span><br><span class="line"> |      Return self*value.</span><br><span class="line"> |  </span><br><span class="line"> |  __ne__(self, value, /)</span><br><span class="line"> |      Return self!=value.</span><br><span class="line"> |  </span><br><span class="line"> |  __new__(*args, **kwargs) <span class="keyword">from</span> builtins.type</span><br><span class="line"> |      Create <span class="keyword">and</span> <span class="keyword">return</span> a new object.  See help(type) <span class="keyword">for</span> accurate signature.</span><br><span class="line"> |  </span><br><span class="line"> |  __repr__(self, /)</span><br><span class="line"> |      Return repr(self).</span><br><span class="line"> |  </span><br><span class="line"> |  __reversed__(...)</span><br><span class="line"> |      L.__reversed__() -- <span class="keyword">return</span> a reverse iterator over the list</span><br><span class="line"> |  </span><br><span class="line"> |  __rmul__(self, value, /)</span><br><span class="line"> |      Return value*self.</span><br><span class="line"> |  </span><br><span class="line"> |  __setitem__(self, key, value, /)</span><br><span class="line"> |      Set self[key] to value.</span><br><span class="line"> |  </span><br><span class="line"> |  __sizeof__(...)</span><br><span class="line"> |      L.__sizeof__() -- size of L <span class="keyword">in</span> memory, <span class="keyword">in</span> bytes</span><br><span class="line"> |  </span><br><span class="line"> |  append(...)</span><br><span class="line"> |      L.append(object) -&gt; None -- append object to end</span><br><span class="line"> |  </span><br><span class="line"> |  clear(...)</span><br><span class="line"> |      L.clear() -&gt; None -- remove all items from L</span><br><span class="line"> |  </span><br><span class="line"> |  copy(...)</span><br><span class="line"> |      L.copy() -&gt; list -- a shallow copy of L</span><br><span class="line"> |  </span><br><span class="line"> |  count(...)</span><br><span class="line"> |      L.count(value) -&gt; integer -- return number of occurrences of value</span><br><span class="line"> |  </span><br><span class="line"> |  extend(...)</span><br><span class="line"> |      L.extend(iterable) -&gt; None -- extend list by appending elements from the iterable</span><br><span class="line"> |  </span><br><span class="line"> |  index(...)</span><br><span class="line"> |      L.index(value, [start, [stop]]) -&gt; integer -- return first index of value.</span><br><span class="line"> |      Raises ValueError <span class="keyword">if</span> the value <span class="keyword">is</span> <span class="keyword">not</span> present.</span><br><span class="line"> |  </span><br><span class="line"> |  insert(...)</span><br><span class="line"> |      L.insert(index, object) -- insert object before index</span><br><span class="line"> |  </span><br><span class="line"> |  pop(...)</span><br><span class="line"> |      L.pop([index]) -&gt; item -- remove and return item at index (default last).</span><br><span class="line"> |      Raises IndexError <span class="keyword">if</span> list <span class="keyword">is</span> empty <span class="keyword">or</span> index <span class="keyword">is</span> out of range.</span><br><span class="line"> |  </span><br><span class="line"> |  remove(...)</span><br><span class="line"> |      L.remove(value) -&gt; None -- remove first occurrence of value.</span><br><span class="line"> |      Raises ValueError <span class="keyword">if</span> the value <span class="keyword">is</span> <span class="keyword">not</span> present.</span><br><span class="line"> |  </span><br><span class="line"> |  reverse(...)</span><br><span class="line"> |      L.reverse() -- reverse *IN PLACE*</span><br><span class="line"> |  </span><br><span class="line"> |  sort(...)</span><br><span class="line"> |      L.sort(key=None, reverse=False) -&gt; None -- stable sort *IN PLACE*</span><br><span class="line"> |  </span><br><span class="line"> |  ----------------------------------------------------------------------</span><br><span class="line"> |  Data <span class="keyword">and</span> other attributes defined here:</span><br><span class="line"> |  </span><br><span class="line"> |  __hash__ = <span class="literal">None</span> </span><br></pre></td></tr></table></figure></div></div></div>
-
-<p>“output” 탭을 클릭해서 전체 도움말을 살펴 보세요. list 에는 <code>__eq__</code> 및 <code>__iadd__</code> 와 같은 이상한 이름의 메소드들이 많이 있습니다. 지금은 이것들에 대해 크게 신경쓸 필요가 없습니다. (이러한 메서드를 아마 평생 여러분이 직접 호출하지는 않을 것입니다. 그러나 색인 연산자나 비교 연산자와 같은 구문을 사용할 때, 이들은 배후에서 호출됩니다) 가장 흥미로운 메서드들은 목록 맨 아래에 있습니다(<code>append</code>, <code>clear</code>, <code>copy</code> 등).</p>
-<h2 id="튜플-Tuples"><a href="#튜플-Tuples" class="headerlink" title="튜플(Tuples)"></a>튜플(Tuples)</h2><p>Tuple은 list와 매우 비슷합니다. 단 2 가지 면에서 조금 다릅니다.</p>
-<p><strong>1:</strong> 대괄호 대신 소괄호를 사용하여 생성합니다.</p>
-<div class="note no-icon">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">t = (<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>) </span><br></pre></td></tr></table></figure>혹은<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">t = <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span> <span class="comment"># 위와 동일한 내용입니다</span></span><br><span class="line">t </span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">(1, 2, 3) </span><br></pre></td></tr></table></figure>
-          </div>
-
-<p><strong>2:</strong> 수정이 불가능 합니다.</p>
-<div class="note no-icon">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x = <span class="number">0.125</span></span><br><span class="line">x.as_integer_ratio() </span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">---------------------------------------------------------------------------</span><br><span class="line">TypeError                                 Traceback (most recent call last)</span><br><span class="line">&lt;ipython-input<span class="number">-36</span>-e6cf7836e708&gt; <span class="keyword">in</span> &lt;module&gt;()</span><br><span class="line">----&gt; 1 t[0] = 100</span><br><span class="line"></span><br><span class="line">TypeError: <span class="string">'tuple'</span> object does <span class="keyword">not</span> support item assignment  </span><br></pre></td></tr></table></figure>
-          </div>
-
-<p>튜플은 여러 개의 반환 값을 갖는 함수에 자주 사용됩니다.<br>예를 들어, float 객체의 <code>as_integer_ratio()</code> 메소드는 분자와 분모를 튜플 형태로 반환합니다.</p>
-<div class="note no-icon">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x = <span class="number">0.125</span></span><br><span class="line">x.as_integer_ratio() </span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">(<span class="number">1</span>, <span class="number">8</span>)  </span><br></pre></td></tr></table></figure>
-          </div>
-
-<p>여러 개의 값들을 각각의 변수로 할당이 가능합니다.</p>
-<div class="note no-icon">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">numerator, denominator = x.as_integer_ratio()</span><br><span class="line">print(numerator / denominator) </span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="number">0.125</span>  </span><br></pre></td></tr></table></figure>
-          </div>
-
-<p>이제 우리는 두 개의 변수를 교환하는 것 처럼 보이는 고전적인 Stupid Python Trick™ (파이썬 속임수?)의 본질을 꿰뚫어볼 수 있게 되었습니다!</p>
-<div class="note no-icon">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = <span class="number">1</span></span><br><span class="line">b = <span class="number">0</span></span><br><span class="line">a, b = b, a</span><br><span class="line">print(a, b) </span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="number">0</span> <span class="number">1</span>  </span><br></pre></td></tr></table></figure>
-          </div>
-
-<p><br><br><br></p>
-<h1 id="연습문제-Your-Turn"><a href="#연습문제-Your-Turn" class="headerlink" title="연습문제(Your Turn)"></a>연습문제(Your Turn)</h1><p><span class="exturl" data-url="aHR0cHM6Ly93d3cua2FnZ2xlLmNvbS9rZXJuZWxzL2ZvcmsvMTI3NTE3Mw==" title="https://www.kaggle.com/kernels/fork/1275173">리스트(lists) 예제<i class="fa fa-external-link"></i></span></p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
-          
-        
-      
-    </div>
-
-    
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1217,7 +1141,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">19</span>
+                    <span class="site-state-item-count">20</span>
                     <span class="site-state-item-name">포스트</span>
                   </a>
                 </div>
@@ -1357,7 +1281,15 @@
                     
                       
                     
-                    <span class="site-state-item-count">36</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">40</span>
                     <span class="site-state-item-name">태그</span>
                   </a>
                 </div>

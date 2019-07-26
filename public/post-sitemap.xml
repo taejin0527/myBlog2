@@ -8,6 +8,22 @@
     </url>
 
     <url>
+        <loc>https://taejin0527.github.io/2019/07/26/06-strings-and-dictionaries/</loc>
+        <lastmod>2019-07-26T14:37:18.143Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://taejin0527.github.io/2019/07/25/05-loops-and-list-comprehensions/</loc>
+        <lastmod>2019-07-26T13:24:31.148Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://taejin0527.github.io/2019/01/28/cda-tutorial-1/</loc>
         <lastmod>2019-07-25T15:49:21.526Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -18,14 +34,6 @@
     <url>
         <loc>https://taejin0527.github.io/2019/01/19/cda-tutorial/</loc>
         <lastmod>2019-07-25T15:49:09.298Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://taejin0527.github.io/2019/07/25/05-loops-and-list-comprehensions/</loc>
-        <lastmod>2019-07-25T07:33:15.457Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

@@ -356,6 +356,238 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/2019/01/31/spring-module/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="NUNU">
+      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="AttackOnNunu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/01/31/spring-module/" class="post-title-link" itemprop="url">스프링 프레임워크 모듈</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2019-01-31 19:08:32" itemprop="dateCreated datePublished" datetime="2019-01-31T19:08:32+09:00">2019-01-31</time>
+            </span>
+          
+
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/WEB/" itemprop="url" rel="index"><span itemprop="name">WEB</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/WEB/SPRING/" itemprop="url" rel="index"><span itemprop="name">SPRING</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">댓글: </span>
+                <a href="/2019/01/31/spring-module/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/01/31/spring-module/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <hr>
+<h2 id="스프링-프레임워크-모듈"><a href="#스프링-프레임워크-모듈" class="headerlink" title="스프링 프레임워크 모듈"></a>스프링 프레임워크 모듈</h2><p><img alt="framework modules" data-src="https://docs.spring.io/spring/docs/4.3.22.RELEASE/spring-framework-reference/htmlsingle/images/spring-overview.png"></p>
+<p>위 그림에 나와있듯이 스프링 프레임워크는 약 20개의 모듈들로 이루어져 있습니다.</p>
+<ul>
+<li>Data Access/Integration; Web; AOP; Aspects; Instrumentation; Messaging; Core Container; and Test;</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">모듈 그룹</th>
+<th align="center">설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Core Container</td>
+<td align="center">* 스프링 프레임워크의 기본 모듈을 포함</td>
+</tr>
+<tr>
+<td align="center">AOP 및 Instrumentation</td>
+<td align="center">* 관점 지향 프로그래밍(AOP; Aspect-Oriented Programming) 및 Class Instrumentation을 지원하는 모듈을 포함</td>
+</tr>
+<tr>
+<td align="center">Messaging</td>
+<td align="center">* 프로그래밍 모듈을 기반으로한 스프링 MVC 어노테이션 처럼 메세지를 메소드에 맵핑 시키는 어노테이션의 세트를 포함</td>
+</tr>
+<tr>
+<td align="center">Data Access/Inegration</td>
+<td align="center">* DB 및 메시징 공급자와의 상호작용을 간소화하는 모듈을 포함</td>
+</tr>
+<tr>
+<td align="center">Web</td>
+<td align="center">* 웹 및 포틀릿 애플리케이션 개발을 간소화하는 모듈을 포함</td>
+</tr>
+<tr>
+<td align="center">Test</td>
+<td align="center">* 단위 및 통합 테스트 생성을 간소화하는 모듈 하나를 포함</td>
+</tr>
+</tbody></table>
+<p> 이처럼 스프링은 <strong>웹 애플리케이션 개발, 데이터베이스 접근, 트랜잭션 관리, 단위 및 통합 테스트 생성</strong> 등등 엔터프라이즈 애플리케이션 개발의 모든 측면을 지원하고 이렇게 다양한 기능 중 우리는 필요한 것만 선택적으로 사용하면 됩니다.</p>
+<p>만약 개발하고 있는 애플리케이션에서 스프링의 DI 기능[^1]을 사용하려면 Core Container 모듈 그룹에 속한 Spring-Core나 Spring-Beans 모듈을 선택해 사용하면 됩니다.</p>
+<h3 id="스프링-프레임워크-모듈-간-상호의존성"><a href="#스프링-프레임워크-모듈-간-상호의존성" class="headerlink" title="스프링 프레임워크 모듈 간 상호의존성"></a>스프링 프레임워크 모듈 간 상호의존성</h3><p><img alt="dependency" data-src="https://1.bp.blogspot.com/-8MEJX0VwvO8/Wi0I3qLwk7I/AAAAAAAAgo0/nu7QGP77ZjA8hgCHdwDmjdgKNMJYjf_EACLcBGAs/s1600/1.1.png"></p>
+<ul>
+<li><strong>Core Container</strong> 그룹이 스프링 프레임워크의 중심</li>
+<li><strong>AOP 및 Instrumentation</strong> 그룹에 포함된 모듈도 이를 의존하는 다른 모듈이 많기에 중요도가 높음</li>
+</ul>
+<p>지금은 이해가 잘 안되지만 앞으로 각각의 모듈들에 대해 자세히 알아볼 예정입니다.</p>
+<p>다음 포스팅에서는 각각의 모듈들을 알아가기 전에 꼭 알아둬야하는 개념들을 가볍게 집고 넘어가겠습니다.</p>
+<ul>
+<li>제어의 역적(IoC); 의존성 주입(DI); 관전 지향 프로그래밍(AOP); Model View Control(MVC);</li>
+</ul>
+<p><img alt="modules todo" data-src="https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/sites/2/2018/06/Spring-Framework-Modules-01.jpg"></p>
+<p><br><br><br></p>
+<p>[^1]: DI 기능에 대해서는 다음에 따로 포스트할 예정(포스팅 하면 수정!!)</p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/2019/01/28/cda-tutorial-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -764,294 +996,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/2019/01/19/cda-tutorial/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="NUNU">
-      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="AttackOnNunu">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/01/19/cda-tutorial/" class="post-title-link" itemprop="url">CDA 란?</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">작성일</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2019-01-19 19:07:59" itemprop="dateCreated datePublished" datetime="2019-01-19T19:07:59+09:00">2019-01-19</time>
-            </span>
-          
-
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/IHIS/" itemprop="url" rel="index"><span itemprop="name">IHIS</span></a></span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/IHIS/HL7/" itemprop="url" rel="index"><span itemprop="name">HL7</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">댓글: </span>
-                <a href="/2019/01/19/cda-tutorial/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/01/19/cda-tutorial/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          <br>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="Related-Post"><a href="#Related-Post" class="headerlink" title="Related Post"></a>Related Post</h3><hr>
-<blockquote>
-<p>본 문서는 IHIS 연구소의 <strong>‘HL7 Clinical Document Architecture Release 2’</strong> pdf 문서를 기반으로 작성 되었습니다.</p>
-</blockquote>
-<hr>
-<h1 id="CDA-개요"><a href="#CDA-개요" class="headerlink" title="CDA 개요"></a>CDA 개요</h1><p>@[toc]</p>
-<h2 id="1-CDA의-정의-Definition"><a href="#1-CDA의-정의-Definition" class="headerlink" title="1.  CDA의 정의(Definition)"></a>1.  CDA의 정의(Definition)</h2><p>정식 명칭은 <span style="color:blue">The HL7 <strong>Clinical Document Architecture (CDA)</strong></span>로<br><strong>“공유 목적으로 하는 임상 문서(clinical document)의 구조와 의미를 명시하는 문서 표기(Markup)의 표준”</strong> 이라고 정의 되어있다.</p>
- <div style="font-size:small">임상문서는 의사가 환자를 진료 후 진단된 병명 및 진료내역 등을 기술하고 투약, 주요 실시검사 내용 등 주요 진료결과를 포함하는 문서이다.
-    <div style="border:1px solid; padding:10px; box-sizing: border-box;"><b>임상 문서(Clinical document)</b>는 <u>다음과 같은 특성</u>을 가진다 :
-        <pre>
-    - <strong>Persistence (존속성)</strong>
-    &emsp;- 문서는 지역 및 규제 요건에 의해 정의된 기간 동안 변경되지 않은 상태로 계속 존재한다.
-    - <strong>Stewardship (관리 책임)</strong>
-    &emsp;- 문서는  그 관리를 위임받은 기관에 의해 보존된다.
-    - <strong>Potential for authentication (인증가능성)</strong>
-    &emsp;- 문서는 합법적으로 인증받고자 하는 정보의 집합물이다.
-    - <strong>Context (문맥))</strong>
-    &emsp;- 임상 문서에 대한 기본 맥락(default context)를 설정한다.
-    - <strong>Wholeness (전체성)</strong>
-    &emsp;- 문서의 인증은 전체적으로 적용되며 문서 전체 맥락(context)이 없는 부분에는 적용되지 않는다.
-    - <strong>Human readability (가독성)</strong>
-    &emsp;- 사람이 읽을 수 있어야 한다.</pre>
-    </div>
- </div>
-
-<h2 id="2-CDA의-주요-특성-Key-aspects"><a href="#2-CDA의-주요-특성-Key-aspects" class="headerlink" title="2. CDA의 주요 특성(Key aspects)"></a>2. CDA의 주요 특성(Key aspects)</h2><ul>
-<li><span style="color:green;">Extensible Markup Language <strong>(XML)</strong></span>로 인코딩 된다.</li>
-<li><span style="color:green;">HL7 Reference Information Model(이하 RIM)</span>로부터 기계처리적 의미가 유도되고 <span style="color:green;">HL7의 버전 3 데이터 타입</span>을 사용한다</li>
-<li>표현력이 풍부하고 유연하다.<ul>
-<li><span style="color:green;">document 레벨, section 레벨, entry 레벨의 템플릿</span>은 일반적인 CDA 명세를 통제하기 위해 사용될 수 있다</li>
-</ul>
-</li>
-</ul>
-<h2 id="3-CDA의-목표"><a href="#3-CDA의-목표" class="headerlink" title="3. CDA의 목표"></a>3. CDA의 목표</h2><ul>
-<li>환자의 보호에 우선권을 둔다.</li>
-<li>가능한 광범위한 시스템에서 사용이 가능하도록 하면서 비용이 효율적이게 구현한다.</li>
-<li>전문 지식의 수준이 다른 사용자들도 판독이 가능하도록 지원한다.</li>
-<li>인코딩된 정보가 오래 유지되도록 한다.</li>
-<li>합리적이고 빠르게 디자인이 되도록 한다.</li>
-</ul>
-<h2 id="4-CDA-Document의-주요-요소들"><a href="#4-CDA-Document의-주요-요소들" class="headerlink" title="4. CDA Document의 주요 요소들"></a>4. CDA Document의 주요 요소들</h2><p><img alt="CDA document" data-src="/img/componentsOfCDA.png"></p>
-<ul>
-<li><strong>The Header</strong><ul>
-<li>&lt;ClinicalDocument&gt; 태그와 &lt;structuredBody&gt; 태그 사이에 있다</li>
-<li>문서를 확인하고 분류하며 ==인증, 진료, 환자, 관련된 제공자들의 정보==를 담는다.</li>
-</ul>
-</li>
-<li><strong>The Body</strong><ul>
-<li>진료 보고서(clinical report)를 담고 있다.</li>
-<li>1)비정형화(unstructured blob) 또는,<br>2)정형화된 표기(structured markup) 둘 중 하나이다.</li>
-<li>위 예제는 &lt;structuredBody&gt; 태그로 정형화된 구조이고, document section이 되풀이해서 올 수 있는 recursive 구조이다.</li>
-</ul>
-</li>
-</ul>
-<h2 id="5-CDA-“levels”"><a href="#5-CDA-“levels”" class="headerlink" title="5. CDA “levels”"></a>5. CDA “levels”</h2><blockquote>
-<p>PDF 문서에서 이 부분은 표 하나만 있어서 추가 자료 조사를 통해 작성하였습니다. 따라서 부족한 본인이 작성했기에 잘못된 내용이 있을 수도 있습니다.</p>
-</blockquote>
-<table>
-    <colgroup>
-        <col width="20%">
-        <col width="80%">
-    </colgroup>
-    <thead>
-    <tr>
-        <th>CDA, Release One</th>
-        <th>CDA, Release Two</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td>CDA Level One</td>
-        <td>The unconstrained CDA specification.
-        규제되지 않은 CDA 규정</td>
-    </tr>
-    <tr>
-        <td>CDA Level Two</td>
-        <td>The CDA specification with section-level templates applied.
-        색션 레벨의 템플릿을 적용한 CDA 규정</td>
-    </tr>
-    <tr>
-        <td>CDA Level Three</td>
-        <td>The CDA specification with entry-level (and optionally section-level) templates applied.
-            엔트리 레벨(선택적 색션 레벨) 템플릿을 적용한 CDA 규정</td>
-    </tr>
-    </tbody>
-</table>
-
-<ul>
-<li><p>CDA는 2가지 버전이 있다</p>
-<ul>
-<li><p>첫 번째 버전(Release One)에서는 단순 CDA 설계의 목표를 달성하기 위한 <em>XML DTDs</em> 또는 <em>XML Schemas</em> 계층구조를 세 단계(level)로 나눈 것이다.<br><img alt="CDA level" data-src="http://iehr.eu/wp-content/uploads/2015/11/cda_levels.png"></p>
-</li>
-<li><p>두 번째 버전(Release Two)에서는 하나의 CDA XML Schema로 이루어지고, HL7 templates들을 계층적으로 적용해 나가는 구조이다.<br><img alt="CDA Release2" data-src="https://slideplayer.com/slide/3227951/11/images/18/CDA+Clinical+Document+Architecture+Document+Hierarchy.jpg"></p>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="6-보안성-기고성-데이터-무경성"><a href="#6-보안성-기고성-데이터-무경성" class="headerlink" title="6. 보안성, 기고성, 데이터 무경성"></a>6. 보안성, 기고성, 데이터 무경성</h2><ul>
-<li>CDA 문서를 보내고 받는 <u>애플리케이션 시스템</u>은<ul>
-<li>문서 인증, 기밀 유지 및 보존에 대한 모든 법적 요구 사항을 충족해야한다.</li>
-<li>대중 매체를 통한 통신의 경우, 송신자(source)/수신자(recipient) 인증 및 캡슐화(요약)된 문서의 안전한 전송을 취한 암호화 기술이 요구될 수 있으므로 표준의 범위를 벗어나는 상용 도구로 해결 해야한다.<br></li>
-</ul>
-</li>
-<li><u>CDA</u>는<ul>
-<li>애플리케이션 시스템이 중요한 데이터에 대한 접근을 관리하는데 도움이 되는 기밀성 상태 정보를 제공한다. 기밀성 상태(confidentiality status)는 전체 문서 또는 문서의 특정 부분에 적용될 수 있다.</li>
-</ul>
-</li>
-</ul>
-<p><br><br><br></p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
-          
-        
-      
-    </div>
-
-    
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1100,7 +1044,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">19</span>
+                    <span class="site-state-item-count">20</span>
                     <span class="site-state-item-name">포스트</span>
                   </a>
                 </div>
@@ -1240,7 +1184,15 @@
                     
                       
                     
-                    <span class="site-state-item-count">36</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">40</span>
                     <span class="site-state-item-name">태그</span>
                   </a>
                 </div>
