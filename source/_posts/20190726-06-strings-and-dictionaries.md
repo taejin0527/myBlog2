@@ -53,7 +53,7 @@ My dog is named "Pluto" {% endcode %}
 
 만약 작은 따옴표로 묶은 문자열에 작은 따옴표 문자를 넣으면 우리가 원하는 것과는 다르게 파이썬은 잘못 이해할 수 있습니다.
 
-{% note warning no-icon %}
+{% note warning %}
 {% code lang:python %}
 'Pluto's a planet!' {% endcode %}
 {% code lang:python %}
@@ -79,7 +79,7 @@ SyntaxError: invalid syntax{% endcode %}
 | `\'`             | `'`          | `'What\'s up?'`           | `What's up?`           |
 | `\"`             | `"`          | `"That's \"cool\""`       | `That's "cool"`        |
 | `\\`             | `\`          | `"Look, a mountain: /\\"` | `Look, a mountain: /\` |
-| `\n`             |              | `"1\n2 3"`                | `1` `2 3`              |
+| `\n`             |              | `"1\n2 3"`                | `1`<br> `2` `3`        |
 
 표 마지막의 `\n` 은 개행 문자를 나타냅니다. 이를 통해 파이썬에서 줄 바꿈이 발생합니다.
 
@@ -99,11 +99,10 @@ world {% endcode %}
 triplequoted_hello = """hello
 world"""
 print(triplequoted_hello)
-triplequoted_hello == hello {% endcode %}
+print(triplequoted_hello == hello) {% endcode %}
 {% code %}
 hello
 world
-
 True {% endcode %}
 {% endnote %}
 
@@ -123,9 +122,128 @@ hellopluto {% endcode %}
 
 ## Strings are sequences
 
-## String methods
+문자열(string)은 연속된 문자들(characters)로 생각할 수 있습니다. 우리가 list로 할 수 있는 거의 모든 것을 문자열에서도 할 수 있습니다.
+
+{% tabs example_string %}
+<!-- tab Indexing @eye -->
+{% note no-icon %}
+  {% code lang:python %}
+  # Indexing
+  planet = 'Pluto'
+  planet[0] {% endcode %}
+  {% code %}
+  'P' {% endcode %}
+{% endnote %}
+<!-- endtab -->
+
+<!-- tab Slicing @eye -->
+{% note no-icon %}
+  {% code lang:python %}
+  # Slicing
+  planet[-3:] {% endcode %}
+  {% code %}
+  'uto' {% endcode %}
+{% endnote %}
+<!-- endtab -->
+
+<!-- tab Length @eye -->
+{% note no-icon %}
+  {% code lang:python %}
+  # How long is this string?
+  len(planet)  {% endcode %}
+  {% code %}
+  5 {% endcode %}
+{% endnote %}
+<!-- endtab -->
+
+<!-- tab Loop @eye -->
+{% note no-icon %}
+  {% code lang:python %}
+  # Yes, we can even loop over them
+  [char+'! ' for char in planet]  {% endcode %}
+  {% code %}
+  ['P! ', 'l! ', 'u! ', 't! ', 'o! '] {% endcode %}
+{% endnote %}
+<!-- endtab -->
+{% endtabs %}
+
+하지만 list와 가장 큰 차이점은 문자열은 불변(immutable)이라는 점입니다. 우리는 문자열을 수정할 수 없습니다.
+
+{% note danger %}
+{% code lang:python %}
+planet[0] = 'B'
+# planet.append doesn't work either {% endcode %}
+{% code lang:python %}
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+<ipython-input-12-6ca42463b9f9> in <module>()
+----> 1 planet[0] = 'B'
+      2 # planet.append doesn't work either
+
+TypeError: 'str' object does not support item assignment  {% endcode %}
+{% endnote %}
+
+## 문자열 메소드(String methods)
+
+`list` 처럼, `str` 타입에는 매우 유용한 메소드들일 많이 있습니다. 몇 가지 예시를 보여드리겠습니다.
+
+```python
+  claim = "Pluto is a planet!"
+```
+
+{% tabs example_string_methods %}
+<!-- tab UpperCase @eye -->
+{% note no-icon %}
+  {% code lang:python %}
+  # 모두 대문자
+  claim.upper() {% endcode %}
+  {% code %}
+  'PLUTO IS A PLANET!' {% endcode %}
+{% endnote %}
+<!-- endtab -->
+
+<!-- tab LowerCase @eye -->
+{% note no-icon %}
+  {% code lang:python %}
+  # 모두 소문자
+  claim.lower() {% endcode %}
+  {% code %}
+  'pluto is a planet!' {% endcode %}
+{% endnote %}
+<!-- endtab -->
+
+<!-- tab Index @eye -->
+{% note no-icon %}
+  {% code lang:python %}
+  # substring의 첫번째 인덱스 값
+  claim.index('plan') {% endcode %}
+  {% code %}
+  11 {% endcode %}
+{% endnote %}
+<!-- endtab -->
+
+<!-- tab Startswith @eye -->
+{% note no-icon %}
+  {% code lang:python %}
+  claim.startswith(planet)  {% endcode %}
+  {% code %}
+  True {% endcode %}
+{% endnote %}
+<!-- endtab -->
+
+<!-- tab Endswith @eye -->
+{% note no-icon %}
+  {% code lang:python %}
+  claim.endswith('dwarf planet')  {% endcode %}
+  {% code %}
+  False {% endcode %}
+{% endnote %}
+<!-- endtab -->
+{% endtabs %}
 
 ### Going between strings and lists: .split() and .join()
+
+`str.split()` 은 문자열을 작은 문자열의 목록으로 바꾸고 기본적으로 공백 문자로 분리합니다. 하나의 큰 문자열에서 단어 목록으로 이동하는 데 매우 유용합니다.
 
 ### Building strings with .format()
 
