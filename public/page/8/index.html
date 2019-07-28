@@ -356,7 +356,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/2019/01/28/cda-tutorial-1/">
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/2019/02/04/spring-pojo/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="NUNU">
@@ -376,7 +376,7 @@
           <h2 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2019/01/28/cda-tutorial-1/" class="post-title-link" itemprop="url">C-CDA 란?</a>
+                <a href="/2019/02/04/spring-pojo/" class="post-title-link" itemprop="url">스프링 - POJO</a>
               
             
           </h2>
@@ -401,209 +401,7 @@
                 
               
 
-              <time title="Post created: 2019-01-28 16:08:17" itemprop="dateCreated datePublished" datetime="2019-01-28T16:08:17+09:00">2019-01-28</time>
-            </span>
-          
-
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/IHIS/" itemprop="url" rel="index"><span itemprop="name">IHIS</span></a></span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/IHIS/HL7/" itemprop="url" rel="index"><span itemprop="name">HL7</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">댓글: </span>
-                <a href="/2019/01/28/cda-tutorial-1/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/01/28/cda-tutorial-1/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          <br>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="Related-Posts"><a href="#Related-Posts" class="headerlink" title="Related Posts"></a>Related Posts</h3><hr>
-<blockquote>
-<p>본 문서는 IHIS 연구소의 <strong>‘HL7 C-CDA 교육’</strong> pdf 문서를 기반으로 작성 되었습니다.</p>
-</blockquote>
-<hr>
-<h2 id="Pre-Consolidation-context"><a href="#Pre-Consolidation-context" class="headerlink" title="Pre-Consolidation context"></a>Pre-Consolidation context</h2><h5 id="CDA-통합-이전"><a href="#CDA-통합-이전" class="headerlink" title="CDA 통합 이전"></a>CDA 통합 이전</h5><p> 컴퓨터와 인터넷이 보편화 되고 사람들의 기대수명이 높아지면서 ICT(Information and Communication System) 기술을 보건의료 영역에 적용하려는 움직임이 시작 되었습니다.<br> 하지만 병원과 기관마다 서로 다른 소프트웨어를 사용하기 때문에 정보 교환 또는 호환이 어려운 문제점이 있었습니다. 이를 해결하고자 <em>HITSP, HL7, IHE, Health Story</em> 등의 여러 기업 및 기관들이 표준화된 <strong>CDA(Clinical Document Architecture)</strong>를 규정하고, 많은 사람들이 자신들의 표준을 사용하게 하기 위해 <strong>CDA Implementation Guide(CDA IG)</strong> 를 배포하였습니다.<br> 각각의 표준은 비슷하지만 조금씩은 차이가 있었기 때문에 진정한 표준이 되지 못하고 다람쥐 쳇바퀴 돌 듯 이 문서들 간의 교환 및 교환의 문제가 발생하였습니다.</p>
-<p><img alt="C-CDA" data-src="/img/c-cda.png"></p>
-<h2 id="Consolidated-CDA"><a href="#Consolidated-CDA" class="headerlink" title="Consolidated CDA"></a>Consolidated CDA</h2><p> 2012년 <u>the Office of the National Coordinator for Health Information Technology(ONC)</u> 에서 이러한 문제점을 해결하고자 <strong>Consolidated CDA 라는 통일된 표준</strong> 을 제시하였다고 위키피디아[^1]에 적혀있습니다. 저는 대중적으로 많이 사용하는 HL7 기관에서 2011년 12월에 발표한  ‘A draft Implementation Guide for CDA Release 2.0, Consolidated CDA Templates’[^2]를 기반으로 다룰 것 입니다.</p>
-<p><strong>C-CDA IG</strong> 는 아래와 같은 의료 문서를 포함합니다(year released)</p>
-<ul>
-<li>Consultation Note(2008)</li>
-<li>Discharge Summary(2009)</li>
-<li>Imaging Integration and DICOM Diagnostic Imaging Reports(DIR)(2009)</li>
-<li>History and Physical(H&amp;P)(2008)</li>
-<li>Operative Note(2009)</li>
-<li>Progress Note(2010)</li>
-<li>Procedure Note(2010)</li>
-<li>Unstructured documents(2010)</li>
-</ul>
-<p><img alt="C-CDA2" data-src="/img/c-cda2.png"></p>
-<h2 id="C-CDA-IG-Navigation"><a href="#C-CDA-IG-Navigation" class="headerlink" title="C-CDA IG Navigation"></a>C-CDA IG Navigation</h2><p> Consolidated CDA 작성 방법에 대한 자세한 정보는 공식 홈페이지를 참조하면 될 것 같습니다.<br><span class="exturl" data-url="aHR0cDovL3d3dy5obDcub3JnL2ltcGxlbWVudC9zdGFuZGFyZHMvcHJvZHVjdF9tYXRyaXguY2Zt" title="http://www.hl7.org/implement/standards/product_matrix.cfm">HL7 Implementation Guide for CDA Release 2:IHE Health Story Consolidation, Release 1.1 - US Realm<i class="fa fa-external-link"></i></span></p>
-<p><br><br><br></p>
-<p>[^1]: <span class="exturl" data-url="aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvQ2xpbmljYWxfRG9jdW1lbnRfQXJjaGl0ZWN0dXJl" title="https://en.wikipedia.org/wiki/Clinical_Document_Architecture">Consolidated Clinical Document Architecture 탭에 있음<i class="fa fa-external-link"></i></span><br>[^2]: 초안의 사본은 HL7  웹 사이트를 가면 쉽게 찾을 수 있습니다.</p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
-          
-        
-      
-    </div>
-
-    
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/2019/01/22/spring/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="NUNU">
-      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="AttackOnNunu">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/01/22/spring/" class="post-title-link" itemprop="url">Spring 개요</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">작성일</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2019-01-22 17:30:00" itemprop="dateCreated datePublished" datetime="2019-01-22T17:30:00+09:00">2019-01-22</time>
+              <time title="Post created: 2019-02-04 00:59:18" itemprop="dateCreated datePublished" datetime="2019-02-04T00:59:18+09:00">2019-02-04</time>
             </span>
           
 
@@ -643,8 +441,8 @@
                 </span>
             
                 <span class="post-meta-item-text">댓글: </span>
-                <a href="/2019/01/22/spring/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/01/22/spring/" itemprop="commentCount"></span>
+                <a href="/2019/02/04/spring-pojo/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/02/04/spring-pojo/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -679,47 +477,49 @@
       
         
           
-            <blockquote>
-<p>가장 좋은 문서는 spring.io 공식 홈페이지에서 제공하는 documents 입니다. 개인적으로 공부하면서 작성하는 문서라 틀린 부분이 있을 수 있으니, 반드시 공식 문서를 참조하시기 바랍니다.</p>
-<blockquote>
-<p><span class="exturl" data-url="aHR0cHM6Ly9zcHJpbmcuaW8=" title="https://spring.io">스프링 공식 홈페이지<i class="fa fa-external-link"></i></span><br><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3NwcmluZy1wcm9qZWN0cw==" title="https://github.com/spring-projects">소스코드<i class="fa fa-external-link"></i></span><br><span class="exturl" data-url="aHR0cHM6Ly9zcHJpbmcuaW8vZ3VpZGVz" title="https://spring.io/guides">가이드<i class="fa fa-external-link"></i></span></p>
-</blockquote>
-</blockquote>
+            <h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><p><span class="exturl" data-url="aHR0cHM6Ly9rby53aWtpcGVkaWEub3JnL3dpa2kvUGxhaW5fT2xkX0phdmFfT2JqZWN0" title="https://ko.wikipedia.org/wiki/Plain_Old_Java_Object">Plain Old Java Object-위키<i class="fa fa-external-link"></i></span><br><span class="exturl" data-url="aHR0cHM6Ly9pdGV3Ym0udGlzdG9yeS5jb20vZW50cnkvUE9KT1BsYWluLU9sZC1KYXZhLU9iamVjdA==" title="https://itewbm.tistory.com/entry/POJOPlain-Old-Java-Object">POJO(Plain Old Java Object)<i class="fa fa-external-link"></i></span></p>
 <hr>
-<h3 id="1-스프링"><a href="#1-스프링" class="headerlink" title="1. 스프링"></a>1. 스프링</h3><p>공식 홈페이지 첫 화면을 보면 <u>Spring : the source for modern java</u> 라고 적혀있습니다.</p>
-<p>이 문장만으로는 이해하기 어려워서 구글에 검색을 해도 우리나라에서는 스프링하면 <u>스프링 프레임워크(Spring framework)</u>를 주로 이야기해서 스프링의 정의에 대해 다루는 자료는 그렇게 많지 않았습니다.</p>
-<p>그럼에도 스프링이란 무엇인지 명확하게 짚고 넘어가는 것이 좋을 것 같습니다.</p>
-<p><strong>스프링(Spring)</strong> 은</p>
-<div style="border:3px; border-style:dashed; color:grey; text-align:center">
-  <br>자바 엔터프라이즈 개발을 편하게 해주는 오픈소스 경량급 애플리케이션 프레임워크<br><br>
-</div>
+<p><code>아직 많은 것을 알지 못하기 때문에 자세하고 정확한 내용은 제가 참조한 사이트나 따로 검색 또는 책을 통해 알아보는 것을 권장드립니다.</code></p>
+<h2 id="POJO"><a href="#POJO" class="headerlink" title="POJO"></a>POJO</h2><p>:heavy_check_mark: <strong>Plain Old Java Object</strong> : (직역) 평범한 옛날 자바 객체</p>
+<p> 처음에 단순히 정의를 검색하다보니 정말 단순한 자바 객체인 것 같은데 왜 굳이 POJO라는 단어를 사용하는지 혼란스러웠습니다. Stack Overflow 같은데서도 자바빈과 비교하는 토론이 있기도하고 솔직히 현재도 완전히 이해했다고는 할 수 없지만 제가 생각하는 내용을 적었습니다.</p>
+<h5 id="POJO의-탄생"><a href="#POJO의-탄생" class="headerlink" title="POJO의 탄생"></a>POJO의 탄생</h5><blockquote>
+<p>Any fool can write code that a computer an understand. Good programmers write code that humans can understand.<br>컴퓨터가 이해하는 코드는 어느 바보나 짤 수 있다. 좋은 프로그래머는 사람이 이해하는 코드를 짠다.</p>
+<blockquote>
+<p>Martin Fowler, &lt;&lt;리팩토링&gt;&gt;</p>
+</blockquote>
+</blockquote>
+<img style="float:right; height:150px;" data-src="https://martinfowler.com/img/mf-cologne.jpg">
 
-<p>라는 정의를 가지고 있습니다.</p>
-<p> 얼핏 보면 감이 잘 안 잡히기 때문에 시간을 내셔서 제가 참조했던 ‘12bme’님의 포스트[^1] 를 자세히 읽어보시고 이해하시면 좋을 것 같습니다.</p>
-<p> 또한 공식 홈페이지에 따르면 Spring 개발진의 철학이 Rod Johnson이 2002년 10월에 출판한 ‘Expert One-on-One J2EE Design and Develpment’에 요약되어 있다고 하니 여유가 있다면 한번 읽어보면 깊은 이해를 하는데 도움이 될 것 같습니다.</p>
-<p>스프링 개발진의 <strong>목표(Aim)</strong> 로는,</p>
+<p> POJO는 리팩토링과 애자일 소프트웨어 개발로 유명한 영국의 소프트웨어 개발자 <strong>마틴 파울러</strong> 가 2000년 가을에 열렸던 어느 컨퍼런스의 발표를 준비하면서 처음 사용한 단어입니다. 그는 당시 <u>EJB(Enterprise JavaBean) 보다는 단순한 자바 오브젝트에 도메인 로직을 넣어 사용하는 것이 여러가지 장점이 있는데 왜 사람들이 EJB가 아닌 ‘평범한 자바 오브젝트’를 사용하기를 꺼려하하는지에 대해 의문을 가졌습니다</u> 그래서 그의 생각을 널리 알리기 위해 그는 개발자들의 심리를 이용한 기발한 전략을 세웠습니다. POJO라는 용어를 만들고 이를 기반으로한 기술을 사용한다고 발표하여 다른 개발자들에게 마치 새로운 첨단 기술인 듯한 인상을 주었습니다.<br> 정리하자면, 마틴 파울러는</p>
 <ul>
-<li>스프링은 사용하기 즐거워야 하고</li>
-<li>여러분의 애플리케이션 코드가 스프링 API들에 의존해서는 안되며</li>
-<li>JDO, Toplink, Hibernate와 같은 훌륭한 O/R mapping solution들과 경쟁하지 않지만, 통합을 촉진하는 것 입니다.</li>
+<li>자바 개발자들에게 <strong>단순하고 평범한 자바 오브젝트 사용을 권장</strong> 하고</li>
+<li><strong>자신의 생각을 효과적으로 전달</strong> 하기 위해 POJO라는 단어를 사용 했습니다<br>Cf) 이를 계기로 다른 분야에서도 비슷한 용어들이 생긴 것을 보면 그의 전략이 성공적이 였다는 것을 쉽게 알 수 있습니다.<ul>
+<li>Plain Old Data Structures(PODS) - C++ 언어에서 오직 C 언어의 특징만 사용하는 경우</li>
+<li>Plain Old Documentation(POD) - 펄(Perl) 언어에서 사용</li>
+<li>Plain Old PHP Object(POPO) - PHP 언어에서 사용</li>
 </ul>
-<p> 또한 공식 홈페이지에서 <strong>PROJECTS</strong> 탭을 보면 스프링을 활용한 다양한 프로젝트들을 보실 수 있습니다.</p>
+</li>
+</ul>
+<p>이제 겨우 POJO의 형체가 희미하게 보이는 것 같습니다. 이 친구를 더 자세히 알기 위해선,</p>
 <ul>
-<li>Spring Boot</li>
-<li>Spring Framework</li>
-<li>Spring Cloud</li>
-<li>Etc …</li>
+<li>EJB(Enterprise JavaBean)는 무엇이며 어떤 문제점이 있는가</li>
+<li>POJO란 그럼 그저 EJB 이전의 방식으로 돌아가는 것인가<br>를 알아야 겠다고 생각했습니다.</li>
 </ul>
-<p>이처럼 스프링은 <u>어디서나 간단하고, 이식하기 쉬우며, 신속하고, 유연하게 JVM 기반의 시스템과 애플리케이션을 구축</u>할 수 있어  ==다양한 프로젝트들의 디자인이 되는 모듈==이라고 생각할 수 있습니다.</p>
-<p>[^1]: <span class="exturl" data-url="aHR0cHM6Ly8xMmJtZS50aXN0b3J5LmNvbS8xNTc=" title="https://12bme.tistory.com/157">스프링이란 무엇인가? - 12bme<i class="fa fa-external-link"></i></span></p>
-<h3 id="2-스프링-프레임워크란"><a href="#2-스프링-프레임워크란" class="headerlink" title="2. 스프링 프레임워크란"></a>2. 스프링 프레임워크란</h3><p> 위에서 언급한 12bme님의 포스트를 보셨으면 쉽게 이해하시겠지만, <em>엔터프라이즈 애플리케이션</em> 개발이 어려운 이유는 사회가 점점 복잡해지고, 시스템에서 다루어야 하는 업무의 복잡도와 의존도가 높아져 <u>개발의 복잡성이 증가</u>했기 때문입니다. 이에 사용자의 요구를 빠르고 안정적이면서 확장 가능한 형태로 유지가히 위한 로우레벨(Low level) 수준의 기술적 처리가 필요해졌고 우리는 스프링 프레임워크를 통해 쉽게 자바 엔터프라이즈 애플리케이션을 개발할 수 있게 되었습니다.</p>
-<p><img alt="history" data-src="/img/history.png"></p>
-<p> 2004년 3월 Spring Framework 1.0 버전을 시작으로, 포스트 작성일 기준(2019년 1월) Spring Framework는 5.1.4 버전이 최신 버전입니다.</p>
-<p> 짧게 스프링(Spring)이라고 불리는 스프링 프레임워크는 <strong>모든 플랫폼에서 자바 기반 엔터프라이즈 애플리케이션(JAVA EE) 개발을 편하게 해주는 종합적인 프로그래밍 및 구성 모델을 제공</strong>합니다.</p>
-<p> 프레임워크의 바탕인 <em>스프링</em> 의 핵심 요소가 <u>애플리케이션 수준에서의 인프라 지원</u>이기 때문에 스프링 프레임워크에서는 개발 환경 구축에 필요한 하부구조(Infrastructure)를 포괄적으로 제공하고 처리하기 때문에 <u>개발자는 애플리케이션 개발(plumbing[^2])에 집중</u>할 수 있게 되었습니다.</p>
-<p><img alt="plumbing" data-src="https://www.jbrothershi.com/wp-content/uploads/2018/10/SpringPlumbingLogo.png"></p>
-<p> 참고로 스프링 프레임워크는 대한민국 공공기관의 웹 서비스 개발 시 사용을 권장하고 있는 전자 정부 표준 프레임워크의 기반 기술입니다.</p>
-<p>[^2]: 원문에는 plumbing이라는 단어로 표현하는데, 프레임워크가 부품들 다 만들어 놓으면 개발자는 그것들을 조립하는 느낌이라 이런 단어를 사용한 것 같습니다.</p>
+<h5 id="Enterprise-JavaBean의-등장"><a href="#Enterprise-JavaBean의-등장" class="headerlink" title="Enterprise JavaBean의 등장"></a>Enterprise JavaBean의 등장</h5><p>기술이 발전하면서 자바의 기초적인 JDK만으로 복잡해져가는 기업의 비즈니스 로직을 구현하는 것은 개발자들에게 부담이 되었습니다. 이러한 문제를 해결하기 위해 EJB가 등장하였고,  <strong>‘EJB를 사용하면 개발자는 로우레벨의 기술들에 관심을 가질 필요 없이 애플리케이션 개발을 쉽게 만들 수 있다’</strong> 라고 EJB 1.0의 스펙에서 제시 되었습니다.<br> 하지만 현실은 불필요할 만큼 과도한 엔지니어링으로 <u>EJB는 실패한 케이스</u>라고 많은 개발자들이 이야기합니다.</p>
+<ul>
+<li><p>1% 미만의 애플리케이션에만 필요한 멀티 DB를 위한 분산 트랜잭션(무거운 JTA 기반의 글로번 트랜잭션 관리 기능)</p>
+</li>
+<li><p>고가의 WAS(CPU 당 몇 백에서 몇 천만 원) 필요</p>
+</li>
+<li><p>EJB 컴포넌트는 컨테이너 밖에서는 정상적으로 동작하지 않음(많은 시간이 걸리는 수정-빌드-배표-테스트 과정 반복)</p>
+</li>
+<li><p>간단한 기능에 대해서 조차 자동화 테스트를 만드는 것이 거의 불가능</p>
+</li>
+<li><p><strong>EJB 스텍을 따르는 비즈니스 오브젝트들은 객체지향적인 특징과 장점을 포기해야 함</strong></p>
+<p>결국 마틴 파울러와 같은 많은 오피니언 리더들은 EJB와 같은 잘못 설계된 과도한 기술을 피하고, 객체지향 원리에 따라 만들어진 자바 언어의 기본에 충실하게 비즈니스 로직을 구현하는 일명 <em>POJO 방식</em> 으로 돌아서야 한다고 지적하였습니다.</p>
+</li>
+</ul>
+<h5 id="POJO-프레임워크"><a href="#POJO-프레임워크" class="headerlink" title="POJO 프레임워크"></a>POJO 프레임워크</h5><p>이때까지 내용을 되짚어 보면 <strong>POJO란 결국 단순하고 기본에 충실한 자바 오브젝트로 되돌아 가는 것</strong>인데 그렇다면 또다시 로우레벨의 API를 이용해 복잡한 코드를 작성해야 하고, 많은 기술적인 문제들을 애플리케이션 코드에 그대로 노출시켜 개발해야 한다는 문제로 돌아간다는 것이 아닌가? 하는 의문이 생길 것 입니다.<br> 개발자들이 비즈니스 로직에만 집중할 수 있는 애플리케이션 복잡도를 제거하는 장점은 그대로 가져가면서, 객체지향적인 설계와 자동화된 테스트의 편의성 등을 다시 회복시키기 위해 등장한 것이 바로 <strong>POJO 기반의 프레임워크</strong> 입니다! 가장 대표적인 프레임워크 제품으로는 <em>하이버네이트</em> 와 <em>스프링</em> 이 있습니다.</p>
 <p><br><br><br></p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
           
@@ -779,7 +579,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/2019/01/19/cda-tutorial/">
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/2019/02/02/spring-keywords/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="NUNU">
@@ -799,7 +599,7 @@
           <h2 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2019/01/19/cda-tutorial/" class="post-title-link" itemprop="url">CDA 란?</a>
+                <a href="/2019/02/02/spring-keywords/" class="post-title-link" itemprop="url">스프링 프레임워크 핵심 개념</a>
               
             
           </h2>
@@ -824,7 +624,7 @@
                 
               
 
-              <time title="Post created: 2019-01-19 19:07:59" itemprop="dateCreated datePublished" datetime="2019-01-19T19:07:59+09:00">2019-01-19</time>
+              <time title="Post created: 2019-02-02 15:16:10" itemprop="dateCreated datePublished" datetime="2019-02-02T15:16:10+09:00">2019-02-02</time>
             </span>
           
 
@@ -839,14 +639,14 @@
                 <span class="post-meta-item-text">In</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/IHIS/" itemprop="url" rel="index"><span itemprop="name">IHIS</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/WEB/" itemprop="url" rel="index"><span itemprop="name">WEB</span></a></span>
 
                 
                 
                   , 
                 
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/IHIS/HL7/" itemprop="url" rel="index"><span itemprop="name">HL7</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/WEB/SPRING/" itemprop="url" rel="index"><span itemprop="name">SPRING</span></a></span>
 
                 
                 
@@ -864,8 +664,8 @@
                 </span>
             
                 <span class="post-meta-item-text">댓글: </span>
-                <a href="/2019/01/19/cda-tutorial/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/01/19/cda-tutorial/" itemprop="commentCount"></span>
+                <a href="/2019/02/02/spring-keywords/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/02/02/spring-keywords/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -900,115 +700,343 @@
       
         
           
-            <h3 id="Related-Post"><a href="#Related-Post" class="headerlink" title="Related Post"></a>Related Post</h3><hr>
-<blockquote>
-<p>본 문서는 IHIS 연구소의 <strong>‘HL7 Clinical Document Architecture Release 2’</strong> pdf 문서를 기반으로 작성 되었습니다.</p>
-</blockquote>
+            <h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><p><span class="exturl" data-url="aHR0cHM6Ly9hc2ZpcnN0YWx3YXlzLnRpc3RvcnkuY29tLzMzNA==" title="https://asfirstalways.tistory.com/334">Spring의 시작, 프레임워크의 구성요소와 동작원리<i class="fa fa-external-link"></i></span><br><span class="exturl" data-url="aHR0cHM6Ly9zY3Jvb2d5LmF0bGFzc2lhbi5uZXQvd2lraS9zcGFjZXMvU1BSSU5HL3BhZ2VzLzExMTQzMTA=" title="https://scroogy.atlassian.net/wiki/spaces/SPRING/pages/1114310">스프링 프레임워크 핵심<i class="fa fa-external-link"></i></span></p>
+<p><strong>POJO</strong><br><span class="exturl" data-url="aHR0cHM6Ly9saW1tbWVlLnRpc3RvcnkuY29tLzg=" title="https://limmmee.tistory.com/8">스프링 프레임워크 1 - POJO에 대하여<i class="fa fa-external-link"></i></span><br><span class="exturl" data-url="aHR0cHM6Ly93d3cuZ2Vla3Nmb3JnZWVrcy5vcmcvcG9qby12cy1qYXZhLWJlYW5zLw==" title="https://www.geeksforgeeks.org/pojo-vs-java-beans/">POJO vs JavaBeans<i class="fa fa-external-link"></i></span><br><span class="exturl" data-url="aHR0cHM6Ly9zcHJpbmcuaW8vdW5kZXJzdGFuZGluZy9QT0pP" title="https://spring.io/understanding/POJO">Understanding : POJO<i class="fa fa-external-link"></i></span></p>
+<p><strong>IoC/DI</strong><br><span class="exturl" data-url="aHR0cHM6Ly9saW1tbWVlLnRpc3RvcnkuY29tLzEzP2NhdGVnb3J5PTY1NDAxMQ==" title="https://limmmee.tistory.com/13?category=654011">스프링 프레임워크 2 - 컨테이너와 IoC<i class="fa fa-external-link"></i></span><br><span class="exturl" data-url="aHR0cDovL3dpa2kuamF2YWppZ2kubmV0L3BhZ2VzL3ZpZXdwYWdlLmFjdGlvbj9wYWdlSWQ9MzY2NA==" title="http://wiki.javajigi.net/pages/viewpage.action?pageId=3664">Spring 프레임워크 소개와 IoC 및 Spring IoC의 개념<i class="fa fa-external-link"></i></span><br><a href="www.nextree.co.kr/p11247/">세 가지 DI 컨테이너로 향하는 저녁 산책</a><br><span class="exturl" data-url="aHR0cDovL3NwcmluZ212Yy5lZ2xvb3MuY29tLzQ4NzQ5Nw==" title="http://springmvc.egloos.com/487497">스프링이 도대체 뭐란 말인가?<i class="fa fa-external-link"></i></span></p>
 <hr>
-<h1 id="CDA-개요"><a href="#CDA-개요" class="headerlink" title="CDA 개요"></a>CDA 개요</h1><p>@[toc]</p>
-<h2 id="1-CDA의-정의-Definition"><a href="#1-CDA의-정의-Definition" class="headerlink" title="1.  CDA의 정의(Definition)"></a>1.  CDA의 정의(Definition)</h2><p>정식 명칭은 <span style="color:blue">The HL7 <strong>Clinical Document Architecture (CDA)</strong></span>로<br><strong>“공유 목적으로 하는 임상 문서(clinical document)의 구조와 의미를 명시하는 문서 표기(Markup)의 표준”</strong> 이라고 정의 되어있다.</p>
- <div style="font-size:small">임상문서는 의사가 환자를 진료 후 진단된 병명 및 진료내역 등을 기술하고 투약, 주요 실시검사 내용 등 주요 진료결과를 포함하는 문서이다.
-    <div style="border:1px solid; padding:10px; box-sizing: border-box;"><b>임상 문서(Clinical document)</b>는 <u>다음과 같은 특성</u>을 가진다 :
-        <pre>
-    - <strong>Persistence (존속성)</strong>
-    &emsp;- 문서는 지역 및 규제 요건에 의해 정의된 기간 동안 변경되지 않은 상태로 계속 존재한다.
-    - <strong>Stewardship (관리 책임)</strong>
-    &emsp;- 문서는  그 관리를 위임받은 기관에 의해 보존된다.
-    - <strong>Potential for authentication (인증가능성)</strong>
-    &emsp;- 문서는 합법적으로 인증받고자 하는 정보의 집합물이다.
-    - <strong>Context (문맥))</strong>
-    &emsp;- 임상 문서에 대한 기본 맥락(default context)를 설정한다.
-    - <strong>Wholeness (전체성)</strong>
-    &emsp;- 문서의 인증은 전체적으로 적용되며 문서 전체 맥락(context)이 없는 부분에는 적용되지 않는다.
-    - <strong>Human readability (가독성)</strong>
-    &emsp;- 사람이 읽을 수 있어야 한다.</pre>
-    </div>
- </div>
-
-<h2 id="2-CDA의-주요-특성-Key-aspects"><a href="#2-CDA의-주요-특성-Key-aspects" class="headerlink" title="2. CDA의 주요 특성(Key aspects)"></a>2. CDA의 주요 특성(Key aspects)</h2><ul>
-<li><span style="color:green;">Extensible Markup Language <strong>(XML)</strong></span>로 인코딩 된다.</li>
-<li><span style="color:green;">HL7 Reference Information Model(이하 RIM)</span>로부터 기계처리적 의미가 유도되고 <span style="color:green;">HL7의 버전 3 데이터 타입</span>을 사용한다</li>
-<li>표현력이 풍부하고 유연하다.<ul>
-<li><span style="color:green;">document 레벨, section 레벨, entry 레벨의 템플릿</span>은 일반적인 CDA 명세를 통제하기 위해 사용될 수 있다</li>
+<h2 id="핵심-개념들"><a href="#핵심-개념들" class="headerlink" title="핵심 개념들"></a>핵심 개념들</h2><ul>
+<li>스프링 프레임워크를 공부하면서 자주 언급되고 매우 중요하다고 생각하는 용어들을 정리했습니다</li>
+<li>아직 많은 것을 알지 못하기 때문에 자세하고 정확한 내용은 제가 참조한 사이트나 따로 검색 또는 책을 통해 알아보는 것을 권장드립니다.</li>
 </ul>
-</li>
-</ul>
-<h2 id="3-CDA의-목표"><a href="#3-CDA의-목표" class="headerlink" title="3. CDA의 목표"></a>3. CDA의 목표</h2><ul>
-<li>환자의 보호에 우선권을 둔다.</li>
-<li>가능한 광범위한 시스템에서 사용이 가능하도록 하면서 비용이 효율적이게 구현한다.</li>
-<li>전문 지식의 수준이 다른 사용자들도 판독이 가능하도록 지원한다.</li>
-<li>인코딩된 정보가 오래 유지되도록 한다.</li>
-<li>합리적이고 빠르게 디자인이 되도록 한다.</li>
-</ul>
-<h2 id="4-CDA-Document의-주요-요소들"><a href="#4-CDA-Document의-주요-요소들" class="headerlink" title="4. CDA Document의 주요 요소들"></a>4. CDA Document의 주요 요소들</h2><p><img alt="CDA document" data-src="/img/componentsOfCDA.png"></p>
+<p><img alt="spring triangle" data-src="https://dhsim86.github.io/static/assets/img/blog/web/2017-11-18-toby_spring_08_what_is_spring//00.png"></p>
+<hr>
+<h3 id="POJO"><a href="#POJO" class="headerlink" title="POJO"></a>POJO</h3><p>이해가 어려우신 분들은 간략히,</p>
 <ul>
-<li><strong>The Header</strong><ul>
-<li>&lt;ClinicalDocument&gt; 태그와 &lt;structuredBody&gt; 태그 사이에 있다</li>
-<li>문서를 확인하고 분류하며 ==인증, 진료, 환자, 관련된 제공자들의 정보==를 담는다.</li>
+<li>스프링 프레임워크를 사용하면 <strong>POJO로 애플리케이션을 만들고 엔터프라이즈 서비스를 비침투적으로 POJO에 적용할 수 있다</strong></li>
+<li><strong>모든 JavaBeans는 POJO 이지만, 모든 POJO는 JavaBeans가 아니다</strong></li>
 </ul>
-</li>
-<li><strong>The Body</strong><ul>
-<li>진료 보고서(clinical report)를 담고 있다.</li>
-<li>1)비정형화(unstructured blob) 또는,<br>2)정형화된 표기(structured markup) 둘 중 하나이다.</li>
-<li>위 예제는 &lt;structuredBody&gt; 태그로 정형화된 구조이고, document section이 되풀이해서 올 수 있는 recursive 구조이다.</li>
-</ul>
-</li>
-</ul>
-<h2 id="5-CDA-“levels”"><a href="#5-CDA-“levels”" class="headerlink" title="5. CDA “levels”"></a>5. CDA “levels”</h2><blockquote>
-<p>PDF 문서에서 이 부분은 표 하나만 있어서 추가 자료 조사를 통해 작성하였습니다. 따라서 부족한 본인이 작성했기에 잘못된 내용이 있을 수도 있습니다.</p>
+<p><img alt="pojo&amp;javabean" data-src="https://cdncontribute.geeksforgeeks.org/wp-content/uploads/pojo.jpg"></p>
+<p>이 정도만 숙지하고 넘어가셔도 상관 없을 것 같습니다.</p>
+<p>:heavy_check_mark: <strong>Plain Old Java Object</strong> : (직역) 평범한 옛날 자바 객체</p>
+<p>더 자세한 내용은 다른 포스트에서 다루겠지만, 간략히 스프링 공식 홈페이지에서는 POJO를 다음과 같이 소개합니다.</p>
+<blockquote>
+<p>By using plain old Java objects, your code is much more simplified, which lends to better testing, flexibility, and ability to change technical decisions at future stages based on knowledge and shifting requirements.</p>
 </blockquote>
-<table>
-    <colgroup>
-        <col width="20%">
-        <col width="80%">
-    </colgroup>
-    <thead>
-    <tr>
-        <th>CDA, Release One</th>
-        <th>CDA, Release Two</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td>CDA Level One</td>
-        <td>The unconstrained CDA specification.
-        규제되지 않은 CDA 규정</td>
-    </tr>
-    <tr>
-        <td>CDA Level Two</td>
-        <td>The CDA specification with section-level templates applied.
-        색션 레벨의 템플릿을 적용한 CDA 규정</td>
-    </tr>
-    <tr>
-        <td>CDA Level Three</td>
-        <td>The CDA specification with entry-level (and optionally section-level) templates applied.
-            엔트리 레벨(선택적 색션 레벨) 템플릿을 적용한 CDA 규정</td>
-    </tr>
-    </tbody>
-</table>
+<p>POJO를 사용함으로써,</p>
+<ul>
+<li>코드가 간결해져서 테스트하기 편해지고 (비즈니스 로직과 특정 환결/로우 레벨 종속적인 코드를 분리함)<br>쉽게 말해 인터페이스, 상속이 없는 것</li>
+<li>유연해서 객체지향적 설계의 자유료운 사용이 가능</li>
+</ul>
+<p><strong>POJO 기반의 프레임워크 == 스프링 프레임워크</strong></p>
+<p>많은 POJO 프레임워크가 있고 하이버네이트와 스프링이 대표적이라고 할 수 있습니다. (이 둘의 차이점은 굳이 자세히 알아보지는 않겠습니다.) 스프링 프레임워크가 <u>많은 POJO 프레임워크 제품 중 하나</u>라는 정도로 알고 넘어가셔도 좋습니다.</p>
+<p><strong>진정한 POJO 프로그래밍</strong></p>
+<p><u>자바의 객체지향적인 특징을 살려 비즈니스 로직에 충실한 개발이 가능하도록 하는 것이 진정한 POJO 프로그래밍</u>이라고 할 수 있습니다. 마치 자바를 처음 배울 때 흔히 하는 실수로, 개발은 자바로 하지만 실제로는 C 언어를 배우며 익숙해진 절차지향 방식으로 구현하는 것을 생각하시면 되겠습니다. 따라서 POJO 프레임워크 제품을 사용한다고 해서 자동으로 POJO 형식의 개발을 하고 있다고 할 수 없음을 인지하고 계셔야 합니다.</p>
+<ul>
+<li>객체지향적인 설계원칙에 충실하도록 개발되어 있는지</li>
+<li>테스트 코드 개발의 용이성이나 테스트 코드를 잘 작성했는지</li>
+</ul>
+<p>를 잘 확인하시면서 POJO 프로그래밍의 장점을 잘 살려 스프링 프레임워크의 활용도를 극대화하려고 노력해야 할 것 같습니다.</p>
+<hr>
+<h3 id="IoC-DI"><a href="#IoC-DI" class="headerlink" title="IoC / DI"></a>IoC / DI</h3><p>개인적으로 재밌었던 표현이라 그대로 참조한 블로그<span class="exturl" data-url="aHR0cDovL3NwcmluZ212Yy5lZ2xvb3MuY29tLzQ4NzQ5Nw==" title="http://springmvc.egloos.com/487497">스프링이 도대체 뭐란 말인가?<i class="fa fa-external-link"></i></span>(꼭 읽어보면 좋을 것 같습니다)의 표현을 그대로 인용하자면, 간략하게 이 둘을 <strong>“대신 해줌(IoC)”</strong> 과 <strong>“미리 찜해 놓음(DI)”</strong> 이라고 설명하였습니다.<br> <strong>정신 나간듯 언제 사용될 지도 모르는 코드를 쳐대면서(IoC) 동시에 사용하고 있는 코드가 뭔지도 모르면서 일단 갖다 쓰는(DI) 획기적이고 진보적인 프로그래밍 작성 방식</strong> 으로 IoC/DI의 개념을 표현하였고 어려우시면 이 정도로 이해하고 일단 넘어가시는 것도 좋을 것 같습니다.</p>
+<p><img alt="ioc" data-src="https://img1.daumcdn.net/thumb/R720x0.q80/?scode=mtistory&fname=http%3A%2F%2Fcfile10.uf.tistory.com%2Fimage%2F252FCF3B5231689B17B553"></p>
+<p>:heavy_check_mark: <strong>Inversion of Control</strong> : 제어의 역전</p>
+<ul>
+<li><strong>제어권(Control)</strong><br>: 자바 객체의 생성, 생명주기 관리, 객체간의 의존관계를 연결시키는 등의 행위에 대한 권한</li>
+</ul>
+<ul>
+<li>객체에 대한 제어 권한이 바뀌는 것 즉, 제어 권한을 다른 대상에게 위임하는 것이라는 의미 (개발자 -&gt; 컨테이너)</li>
+<li>프레임워크에서 개발자는 필요한 부분을 개발해서 “조립”하는 방식을 취하는데, 이렇게 조립된 코드의 최종 호출은 <u>개발자에 의해서 제어되는 것이 아니라 프레임워크 내부 동작 원리에 따라 이루어짐</u>. 이를 <strong>제어의 역전</strong> 이라고 표현</li>
+<li>스프링 프레임워크에서 지원하는 IoC Container는 POJO의 생명주기를 관리, 생성된 인스턴트들에게 추가적인 기능들을 제공<br>cf) 라이브러리 vs 프레임워크 –&gt; IoC의 개념이 적용되었나의 차이</li>
+</ul>
+<p>:heavy_check_mark: <strong>Dependency Injection</strong> : 의존성 주입</p>
+<ul>
+<li><strong>의존성(Dependency)</strong><br>: 현재 객체가 다른 객체와 상호작용(참조)하고 있다면, 다른 객체들을 현재 객체의 의존 이라고 표현</li>
+</ul>
+<ul>
+<li><p><strong>DI는 스프링 프레임워크에서 지원하는 IoC의 형태</strong></p>
+</li>
+<li><p>DI는 <u>클래스 사이의 의존관계를 빈 설정 정보를 바탕으로 컨테이너가 자동적으로 연결</u></p>
+<p>예시)</p>
+<p><strong><em>Ioc/DI 가 적용되지 않은 경우</em></strong></p>
+</li>
+</ul>
+<p><img alt="instance" data-src="http://www.nextree.co.kr/content/images/2016/09/yrkim-140701-framework-02.png"></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> kr.co.study;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Foo</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> Bar bar;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Foo</span><span class="params">()</span></span>&#123;</span><br><span class="line">        bar = <span class="keyword">new</span> SubBar();	<span class="comment">//Bar 인터페이스를 구현하는 구체적인 클래스 SubBar로 초기화</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>​    <strong><em>Ioc/DI 가 적용되지 않은 경우</em></strong></p>
+<p><img alt="inject" data-src="http://www.nextree.co.kr/content/images/2016/09/yrkim-140701-framework-03.png"></p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">//Container</span><br><span class="line"><span class="tag">&lt;<span class="name">beans</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"bar"</span> <span class="attr">class</span>=<span class="string">"kr.co.study.SubBar"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"foo"</span> <span class="attr">class</span>=<span class="string">"kr.co.study.Foo"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"bar"</span> <span class="attr">ref</span>=<span class="string">"bar"</span>/&gt;</span>		<span class="comment">&lt;!-- 사용할 객체들을 컨테이너에 등록 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">beans</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//application code</span></span><br><span class="line"><span class="keyword">package</span> kr.co.study;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Foo</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> Bar bar;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setBar</span><span class="params">(Bar bar)</span></span>&#123;	<span class="comment">//사용할 객체를 매겨변수로 받아와 동적으로 의존관계를 설정</span></span><br><span class="line">        <span class="keyword">this</span>.bar = bar;				<span class="comment">//Bar 인터페이스를 구현하는 구체적인 클래스 이름이 등장하지 않음</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <ul>
-<li><p>CDA는 2가지 버전이 있다</p>
+<li>마틴 파울러가 그의 저서인 ‘Inversion of Control Containers and the Dependency Injection pattern’에서 세가지 DI 패턴을 제시<ul>
+<li>setter() 메소드를 이용한 의존성 삽입(Setter Injection)</li>
+<li>생성자를 이용한 의존성 삽입 (Constructor Injection)</li>
+<li>초기화 인터페이스를 이용한 의존성 삽입(Interface Injection)</li>
+</ul>
+</li>
+</ul>
+<br>
+- 스프링 프레임워크에서의 DI 패턴
+  1. XML을 통한 의존성 주입
+     - 생성자를 통한 의존성 주입 : <constructor-arg> 태그와 ref 속성 이용
+     - 속성을 통한 의존성 주입 : <property> 태그를 사용, name 속성값이 호출하고자 하는 메소드의 이름
+  2. Annotation을 통한 의존성 주입
+     **@Autowired** 라는 어노테이션을 통해 의존성 주입. 비슷한 역할로 **@Resource** 어노테이션도 존재.
+     둘의 차이점은 bean을 탐색하는 우선순위의 기준
+
+<hr>
+<h3 id="AOP"><a href="#AOP" class="headerlink" title="AOP"></a>AOP</h3><ul>
+<li><p>AOP의 핵심은 <strong>관심 분리(Separation of Concerns)</strong> 로써, <u>비즈니스 메소드를 개발할 때, 핵심 비즈니스 로직과 공통 로직을 분리함으로써 응집도가 높게 개발할 수 있도록 지원하는 것</u> 입니다.</p>
+<p><img alt="aop" data-src="https://t1.daumcdn.net/cfile/tistory/185DF4334FA8A1FD01"></p>
+</li>
+</ul>
+<p>:heavy_check_mark: <strong>Aspect Oriented Programming</strong> : 관점 지향 프로그래밍</p>
 <ul>
-<li><p>첫 번째 버전(Release One)에서는 단순 CDA 설계의 목표를 달성하기 위한 <em>XML DTDs</em> 또는 <em>XML Schemas</em> 계층구조를 세 단계(level)로 나눈 것이다.<br><img alt="CDA level" data-src="http://iehr.eu/wp-content/uploads/2015/11/cda_levels.png"></p>
-</li>
-<li><p>두 번째 버전(Release Two)에서는 하나의 CDA XML Schema로 이루어지고, HL7 templates들을 계층적으로 적용해 나가는 구조이다.<br><img alt="CDA Release2" data-src="https://slideplayer.com/slide/3227951/11/images/18/CDA+Clinical+Document+Architecture+Document+Hierarchy.jpg"></p>
-</li>
+<li>핵심적인 비즈니스 로직과 관련이 없으나 모듈성을 높일 목적으로 여러 곳에서 공통적으로 쓰이는 기능들을 분리( separating cross-cutting concerns)하여 개발하고 실행 시에 서로 조합</li>
+<li>Logging, Security, Transaction 등을 aspect라는 특별한 객체로 모듈화, weaving이라는 작업을 통해 모듈화한 코드를 핵심 기능에 넣음</li>
 </ul>
-</li>
+<hr>
+<h3 id="PSA"><a href="#PSA" class="headerlink" title="PSA"></a>PSA</h3><p>:heavy_check_mark: <strong>Potable Service Abstraction</strong> : (이식 가능한)일관성 있는 서비스 추상화</p>
+<ul>
+<li>POJO로 개발된 코드는 특정 환경이나 구현 방식에 종속적이지 않아야 함<br>(특정 환경에 종속적이지 않다는 게 그런 기술을 사용하지 않는다는 뜻은 아님)</li>
+<li>스프링은 완성도가 높은 라이브러리와 연결할 수 있는 인터페이스를 제공</li>
 </ul>
-<h2 id="6-보안성-기고성-데이터-무경성"><a href="#6-보안성-기고성-데이터-무경성" class="headerlink" title="6. 보안성, 기고성, 데이터 무경성"></a>6. 보안성, 기고성, 데이터 무경성</h2><ul>
-<li>CDA 문서를 보내고 받는 <u>애플리케이션 시스템</u>은<ul>
-<li>문서 인증, 기밀 유지 및 보존에 대한 모든 법적 요구 사항을 충족해야한다.</li>
-<li>대중 매체를 통한 통신의 경우, 송신자(source)/수신자(recipient) 인증 및 캡슐화(요약)된 문서의 안전한 전송을 취한 암호화 기술이 요구될 수 있으므로 표준의 범위를 벗어나는 상용 도구로 해결 해야한다.<br></li>
-</ul>
-</li>
-<li><u>CDA</u>는<ul>
-<li>애플리케이션 시스템이 중요한 데이터에 대한 접근을 관리하는데 도움이 되는 기밀성 상태 정보를 제공한다. 기밀성 상태(confidentiality status)는 전체 문서 또는 문서의 특정 부분에 적용될 수 있다.</li>
-</ul>
-</li>
-</ul>
+<hr>
 <p><br><br><br></p>
+</property></constructor-arg><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/2019/01/31/spring-module/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="NUNU">
+      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="AttackOnNunu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/01/31/spring-module/" class="post-title-link" itemprop="url">스프링 프레임워크 모듈</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2019-01-31 19:08:32" itemprop="dateCreated datePublished" datetime="2019-01-31T19:08:32+09:00">2019-01-31</time>
+            </span>
+          
+
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/WEB/" itemprop="url" rel="index"><span itemprop="name">WEB</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/WEB/SPRING/" itemprop="url" rel="index"><span itemprop="name">SPRING</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">댓글: </span>
+                <a href="/2019/01/31/spring-module/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/01/31/spring-module/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <hr>
+<h2 id="스프링-프레임워크-모듈"><a href="#스프링-프레임워크-모듈" class="headerlink" title="스프링 프레임워크 모듈"></a>스프링 프레임워크 모듈</h2><p><img alt="framework modules" data-src="https://docs.spring.io/spring/docs/4.3.22.RELEASE/spring-framework-reference/htmlsingle/images/spring-overview.png"></p>
+<p>위 그림에 나와있듯이 스프링 프레임워크는 약 20개의 모듈들로 이루어져 있습니다.</p>
+<ul>
+<li>Data Access/Integration; Web; AOP; Aspects; Instrumentation; Messaging; Core Container; and Test;</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">모듈 그룹</th>
+<th align="center">설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Core Container</td>
+<td align="center">* 스프링 프레임워크의 기본 모듈을 포함</td>
+</tr>
+<tr>
+<td align="center">AOP 및 Instrumentation</td>
+<td align="center">* 관점 지향 프로그래밍(AOP; Aspect-Oriented Programming) 및 Class Instrumentation을 지원하는 모듈을 포함</td>
+</tr>
+<tr>
+<td align="center">Messaging</td>
+<td align="center">* 프로그래밍 모듈을 기반으로한 스프링 MVC 어노테이션 처럼 메세지를 메소드에 맵핑 시키는 어노테이션의 세트를 포함</td>
+</tr>
+<tr>
+<td align="center">Data Access/Inegration</td>
+<td align="center">* DB 및 메시징 공급자와의 상호작용을 간소화하는 모듈을 포함</td>
+</tr>
+<tr>
+<td align="center">Web</td>
+<td align="center">* 웹 및 포틀릿 애플리케이션 개발을 간소화하는 모듈을 포함</td>
+</tr>
+<tr>
+<td align="center">Test</td>
+<td align="center">* 단위 및 통합 테스트 생성을 간소화하는 모듈 하나를 포함</td>
+</tr>
+</tbody></table>
+<p> 이처럼 스프링은 <strong>웹 애플리케이션 개발, 데이터베이스 접근, 트랜잭션 관리, 단위 및 통합 테스트 생성</strong> 등등 엔터프라이즈 애플리케이션 개발의 모든 측면을 지원하고 이렇게 다양한 기능 중 우리는 필요한 것만 선택적으로 사용하면 됩니다.</p>
+<p>만약 개발하고 있는 애플리케이션에서 스프링의 DI 기능[^1]을 사용하려면 Core Container 모듈 그룹에 속한 Spring-Core나 Spring-Beans 모듈을 선택해 사용하면 됩니다.</p>
+<h3 id="스프링-프레임워크-모듈-간-상호의존성"><a href="#스프링-프레임워크-모듈-간-상호의존성" class="headerlink" title="스프링 프레임워크 모듈 간 상호의존성"></a>스프링 프레임워크 모듈 간 상호의존성</h3><p><img alt="dependency" data-src="https://1.bp.blogspot.com/-8MEJX0VwvO8/Wi0I3qLwk7I/AAAAAAAAgo0/nu7QGP77ZjA8hgCHdwDmjdgKNMJYjf_EACLcBGAs/s1600/1.1.png"></p>
+<ul>
+<li><strong>Core Container</strong> 그룹이 스프링 프레임워크의 중심</li>
+<li><strong>AOP 및 Instrumentation</strong> 그룹에 포함된 모듈도 이를 의존하는 다른 모듈이 많기에 중요도가 높음</li>
+</ul>
+<p>지금은 이해가 잘 안되지만 앞으로 각각의 모듈들에 대해 자세히 알아볼 예정입니다.</p>
+<p>다음 포스팅에서는 각각의 모듈들을 알아가기 전에 꼭 알아둬야하는 개념들을 가볍게 집고 넘어가겠습니다.</p>
+<ul>
+<li>제어의 역적(IoC); 의존성 주입(DI); 관전 지향 프로그래밍(AOP); Model View Control(MVC);</li>
+</ul>
+<p><img alt="modules todo" data-src="https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/sites/2/2018/06/Spring-Framework-Modules-01.jpg"></p>
+<p><br><br><br></p>
+<p>[^1]: DI 기능에 대해서는 다음에 따로 포스트할 예정(포스팅 하면 수정!!)</p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
           
         
@@ -1056,7 +1084,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/7/"><i class="fa fa-angle-left" aria-label="이전 페이지"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><span class="page-number current">8</span><a class="page-number" href="/page/9/">9</a><a class="extend next" rel="next" href="/page/9/"><i class="fa fa-angle-right" aria-label="다음 페이지"></i></a>
+    <a class="extend prev" rel="prev" href="/page/7/"><i class="fa fa-angle-left" aria-label="이전 페이지"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><span class="page-number current">8</span><a class="page-number" href="/page/9/">9</a><a class="page-number" href="/page/10/">10</a><a class="extend next" rel="next" href="/page/9/"><i class="fa fa-angle-right" aria-label="다음 페이지"></i></a>
   </nav>
 
 
@@ -1100,7 +1128,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">25</span>
+                    <span class="site-state-item-count">28</span>
                     <span class="site-state-item-name">포스트</span>
                   </a>
                 </div>
