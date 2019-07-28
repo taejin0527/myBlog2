@@ -8,8 +8,134 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.</description>
-    <pubDate>Sat, 27 Jul 2019 12:38:43 GMT</pubDate>
+    <pubDate>Sun, 28 Jul 2019 08:44:21 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>(SW Expert Academy) 6216번 - 연산자 5</title>
+      <link>https://taejin0527.github.io/2019/07/28/sw-6216/</link>
+      <guid>https://taejin0527.github.io/2019/07/28/sw-6216/</guid>
+      <pubDate>Sun, 28 Jul 2019 08:42:19 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;div class=&quot;note &quot;&gt;
+            &lt;ul&gt;&lt;li&gt;시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초&lt;/li&gt;&lt;li&gt;메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내&lt;/li&gt;&lt;/ul&gt;
+    
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<div class="note ">            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>          </div><div class="note success">            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(<span class="string">"혼합된 소금물의 농도: &#123;0:.2f&#125;%"</span>.format(<span class="number">20</span>/<span class="number">3</span>))</span><br></pre></td></tr></table></figure>          </div><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content:encoded>
+      
+      <comments>https://taejin0527.github.io/2019/07/28/sw-6216/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>(SW Expert Academy) 6209번 - 연산자 4</title>
+      <link>https://taejin0527.github.io/2019/07/28/sw-6209/</link>
+      <guid>https://taejin0527.github.io/2019/07/28/sw-6209/</guid>
+      <pubDate>Sun, 28 Jul 2019 08:38:48 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;div class=&quot;note &quot;&gt;
+            &lt;ul&gt;&lt;li&gt;시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초&lt;/li&gt;&lt;li&gt;메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내&lt;/li&gt;&lt;/ul&gt;
+    
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<div class="note ">            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>          </div><blockquote><p>화씨를 섭씨로 바꾸기 위해서 32를 빼고 100/180을 곱함</p></blockquote><div class="note success">            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = float(input())</span><br><span class="line"></span><br><span class="line">print(<span class="string">"%(fc).2f ℉ =&gt;  %(dc).2f ℃"</span> % &#123;<span class="string">"fc"</span>: a, <span class="string">"dc"</span>: (a<span class="number">-32</span>)*<span class="number">100</span>/<span class="number">180</span>&#125;)</span><br></pre></td></tr></table></figure>          </div><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content:encoded>
+      
+      <comments>https://taejin0527.github.io/2019/07/28/sw-6209/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>(SW Expert Academy) 6207번 - 연산자 3</title>
+      <link>https://taejin0527.github.io/2019/07/28/sw-6207/</link>
+      <guid>https://taejin0527.github.io/2019/07/28/sw-6207/</guid>
+      <pubDate>Sun, 28 Jul 2019 08:37:24 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;div class=&quot;note &quot;&gt;
+            &lt;ul&gt;&lt;li&gt;시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초&lt;/li&gt;&lt;li&gt;메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내&lt;/li&gt;&lt;/ul&gt;
+    
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<div class="note ">            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>          </div><blockquote><p>섭씨를 화로 바꾸기 위해서 32를 빼고 1.8을 곱하고 32를 더함</p></blockquote><div class="note success">            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = float(input())</span><br><span class="line"></span><br><span class="line">print(<span class="string">"%(dc).2f ℃ =&gt;  %(fc).2f ℉"</span> % &#123;<span class="string">"dc"</span>: a, <span class="string">"fc"</span>: a/<span class="number">100</span>*<span class="number">180</span>+<span class="number">32</span>&#125;)</span><br></pre></td></tr></table></figure>          </div><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content:encoded>
+      
+      <comments>https://taejin0527.github.io/2019/07/28/sw-6207/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>(SW Expert Academy) 6206번 - 연산자 2</title>
+      <link>https://taejin0527.github.io/2019/07/28/sw-6206/</link>
+      <guid>https://taejin0527.github.io/2019/07/28/sw-6206/</guid>
+      <pubDate>Sun, 28 Jul 2019 08:34:04 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;div class=&quot;note &quot;&gt;
+            &lt;ul&gt;&lt;li&gt;시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초&lt;/li&gt;&lt;li&gt;메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내&lt;/li&gt;&lt;/ul&gt;
+    
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<div class="note ">            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>          </div><div class="note success">            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = float(input())</span><br><span class="line"></span><br><span class="line">print(<span class="string">"%(kg).2f kg =&gt;  %(lb).2f lb"</span> % &#123;<span class="string">"kg"</span>: a, <span class="string">"lb"</span>: <span class="number">2.2046</span>*a&#125;)</span><br></pre></td></tr></table></figure>          </div><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content:encoded>
+      
+      <comments>https://taejin0527.github.io/2019/07/28/sw-6206/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>(SW Expert Academy) 6204번 - 연산자 1</title>
+      <link>https://taejin0527.github.io/2019/07/28/sw-6204/</link>
+      <guid>https://taejin0527.github.io/2019/07/28/sw-6204/</guid>
+      <pubDate>Sun, 28 Jul 2019 08:28:42 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;div class=&quot;note &quot;&gt;
+            &lt;ul&gt;&lt;li&gt;시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초&lt;/li&gt;&lt;li&gt;메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내&lt;/li&gt;&lt;/ul&gt;
+    
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<div class="note ">            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>          </div><div class="note success">            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = float(input())</span><br><span class="line"></span><br><span class="line">print(<span class="string">"%(ch).2f inch =&gt;  %(cm).2f cm"</span> % &#123;<span class="string">"ch"</span>: a, <span class="string">"cm"</span>: a*<span class="number">2.54</span>&#125;)</span><br></pre></td></tr></table></figure>          </div><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content:encoded>
+      
+      <comments>https://taejin0527.github.io/2019/07/28/sw-6204/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>(SW Expert Academy) 6196번 - 변수</title>
+      <link>https://taejin0527.github.io/2019/07/28/sw-6196/</link>
+      <guid>https://taejin0527.github.io/2019/07/28/sw-6196/</guid>
+      <pubDate>Sun, 28 Jul 2019 08:16:23 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;div class=&quot;note &quot;&gt;
+            &lt;ul&gt;&lt;li&gt;시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초&lt;/li&gt;&lt;li&gt;메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내&lt;/li&gt;&lt;/ul&gt;
+    
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<div class="note ">            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>          </div><div class="note success">            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x= input()</span><br><span class="line">a = int(x)</span><br><span class="line"></span><br><span class="line">print(<span class="number">4</span>*a+<span class="number">3</span>*<span class="number">10</span>*a+<span class="number">2</span>*<span class="number">100</span>*a+<span class="number">1000</span>*a)</span><br></pre></td></tr></table></figure>          </div><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content:encoded>
+      
+      <comments>https://taejin0527.github.io/2019/07/28/sw-6196/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>(Hexo_NexT_Theme) Hexo 블로그에 Google Adsense 설정_2</title>
