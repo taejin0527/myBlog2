@@ -356,6 +356,638 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/2019/07/12/01-hello-python/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="NUNU">
+      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="AttackOnNunu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/07/12/01-hello-python/" class="post-title-link" itemprop="url">(파이썬) 01 HELLO, PYTHON!</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2019-07-12 14:11:51" itemprop="dateCreated datePublished" datetime="2019-07-12T14:11:51+09:00">2019-07-12</time>
+            </span>
+          
+
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/" itemprop="url" rel="index"><span itemprop="name">LANGUAGE</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/" itemprop="url" rel="index"><span itemprop="name">PYTHON</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">댓글: </span>
+                <a href="/2019/07/12/01-hello-python/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/07/12/01-hello-python/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
+<li>Kaggle 홈페이지 - <span class="exturl" data-url="aHR0cHM6Ly93d3cua2FnZ2xlLmNvbQ==" title="https://www.kaggle.com">Kaggle<i class="fa fa-external-link"></i></span></li>
+<li>1강 ‘Hello, Python’ - <span class="exturl" data-url="aHR0cHM6Ly93d3cua2FnZ2xlLmNvbS9jb2xpbm1vcnJpcy9oZWxsby1weXRob24=" title="https://www.kaggle.com/colinmorris/hello-python">Python Micro-Course Home Page<i class="fa fa-external-link"></i></span></li>
+</ul>
+<hr>
+<h1 id="개요-Intro"><a href="#개요-Intro" class="headerlink" title="개요(Intro)"></a>개요(Intro)</h1><p>Data Science에 필요한 Python의 핵심적인 부분들을 배우는 과정입니다. 본 과정은 기초적인 코딩 경험이나 지식이 있는 사람들을 대상으로 작성되었습니다. (만약 코딩에 익숙하지 않으시다면  “<span class="exturl" data-url="aHR0cHM6Ly93aWtpLnB5dGhvbi5vcmcvbW9pbi9CZWdpbm5lcnNHdWlkZS9Ob25Qcm9ncmFtbWVycw==" title="https://wiki.python.org/moin/BeginnersGuide/NonProgrammers">Python for Non-Programmers<i class="fa fa-external-link"></i></span>“ 해당 문서를 참고하는 것을 권장합니다)</p>
+<p>우선, Python의 구문(syntax), 변수 할당(variable assignment), 산술 연산자(arithmetic operators)에 대해 가볍게 다루어 보겠습니다. 만약 Python에 경험이 있으시면 바로 연습문제(<span class="exturl" data-url="aHR0cHM6Ly93d3cua2FnZ2xlLmNvbS9rZXJuZWxzL2ZvcmsvMTI3NTE2Mw==" title="https://www.kaggle.com/kernels/fork/1275163">exercise with Kaggle Kernal<i class="fa fa-external-link"></i></span>)로 넘어가셔도 됩니다.</p>
+<p><br><br><br></p>
+<h1 id="Hello-Python"><a href="#Hello-Python" class="headerlink" title="Hello, Python!"></a>Hello, Python!</h1><p><strong>Python</strong> 은 영국의 코미디 그룹 <span class="exturl" data-url="aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvTW9udHlfUHl0aG9u" title="https://en.wikipedia.org/wiki/Monty_Python">몬티 파이선(Monty Python)<i class="fa fa-external-link"></i></span>에서 그 이름을 가져왔습니다. 그들에게 존경을 표하는 마음으로 우리의 첫 python 프로그램을 스팸(spam)에 관한 그들의 코미디 스케치(skit)를 만들어 볼까요?<br><code>몬티 파이선의 코미디 스케치 25화 7분 50초부터 해당 에피소드가 등장한다고 합니다</code> - <span class="exturl" data-url="aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj16TGloLVdRd0JTYw==" title="https://www.youtube.com/watch?v=zLih-WQwBSc">youtube 영상<i class="fa fa-external-link"></i></span></p>
+<div class="tabs" id="spam_skit"><ul class="nav-tabs"><li class="tab active"><a href="#spam_skit-1"><i class="fa fa-code"></i>CODE</a></li><li class="tab"><a href="#spam_skit-2"><i class="fa fa-terminal"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane active" id="spam_skit-1"><p>그저 재미로, 아래의 코드를 읽어보시고 어떻게 실행 될지 예상해 보세요.</p>
+<div class="note default">
+          <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">spam_amout = <span class="number">0</span></span><br><span class="line">print(spam_amout)</span><br><span class="line"></span><br><span class="line"><span class="comment">#스팸, 계란, 스팸, 스팸, 베이컨과 스팸 주문</span></span><br><span class="line">spam_amout = spam_amout + <span class="number">4</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> spam_amount &gt;<span class="number">0</span>:</span><br><span class="line">  print(<span class="string">"But I don't want ANY spam!"</span>)</span><br><span class="line"></span><br><span class="line">viking_song = <span class="string">"Spam "</span> * spam_amount</span><br><span class="line">print(viking_song)</span><br><span class="line">    </span><br></pre></td></tr></table></figure>
+        </div></div><div class="tab-pane" id="spam_skit-2"><p>결과는 아래와 같습니다</p>
+<div class="note success">
+          <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">0</span><br><span class="line">But I don&apos;t want ANY spam!</span><br><span class="line">Spam Spam Spam Spam</span><br><span class="line">    </span><br></pre></td></tr></table></figure>
+        </div></div></div></div>
+<br>
+자, 이제 하나하나 분석해보겠습니다. 이 간단한 프로그램은  파이썬 코드가 어떻게 생겼는지, 어떻게 동작하는지를 여러 중요한 측면들을 통해 보여줍니다. 위에서 부터 순서대로 살펴보겠습니다.
+<br>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">spam_amount = <span class="number">0</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>변수 선언</strong> : <code>spam_amount</code>라는 변수를 만들고 할당 연산자라고하는 = 을 사용하여 0 값을 할당합니다.</p>
+<blockquote>
+<p><strong>잠깐!</strong> :  만약 기존에 다른 언어(Java 또는 C ++ 등)로 프로그래밍을 하셨던 분의 경우 파이썬 코드에서는 몇 가지 빠져있는 것을 느꼈을 것 입니다.</p>
+<blockquote>
+<p><code>spam_amount</code>를 할당하기 전에 “선언(declar)”할 필요가 없습니다.<br>우리는 파이썬에게 어떤 유형의 값인 <code>spam_amount</code>가 참조 할지를 말할 필요가 없습니다. 사실, 우리는 문자열(string)이나 부울(boolean)과 같은 다른 종류의 것을 참조하기 위해 <code>spam_amount</code>를 재할당 할 수 있습니다.</p>
+</blockquote>
+</blockquote>
+<br>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(spam_amout)  <span class="comment"># 0</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>함수 호출</strong> : <code>print</code> 함수는 화면에 전달 된 값을 표시하는 파이썬 함수입니다. 함수 이름 뒤에 괄호를 넣고 그 괄호 안에 입력 (또는 인자)을 넣음으로써 함수를 호출합니다.</p>
+<br>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#스팸, 계란, 스팸, 스팸, 베이컨과 스팸 주문</span></span><br><span class="line">spam_amout = spam_amout + <span class="number">4</span></span><br></pre></td></tr></table></figure>
+
+<p>첫 줄은 <strong>주석(comment)</strong> 입니다.파이썬에서는 <code>#</code> 기호로 시작하면 주석으로 처리합니다.</p>
+<p>다음으로 우리는 재할당(reassignment)의 예를 볼 수 있습니다. 기존 변수의 값을 재할당하는 것은 변수를 만드는 것과 똑같은 것처럼 보입니다. &lt;- 여전히 할당 연산자 = 을 사용합니다.</p>
+<p>이 경우 <code>spam_amount</code>에 지정하는 값으로 이전 값에 대한 간단한 산술 연산을 한 값을 할당합니다. 파이썬은 (0 + 4 = 4)에서 <code>=</code> 오른쪽에있는 표현식의 값을 왼쪽에있는 변수에 할당합니다.</p>
+<br>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> spam_amount &gt; <span class="number">0</span>:</span><br><span class="line">  print(<span class="string">"But I don't want ANY spam!"</span>) <span class="comment"># But I don't want ANY spam!</span></span><br><span class="line"></span><br><span class="line">viking_song = <span class="string">"Spam Spam Spam"</span></span><br><span class="line">print(viking_song)	<span class="comment">#Spam Spam Spam</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>조건문(conditional)</strong>에 대한 설명은 나중에 자세히 다루겠지만, 코드를 전혀 짜본적 없더라도 이 문장이 어떤 것을 의미하는지는 짐작할 수 있을 것 입니다. 파이썬은 가독성과 단순성 때문에 높이 평가됩니다.</p>
+<p>어떤 코드가 <code>if문</code>에 속해 있는지 구별하는 방법을 잘 보십시오. <code>&quot;But I don&#39;t want ANY spam!&quot;</code>  문자열은 <code>spam_amount</code>가 양수일 때만 출력되어야 합니다. 하지만 뒤에 <code>print (viking_song)</code>과 같은 코드는 무슨일이 있어도 실행 되어야합니다. 우리(그리고 파이썬)는 그것을 어떻게 알 수 있습니까?</p>
+<p><code>if문</code> 줄(line)의 끝에있는 콜론 (<code>:</code>)은 새로운 “코드 블록”이 시작되고 있음을 나타냅니다. 들여 쓰기되는 후속 행이 <strong>해당 코드 블록의 일부</strong> 입니다. 다른 언어에서는 <code>{</code> 중괄호 <code>}</code>를 사용하여 코드 블록의 시작과 끝을 표시합니다. Python의 이런 공백을 사용한 코드 블럭은 다른 언어에 익숙한 프로그래머에게는 놀라운 일일 수 있지만, 코드 블록의 들여 쓰기를 시행하지 않는 언어보다 일관되고 읽기 쉬운 코드가 될 수 있습니다.</p>
+<p>이후의 행에서 <code>viking_song</code>을 다루는 줄은 여분의 4 칸으로 들여 쓰이지 않기 때문에 <code>if</code>의 코드 블록에 포함되지 않습니다. 나중에 함수를 정의하고 루프(loops)를 사용할 때 들여 쓰기 된 코드 블록의 예제를 보게 될 것입니다.</p>
+<p>이 스니펫은(snippet)은 파이썬에서의 <strong>문자열(string) 형태</strong> 입니다.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="string">"But I don't want ANY spam!"</span></span><br></pre></td></tr></table></figure>
+
+<p>문자열은 <u>큰 따옴표</u> 나 <u>작은 따옴표</u>로 표시 할 수 있습니다. (예제의 문자열에는 작은 따옴표가 포함되어 있으므로 파이썬이 혼동하는 것을 방지하기 위해 큰 따옴표를 사용했습니다.)</p>
+<br>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">viking_song = <span class="string">"Spam "</span> * spam_amount</span><br><span class="line">print(viking_song)	<span class="comment"># Spam Spam Spam Spam</span></span><br></pre></td></tr></table></figure>
+
+<p><code>*</code>연산자는 두 개의 숫자를 곱하는데 사용되기도 하지만(<code>3 * 3</code>은 9로 계산됩니다), 문자열에 숫자를 곱하여 그 수만큼 반복되는 문자열을 만들 수도 있습니다. 파이썬에서 <code>*</code>와 <code>+</code> 같은 연산자는 어디에 적용되는지에 따라 이와 같이 많은 시간 절약 트릭을 제공합니다. (참고: <span class="exturl" data-url="aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvT3BlcmF0b3Jfb3ZlcmxvYWRpbmc=" title="https://en.wikipedia.org/wiki/Operator_overloading">operator overloading<i class="fa fa-external-link"></i></span>)</p>
+<p><br><br></p>
+<h2 id="파이썬에서의-수와-산술-Numbers-and-arithmetic-in-Python"><a href="#파이썬에서의-수와-산술-Numbers-and-arithmetic-in-Python" class="headerlink" title="파이썬에서의 수와 산술(Numbers and arithmetic in Python)"></a>파이썬에서의 수와 산술(Numbers and arithmetic in Python)</h2><p>위 예제를 통해 우리는 숫자 값을 가지는 변수를 이미 보았습니다.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">spam_amout = <span class="number">0</span></span><br></pre></td></tr></table></figure>
+
+<p>변수형(type)을 “Number” 라고 표현하기보다 좀 더 전문적인 표현을 원한다면 우리는 파이썬에게 <code>spam_amout</code> 의 type을 물어볼 수 있습니다.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">type(spam_amout)	<span class="comment"># int</span></span><br></pre></td></tr></table></figure>
+
+<p>변수가 <code>ìnt</code> 형 (short for integer) 임을 알 수 있습니다. 파이썬에는 이 외에도 다른 형태의 숫자형이 있습니다</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">type(<span class="number">19.95</span>)	<span class="comment"># float</span></span><br></pre></td></tr></table></figure>
+
+<p><code>float</code>형은 소수점 이하의 숫자를 나타냅니다 - 가중치(weight)나 비율(proportion)을 나타낼 때 유용합니다.</p>
+<p><code>type()</code> 함수는 위에서 다뤘던 <code>print()</code> 함수 이후 두번째로 만나는 내장 함수이며 기억해두시면 좋습니다. 이 함수를 통해 파이썬에게 “이 함수의 형태가 무엇인지?”를 묻고 답을 얻을 수 있습니다.</p>
+<br>
+
+<p>숫자(number)를 다룬다면 빠질 수 없는게 산술(arithmetic)입니다. 우린 이미 <code>+</code> 더하기 연산과, <code>*</code> 곱하기 연산을 위에서 살펴 보았습니다(sort 함수). 파이썬에는 계산기에서 볼 수 있는 기본적인 연산을 지원합니다.</p>
+<table>
+<thead>
+<tr>
+<th align="left">Operator</th>
+<th align="left">Name</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>a + b</code></td>
+<td align="left">Addition</td>
+<td align="left">Sum of <code>a</code> and <code>b</code></td>
+</tr>
+<tr>
+<td align="left"><code>a - b</code></td>
+<td align="left">Subtraction</td>
+<td align="left">Difference of <code>a</code> and <code>b</code></td>
+</tr>
+<tr>
+<td align="left"><code>a * b</code></td>
+<td align="left">Multiplication</td>
+<td align="left">Product of <code>a</code> and <code>b</code></td>
+</tr>
+<tr>
+<td align="left"><code>a / b</code></td>
+<td align="left">True division</td>
+<td align="left">Quotient of <code>a</code> and <code>b</code></td>
+</tr>
+<tr>
+<td align="left"><code>a // b</code></td>
+<td align="left">Floor division</td>
+<td align="left">Quotient of <code>a</code> and <code>b</code>, removing fractional parts</td>
+</tr>
+<tr>
+<td align="left"><code>a % b</code></td>
+<td align="left">Modulus</td>
+<td align="left">Integer remainder after division of <code>a</code> by <code>b</code></td>
+</tr>
+<tr>
+<td align="left"><code>a ** b</code></td>
+<td align="left">Exponentiation</td>
+<td align="left"><code>a</code> raised to the power of <code>b</code></td>
+</tr>
+<tr>
+<td align="left"><code>-a</code></td>
+<td align="left">Negation</td>
+<td align="left">The negative of <code>a</code></td>
+</tr>
+</tbody></table>
+<br>
+
+<p>하나의 흥미로운 사실은 계산기에는 나누기 버튼이 하나만 있는 반면 파이썬에는 <u>두 가지 종류로 구분</u>되어 있습니다. “True division”이 우리에게 익숙한 기본적인 나눗셈 연산을 수행합니다.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(<span class="number">5</span> / <span class="number">2</span>)	<span class="comment"># 2.5</span></span><br><span class="line">print(<span class="number">6</span> / <span class="number">2</span>)	<span class="comment"># 3.0</span></span><br></pre></td></tr></table></figure>
+
+<p>결과는 항상 <code>float</code> 형으로 반환됩니다.</p>
+<br>
+
+<p><code>//</code> 연산은 나눗셈 된 값을 반올림 한 정수값을 결과로 반환합니다.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(<span class="number">5</span> // <span class="number">2</span>)	<span class="comment"># 2</span></span><br><span class="line">print(<span class="number">6</span> // <span class="number">2</span>)	<span class="comment"># 3</span></span><br></pre></td></tr></table></figure>
+
+<p>위 연산이 유용하게 쓰일만한 상황이 떠오르시나요? 곧 예제를 통해 살펴보도록 하겠습니다.</p>
+<p><br><br></p>
+<h3 id="연산-순서-Order-of-operations"><a href="#연산-순서-Order-of-operations" class="headerlink" title="연산 순서(Order of operations)"></a>연산 순서(Order of operations)</h3><p>초등학교에서 다들 산술 연산의 연산 순서 대해 배우셨을겁니다. <code>외국에서는 PEMDAS - Parentheses, Exponents, Multiplication/Division, Addition/Subtraction 로 외우나 봅니다</code>  괄호 -&gt;지수 -&gt; 곱셈 /나눗셈 -&gt; 덧셈 /뺄셈 순서로 계산하면 된다고 기억하실겁니다.</p>
+<p>파이썬에서도 비슷한 규칙으로 계산을 합니다. 그리고 매우 직관적입니다.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="number">8</span> - <span class="number">3</span> + <span class="number">2</span> 	<span class="comment"># 7</span></span><br><span class="line"><span class="number">-3</span> + <span class="number">4</span> * <span class="number">2</span>	<span class="comment"># 5</span></span><br></pre></td></tr></table></figure>
+
+<p>기본적인 연산만으로는 우리가 원하는 결과를 얻지 못할 경우도 생깁니다.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">hat_height_cm = <span class="number">25</span></span><br><span class="line">my_height_cm = <span class="number">190</span></span><br><span class="line"><span class="comment"># How tall am I, in meters, when wearing my hat?</span></span><br><span class="line">total_height_meters = hat_height_cm + my_height_cm / <span class="number">100</span></span><br><span class="line">print(<span class="string">"Height in meters ="</span>, total_height_meters, <span class="string">"?"</span>)	<span class="comment"># Height in meters = 26.9 ?</span></span><br></pre></td></tr></table></figure>
+
+<p>이 경우 <strong>괄호(parentheses)</strong>를 사용하면 되겠습니다. 괄호를 사용하면 하위 표현식(sub-expression)을 먼저 계산할 수 있도록 연산의 순서를 조절할 수 있습니다.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">total_height_meters = (hat_height_cm + my_height_cm) / <span class="number">100</span></span><br><span class="line">print(<span class="string">"Height in meters ="</span>, total_height_meters) <span class="comment"># Height in meters = 2.15</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="연산-관련-내장함수-Builtin-functions-for-working-with-numbers"><a href="#연산-관련-내장함수-Builtin-functions-for-working-with-numbers" class="headerlink" title="연산 관련 내장함수(Builtin functions for working with numbers)"></a>연산 관련 내장함수(Builtin functions for working with numbers)</h3><p><code>min</code>과 <code>max</code> 는 각각 최소값과 최대값을 반환합니다.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(min(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>))	<span class="comment"># 1</span></span><br><span class="line">print(max(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>))	<span class="comment"># 3</span></span><br></pre></td></tr></table></figure>
+
+<p><code>abs</code>는 절대값을 반환합니다.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(abs(<span class="number">32</span>))	<span class="comment"># 32</span></span><br><span class="line">print(abs(<span class="number">-32</span>))	<span class="comment"># 32</span></span><br></pre></td></tr></table></figure>
+
+<p><code>int</code>와 <code>float</code>를 사용해서 각자의 형태(type)로 변환이 가능합니다.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(float(<span class="number">10</span>))	<span class="comment"># 10.0</span></span><br><span class="line">print(int(<span class="number">3.33</span>))	<span class="comment"># 3</span></span><br><span class="line"><span class="comment"># 심지어 문자열(string)에서도 호출 가능하다!</span></span><br><span class="line">print(int(<span class="string">'807'</span>) + <span class="number">1</span>)	<span class="comment"># 808</span></span><br></pre></td></tr></table></figure>
+
+<p><br><br><br></p>
+<h1 id="연습문제-Your-Turn"><a href="#연습문제-Your-Turn" class="headerlink" title="연습문제(Your Turn)"></a>연습문제(Your Turn)</h1><p>학습한 내용을 연습해 보세요. <strong><span class="exturl" data-url="aHR0cHM6Ly93d3cua2FnZ2xlLmNvbS9rZXJuZWxzL2ZvcmsvMTI3NTE2Mw==" title="https://www.kaggle.com/kernels/fork/1275163">first Python programming exercise<i class="fa fa-external-link"></i></span></strong></p>
+<p><br><br><br></p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/2019/02/12/os-overview-2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="NUNU">
+      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="AttackOnNunu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/02/12/os-overview-2/" class="post-title-link" itemprop="url">운영체제 - Overview_2</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2019-02-12 18:51:53" itemprop="dateCreated datePublished" datetime="2019-02-12T18:51:53+09:00">2019-02-12</time>
+            </span>
+          
+
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/OS/" itemprop="url" rel="index"><span itemprop="name">OS</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">댓글: </span>
+                <a href="/2019/02/12/os-overview-2/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/02/12/os-overview-2/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="컴퓨터-시스템-구조"><a href="#컴퓨터-시스템-구조" class="headerlink" title="컴퓨터 시스템 구조"></a>컴퓨터 시스템 구조</h1><h2 id="2-1-컴퓨터-시스템의-동작"><a href="#2-1-컴퓨터-시스템의-동작" class="headerlink" title="2.1 컴퓨터 시스템의 동작"></a>2.1 컴퓨터 시스템의 동작</h2><img style="height:450px; align:center;" data-src="https://i.imgur.com/8JAIHTg.png">
+
+<ul>
+<li>컴퓨터는 <u>공유된 주기억장치에 접근을 제공하는 공통 버스에 의해 연결된 CPU와 여러 개의 장치 제어기(Device controller)로 구성</u>되어 있습니다.<ul>
+<li>장치 제어기(Device Controller)<br>각 장치(디스크, 오디오 장치, 비디오 디스플레이)를 관리</li>
+<li>장치 제어기와 CPU는 병행으로 수행되므로 이들은 주기억장치 접근에 대해 경쟁합니다. 주기억장치 제어기(Memory Controller)는 이들의 접근을 동기화해줍니다.</li>
+</ul>
+</li>
+<li>컴퓨터가 처음 구동되면 초기에 실행될 프로그램이 필요합니다. 이 프로그램을 <strong>부트스트랩 프로그램(Bootstrap program)</strong> 이라고 합니다. 이 프로그램은 보통 컴퓨터 하드웨어 내에 ROM(Read-Only-Memory)에 저장되어 있습니다.<ul>
+<li>부트스트랩 프로그램(Bootstrap program)<br>모든 하드웨어를 초기화하고 운영체제 커널을 주기억장치에 적재한 후에 커널을 실행</li>
+</ul>
+</li>
+</ul>
+<br>
+
+<ul>
+<li>컴퓨터에서 사건(Event)의 발생은 <strong>인트럽트(interrupt)</strong> 신호, <strong>트랩(trap)</strong> 혹은 <strong>예외(Exception)</strong> 를 통해 운영체제에 통보됩니다. 사건이 발생되면 CPU는 현재 수행중인 작업을 멈추고, 운영체제 내에 있는 특정 코드를 실행합니다. 이 실행이 끝나면 다시 멈춘 작업을 재개합니다.</li>
+</ul>
+<img height="250px" data-src="http://pediaa.com/wp-content/uploads/2018/08/Difference-Between-Trap-and-Interrupt_Figure-1.png">
+
+<p><span style="color:red">Interrupt</span></p>
+<ul>
+<li><strong>Hardware Interrupt</strong> : 하드웨어는 CPU에 특정 신호를 보내어 인트럽트의 발생을 알림<br>– 예) 키보드 입력, I/O interrupt, timer ticks</li>
+<li>하드웨어가 시스템의 수행 흐름을 바꾸기 위해 발생하는 것</li>
+<li>비동기식(Asynchronus Interrupt)</li>
+</ul>
+<p><span style="color:red">Trap</span></p>
+<ul>
+<li><strong>Software Interrupt</strong> : 시스템호출(System call)이라는 특정 연산을 실행하여 일부로 발생시키거나 오류 때문에 자발적으로 발생<br>– 오류의 예) 0 나누기, 부적합한 주기억장치 접근(page fault)</li>
+<li>동기식(Synchronus Interrupt)</li>
+</ul>
+<p><span style="color:red">Exception</span></p>
+<ul>
+<li>프로세서에 의해 자동으로 처리</li>
+<li><strong>Faults</strong> 와 <strong>Aborts</strong> 로 세분화 가능<br>– Faults : 복구 가능한 오류 (recoverable error)<br>– Aborts : 처리하기 어려운 오류 (an error that is difficult to handle)</li>
+</ul>
+<br>
+
+<h2 id="2-2-I-O-구조"><a href="#2-2-I-O-구조" class="headerlink" title="2.2 I/O 구조"></a>2.2 I/O 구조</h2><ul>
+<li>장치 제어기(Device controller)에 따라 하나 이상의 장치가 제이거에 연결될 수 있습니다</li>
+<li>장치 제어기는 지역 버퍼와 몇 개의 특수 목적 레지스터를 유지합니다</li>
+<li>장치 제어기는 연결된 주변장치와 지역 버퍼 간에 데이터 이동을 책임집니다. 이 버퍼의 크기는 주변장치에 따라 다릅니다.</li>
+</ul>
+<h3 id="2-2-1-I-O-Interrupt"><a href="#2-2-1-I-O-Interrupt" class="headerlink" title="2.2.1 I/O Interrupt"></a>2.2.1 I/O Interrupt</h3><ul>
+<li>입출력의 두 가지 형태<br>– 동기식 입출력(Synchronous I/O) : 입출력이 시작되면 요청한 프로세서는 입출력이 완료될 때까지 기다림<br>– 비동기식 입출력(Asynchronous I/O) : 요청한 프로세서는 입출력이 완료될 때까지 기다리지 않고 계속 다른 작업을 수행</li>
+<li>입출력의 완료를 기다리는 방법<br>– 특수한 명령어 사용<br>– 대기 루프 사용</li>
+<li><u>만약 CPU가 입출력 완료를 항상 기다리면</u> 한번에 한 입출력만 가능<br>하지만 시스템의 효율을 높이기 위해 입출력과 계산을 병행할 수 있어야함으로 이 방법은 비효율적</li>
+<li>운영체제는 여러 개의 입출력 요청을 관리하기 위해 <strong>장치 상태 테이블(device-status table)</strong> 을 유지합니다. 각 장치마다 대기큐를 유지합니다.</li>
+</ul>
+<img height="350px" data-src="https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/images/Chapter13/13_09_DeviceStatusTable.jpg">
+
+
+
+<h3 id="2-2-2-DMA-구조"><a href="#2-2-2-DMA-구조" class="headerlink" title="2.2.2 DMA 구조"></a>2.2.2 DMA 구조</h3><ul>
+<li>속도가 느린 입출력 장치는 하나의 입력을 받은 후에 다음 입력까지 CPU는 다른 유용한 작업을 할 수 있습니다.<br>반대로 속도가 빠른 입출력 장치는 인트럽트가 너무 빈번하게 발생하여 CPU가 다른 유용한 작업을 할 시간이 없습니다.</li>
+<li>이것을 해결하기 위해 사용하는 기법이 <strong>DMA(Direct Memory Access)</strong> 입니다.</li>
+<li>DMA 방식에서 장치 제어기는 데이터 블록을 CPU의 관여없이 직접 주기억장치로 이동하며, 인터럽트는 바이트 단위가 아닌 블록 단위로 발생합니다.</li>
+</ul>
+<img style="align:center;" data-src="http://pds17.egloos.com/pds/200910/26/90/c0098890_4ae5a423a7cef.jpg">
+
+<br>
+
+<h2 id="2-3-저장-구조"><a href="#2-3-저장-구조" class="headerlink" title="2.3 저장 구조"></a>2.3 저장 구조</h2><img data-src="https://i.imgur.com/ofvb8E7.png">
+
+<ul>
+<li>컴퓨터 프로그래밍이 실행되기 위해서는 <strong>주기억장치(main memory / primary storage / internal memory)</strong> 에 적재되어야 합니다</li>
+<li>주기억장치는 보통 <u>동적 임의접근 메모리(dynamic Random-Access Memory, RAM)</u>라고 하는 반도체 메모리를 사용</li>
+<li><u>CPU가 직접 접근할 수 있는 기억장치</u>는 주기억장치뿐입니다</li>
+</ul>
+<ul>
+<li>주기억장치의 한 구성 단위를 <strong>워드(word)</strong> 라 하며, 각 워드는 독특한 주소를 가집니다</li>
+</ul>
+<ul>
+<li><span style="color:red">주기억장치의 크기 / 주기억장치의 휘발성</span> 때문에 모든 프로그램과 데이터를 주기억장치에 영구적으로 저장할 수 없습니다</li>
+<li>이 문제를 해결하기 위해 많은 양의 데이터를 영구 보관할 수 있는  <strong>보조 기억장치(auxiliary memory / secondary storage / external memory)</strong> 를 사용합니다</li>
+</ul>
+<h3 id="2-3-1-주기억장치"><a href="#2-3-1-주기억장치" class="headerlink" title="2.3.1 주기억장치"></a>2.3.1 주기억장치</h3><ul>
+<li><strong>Memory-mapped I/O</strong><br> 주기억장치의 일부 주소가 입출력을 위해 예약되어 있으며, 이 주소에서 읽거나 쓰면 장치 레지스터로부터 데이터를 읽거나 쓰는 결과가 되는 것</li>
+<li>CPU가 I/O 포트를 통해 연결된 장치와 데이터를 교환하는 2가지 방식<br>– <strong>Programmed I/O</strong> : CPU가 계속 장치의 상태를 검사(polling)하는 방식<br>– <strong>Interrupt</strong> : 다음 데이터를 처리할 준비가 되면 장치 제어기는 인터럽트를 통해 그 사실을 CPU에 알리는 방식</li>
+<li>주기억장치와 CPU의 속도 차이를 극복하기 위해 주기억장치와 CPU 사이에 <strong>캐시(cache)</strong> 라고 하는 고속 메모리 버퍼를 사용</li>
+</ul>
+<img data-src="https://teachcomputerscience.com/wp-content/uploads/2016/12/cache_animation.gif">
+
+
+
+<h3 id="2-3-2-보조기억장치-자기-디스크"><a href="#2-3-2-보조기억장치-자기-디스크" class="headerlink" title="2.3.2 보조기억장치(자기 디스크)"></a>2.3.2 보조기억장치(자기 디스크)</h3><img style="height:120px; float:right;" data-src="https://www.applexsoft.com/glossary/harddisk.jpg">
+
+<ul>
+<li><p>자기 디스크는 <strong>플래터(platter)</strong> 라고 하는 여러 개의 원형 판으로 구성이 플래터는 다시 원형 모양의 <strong>트랙(track)</strong> 으로 구성<br>트랙은 다시 여러 개의 <strong>섹터(sector)</strong> 로 나뉘어짐</p>
+<br>
+<img style="height:150px; float:right;" data-src="http://mblogthumb1.phinf.naver.net/20141226_132/capemay_1419579186649T86jM_PNG/010edsector.png?type=w2">
+</li>
+<li><p>단순하게 섹터를 여러 개를 하나로 묶은 것을 <strong>클러스터(cluster)</strong> 라 하고, 같은 위치에 있는 트랙의 모음을 <strong>실린더(cylinder)</strong> 라고 합니다<br>– 클러스터는 <u>운영체제에서 사용하는 데이터 저장의 최소 단위</u></p>
+<br>
+<br></li>
+<li><p><strong>디스크의 속도</strong> = 컴퓨터로 데이터를 전송하는 비율인 전송률(transfer rate) + 임의접근 시간(random-access time)이라고 하는 위치결정 시간(positioning time)에 의해 결정됩니다</p>
+</li>
+<li><p>데이터의 교환은 특수한 제어기를 통해 이루어집니다<br>컴퓨터 연결 끝에는 호스트 제어기<br>디스크 자체 내에는 디스크 제어기 가 있습니다</p>
+</li>
+<li><p>디스크 제어기는 자체적으로 캐시를 가지고 있습니다</p>
+</li>
+<li><p>실제 데이터는 디스크 제어기에 의해 디스크에서 캐시로 옮겨지고, 호스트 제어기는 캐시에 있는 데이터를 주기억장치로 옮깁니다</p>
+</li>
+</ul>
+<h2 id="2-4-저장장치의-계층구조"><a href="#2-4-저장장치의-계층구조" class="headerlink" title="2.4 저장장치의 계층구조"></a>2.4 저장장치의 계층구조</h2><img data-src="https://eunhyejung.github.io/assets/contents/content03.PNG">
+
+<ul>
+<li>계층구조에서 위에 위치할 수록 속도는 빠르지만 고가이며 휘발성의 성질을 가집니다</li>
+<li>두 저장장치의 속도 차이는 중간에 빠른 캐시를 설치하여 극복할 수 있습니다</li>
+<li>시스템을 구성할 때 저장장치의 계층구조를 균형있게 잘 구성하면 저렴한 가격에 높은 성능을 얻을 수 있습니다</li>
+</ul>
+<h3 id="2-4-1-캐싱"><a href="#2-4-1-캐싱" class="headerlink" title="2.4.1 캐싱"></a>2.4.1 캐싱</h3><ul>
+<li>CPU가 데이터를 필요하면 먼저 캐시에 그 데이터가 있는지 검사합니다<br>만약 있으면 캐시에서 바로 사용하고 없으면 주기억장치에 있는 데이터를 사용하지만 이 데이터의 복사본을 캐시에 보관합니다. 이는 데이터를 곧 다시 사용할 확률이 높기 때문입니다</li>
+<li><strong>캐시의 크기는 제한</strong> 되어 있으므로 이것을 잘 관리하여야 시스템의 성능을 높일 수 있습니다. 캐시의 크기와 교체 정책(replacement policy)을 잘 선택하면 원하는 데이터가 캐시에 있을 확률을 80%에서 99%까지 높일 수 있습니다</li>
+<li>주기억장치는 CPU와 보조기억장치 사이에 있는 캐시로 사용될 수 있습니다</li>
+</ul>
+<h3 id="2-4-2-일관성"><a href="#2-4-2-일관성" class="headerlink" title="2.4.2 일관성"></a>2.4.2 일관성</h3><ul>
+<li>저장장치의 계층구조를 사용하면 같은 데이터가 여러 레벨에 존재할 수 있습니다</li>
+<li>한번에 하나의 프로세스만 동작하면 아무 문제가 되지 않지만!<br>여러 프로세스가 같은 데이터를 접근하고자 하면 모든 프로세스가 최신의 데이터를 얻을 수 있도록 해야 합니다<br><u>이 문제는 다중프로세서 시스템에서 더욱 심각합니다</u></li>
+<li>분산 환경에서는 여러 파일의 복사본이 여러 컴퓨터에 분산되어 있을 수 있습니다. 따라서 하나의 복사본에 대한 갱신이 이루어지면 다른 복사본도 갱신되도록 하여야 합니다</li>
+</ul>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p><span class="exturl" data-url="aHR0cDovL3BlZGlhYS5jb20vZGlmZmVyZW5jZS1iZXR3ZWVuLXRyYXAtYW5kLWludGVycnVwdC8=" title="http://pediaa.com/difference-between-trap-and-interrupt/">Difference between Trap and Interrupt<i class="fa fa-external-link"></i></span></p>
+<p><span class="exturl" data-url="aHR0cDovL3JlY2lwZXMuZWdsb29zLmNvbS81MTUyODY3" title="http://recipes.egloos.com/5152867">DMA-CPU몰래 영차영차<i class="fa fa-external-link"></i></span></p>
+<p><br><br><br></p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/2019/02/11/spring-IoC/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -574,505 +1206,11 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/2019/02/05/os-overview/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="NUNU">
-      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="AttackOnNunu">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/02/05/os-overview/" class="post-title-link" itemprop="url">운영체제 - Overview_1</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">작성일</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2019-02-05 19:29:30" itemprop="dateCreated datePublished" datetime="2019-02-05T19:29:30+09:00">2019-02-05</time>
-            </span>
-          
-
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/OS/" itemprop="url" rel="index"><span itemprop="name">OS</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">댓글: </span>
-                <a href="/2019/02/05/os-overview/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/02/05/os-overview/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          <br>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <hr>
-<h1 id="1-소개"><a href="#1-소개" class="headerlink" title="1. 소개"></a>1. 소개</h1><h2 id="1-1-운영체제"><a href="#1-1-운영체제" class="headerlink" title="1.1 운영체제"></a>1.1 운영체제</h2><img data-src="https://www.tutorialspoint.com/operating_system/images/conceptual_view.jpg">
-
-<img style="float:right;" data-src="https://upload.wikimedia.org/wikipedia/ko/thumb/a/a3/Operating_system_placement_kor.png/200px-Operating_system_placement_kor.png">
-
-<ul>
-<li><p>운영체제(Operating System)란?</p>
-<p>– 컴퓨터 하드웨어를 관리하는 프로그램<br>– 응용 프로그램의 토대를 제공해주는 프로그램<br>– <strong><span style="color:orange;">사용자</span>와 <span style="color:red;">하드웨어</span> 사이에 중간 매개체 역할</strong> 을 해주는 프로그램</p>
-</li>
-<li><p>운영체제 범위에 대한 정의<br>하드웨어의 종류와 용도가 다양해서 OS의 범위는 모호하게 정의됩니다​<br>정의 1) 운영체제를 구입하였을 때 포함되어 있는 모든 것<br><u>정의 2) 항상 수행되고 있는 유일한 프로그램(보통 <strong>Kernel</strong> 이라고 한다)</u><br><strong>대체로 2번 째 정의를 사용함</strong></p>
-</li>
-</ul>
-<p>그림에서 처럼 운영체제는 컴퓨터의 사용자와 컴퓨터 하드웨어 사이에 있기 때문에 운영체제를 바라보는 관점도 두 가지로 분류할 수 있습니다.</p>
-<h3 id="1-1-1-사용자-관점"><a href="#1-1-1-사용자-관점" class="headerlink" title="1.1.1 사용자 관점"></a>1.1.1 <span style="color:orange;">사용자 관점</span></h3><ul>
-<li><p><strong>컴퓨터의 용도</strong> 에 따라 OS의 설계 방향이 결정 됩니다.</p>
-<p>– 개인용 컴퓨터(Home PC user)<br>– 메인프레임, 미니컴퓨터(Mainframe, minicomputer)<br>– 워크스테이션(Workstation)<br>– 휴대용 컴퓨터(Mobile devices)</p>
-</li>
-</ul>
-<h3 id="1-1-2-시스템-관점"><a href="#1-1-2-시스템-관점" class="headerlink" title="1.1.2 시스템 관점"></a>1.1.2 <span style="color:red;">시스템 관점</span></h3><ul>
-<li><strong>자원 할당자(resource allocator)</strong><br>컴퓨터 자원(CPU 시간, 메모리 공간, 파일 저장 공간, 입출력 장치)의 할당은 공정해야 하며 효율적으로 이루어져야 합니다.</li>
-<li><strong>제어 프로그램(control program)</strong><br>사용자 프로그램의 실행을 감독하여 오류와 컴퓨터 오용을 방지하고 입출력 장치의 제어와 동작을 관리 합니다.</li>
-</ul>
-<h3 id="1-1-3-운영체제의-목표"><a href="#1-1-3-운영체제의-목표" class="headerlink" title="1.1.3 운영체제의 목표"></a>1.1.3 운영체제의 목표</h3><ul>
-<li><span style="color:orange;">사용자</span>에게 편리성 제공</li>
-<li><span style="color:red;">컴퓨터 시스템</span>의 효율적 운영</li>
-</ul>
-<p><strong>사용자에게 컴퓨터에서 프로그램을 효율적이고 편리하게 실행할 수 있는 환경을 제공</strong> 하는 것 입니다!!</p>
-<h2 id="1-2-메인프레임-시스템"><a href="#1-2-메인프레임-시스템" class="headerlink" title="1.2 메인프레임 시스템"></a>1.2 메인프레임 시스템</h2><h3 id="1-2-1-일괄처리-시스템-1950"><a href="#1-2-1-일괄처리-시스템-1950" class="headerlink" title="1.2.1 일괄처리 시스템(1950)"></a>1.2.1 일괄처리 시스템(1950)</h3><p><strong>Batch processing system이란 처리속도를 향상 시키기 위해 유사한 요구를 필요로 하는 여러개의 작업을 함께 모아 단일 작업으로 일괄 처리하는 시스템입니다</strong></p>
-<ul>
-<li><p>운영체제는 항상 <strong>메모리</strong> 에 상주하고, 주 임무는 <strong>하나의 작업에서 다음 작업으로 제어를 자동적으로 옮기는 것</strong></p>
-</li>
-<li><p>작업을 실행하면 끝날 때까지 다른 작업을 못함</p>
-</li>
-<li><p><span style="color:red">기계적 입출력 장치가 전자적 장치의 속도보다 상대적으로 느려 CPU가 종종 쉬는 경우가 발생</span></p>
-</li>
-</ul>
-<p><span style="color:blue">직접 접근(direct access)이 가능한 디스크의 도입 : Job scheduling과 multi-programming이 가능하게 됨</span></p>
-<h3 id="1-2-2-다중-프로그램-시스템-1960"><a href="#1-2-2-다중-프로그램-시스템-1960" class="headerlink" title="1.2.2 다중 프로그램 시스템(1960)"></a>1.2.2 다중 프로그램 시스템(1960)</h3><p><strong>Multi-program system 이란 여러 개의 프로그램을 동시에 메모리에 적재하여 하나의 프로그램이 대기 상태가 되면 그 동안 다른 프로그램을 실행하는 시스템입니다</strong></p>
-<ul>
-<li>입출력과 프로그램의 실행을 병행으로 수행할 수 있어 CPU의 사용 효율(utilization)이 증가</li>
-<li>다중 프로그래밍에서 운영체제는 사용자를 대신하여 의사결정을 수행해야 함<br>– <strong>Job scheduling</strong> : 디스크에 있는 작업 저장소(Job pool)에서 작업을 선택하여 메모리로 옮기는 것<br>– <strong>CPU scheduling</strong> : 실행 중인 작업이 대기 상태가 되었을 때 메모리에 있는 작업 중 하나를 선택하여 CPU에 할당하는 것</li>
-<li><span style="color:red">여러 프로그램이 동시에 메모리에 상주하므로 메모리 관리가 복잡</span></li>
-<li>Multi programming을 제공하는 일괄처리 시스템은 <span style="color:red">CPU의 사용 효율은 높였지만 사용자와 컴퓨터 간에 상호작용은 제공하지 못함</span></li>
-</ul>
-<h3 id="1-2-3-시분할-시스템-1960"><a href="#1-2-3-시분할-시스템-1960" class="headerlink" title="1.2.3 시분할 시스템(1960)"></a>1.2.3 시분할 시스템(1960)</h3><p><strong>시분할(Time sharing) 또는 멀티태스킹(multi-tasking)은 다중 프로그래밍과 달리 정해진 시간이 되면 무조건 다음 순서의 작업을 실행하는 방식</strong> 으로 교대하는 시간이 매우 짧아 프로그램이 실행되는 동안 사용자는 컴퓨터와 상호작용이 가능한 시스템입니다</p>
-<ul>
-<li>사용자와 시스템 간에 직접 상호작용이 가능한 시스템을 <strong>대화식 컴퓨터 시스템(inter-active computer system)</strong> 이라 하고 이런 시스템은 응답시간(response time)이 짧아야 함</li>
-<li>여러 사용자가 동시에 컴퓨터를 사용할 수 있음</li>
-<li>메모리에 적재되어 실행 중인 프로그램을 <strong>프로세스(process)</strong> 라고 함</li>
-<li>많은 사용자의 프로그램을 동시에 수행하기 위해서는 <em>주기억장치</em> 의 용량으로는 부족<br><span style="color:blue">디스크를 주기억장치의 보조 저장 장치로 활용으로 문제를 해결하며 가장 널리 사용되는 기법으로 가상 메모리(virtual memory)</span> 가 있습니다</li>
-</ul>
-<h2 id="1-3-실시간-처리-시스템"><a href="#1-3-실시간-처리-시스템" class="headerlink" title="1.3 실시간 처리 시스템"></a>1.3 실시간 처리 시스템</h2><p><strong>Real time processing system 이란</strong> 프로세서 작동이나 데이터 흐름에 엄격한 시간 제약이 있을 때 사용되는 방식으로 <strong>데이터 처리 요구가 있는 즉시 수행하여 결과를 산출하는 시스템입니다</strong></p>
-<ul>
-<li>보통 특수 목적용(우주선 운행, 레이더 추적기, 핵물리학 실험, 은행의 온라인 업무)<br>주의) <u>실시간과 빠르다는 것은 다른 개념!!</u></li>
-<li>엄격한 실시간 시스템(hard real-time system) : 중요한 작업이 정해진 시간 내에 완료됨을 보장</li>
-<li>완화된 실시간 시스템(soft real-time system) : 중요한 작업이 우선순위를 가지지만 엄격하게 정해진 시간 내에 완료됨을 보장하지는 않음</li>
-</ul>
-<h2 id="1-4-분산-처리-시스템"><a href="#1-4-분산-처리-시스템" class="headerlink" title="1.4 분산 처리 시스템"></a>1.4 분산 처리 시스템</h2><p><strong>Distributed processing system 이란</strong> 다중처리 시스템과 마찬가지로 <strong>여러 프로세서(컴퓨터)를 사용</strong>하지만 밀결합 형태가 아닌 소결합(loosely coupled) 형태로 컴퓨터 버스나 클럭을 공유하지 않고, <strong>네트워크를 통해 통신하여 하나의 작업을 처리하는 시스템입니다</strong></p>
-<ul>
-<li>네트워크는 사용하는 프로토콜, 망의 크기, 전송 매체에 따라 분류<br>Ex) 망의 크기 : LAN, MAN, WAN</li>
-</ul>
-<h3 id="1-4-1-클라이언트-서버-시스템"><a href="#1-4-1-클라이언트-서버-시스템" class="headerlink" title="1.4.1 클라이언트-서버 시스템"></a>1.4.1 클라이언트-서버 시스템</h3><ul>
-<li>서버 시스템은 크게 두 가지로 분류<ul>
-<li>계산 서버 시스템(compute-server system)<br>: 클라이언트로 부터 요청을 받아 그것을 대신 수행해 준 다음에 클라이언트에게 결과를 되돌려 줌</li>
-<li>파일 서버 시스템(file-server system)<br>: 클라이언트에게 파일 시스템 인터페이스를 제공, 클라이언트는 이 인터페이스를 통해 파일을 생성, 갱신, 삭제</li>
-</ul>
-</li>
-</ul>
-<h2 id="1-5-다중처리-시스템"><a href="#1-5-다중처리-시스템" class="headerlink" title="1.5 다중처리 시스템"></a>1.5 다중처리 시스템</h2><p><strong>Multi-processing system 이란 여러 개의 CPU와 하나의 주기억장치를 이용하여 여러 개의 프로그램을 동시에 처리하는 방식을 취하는 시스템입니다</strong></p>
-<ul>
-<li>병렬 시스템(parallel system) 또는 밀결합 시스템(tightly coupled system) 이라고도 함</li>
-<li><strong>처리율(throughput)</strong> : <u>N개의 프로세서를 사용한다고 처리율이 N배 증가하지는 않음 </u></li>
-<li><strong>경제성</strong> : 여러 개의 단일 프로세서 시스템을 사용하는 것 보다 저렴</li>
-<li><strong>신뢰성</strong> : 하나의 CPU가 고장나더라도 다른 CPU를 이용하여 업무를 처리할 수 있음<br>수행되는 하드웨어의 수에 비례하여 서비스를 계속 제공할 수 있는 능력(graceful degradation)</li>
-</ul>
-<h2 id="1-6-집단-시스템"><a href="#1-6-집단-시스템" class="headerlink" title="1.6 집단 시스템"></a>1.6 집단 시스템</h2><p><strong>Clustered system 이란 병렬 시스템, 분산 시스템과 마찬가지로 다중 CPU를 사용하지만 여러 개의 시스템을 밀결합하여 사용한다는 측면에서 다른 시스템입니다</strong></p>
-<ul>
-<li>집단화(clustering)의 목적은 높은 가용성</li>
-<li>대칭형 방식 : 각 컴퓨터는 모두 응용 프로그램을 수행하는 동시에 다른 컴퓨터의 상태를 감시</li>
-<li>비대칭형 방식: 하나의 컴퓨터는 대기상태로 있고 나머지는 활성화되어 응용 프로그램을 수행</li>
-</ul>
-<h2 id="1-7-컴퓨팅-환경"><a href="#1-7-컴퓨팅-환경" class="headerlink" title="1.7 컴퓨팅 환경"></a>1.7 컴퓨팅 환경</h2><ul>
-<li><p>초창기 컴퓨팅 환경은 중앙집중 –&gt; 유선통신 기술의 발달로 분산 컴퓨팅 환경 등장 –&gt; 무선통신 기술의 발달로 이동컴퓨팅(mobile computing) 환경 등장</p>
-</li>
-<li><p>인터넷의 발달로 현재의 컴퓨팅 환경을 웹 기반 컴퓨팅이라고 함</p>
-</li>
-<li><p>실시간 운영체제를 각종 기계와 장치에 내장하여 사용하는 컴퓨팅 환경을 <strong>임베디드 컴퓨팅(embedded computing)</strong> 환경이라고 함</p>
-</li>
-</ul>
-<div style="border:3px; border-style:dashed; border-color:grey; text-color:black">
-  <b> * 정리 * </b><br>
-  1세대 : 일괄처리 시스템 <br>
-  2세대 : 다중프로그래밍, 다중 처리, 시분할, 실시간 처리 시스템<br>
-  3세대 : 다중모드 <br>
-  4세대 : 분산 처리 시스템
-  <br>
-</div>
-
-<p><br><br><br></p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
-          
-        
-      
-    </div>
-
-    
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/2019/02/04/spring-pojo/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="NUNU">
-      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="AttackOnNunu">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/02/04/spring-pojo/" class="post-title-link" itemprop="url">스프링 - POJO</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">작성일</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2019-02-04 00:59:18" itemprop="dateCreated datePublished" datetime="2019-02-04T00:59:18+09:00">2019-02-04</time>
-            </span>
-          
-
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/WEB/" itemprop="url" rel="index"><span itemprop="name">WEB</span></a></span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/WEB/SPRING/" itemprop="url" rel="index"><span itemprop="name">SPRING</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">댓글: </span>
-                <a href="/2019/02/04/spring-pojo/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/02/04/spring-pojo/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          <br>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><p><span class="exturl" data-url="aHR0cHM6Ly9rby53aWtpcGVkaWEub3JnL3dpa2kvUGxhaW5fT2xkX0phdmFfT2JqZWN0" title="https://ko.wikipedia.org/wiki/Plain_Old_Java_Object">Plain Old Java Object-위키<i class="fa fa-external-link"></i></span><br><span class="exturl" data-url="aHR0cHM6Ly9pdGV3Ym0udGlzdG9yeS5jb20vZW50cnkvUE9KT1BsYWluLU9sZC1KYXZhLU9iamVjdA==" title="https://itewbm.tistory.com/entry/POJOPlain-Old-Java-Object">POJO(Plain Old Java Object)<i class="fa fa-external-link"></i></span></p>
-<hr>
-<p><code>아직 많은 것을 알지 못하기 때문에 자세하고 정확한 내용은 제가 참조한 사이트나 따로 검색 또는 책을 통해 알아보는 것을 권장드립니다.</code></p>
-<h2 id="POJO"><a href="#POJO" class="headerlink" title="POJO"></a>POJO</h2><p>:heavy_check_mark: <strong>Plain Old Java Object</strong> : (직역) 평범한 옛날 자바 객체</p>
-<p> 처음에 단순히 정의를 검색하다보니 정말 단순한 자바 객체인 것 같은데 왜 굳이 POJO라는 단어를 사용하는지 혼란스러웠습니다. Stack Overflow 같은데서도 자바빈과 비교하는 토론이 있기도하고 솔직히 현재도 완전히 이해했다고는 할 수 없지만 제가 생각하는 내용을 적었습니다.</p>
-<h5 id="POJO의-탄생"><a href="#POJO의-탄생" class="headerlink" title="POJO의 탄생"></a>POJO의 탄생</h5><blockquote>
-<p>Any fool can write code that a computer an understand. Good programmers write code that humans can understand.<br>컴퓨터가 이해하는 코드는 어느 바보나 짤 수 있다. 좋은 프로그래머는 사람이 이해하는 코드를 짠다.</p>
-<blockquote>
-<p>Martin Fowler, &lt;&lt;리팩토링&gt;&gt;</p>
-</blockquote>
-</blockquote>
-<img style="float:right; height:150px;" data-src="https://martinfowler.com/img/mf-cologne.jpg">
-
-<p> POJO는 리팩토링과 애자일 소프트웨어 개발로 유명한 영국의 소프트웨어 개발자 <strong>마틴 파울러</strong> 가 2000년 가을에 열렸던 어느 컨퍼런스의 발표를 준비하면서 처음 사용한 단어입니다. 그는 당시 <u>EJB(Enterprise JavaBean) 보다는 단순한 자바 오브젝트에 도메인 로직을 넣어 사용하는 것이 여러가지 장점이 있는데 왜 사람들이 EJB가 아닌 ‘평범한 자바 오브젝트’를 사용하기를 꺼려하하는지에 대해 의문을 가졌습니다</u> 그래서 그의 생각을 널리 알리기 위해 그는 개발자들의 심리를 이용한 기발한 전략을 세웠습니다. POJO라는 용어를 만들고 이를 기반으로한 기술을 사용한다고 발표하여 다른 개발자들에게 마치 새로운 첨단 기술인 듯한 인상을 주었습니다.<br> 정리하자면, 마틴 파울러는</p>
-<ul>
-<li>자바 개발자들에게 <strong>단순하고 평범한 자바 오브젝트 사용을 권장</strong> 하고</li>
-<li><strong>자신의 생각을 효과적으로 전달</strong> 하기 위해 POJO라는 단어를 사용 했습니다<br>Cf) 이를 계기로 다른 분야에서도 비슷한 용어들이 생긴 것을 보면 그의 전략이 성공적이 였다는 것을 쉽게 알 수 있습니다.<ul>
-<li>Plain Old Data Structures(PODS) - C++ 언어에서 오직 C 언어의 특징만 사용하는 경우</li>
-<li>Plain Old Documentation(POD) - 펄(Perl) 언어에서 사용</li>
-<li>Plain Old PHP Object(POPO) - PHP 언어에서 사용</li>
-</ul>
-</li>
-</ul>
-<p>이제 겨우 POJO의 형체가 희미하게 보이는 것 같습니다. 이 친구를 더 자세히 알기 위해선,</p>
-<ul>
-<li>EJB(Enterprise JavaBean)는 무엇이며 어떤 문제점이 있는가</li>
-<li>POJO란 그럼 그저 EJB 이전의 방식으로 돌아가는 것인가<br>를 알아야 겠다고 생각했습니다.</li>
-</ul>
-<h5 id="Enterprise-JavaBean의-등장"><a href="#Enterprise-JavaBean의-등장" class="headerlink" title="Enterprise JavaBean의 등장"></a>Enterprise JavaBean의 등장</h5><p>기술이 발전하면서 자바의 기초적인 JDK만으로 복잡해져가는 기업의 비즈니스 로직을 구현하는 것은 개발자들에게 부담이 되었습니다. 이러한 문제를 해결하기 위해 EJB가 등장하였고,  <strong>‘EJB를 사용하면 개발자는 로우레벨의 기술들에 관심을 가질 필요 없이 애플리케이션 개발을 쉽게 만들 수 있다’</strong> 라고 EJB 1.0의 스펙에서 제시 되었습니다.<br> 하지만 현실은 불필요할 만큼 과도한 엔지니어링으로 <u>EJB는 실패한 케이스</u>라고 많은 개발자들이 이야기합니다.</p>
-<ul>
-<li><p>1% 미만의 애플리케이션에만 필요한 멀티 DB를 위한 분산 트랜잭션(무거운 JTA 기반의 글로번 트랜잭션 관리 기능)</p>
-</li>
-<li><p>고가의 WAS(CPU 당 몇 백에서 몇 천만 원) 필요</p>
-</li>
-<li><p>EJB 컴포넌트는 컨테이너 밖에서는 정상적으로 동작하지 않음(많은 시간이 걸리는 수정-빌드-배표-테스트 과정 반복)</p>
-</li>
-<li><p>간단한 기능에 대해서 조차 자동화 테스트를 만드는 것이 거의 불가능</p>
-</li>
-<li><p><strong>EJB 스텍을 따르는 비즈니스 오브젝트들은 객체지향적인 특징과 장점을 포기해야 함</strong></p>
-<p>결국 마틴 파울러와 같은 많은 오피니언 리더들은 EJB와 같은 잘못 설계된 과도한 기술을 피하고, 객체지향 원리에 따라 만들어진 자바 언어의 기본에 충실하게 비즈니스 로직을 구현하는 일명 <em>POJO 방식</em> 으로 돌아서야 한다고 지적하였습니다.</p>
-</li>
-</ul>
-<h5 id="POJO-프레임워크"><a href="#POJO-프레임워크" class="headerlink" title="POJO 프레임워크"></a>POJO 프레임워크</h5><p>이때까지 내용을 되짚어 보면 <strong>POJO란 결국 단순하고 기본에 충실한 자바 오브젝트로 되돌아 가는 것</strong>인데 그렇다면 또다시 로우레벨의 API를 이용해 복잡한 코드를 작성해야 하고, 많은 기술적인 문제들을 애플리케이션 코드에 그대로 노출시켜 개발해야 한다는 문제로 돌아간다는 것이 아닌가? 하는 의문이 생길 것 입니다.<br> 개발자들이 비즈니스 로직에만 집중할 수 있는 애플리케이션 복잡도를 제거하는 장점은 그대로 가져가면서, 객체지향적인 설계와 자동화된 테스트의 편의성 등을 다시 회복시키기 위해 등장한 것이 바로 <strong>POJO 기반의 프레임워크</strong> 입니다! 가장 대표적인 프레임워크 제품으로는 <em>하이버네이트</em> 와 <em>스프링</em> 이 있습니다.</p>
-<p><br><br><br></p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
-          
-        
-      
-    </div>
-
-    
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/7/"><i class="fa fa-angle-left" aria-label="이전 페이지"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><span class="page-number current">8</span><a class="page-number" href="/page/9/">9</a><a class="page-number" href="/page/10/">10</a><a class="extend next" rel="next" href="/page/9/"><i class="fa fa-angle-right" aria-label="다음 페이지"></i></a>
+    <a class="extend prev" rel="prev" href="/page/7/"><i class="fa fa-angle-left" aria-label="이전 페이지"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><span class="page-number current">8</span><a class="page-number" href="/page/9/">9</a><span class="space">&hellip;</span><a class="page-number" href="/page/11/">11</a><a class="extend next" rel="next" href="/page/9/"><i class="fa fa-angle-right" aria-label="다음 페이지"></i></a>
   </nav>
 
 
@@ -1116,7 +1254,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">30</span>
+                    <span class="site-state-item-count">32</span>
                     <span class="site-state-item-name">포스트</span>
                   </a>
                 </div>

@@ -8,8 +8,48 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.</description>
-    <pubDate>Mon, 29 Jul 2019 06:42:45 GMT</pubDate>
+    <pubDate>Tue, 30 Jul 2019 09:15:01 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>(SW Expert Academy) 내장함수 - 6315번 6316번 6317번 6318번</title>
+      <link>https://taejin0527.github.io/2019/07/30/sw-6315/</link>
+      <guid>https://taejin0527.github.io/2019/07/30/sw-6315/</guid>
+      <pubDate>Tue, 30 Jul 2019 08:22:28 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;h1 id=&quot;8번-6315번&quot;&gt;&lt;a href=&quot;#8번-6315번&quot; class=&quot;headerlink&quot; title=&quot;8번 - 6315번&quot;&gt;&lt;/a&gt;8번 - 6315번&lt;/h1&gt;&lt;div class=&quot;note &quot;&gt;
+            &lt;ul&gt;&lt;li&gt;시간 : 
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<h1 id="8번-6315번"><a href="#8번-6315번" class="headerlink" title="8번 - 6315번"></a>8번 - 6315번</h1><div class="note ">            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>          </div><div class="note success">            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(list(map(<span class="keyword">lambda</span> x: x**<span class="number">2</span>, list(range(<span class="number">1</span>,<span class="number">11</span>)))))</span><br></pre></td></tr></table></figure>          </div><hr><h1 id="9번-6316번"><a href="#9번-6316번" class="headerlink" title="9번 - 6316번"></a>9번 - 6316번</h1><div class="note ">            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>          </div><blockquote><p>점점 가독성이 떨어지는…</p></blockquote><div class="note success">            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(list(map(<span class="keyword">lambda</span> y: y**<span class="number">2</span>, list((filter(<span class="keyword">lambda</span> x: x%<span class="number">2</span>==<span class="number">0</span>, list(range(<span class="number">1</span>,<span class="number">11</span>))))))))</span><br></pre></td></tr></table></figure>          </div><hr><h1 id="10번-6317번"><a href="#10번-6317번" class="headerlink" title="10번 - 6317번"></a>10번 - 6317번</h1><div class="note ">            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>          </div><div class="note success">            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">input_list = (<span class="number">3</span>, <span class="number">5</span>, <span class="number">4</span>, <span class="number">1</span>, <span class="number">8</span>, <span class="number">10</span>, <span class="number">2</span>)</span><br><span class="line"></span><br><span class="line">print(<span class="string">"max&#123;&#125; =&gt; &#123;&#125;"</span>.format(input_list, max(input_list)))</span><br></pre></td></tr></table></figure>          </div><hr><h1 id="11번-6318번"><a href="#11번-6318번" class="headerlink" title="11번 - 6318번"></a>11번 - 6318번</h1><div class="note ">            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>          </div><div class="note success">            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">input_dict = enumerate(&#123;<span class="string">'a'</span>:<span class="number">0</span>, <span class="string">'b'</span>:<span class="number">1</span>, <span class="string">'c'</span>:<span class="number">2</span>, <span class="string">'d'</span>:<span class="number">3</span>, <span class="string">'e'</span>:<span class="number">4</span>, <span class="string">'f'</span>:<span class="number">5</span>&#125;)</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i, value <span class="keyword">in</span> input_dict:</span><br><span class="line">    print(<span class="string">"&#123;&#125;: &#123;&#125;"</span>.format(value, i))</span><br></pre></td></tr></table></figure>          </div><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content:encoded>
+      
+      <comments>https://taejin0527.github.io/2019/07/30/sw-6315/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>(SW Expert Academy) 내장함수 - 6308번 6311번 6312번 6313번 6314번</title>
+      <link>https://taejin0527.github.io/2019/07/30/sw-6308/</link>
+      <guid>https://taejin0527.github.io/2019/07/30/sw-6308/</guid>
+      <pubDate>Tue, 30 Jul 2019 07:08:09 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;h1 id=&quot;1번-6308번&quot;&gt;&lt;a href=&quot;#1번-6308번&quot; class=&quot;headerlink&quot; title=&quot;1번 - 6308번&quot;&gt;&lt;/a&gt;1번 - 6308번&lt;/h1&gt;&lt;div class=&quot;note &quot;&gt;
+            &lt;ul&gt;&lt;li&gt;시간 : 
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<h1 id="1번-6308번"><a href="#1번-6308번" class="headerlink" title="1번 - 6308번"></a>1번 - 6308번</h1><div class="note ">            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>          </div><blockquote><p>문제의 입출력에서 ‘올해’’를 기준으로 20살이 100가 되는게 2099년이기 때문에 ‘올해’=2018년 임을 알 수 있다.<br>지금 날짜를 적용시키고 싶다면 그냥 datetime.now()를 쓰면 된다.</p></blockquote><div class="note success">            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> datetime <span class="keyword">import</span> datetime, date</span><br><span class="line"></span><br><span class="line">name = input()</span><br><span class="line">age = int(input())</span><br><span class="line">now = date(<span class="number">2018</span>, <span class="number">1</span>, <span class="number">1</span>).year</span><br><span class="line"></span><br><span class="line">print(<span class="string">"&#123;&#125;(은)는 &#123;&#125;년에 100세가 될 것입니다."</span>.format(name, now-age+<span class="number">101</span>))</span><br></pre></td></tr></table></figure>          </div><hr><h1 id="4번-6311번"><a href="#4번-6311번" class="headerlink" title="4번 - 6311번"></a>4번 - 6311번</h1><div class="note ">            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>          </div><blockquote><p>2,3번 문제는 없음<br>조금 더 간결하게 풀 수 있지 않을까? 아쉽다</p></blockquote><div class="note success">            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> datetime <span class="keyword">import</span> datetime, date</span><br><span class="line"></span><br><span class="line">name = input()</span><br><span class="line">age = int(input())</span><br><span class="line">now = date(<span class="number">2018</span>, <span class="number">1</span>, <span class="number">1</span>).year</span><br><span class="line"></span><br><span class="line">print(<span class="string">"&#123;&#125;(은)는 &#123;&#125;년에 100세가 될 것입니다."</span>.format(name, now-age+<span class="number">101</span>))</span><br></pre></td></tr></table></figure>          </div><hr><h1 id="5번-6312번"><a href="#5번-6312번" class="headerlink" title="5번 - 6312번"></a>5번 - 6312번</h1><div class="note ">            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>          </div><blockquote><p>정확하게 무엇을 요구하는지 이해를 못하겠다…<br>SKIP</p></blockquote><hr><h1 id="6번-6313번"><a href="#6번-6313번" class="headerlink" title="6번 - 6313번"></a>6번 - 6313번</h1><div class="note ">            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>          </div><div class="note success">            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">value = int(input())</span><br><span class="line"></span><br><span class="line">print(<span class="string">"ASCII &#123;&#125; =&gt; &#123;&#125;"</span>.format(value, chr(value)))</span><br></pre></td></tr></table></figure>          </div><hr><h1 id="7번-6314번"><a href="#7번-6314번" class="headerlink" title="7번 - 6314번"></a>7번 - 6314번</h1><div class="note ">            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>          </div><blockquote><p>한줄이면 끝</p></blockquote><div class="note success">            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(list(filter(<span class="keyword">lambda</span> x: x%<span class="number">2</span>==<span class="number">0</span>, list(range(<span class="number">1</span>,<span class="number">11</span>)))))</span><br><span class="line"></span><br><span class="line"><span class="comment"># int_list = list(range(1,11))</span></span><br><span class="line"><span class="comment"># even_list = list(filter(lambda x:x%2==0, int_list))</span></span><br><span class="line"><span class="comment"># print(even_list)</span></span><br></pre></td></tr></table></figure>          </div><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content:encoded>
+      
+      <comments>https://taejin0527.github.io/2019/07/30/sw-6308/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>(SW Expert Academy) 함수의 기초 - 6325번 6326번 6327번 6328번 6329번</title>
