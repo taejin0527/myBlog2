@@ -243,10 +243,140 @@ TypeError: 'str' object does not support item assignment  {% endcode %}
 
 ### Going between strings and lists: .split() and .join()
 
-`str.split()` 은 문자열을 작은 문자열의 목록으로 바꾸고 기본적으로 공백 문자로 분리합니다. 하나의 큰 문자열에서 단어 목록으로 이동하는 데 매우 유용합니다.
+`str.split()` 은 하나의 문자열을 공백 문자를 기준으로 분리한 작은 문자들로 이루어진 list로 바꿔 줍니다. 이는 하나의 큰 문자열을 단어 하나하나로 나눈 list로 바꾸는데 매우 유용합니다.
+
+{% tabs example_split %}
+<!-- tab Default @eye -->
+{% note no-icon %}
+  {% code lang:python %}
+  words = claim.split()
+  words  {% endcode %}
+  {% code %}
+  ['Pluto', 'is', 'a', 'planet!'] {% endcode %}
+{% endnote %}
+<!-- endtab -->
+
+<!-- tab Custom @eye -->
+{% note no-icon %}
+때로는 공백 이외의 다른 것을 기준으로 나눠야 할 때도 있습니다.
+
+{% code lang:python %}
+datestr = '1956-01-31'
+year, month, day = datestr.split('-') {% endcode %}
+
+year, month, day은 이제 각각 1956, 01, 31을 참조할 것입니다.
+{% endnote %}
+<!-- endtab -->
+{% endtabs %}
+
+`str.join()` 은 반대의 기능을 한다고 보시면 됩니다, seperator(분리자)로 분리되었던 문자(열) list를 하나의 긴 문자열로 묶어줍니다.
+
+{% tabs example_join %}
+<!-- tab Basic @eye -->
+{% note no-icon %}
+  {% code lang:python %}
+  '/'.join([month, day, year]) {% endcode %}
+  {% code %}
+  '01/31/1956' {% endcode %}
+{% endnote %}
+<!-- endtab -->
+
+<!-- tab Unicode @eye -->
+{% note no-icon %}
+  문자열 리터럴에 유니코드 문자를 넣을 수 도 있습니다 :)
+  {% code lang:python %}
+  ' 👏 '.join([word.upper() for word in words]) {% endcode %}
+  {% code %}
+  'PLUTO 👏 IS 👏 A 👏 PLANET!' {% endcode %}
+{% endnote %}
+<!-- endtab -->
+{% endtabs %}
+
 
 ### Building strings with .format()
 
+파이썬에서는 `+` 연산자를 사용해서 문자열을 합칠 수 있습니다.
+
+{% note no-icon %}
+{% code lang:python %}
+planet + ', we miss you.' {% endcode %}
+{% code %}
+'Pluto, we miss you.' {% endcode %}
+{% endnote %}
+
+{% note warning %}
+문자열이 아닌 객체를 사용할 때는 `str()` 을 먼저 호출하여 문자열로 바꿔줘야 하는 점을 주의하셔야 합니다.
+
+{% code lang:python %}
+position = 9
+planet + ", you'll always be the " + position + "th planet to me." {% endcode %}
+{% code lang:python %}
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+<ipython-input-23-73295f9638cc> in <module>()
+      1 position = 9
+----> 2 planet + ", you'll always be the " + position + "th planet to me."
+
+TypeError: must be str, not int {% endcode %}
+{% endnote %}
+
+{% note no-icon %}
+{% code lang:python %}
+planet + ", you'll always be the " + str(position) + "th planet to me." {% endcode %}
+{% code %}
+"Pluto, you'll always be the 9th planet to me." {% endcode %}
+{% endnote %}
+
+가독성이 떨어지고 일일이 타입을 확인하며 바꿔줘야하는게 귀찮을 것 같습니다. `str.format()` 을 사용하면 이를 해결할 수 있습니다.
+
+{% note no-icon %}
+{% code lang:python %}
+"{}, you'll always be the {}th planet to me.".format(planet, position) {% endcode %}
+{% code %}
+"Pluto, you'll always be the 9th planet to me." {% endcode %}
+{% endnote %}
+
+훨씬 깔끔한 것 같습니다! "format string"에 `.format()` 을 호출하고, 우리가 삽입하고자 하는 파이썬 값은 `{}` 로 표현되는 placeholder에 들어갈 것 입니다.
+우리가 int형인 `position` 을 변환하기 위해 `str()` 을 호출 할 필요가 없었던 점에 주목하십시오. `format()` 에서 이를 알아서 처리합니다.
+이게 `format()` 이 하는 일의 전부라해도 우리는 이를 매우 유용하게 사용할 것 입니다. 하지만 알아갈 수록 이 함수로 할 수 있는게 훨씬 더 많다는 것을 깨닫게 될 것 입니다. 조금만 더 알아보겠습니다.
+
+{% tabs example_format %}
+<!-- tab Example_1 @eye -->
+{% note no-icon %}
+  {% code lang:python %}
+  pluto_mass = 1.303 * 10**22
+  earth_mass = 5.9722 * 10**24
+  population = 52910390
+  #         2 decimal points   3 decimal points, format as percent     separate with commas
+  "{} weighs about {:.2} kilograms ({:.3%} of Earth's mass). It is home to {:,} Plutonians.".format(
+      planet, pluto_mass, pluto_mass / earth_mass, population,
+  ) {% endcode %}
+  {% code %}
+  "Pluto weighs about 1.3e+22 kilograms (0.218% of Earth's mass). It is home to 52,910,390 Plutonians." {% endcode %}
+{% endnote %}
+<!-- endtab -->
+
+<!-- tab Example_2 @eye -->
+{% note no-icon %}
+  문자열 리터럴에 유니코드 문자를 넣을 수 도 있습니다 :)
+  {% code lang:python %}
+  # Referring to format() arguments by index, starting from 0
+  s = """Pluto's a {0}.
+  No, it's a {1}.
+  {0}!
+  {1}!""".format('planet', 'dwarf planet')
+  print(s) {% endcode %}
+  {% code %}
+  Pluto's a planet.
+  No, it's a dwarf planet.
+  planet!
+  dwarf planet! {% endcode %}
+{% endnote %}
+<!-- endtab -->
+{% endtabs %}
+
+조금 과장하자면 `str.format` 에 대한 설명과 내용으로 짧은 책을 쓸 수도 있기 때문에 가볍게 알아보는 본 강의에서는 이쯤에서 멈추겠습니다.
+더 자세히 알고 싶으신 분은 [pyformat.info](https://pyformat.info/)와 [the offical docs](https://docs.python.org/3/library/string.html#formatstrings) 를 읽어 보시길 바랍니다.
 
 -----
 
