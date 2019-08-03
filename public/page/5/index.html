@@ -356,6 +356,222 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/2019/07/28/sw-6218/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="NUNU">
+      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="AttackOnNunu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/07/28/sw-6218/" class="post-title-link" itemprop="url">(SW Expert Academy) 흐름과 제어 If - 6218번 6219번 6220번 6221번</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2019-07-28 20:52:23" itemprop="dateCreated datePublished" datetime="2019-07-28T20:52:23+09:00">2019-07-28</time>
+            </span>
+          
+
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/SW-아카데미/" itemprop="url" rel="index"><span itemprop="name">SW 아카데미</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">댓글: </span>
+                <a href="/2019/07/28/sw-6218/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/07/28/sw-6218/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="1번-6218번"><a href="#1번-6218번" class="headerlink" title="1번 - 6218번"></a>1번 - 6218번</h1><div class="note ">
+            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
+          </div>
+
+<blockquote>
+<p>반복문은 뒤에 나오는거 같은데… if문만으로 풀 수 있…나..?</p>
+</blockquote>
+<div class="note success">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = int(input())</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, a+<span class="number">1</span>):</span><br><span class="line">    <span class="keyword">if</span>(a%i==<span class="number">0</span>):</span><br><span class="line">        print(<span class="string">"&#123;&#125;(은)는 &#123;&#125;의 약수입니다."</span>.format(i, a))</span><br></pre></td></tr></table></figure>
+          </div>
+
+<hr>
+<h1 id="2번-6219번"><a href="#2번-6219번" class="headerlink" title="2번 - 6219번"></a>2번 - 6219번</h1><div class="note ">
+            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
+          </div>
+
+
+<div class="note success">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = int(input())</span><br><span class="line">cnt=<span class="number">0</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, a+<span class="number">1</span>):</span><br><span class="line">    <span class="keyword">if</span>(a%i==<span class="number">0</span>):</span><br><span class="line">        cnt+=<span class="number">1</span></span><br><span class="line">        print(<span class="string">"&#123;&#125;(은)는 &#123;&#125;의 약수입니다."</span>.format(i, a))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>(cnt==<span class="number">2</span>):</span><br><span class="line">    print(<span class="string">"&#123;&#125;(은)는 1과 &#123;&#125;로만 나눌 수 있는 소수입니다."</span>.format(a, a))</span><br></pre></td></tr></table></figure>
+          </div>
+
+<hr>
+<h1 id="3번-6220번"><a href="#3번-6220번" class="headerlink" title="3번 - 6220번"></a>3번 - 6220번</h1><div class="note ">
+            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
+          </div>
+
+<blockquote>
+<p>ASCII 코드를 활용</p>
+</blockquote>
+<div class="note success">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = input()</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>(ord(a)&gt;<span class="number">96</span>):</span><br><span class="line">    print(<span class="string">"&#123;&#125; 는 소문자 입니다."</span>.format(a))</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    print(<span class="string">"&#123;&#125; 는 대문자 입니다."</span>.format(a))</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+          </div>
+
+<hr>
+<h1 id="4번-6221번"><a href="#4번-6221번" class="headerlink" title="4번 - 6221번"></a>4번 - 6221번</h1><div class="note ">
+            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
+          </div>
+
+<blockquote>
+<p>입력을 랜덤으로 주는게 아닌데 굳이 list를 사용해야 하는가…?</p>
+</blockquote>
+<div class="note success">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">Man1 = input()</span><br><span class="line">Man2 = input()</span><br><span class="line"></span><br><span class="line">RSP = [<span class="string">"가위"</span>, <span class="string">"바위"</span>, <span class="string">"보"</span>]</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>(Man1 == Man2):</span><br><span class="line">    print(<span class="string">"Result : Draw"</span>)</span><br><span class="line"><span class="keyword">elif</span>((Man1==RSP[<span class="number">0</span>] <span class="keyword">and</span> Man2==RSP[<span class="number">1</span>]) <span class="keyword">or</span> (Man1==RSP[<span class="number">1</span>] <span class="keyword">and</span> Man2==RSP[<span class="number">2</span>]) <span class="keyword">or</span> (Man1==RSP[<span class="number">2</span>] <span class="keyword">and</span> Man2==RSP[<span class="number">0</span>])):</span><br><span class="line">    print(<span class="string">"Result : Man2 Win!"</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    print(<span class="string">"Result : Man1 Win!"</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 직접 입력하는게 아니라 랜덤으로 값을 주고 싶다면...</span></span><br><span class="line"><span class="comment"># from random import *</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># RSP = ["가위", "바위", "보"]</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># Man1 = RSP[randrange(3)]</span></span><br><span class="line"><span class="comment"># Man2 = RSP[randrange(3)]</span></span><br></pre></td></tr></table></figure>
+          </div>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/2019/07/28/sw-6204/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -747,313 +963,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/2019/07/27/hexo-adsense-2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="NUNU">
-      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="AttackOnNunu">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/07/27/hexo-adsense-2/" class="post-title-link" itemprop="url">(Hexo_NexT_Theme) Hexo 블로그에 Google Adsense 설정_2</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">작성일</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2019-07-27 15:27:20" itemprop="dateCreated datePublished" datetime="2019-07-27T15:27:20+09:00">2019-07-27</time>
-            </span>
-          
-
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/BLOG/" itemprop="url" rel="index"><span itemprop="name">BLOG</span></a></span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/BLOG/HEXO-NEXT-THEME/" itemprop="url" rel="index"><span itemprop="name">HEXO-NEXT-THEME</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">댓글: </span>
-                <a href="/2019/07/27/hexo-adsense-2/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/07/27/hexo-adsense-2/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          <br>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <div class="note info">
-            <p>지난 <a href="https://taejin0527.github.io/2019/07/17/hexo-adsense-1/">Hexo 블로그에 Google Adsense 설정_1</a> 에 이어 설정하는 방법에 대해 알아보겠습니다.</p>
-          </div>
-
-<h1 id="지난-시간"><a href="#지난-시간" class="headerlink" title="지난 시간"></a>지난 시간</h1><p>지난 7월 17일 Google Adsense를 신청 했었고 일반적으로 3일 정도 걸린다는 안내와는 다르게 10일이나 걸렸습니다. 승인이 늦게 나는 이유에 대해서는 여러 추측들이 있는 것 같지만 저는 앞선 포스트에서 알려드렸던 설정 외에는 건드린 것이 없고 그저 그 후로도 계속해서 새로운 글을 작성했습니다. 아마 저의 경우 게시글 수가 조금 부족했던 것이 그 이유가 아니였나 하고 생각해봅니다.</p>
-<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" alt="Google Adsense 승인 메일" title="Google Adsense 승인 메일" data-src="/img/adsense/adsense_accept.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
-
-<p>Google Search Console이 <span class="exturl" data-url="aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvR29vZ2xlX1NlYXJjaF9Db25zb2xl" title="https://en.wikipedia.org/wiki/Google_Search_Console">2018년 1월<i class="fa fa-external-link"></i></span>에 리뉴얼 되었듯이 Google Adsense 또한 조금 새롭게 바뀐 것 같았습니다. 처음 등록해보는 거라 미흡한 부분들이 있을 수도 있지만 제가 사용하는 Hexo_Next_Theme 에 직접 적용하며 하나씩 알아가 보겠습니다.</p>
-<h1 id="기본-광고-설정"><a href="#기본-광고-설정" class="headerlink" title="기본 광고 설정"></a>기본 광고 설정</h1><ul>
-<li>메일의 <strong>시작하기</strong> 버튼을 클릭하거나 직접 Google Adsense 웹페이지에 접속하게 되면 아래 창을 만나게 됩니다.</li>
-</ul>
-<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" alt="Google Adsense 시작하기" title="Google Adsense 시작하기" data-src="/img/adsense/adsense_activate.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
-
-<ul>
-<li>빠르게 광고 설정을 클릭하여 다음 화면으로 진행하도록 합니다.</li>
-</ul>
-<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" alt title="Google Adsense 승인 메일" data-src="/img/adsense/adsense_auto.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
-
-<ul>
-<li>이전에는 머신러닝을 활용한 자동 광고 생성이 없었던 것 같은데 사용자의 편의를 위해 새롭게 이 기능을 제공하는 것 같습니다.<br>그보다 상단의 붉은 경고가 눈에 띄는군요.</li>
-</ul>
-<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" alt title="ads.txt 파일 경고" data-src="/img/adsense/adsense_warning.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
-
-<ul>
-<li>ads.txt 라는 파일에 대해 잘 모르기 때문에 <strong>자세히 알아보기</strong> 버튼을 클릭해 보겠습니다.</li>
-</ul>
-<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" alt title="ads.txt 자세히 알아보기" data-src="/img/adsense/adsense_adstxt_1.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
-
-<ul>
-<li>실공급원과 부정적인 공급원을 구분하고 광고 소스를 목록화 하여 손해를 보지 않게 도와주는 텍스트 파일인 것 같습니다. 권장사항이지만 한다고 손해볼 것도 없으니 등록하도록 하겠습니다.<br>위 안내글에서 언급되었듯이 직접 애드센스용 ads.txt를 생성할 수도 있지만, 앞선 붉은 경고문에서 <strong>지금 해결하기</strong> 버튼을 클릭하고 쉽게 다운받으실 수도 있습니다.<br>(직접 작성하실 경우, <strong>게시자 ID</strong> 는 Adsense 홈페이지 -&gt; 계정 -&gt; 설정 -&gt; 계정 정보에 있습니다.)</li>
-</ul>
-<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" alt title="ads.txt 문제해결" data-src="/img/adsense/adsense_adstxt_2.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
-
-<ul>
-<li>이렇게 직접 작성하거나 다운받은 ads.txt 파일을 블로그 테마의 source 폴더에 넣어 주시면 됩니다. (e.g <code>hexo/themes/next/source</code>)</li>
-</ul>
-<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" data-src="/img/adsense/adsense_adstxt_3.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
-
-<ul>
-<li><code>hexo g -d</code> 를 통해 새롭게 추가한 파일을 블로그에 배포하시면 됩니다. 구글 크롤링 봇의 주기가 24시간이라고 하니, 아마 다음날 해당 문제는 해결될 것 같습니다.</li>
-</ul>
-<hr>
-<h1 id="자동-광고-설정"><a href="#자동-광고-설정" class="headerlink" title="자동 광고 설정"></a>자동 광고 설정</h1><ul>
-<li>설명을 먼저 읽어보도록 하겠습니다.</li>
-</ul>
-<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" data-src="/img/adsense/adsense_auto_info_1.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
-
-<ul>
-<li>사용자가 조금 더 콘텐츠에 집중할 수 있도록 항상 광고가 게시되는 것이 아니라 머신러닝 학습으로 최적의 순간(아마 조회수가 많은 포스트에 게시되지 않을까요?)에만 광고가 게시되는 것 같습니다.</li>
-<li>아직 방문자도 없고…ㅠ 광고가 게시되는 것을 직접 확인하고 싶어서 자동 광고는 다음으로 미룰까 했었는데 아래의 내용을 보고 적용하기로 결심했습니다.</li>
-</ul>
-<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" data-src="/img/adsense/adsense_auto_info_2.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
-
-<ul>
-<li>즉, 수동으로 광고를 게제한 것과는 별개로 작동하는 것 같아 우선 자동 광고를 적용해보겠습니다.</li>
-</ul>
-<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" data-src="/img/adsense/adsense_auto_1.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
-
-<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" data-src="/img/adsense/adsense_auto_2.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
-
-<ul>
-<li>일단 기본값으로 모든 항목에 체크되어 있어서 그대로 진행하였습니다.</li>
-</ul>
-<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" data-src="/img/adsense/adsense_auto_3.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
-
-<ul>
-<li>위 코드 역시 지난번 Google Adsense 등록할 때 <code>google_adsense.ejs</code> 파일을 생성하고 <code>_layout.swig</code>에 추가했던 내용과 동일한 것으로 너무 편하게(?) 완료를 누리시면 됩니다.</li>
-</ul>
-<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" data-src="/img/adsense/adsense_auto_4.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
-
-<ul>
-<li>순식간에 끝나버렸습니다…ㅎ</li>
-</ul>
-<hr>
-<h1 id="광고-단위-설정"><a href="#광고-단위-설정" class="headerlink" title="광고 단위 설정"></a>광고 단위 설정</h1><ul>
-<li><strong>광고 단위</strong> 탭을 누르면 다음과 같은 화면이 나옵니다.</li>
-</ul>
-<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" data-src="/img/adsense/adsense_man_1.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
-
-<ul>
-<li>우선 저는 사이드바에 ‘디스플레이 광고’ 를 게제할 생각입니다.</li>
-</ul>
-<p>디스플레이 광고에는 3가지 유형이 있습니다.</p>
-<ul>
-<li>사각형</li>
-</ul>
-<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" data-src="/img/adsense/adsense_man_2.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
-
-<ul>
-<li>수평형</li>
-</ul>
-<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" data-src="/img/adsense/adsense_man_3.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
-
-<ul>
-<li>수직형</li>
-</ul>
-<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" data-src="/img/adsense/adsense_man_4.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
-
-<ul>
-<li>저는 수직형을 선택하여 진행하였습니다. 좌측 상단의 <strong>광고 단위 이름</strong> 을 지정하고 만들기를 누르시면 됩니다.</li>
-</ul>
-<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" data-src="/img/adsense/adsense_man_5.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
-
-<ul>
-<li><p>마지막으로 소스 코드를 블로그 layout에 추가해 주시면 되겠습니다.</p>
-</li>
-<li><p><code>ejs</code> 파일을 생성하는 방법과 <code>swig</code> 파일을 생성하는 방법 2가지가 있습니다. (두 파일의 차이점은 아직 잘 모르겠습니다.)<br><code>ejs</code> 템플릿 엔진으로 광고를 게제하는 방법은 이전에 구글 애드센스를 처음 신청할 때 했던 방법과 비슷합니다.<br><code>adsense_side.ejs</code> 파일을 생성하여 위 소스 코드를 넣어 놓고, <code>\_marco</code> 디렉토리 안의 <code>_sidebar.swig</code> 파일에(끝에 추가하시면 됩니다) 적용하시면 됩니다.</p>
-</li>
-</ul>
-<ul>
-<li>이번에는 색다르게 <code>swig</code> 파일을 생성하고 적용하여 보겠습니다.<br>먼저 <code>\_third-party</code> 디렉토리에 <code>\ad</code> 라는 폴더를 생성하겠습니다. 생성한 폴더에 <code>ads_side.swig</code> 라는 파일을 생성하고 여기에 소스 코드를 복사/붙여넣기 하시면 됩니다.</li>
-</ul>
-<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" data-src="/img/adsense/adsense_man_8.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
-
-<ul>
-<li>앞선 <code>ejs</code> 방법과 똑같이 <code>\_marco</code> 디렉토리 안의 <code>_sidebar.swig</code> 파일에(끝에 추가하시면 됩니다) 아래 사진에 적힌 것 처럼 작성해 주시면 됩니다.</li>
-</ul>
-<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" data-src="/img/adsense/adsense_man_9.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
-
-<ul>
-<li><code>hexo g -d</code> 를 통해 블로그에 배포하시고 대략 30분 정도 지나면 적용된 것을 확인하실 수 있습니다.<br>디스플레이 광고 이외에도 다른 광고들은 비슷한 방식으로 적용하시면 되겠습니다. 혹시 나중에 기회가 된다면 따로 포스팅 하겠습니다.</li>
-</ul>
-<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" data-src="/img/adsense/adsense_man_10.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
-
-<hr>
-<div class="note warning">
-            <p><span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" data-src="/img/adsense/adsense_man_6.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span></p><ul><li>partial과 include 의 차이점을 아직 잘 모르겠지만… 주의하실 점은</li><li>경로를 상대 경로로 지정해 주어야 하는점 <code>../custom/adsense_side.ejs</code> (못 읽으면 아래 사진 처럼 나오는 것 같습니다.)</li><li>sidebar 전체 <code>&lt;div&gt;</code> 태그 안에 광고를 넣어야 scroll 시 화면 따라 광고도 움직입니다.</li></ul><p><span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" data-src="/img/adsense/adsense_man_7.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span></p>
-          </div>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
-          
-        
-      
-    </div>
-
-    
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1102,7 +1011,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">35</span>
+                    <span class="site-state-item-count">36</span>
                     <span class="site-state-item-name">포스트</span>
                   </a>
                 </div>
