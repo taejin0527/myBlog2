@@ -382,6 +382,227 @@ planet + ", you'll always be the " + str(position) + "th planet to me." {% endco
 
 # 딕셔너리(Dictionaries)
 
+딕셔너리(Dictionary)는 키(Key)를 값(Value)에 매핑(mapping)하기 위한 파이썬에 내장된 데이터 구조입니다.
+
+{% note no-icon %}
+{% code lang:python %}
+numbers = {'one':1, 'two':2, 'three':3} {% endcode %}
+이 경우, 'one', 'two'와 'three'가 key가 되고, 1, 2와 3은 해당 value입니다.
+{% endnote %}
+
+{% tabs dictionaries %}
+<!-- tab Index -->
+value는 list 및 string과 유사하게 대괄호 구문을 사용하여 액세스됩니다.
+{% note no-icon %}
+{% code lang:python %}
+numbers['one']  {% endcode %}
+{% code lang:python %}
+1 {% endcode %}
+{% endnote %}
+<!-- endtab -->
+
+<!-- tab Add -->
+똑같은 방식을 사용하여 다른 key, value 쌍을 추가 할 수 있습니다.
+{% note no-icon %}
+{% code lang:python %}
+numbers['eleven'] = 11
+numbers {% endcode %}
+{% code lang:python %}
+{'one': 1, 'two': 2, 'three': 3, 'eleven': 11} {% endcode %}
+{% endnote %}
+<!-- endtab -->
+
+<!-- tab Change -->
+혹은 존재하는 key의 value를 수정 할 수도 있습니다.
+{% note no-icon %}
+{% code lang:python %}
+numbers['one'] = 'Pluto'
+numbers {% endcode %}
+{% code lang:python %}
+{'one': 'Pluto', 'two': 2, 'three': 3, 'eleven': 11} {% endcode %}
+{% endnote %}
+<!-- endtab -->
+{% endtabs %}
+
+이전 강좌에서 봤던 list 내포처럼 파이썬은 dictionary 내포를 지원합니다.
+{% note no-icon %}
+{% code lang:python %}
+planets = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune']
+planet_to_initial = {planet: planet[0] for planet in planets}
+planet_to_initial {% endcode %}
+{% code lang:python %}
+{'Mercury': 'M',
+ 'Venus': 'V',
+ 'Earth': 'E',
+ 'Mars': 'M',
+ 'Jupiter': 'J',
+ 'Saturn': 'S',
+ 'Uranus': 'U',
+ 'Neptune': 'N'} {% endcode %}
+{% endnote %}
+
+`in` 연산자를 사용하여 우리는 dicionary에 어떠한 key가 존재하는지 알아볼 수 있습니다.
+{% note no-icon %}
+{% code lang:python %}
+'Saturn' in planet_to_initial
+'Betelgeuse' in planet_to_initial {% endcode %}
+{% code lang:python %}
+True
+False {% endcode %}
+{% endnote %}
+
+dictionary 에서의 for 반복문은 해당 key들을 반복합니다.
+{% note no-icon %}
+{% code lang:python %}
+for k in numbers:
+    print("{} = {}".format(k, numbers[k])) {% endcode %}
+{% code lang:python %}
+one = Pluto
+two = 2
+three = 3
+eleven = 11 {% endcode %}
+{% endnote %}
+
+`dict.keys()` 및 `dict.values​​()` 를 사용하여 모든 key 또는 모든 value들에 각각 액세스 할 수 있습니다.
+{% note no-icon %}
+{% code lang:python %}
+# 각 행성의 초성을 가져와, 알파벳순으로 정렬하고, 각 사이에 빈칸을 넣은 string
+' '.join(sorted(planet_to_initial.values())) {% endcode %}
+{% code lang:python %}
+'E J M M N S U V' {% endcode %}
+{% endnote %}
+
+보다 유용한 `dict.items()` 메소드는 dictionary의 key와 value를 동시에 반복 할 수있게 해줍니다. (파이썬에서는 **item** 은 곧 key와 value 쌍을 뜻합니다)
+{% note no-icon %}
+{% code lang:python %}
+for planet, initial in planet_to_initial.items():
+    print("{} begins with \"{}\"".format(planet.rjust(10), initial)) {% endcode %}
+{% code lang:python %}
+Mercury begins with "M"
+  Venus begins with "V"
+  Earth begins with "E"
+   Mars begins with "M"
+Jupiter begins with "J"
+ Saturn begins with "S"
+ Uranus begins with "U"
+Neptune begins with "N" {% endcode %}
+{% endnote %}
+
+dictionary의 method 전체 목록이 궁금하시면 아래의 "help(dict)"버튼을 클릭하여 전체 도움말 페이지를 읽거나 [공식 온라인 문서](https://docs.python.org/3/library/stdtypes.html#dict)를 확인하십시오.
+
+{% spoiler help(dict) %}
+{% code %}
+  Help on class dict in module builtins:
+
+class dict(object)
+ |  dict() -> new empty dictionary
+ |  dict(mapping) -> new dictionary initialized from a mapping object's
+ |      (key, value) pairs
+ |  dict(iterable) -> new dictionary initialized as if via:
+ |      d = {}
+ |      for k, v in iterable:
+ |          d[k] = v
+ |  dict(**kwargs) -> new dictionary initialized with the name=value pairs
+ |      in the keyword argument list.  For example:  dict(one=1, two=2)
+ |  
+ |  Methods defined here:
+ |  
+ |  __contains__(self, key, /)
+ |      True if D has a key k, else False.
+ |  
+ |  __delitem__(self, key, /)
+ |      Delete self[key].
+ |  
+ |  __eq__(self, value, /)
+ |      Return self==value.
+ |  
+ |  __ge__(self, value, /)
+ |      Return self>=value.
+ |  
+ |  __getattribute__(self, name, /)
+ |      Return getattr(self, name).
+ |  
+ |  __getitem__(...)
+ |      x.__getitem__(y) <==> x[y]
+ |  
+ |  __gt__(self, value, /)
+ |      Return self>value.
+ |  
+ |  __init__(self, /, *args, **kwargs)
+ |      Initialize self.  See help(type(self)) for accurate signature.
+ |  
+ |  __iter__(self, /)
+ |      Implement iter(self).
+ |  
+ |  __le__(self, value, /)
+ |      Return self<=value.
+ |  
+ |  __len__(self, /)
+ |      Return len(self).
+ |  
+ |  __lt__(self, value, /)
+ |      Return self<value.
+ |  
+ |  __ne__(self, value, /)
+ |      Return self!=value.
+ |  
+ |  __new__(*args, **kwargs) from builtins.type
+ |      Create and return a new object.  See help(type) for accurate signature.
+ |  
+ |  __repr__(self, /)
+ |      Return repr(self).
+ |  
+ |  __setitem__(self, key, value, /)
+ |      Set self[key] to value.
+ |  
+ |  __sizeof__(...)
+ |      D.__sizeof__() -> size of D in memory, in bytes
+ |  
+ |  clear(...)
+ |      D.clear() -> None.  Remove all items from D.
+ |  
+ |  copy(...)
+ |      D.copy() -> a shallow copy of D
+ |  
+ |  fromkeys(iterable, value=None, /) from builtins.type
+ |      Returns a new dict with keys from iterable and values equal to value.
+ |  
+ |  get(...)
+ |      D.get(k[,d]) -> D[k] if k in D, else d.  d defaults to None.
+ |  
+ |  items(...)
+ |      D.items() -> a set-like object providing a view on D's items
+ |  
+ |  keys(...)
+ |      D.keys() -> a set-like object providing a view on D's keys
+ |  
+ |  pop(...)
+ |      D.pop(k[,d]) -> v, remove specified key and return the corresponding value.
+ |      If key is not found, d is returned if given, otherwise KeyError is raised
+ |  
+ |  popitem(...)
+ |      D.popitem() -> (k, v), remove and return some (key, value) pair as a
+ |      2-tuple; but raise KeyError if D is empty.
+ |  
+ |  setdefault(...)
+ |      D.setdefault(k[,d]) -> D.get(k,d), also set D[k]=d if k not in D
+ |  
+ |  update(...)
+ |      D.update([E, ]**F) -> None.  Update D from dict/iterable E and F.
+ |      If E is present and has a .keys() method, then does:  for k in E: D[k] = E[k]
+ |      If E is present and lacks a .keys() method, then does:  for k, v in E: D[k] = v
+ |      In either case, this is followed by: for k in F:  D[k] = F[k]
+ |  
+ |  values(...)
+ |      D.values() -> an object providing a view on D's values
+ |  
+ |  ----------------------------------------------------------------------
+ |  Data and other attributes defined here:
+ |  
+ |  __hash__ = None
+{% endcode %}
+{% endspoiler %}
+
 -----
 
 <br><br><br>
