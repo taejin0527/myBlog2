@@ -107,14 +107,14 @@
   <meta name="description" content="19번 - 6296번             시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내              sort()               words = [w for w in input().split(&apos;, &apos;)]words.sort()for i in word">
 <meta name="keywords" content="파이썬,python,삼성,SW Academy">
 <meta property="og:type" content="article">
-<meta property="og:title" content="(SW Expert Academy) 리스트, 튜플 - 6296번">
+<meta property="og:title" content="(SW Expert Academy) 리스트, 튜플 - 6296번 6297번 6298번 6299번 6300번">
 <meta property="og:url" content="https://taejin0527.github.io/2019/08/03/sw-6296/index.html">
 <meta property="og:site_name" content="AttackOnNunu">
 <meta property="og:description" content="19번 - 6296번             시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내              sort()               words = [w for w in input().split(&apos;, &apos;)]words.sort()for i in word">
 <meta property="og:locale" content="ko">
-<meta property="og:updated_time" content="2019-08-03T09:15:14.685Z">
+<meta property="og:updated_time" content="2019-08-04T10:52:39.708Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="(SW Expert Academy) 리스트, 튜플 - 6296번">
+<meta name="twitter:title" content="(SW Expert Academy) 리스트, 튜플 - 6296번 6297번 6298번 6299번 6300번">
 <meta name="twitter:description" content="19번 - 6296번             시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내              sort()               words = [w for w in input().split(&apos;, &apos;)]words.sort()for i in word">
 
 
@@ -135,7 +135,7 @@
   };
 </script>
 
-  <title>(SW Expert Academy) 리스트, 튜플 - 6296번 | AttackOnNunu</title>
+  <title>(SW Expert Academy) 리스트, 튜플 - 6296번 6297번 6298번 6299번 6300번 | AttackOnNunu</title>
   
 
 
@@ -373,7 +373,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">(SW Expert Academy) 리스트, 튜플 - 6296번
+          <h2 class="post-title" itemprop="name headline">(SW Expert Academy) 리스트, 튜플 - 6296번 6297번 6298번 6299번 6300번
 
               
             
@@ -476,6 +476,52 @@
 <div class="note success">
             <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">words = [w <span class="keyword">for</span> w <span class="keyword">in</span> input().split(<span class="string">', '</span>)]</span><br><span class="line"></span><br><span class="line">words.sort()</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> words[:<span class="number">-1</span>]:</span><br><span class="line">    print(<span class="string">"&#123;&#125;, "</span>.format(i), end=<span class="string">''</span>)</span><br><span class="line">print(words[<span class="number">-1</span>])</span><br></pre></td></tr></table></figure>
           </div>
+
+<hr>
+<h1 id="20번-6297번"><a href="#20번-6297번" class="headerlink" title="20번 - 6297번"></a>20번 - 6297번</h1><div class="note ">
+            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
+          </div>
+
+<blockquote>
+<p>list 등을 출력할 때, 대괄호 “[]” 를 생략하기 위해서 join() 함수를 사용</p>
+</blockquote>
+<div class="note success">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">in_num = [int(num) <span class="keyword">for</span> num <span class="keyword">in</span> input().split(<span class="string">','</span>)]</span><br><span class="line">odd_num = [odd  <span class="keyword">for</span> odd <span class="keyword">in</span> in_num <span class="keyword">if</span> odd%<span class="number">2</span>==<span class="number">1</span>]</span><br><span class="line"></span><br><span class="line">print(<span class="string">', '</span>.join(str(i) <span class="keyword">for</span> i <span class="keyword">in</span> odd_num))</span><br></pre></td></tr></table></figure>
+          </div>
+
+<hr>
+<h1 id="21번-6298번"><a href="#21번-6298번" class="headerlink" title="21번 - 6298번"></a>21번 - 6298번</h1><div class="note ">
+            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
+          </div>
+
+<blockquote>
+<p>반 자르기…</p>
+</blockquote>
+<div class="note success">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">given_tuple = (<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>,<span class="number">10</span>)</span><br><span class="line">half = int(len(given_tuple)/<span class="number">2</span>)</span><br><span class="line">print(given_tuple[:half])</span><br><span class="line">print(given_tuple[half:])</span><br></pre></td></tr></table></figure>
+          </div>
+
+<hr>
+<h1 id="22번-6299번"><a href="#22번-6299번" class="headerlink" title="22번 - 6299번"></a>22번 - 6299번</h1><div class="note ">
+            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
+          </div>
+
+
+<div class="note success">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">given_list = [<span class="number">5</span>, <span class="number">6</span>, <span class="number">77</span>, <span class="number">45</span>, <span class="number">22</span>, <span class="number">12</span>, <span class="number">24</span>]</span><br><span class="line">print([odd <span class="keyword">for</span> odd <span class="keyword">in</span> given_list <span class="keyword">if</span> odd%<span class="number">2</span>==<span class="number">1</span>])</span><br></pre></td></tr></table></figure>
+          </div>
+
+<hr>
+<h1 id="23번-6300번"><a href="#23번-6300번" class="headerlink" title="23번 - 6300번"></a>23번 - 6300번</h1><div class="note ">
+            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
+          </div>
+
+<blockquote>
+<p>idx는 0부터 시작하기 때문에 idx+1을 해서 짝수를 찾거나, 아님 아래 코드처럼 idx가 홀수인 것이 순서상으로 짝수가 된다</p>
+</blockquote>
+<div class="note success">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">given_list = [<span class="number">12</span>, <span class="number">24</span>, <span class="number">35</span>, <span class="number">70</span>, <span class="number">88</span>, <span class="number">120</span>, <span class="number">155</span>]</span><br><span class="line">print([even <span class="keyword">for</span> idx, even <span class="keyword">in</span> enumerate(given_list) <span class="keyword">if</span> idx%<span class="number">2</span>==<span class="number">1</span>])</span><br></pre></td></tr></table></figure>
+          </div>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
       
     </div>
@@ -534,6 +580,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/08/04/sw-6301/" rel="prev" title="sw 6301">
+                sw 6301 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -611,7 +661,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">36</span>
+                    <span class="site-state-item-count">37</span>
                     <span class="site-state-item-name">포스트</span>
                   </a>
                 </div>
@@ -806,7 +856,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#19번-6296번"><span class="nav-text">19번 - 6296번</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#19번-6296번"><span class="nav-text">19번 - 6296번</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#20번-6297번"><span class="nav-text">20번 - 6297번</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#21번-6298번"><span class="nav-text">21번 - 6298번</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#22번-6299번"><span class="nav-text">22번 - 6299번</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#23번-6300번"><span class="nav-text">23번 - 6300번</span></a></li></ol></div>
             
 
           </div>
@@ -989,7 +1039,7 @@
   var disqus_config = function() {
     this.page.url = "https://taejin0527.github.io/2019/08/03/sw-6296/";
     this.page.identifier = "2019/08/03/sw-6296/";
-    this.page.title = '(SW Expert Academy) 리스트, 튜플 - 6296번';
+    this.page.title = '(SW Expert Academy) 리스트, 튜플 - 6296번 6297번 6298번 6299번 6300번';
     };
   function loadComments() {
     var d = document, s = d.createElement('script');

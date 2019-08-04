@@ -356,6 +356,208 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/2019/01/28/cda-tutorial-1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="NUNU">
+      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="AttackOnNunu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/01/28/cda-tutorial-1/" class="post-title-link" itemprop="url">C-CDA 란?</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2019-01-28 16:08:17" itemprop="dateCreated datePublished" datetime="2019-01-28T16:08:17+09:00">2019-01-28</time>
+            </span>
+          
+
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/IHIS/" itemprop="url" rel="index"><span itemprop="name">IHIS</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/IHIS/HL7/" itemprop="url" rel="index"><span itemprop="name">HL7</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">댓글: </span>
+                <a href="/2019/01/28/cda-tutorial-1/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/01/28/cda-tutorial-1/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="Related-Posts"><a href="#Related-Posts" class="headerlink" title="Related Posts"></a>Related Posts</h3><hr>
+<blockquote>
+<p>본 문서는 IHIS 연구소의 <strong>‘HL7 C-CDA 교육’</strong> pdf 문서를 기반으로 작성 되었습니다.</p>
+</blockquote>
+<hr>
+<h2 id="Pre-Consolidation-context"><a href="#Pre-Consolidation-context" class="headerlink" title="Pre-Consolidation context"></a>Pre-Consolidation context</h2><h5 id="CDA-통합-이전"><a href="#CDA-통합-이전" class="headerlink" title="CDA 통합 이전"></a>CDA 통합 이전</h5><p> 컴퓨터와 인터넷이 보편화 되고 사람들의 기대수명이 높아지면서 ICT(Information and Communication System) 기술을 보건의료 영역에 적용하려는 움직임이 시작 되었습니다.<br> 하지만 병원과 기관마다 서로 다른 소프트웨어를 사용하기 때문에 정보 교환 또는 호환이 어려운 문제점이 있었습니다. 이를 해결하고자 <em>HITSP, HL7, IHE, Health Story</em> 등의 여러 기업 및 기관들이 표준화된 <strong>CDA(Clinical Document Architecture)</strong>를 규정하고, 많은 사람들이 자신들의 표준을 사용하게 하기 위해 <strong>CDA Implementation Guide(CDA IG)</strong> 를 배포하였습니다.<br> 각각의 표준은 비슷하지만 조금씩은 차이가 있었기 때문에 진정한 표준이 되지 못하고 다람쥐 쳇바퀴 돌 듯 이 문서들 간의 교환 및 교환의 문제가 발생하였습니다.</p>
+<p><img alt="C-CDA" data-src="/img/c-cda.png"></p>
+<h2 id="Consolidated-CDA"><a href="#Consolidated-CDA" class="headerlink" title="Consolidated CDA"></a>Consolidated CDA</h2><p> 2012년 <u>the Office of the National Coordinator for Health Information Technology(ONC)</u> 에서 이러한 문제점을 해결하고자 <strong>Consolidated CDA 라는 통일된 표준</strong> 을 제시하였다고 위키피디아[^1]에 적혀있습니다. 저는 대중적으로 많이 사용하는 HL7 기관에서 2011년 12월에 발표한  ‘A draft Implementation Guide for CDA Release 2.0, Consolidated CDA Templates’[^2]를 기반으로 다룰 것 입니다.</p>
+<p><strong>C-CDA IG</strong> 는 아래와 같은 의료 문서를 포함합니다(year released)</p>
+<ul>
+<li>Consultation Note(2008)</li>
+<li>Discharge Summary(2009)</li>
+<li>Imaging Integration and DICOM Diagnostic Imaging Reports(DIR)(2009)</li>
+<li>History and Physical(H&amp;P)(2008)</li>
+<li>Operative Note(2009)</li>
+<li>Progress Note(2010)</li>
+<li>Procedure Note(2010)</li>
+<li>Unstructured documents(2010)</li>
+</ul>
+<p><img alt="C-CDA2" data-src="/img/c-cda2.png"></p>
+<h2 id="C-CDA-IG-Navigation"><a href="#C-CDA-IG-Navigation" class="headerlink" title="C-CDA IG Navigation"></a>C-CDA IG Navigation</h2><p> Consolidated CDA 작성 방법에 대한 자세한 정보는 공식 홈페이지를 참조하면 될 것 같습니다.<br><span class="exturl" data-url="aHR0cDovL3d3dy5obDcub3JnL2ltcGxlbWVudC9zdGFuZGFyZHMvcHJvZHVjdF9tYXRyaXguY2Zt" title="http://www.hl7.org/implement/standards/product_matrix.cfm">HL7 Implementation Guide for CDA Release 2:IHE Health Story Consolidation, Release 1.1 - US Realm<i class="fa fa-external-link"></i></span></p>
+<p><br><br><br></p>
+<p>[^1]: <span class="exturl" data-url="aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvQ2xpbmljYWxfRG9jdW1lbnRfQXJjaGl0ZWN0dXJl" title="https://en.wikipedia.org/wiki/Clinical_Document_Architecture">Consolidated Clinical Document Architecture 탭에 있음<i class="fa fa-external-link"></i></span><br>[^2]: 초안의 사본은 HL7  웹 사이트를 가면 쉽게 찾을 수 있습니다.</p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/2019/01/22/spring/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -850,224 +1052,11 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/2019/01/17/markdown-basic/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="NUNU">
-      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="AttackOnNunu">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/01/17/markdown-basic/" class="post-title-link" itemprop="url">Markup? Markdown!</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">작성일</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2019-01-17 16:31:42" itemprop="dateCreated datePublished" datetime="2019-01-17T16:31:42+09:00">2019-01-17</time>
-            </span>
-          
-
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/BLOG/" itemprop="url" rel="index"><span itemprop="name">BLOG</span></a></span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/BLOG/MARKDOWN/" itemprop="url" rel="index"><span itemprop="name">MARKDOWN</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">댓글: </span>
-                <a href="/2019/01/17/markdown-basic/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/01/17/markdown-basic/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          <br>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Github Page를 시작 하면서 처음으로 Markdown 언어를 사용하게 되었습니다.<br>처음 웹 프로그래밍을 배울 때 HTML부터 배우면서 Hyper Text Markup Language(HTML)의 정확한 의미와 뜻은 알지 못한체 그저 태그로 구성된 문서(!)라는 정도로만 이해하고 넘겼습니다.</p>
-<p>뜬금없이 HTML과 Markup에 대해 언급해서 의아하실 수 있지만, <span class="exturl" data-url="aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvTWFya2Rvd24=" title="https://en.wikipedia.org/wiki/Markdown">Markdown<i class="fa fa-external-link"></i></span>에 대한 위키피디아 정의를 보면 ‘Markdown is a lightweight markup language’라고 언급되어 있습니다.<br>여기서 HTML에 대한 정의를 깊게 이야기하진 않겠지만, 적어도 <strong>Markup</strong>은 무엇인지 알고 <strong>Markdown</strong>에 대해서 알아보도록 하겠습니다.</p>
-<h2 id="Markup-이란"><a href="#Markup-이란" class="headerlink" title="Markup 이란?"></a>Markup 이란?</h2><p>‘Markup’이란 단어는 비즈니스나 법률 등에도 다른 의미로 사용되는데, 프로그래밍에서는 쉽게 말해 <strong>어딘가에 표시를 해두는 것</strong>을 뜻합니다.<br>이해를 돕기 위해 예를 들어보겠습니다.</p>
-<p>예 1) 표시가 없을 때</p>
-<ul>
-<li>HTML을 가르쳐드립니다 핵심 태그만 알면 당신도 HTML의 고수가 될 수 있습니다 19/01/17 세미나실</li>
-</ul>
-<p>예 2) 표시가 있을 때</p>
-<ul>
-<li>제목 : HTML을 가르쳐드립니다</li>
-<li>내용 : 핵심 태그만 알면 당신도 HTML의 고수가 될 수 있습니다</li>
-<li>날짜 : 19/01/17</li>
-<li>장소 : 세미나실</li>
-</ul>
-<p>표시가 있음으로 단락(HTML에서는 Tag로 표현합니다)이 구분되고 직관적으로 이해하기도 쉬워졌습니다. 즉, <strong>Markup 언어를 사용하면 문서(text)를 구조적으로 표현할 수 있습니다.</strong></p>
-<h2 id="Markdown-이란"><a href="#Markdown-이란" class="headerlink" title="Markdown 이란?"></a>Markdown 이란?</h2><p><span class="exturl" data-url="aHR0cHM6Ly9rby53aWtpcGVkaWEub3JnL3dpa2kvJUVCJUE3JTg4JUVEJTgxJUFDJUVCJThCJUE0JUVDJTlBJUI0" title="https://ko.wikipedia.org/wiki/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4">마크다운<i class="fa fa-external-link"></i></span> 언어는 <strong>사람들이 읽기 쉽고 쓰기 쉬운 플레인 텍스트 포맷을 사용하여 쓸 수 있으면서 구조적으로 유효한 HTML로 선택적 변환이 가능하게 하는 것을 목표</strong>로 2004년 <span class="exturl" data-url="aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvSm9obl9HcnViZXI=" title="https://en.wikipedia.org/wiki/John_Gruber">존 그루버<i class="fa fa-external-link"></i></span>가 <span class="exturl" data-url="aHR0cHM6Ly9rby53aWtpcGVkaWEub3JnL3dpa2kvJUVDJTk3JTkwJUVCJTlGJUIwXyVFQyU4QSVBNCVFQyU5QiU4QyVFQyVCOCVBMA==" title="https://ko.wikipedia.org/wiki/%EC%97%90%EB%9F%B0_%EC%8A%A4%EC%9B%8C%EC%B8%A0">에런 스위츠<i class="fa fa-external-link"></i></span>와 협업하여 만든 언어입니다.<br>특수기호와 문자를 이용하는 비교적 매우 간단한 문법 구조로 빠르게 컨텐츠를 작성할 수 있고 보다 직관적으로 이해할 수 있습니다.</p>
-<p>이해를 돕기 위해 일상에서 자주 사용되는 예를 들어보겠습니다.</p>
-<ul>
-<li>SNS의 태그 기능 ex) 페이스북, 인스타그램</li>
-<li>깃허브 README.md 등…</li>
-</ul>
-<p>맨 처음 언급한 위키피디아 내용처럼 마크다운 언어는 마크업 언어를 <strong>좀 더 직관적이고 간결하게 문서를 작성하게 해주는 언어</strong>입니다.</p>
-<h2 id="마크다운의-장-단점"><a href="#마크다운의-장-단점" class="headerlink" title="마크다운의 장-단점"></a>마크다운의 장-단점</h2><h3 id="장점"><a href="#장점" class="headerlink" title="장점"></a>장점</h3><pre><code>1. 간결하다.
-2. 별도의 도구없이 작성가능하다.
-3. 다양한 형태로 변환이 가능하다.
-3. 텍스트(Text)로 저장되기 때문에 용량이 적어 보관이 용이하다.
-4. 텍스트파일이기 때문에 버전관리시스템을 이용하여 변경이력을 관리할 수 있다.
-5. 지원하는 프로그램과 플랫폼이 다양하다.</code></pre><h3 id="단점"><a href="#단점" class="headerlink" title="단점"></a>단점</h3><pre><code>1. 표준이 없다.
-2. 표준이 없기 때문에 도구에 따라서 변환방식이나 생성물이 다르다.
-3. 모든 HTML 마크업을 대신하지 못한다.</code></pre><h2 id="참조"><a href="#참조" class="headerlink" title="참조 :"></a>참조 :</h2><ul>
-<li><span class="exturl" data-url="aHR0cHM6Ly9icnVuY2guY28ua3IvQGNvdmVyeW91LzE0" title="https://brunch.co.kr/@coveryou/14">https://brunch.co.kr/@coveryou/14<i class="fa fa-external-link"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9jb3JkZWxpYTI3My5zcGFjZS8xNQ==" title="https://cordelia273.space/15">https://cordelia273.space/15<i class="fa fa-external-link"></i></span></li>
-</ul>
-<p><br><br><br></p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
-          
-        
-      
-    </div>
-
-    
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/11/"><i class="fa fa-angle-left" aria-label="이전 페이지"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/11/">11</a><span class="page-number current">12</span>
+    <a class="extend prev" rel="prev" href="/page/11/"><i class="fa fa-angle-left" aria-label="이전 페이지"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/11/">11</a><span class="page-number current">12</span><a class="page-number" href="/page/13/">13</a><a class="extend next" rel="next" href="/page/13/"><i class="fa fa-angle-right" aria-label="다음 페이지"></i></a>
   </nav>
 
 
@@ -1111,7 +1100,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">36</span>
+                    <span class="site-state-item-count">37</span>
                     <span class="site-state-item-name">포스트</span>
                   </a>
                 </div>
