@@ -8,8 +8,40 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/2019/08/05/sw-6259/</loc>
-        <lastmod>2019-08-05T03:20:41.918Z</lastmod>
+        <loc>https://taejin0527.github.io/2019/08/05/sw-6203/</loc>
+        <lastmod>2019-08-05T08:42:01.455Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://taejin0527.github.io/2019/08/03/sw-6296/</loc>
+        <lastmod>2019-08-05T07:21:49.468Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://taejin0527.github.io/2019/08/01/sw-6290/</loc>
+        <lastmod>2019-08-05T07:21:46.277Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://taejin0527.github.io/2019/08/01/sw-6282/</loc>
+        <lastmod>2019-08-05T07:21:42.864Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://taejin0527.github.io/2019/08/01/sw-6273/</loc>
+        <lastmod>2019-08-05T07:21:38.018Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -17,7 +49,31 @@
 
     <url>
         <loc>https://taejin0527.github.io/2019/08/04/sw-6254/</loc>
-        <lastmod>2019-08-04T15:29:13.488Z</lastmod>
+        <lastmod>2019-08-05T07:21:25.048Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://taejin0527.github.io/2019/08/04/sw-6301/</loc>
+        <lastmod>2019-08-05T07:21:15.820Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://taejin0527.github.io/2019/08/05/sw-6259/</loc>
+        <lastmod>2019-08-05T07:21:06.749Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://taejin0527.github.io/2019/08/05/sw-6232/</loc>
+        <lastmod>2019-08-05T07:21:02.312Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -26,46 +82,6 @@
     <url>
         <loc>https://taejin0527.github.io/2019/07/26/06-strings-and-dictionaries/</loc>
         <lastmod>2019-08-04T14:16:22.049Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://taejin0527.github.io/2019/08/04/sw-6301/</loc>
-        <lastmod>2019-08-04T11:21:27.640Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://taejin0527.github.io/2019/08/03/sw-6296/</loc>
-        <lastmod>2019-08-04T10:52:39.708Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://taejin0527.github.io/2019/08/01/sw-6290/</loc>
-        <lastmod>2019-08-03T09:10:33.835Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://taejin0527.github.io/2019/08/01/sw-6282/</loc>
-        <lastmod>2019-08-02T05:12:33.109Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://taejin0527.github.io/2019/08/01/sw-6273/</loc>
-        <lastmod>2019-07-31T17:04:59.115Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
