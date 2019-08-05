@@ -356,6 +356,313 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/2019/07/27/hexo-adsense-2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="NUNU">
+      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="AttackOnNunu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/07/27/hexo-adsense-2/" class="post-title-link" itemprop="url">(Hexo_NexT_Theme) Hexo 블로그에 Google Adsense 설정_2</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2019-07-27 15:27:20" itemprop="dateCreated datePublished" datetime="2019-07-27T15:27:20+09:00">2019-07-27</time>
+            </span>
+          
+
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/BLOG/" itemprop="url" rel="index"><span itemprop="name">BLOG</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/BLOG/HEXO-NEXT-THEME/" itemprop="url" rel="index"><span itemprop="name">HEXO-NEXT-THEME</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">댓글: </span>
+                <a href="/2019/07/27/hexo-adsense-2/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/07/27/hexo-adsense-2/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <div class="note info">
+            <p>지난 <a href="https://taejin0527.github.io/2019/07/17/hexo-adsense-1/">Hexo 블로그에 Google Adsense 설정_1</a> 에 이어 설정하는 방법에 대해 알아보겠습니다.</p>
+          </div>
+
+<h1 id="지난-시간"><a href="#지난-시간" class="headerlink" title="지난 시간"></a>지난 시간</h1><p>지난 7월 17일 Google Adsense를 신청 했었고 일반적으로 3일 정도 걸린다는 안내와는 다르게 10일이나 걸렸습니다. 승인이 늦게 나는 이유에 대해서는 여러 추측들이 있는 것 같지만 저는 앞선 포스트에서 알려드렸던 설정 외에는 건드린 것이 없고 그저 그 후로도 계속해서 새로운 글을 작성했습니다. 아마 저의 경우 게시글 수가 조금 부족했던 것이 그 이유가 아니였나 하고 생각해봅니다.</p>
+<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" alt="Google Adsense 승인 메일" title="Google Adsense 승인 메일" data-src="/img/adsense/adsense_accept.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
+
+<p>Google Search Console이 <span class="exturl" data-url="aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvR29vZ2xlX1NlYXJjaF9Db25zb2xl" title="https://en.wikipedia.org/wiki/Google_Search_Console">2018년 1월<i class="fa fa-external-link"></i></span>에 리뉴얼 되었듯이 Google Adsense 또한 조금 새롭게 바뀐 것 같았습니다. 처음 등록해보는 거라 미흡한 부분들이 있을 수도 있지만 제가 사용하는 Hexo_Next_Theme 에 직접 적용하며 하나씩 알아가 보겠습니다.</p>
+<h1 id="기본-광고-설정"><a href="#기본-광고-설정" class="headerlink" title="기본 광고 설정"></a>기본 광고 설정</h1><ul>
+<li>메일의 <strong>시작하기</strong> 버튼을 클릭하거나 직접 Google Adsense 웹페이지에 접속하게 되면 아래 창을 만나게 됩니다.</li>
+</ul>
+<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" alt="Google Adsense 시작하기" title="Google Adsense 시작하기" data-src="/img/adsense/adsense_activate.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
+
+<ul>
+<li>빠르게 광고 설정을 클릭하여 다음 화면으로 진행하도록 합니다.</li>
+</ul>
+<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" alt title="Google Adsense 승인 메일" data-src="/img/adsense/adsense_auto.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
+
+<ul>
+<li>이전에는 머신러닝을 활용한 자동 광고 생성이 없었던 것 같은데 사용자의 편의를 위해 새롭게 이 기능을 제공하는 것 같습니다.<br>그보다 상단의 붉은 경고가 눈에 띄는군요.</li>
+</ul>
+<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" alt title="ads.txt 파일 경고" data-src="/img/adsense/adsense_warning.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
+
+<ul>
+<li>ads.txt 라는 파일에 대해 잘 모르기 때문에 <strong>자세히 알아보기</strong> 버튼을 클릭해 보겠습니다.</li>
+</ul>
+<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" alt title="ads.txt 자세히 알아보기" data-src="/img/adsense/adsense_adstxt_1.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
+
+<ul>
+<li>실공급원과 부정적인 공급원을 구분하고 광고 소스를 목록화 하여 손해를 보지 않게 도와주는 텍스트 파일인 것 같습니다. 권장사항이지만 한다고 손해볼 것도 없으니 등록하도록 하겠습니다.<br>위 안내글에서 언급되었듯이 직접 애드센스용 ads.txt를 생성할 수도 있지만, 앞선 붉은 경고문에서 <strong>지금 해결하기</strong> 버튼을 클릭하고 쉽게 다운받으실 수도 있습니다.<br>(직접 작성하실 경우, <strong>게시자 ID</strong> 는 Adsense 홈페이지 -&gt; 계정 -&gt; 설정 -&gt; 계정 정보에 있습니다.)</li>
+</ul>
+<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" alt title="ads.txt 문제해결" data-src="/img/adsense/adsense_adstxt_2.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
+
+<ul>
+<li>이렇게 직접 작성하거나 다운받은 ads.txt 파일을 블로그 테마의 source 폴더에 넣어 주시면 됩니다. (e.g <code>hexo/themes/next/source</code>)</li>
+</ul>
+<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" data-src="/img/adsense/adsense_adstxt_3.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
+
+<ul>
+<li><code>hexo g -d</code> 를 통해 새롭게 추가한 파일을 블로그에 배포하시면 됩니다. 구글 크롤링 봇의 주기가 24시간이라고 하니, 아마 다음날 해당 문제는 해결될 것 같습니다.</li>
+</ul>
+<hr>
+<h1 id="자동-광고-설정"><a href="#자동-광고-설정" class="headerlink" title="자동 광고 설정"></a>자동 광고 설정</h1><ul>
+<li>설명을 먼저 읽어보도록 하겠습니다.</li>
+</ul>
+<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" data-src="/img/adsense/adsense_auto_info_1.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
+
+<ul>
+<li>사용자가 조금 더 콘텐츠에 집중할 수 있도록 항상 광고가 게시되는 것이 아니라 머신러닝 학습으로 최적의 순간(아마 조회수가 많은 포스트에 게시되지 않을까요?)에만 광고가 게시되는 것 같습니다.</li>
+<li>아직 방문자도 없고…ㅠ 광고가 게시되는 것을 직접 확인하고 싶어서 자동 광고는 다음으로 미룰까 했었는데 아래의 내용을 보고 적용하기로 결심했습니다.</li>
+</ul>
+<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" data-src="/img/adsense/adsense_auto_info_2.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
+
+<ul>
+<li>즉, 수동으로 광고를 게제한 것과는 별개로 작동하는 것 같아 우선 자동 광고를 적용해보겠습니다.</li>
+</ul>
+<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" data-src="/img/adsense/adsense_auto_1.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
+
+<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" data-src="/img/adsense/adsense_auto_2.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
+
+<ul>
+<li>일단 기본값으로 모든 항목에 체크되어 있어서 그대로 진행하였습니다.</li>
+</ul>
+<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" data-src="/img/adsense/adsense_auto_3.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
+
+<ul>
+<li>위 코드 역시 지난번 Google Adsense 등록할 때 <code>google_adsense.ejs</code> 파일을 생성하고 <code>_layout.swig</code>에 추가했던 내용과 동일한 것으로 너무 편하게(?) 완료를 누리시면 됩니다.</li>
+</ul>
+<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" data-src="/img/adsense/adsense_auto_4.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
+
+<ul>
+<li>순식간에 끝나버렸습니다…ㅎ</li>
+</ul>
+<hr>
+<h1 id="광고-단위-설정"><a href="#광고-단위-설정" class="headerlink" title="광고 단위 설정"></a>광고 단위 설정</h1><ul>
+<li><strong>광고 단위</strong> 탭을 누르면 다음과 같은 화면이 나옵니다.</li>
+</ul>
+<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" data-src="/img/adsense/adsense_man_1.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
+
+<ul>
+<li>우선 저는 사이드바에 ‘디스플레이 광고’ 를 게제할 생각입니다.</li>
+</ul>
+<p>디스플레이 광고에는 3가지 유형이 있습니다.</p>
+<ul>
+<li>사각형</li>
+</ul>
+<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" data-src="/img/adsense/adsense_man_2.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
+
+<ul>
+<li>수평형</li>
+</ul>
+<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" data-src="/img/adsense/adsense_man_3.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
+
+<ul>
+<li>수직형</li>
+</ul>
+<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" data-src="/img/adsense/adsense_man_4.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
+
+<ul>
+<li>저는 수직형을 선택하여 진행하였습니다. 좌측 상단의 <strong>광고 단위 이름</strong> 을 지정하고 만들기를 누르시면 됩니다.</li>
+</ul>
+<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" data-src="/img/adsense/adsense_man_5.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
+
+<ul>
+<li><p>마지막으로 소스 코드를 블로그 layout에 추가해 주시면 되겠습니다.</p>
+</li>
+<li><p><code>ejs</code> 파일을 생성하는 방법과 <code>swig</code> 파일을 생성하는 방법 2가지가 있습니다. (두 파일의 차이점은 아직 잘 모르겠습니다.)<br><code>ejs</code> 템플릿 엔진으로 광고를 게제하는 방법은 이전에 구글 애드센스를 처음 신청할 때 했던 방법과 비슷합니다.<br><code>adsense_side.ejs</code> 파일을 생성하여 위 소스 코드를 넣어 놓고, <code>\_marco</code> 디렉토리 안의 <code>_sidebar.swig</code> 파일에(끝에 추가하시면 됩니다) 적용하시면 됩니다.</p>
+</li>
+</ul>
+<ul>
+<li>이번에는 색다르게 <code>swig</code> 파일을 생성하고 적용하여 보겠습니다.<br>먼저 <code>\_third-party</code> 디렉토리에 <code>\ad</code> 라는 폴더를 생성하겠습니다. 생성한 폴더에 <code>ads_side.swig</code> 라는 파일을 생성하고 여기에 소스 코드를 복사/붙여넣기 하시면 됩니다.</li>
+</ul>
+<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" data-src="/img/adsense/adsense_man_8.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
+
+<ul>
+<li>앞선 <code>ejs</code> 방법과 똑같이 <code>\_marco</code> 디렉토리 안의 <code>_sidebar.swig</code> 파일에(끝에 추가하시면 됩니다) 아래 사진에 적힌 것 처럼 작성해 주시면 됩니다.</li>
+</ul>
+<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" data-src="/img/adsense/adsense_man_9.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
+
+<ul>
+<li><code>hexo g -d</code> 를 통해 블로그에 배포하시고 대략 30분 정도 지나면 적용된 것을 확인하실 수 있습니다.<br>디스플레이 광고 이외에도 다른 광고들은 비슷한 방식으로 적용하시면 되겠습니다. 혹시 나중에 기회가 된다면 따로 포스팅 하겠습니다.</li>
+</ul>
+<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" data-src="/img/adsense/adsense_man_10.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
+
+<hr>
+<div class="note warning">
+            <p><span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" data-src="/img/adsense/adsense_man_6.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span></p><ul><li>partial과 include 의 차이점을 아직 잘 모르겠지만… 주의하실 점은</li><li>경로를 상대 경로로 지정해 주어야 하는점 <code>../custom/adsense_side.ejs</code> (못 읽으면 아래 사진 처럼 나오는 것 같습니다.)</li><li>sidebar 전체 <code>&lt;div&gt;</code> 태그 안에 광고를 넣어야 scroll 시 화면 따라 광고도 움직입니다.</li></ul><p><span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" data-src="/img/adsense/adsense_man_7.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span></p>
+          </div>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/2019/07/26/06-strings-and-dictionaries/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -984,231 +1291,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/2019/07/22/hexo-live2d/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="NUNU">
-      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="AttackOnNunu">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/07/22/hexo-live2d/" class="post-title-link" itemprop="url">(Hexo_NexT_Theme) 마우스를 따라 움직이는 배경</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">작성일</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2019-07-22 16:52:28" itemprop="dateCreated datePublished" datetime="2019-07-22T16:52:28+09:00">2019-07-22</time>
-            </span>
-          
-
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/BLOG/" itemprop="url" rel="index"><span itemprop="name">BLOG</span></a></span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/BLOG/HEXO-NEXT-THEME/" itemprop="url" rel="index"><span itemprop="name">HEXO-NEXT-THEME</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">댓글: </span>
-                <a href="/2019/07/22/hexo-live2d/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/07/22/hexo-live2d/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          <br>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <div class="note info">
-            <p>제 블로그에 적용되어 있는 테마는 Next 입니다. <span class="exturl" data-url="aHR0cDovL3RoZW1lLW5leHQuaWlzc25hbi5jb20v" title="http://theme-next.iissnan.com/">theme-next<i class="fa fa-external-link"></i></span><br>틈틈히 테마를 커스터마이즈 하고 있습니다.</p><p>이번 포스트에서는 배경에 마우스를 따라 움직이는 캐릭터를 적용하는 방법에 대해 적어 보겠습니다.</p>
-          </div>
-
-<hr>
-<h1 id="설치-Installation"><a href="#설치-Installation" class="headerlink" title="설치(Installation)"></a>설치(Installation)</h1><h2 id="hexo-helper-live2d"><a href="#hexo-helper-live2d" class="headerlink" title="hexo-helper-live2d"></a>hexo-helper-live2d</h2><p>블로그 디렉토리(기본 <code>hexo</code> 디렉토리)에서 Node Package Module(NPM)을 사용하여 <code>hexo-helper-live2d</code> 를 설치합니다.</p>
-<div class="note success no-icon">
-            <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install --save hexo-helper-live2d</span><br></pre></td></tr></table></figure>
-          </div>
-
-
-<h2 id="live2d-widget-model"><a href="#live2d-widget-model" class="headerlink" title="live2d-widget-model"></a>live2d-widget-model</h2><blockquote>
-<p>마음에 드는 모델의 assets을 가져와 적용할 수도 있지만, 그건 다음에 기회가 된다면 시도해 보기로 하겠습니다.</p>
-</blockquote>
-<p>아래의 기본적으로 제공해주는 Live2D 리소스 중에서 마음에 드는 모델을 골라 설치하겠습니다.</p>
-<div class="spoiler collapsed"><div class="spoiler-title">모델_리스트</div><div class="spoiler-content"><p>live2d-widget-model-chitose<br>live2d-widget-model-epsilon2_1<br>live2d-widget-model-gf<br>live2d-widget-model-haru/01 (use npm install –save live2d-widget-model-haru)<br>live2d-widget-model-haru/02 (use npm install –save live2d-widget-model-haru)<br>live2d-widget-model-haruto<br>live2d-widget-model-hibiki<br>live2d-widget-model-hijiki<br>live2d-widget-model-izumi<br>live2d-widget-model-koharu<br>live2d-widget-model-miku<br>live2d-widget-model-ni-j<br>live2d-widget-model-nico<br>live2d-widget-model-nietzsche<br>live2d-widget-model-nipsilon<br>live2d-widget-model-nito<br>live2d-widget-model-shizuku<br>live2d-widget-model-tororo<br>live2d-widget-model-tsumiki<br>live2d-widget-model-unitychan<br>live2d-widget-model-wanko<br>live2d-widget-model-z16</p>
-</div></div>
-
-<div class="spoiler collapsed"><div class="spoiler-title">모델_이미지_1</div><div class="spoiler-content"><p><strong>epsilon2_1</strong><br><span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" alt="epsilon" data-src="/img/gif/Epsilon2.1.gif"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span><br><strong>gf</strong><br><span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" alt="gf" data-src="/img/gif/gf.gif"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span><br><strong>haru</strong><br><span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" alt="haru" data-src="/img/gif/haru.gif"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span><br><strong>haruto</strong><br><span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" alt="haruto" data-src="/img/gif/haruto.gif"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span><br><strong>hibiki</strong><br><span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" alt="hibiki" data-src="/img/gif/hibiki.gif"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span><br><strong>koharu</strong><br><span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" alt="koharu" data-src="/img/gif/koharu.gif"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span><br><strong>miku</strong><br><span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" alt="miku" data-src="/img/gif/miku.gif"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span></p>
-</div></div>  
-<div class="spoiler collapsed"><div class="spoiler-title">모델_이미지_2</div><div class="spoiler-content"><p><strong>ni-j</strong><br><span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" alt="ni-j" data-src="/img/gif/ni-j.gif"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span><br><strong>nico</strong><br><span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" alt="nico" data-src="/img/gif/nico.gif"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span><br><strong>nietzche</strong><br><span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" alt="nietzche" data-src="/img/gif/nietzche.gif"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span><br><strong>nipsilon</strong><br><span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" alt="nipsilon" data-src="/img/gif/nipsilon.gif"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span><br><strong>nito</strong><br><span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" alt="nito" data-src="/img/gif/nito.gif"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span><br><strong>shizuku</strong><br><span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" alt="shizuku" data-src="/img/gif/shizuku.gif"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span></p>
-</div></div>    
-<div class="spoiler collapsed"><div class="spoiler-title">모델_이미지_3</div><div class="spoiler-content"><p><strong>tororo</strong><br><span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" alt="tororo" data-src="/img/gif/tororo.gif"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span><br><strong>tsumiki</strong><br><span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" alt="tsumiki" data-src="/img/gif/tsumiki.gif"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span><br><strong>Unitychan</strong><br><span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" alt="unitychan" data-src="/img/gif/Unitychan.gif"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span><br><strong>wanko</strong><br><span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" alt="wanko" data-src="/img/gif/wanko.gif"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span><br><strong>z16</strong><br><span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" alt="z16" data-src="/img/gif/z16.gif"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span></p>
-</div></div>
-
-<p>고르셨다면 똑같이 npm을 사용하여 설치해 주도록 하겠습니다.</p>
-<div class="note success no-icon">
-            <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install &#123;your model&apos;s package name&#125;</span><br></pre></td></tr></table></figure>저의 경우 wanko를 선택하였습니다.<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install --save live2d-widget-model-wanko</span><br></pre></td></tr></table></figure>
-          </div>
-
-<hr>
-<h1 id="설정-Config-setting"><a href="#설정-Config-setting" class="headerlink" title="설정(Config setting)"></a>설정(Config setting)</h1><p>블로그의 <code>_config.yml</code> 파일 혹은 테마의 <code>_config.yml</code> 중 편한 곳에 아래 속성을 추가합니다.<br><code>model</code> 의 <code>use</code> 부분에 사용할 모델명으로 수정하셔야 합니다.</p>
-<div class="note success no-icon">
-            <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">live2d:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  scriptFrom:</span> <span class="string">local</span></span><br><span class="line"><span class="attr">  pluginRootPath:</span> <span class="string">live2dw/</span></span><br><span class="line"><span class="attr">  pluginJsPath:</span> <span class="string">lib/</span></span><br><span class="line"><span class="attr">  pluginModelPath:</span> <span class="string">assets/</span></span><br><span class="line"><span class="attr">  tagMode:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">  log:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">  model:</span></span><br><span class="line"><span class="attr">    use:</span> <span class="string">live2d-widget-model-wanko</span> <span class="comment">#설치한 모델을 이곳에서 적용하셔야 합니다</span></span><br><span class="line"><span class="attr">  display:</span></span><br><span class="line"><span class="attr">    position:</span> <span class="string">right</span></span><br><span class="line"><span class="attr">    width:</span> <span class="number">150</span></span><br><span class="line"><span class="attr">    height:</span> <span class="number">300</span></span><br><span class="line"><span class="attr">  mobile:</span></span><br><span class="line"><span class="attr">    show:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  react:</span></span><br><span class="line"><span class="attr">    opacity:</span> <span class="number">0.7</span></span><br></pre></td></tr></table></figure>
-          </div>
-
-<p>더 자세한 설명은 깃허브에 가시면 보실 수 있습니다.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0VZSE4vaGV4by1oZWxwZXItbGl2ZTJkI2RldGFpbC1zZXR0aW5ncw==" title="https://github.com/EYHN/hexo-helper-live2d#detail-settings">Detail settings<i class="fa fa-external-link"></i></span></p>
-<hr>
-<h1 id="적용-Execute"><a href="#적용-Execute" class="headerlink" title="적용(Execute)"></a>적용(Execute)</h1><p><code>hexo clean</code> 을 통해 기존 작성되었던 public 폴더를 지워주시고 새롭게 <code>hexo generate</code> 실행하셔야 적용되는 것을 확인하실 수 있습니다.<br><code>hexo server</code> 로 로컬 환경에서 바로 확인하실 수도 있습니다.</p>
-<div class="note success no-icon">
-            <p><strong>koharu</strong> 모델을 한번 적용시켜 보았습니다.</p><p><span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" alt="sample" data-src="/img/live2d_koharu.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span></p>
-          </div>
-
-<br>
-
-<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0VZSE4vaGV4by1oZWxwZXItbGl2ZTJk" title="https://github.com/EYHN/hexo-helper-live2d">Github : hexo-helper-live2d<i class="fa fa-external-link"></i></span></p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
-          
-        
-      
-    </div>
-
-    
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1257,7 +1339,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">38</span>
+                    <span class="site-state-item-count">39</span>
                     <span class="site-state-item-name">포스트</span>
                   </a>
                 </div>
