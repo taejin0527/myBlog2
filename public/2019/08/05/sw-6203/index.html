@@ -112,7 +112,7 @@
 <meta property="og:site_name" content="AttackOnNunu">
 <meta property="og:description" content="1번 - 6203번             시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내              성적 총합 출력               class subject:    def __init__(self, kor, eng, math):        sel">
 <meta property="og:locale" content="ko">
-<meta property="og:updated_time" content="2019-08-05T08:42:01.455Z">
+<meta property="og:updated_time" content="2019-08-06T12:12:22.118Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="(SW Expert Academy) 객체지향 - 6203번 6208번 6217번 6223번">
 <meta name="twitter:description" content="1번 - 6203번             시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내              성적 총합 출력               class subject:    def __init__(self, kor, eng, math):        sel">
@@ -476,7 +476,7 @@
 <div class="note success">
             <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">subject</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, kor, eng, math)</span>:</span></span><br><span class="line">        self.__kor = kor</span><br><span class="line">        self.__eng = eng</span><br><span class="line">        self.__math = math</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">total</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> self.__kor+self.__eng+self.__math</span><br><span class="line"></span><br><span class="line">score = input().split(<span class="string">', '</span>)</span><br><span class="line"></span><br><span class="line">stduent = subject(int(score[<span class="number">0</span>]),int(score[<span class="number">1</span>]),int(score[<span class="number">2</span>]))</span><br><span class="line">print(<span class="string">"국어, 영어, 수학의 총점: &#123;&#125;"</span>.format(stduent.total()))</span><br></pre></td></tr></table></figure>
           </div>
-<hr>
+
 <hr>
 <h1 id="2번-6208번"><a href="#2번-6208번" class="headerlink" title="2번 - 6208번"></a>2번 - 6208번</h1><div class="note ">
             <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
@@ -500,7 +500,7 @@
 <div class="note success">
             <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Student</span>:</span></span><br><span class="line">    <span class="string">"""Parnet/Super class"""</span></span><br><span class="line">    _name1 = <span class="string">"홍길동"</span></span><br><span class="line">    _name2 = <span class="string">"이순신"</span></span><br><span class="line"></span><br><span class="line"><span class="meta">    @property</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">name</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> self._name</span><br><span class="line"></span><br><span class="line"><span class="meta">    @name.setter</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">name</span><span class="params">(self, name)</span>:</span></span><br><span class="line">        self._name = name</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">show</span><span class="params">(self)</span>:</span></span><br><span class="line">        print(<span class="string">"이름: "</span>+self._name1)</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">GraduateStudent</span><span class="params">(Student)</span>:</span></span><br><span class="line">    <span class="string">"""Child/Sub class"""</span></span><br><span class="line">    __major = <span class="string">"컴퓨터"</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></span><br><span class="line">        self.__name = super()._name2</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">show</span><span class="params">(self)</span>:</span></span><br><span class="line">        print(<span class="string">"이름: &#123;&#125;, 전공: &#123;&#125;"</span>.format(self.__name, self.__major))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Student().show()</span><br><span class="line">GraduateStudent().show()</span><br></pre></td></tr></table></figure>
           </div>
-<hr>
+
 <hr>
 <h1 id="4번-6223번"><a href="#4번-6223번" class="headerlink" title="4번 - 6223번"></a>4번 - 6223번</h1><div class="note ">
             <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
@@ -572,6 +572,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/08/06/sw-list1/" rel="prev" title="(파이썬 S/W 문제해결 기본) List1 - 4828번 4831번 4834번 4835번">
+                (파이썬 S/W 문제해결 기본) List1 - 4828번 4831번 4834번 4835번 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -649,7 +653,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">41</span>
+                    <span class="site-state-item-count">42</span>
                     <span class="site-state-item-name">포스트</span>
                   </a>
                 </div>
@@ -803,7 +807,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">42</span>
+                      
+                    
+                    <span class="site-state-item-count">43</span>
                     <span class="site-state-item-name">태그</span>
                   </a>
                 </div>
