@@ -8,8 +8,28 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.</description>
-    <pubDate>Tue, 06 Aug 2019 15:45:32 GMT</pubDate>
+    <pubDate>Wed, 07 Aug 2019 16:48:48 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>(파이썬 S/W 문제해결 기본) List2 - 4836번 4837번</title>
+      <link>https://taejin0527.github.io/2019/08/07/sw-list2/</link>
+      <guid>https://taejin0527.github.io/2019/08/07/sw-list2/</guid>
+      <pubDate>Wed, 07 Aug 2019 13:55:10 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;h1 id=&quot;4836번-색칠하기&quot;&gt;&lt;a href=&quot;#4836번-색칠하기&quot; class=&quot;headerlink&quot; title=&quot;4836번 - 색칠하기&quot;&gt;&lt;/a&gt;4836번 - 색칠하기&lt;/h1&gt;&lt;div class=&quot;note &quot;&gt;
+            &lt;ul&gt;&lt;
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<h1 id="4836번-색칠하기"><a href="#4836번-색칠하기" class="headerlink" title="4836번 - 색칠하기"></a>4836번 - 색칠하기</h1><div class="note ">            <ul><li>시간 : 10개 테스트케이스를 합쳐서 Python의 경우 2초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>          </div><div class="note success">            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">T = int(input())</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> test_case <span class="keyword">in</span> range(<span class="number">1</span>, T + <span class="number">1</span>):</span><br><span class="line">    red_color = []</span><br><span class="line">    blue_color = []</span><br><span class="line"></span><br><span class="line">    N = int(input())</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(N):</span><br><span class="line">        purple_color = <span class="number">0</span></span><br><span class="line">        r1, c1, r2, c2, color = map(int, input().split())</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> y <span class="keyword">in</span> range(c1, c2+<span class="number">1</span>):</span><br><span class="line">            <span class="keyword">for</span> x <span class="keyword">in</span> range(r1, r2+<span class="number">1</span>):</span><br><span class="line">                <span class="keyword">if</span> color==<span class="number">1</span>:</span><br><span class="line">                    red_color.append([x,y])</span><br><span class="line">                <span class="keyword">elif</span> color==<span class="number">2</span>:</span><br><span class="line">                    blue_color.append([x,y])</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> red <span class="keyword">in</span> red_color:</span><br><span class="line">            <span class="keyword">for</span> blue <span class="keyword">in</span> blue_color:</span><br><span class="line">                <span class="keyword">if</span> red == blue:</span><br><span class="line">                    purple_color += <span class="number">1</span></span><br><span class="line"></span><br><span class="line">    print(<span class="string">"#&#123;&#125; &#123;&#125;"</span>.format(test_case, purple_color))</span><br></pre></td></tr></table></figure>          </div><hr><h1 id="4837번-부분집합의-합"><a href="#4837번-부분집합의-합" class="headerlink" title="4837번 - 부분집합의 합"></a>4837번 - 부분집합의 합</h1><div class="note ">            <ul><li>시간 : 10개 테스트케이스를 합쳐서 Python의 경우 2초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>          </div><blockquote><p>부분집합을 구할 때, 비트연산을 사용</p></blockquote><div class="note success">            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">set_A = [num <span class="keyword">for</span> num <span class="keyword">in</span> range(<span class="number">1</span>,<span class="number">13</span>)]</span><br><span class="line">subset_A = [[set_A[j] <span class="keyword">for</span> j <span class="keyword">in</span> range(<span class="number">12</span>) <span class="keyword">if</span> i&amp;(<span class="number">1</span>&lt;&lt;j)] <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>&lt;&lt;<span class="number">12</span>)]</span><br><span class="line"></span><br><span class="line">T = int(input())</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> test_case <span class="keyword">in</span> range(<span class="number">1</span>, T + <span class="number">1</span>):</span><br><span class="line">    N, K = map(int, input().split())    <span class="comment"># N : 부분집합 원소의 수, K : 부분집합의 합</span></span><br><span class="line">    cnt=<span class="number">0</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> subset <span class="keyword">in</span> subset_A:</span><br><span class="line">        <span class="keyword">if</span> len(subset)==N <span class="keyword">and</span> sum(subset)==K:</span><br><span class="line">            cnt+=<span class="number">1</span></span><br><span class="line"></span><br><span class="line">    print(<span class="string">"#&#123;&#125; &#123;&#125;"</span>.format(test_case, cnt))</span><br></pre></td></tr></table></figure>          </div><hr><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content:encoded>
+      
+      <comments>https://taejin0527.github.io/2019/08/07/sw-list2/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>(파이썬 S/W 문제해결 기본) List1 - 4828번 4831번 4834번 4835번</title>
