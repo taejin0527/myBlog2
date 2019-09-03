@@ -112,7 +112,7 @@
 <meta property="og:site_name" content="AttackOnNunu">
 <meta property="og:description" content="4874번 - Forth             시간 : 10개 테스트케이스를 합쳐서 Python의 경우 2초메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내              Forth는 기본 사칙연산 +, -, *, / 4가지만 제공문제에서 정확하게 어떤 연산자를 제공하는지 명시되었으면 더 좋을 것 같음정수 나눗셈 연산자">
 <meta property="og:locale" content="ko">
-<meta property="og:updated_time" content="2019-09-02T08:32:26.427Z">
+<meta property="og:updated_time" content="2019-09-02T10:13:23.213Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="(파이썬 S&#x2F;W 문제해결 기본) Stack2 - 4874번 4875번 4880번 4881번">
 <meta name="twitter:description" content="4874번 - Forth             시간 : 10개 테스트케이스를 합쳐서 Python의 경우 2초메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내              Forth는 기본 사칙연산 +, -, *, / 4가지만 제공문제에서 정확하게 어떤 연산자를 제공하는지 명시되었으면 더 좋을 것 같음정수 나눗셈 연산자">
@@ -476,7 +476,9 @@
 <div class="note success">
             <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">operator</span><span class="params">(op, n1, n2)</span>:</span></span><br><span class="line">    <span class="comment"># 나눗셈은 '//' 연산자를 사용해야 하는 것을 주의</span></span><br><span class="line">    <span class="keyword">return</span> &#123;<span class="string">'+'</span>:n1+n2, <span class="string">'-'</span>:n1-n2, <span class="string">'*'</span>:n1*n2, <span class="string">'/'</span>:n1//n2&#125;[op]</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">calc_code</span><span class="params">(code)</span>:</span></span><br><span class="line">    stack = []</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> token <span class="keyword">in</span> code:</span><br><span class="line">        <span class="keyword">if</span> token == <span class="string">'.'</span>:</span><br><span class="line">            <span class="keyword">if</span> len(stack) == <span class="number">1</span>:</span><br><span class="line">                <span class="keyword">return</span> stack.pop()</span><br><span class="line">            <span class="comment"># 연산자 수가 부족하여 stack에 숫자가 남은 경우</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="keyword">return</span> <span class="string">'error'</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> token.isdigit():</span><br><span class="line">            stack.append(token)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">try</span>:</span><br><span class="line">                num2, num1 = int(stack.pop()), int(stack.pop())</span><br><span class="line">                stack.append(operator(token, num1, num2))</span><br><span class="line">            <span class="comment"># stack에 계산에 필요한 숫자가 부족한 경우 예외 처리</span></span><br><span class="line">            <span class="keyword">except</span> IndexError:</span><br><span class="line">                <span class="keyword">return</span> <span class="string">'error'</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">T = int(input())</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> test_case <span class="keyword">in</span> range(<span class="number">1</span>, T+<span class="number">1</span>):</span><br><span class="line">    <span class="comment"># 연산코드 입력</span></span><br><span class="line">    operation_code = list(input().split())</span><br><span class="line">    ans = calc_code(operation_code)</span><br><span class="line"></span><br><span class="line">    print(<span class="string">'#&#123;&#125; &#123;&#125;'</span>.format(test_case, ans))</span><br></pre></td></tr></table></figure>
           </div>
-<h2 id><a href="#" class="headerlink" title="**"></a>**</h2><h1 id="4875번-미로"><a href="#4875번-미로" class="headerlink" title="4875번 - 미로"></a>4875번 - 미로</h1><div class="note ">
+
+<hr>
+<h1 id="4875번-미로"><a href="#4875번-미로" class="headerlink" title="4875번 - 미로"></a>4875번 - 미로</h1><div class="note ">
             <ul><li>시간 : 10개 테스트케이스를 합쳐서 Python의 경우 2초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
           </div>
 
@@ -573,6 +575,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2019/09/02/sw-queue/" rel="prev" title="(파이썬 S/W 문제해결 기본) Queue - 5097번 5105번 5099번 5102번">
+                (파이썬 S/W 문제해결 기본) Queue - 5097번 5105번 5099번 5102번 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -649,7 +655,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">46</span>
+                    <span class="site-state-item-count">47</span>
                     <span class="site-state-item-name">포스트</span>
                   </a>
                 </div>
@@ -809,7 +815,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">45</span>
+                      
+                    
+                    <span class="site-state-item-count">46</span>
                     <span class="site-state-item-name">태그</span>
                   </a>
                 </div>
@@ -850,7 +858,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#4874번-Forth"><span class="nav-text">4874번 - Forth</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-text">**</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4875번-미로"><span class="nav-text">4875번 - 미로</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4880번-토너먼트-카드게임"><span class="nav-text">4880번 - 토너먼트 카드게임</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4881번-배열-최소-합"><span class="nav-text">4881번 - 배열 최소 합</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#4874번-Forth"><span class="nav-text">4874번 - Forth</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4875번-미로"><span class="nav-text">4875번 - 미로</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4880번-토너먼트-카드게임"><span class="nav-text">4880번 - 토너먼트 카드게임</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4881번-배열-최소-합"><span class="nav-text">4881번 - 배열 최소 합</span></a></li></ol></div>
             
 
           </div>
