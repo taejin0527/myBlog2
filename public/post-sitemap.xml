@@ -8,6 +8,46 @@
     </url>
 
     <url>
+        <loc>https://taejin0527.github.io/2020/01/17/PY-day1/</loc>
+        <lastmod>2020-01-17T08:46:23.119Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://taejin0527.github.io/2019/12/28/proj-o-day1/</loc>
+        <lastmod>2020-01-06T02:34:39.325Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://taejin0527.github.io/2019/12/28/blog-management/</loc>
+        <lastmod>2020-01-06T02:34:37.875Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://taejin0527.github.io/2019/09/05/sw-linked-list/</loc>
+        <lastmod>2020-01-06T02:34:36.043Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://taejin0527.github.io/2019/07/17/hexo-seo/</loc>
+        <lastmod>2019-12-28T07:07:59.783Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://taejin0527.github.io/2019/09/02/sw-queue/</loc>
         <lastmod>2019-09-03T09:16:18.982Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -298,14 +338,6 @@
     <url>
         <loc>https://taejin0527.github.io/2019/07/17/03-booleans-and-conditionals/</loc>
         <lastmod>2019-07-22T07:07:55.234Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://taejin0527.github.io/2019/07/17/hexo-seo/</loc>
-        <lastmod>2019-07-18T02:29:20.044Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

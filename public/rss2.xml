@@ -8,8 +8,93 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.</description>
-    <pubDate>Tue, 03 Sep 2019 09:16:18 GMT</pubDate>
+    <pubDate>Fri, 17 Jan 2020 08:46:23 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>(PYTON) D-1</title>
+      <link>https://taejin0527.github.io/2020/01/17/PY-day1/</link>
+      <guid>https://taejin0527.github.io/2020/01/17/PY-day1/</guid>
+      <pubDate>Fri, 17 Jan 2020 08:19:03 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;div class=&quot;note info&quot;&gt;
+            &lt;p&gt;파이썬을 파이썬답게!&lt;/p&gt;
+          &lt;/div&gt;
+
+&lt;h1 id=&quot;Reference&quot;&gt;&lt;a href=&quot;#Reference&quot; class=&quot;headerlink&quot; title=&quot;R
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<div class="note info">            <p>파이썬을 파이썬답게!</p>          </div><h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul><li>문제 출처 - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vZGFzaGJvYXJk" title="https://www.hackerrank.com/dashboard">HackerRank<i class="fa fa-external-link"></i></span></li><li>파이썬 연습 - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vZG9tYWlucy9weXRob24/ZmlsdGVycyU1QnN0YXR1cyU1RCU1QiU1RD11bnNvbHZlZCZiYWRnZV90eXBlPXB5dGhvbg==" title="https://www.hackerrank.com/domains/python?filters%5Bstatus%5D%5B%5D=unsolved&badge_type=python">Practice - Python<i class="fa fa-external-link"></i></span></li></ul><blockquote><p>Python 기초를 탄탄히 다지자<br>문제를 풀고 <span class="label sucess">Discussion Tab</span>을 참고하며 코드 스타일을 개선하려고 노력하고자 합니다</p></blockquote><hr><h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><h2 id="loops"><a href="#loops" class="headerlink" title="loops"></a>loops</h2><p>N 개의 정수를 입력 받고, 그 정수들의 제곱을 출력하는 문제<br>정수마다 한 줄씩 띄워야함!</p><div class="note no-icon">            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">n = int(input())</span><br><span class="line"></span><br><span class="line">ans = [i ** <span class="number">2</span> <span class="keyword">for</span> i <span class="keyword">in</span> range(n)]</span><br><span class="line"><span class="keyword">for</span> idx <span class="keyword">in</span> range(n):</span><br><span class="line">    print(ans[idx]) </span><br></pre></td></tr></table></figure>          </div><div class="note success">            <p>언패킹을 사용해서 한 줄로 코딩 가능!</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(*[num**<span class="number">2</span> <span class="keyword">for</span> num <span class="keyword">in</span> range(n)], sep=<span class="string">'\n'</span>) </span><br></pre></td></tr></table></figure><p>혹은 리스트에 담아서 출력하면 됨</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">[print(i**<span class="number">2</span>) <span class="keyword">for</span> i <span class="keyword">in</span> range(n)] </span><br></pre></td></tr></table></figure>          </div><h2 id="if-else"><a href="#if-else" class="headerlink" title="if-else"></a>if-else</h2><p>홀수 이거나, 6 에서 20 사이의 숫자이면 ‘Weird’를 출력<br>그 외에는 ‘Not Weird’ 출력</p><div class="note no-icon">            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">n = int(input().strip())</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> n % <span class="number">2</span> == <span class="number">0</span>:</span><br><span class="line">    <span class="keyword">if</span> <span class="number">2</span> &lt;= n &lt;= <span class="number">5</span>:</span><br><span class="line">        print(<span class="string">'Not Weird'</span>)</span><br><span class="line">    <span class="keyword">elif</span> <span class="number">6</span> &lt;= n &lt;= <span class="number">20</span>:</span><br><span class="line">        print(<span class="string">'Weird'</span>)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        print(<span class="string">'Not Weird'</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    print(<span class="string">'Weird'</span>) </span><br></pre></td></tr></table></figure>          </div><div class="note success">            <p>dict 자료형을 사용하면 if-else문을 사용하지 않고도 표현 가능</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">n = int(input().strip())</span><br><span class="line">check = &#123;<span class="literal">True</span>: <span class="string">'Not Weird'</span>, <span class="literal">False</span>: <span class="string">'Weird'</span>&#125;</span><br><span class="line"></span><br><span class="line">print(check[n % <span class="number">2</span> == <span class="number">0</span> <span class="keyword">and</span> (n <span class="keyword">in</span> range(<span class="number">2</span>, <span class="number">6</span>) <span class="keyword">or</span> n &gt; <span class="number">20</span>)]) </span><br></pre></td></tr></table></figure>          </div><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content:encoded>
+      
+      <comments>https://taejin0527.github.io/2020/01/17/PY-day1/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>(Hexo_NexT_Theme) 블로그 관리에 필요한 정보</title>
+      <link>https://taejin0527.github.io/2019/12/28/blog-management/</link>
+      <guid>https://taejin0527.github.io/2019/12/28/blog-management/</guid>
+      <pubDate>Sat, 28 Dec 2019 06:44:33 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;div class=&quot;note info&quot;&gt;
+            &lt;p&gt;오랜 기간 블로그에 포스팅을 안 하다가 다시 시작하려니까 사용법을 많이 까먹은 것 같다&lt;br&gt;정리하는 겸 기록으로 남겨두려고 한다&lt;/p&gt;
+          &lt;/div&gt;
+
+&lt;h2 id
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<div class="note info">            <p>오랜 기간 블로그에 포스팅을 안 하다가 다시 시작하려니까 사용법을 많이 까먹은 것 같다<br>정리하는 겸 기록으로 남겨두려고 한다</p>          </div><h2 id="Hexo-NexT-Theme-공식-문서"><a href="#Hexo-NexT-Theme-공식-문서" class="headerlink" title="Hexo-NexT-Theme 공식 문서"></a>Hexo-NexT-Theme 공식 문서</h2><p><span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0Lm9yZy9kb2Nz" title="https://theme-next.org/docs">https://theme-next.org/docs/<i class="fa fa-external-link"></i></span></p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content:encoded>
+      
+      <comments>https://taejin0527.github.io/2019/12/28/blog-management/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>(오일러 프로젝트) 개요</title>
+      <link>https://taejin0527.github.io/2019/12/28/proj-o-day1/</link>
+      <guid>https://taejin0527.github.io/2019/12/28/proj-o-day1/</guid>
+      <pubDate>Sat, 28 Dec 2019 06:32:25 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;h1 id=&quot;Project-Euler-란&quot;&gt;&lt;a href=&quot;#Project-Euler-란&quot; class=&quot;headerlink&quot; title=&quot;Project Euler 란?&quot;&gt;&lt;/a&gt;Project Euler 란?&lt;/h1&gt;&lt;p&gt;‘오일러 프로젝트’(Proje
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<h1 id="Project-Euler-란"><a href="#Project-Euler-란" class="headerlink" title="Project Euler 란?"></a>Project Euler 란?</h1><p>‘오일러 프로젝트’(Project Euler)는 컴퓨터 프로그램으로 수학 문제를 풀기 위해 만들어진 웹사이트이다.<br>2001년 10월 5일에 오픈했고 매년 꾸준히 문제를 업로드하여 2019년 12월 28일 기준, 684개의 문제가 등록되어 있다<br><br></p><h1 id="문제를-풀-수-있는-사이트들"><a href="#문제를-풀-수-있는-사이트들" class="headerlink" title="문제를 풀 수 있는 사이트들"></a>문제를 풀 수 있는 사이트들</h1><h2 id="공식-사이트"><a href="#공식-사이트" class="headerlink" title="공식 사이트"></a><span class="exturl" data-url="aHR0cHM6Ly9wcm9qZWN0ZXVsZXIubmV0Lw==" title="https://projecteuler.net/">공식 사이트<i class="fa fa-external-link"></i></span></h2><p>Colin Hughes 가 개설한 공식 사이트</p><h2 id="한글-번역-사이트"><a href="#한글-번역-사이트" class="headerlink" title="한글 번역 사이트"></a><span class="exturl" data-url="aHR0cDovL2V1bGVyLnN5bmFwLmNvLmtyLw==" title="http://euler.synap.co.kr/">한글 번역 사이트<i class="fa fa-external-link"></i></span></h2><p>한글로 번역된 문제의 수가 대략 130개(19년 12월 28일 기준)로 적다는 단점이 있다</p><h2 id="Hacker-Rank-사이트"><a href="#Hacker-Rank-사이트" class="headerlink" title="Hacker Rank 사이트"></a><span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vY29udGVzdHMvcHJvamVjdGV1bGVyL2NoYWxsZW5nZXM=" title="https://www.hackerrank.com/contests/projecteuler/challenges">Hacker Rank 사이트<i class="fa fa-external-link"></i></span></h2><p>온라인 사이트에서 바로 컴파일해볼 수 있고 문제의 풀이에 해당하는 코딩에 도움이 되는 입/출력 형식, 제약조건, 설명 등을 제공해 주는 장점이 있다<br>단점은 1번 부터 245번 문제까지만 등록되어 있다<br><br></p><h1 id="문제-풀이-계획"><a href="#문제-풀이-계획" class="headerlink" title="문제 풀이 계획"></a>문제 풀이 계획</h1><ul><li>일일 목표 : 3문제<br>(난이도가 낮은 문제 마다 추가로 한 문제 더 풀기, 최대 6문제)</li></ul><p>공식 사이트의 문제를 보고 풀이를 <span style="color:blue; font-size:24px">스스로</span> 고민해 본다</p><p>&darr;</p><p>어떻게 프로그램을 짜야할지 잘 모르겠다면 <span style="color:green; font-size:24px">Hacker Rank 사이트</span>에 등록된 문제를 살펴본다</p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content:encoded>
+      
+      <comments>https://taejin0527.github.io/2019/12/28/proj-o-day1/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>(파이썬 S/W 문제해결 기본) Linked List - 5108번 5110번</title>
+      <link>https://taejin0527.github.io/2019/09/05/sw-linked-list/</link>
+      <guid>https://taejin0527.github.io/2019/09/05/sw-linked-list/</guid>
+      <pubDate>Thu, 05 Sep 2019 07:10:07 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;h1 id=&quot;5108번-숫자-추가&quot;&gt;&lt;a href=&quot;#5108번-숫자-추가&quot; class=&quot;headerlink&quot; title=&quot;5108번 - 숫자 추가&quot;&gt;&lt;/a&gt;5108번 - 숫자 추가&lt;/h1&gt;&lt;div class=&quot;note &quot;&gt;
+            &lt;
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<h1 id="5108번-숫자-추가"><a href="#5108번-숫자-추가" class="headerlink" title="5108번 - 숫자 추가"></a>5108번 - 숫자 추가</h1><div class="note ">            <ul><li>시간 : 10개 테스트케이스를 합쳐서 Python의 경우 2초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>          </div><blockquote><p>list.insert(self, index, object) 함수를 사용하여 쉽게 리스트의 해당 인덱스에 숫자 삽입</p></blockquote><div class="note success">            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">addNum</span><span class="params">(m)</span>:</span></span><br><span class="line">    <span class="keyword">for</span> _ <span class="keyword">in</span> range(M):</span><br><span class="line">        <span class="comment"># 추가할 인덱스와 숫자 입력</span></span><br><span class="line">        idx, num = map(int, input().split())</span><br><span class="line">        mySeq.insert(idx, num)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">printNum</span><span class="params">(l)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> mySeq[l]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">T = int(input())</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> test_case <span class="keyword">in</span> range(<span class="number">1</span>, T+<span class="number">1</span>):</span><br><span class="line">    <span class="comment"># 수열의 길이 N, 추가 횟수 M, 출력할 인덱스 번호 L</span></span><br><span class="line">    N, M, L = map(int, input().split())</span><br><span class="line">    mySeq = [int(num) <span class="keyword">for</span> num <span class="keyword">in</span> input().split()]</span><br><span class="line"></span><br><span class="line">    addNum(M)</span><br><span class="line">    ans = printNum(L)</span><br><span class="line"></span><br><span class="line">    print(<span class="string">'#&#123;&#125; &#123;&#125;'</span>.format(test_case, ans))</span><br></pre></td></tr></table></figure>          </div><hr><h1 id="5110번-수열-합치기"><a href="#5110번-수열-합치기" class="headerlink" title="5110번 - 수열 합치기"></a>5110번 - 수열 합치기</h1><div class="note ">            <ul><li>시간 : 10개 테스트케이스를 합쳐서 Python의 경우 2초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>          </div><blockquote><p>단순 리스트를 그대로 사용할 경우 테스트 케이스 10개 중 9개만 통과하고 1개는 제한시간 초과가 뜬다</p></blockquote><div class="note danger">            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">mergeSeqLists</span><span class="params">()</span>:</span></span><br><span class="line">    finalSeq = []</span><br><span class="line"></span><br><span class="line">    finalSeq.extend(myLists[<span class="number">0</span>])</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> idx <span class="keyword">in</span> range(<span class="number">1</span>, M):</span><br><span class="line">        ptr = len(finalSeq)</span><br><span class="line">        <span class="keyword">for</span> i, num <span class="keyword">in</span> enumerate(finalSeq):</span><br><span class="line">            <span class="keyword">if</span> myLists[idx][<span class="number">0</span>] &lt; num:</span><br><span class="line">                ptr = i</span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line"></span><br><span class="line">        finalSeq = finalSeq[:ptr] + myLists[idx] + finalSeq[ptr:]</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> finalSeq</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">T = int(input())</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> test_case <span class="keyword">in</span> range(<span class="number">1</span>, T+<span class="number">1</span>):</span><br><span class="line">    <span class="comment"># 수열의 길이 N, 수열의 개수 M</span></span><br><span class="line">    N, M = map(int, input().split())</span><br><span class="line">    <span class="comment"># 전체 수열을 저장할 리스트</span></span><br><span class="line">    myLists = [[int(num) <span class="keyword">for</span> num <span class="keyword">in</span> input().split()] <span class="keyword">for</span> _ <span class="keyword">in</span> range(M)]</span><br><span class="line"></span><br><span class="line">    ans = mergeSeqLists()</span><br><span class="line"></span><br><span class="line">    print(<span class="string">'#&#123;&#125; '</span>.format(test_case), end=<span class="string">''</span>)</span><br><span class="line">    print(<span class="string">' '</span>.join(str(n) <span class="keyword">for</span> n <span class="keyword">in</span> ans[<span class="number">-1</span>:<span class="number">-11</span>:<span class="number">-1</span>]))</span><br><span class="line">    <span class="comment">#print('#&#123;&#125; &#123;&#125;'.format(test_case, ans[:10]))</span></span><br></pre></td></tr></table></figure>          </div><blockquote><p>연결 리스트(Linked list)를 사용하여 성능을 끌어올리자</p></blockquote><div class="note success">            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>          </div><hr><h1 id="5120번-암호"><a href="#5120번-암호" class="headerlink" title="5120번 - 암호"></a>5120번 - 암호</h1><div class="note ">            <ul><li>시간 : 10개 테스트케이스를 합쳐서 Python의 경우 2초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>          </div><blockquote></blockquote><div class="note success">            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>          </div><hr><h1 id="5122번-수열-편집"><a href="#5122번-수열-편집" class="headerlink" title="5122번 - 수열 편집"></a>5122번 - 수열 편집</h1><div class="note ">            <ul><li>시간 : 10개 테스트케이스를 합쳐서 Python의 경우 2초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>          </div><blockquote></blockquote><div class="note success">            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>          </div><hr><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content:encoded>
+      
+      <comments>https://taejin0527.github.io/2019/09/05/sw-linked-list/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>(파이썬 S/W 문제해결 기본) Queue - 5097번 5105번 5099번 5102번</title>
