@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="ko">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2">
+
+
+
+
+
+  <meta name="google-site-verification" content="1AoB1Oj70vYeXdFCLMbgUhTbU9kMwMXDsCNGRrqqvhM">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+
+<link rel="stylesheet" href="/css/main.css?v=7.2.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.2.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.2.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.2.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.2.0" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.2.0',
+    sidebar: {"position":"right","display":"post","offset":12,"onmobile":false},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    copycode: {"enable":true,"show_result":true,"style":"flat"},
+    fancybox: false,
+    fastclick: false,
+    lazyload: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    translation: {
+      copy_button: '복사',
+      copy_success: 'Copied',
+      copy_failure: 'Copy failed'
+    }
+  };
+</script>
+
+
+
+  <meta name="description" content="지금 이 순간에도 전세계적으로 수 많은 웹사이트, 웹페이지가 생성되기 때문에 그 중 나의 블로그를 혼자서 다른 사람들에게 노출시키는 것은 매우 어렵습니다.사람들이 많이 찾는 곳, 즉 트래픽이 많이 몰리는 곳에 위치해야 사람들이 스쳐지나가기라도 하지 않을까요?그렇다면 사람들이 무언가를 검색하고자 할때, 주로 어디를 찾을까요?한국의 경우">
+<meta name="keywords" content="hexo,헥소,블로그,테마,blog,next-theme,github page,SEO">
+<meta property="og:type" content="article">
+<meta property="og:title" content="(Hexo_NexT_Theme) Hexo SEO - 검색 엔진 최적화">
+<meta property="og:url" content="https://taejin0527.github.io/[object Object]/hexo-seo/index.html">
+<meta property="og:site_name" content="AttackOnNunu">
+<meta property="og:description" content="지금 이 순간에도 전세계적으로 수 많은 웹사이트, 웹페이지가 생성되기 때문에 그 중 나의 블로그를 혼자서 다른 사람들에게 노출시키는 것은 매우 어렵습니다.사람들이 많이 찾는 곳, 즉 트래픽이 많이 몰리는 곳에 위치해야 사람들이 스쳐지나가기라도 하지 않을까요?그렇다면 사람들이 무언가를 검색하고자 할때, 주로 어디를 찾을까요?한국의 경우">
+<meta property="og:locale" content="ko">
+<meta property="og:updated_time" content="2019-12-28T07:07:59.783Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="(Hexo_NexT_Theme) Hexo SEO - 검색 엔진 최적화">
+<meta name="twitter:description" content="지금 이 순간에도 전세계적으로 수 많은 웹사이트, 웹페이지가 생성되기 때문에 그 중 나의 블로그를 혼자서 다른 사람들에게 노출시키는 것은 매우 어렵습니다.사람들이 많이 찾는 곳, 즉 트래픽이 많이 몰리는 곳에 위치해야 사람들이 스쳐지나가기라도 하지 않을까요?그렇다면 사람들이 무언가를 검색하고자 할때, 주로 어디를 찾을까요?한국의 경우">
+
+
+
+  <link rel="alternate" href="/rss2.xml" title="AttackOnNunu" type="application/atom+xml">
+
+
+
+  
+  
+  <link rel="canonical" href="https://taejin0527.github.io/[object Object]/hexo-seo/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>(Hexo_NexT_Theme) Hexo SEO - 검색 엔진 최적화 | AttackOnNunu</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+  <!-- Google Adsense start -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-8226968057315512",
+    enable_page_level_ads: true
+  });
+</script>
+
+  <!-- Google Adsense end -->
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="ko">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">AttackOnNunu</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <h1 class="site-subtitle" itemprop="description">Once more into the fray</h1>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>홈</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>About</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>태그</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>카테고리</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>아카이브</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/hexo-seo/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="NUNU">
+      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="AttackOnNunu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">(Hexo_NexT_Theme) Hexo SEO - 검색 엔진 최적화
+
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2019-07-17 13:10:11" itemprop="dateCreated datePublished" datetime="2019-07-17T13:10:11+09:00">2019-07-17</time>
+            </span>
+          
+
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/BLOG/" itemprop="url" rel="index"><span itemprop="name">BLOG</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/BLOG/HEXO-NEXT-THEME/" itemprop="url" rel="index"><span itemprop="name">HEXO-NEXT-THEME</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">댓글: </span>
+                <a href="/[object Object]/hexo-seo/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/hexo-seo/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <div class="note info">
+            <p>지금 이 순간에도 전세계적으로 수 많은 웹사이트, 웹페이지가 생성되기 때문에 그 중 나의 블로그를 혼자서 다른 사람들에게 노출시키는 것은 매우 어렵습니다.<br>사람들이 많이 찾는 곳, 즉 트래픽이 많이 몰리는 곳에 위치해야 사람들이 스쳐지나가기라도 하지 않을까요?<br>그렇다면 사람들이 무언가를 검색하고자 할때, 주로 어디를 찾을까요?<br>한국의 경우 네이버, 대부분의 해외에서는 구글을 가장 먼저 떠올릴 것입니다.</p>
+          </div>
+<hr>
+<h1 id="SEO-Search-Engine-Optimization"><a href="#SEO-Search-Engine-Optimization" class="headerlink" title="SEO(Search Engine Optimization)"></a>SEO(Search Engine Optimization)</h1><p>SEO 즉, 검색엔진 최적화란 무엇인지 왜 중요한지에 대해 간단히 알아보겠습니다.</p>
+<h2 id="What-is-SEO"><a href="#What-is-SEO" class="headerlink" title="What is SEO"></a>What is SEO</h2><div class="note default">
+            <p><strong>검색엔진 최적화</strong> 란, 검색엔진이 자료를 수집하고 순위를 매기는 방식 및 알고리즘에 맞게 웹 페이지를 구성하여 검색 결과 상위에 나올 수 있도록 하는 작업을 말합니다.</p><blockquote><p>검색엔진 알고리즘은 사이트 회사의 핵심 보안 사항으로 정확하게 알 수 있는 방법이 없다고 합니다. 즉, 구글과 네이버의 검색엔진 알고리즘이 다르기 때문에 우선순위나 배치가 다른 기준을 적용합니다. 다만 사람들이 오랫동안 검색엔진을 연구한 결과들로 최적화에 대한 다양한 방법론이 소개되고 있을 뿐입니다.</p></blockquote>
+          </div>
+
+<h2 id="Why-SEO"><a href="#Why-SEO" class="headerlink" title="Why SEO"></a>Why SEO</h2><span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" alt="Ads vs SEO" data-src="/img/Ads_SEO.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
+
+<span class="label danger">검색광고(Ads)</span>를 사용한다면 검색엔진의 상단에 노출되어 상대적으로 유리하지만 사용자가 광고를 클릭할 때마다 비용이 발생합니다.
+<p>개인적으로 소소하게 웹페이지를 운영하는 저희에게는 부담이되는 것은 사실입니다.</p>
+<p>반면 <span class="label success">SEO, 검색엔진 최적화</span>를 통해 비용을 들이지 않고 자연스럽게 검색엔진 사용자들을 사이트로 접근하게 유도할 수 있습니다.<br>물론 검색광고에 비해 즉각적인 피드백 없이 긴 시간의 기다림이 필요할 수도 있습니다. (꾸준히 관리하다보면 언젠가는 찾는 사람이 많아 지겠죠!)</p>
+<br>
+
+<div class="note info">
+            <p>제가 사용하는 Hexo에도 SEO와 관련된 플러그인이 많이 있습니다.<br>제 블로그에 적용시킨 플러그인들을 소개시켜 드리겠습니다.</p>
+          </div>
+
+<h1 id="Hexo-Plugin"><a href="#Hexo-Plugin" class="headerlink" title="Hexo-Plugin"></a>Hexo-Plugin</h1><p>제가 사용하는 Hexo-NexT-Theme 에는 기본적인 SEO 설정을 간편하게 해주는 기능을 제공하고 있습니다.<br><code>자세한 설명은 https://theme-next.org/docs/theme-settings/seo 에서 확인할 수 있습니다</code></p>
+<span class="label primary">theme config file</span> 즉, 테마가 설치된 경로의 `_config.yml` 에서 SEO 를 검색하면 보실 수 있습니다.
+<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" style="max-width: none; width: 70%;" data-src="/img/seo_setting.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
+
+<p>자동으로 표준 링크를 생성해주는 <strong>canonical</strong>, 검색엔진 최적화를 위한 <strong>seo</strong> 기능을 활성화 했습니다.<br>그리고 블로그의 포스트들에 있는 외부 링크들이 크롤러에 의해 수집되지 않도록 (nofollow 속성과 비슷) <strong>exturl</strong> 기능도 활성화 했습니다.</p>
+<p>구글의 웹마스터(webmaster)를 사용했지만 이미지에서는 verification key 값은 지웠습니다.<br>아래는 구글 검색엔진의 원활한 크롤링을 위해 추가로 설치한 RSS, sitemap, robotstxt 설치방법 입니다.</p>
+<h2 id="hexo-generator-feed"><a href="#hexo-generator-feed" class="headerlink" title="hexo-generator-feed"></a>hexo-generator-feed</h2><p><strong>npm (Node Package Manager)</strong> 으로 편하게 설치할 수 있습니다.</p>
+<p><strong>설치</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-feed --save</span><br></pre></td></tr></table></figure>
+
+<p><strong>사용</strong></p>
+<span class="label info">site config file</span>인 `_config.yml` 에 파일을 아래 내용을 추가합니다.
+<p>피드의 종류를 정할 수 있는데 만약 네이터 웹마스터툴을 사용하실 계획이라면 default 인 Atom 말고 RSS2를 권장합니다.</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">feed:</span><br><span class="line">  type: rss2     #피드의 종류(atom/rss2)</span><br><span class="line">  path: rss2.xml  #피드가 생성될 경로</span><br><span class="line">  limit: 20      #최신 포스트의 개수(0 또는 false 설정시 모든 포스트)</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="hexo-generator-seo-friendly-sitemap"><a href="#hexo-generator-seo-friendly-sitemap" class="headerlink" title="hexo-generator-seo-friendly-sitemap"></a>hexo-generator-seo-friendly-sitemap</h2><p><strong>설치</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-seo-friendly-sitemap --save</span><br></pre></td></tr></table></figure>
+
+<p><strong>사용</strong><br>똑같이 <span class="label info">site config file</span>인 <code>_config.yml</code> 에 파일을 아래 내용을 추가합니다.</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sitemap:</span><br><span class="line">  path: sitemap.xml   #생성될 경로</span><br><span class="line">  tag: false          #sitemap에 tag 포함 여부</span><br><span class="line">  category: false     #sitemap에 category 포함 여부</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="hexo-generator-robotstxt"><a href="#hexo-generator-robotstxt" class="headerlink" title="hexo-generator-robotstxt"></a>hexo-generator-robotstxt</h2><p><strong>설치</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-robotstxt --save</span><br></pre></td></tr></table></figure>
+
+<p><strong>사용</strong><br>똑같이 <span class="label info">site config file</span>인 <code>_config.yml</code> 에 파일을 아래 내용을 추가합니다.</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">robotstxt:</span><br><span class="line">  useragent: &quot;*&quot;</span><br><span class="line">  allow:</span><br><span class="line">    - /</span><br><span class="line">  sitemap:</span><br></pre></td></tr></table></figure>
+
+<p><br><br></p>
+<h1 id="Sign-up-for-Google-Search-console"><a href="#Sign-up-for-Google-Search-console" class="headerlink" title="Sign up for Google Search console"></a>Sign up for Google Search console</h1><span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" style="max-width: none; width: 60%;" data-src="/img/signUp_url.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
+
+<p style="text-align:center;">블로그의 주소를 입력하고 넘어갑니다</p>
+
+<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" style="max-width: none; width: 60%;" data-src="/img/url_config.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
+
+<p>HTML태그의 content 안의 내용을 앞서 설명한 <code>_config.yml</code> 파일 안의 <code>google_site_verification</code> 옆에 붙여 넣습니다</p>
+<p>이제 터미널에서 <strong>generate</strong> 하고 <strong>deploy</strong> 해주시면 됩니다</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
+
+<p style="text-align:center;">RSS와 sitemap이 등록되 있는 것을 확인할 수 있습니다</p>
+
+<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" data-src="/img/sitemap.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
+
+
+<p><br><br></p>
+<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><p><span class="exturl" data-url="aHR0cHM6Ly9pc2Vvbmdoby5naXRodWIuaW8vcG9zdHMvaGV4by1zZW8=" title="https://iseongho.github.io/posts/hexo-seo">Hexo SEO - 하루 만에 검색 엔진 최적화 시키기<i class="fa fa-external-link"></i></span></p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+      
+    </div>
+
+    
+
+    
+      
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        
+          
+        
+        <div class="post-tags">
+          
+            <a href="/tags/hexo/" rel="tag"># hexo</a>
+          
+            <a href="/tags/헥소/" rel="tag"># 헥소</a>
+          
+            <a href="/tags/블로그/" rel="tag"># 블로그</a>
+          
+            <a href="/tags/테마/" rel="tag"># 테마</a>
+          
+            <a href="/tags/blog/" rel="tag"># blog</a>
+          
+            <a href="/tags/next-theme/" rel="tag"># next-theme</a>
+          
+            <a href="/tags/github-page/" rel="tag"># github page</a>
+          
+            <a href="/tags/SEO/" rel="tag"># SEO</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/[object Object]/03-booleans-and-conditionals/" rel="next" title="(파이썬) 03 Booleans and Conditionals">
+                <i class="fa fa-chevron-left"></i> (파이썬) 03 Booleans and Conditionals
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/[object Object]/hexo-adsense-1/" rel="prev" title="(Hexo_NexT_Theme) Hexo 블로그에 Google Adsense 설정_1">
+                (Hexo_NexT_Theme) Hexo 블로그에 Google Adsense 설정_1 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+      </div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            목차
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            흝어보기
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.gif" alt="NUNU">
+            
+              <p class="site-author-name" itemprop="name">NUNU</p>
+              <div class="site-description motion-element" itemprop="description">개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.</div>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">53</span>
+                    <span class="site-state-item-name">포스트</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                      <a href="/categories/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">12</span>
+                    <span class="site-state-item-name">카테고리</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                      <a href="/tags/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">50</span>
+                    <span class="site-state-item-name">태그</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/rss2.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#SEO-Search-Engine-Optimization"><span class="nav-text">SEO(Search Engine Optimization)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#What-is-SEO"><span class="nav-text">What is SEO</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Why-SEO"><span class="nav-text">Why SEO</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Hexo-Plugin"><span class="nav-text">Hexo-Plugin</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo-generator-feed"><span class="nav-text">hexo-generator-feed</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo-generator-seo-friendly-sitemap"><span class="nav-text">hexo-generator-seo-friendly-sitemap</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo-generator-robotstxt"><span class="nav-text">hexo-generator-robotstxt</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Sign-up-for-Google-Search-console"><span class="nav-text">Sign up for Google Search console</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Reference"><span class="nav-text">Reference</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+      <!-- Adsense Sidebar -->
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- adsense_side -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8226968057315512" data-ad-slot="2956452829" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+      <!-- Adsense Sidebar -->
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">NUNU</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> v3.9.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme – <span class="exturl theme-link" data-url="aHR0cHM6Ly90aGVtZS1uZXh0Lm9yZw==">NexT.Gemini</span> v7.2.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=3.4.1"></script>
+
+  
+  <script src="/lib/lazyload/lozad.min.js?v=1.10.0"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+
+
+  <script src="/js/utils.js?v=7.2.0"></script>
+
+  <script src="/js/motion.js?v=7.2.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/affix.js?v=7.2.0"></script>
+
+  <script src="/js/schemes/pisces.js?v=7.2.0"></script>
+
+
+
+
+  
+  <script src="/js/scrollspy.js?v=7.2.0"></script>
+<script src="/js/post-details.js?v=7.2.0"></script>
+
+
+
+  <script src="/js/next-boot.js?v=7.2.0"></script>
+
+  
+
+  
+  <script src="/js/exturl.js?v=7.2.0"></script>
+
+
+  
+
+  
+
+  
+  
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://aon-1.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+
+
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://taejin0527.github.io/[object Object]/hexo-seo/";
+    this.page.identifier = "[object Object]/hexo-seo/";
+    this.page.title = '(Hexo_NexT_Theme) Hexo SEO - 검색 엔진 최적화';
+    };
+  function loadComments() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://aon-1.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', '' + +new Date());
+    (d.head || d.body).appendChild(s);
+  }
+  
+    $(function() {
+      var offsetTop = $('#comments').offset().top - $(window).height();
+      if (offsetTop <= 0) {
+        // load directly when there's no a scrollbar
+        window.addEventListener('load', loadComments, false);
+      } else {
+        $(window).on('scroll.disqus_scroll', function() {
+          // offsetTop may changes because of manually resizing browser window or lazy loading images.
+          var offsetTop = $('#comments').offset().top - $(window).height();
+          var scrollTop = $(window).scrollTop();
+
+          // pre-load comments a bit? (margin or anything else)
+          if (offsetTop - scrollTop < 60) {
+            $(window).off('.disqus_scroll');
+            loadComments();
+          }
+        });
+      }
+    });
+  
+</script>
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"superSample":2,"width":200,"height":400,"position":"right","hOffset":0,"vOffset":-50,"mobile":{"show":false,"scale":0.5,"motion":true}}});</script></body>
+</html>

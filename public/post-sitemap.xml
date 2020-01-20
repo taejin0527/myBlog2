@@ -8,7 +8,23 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/2020/01/17/PY-day1/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/PY-day2/</loc>
+        <lastmod>2020-01-20T15:12:54.013Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/PY-terminology/</loc>
+        <lastmod>2020-01-20T13:50:31.804Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/PY-day1/</loc>
         <lastmod>2020-01-17T08:46:23.119Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -16,7 +32,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/2019/12/28/proj-o-day1/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/proj-o-day1/</loc>
         <lastmod>2020-01-06T02:34:39.325Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -24,7 +40,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/2019/12/28/blog-management/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/blog-management/</loc>
         <lastmod>2020-01-06T02:34:37.875Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -32,7 +48,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/2019/09/05/sw-linked-list/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/sw-linked-list/</loc>
         <lastmod>2020-01-06T02:34:36.043Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -40,7 +56,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/2019/07/17/hexo-seo/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/hexo-seo/</loc>
         <lastmod>2019-12-28T07:07:59.783Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -48,7 +64,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/2019/09/02/sw-queue/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/sw-queue/</loc>
         <lastmod>2019-09-03T09:16:18.982Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -56,7 +72,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/2019/08/24/sw-stack2/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/sw-stack2/</loc>
         <lastmod>2019-09-02T10:13:23.213Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -64,7 +80,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/2019/08/15/sw-stack1/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/sw-stack1/</loc>
         <lastmod>2019-08-24T05:57:14.872Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -72,7 +88,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/2019/08/14/sw-string/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/sw-string/</loc>
         <lastmod>2019-08-24T05:51:52.046Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -80,7 +96,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/2019/08/07/sw-list2/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/sw-list2/</loc>
         <lastmod>2019-08-08T05:22:23.416Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -88,7 +104,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/2019/08/06/sw-list1/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/sw-list1/</loc>
         <lastmod>2019-08-06T15:45:32.220Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -96,7 +112,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/2019/08/05/sw-6203/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/sw-6203/</loc>
         <lastmod>2019-08-06T12:12:22.118Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -104,7 +120,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/2019/08/03/sw-6296/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/sw-6296/</loc>
         <lastmod>2019-08-05T07:21:49.468Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -112,7 +128,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/2019/08/01/sw-6290/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/sw-6290/</loc>
         <lastmod>2019-08-05T07:21:46.277Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -120,7 +136,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/2019/08/01/sw-6282/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/sw-6282/</loc>
         <lastmod>2019-08-05T07:21:42.864Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -128,7 +144,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/2019/08/01/sw-6273/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/sw-6273/</loc>
         <lastmod>2019-08-05T07:21:38.018Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -136,7 +152,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/2019/08/04/sw-6254/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/sw-6254/</loc>
         <lastmod>2019-08-05T07:21:25.048Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -144,7 +160,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/2019/08/04/sw-6301/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/sw-6301/</loc>
         <lastmod>2019-08-05T07:21:15.820Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -152,7 +168,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/2019/08/05/sw-6259/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/sw-6259/</loc>
         <lastmod>2019-08-05T07:21:06.749Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -160,7 +176,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/2019/08/05/sw-6232/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/sw-6232/</loc>
         <lastmod>2019-08-05T07:21:02.312Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -168,7 +184,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/2019/07/26/06-strings-and-dictionaries/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/06-strings-and-dictionaries/</loc>
         <lastmod>2019-08-04T14:16:22.049Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -176,7 +192,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/2019/07/30/sw-6315/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/sw-6315/</loc>
         <lastmod>2019-07-30T09:15:01.389Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -184,7 +200,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/2019/07/30/sw-6308/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/sw-6308/</loc>
         <lastmod>2019-07-30T08:22:00.719Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -192,7 +208,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/2019/07/28/sw-6222/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/sw-6222/</loc>
         <lastmod>2019-07-29T06:43:33.510Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -200,7 +216,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/2019/07/29/sw-6325/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/sw-6325/</loc>
         <lastmod>2019-07-29T06:42:45.296Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -208,7 +224,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/2019/07/29/sw-6319/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/sw-6319/</loc>
         <lastmod>2019-07-29T06:25:39.573Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -216,7 +232,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/2019/07/28/sw-6196/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/sw-6196/</loc>
         <lastmod>2019-07-28T16:20:52.005Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -224,7 +240,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/2019/07/28/sw-6204/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/sw-6204/</loc>
         <lastmod>2019-07-28T16:20:47.264Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -232,7 +248,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/2019/07/28/sw-6218/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/sw-6218/</loc>
         <lastmod>2019-07-28T16:20:40.871Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -240,7 +256,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/2019/07/28/sw-6249/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/sw-6249/</loc>
         <lastmod>2019-07-28T16:20:22.557Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -248,7 +264,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/2019/07/28/sw-6230/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/sw-6230/</loc>
         <lastmod>2019-07-28T16:20:19.648Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -256,7 +272,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/2019/07/28/sw-6242/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/sw-6242/</loc>
         <lastmod>2019-07-28T16:20:12.197Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -264,7 +280,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/2019/07/27/hexo-adsense-2/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/hexo-adsense-2/</loc>
         <lastmod>2019-07-27T12:38:43.509Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -272,7 +288,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/2019/07/17/hexo-adsense-1/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/hexo-adsense-1/</loc>
         <lastmod>2019-07-27T09:32:53.833Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -280,7 +296,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/2019/07/25/05-loops-and-list-comprehensions/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/05-loops-and-list-comprehensions/</loc>
         <lastmod>2019-07-26T13:24:31.148Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -288,7 +304,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/2019/01/28/cda-tutorial-1/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/cda-tutorial-1/</loc>
         <lastmod>2019-07-25T15:49:21.526Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -296,7 +312,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/2019/01/19/cda-tutorial/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/cda-tutorial/</loc>
         <lastmod>2019-07-25T15:49:09.298Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -304,7 +320,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/2019/07/22/04-lists/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/04-lists/</loc>
         <lastmod>2019-07-24T14:04:15.132Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -312,7 +328,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/2019/07/22/hexo-live2d/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/hexo-live2d/</loc>
         <lastmod>2019-07-22T09:15:53.148Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -320,7 +336,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/2019/07/12/01-hello-python/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/01-hello-python/</loc>
         <lastmod>2019-07-22T07:08:07.819Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -328,7 +344,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/2019/07/15/02-functions-and-getting-help/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/02-functions-and-getting-help/</loc>
         <lastmod>2019-07-22T07:08:00.936Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -336,7 +352,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/2019/07/17/03-booleans-and-conditionals/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/03-booleans-and-conditionals/</loc>
         <lastmod>2019-07-22T07:07:55.234Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -344,7 +360,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/2019/01/22/spring/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/spring/</loc>
         <lastmod>2019-07-16T13:50:22.973Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -352,7 +368,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/2019/01/31/spring-module/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/spring-module/</loc>
         <lastmod>2019-07-16T13:50:08.744Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -360,7 +376,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/2019/02/02/spring-keywords/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/spring-keywords/</loc>
         <lastmod>2019-07-16T13:50:01.314Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -368,7 +384,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/2019/02/04/spring-pojo/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/spring-pojo/</loc>
         <lastmod>2019-07-16T13:49:47.560Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -376,7 +392,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/2019/02/11/spring-IoC/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/spring-IoC/</loc>
         <lastmod>2019-07-16T13:49:37.943Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -384,7 +400,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/2019/02/12/os-overview-2/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/os-overview-2/</loc>
         <lastmod>2019-07-16T13:49:16.772Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -392,7 +408,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/2019/02/05/os-overview/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/os-overview/</loc>
         <lastmod>2019-07-16T13:44:52.627Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -400,7 +416,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/2019/01/17/markdown-basic/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/markdown-basic/</loc>
         <lastmod>2019-07-13T09:41:13.581Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -408,7 +424,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/2019/07/13/blog-migration/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/blog-migration/</loc>
         <lastmod>2019-07-13T06:12:58.083Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
