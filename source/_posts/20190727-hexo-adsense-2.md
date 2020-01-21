@@ -10,7 +10,7 @@ subtitle: Hexo-next-theme 설정
 
 
 {% note info %}
-지난 [Hexo 블로그에 Google Adsense 설정_1](https://taejin0527.github.io/2019/07/17/hexo-adsense-1/) 에 이어 설정하는 방법에 대해 알아보겠습니다.
+지난 [Hexo 블로그에 Google Adsense 설정_1](https://taejin0527.github.io/[object%20Object]/hexo-adsense-1/) 에 이어 설정하는 방법에 대해 알아보겠습니다.
 {% endnote %}
 
 # 지난 시간

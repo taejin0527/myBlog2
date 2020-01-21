@@ -8,8 +8,24 @@
     </url>
 
     <url>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/PY-day3/</loc>
+        <lastmod>2020-01-21T09:10:44.355Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/hexo-adsense-2/</loc>
+        <lastmod>2020-01-21T08:56:37.917Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/PY-day2/</loc>
-        <lastmod>2020-01-20T15:12:54.013Z</lastmod>
+        <lastmod>2020-01-21T08:55:47.916Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -17,7 +33,7 @@
 
     <url>
         <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/PY-terminology/</loc>
-        <lastmod>2020-01-20T13:50:31.804Z</lastmod>
+        <lastmod>2020-01-21T08:54:32.322Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -25,7 +41,7 @@
 
     <url>
         <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/PY-day1/</loc>
-        <lastmod>2020-01-17T08:46:23.119Z</lastmod>
+        <lastmod>2020-01-21T07:02:27.335Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -274,14 +290,6 @@
     <url>
         <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/sw-6242/</loc>
         <lastmod>2019-07-28T16:20:12.197Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/hexo-adsense-2/</loc>
-        <lastmod>2019-07-27T12:38:43.509Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

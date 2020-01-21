@@ -4,28 +4,84 @@
 
     <url>
         <loc>https://taejin0527.github.io/tags/language/</loc>
-        <lastmod>2020-01-20T15:12:54.013Z</lastmod>
+        <lastmod>2020-01-21T09:10:44.355Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://taejin0527.github.io/tags/python/</loc>
-        <lastmod>2020-01-20T15:12:54.013Z</lastmod>
+        <lastmod>2020-01-21T09:10:44.355Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://taejin0527.github.io/tags/programming-language/</loc>
-        <lastmod>2020-01-20T15:12:54.013Z</lastmod>
+        <lastmod>2020-01-21T09:10:44.355Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://taejin0527.github.io/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC/</loc>
-        <lastmod>2020-01-20T15:12:54.013Z</lastmod>
+        <lastmod>2020-01-21T09:10:44.355Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://taejin0527.github.io/tags/github-page/</loc>
+        <lastmod>2020-01-21T08:56:37.917Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://taejin0527.github.io/tags/next-theme/</loc>
+        <lastmod>2020-01-21T08:56:37.917Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://taejin0527.github.io/tags/blog/</loc>
+        <lastmod>2020-01-21T08:56:37.917Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://taejin0527.github.io/tags/adsense/</loc>
+        <lastmod>2020-01-21T08:56:37.917Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://taejin0527.github.io/tags/%ED%85%8C%EB%A7%88/</loc>
+        <lastmod>2020-01-21T08:56:37.917Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://taejin0527.github.io/tags/%EB%B8%94%EB%A1%9C%EA%B7%B8/</loc>
+        <lastmod>2020-01-21T08:56:37.917Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://taejin0527.github.io/tags/%ED%97%A5%EC%86%8C/</loc>
+        <lastmod>2020-01-21T08:56:37.917Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://taejin0527.github.io/tags/hexo/</loc>
+        <lastmod>2020-01-21T08:56:37.917Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -47,62 +103,6 @@
     <url>
         <loc>https://taejin0527.github.io/tags/project-euler/</loc>
         <lastmod>2020-01-06T02:34:39.325Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://taejin0527.github.io/tags/github-page/</loc>
-        <lastmod>2020-01-06T02:34:37.875Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://taejin0527.github.io/tags/next-theme/</loc>
-        <lastmod>2020-01-06T02:34:37.875Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://taejin0527.github.io/tags/blog/</loc>
-        <lastmod>2020-01-06T02:34:37.875Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://taejin0527.github.io/tags/adsense/</loc>
-        <lastmod>2020-01-06T02:34:37.875Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://taejin0527.github.io/tags/%ED%85%8C%EB%A7%88/</loc>
-        <lastmod>2020-01-06T02:34:37.875Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://taejin0527.github.io/tags/%EB%B8%94%EB%A1%9C%EA%B7%B8/</loc>
-        <lastmod>2020-01-06T02:34:37.875Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://taejin0527.github.io/tags/%ED%97%A5%EC%86%8C/</loc>
-        <lastmod>2020-01-06T02:34:37.875Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://taejin0527.github.io/tags/hexo/</loc>
-        <lastmod>2020-01-06T02:34:37.875Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
