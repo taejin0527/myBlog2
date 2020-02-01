@@ -14,7 +14,7 @@
   
 
 
-<html class="theme-next gemini use-motion" lang="ko">
+<html class="theme-next mist use-motion" lang="ko">
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -77,7 +77,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Gemini',
+    scheme: 'Mist',
     version: '7.2.0',
     sidebar: {"position":"right","display":"post","offset":12,"onmobile":false},
     back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
@@ -318,6 +318,9 @@
   
 
   
+    
+
+  
 
   
 </nav>
@@ -333,9 +336,6 @@
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
-          
-            
-
           
           <div id="content" class="content">
             
@@ -356,7 +356,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/sw-6273/">
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/sw-6254/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="NUNU">
@@ -376,7 +376,7 @@
           <h2 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/[object Object]/sw-6273/" class="post-title-link" itemprop="url">(SW Expert Academy) 리스트, 튜플 - 6273번 6275번 6276번 6277번 6280번</a>
+                <a href="/[object Object]/sw-6254/" class="post-title-link" itemprop="url">(SW Expert Academy) 셋, 딕셔너리 - 6254번 6255번 6256번 6257번 6258번</a>
               
             
           </h2>
@@ -401,7 +401,7 @@
                 
               
 
-              <time title="Post created: 2019-08-01 00:37:33" itemprop="dateCreated datePublished" datetime="2019-08-01T00:37:33+09:00">2019-08-01</time>
+              <time title="Post created: 2019-08-04 23:22:11" itemprop="dateCreated datePublished" datetime="2019-08-04T23:22:11+09:00">2019-08-04</time>
             </span>
           
 
@@ -434,8 +434,8 @@
                 </span>
             
                 <span class="post-meta-item-text">댓글: </span>
-                <a href="/[object Object]/sw-6273/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/sw-6273/" itemprop="commentCount"></span>
+                <a href="/[object Object]/sw-6254/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/sw-6254/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -470,62 +470,61 @@
       
         
           
-            <h1 id="1번-6273번"><a href="#1번-6273번" class="headerlink" title="1번 - 6273번"></a>1번 - 6273번</h1><div class="note ">
+            <h1 id="2번-6254번"><a href="#2번-6254번" class="headerlink" title="2번 - 6254번"></a>2번 - 6254번</h1><div class="note ">
             <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
           </div>
 
 <blockquote>
-<p>튜플을 항목으로 갖는 리스트 객체는 [(…)] 로 표현<br>참고: dictionary 자료형에서는 <code>.item()</code> 이 key, value 쌍을 튜플로 자동으로 묶어서 반환함</p>
+<p>등록된 학생 이름 출력</p>
 </blockquote>
 <div class="note success">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">score = [(<span class="number">90</span>, <span class="number">80</span>), (<span class="number">85</span>, <span class="number">75</span>), (<span class="number">90</span>, <span class="number">100</span>)]</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> idx, t <span class="keyword">in</span> enumerate(score):</span><br><span class="line">    sum = t[<span class="number">0</span>] + t[<span class="number">1</span>]</span><br><span class="line">    print(<span class="string">"&#123;&#125;번 학생의 총점은 &#123;&#125;점이고, 평균은 &#123;&#125;입니다."</span>.format(idx+<span class="number">1</span>, sum, sum/<span class="number">2</span>))</span><br></pre></td></tr></table></figure>
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">find_student</span><span class="params">(name, student_dict)</span>:</span></span><br><span class="line">    <span class="keyword">if</span> name <span class="keyword">in</span> student_dict:</span><br><span class="line">        print(<span class="string">"&#123;&#125;의 전화번호는 &#123;&#125;입니다."</span>.format(name, student_dict[name]))</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        print(<span class="string">"등록된 학생이 아닙니다."</span>)</span><br><span class="line"></span><br><span class="line">student = &#123;</span><br><span class="line">    <span class="string">'홍길동'</span>:<span class="string">'010-1111-1111'</span>,</span><br><span class="line">    <span class="string">'이순신'</span>:<span class="string">'010-1111-2222'</span>,</span><br><span class="line">    <span class="string">'강감찬'</span>:<span class="string">'010-1111-3333'</span>&#125;</span><br><span class="line"></span><br><span class="line">notice = <span class="string">"아래 학생들의 전화번호를 조회할 수 있습니다.\n홍길동\n이순신\n강감찬\n전화번호를 조회하고자 하는 학생의 이름을 입력하십시오."</span></span><br><span class="line">print(notice)</span><br><span class="line">name = input()</span><br><span class="line">find_student(name,student)</span><br></pre></td></tr></table></figure>
           </div>
 
 <hr>
-<h1 id="2번-6275번"><a href="#2번-6275번" class="headerlink" title="2번 - 6275번"></a>2번 - 6275번</h1><div class="note ">
-            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
-          </div>
-
-<div class="note success">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">str = <span class="string">'Python is powerful... and fast; plays well with others; runs everywhere; is friendly &amp; easy to learn; is Open.'</span></span><br><span class="line">vowels = list(<span class="string">'aeiou'</span>)</span><br><span class="line"></span><br><span class="line">str_list = [word <span class="keyword">for</span> word <span class="keyword">in</span> str <span class="keyword">if</span> word <span class="keyword">not</span> <span class="keyword">in</span> vowels]</span><br><span class="line"></span><br><span class="line">print(<span class="string">''</span>.join(str_list))</span><br></pre></td></tr></table></figure>
-          </div>
-
-<hr>
-<h1 id="3번-6276번"><a href="#3번-6276번" class="headerlink" title="3번 - 6276번"></a>3번 - 6276번</h1><div class="note ">
+<h1 id="3번-6255번"><a href="#3번-6255번" class="headerlink" title="3번 - 6255번"></a>3번 - 6255번</h1><div class="note ">
             <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
           </div>
 
 <blockquote>
-<p>가독성을 위해서 내포 안에서 줄을 띄워주는게 좋을 것 같다<br>주의할 점은 보통은 <code>[num*i for i in range(1,10) if i%3!=0 and i%7!=0]</code> 처럼 for문 뒤에 if 조건을 적었는데<br><code>[[...] if num%3!=0 and num%7!=0 else [] for num in range(2,10)]</code> else문을 사용하려면 앞으로 와야한다. 아니면 syntax 에러가 뜸</p>
+<p>정렬 함수의 사용법을 새롭게 익혔다</p>
 </blockquote>
 <div class="note success">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">times_table = [[num*i <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>,<span class="number">10</span>) <span class="keyword">if</span> i%<span class="number">3</span>!=<span class="number">0</span> <span class="keyword">and</span> i%<span class="number">7</span>!=<span class="number">0</span>]</span><br><span class="line">              <span class="keyword">if</span> num%<span class="number">3</span>!=<span class="number">0</span> <span class="keyword">and</span> num%<span class="number">7</span>!=<span class="number">0</span> <span class="keyword">else</span> [] <span class="keyword">for</span> num <span class="keyword">in</span> range(<span class="number">2</span>,<span class="number">10</span>)]</span><br><span class="line"></span><br><span class="line">print(times_table)</span><br></pre></td></tr></table></figure>
-          </div>
-
-<div class="note warning">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">File <span class="string">"__file_name__.py"</span>, line *</span><br><span class="line">  times_table = [[num*i <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>,<span class="number">10</span>) <span class="keyword">if</span> i%<span class="number">3</span>!=<span class="number">0</span> <span class="keyword">and</span> i%<span class="number">7</span>!=<span class="number">0</span>] <span class="keyword">for</span> num <span class="keyword">in</span> range(<span class="number">2</span>,<span class="number">10</span>) <span class="keyword">if</span> num%<span class="number">3</span>!=<span class="number">0</span> <span class="keyword">and</span> num%<span class="number">7</span>!=<span class="number">0</span> <span class="keyword">else</span> []]</span><br><span class="line">                                                                                                                      ^</span><br><span class="line">SyntaxError: invalid syntax</span><br></pre></td></tr></table></figure>
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">furniture = &#123;<span class="string">"TV"</span>: <span class="number">2000000</span>,</span><br><span class="line">         <span class="string">"냉장고"</span>: <span class="number">1500000</span>,</span><br><span class="line">         <span class="string">"책상"</span>: <span class="number">350000</span>,</span><br><span class="line">         <span class="string">"노트북"</span>: <span class="number">1200000</span>,</span><br><span class="line">         <span class="string">"가스레인지"</span>: <span class="number">200000</span>,</span><br><span class="line">         <span class="string">"세탁기"</span>: <span class="number">1000000</span>&#125;</span><br><span class="line"></span><br><span class="line">r_dict = &#123;r: furniture[r] <span class="keyword">for</span> r <span class="keyword">in</span> sorted(furniture, key=furniture.get, reverse=<span class="literal">True</span>)&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> key, value <span class="keyword">in</span> r_dict.items():</span><br><span class="line">    print(<span class="string">"&#123;&#125;: &#123;&#125;"</span>.format(key, value))</span><br></pre></td></tr></table></figure>
           </div>
 
 <hr>
-<h1 id="4번-6277번"><a href="#4번-6277번" class="headerlink" title="4번 - 6277번"></a>4번 - 6277번</h1><div class="note ">
+<h1 id="4번-6256번"><a href="#4번-6256번" class="headerlink" title="4번 - 6256번"></a>4번 - 6256번</h1><div class="note ">
             <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
           </div>
 
 <blockquote>
-<p>내포 안에서 그냥 input()을 돌리면 한번만 받고 빠져나온다<br>총 5번을 받아야 하기 때문에 for문을 돌리는데, 여기서도 주의할 점으로 5번 반복하는 for문이 앞으로 와야한다</p>
+<p>출력할 때 마다 순서가 바뀌기 때문에 Test를 한번에 통과하기 위해서 출력은 그냥 문제에 나와있는 그대로 적어서 제출했다</p>
 </blockquote>
 <div class="note success">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">num = [int(x) <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">5</span>) <span class="keyword">for</span> x <span class="keyword">in</span> input().split(<span class="string">'\n'</span>)]</span><br><span class="line">avg=<span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">5</span>):</span><br><span class="line">    avg += num[i]</span><br><span class="line"></span><br><span class="line">print(<span class="string">"입력된 값 &#123;&#125;의 평균은 &#123;&#125;입니다."</span>.format(num, avg/<span class="number">5</span>))</span><br></pre></td></tr></table></figure>
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = &#123;<span class="string">'아메리카노'</span>: <span class="number">1900</span>, <span class="string">'카페모카'</span>: <span class="number">3300</span>, <span class="string">'에스프레소'</span>: <span class="number">1900</span>, <span class="string">'카페라떼'</span>: <span class="number">2500</span>, <span class="string">'카푸치노'</span>: <span class="number">2500</span>, <span class="string">'바닐라라떼'</span>: <span class="number">2900</span>&#125;</span><br><span class="line">b = &#123;<span class="string">'헤이즐럿라떼'</span>: <span class="number">2900</span>, <span class="string">'카페모카'</span>: <span class="number">3300</span>, <span class="string">'밀크커피'</span>: <span class="number">3300</span>, <span class="string">'아메리카노'</span>: <span class="number">1900</span>, <span class="string">'샷크린티라떼'</span>: <span class="number">3300</span>&#125;</span><br><span class="line"></span><br><span class="line">c = &#123;key: value <span class="keyword">for</span> key, value <span class="keyword">in</span> b.items()|a.items()&#125;</span><br><span class="line">d = &#123;(key, value) <span class="keyword">for</span> key, value <span class="keyword">in</span> c.items() <span class="keyword">if</span> value&gt;<span class="number">3000</span>&#125;</span><br><span class="line">print(d)</span><br></pre></td></tr></table></figure>
           </div>
 
 <hr>
-<h1 id="6번-6280번"><a href="#6번-6280번" class="headerlink" title="6번 - 6280번"></a>6번 - 6280번</h1><div class="note ">
+<h1 id="5번-6257번"><a href="#5번-6257번" class="headerlink" title="5번 - 6257번"></a>5번 - 6257번</h1><div class="note ">
+            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
+          </div>
+
+<blockquote>
+<p>모든 공백제거 : str.replace(“ “, “”)<br>양끝 공백만 제거 : str.strip()</p>
+</blockquote>
+<div class="note success">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">fruit = [<span class="string">'   apple    '</span>,<span class="string">'banana'</span>,<span class="string">'  melon'</span>]</span><br><span class="line">fruit_dict = &#123;key.replace(<span class="string">" "</span>,<span class="string">""</span>): len(key.replace(<span class="string">" "</span>,<span class="string">""</span>)) <span class="keyword">for</span> key <span class="keyword">in</span> fruit&#125;</span><br><span class="line"></span><br><span class="line">print(fruit_dict)</span><br></pre></td></tr></table></figure>
+          </div>
+
+<hr>
+<h1 id="6번-6258번"><a href="#6번-6258번" class="headerlink" title="6번 - 6258번"></a>6번 - 6258번</h1><div class="note ">
             <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
           </div>
 
 
 <div class="note success">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">num = int(input())</span><br><span class="line">factors = [n <span class="keyword">for</span> n <span class="keyword">in</span> range(<span class="number">1</span>, num+<span class="number">1</span>) <span class="keyword">if</span> num%n==<span class="number">0</span>]</span><br><span class="line"></span><br><span class="line">print(factors)</span><br></pre></td></tr></table></figure>
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">num = int(input())</span><br><span class="line">num_dict = &#123;n: n**<span class="number">2</span> <span class="keyword">for</span> n <span class="keyword">in</span> range(<span class="number">1</span>,num+<span class="number">1</span>)&#125;</span><br><span class="line"></span><br><span class="line">print(num_dict)</span><br></pre></td></tr></table></figure>
           </div>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
           
@@ -585,7 +584,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/sw-6315/">
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/sw-6301/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="NUNU">
@@ -605,7 +604,7 @@
           <h2 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/[object Object]/sw-6315/" class="post-title-link" itemprop="url">(SW Expert Academy) 내장함수 - 6315번 6316번 6317번 6318번</a>
+                <a href="/[object Object]/sw-6301/" class="post-title-link" itemprop="url">(SW Expert Academy) 리스트, 튜플 - 6301번 6302번 6303번 6305번</a>
               
             
           </h2>
@@ -630,7 +629,7 @@
                 
               
 
-              <time title="Post created: 2019-07-30 17:22:28" itemprop="dateCreated datePublished" datetime="2019-07-30T17:22:28+09:00">2019-07-30</time>
+              <time title="Post created: 2019-08-04 19:53:11" itemprop="dateCreated datePublished" datetime="2019-08-04T19:53:11+09:00">2019-08-04</time>
             </span>
           
 
@@ -663,8 +662,8 @@
                 </span>
             
                 <span class="post-meta-item-text">댓글: </span>
-                <a href="/[object Object]/sw-6315/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/sw-6315/" itemprop="commentCount"></span>
+                <a href="/[object Object]/sw-6301/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/sw-6301/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -699,44 +698,54 @@
       
         
           
-            <h1 id="8번-6315번"><a href="#8번-6315번" class="headerlink" title="8번 - 6315번"></a>8번 - 6315번</h1><div class="note ">
-            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
-          </div>
-
-
-<div class="note success">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(list(map(<span class="keyword">lambda</span> x: x**<span class="number">2</span>, list(range(<span class="number">1</span>,<span class="number">11</span>)))))</span><br></pre></td></tr></table></figure>
-          </div>
-
-<hr>
-<h1 id="9번-6316번"><a href="#9번-6316번" class="headerlink" title="9번 - 6316번"></a>9번 - 6316번</h1><div class="note ">
+            <h1 id="24번-6301번"><a href="#24번-6301번" class="headerlink" title="24번 - 6301번"></a>24번 - 6301번</h1><div class="note ">
             <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
           </div>
 
 <blockquote>
-<p>점점 가독성이 떨어지는…</p>
+<p>3차원 배열</p>
 </blockquote>
 <div class="note success">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(list(map(<span class="keyword">lambda</span> y: y**<span class="number">2</span>, list((filter(<span class="keyword">lambda</span> x: x%<span class="number">2</span>==<span class="number">0</span>, list(range(<span class="number">1</span>,<span class="number">11</span>))))))))</span><br></pre></td></tr></table></figure>
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">array_3d = [[[<span class="number">0</span> <span class="keyword">for</span> a <span class="keyword">in</span> range(<span class="number">4</span>)] <span class="keyword">for</span> b <span class="keyword">in</span> range(<span class="number">3</span>)] <span class="keyword">for</span> c <span class="keyword">in</span> range(<span class="number">2</span>)]</span><br><span class="line">print(array_3d)</span><br></pre></td></tr></table></figure>
           </div>
 
 <hr>
-<h1 id="10번-6317번"><a href="#10번-6317번" class="headerlink" title="10번 - 6317번"></a>10번 - 6317번</h1><div class="note ">
+<h1 id="25번-6302번"><a href="#25번-6302번" class="headerlink" title="25번 - 6302번"></a>25번 - 6302번</h1><div class="note ">
             <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
           </div>
 
+<blockquote>
+<p>enumerate()로 리스트의 인덱스 값을 받아 1, 5, 6번 값을 삭제(idx는 0부터 시작)</p>
+</blockquote>
 <div class="note success">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">input_list = (<span class="number">3</span>, <span class="number">5</span>, <span class="number">4</span>, <span class="number">1</span>, <span class="number">8</span>, <span class="number">10</span>, <span class="number">2</span>)</span><br><span class="line"></span><br><span class="line">print(<span class="string">"max&#123;&#125; =&gt; &#123;&#125;"</span>.format(input_list, max(input_list)))</span><br></pre></td></tr></table></figure>
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">given_list = [<span class="number">12</span>, <span class="number">24</span>, <span class="number">35</span>, <span class="number">70</span>, <span class="number">88</span>, <span class="number">120</span>, <span class="number">155</span>]</span><br><span class="line">erased_list = [num <span class="keyword">for</span> idx, num <span class="keyword">in</span> enumerate(given_list) <span class="keyword">if</span> idx!=<span class="number">0</span> <span class="keyword">and</span> idx!=<span class="number">4</span> <span class="keyword">and</span> idx!=<span class="number">5</span>]</span><br><span class="line">print(erased_list)</span><br></pre></td></tr></table></figure>
           </div>
 
 <hr>
-<h1 id="11번-6318번"><a href="#11번-6318번" class="headerlink" title="11번 - 6318번"></a>11번 - 6318번</h1><div class="note ">
+<h1 id="26번-6303번"><a href="#26번-6303번" class="headerlink" title="26번 - 6303번"></a>26번 - 6303번</h1><div class="note ">
             <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
           </div>
 
+<blockquote>
+<p>단순 2중 for문을 활용한 비교</p>
+</blockquote>
 <div class="note success">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">input_dict = enumerate(&#123;<span class="string">'a'</span>:<span class="number">0</span>, <span class="string">'b'</span>:<span class="number">1</span>, <span class="string">'c'</span>:<span class="number">2</span>, <span class="string">'d'</span>:<span class="number">3</span>, <span class="string">'e'</span>:<span class="number">4</span>, <span class="string">'f'</span>:<span class="number">5</span>&#125;)</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i, value <span class="keyword">in</span> input_dict:</span><br><span class="line">    print(<span class="string">"&#123;&#125;: &#123;&#125;"</span>.format(value, i))</span><br></pre></td></tr></table></figure>
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">list_1 = [<span class="number">1</span>,<span class="number">3</span>,<span class="number">6</span>,<span class="number">78</span>,<span class="number">35</span>,<span class="number">55</span>]</span><br><span class="line">list_2 = [<span class="number">12</span>,<span class="number">24</span>,<span class="number">35</span>,<span class="number">24</span>,<span class="number">88</span>,<span class="number">120</span>,<span class="number">155</span>]</span><br><span class="line"></span><br><span class="line">ans = [num <span class="keyword">for</span> num <span class="keyword">in</span> list_1 <span class="keyword">for</span> comp <span class="keyword">in</span> list_2 <span class="keyword">if</span> num==comp]</span><br><span class="line">print(ans)</span><br></pre></td></tr></table></figure>
           </div>
+
+<hr>
+<h1 id="27번-6305번"><a href="#27번-6305번" class="headerlink" title="27번 - 6305번"></a>27번 - 6305번</h1><div class="note ">
+            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
+          </div>
+
+<blockquote>
+<p>list comprehension 으로 한번에 해결 해보려고 list(set(..))을 사용해 봤지만, set() 함수는 순서가 없기 때문에 실패…</p>
+</blockquote>
+<div class="note success">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">remove_duplicated</span><span class="params">(duplicate_list)</span>:</span></span><br><span class="line">    has = []</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> duplicate_list:</span><br><span class="line">        <span class="keyword">if</span> i <span class="keyword">not</span> <span class="keyword">in</span> has:</span><br><span class="line">            has.append(i)</span><br><span class="line">    <span class="keyword">return</span> has</span><br><span class="line"></span><br><span class="line">given_list = [<span class="number">12</span>,<span class="number">24</span>,<span class="number">35</span>,<span class="number">24</span>,<span class="number">88</span>,<span class="number">120</span>,<span class="number">155</span>,<span class="number">88</span>,<span class="number">120</span>,<span class="number">155</span>]</span><br><span class="line"></span><br><span class="line">print(remove_duplicated(given_list))</span><br></pre></td></tr></table></figure>
+          </div>
+
+<hr>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
           
         
@@ -795,7 +804,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/sw-6308/">
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/sw-6296/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="NUNU">
@@ -815,7 +824,7 @@
           <h2 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/[object Object]/sw-6308/" class="post-title-link" itemprop="url">(SW Expert Academy) 내장함수 - 6308번 6311번 6312번 6313번 6314번</a>
+                <a href="/[object Object]/sw-6296/" class="post-title-link" itemprop="url">(SW Expert Academy) 리스트, 튜플 - 6296번 6297번 6298번 6299번 6300번</a>
               
             
           </h2>
@@ -840,7 +849,7 @@
                 
               
 
-              <time title="Post created: 2019-07-30 16:08:09" itemprop="dateCreated datePublished" datetime="2019-07-30T16:08:09+09:00">2019-07-30</time>
+              <time title="Post created: 2019-08-03 18:09:21" itemprop="dateCreated datePublished" datetime="2019-08-03T18:09:21+09:00">2019-08-03</time>
             </span>
           
 
@@ -873,8 +882,8 @@
                 </span>
             
                 <span class="post-meta-item-text">댓글: </span>
-                <a href="/[object Object]/sw-6308/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/sw-6308/" itemprop="commentCount"></span>
+                <a href="/[object Object]/sw-6296/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/sw-6296/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -909,57 +918,61 @@
       
         
           
-            <h1 id="1번-6308번"><a href="#1번-6308번" class="headerlink" title="1번 - 6308번"></a>1번 - 6308번</h1><div class="note ">
+            <h1 id="19번-6296번"><a href="#19번-6296번" class="headerlink" title="19번 - 6296번"></a>19번 - 6296번</h1><div class="note ">
             <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
           </div>
 
 <blockquote>
-<p>문제의 입출력에서 ‘올해’’를 기준으로 20살이 100가 되는게 2099년이기 때문에 ‘올해’=2018년 임을 알 수 있다.<br>지금 날짜를 적용시키고 싶다면 그냥 datetime.now()를 쓰면 된다.</p>
+<p>sort()</p>
 </blockquote>
 <div class="note success">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> datetime <span class="keyword">import</span> datetime, date</span><br><span class="line"></span><br><span class="line">name = input()</span><br><span class="line">age = int(input())</span><br><span class="line">now = date(<span class="number">2018</span>, <span class="number">1</span>, <span class="number">1</span>).year</span><br><span class="line"></span><br><span class="line">print(<span class="string">"&#123;&#125;(은)는 &#123;&#125;년에 100세가 될 것입니다."</span>.format(name, now-age+<span class="number">101</span>))</span><br></pre></td></tr></table></figure>
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">words = [w <span class="keyword">for</span> w <span class="keyword">in</span> input().split(<span class="string">', '</span>)]</span><br><span class="line"></span><br><span class="line">words.sort()</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> words[:<span class="number">-1</span>]:</span><br><span class="line">    print(<span class="string">"&#123;&#125;, "</span>.format(i), end=<span class="string">''</span>)</span><br><span class="line">print(words[<span class="number">-1</span>])</span><br></pre></td></tr></table></figure>
           </div>
 
 <hr>
-<h1 id="4번-6311번"><a href="#4번-6311번" class="headerlink" title="4번 - 6311번"></a>4번 - 6311번</h1><div class="note ">
+<h1 id="20번-6297번"><a href="#20번-6297번" class="headerlink" title="20번 - 6297번"></a>20번 - 6297번</h1><div class="note ">
             <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
           </div>
 
 <blockquote>
-<p>2,3번 문제는 없음<br>조금 더 간결하게 풀 수 있지 않을까? 아쉽다</p>
+<p>list 등을 출력할 때, 대괄호 “[]” 를 생략하기 위해서 join() 함수를 사용</p>
 </blockquote>
 <div class="note success">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> datetime <span class="keyword">import</span> datetime, date</span><br><span class="line"></span><br><span class="line">name = input()</span><br><span class="line">age = int(input())</span><br><span class="line">now = date(<span class="number">2018</span>, <span class="number">1</span>, <span class="number">1</span>).year</span><br><span class="line"></span><br><span class="line">print(<span class="string">"&#123;&#125;(은)는 &#123;&#125;년에 100세가 될 것입니다."</span>.format(name, now-age+<span class="number">101</span>))</span><br></pre></td></tr></table></figure>
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">in_num = [int(num) <span class="keyword">for</span> num <span class="keyword">in</span> input().split(<span class="string">','</span>)]</span><br><span class="line">odd_num = [odd  <span class="keyword">for</span> odd <span class="keyword">in</span> in_num <span class="keyword">if</span> odd%<span class="number">2</span>==<span class="number">1</span>]</span><br><span class="line"></span><br><span class="line">print(<span class="string">', '</span>.join(str(i) <span class="keyword">for</span> i <span class="keyword">in</span> odd_num))</span><br></pre></td></tr></table></figure>
           </div>
 
 <hr>
-<h1 id="5번-6312번"><a href="#5번-6312번" class="headerlink" title="5번 - 6312번"></a>5번 - 6312번</h1><div class="note ">
+<h1 id="21번-6298번"><a href="#21번-6298번" class="headerlink" title="21번 - 6298번"></a>21번 - 6298번</h1><div class="note ">
             <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
           </div>
 
 <blockquote>
-<p>정확하게 무엇을 요구하는지 이해를 못하겠다…<br>SKIP</p>
+<p>반 자르기…</p>
 </blockquote>
+<div class="note success">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">given_tuple = (<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>,<span class="number">10</span>)</span><br><span class="line">half = int(len(given_tuple)/<span class="number">2</span>)</span><br><span class="line">print(given_tuple[:half])</span><br><span class="line">print(given_tuple[half:])</span><br></pre></td></tr></table></figure>
+          </div>
+
 <hr>
-<h1 id="6번-6313번"><a href="#6번-6313번" class="headerlink" title="6번 - 6313번"></a>6번 - 6313번</h1><div class="note ">
+<h1 id="22번-6299번"><a href="#22번-6299번" class="headerlink" title="22번 - 6299번"></a>22번 - 6299번</h1><div class="note ">
             <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
           </div>
 
 
 <div class="note success">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">value = int(input())</span><br><span class="line"></span><br><span class="line">print(<span class="string">"ASCII &#123;&#125; =&gt; &#123;&#125;"</span>.format(value, chr(value)))</span><br></pre></td></tr></table></figure>
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">given_list = [<span class="number">5</span>, <span class="number">6</span>, <span class="number">77</span>, <span class="number">45</span>, <span class="number">22</span>, <span class="number">12</span>, <span class="number">24</span>]</span><br><span class="line">print([odd <span class="keyword">for</span> odd <span class="keyword">in</span> given_list <span class="keyword">if</span> odd%<span class="number">2</span>==<span class="number">1</span>])</span><br></pre></td></tr></table></figure>
           </div>
 
 <hr>
-<h1 id="7번-6314번"><a href="#7번-6314번" class="headerlink" title="7번 - 6314번"></a>7번 - 6314번</h1><div class="note ">
+<h1 id="23번-6300번"><a href="#23번-6300번" class="headerlink" title="23번 - 6300번"></a>23번 - 6300번</h1><div class="note ">
             <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
           </div>
 
 <blockquote>
-<p>한줄이면 끝</p>
+<p>idx는 0부터 시작하기 때문에 idx+1을 해서 짝수를 찾거나, 아님 아래 코드처럼 idx가 홀수인 것이 순서상으로 짝수가 된다</p>
 </blockquote>
 <div class="note success">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(list(filter(<span class="keyword">lambda</span> x: x%<span class="number">2</span>==<span class="number">0</span>, list(range(<span class="number">1</span>,<span class="number">11</span>)))))</span><br><span class="line"></span><br><span class="line"><span class="comment"># int_list = list(range(1,11))</span></span><br><span class="line"><span class="comment"># even_list = list(filter(lambda x:x%2==0, int_list))</span></span><br><span class="line"><span class="comment"># print(even_list)</span></span><br></pre></td></tr></table></figure>
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">given_list = [<span class="number">12</span>, <span class="number">24</span>, <span class="number">35</span>, <span class="number">70</span>, <span class="number">88</span>, <span class="number">120</span>, <span class="number">155</span>]</span><br><span class="line">print([even <span class="keyword">for</span> idx, even <span class="keyword">in</span> enumerate(given_list) <span class="keyword">if</span> idx%<span class="number">2</span>==<span class="number">1</span>])</span><br></pre></td></tr></table></figure>
           </div>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
           
@@ -1008,7 +1021,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/7/"><i class="fa fa-angle-left" aria-label="이전 페이지"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><span class="page-number current">8</span><a class="page-number" href="/page/9/">9</a><span class="space">&hellip;</span><a class="page-number" href="/page/18/">18</a><a class="extend next" rel="next" href="/page/9/"><i class="fa fa-angle-right" aria-label="다음 페이지"></i></a>
+    <a class="extend prev" rel="prev" href="/page/7/"><i class="fa fa-angle-left" aria-label="이전 페이지"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><span class="page-number current">8</span><a class="page-number" href="/page/9/">9</a><span class="space">&hellip;</span><a class="page-number" href="/page/20/">20</a><a class="extend next" rel="next" href="/page/9/"><i class="fa fa-angle-right" aria-label="다음 페이지"></i></a>
   </nav>
 
 
@@ -1052,7 +1065,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">54</span>
+                    <span class="site-state-item-count">59</span>
                     <span class="site-state-item-name">포스트</span>
                   </a>
                 </div>
@@ -1099,7 +1112,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">12</span>
+                      
+                    
+                    <span class="site-state-item-count">13</span>
                     <span class="site-state-item-name">카테고리</span>
                   </a>
                 </div>
@@ -1299,12 +1314,38 @@
 
 
 
-  <div class="theme-info">Theme – <span class="exturl theme-link" data-url="aHR0cHM6Ly90aGVtZS1uZXh0Lm9yZw==">NexT.Gemini</span> v7.2.0</div>
+  <div class="theme-info">Theme – <span class="exturl theme-link" data-url="aHR0cHM6Ly90aGVtZS1uZXh0Lm9yZw==">NexT.Mist</span> v7.2.0</div>
 
 
 
 
         
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-user"></i>
+    </span>
+    <span class="site-uv" title="Total Visitors">
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+  
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-eye"></i>
+    </span>
+    <span class="site-pv" title="Total Views">
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
 
 
 
@@ -1388,9 +1429,7 @@
   
 
 
-  <script src="/js/affix.js?v=7.2.0"></script>
-
-  <script src="/js/schemes/pisces.js?v=7.2.0"></script>
+  <script src="/js/schemes/muse.js?v=7.2.0"></script>
 
 
 
@@ -1436,6 +1475,102 @@
   
 
   
+  <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase-firestore.js"></script>
+  
+  <script>
+    (function () {
+
+      firebase.initializeApp({
+        apiKey: '',
+        projectId: ''
+      })
+
+      function getCount(doc, increaseCount) {
+        //increaseCount will be false when not in article page
+
+        return doc.get().then(function (d) {
+          var count
+          if (!d.exists) { //has no data, initialize count
+            if (increaseCount) {
+              doc.set({
+                count: 1
+              })
+              count = 1
+            }
+            else {
+              count = 0
+            }
+          }
+          else { //has data
+            count = d.data().count
+            if (increaseCount) {
+              if (!(window.localStorage && window.localStorage.getItem(title))) { //if first view this article
+                doc.set({ //increase count
+                  count: count + 1
+                })
+                count++
+              }
+            }
+          }
+          if (window.localStorage && increaseCount) { //mark as visited
+            localStorage.setItem(title, true)
+          }
+
+          return count
+        })
+      }
+
+      function appendCountTo(el) {
+        return function (count) {
+          $(el).append(
+            $('<span>').addClass('post-visitors-count').append(
+              $('<span>').addClass('post-meta-divider').text('|')
+            ).append(
+              $('<span>').addClass('post-meta-item-icon').append(
+                $('<i>').addClass('fa fa-users')
+              )
+              ).append($('<span>').text('Views ' + count))
+          )
+        }
+      }
+
+      var db = firebase.firestore()
+      var articles = db.collection('articles')
+
+      //https://hexo.io/docs/variables.html
+      var isPost = ''.length > 0
+      var isArchive = '' === 'true'
+      var isCategory = ''.length > 0
+      var isTag = ''.length > 0
+
+      if (isPost) { //is article page
+        var title = ''
+        var doc = articles.doc(title)
+
+        getCount(doc, true).then(appendCountTo($('.post-meta')))
+      }
+      else if (!isArchive && !isCategory && !isTag) { //is index page
+        var titles = [] //array to titles
+
+        var postsstr = 'titles.push("(SW Expert Academy) 셋, 딕셔너리 - 6254번 6255번 6256번 6257번 6258번");titles.push("(SW Expert Academy) 리스트, 튜플 - 6301번 6302번 6303번 6305번");titles.push("(SW Expert Academy) 리스트, 튜플 - 6296번 6297번 6298번 6299번 6300번");' //if you have a better way to get titles of posts, please change it
+        eval(postsstr)
+
+        var promises = titles.map(function (title) {
+          return articles.doc(title)
+        }).map(function (doc) {
+          return getCount(doc)
+        })
+        Promise.all(promises).then(function (counts) {
+          var metas = $('.post-meta')
+          counts.forEach(function (val, idx) {
+            appendCountTo(metas[idx])(val)
+          })
+        })
+      }
+    })()
+  </script>
+
 
   
 

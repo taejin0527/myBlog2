@@ -14,7 +14,7 @@
   
 
 
-<html class="theme-next gemini use-motion" lang="ko">
+<html class="theme-next mist use-motion" lang="ko">
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -77,7 +77,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Gemini',
+    scheme: 'Mist',
     version: '7.2.0',
     sidebar: {"position":"right","display":"post","offset":12,"onmobile":false},
     back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
@@ -317,6 +317,31 @@
   
 
   
+    
+
+    
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+    
+
+  
+
+
+  
 
   
 </nav>
@@ -332,31 +357,6 @@
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
-          
-            
-
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
           
           <div id="content" class="content">
             
@@ -374,7 +374,7 @@
         
          
           
-        잘했어요! 총 54개의 포스트 포스트를 마저 작성하세요
+        잘했어요! 총 59개의 포스트 포스트를 마저 작성하세요
       </span>
       
 
@@ -1138,7 +1138,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">54</span>
+                    <span class="site-state-item-count">59</span>
                     <span class="site-state-item-name">포스트</span>
                   </a>
                 </div>
@@ -1185,7 +1185,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">12</span>
+                      
+                    
+                    <span class="site-state-item-count">13</span>
                     <span class="site-state-item-name">카테고리</span>
                   </a>
                 </div>
@@ -1385,12 +1387,38 @@
 
 
 
-  <div class="theme-info">Theme – <span class="exturl theme-link" data-url="aHR0cHM6Ly90aGVtZS1uZXh0Lm9yZw==">NexT.Gemini</span> v7.2.0</div>
+  <div class="theme-info">Theme – <span class="exturl theme-link" data-url="aHR0cHM6Ly90aGVtZS1uZXh0Lm9yZw==">NexT.Mist</span> v7.2.0</div>
 
 
 
 
         
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-user"></i>
+    </span>
+    <span class="site-uv" title="Total Visitors">
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+  
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-eye"></i>
+    </span>
+    <span class="site-pv" title="Total Views">
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
 
 
 
@@ -1474,9 +1502,7 @@
   
 
 
-  <script src="/js/affix.js?v=7.2.0"></script>
-
-  <script src="/js/schemes/pisces.js?v=7.2.0"></script>
+  <script src="/js/schemes/muse.js?v=7.2.0"></script>
 
 
 
@@ -1522,6 +1548,102 @@
   
 
   
+  <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase-firestore.js"></script>
+  
+  <script>
+    (function () {
+
+      firebase.initializeApp({
+        apiKey: '',
+        projectId: ''
+      })
+
+      function getCount(doc, increaseCount) {
+        //increaseCount will be false when not in article page
+
+        return doc.get().then(function (d) {
+          var count
+          if (!d.exists) { //has no data, initialize count
+            if (increaseCount) {
+              doc.set({
+                count: 1
+              })
+              count = 1
+            }
+            else {
+              count = 0
+            }
+          }
+          else { //has data
+            count = d.data().count
+            if (increaseCount) {
+              if (!(window.localStorage && window.localStorage.getItem(title))) { //if first view this article
+                doc.set({ //increase count
+                  count: count + 1
+                })
+                count++
+              }
+            }
+          }
+          if (window.localStorage && increaseCount) { //mark as visited
+            localStorage.setItem(title, true)
+          }
+
+          return count
+        })
+      }
+
+      function appendCountTo(el) {
+        return function (count) {
+          $(el).append(
+            $('<span>').addClass('post-visitors-count').append(
+              $('<span>').addClass('post-meta-divider').text('|')
+            ).append(
+              $('<span>').addClass('post-meta-item-icon').append(
+                $('<i>').addClass('fa fa-users')
+              )
+              ).append($('<span>').text('Views ' + count))
+          )
+        }
+      }
+
+      var db = firebase.firestore()
+      var articles = db.collection('articles')
+
+      //https://hexo.io/docs/variables.html
+      var isPost = ''.length > 0
+      var isArchive = 'true' === 'true'
+      var isCategory = ''.length > 0
+      var isTag = ''.length > 0
+
+      if (isPost) { //is article page
+        var title = ''
+        var doc = articles.doc(title)
+
+        getCount(doc, true).then(appendCountTo($('.post-meta')))
+      }
+      else if (!isArchive && !isCategory && !isTag) { //is index page
+        var titles = [] //array to titles
+
+        var postsstr = 'titles.push("(SW Expert Academy) 함수의 기초 - 6325번 6326번 6327번 6328번 6329번");titles.push("(SW Expert Academy) 함수의 기초 - 6319번 6320번 6321번 6323번 6324번");titles.push("(SW Expert Academy) 흐름과 제어 반복 - 6249번 6251번 6253번");titles.push("(SW Expert Academy) 흐름과 제어 반복 - 6242번 6244번 6246번 6247번");titles.push("(SW Expert Academy) 흐름과 제어 반복 - 6230번 6231번 6234번 6238번 6240번");titles.push("(SW Expert Academy) 흐름과 제어 If - 6222번 6226번 6227번");titles.push("(SW Expert Academy) 흐름과 제어 If - 6218번 6219번 6220번 6221번");titles.push("(SW Expert Academy) 연산자 - 6204번 6206번 6207번 6209번 6216번");titles.push("(SW Expert Academy) 6196번 - 변수");titles.push("(Hexo_NexT_Theme) Hexo 블로그에 Google Adsense 설정_2");titles.push("(파이썬) 06 Strings and Dictionaries");titles.push("(파이썬) 05 Loops and List Comprehensions");titles.push("(Hexo_NexT_Theme) 마우스를 따라 움직이는 배경");titles.push("(파이썬) 04 Lists");titles.push("(Hexo_NexT_Theme) Hexo 블로그에 Google Adsense 설정_1");titles.push("(Hexo_NexT_Theme) Hexo SEO - 검색 엔진 최적화");titles.push("(파이썬) 03 Booleans and Conditionals");titles.push("(파이썬) 02 Functions and Getting Help");titles.push("블로그 테마 변경");titles.push("(파이썬) 01 HELLO, PYTHON!");' //if you have a better way to get titles of posts, please change it
+        eval(postsstr)
+
+        var promises = titles.map(function (title) {
+          return articles.doc(title)
+        }).map(function (doc) {
+          return getCount(doc)
+        })
+        Promise.all(promises).then(function (counts) {
+          var metas = $('.post-meta')
+          counts.forEach(function (val, idx) {
+            appendCountTo(metas[idx])(val)
+          })
+        })
+      }
+    })()
+  </script>
+
 
   
 

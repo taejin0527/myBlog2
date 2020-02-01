@@ -14,7 +14,7 @@
   
 
 
-<html class="theme-next gemini use-motion" lang="ko">
+<html class="theme-next mist use-motion" lang="ko">
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -77,7 +77,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Gemini',
+    scheme: 'Mist',
     version: '7.2.0',
     sidebar: {"position":"right","display":"post","offset":12,"onmobile":false},
     back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
@@ -318,6 +318,9 @@
   
 
   
+    
+
+  
 
   
 </nav>
@@ -333,9 +336,6 @@
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
-          
-            
-
           
           <div id="content" class="content">
             
@@ -356,7 +356,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/sw-linked-list/">
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/PY-Broadcasting/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="NUNU">
@@ -376,7 +376,7 @@
           <h2 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/[object Object]/sw-linked-list/" class="post-title-link" itemprop="url">(파이썬 S/W 문제해결 기본) Linked List - 5108번 5110번</a>
+                <a href="/[object Object]/PY-Broadcasting/" class="post-title-link" itemprop="url">(PYTON) Numpy - Broadcasting</a>
               
             
           </h2>
@@ -401,7 +401,7 @@
                 
               
 
-              <time title="Post created: 2019-09-05 16:10:07" itemprop="dateCreated datePublished" datetime="2019-09-05T16:10:07+09:00">2019-09-05</time>
+              <time title="Post created: 2020-01-20 22:19:41" itemprop="dateCreated datePublished" datetime="2020-01-20T22:19:41+09:00">2020-01-20</time>
             </span>
           
 
@@ -416,7 +416,21 @@
                 <span class="post-meta-item-text">In</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/SW-아카데미/" itemprop="url" rel="index"><span itemprop="name">SW 아카데미</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/" itemprop="url" rel="index"><span itemprop="name">LANGUAGE</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/" itemprop="url" rel="index"><span itemprop="name">PYTHON</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/TERMINOLOGY/" itemprop="url" rel="index"><span itemprop="name">TERMINOLOGY</span></a></span>
 
                 
                 
@@ -434,8 +448,8 @@
                 </span>
             
                 <span class="post-meta-item-text">댓글: </span>
-                <a href="/[object Object]/sw-linked-list/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/sw-linked-list/" itemprop="commentCount"></span>
+                <a href="/[object Object]/PY-Broadcasting/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/PY-Broadcasting/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -470,59 +484,59 @@
       
         
           
-            <h1 id="5108번-숫자-추가"><a href="#5108번-숫자-추가" class="headerlink" title="5108번 - 숫자 추가"></a>5108번 - 숫자 추가</h1><div class="note ">
-            <ul><li>시간 : 10개 테스트케이스를 합쳐서 Python의 경우 2초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
-          </div>
-
-<blockquote>
-<p>list.insert(self, index, object) 함수를 사용하여 쉽게 리스트의 해당 인덱스에 숫자 삽입</p>
-</blockquote>
-<div class="note success">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">addNum</span><span class="params">(m)</span>:</span></span><br><span class="line">    <span class="keyword">for</span> _ <span class="keyword">in</span> range(M):</span><br><span class="line">        <span class="comment"># 추가할 인덱스와 숫자 입력</span></span><br><span class="line">        idx, num = map(int, input().split())</span><br><span class="line">        mySeq.insert(idx, num)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">printNum</span><span class="params">(l)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> mySeq[l]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">T = int(input())</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> test_case <span class="keyword">in</span> range(<span class="number">1</span>, T+<span class="number">1</span>):</span><br><span class="line">    <span class="comment"># 수열의 길이 N, 추가 횟수 M, 출력할 인덱스 번호 L</span></span><br><span class="line">    N, M, L = map(int, input().split())</span><br><span class="line">    mySeq = [int(num) <span class="keyword">for</span> num <span class="keyword">in</span> input().split()]</span><br><span class="line"></span><br><span class="line">    addNum(M)</span><br><span class="line">    ans = printNum(L)</span><br><span class="line"></span><br><span class="line">    print(<span class="string">'#&#123;&#125; &#123;&#125;'</span>.format(test_case, ans))</span><br></pre></td></tr></table></figure>
-          </div>
-
+            <h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
+<li><p>Broadcasting, 브로드캐스팅- <span class="exturl" data-url="aHR0cDovL3d3dy5rdHdvcmQuY28ua3Ivd29yZC9hYmJyX3ZpZXcucGhwP21fdGVtcDE9NjI5" title="http://www.ktword.co.kr/word/abbr_view.php?m_temp1=629">정보통신기술용어해설<i class="fa fa-external-link"></i></span></p>
+</li>
+<li><p>Broadcasting arrays in Numpy - <span class="exturl" data-url="aHR0cHM6Ly9lbGkudGhlZ3JlZW5wbGFjZS5uZXQvMjAxNS9icm9hZGNhc3RpbmctYXJyYXlzLWluLW51bXB5Lw==" title="https://eli.thegreenplace.net/2015/broadcasting-arrays-in-numpy/">Eli Bendersky’s website<i class="fa fa-external-link"></i></span></p>
+</li>
+<li><p>Array Broadcasting in NumPy - <span class="exturl" data-url="aHR0cHM6Ly9kb2NzLnNjaXB5Lm9yZy9kb2MvbnVtcHkvdXNlci90aGVvcnkuYnJvYWRjYXN0aW5nLmh0bWwjYXJyYXktYnJvYWRjYXN0aW5nLWluLW51bXB5" title="https://docs.scipy.org/doc/numpy/user/theory.broadcasting.html#array-broadcasting-in-numpy">SciPy.org<i class="fa fa-external-link"></i></span></p>
+</li>
+<li><p>The foundation of scientific python - <span class="exturl" data-url="aHR0cHM6Ly93d3cub3JlaWxseS5jb20vbGlicmFyeS92aWV3L2VsZWdhbnQtc2NpcHkvOTc4MTQ5MTkyMjkyNy9jaDAxLmh0bWw=" title="https://www.oreilly.com/library/view/elegant-scipy/9781491922927/ch01.html">oreilly.com<i class="fa fa-external-link"></i></span></p>
+</li>
+</ul>
 <hr>
-<h1 id="5110번-수열-합치기"><a href="#5110번-수열-합치기" class="headerlink" title="5110번 - 수열 합치기"></a>5110번 - 수열 합치기</h1><div class="note ">
-            <ul><li>시간 : 10개 테스트케이스를 합쳐서 Python의 경우 2초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
+<h1 id="Numpy"><a href="#Numpy" class="headerlink" title="Numpy"></a>Numpy</h1><h2 id="broadcasting"><a href="#broadcasting" class="headerlink" title="broadcasting"></a>broadcasting</h2><p>흔히 방송과 관련해서 ‘브로드캐스트(broadcast)’라는 용어를 자주 들었을 것 입니다.<br><strong>‘TV나 신문과 같은 전송매체를 통해 대중에게 정보를 전송하는 행위’</strong> 라고 일반적으로 정의합니다.<br>혹은 네트워크 과목을 배우셨으면 유니캐스트(unicast), 멀티캐스트(multicast)를 같이 떠올리시며<br><strong>단일 노드로부터 해당 네트워크의 모든 노드에게 패킷/프레임을 전파하는 것</strong> 으로 이해하실 수 있습니다.</p>
+<p><img alt="broadcast" data-src="https://www.researchgate.net/profile/Rosangela_Penteado/publication/280610232/figure/fig7/AS:267926301311009@1440890016756/0-Broadcast-multicast-and-unicast-interactions.png"></p>
+<p>Python의 Numpy 패키지에서는 해당 용어를 조금 다르게 정의합니다.</p>
+<div class="note info">
+            <p>“Broadcasting is the process of making arrays to have compatible shapes for arithmetic operations.”</p><p>Broadcasting은 <strong>서로 다른 구조(shape)를 가진 배열의 산술 연산이 가능하도록 차원을 맞춰주는 것</strong> 을 말합니다.</p>
           </div>
 
-<blockquote>
-<p>단순 리스트를 그대로 사용할 경우 테스트 케이스 10개 중 9개만 통과하고 1개는 제한시간 초과가 뜬다</p>
-</blockquote>
+<p>아시다 싶이 행렬의 덧셈과 뺄셈은 각 행렬이 같은 구조일 때만 가능합니다.<br>행렬의 곱셈에서는 앞 행렬의 열(column)의 수와 뒷 행렬의 행(row)의 수가 같으면 연산이 가능합니다.</p>
+<p>아래 예제는 3-차원 벡터 2개의 곱셈을 연산하는 코드로 아무런 문제 없이 결과값이 출력되는 것을 볼 수 있습니다.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> numpy <span class="keyword">import</span> array</span><br><span class="line">a = array([<span class="number">1.0</span>, <span class="number">2.0</span>, <span class="number">3.0</span>])</span><br><span class="line">b = array([<span class="number">2.0</span>, <span class="number">2.0</span>, <span class="number">2.0</span>])</span><br><span class="line">a * b</span><br><span class="line"></span><br><span class="line"><span class="comment"># output</span></span><br><span class="line"><span class="comment"># array([ 2.,  4.,  6.])</span></span><br></pre></td></tr></table></figure>  
+
+<p>하지만 만약 3-차원 벡터와 스칼라 값의 곱셈을 연산하는 코드를 실행하면 어떻게 될까요?</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> numpy <span class="keyword">import</span> array</span><br><span class="line">a = array([<span class="number">1.0</span>, <span class="number">2.0</span>, <span class="number">3.0</span>])</span><br><span class="line">b = <span class="number">2.0</span></span><br><span class="line">a * b</span><br><span class="line"></span><br><span class="line"><span class="comment"># output</span></span><br><span class="line"><span class="comment"># array([ 2.,  4.,  6.])</span></span><br></pre></td></tr></table></figure>  
+
+<p>이 또한 별 문제 없이 정상적으로 결과값을 출력한다는 것을 볼 수 있습니다.</p>
+<p>행렬의 연산은 같은 크기(차원)일 때만 가능한데<br>위 코드가 정상적으로 동작한다는 것을 보니 내부적으로 연산을 위해 스칼라 값을 같은 차원의 벡터 값으로 변환했다는 것을 유추할 수 있습니다.<br>즉, Numpy에서는 브로드캐스팅을 통해 두 행렬 간 연산이 가능하도록 아래 그림과 같이 상대적으로 작은 행렬의 차원(크기)을 큰 행렬과 맞춰주는 것 입니다.</p>
+<p><img alt="figure1" data-src="https://docs.scipy.org/doc/numpy/_images/theory.broadcast_1.gif"></p>
+<h2 id="broadcasting-rule"><a href="#broadcasting-rule" class="headerlink" title="broadcasting rule"></a>broadcasting rule</h2><p><span style="color:red">그렇다고 이 브로드캐스팅이 만능인 것은 아닙니다.</span><br>최소한의 조건은 만족해야 동작하는데 이러한 조건을 <strong>broadcasting rule</strong> 이라고 합니다.</p>
+<div class="note info">
+            <p>“In order to broadcast, the size of the trailing axes for both arrays in an operation must either be the same size or one of them must be one.”</p><p>Broadcasting이 허용되려면, 각 행의 크기(차원)가 같거나 둘 중 하나라도 1이면 됩니다.</p>
+          </div>
+
+<p>정의만으로는 이해가 잘 안되지만 몇 가지 예제를 보시면 매우 간단하다는 것을 깨닫게 될 것입니다.</p>
+<div class="note success">
+            <table><thead><tr><th align="center"></th><th align="center"></th><th align="right"></th></tr></thead><tbody><tr><td align="center">A <br> B</td><td align="center">(2d array) <br> (1d array)</td><td align="right">4 x    3 <br> &emsp;&nbsp; 3</td></tr><tr><td align="center">Result</td><td align="center">(2d array)</td><td align="right">4 x 3</td></tr><tr><td align="center">A <br> B</td><td align="center">(2d array) <br> (1d array)</td><td align="right">4 x    3 <br> &emsp;&nbsp; 1</td></tr><tr><td align="center">Result</td><td align="center">(2d array)</td><td align="right">4 x 3</td></tr><tr><td align="center">A <br> B</td><td align="center">(4d array) <br> (3d array)</td><td align="right">8 x    1 x    6 x    1 <br> &emsp;&nbsp; 7 x    1 x    5</td></tr><tr><td align="center">Result</td><td align="center">(4d array)</td><td align="right">8 x    7 x    6 x    5</td></tr><tr><td align="center">A <br> B</td><td align="center">(3d array) <br> (3d array)</td><td align="right">15 x 3 x 5 <br> &emsp;&emsp;  3 x 1</td></tr><tr><td align="center">Result</td><td align="center">(3d array)</td><td align="right">15 x 3 x 5</td></tr></tbody></table>
+          </div>
+
 <div class="note danger">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">mergeSeqLists</span><span class="params">()</span>:</span></span><br><span class="line">    finalSeq = []</span><br><span class="line"></span><br><span class="line">    finalSeq.extend(myLists[<span class="number">0</span>])</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> idx <span class="keyword">in</span> range(<span class="number">1</span>, M):</span><br><span class="line">        ptr = len(finalSeq)</span><br><span class="line">        <span class="keyword">for</span> i, num <span class="keyword">in</span> enumerate(finalSeq):</span><br><span class="line">            <span class="keyword">if</span> myLists[idx][<span class="number">0</span>] &lt; num:</span><br><span class="line">                ptr = i</span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line"></span><br><span class="line">        finalSeq = finalSeq[:ptr] + myLists[idx] + finalSeq[ptr:]</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> finalSeq</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">T = int(input())</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> test_case <span class="keyword">in</span> range(<span class="number">1</span>, T+<span class="number">1</span>):</span><br><span class="line">    <span class="comment"># 수열의 길이 N, 수열의 개수 M</span></span><br><span class="line">    N, M = map(int, input().split())</span><br><span class="line">    <span class="comment"># 전체 수열을 저장할 리스트</span></span><br><span class="line">    myLists = [[int(num) <span class="keyword">for</span> num <span class="keyword">in</span> input().split()] <span class="keyword">for</span> _ <span class="keyword">in</span> range(M)]</span><br><span class="line"></span><br><span class="line">    ans = mergeSeqLists()</span><br><span class="line"></span><br><span class="line">    print(<span class="string">'#&#123;&#125; '</span>.format(test_case), end=<span class="string">''</span>)</span><br><span class="line">    print(<span class="string">' '</span>.join(str(n) <span class="keyword">for</span> n <span class="keyword">in</span> ans[<span class="number">-1</span>:<span class="number">-11</span>:<span class="number">-1</span>]))</span><br><span class="line">    <span class="comment">#print('#&#123;&#125; &#123;&#125;'.format(test_case, ans[:10]))</span></span><br></pre></td></tr></table></figure>
+            <table><thead><tr><th align="center"></th><th align="center"></th><th align="right"></th></tr></thead><tbody><tr><td align="center">A <br> B</td><td align="center">(1d array) <br> (1d array)</td><td align="right">3 <br> 4</td></tr><tr><td align="center">Result</td><td align="center">error</td><td align="right">error</td></tr><tr><td align="center">A <br> B</td><td align="center">(3d array) <br> (2d array)</td><td align="right">8 x 4 x 3 <br> &emsp;&nbsp; 2 x 1</td></tr><tr><td align="center">Result</td><td align="center">error</td><td align="right">error</td></tr></tbody></table>
           </div>
 
-<blockquote>
-<p>연결 리스트(Linked list)를 사용하여 성능을 끌어올리자</p>
-</blockquote>
-<div class="note success">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
-          </div>
 
-<hr>
-<h1 id="5120번-암호"><a href="#5120번-암호" class="headerlink" title="5120번 - 암호"></a>5120번 - 암호</h1><div class="note ">
-            <ul><li>시간 : 10개 테스트케이스를 합쳐서 Python의 경우 2초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
-          </div>
+<p><img alt="figure2" data-src="https://docs.scipy.org/doc/numpy/_images/theory.broadcast_2.gif"></p>
+<p><img alt="figure2" data-src="https://docs.scipy.org/doc/numpy/_images/theory.broadcast_3.gif"></p>
+<p><img alt="figure2" data-src="https://docs.scipy.org/doc/numpy/_images/theory.broadcast_4.gif"></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> numpy <span class="keyword">import</span> array</span><br><span class="line">a = array([[ <span class="number">0.0</span>,  <span class="number">0.0</span>,  <span class="number">0.0</span>],</span><br><span class="line">            [<span class="number">10.0</span>, <span class="number">10.0</span>, <span class="number">10.0</span>],</span><br><span class="line">            [<span class="number">20.0</span>, <span class="number">20.0</span>, <span class="number">20.0</span>],</span><br><span class="line">            [<span class="number">30.0</span>, <span class="number">30.0</span>, <span class="number">30.0</span>]])</span><br><span class="line">b = array([<span class="number">1.0</span>, <span class="number">2.0</span>, <span class="number">3.0</span>])</span><br><span class="line">a + b</span><br><span class="line"></span><br><span class="line"><span class="comment"># output</span></span><br><span class="line"><span class="comment"># array([[  1.,   2.,   3.],</span></span><br><span class="line"><span class="comment">#       [ 11.,  12.,  13.],</span></span><br><span class="line"><span class="comment">#       [ 21.,  22.,  23.],</span></span><br><span class="line"><span class="comment">#       [ 31.,  32.,  33.]])</span></span><br></pre></td></tr></table></figure>
 
-<blockquote>
-</blockquote>
-<div class="note success">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
-          </div>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> numpy <span class="keyword">import</span> array, newaxis</span><br><span class="line">a = array([<span class="number">0.0</span>, <span class="number">10.0</span>, <span class="number">20.0</span>, <span class="number">30.0</span>])</span><br><span class="line">b = array([<span class="number">1.0</span>, <span class="number">2.0</span>, <span class="number">3.0</span>])</span><br><span class="line">a[:,newaxis] + b</span><br><span class="line"></span><br><span class="line"><span class="comment"># output</span></span><br><span class="line"><span class="comment"># array([[  1.,   2.,   3.],</span></span><br><span class="line"><span class="comment">#       [ 11.,  12.,  13.],</span></span><br><span class="line"><span class="comment">#       [ 21.,  22.,  23.],</span></span><br><span class="line"><span class="comment">#       [ 31.,  32.,  33.]])</span></span><br></pre></td></tr></table></figure>
 
 <hr>
-<h1 id="5122번-수열-편집"><a href="#5122번-수열-편집" class="headerlink" title="5122번 - 수열 편집"></a>5122번 - 수열 편집</h1><div class="note ">
-            <ul><li>시간 : 10개 테스트케이스를 합쳐서 Python의 경우 2초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
-          </div>
-
-<blockquote>
-</blockquote>
-<div class="note success">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
-          </div>
-
-<hr>
+<h1 id="N-dimensional-arrays"><a href="#N-dimensional-arrays" class="headerlink" title="N-dimensional arrays"></a>N-dimensional arrays</h1><p>Numpy에서 차원에 따라 axis가 조금씩 헷갈리기 때문에 그림을 잘 기억하도록 하자</p>
+<p><img alt="dimensional arrays" data-src="https://www.oreilly.com/library/view/elegant-scipy/9781491922927/assets/elsp_0105.png"></p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
           
         
@@ -581,7 +595,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/sw-queue/">
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/PY-day2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="NUNU">
@@ -601,7 +615,7 @@
           <h2 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/[object Object]/sw-queue/" class="post-title-link" itemprop="url">(파이썬 S/W 문제해결 기본) Queue - 5097번 5105번 5099번 5102번</a>
+                <a href="/[object Object]/PY-day2/" class="post-title-link" itemprop="url">(PYTHON) Day - 2</a>
               
             
           </h2>
@@ -626,7 +640,7 @@
                 
               
 
-              <time title="Post created: 2019-09-02 19:11:35" itemprop="dateCreated datePublished" datetime="2019-09-02T19:11:35+09:00">2019-09-02</time>
+              <time title="Post created: 2020-01-20 20:16:31" itemprop="dateCreated datePublished" datetime="2020-01-20T20:16:31+09:00">2020-01-20</time>
             </span>
           
 
@@ -641,7 +655,14 @@
                 <span class="post-meta-item-text">In</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/SW-아카데미/" itemprop="url" rel="index"><span itemprop="name">SW 아카데미</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/" itemprop="url" rel="index"><span itemprop="name">LANGUAGE</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/" itemprop="url" rel="index"><span itemprop="name">PYTHON</span></a></span>
 
                 
                 
@@ -659,8 +680,8 @@
                 </span>
             
                 <span class="post-meta-item-text">댓글: </span>
-                <a href="/[object Object]/sw-queue/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/sw-queue/" itemprop="commentCount"></span>
+                <a href="/[object Object]/PY-day2/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/PY-day2/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -695,54 +716,59 @@
       
         
           
-            <h1 id="5097번-회전"><a href="#5097번-회전" class="headerlink" title="5097번 - 회전"></a>5097번 - 회전</h1><div class="note ">
-            <ul><li>시간 : 10개 테스트케이스를 합쳐서 Python의 경우 2초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
-          </div>
-
+            <h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
+<li>Numpy - <span class="exturl" data-url="aHR0cHM6Ly9udW1weS5vcmcv" title="https://numpy.org/">Numpy.org<i class="fa fa-external-link"></i></span></li>
+<li>문제 출처 - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vZGFzaGJvYXJk" title="https://www.hackerrank.com/dashboard">HackerRank<i class="fa fa-external-link"></i></span></li>
+<li>파이썬 연습 - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vZG9tYWlucy9weXRob24/ZmlsdGVycyU1QnN0YXR1cyU1RCU1QiU1RD11bnNvbHZlZCZiYWRnZV90eXBlPXB5dGhvbg==" title="https://www.hackerrank.com/domains/python?filters%5Bstatus%5D%5B%5D=unsolved&badge_type=python">Practice - Python<i class="fa fa-external-link"></i></span></li>
+</ul>
 <blockquote>
-<p>리스트 내장함수인 pop()과 append()로 쉽게 해결</p>
+<p>개인적인 생각과 상상으로 작성한 내용들이 포함되어 있습니다<br>문제를 풀고 <span class="label sucess">Discussion Tab</span>을 참고하며 코드 스타일을 개선하려고 노력하고자 합니다</p>
 </blockquote>
-<div class="note success">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">T = int(input())</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> test_case <span class="keyword">in</span> range(<span class="number">1</span>, T+<span class="number">1</span>):</span><br><span class="line">    <span class="comment"># 입력 길이 N, 회전 수 M</span></span><br><span class="line">    N, M = map(int, input().split())</span><br><span class="line">    seq_lst = [num <span class="keyword">for</span> num <span class="keyword">in</span> input().split()]</span><br><span class="line"></span><br><span class="line">    <span class="comment"># M번 반복</span></span><br><span class="line">    <span class="keyword">for</span> _ <span class="keyword">in</span> range(M):</span><br><span class="line">        <span class="comment"># 맨 앞 원소를 빼서 pop(), 맨 뒤로 추가 append()</span></span><br><span class="line">        seq_lst.append(seq_lst.pop(<span class="number">0</span>))</span><br><span class="line"></span><br><span class="line">    print(<span class="string">'#&#123;&#125; &#123;&#125;'</span>.format(test_case, seq_lst))</span><br></pre></td></tr></table></figure>
-          </div>
-
 <hr>
-<h1 id="5105번-미로의-거리"><a href="#5105번-미로의-거리" class="headerlink" title="5105번 - 미로의 거리"></a>5105번 - 미로의 거리</h1><div class="note ">
-            <ul><li>시간 : 10개 테스트케이스를 합쳐서 Python의 경우 2초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
-          </div>
-
+<h1 id="Numpy"><a href="#Numpy" class="headerlink" title="Numpy"></a>Numpy</h1><h2 id="개요-About-NumPy"><a href="#개요-About-NumPy" class="headerlink" title="개요 - About NumPy"></a>개요 - <span class="exturl" data-url="aHR0cHM6Ly9udW1weS5vcmcv" title="https://numpy.org/">About NumPy<i class="fa fa-external-link"></i></span></h2><p>Numpy는 Python에서 scientific computing을 하기 위한 기본 패키지입니다.</p>
 <blockquote>
-<p>지난 미로 문제는 DFS, 이번에는 BFS로 해결<br>DFS는 재귀적으로, BFS는 반복을 통해 접근</p>
+<p>Scientific computing이란<br>과학적 문제를 해결 및 분석하기 위한 시뮬레이션이나 수학적 모델링 및 정량 분석 등을 수행하는 소프트웨어 및 애플리케이션을 개발하는 것을 말합니다</p>
 </blockquote>
-<div class="note success">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">BFS</span><span class="params">(x, y)</span>:</span></span><br><span class="line">    <span class="comment"># 현재 좌표 등록</span></span><br><span class="line">    path.append((x, y))</span><br><span class="line">    visited.append((x, y))</span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span> path:</span><br><span class="line">        <span class="comment"># 경로 맨 앞 원소 제거</span></span><br><span class="line">        cur_x, cur_y = path.pop(<span class="number">0</span>)</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">4</span>):</span><br><span class="line">            next_x = cur_x + dx[i]</span><br><span class="line">            next_y = cur_y + dy[i]</span><br><span class="line"></span><br><span class="line">            <span class="keyword">if</span> (next_x, next_y) <span class="keyword">not</span> <span class="keyword">in</span> visited <span class="keyword">and</span> (<span class="number">0</span>&lt;=next_x&lt;N <span class="keyword">and</span> <span class="number">0</span>&lt;=next_y&lt;N) <span class="keyword">and</span> maze[next_y][next_x] != <span class="number">1</span>:</span><br><span class="line">                <span class="keyword">if</span> maze[next_y][next_x] == <span class="number">3</span>:</span><br><span class="line">                    <span class="keyword">return</span> path_len[cur_x][cur_y]</span><br><span class="line"></span><br><span class="line">                path.append((next_x, next_y))</span><br><span class="line">                visited.append((next_x, next_y))</span><br><span class="line">                path_len[next_x][next_y] = path_len[cur_x][cur_y] + <span class="number">1</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">findStart</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">for</span> y <span class="keyword">in</span> range(N):</span><br><span class="line">        <span class="keyword">for</span> x <span class="keyword">in</span> range(N):</span><br><span class="line">            <span class="keyword">if</span> maze[y][x] == <span class="number">2</span>:</span><br><span class="line">                <span class="keyword">return</span> x, y</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">T = int(input())</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> test_case <span class="keyword">in</span> range(<span class="number">1</span>, T+<span class="number">1</span>):</span><br><span class="line">    <span class="comment"># 미로의 크기</span></span><br><span class="line">    N = int(input())</span><br><span class="line">    maze = [[int(num) <span class="keyword">for</span> num <span class="keyword">in</span> input()] <span class="keyword">for</span> _ <span class="keyword">in</span> range(N)]</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 시작점 찾기</span></span><br><span class="line">    startX, startY = findStart()</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 방문체크, 경로 큐, 경로 길이 리스트</span></span><br><span class="line">    visited, path, path_len = [], [], [[<span class="number">0</span>]*N <span class="keyword">for</span> _ <span class="keyword">in</span> range(N)]</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 시계방향 (우, 하, 좌, 상)</span></span><br><span class="line">    dx = [<span class="number">1</span>, <span class="number">0</span>, <span class="number">-1</span>, <span class="number">0</span>]</span><br><span class="line">    dy = [<span class="number">0</span>, <span class="number">-1</span>, <span class="number">0</span>, <span class="number">1</span>]</span><br><span class="line"></span><br><span class="line">    ans = BFS(startX, startY)</span><br><span class="line">    <span class="keyword">if</span> ans <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        ans = <span class="number">0</span></span><br><span class="line"></span><br><span class="line">    print(<span class="string">'#&#123;&#125; &#123;&#125;'</span>.format(test_case, ans))</span><br></pre></td></tr></table></figure>
-          </div>
-
+<p>Numpy의 특징들 중에서도 특히:</p>
+<ul>
+<li>강력한 N-차원 배열 객체<br>[a powerful N-dimensional array object]</li>
+<li>세련된 기능들<br>[sophisticated (broadcasting) functions]</li>
+<li>C/C++ 및 Fortran 코드 통합 도구<br>[tools for integrating C/C++ and Fortran code]</li>
+<li>유용한 선형 대수, 푸리에 변환 및 난수 기능<br>[useful linear algebra, Fourier transform, and random number capabilities]</li>
+</ul>
+<p>이런 과학적인 용도 이외에도, Numpy는 일반 데이터의 효율적인 다차원 컨테이너로 사용될 수 있으며 임의의 데이터 타입을 선언할 수도 있습니다.<br>Numpy를 통해 다양한 데이터베이스와 원활하고 신속하게 통합할 수 있습니다.</p>
+<h2 id="역사-Older-Array-Packages"><a href="#역사-Older-Array-Packages" class="headerlink" title="역사 - Older Array Packages"></a>역사 - <span class="exturl" data-url="aHR0cHM6Ly9udW1weS5vcmcvb2xkX2FycmF5X3BhY2thZ2VzLmh0bWw=" title="https://numpy.org/old_array_packages.html">Older Array Packages<i class="fa fa-external-link"></i></span></h2><p>파이썬에서 최초로 배열 객체와 관련해서 작성된 패키지는 <em>Numeric</em> 이였습니다.<br>과거에는 다양한 어플리케이션 개발에 유용하게 사용되었는데… 사람의 욕심은 끝이 없고…<br>더 많은 기능이 포함된 <em>Numarray</em> 패키지를 구현해서 사용하게 됩니다.<br>굳이 2개로 놔두는 것 보다 통합하는 것이 좋겠다 싶어서 Numeric과 Numarray 패키지의 기능들을 모두 포함시켜 지금의 NumPy 패키지를 탄생시켰습니다.</p>
+<p>NumPy가 처음 만들어지고 이제 막 사용되던 2005년 말 약 6개월 동안에는 <em>SciPy Core</em> 라고 불렸습니다.<br>하지만 좀 더 명확하게 용도와 기능에 맞게 구분하기 위해 현재 SciPy 패키지는 따로 분리되어 존재하게 되었고<br>2006년 1월에 Numeric + Python 을 합쳐 NumPy 라는 명칭으로 변경되어 현재까지 사용되고 있습니다.</p>
 <hr>
-<h1 id="5099번-피자-굽기"><a href="#5099번-피자-굽기" class="headerlink" title="5099번 - 피자 굽기"></a>5099번 - 피자 굽기</h1><div class="note ">
-            <ul><li>시간 : 10개 테스트케이스를 합쳐서 Python의 경우 2초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
+<h1 id="HackerRank"><a href="#HackerRank" class="headerlink" title="HackerRank"></a>HackerRank</h1><p>1차원 - vector (row)<br>2차원 - matrix (row, column)<br>3차원 - tensor (row, column, depth)</p>
+<p>axis에 대해서: 2차원 좌표평면을 생각하면서 x축(row), y축(col)이 각각 0, 1에 해당한다고 생각하면 외우기 쉬움</p>
+<ul>
+<li>NumPy에서 axis의 이해 <span class="exturl" data-url="aHR0cDovL3RhZXdhbi5raW0vcG9zdC9udW1weV9zdW1fYXhpcy8=" title="http://taewan.kim/post/numpy_sum_axis/">TAEWAN.KIM<i class="fa fa-external-link"></i></span></li>
+</ul>
+<h2 id="Min-Max"><a href="#Min-Max" class="headerlink" title="Min, Max"></a>Min, Max</h2><p>각 열의 최소값을 먼저 찾고 그 중 최대값을 결과로 출력하는 문제</p>
+<div class="note no-icon">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy</span><br><span class="line"></span><br><span class="line">N, M = map(int, input().split())</span><br><span class="line">my_array = numpy.array([input().split() <span class="keyword">for</span> _ <span class="keyword">in</span> range(N)], int)</span><br><span class="line"></span><br><span class="line">print(numpy.max(numpy.min(my_array, axis=<span class="number">1</span>)))</span><br></pre></td></tr></table></figure>
           </div>
 
-<blockquote>
-<p>화덕을 돌려가며 피자를 굽자</p>
-</blockquote>
 <div class="note success">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">pizza</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="comment"># 초기 화덕 큐</span></span><br><span class="line">    oven = []</span><br><span class="line">    <span class="comment"># 피자 번호</span></span><br><span class="line">    pNum = <span class="number">0</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># (init) 빈 화덕에 피자 채우기</span></span><br><span class="line">    <span class="keyword">for</span> _ <span class="keyword">in</span> range(N):</span><br><span class="line">        oven.append([C[pNum], pNum])</span><br><span class="line">        pNum += <span class="number">1</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># (반복) 오븐에 마지막 피자만 남을 때 까지</span></span><br><span class="line">    <span class="keyword">while</span> len(oven) != <span class="number">1</span>:</span><br><span class="line">        <span class="comment"># 현재 화덕 확인으로 치즈가 반 녹음</span></span><br><span class="line">        oven[<span class="number">0</span>][<span class="number">0</span>] = oven[<span class="number">0</span>][<span class="number">0</span>] // <span class="number">2</span></span><br><span class="line"></span><br><span class="line">        <span class="comment"># 치즈가 다 녹았다면</span></span><br><span class="line">        <span class="keyword">if</span> oven[<span class="number">0</span>][<span class="number">0</span>] == <span class="number">0</span>:</span><br><span class="line">            <span class="comment"># 꺼내고</span></span><br><span class="line">            oven.pop(<span class="number">0</span>)</span><br><span class="line">            <span class="comment"># 피자가 남았다면</span></span><br><span class="line">            <span class="keyword">if</span> pNum != len(C):</span><br><span class="line">                <span class="comment"># 화덕에 넣어준다</span></span><br><span class="line">                oven.append([C[pNum], pNum])</span><br><span class="line">                pNum += <span class="number">1</span></span><br><span class="line">        <span class="comment"># 덜 녹았으면 회전</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            oven.append(oven.pop(<span class="number">0</span>))</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> oven[<span class="number">0</span>][<span class="number">1</span>] + <span class="number">1</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">T = int(input())</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> test_case <span class="keyword">in</span> range(<span class="number">1</span>, T+<span class="number">1</span>):</span><br><span class="line">    <span class="comment"># 화덕의 크기 N, 피자 개수 M</span></span><br><span class="line">    N, M = map(int, input().split())</span><br><span class="line">    <span class="comment"># 치즈의 양 C</span></span><br><span class="line">    C = [int(amount) <span class="keyword">for</span> amount <span class="keyword">in</span> input().split()]</span><br><span class="line"></span><br><span class="line">    print(<span class="string">'#&#123;&#125; &#123;&#125;'</span>.format(test_case, pizza()))</span><br></pre></td></tr></table></figure>
+            <p>배열만 사용하기 때문에 array만 호출하고,<br>‘.’을 사용한 코딩</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> numpy <span class="keyword">import</span> array</span><br><span class="line">n, _m = map(int, input().split())</span><br><span class="line">a = array([input().split() <span class="keyword">for</span> _ <span class="keyword">in</span> range(n)], int)</span><br><span class="line">print(a.min(axis=<span class="number">1</span>).max()) </span><br></pre></td></tr></table></figure><p>__ 극한의 한 줄 코딩</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(np.max(np.min(np.array([input().split() <span class="keyword">for</span> _ <span class="keyword">in</span> range(int(input().split()[<span class="number">0</span>]))],int),axis=<span class="number">1</span>))) </span><br></pre></td></tr></table></figure>
           </div>
 
-<hr>
-<h1 id="5102번-노드의-거리"><a href="#5102번-노드의-거리" class="headerlink" title="5102번 - 노드의 거리"></a>5102번 - 노드의 거리</h1><div class="note ">
-            <ul><li>시간 : 10개 테스트케이스를 합쳐서 Python의 경우 2초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
+
+<h2 id="Floor-Ceil-Rint"><a href="#Floor-Ceil-Rint" class="headerlink" title="Floor, Ceil, Rint"></a>Floor, Ceil, Rint</h2><p>이 문제에서는 내림, 올림, 반올림(정수로)만 다루지만 추가적으로,</p>
+<ul>
+<li>around() : 0.5를 기준으로 올림 혹은 내림</li>
+<li>round_( , N) : N 소수점 자릿수까지 반올림</li>
+<li>fix() : ‘0’ 방향으로 가장 가까운 정수로 올림 혹은 내림</li>
+<li>trunc() : 각 원소의 소수점 부분은 잘라버리고 정수값만 남김<br>들이 존재한다.</li>
+</ul>
+<div class="note no-icon">
+            <p>HackeRank의 체점 시스템의 버그로 출력 옵션을 조금 수정해줘야 한다.</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line">np.set_printoptions(sign=<span class="string">' '</span>)</span><br><span class="line"></span><br><span class="line">a = np.array(input().split(), float)</span><br><span class="line">print(np.floor(a))</span><br><span class="line">print(np.ceil(a))</span><br><span class="line">print(np.rint(a))</span><br></pre></td></tr></table></figure>
           </div>
 
-<blockquote>
-<p>전역변수 ‘ans’를 사용하지 않고 BFS() 함수에서 return path_len[]를 하면 테스트 케이스 중 하나가 오답이 된다<br>간선이 없는 경우인거 같은데…</p>
-</blockquote>
 <div class="note success">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">makeGraph</span><span class="params">()</span>:</span></span><br><span class="line">    graph = &#123;key + <span class="number">1</span>: set() <span class="keyword">for</span> key <span class="keyword">in</span> range(V)&#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> _ <span class="keyword">in</span> range(E):</span><br><span class="line">        key, val = map(int, input().split())</span><br><span class="line">        graph[key].add(val)</span><br><span class="line">        graph[val].add(key)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> graph</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">BFS</span><span class="params">(s, g)</span>:</span></span><br><span class="line">    <span class="keyword">global</span> ans</span><br><span class="line">    path.append(s)</span><br><span class="line">    visited[s] = <span class="literal">True</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span> path:</span><br><span class="line">        node = path.pop(<span class="number">0</span>)</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> next_node <span class="keyword">in</span> myGraph[node]:</span><br><span class="line">            <span class="keyword">if</span> <span class="keyword">not</span> visited[next_node]:</span><br><span class="line">                path.append(next_node)</span><br><span class="line">                visited[next_node] = <span class="literal">True</span></span><br><span class="line">                path_len[next_node] = path_len[node] + <span class="number">1</span></span><br><span class="line"></span><br><span class="line">                <span class="keyword">if</span> next_node == g:</span><br><span class="line">                    ans = path_len[next_node]</span><br><span class="line">                    <span class="keyword">return</span></span><br><span class="line">    <span class="keyword">return</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">T = int(input())</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> test_case <span class="keyword">in</span> range(<span class="number">1</span>, T+<span class="number">1</span>):</span><br><span class="line">    V, E = map(int, input().split())</span><br><span class="line">    myGraph = makeGraph()</span><br><span class="line">    S, G = map(int, input().split())</span><br><span class="line"></span><br><span class="line">    path = []</span><br><span class="line">    visited = [<span class="literal">False</span>] * (V+<span class="number">1</span>)</span><br><span class="line">    path_len = [<span class="number">0</span>] * (V+<span class="number">1</span>)</span><br><span class="line">    ans = <span class="number">0</span></span><br><span class="line">    BFS(S, G)</span><br><span class="line"></span><br><span class="line">    print(<span class="string">'#&#123;&#125; &#123;&#125;'</span>.format(test_case, ans))</span><br></pre></td></tr></table></figure>
+            <p>이런 출력 방식이 있다는 것을 참고!</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line">a = np.array(input().split(), float)</span><br><span class="line">print(*(f(a) <span class="keyword">for</span> f <span class="keyword">in</span> [np.floor, np.ceil, np.rint]), sep=<span class="string">'\n'</span>) </span><br></pre></td></tr></table></figure>
           </div>
-
-<hr>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
           
         
@@ -801,7 +827,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/sw-stack2/">
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/PY-day1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="NUNU">
@@ -821,7 +847,7 @@
           <h2 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/[object Object]/sw-stack2/" class="post-title-link" itemprop="url">(파이썬 S/W 문제해결 기본) Stack2 - 4874번 4875번 4880번 4881번</a>
+                <a href="/[object Object]/PY-day1/" class="post-title-link" itemprop="url">(PYTHON) Day - 1</a>
               
             
           </h2>
@@ -846,7 +872,7 @@
                 
               
 
-              <time title="Post created: 2019-08-24 14:54:58" itemprop="dateCreated datePublished" datetime="2019-08-24T14:54:58+09:00">2019-08-24</time>
+              <time title="Post created: 2020-01-17 17:19:03" itemprop="dateCreated datePublished" datetime="2020-01-17T17:19:03+09:00">2020-01-17</time>
             </span>
           
 
@@ -861,7 +887,14 @@
                 <span class="post-meta-item-text">In</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/SW-아카데미/" itemprop="url" rel="index"><span itemprop="name">SW 아카데미</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/" itemprop="url" rel="index"><span itemprop="name">LANGUAGE</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/" itemprop="url" rel="index"><span itemprop="name">PYTHON</span></a></span>
 
                 
                 
@@ -879,8 +912,8 @@
                 </span>
             
                 <span class="post-meta-item-text">댓글: </span>
-                <a href="/[object Object]/sw-stack2/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/sw-stack2/" itemprop="commentCount"></span>
+                <a href="/[object Object]/PY-day1/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/PY-day1/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -915,54 +948,36 @@
       
         
           
-            <h1 id="4874번-Forth"><a href="#4874번-Forth" class="headerlink" title="4874번 - Forth"></a>4874번 - Forth</h1><div class="note ">
-            <ul><li>시간 : 10개 테스트케이스를 합쳐서 Python의 경우 2초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
+            <div class="note info">
+            <p>파이썬을 파이썬답게!</p>
           </div>
 
+<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
+<li>문제 출처 - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vZGFzaGJvYXJk" title="https://www.hackerrank.com/dashboard">HackerRank<i class="fa fa-external-link"></i></span></li>
+<li>파이썬 연습 - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vZG9tYWlucy9weXRob24/ZmlsdGVycyU1QnN0YXR1cyU1RCU1QiU1RD11bnNvbHZlZCZiYWRnZV90eXBlPXB5dGhvbg==" title="https://www.hackerrank.com/domains/python?filters%5Bstatus%5D%5B%5D=unsolved&badge_type=python">Practice - Python<i class="fa fa-external-link"></i></span></li>
+</ul>
 <blockquote>
-<p>Forth는 기본 사칙연산 <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code> 4가지만 제공<br>문제에서 정확하게 어떤 연산자를 제공하는지 명시되었으면 더 좋을 것 같음<br>정수 나눗셈 연산자 주의!(이거 때문에 오류 찾는 시간이 좀 걸림)</p>
+<p>Python 기초를 탄탄히 다지자<br>문제를 풀고 <span class="label sucess">Discussion Tab</span>을 참고하며 코드 스타일을 개선하려고 노력하고자 합니다</p>
 </blockquote>
-<div class="note success">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">operator</span><span class="params">(op, n1, n2)</span>:</span></span><br><span class="line">    <span class="comment"># 나눗셈은 '//' 연산자를 사용해야 하는 것을 주의</span></span><br><span class="line">    <span class="keyword">return</span> &#123;<span class="string">'+'</span>:n1+n2, <span class="string">'-'</span>:n1-n2, <span class="string">'*'</span>:n1*n2, <span class="string">'/'</span>:n1//n2&#125;[op]</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">calc_code</span><span class="params">(code)</span>:</span></span><br><span class="line">    stack = []</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> token <span class="keyword">in</span> code:</span><br><span class="line">        <span class="keyword">if</span> token == <span class="string">'.'</span>:</span><br><span class="line">            <span class="keyword">if</span> len(stack) == <span class="number">1</span>:</span><br><span class="line">                <span class="keyword">return</span> stack.pop()</span><br><span class="line">            <span class="comment"># 연산자 수가 부족하여 stack에 숫자가 남은 경우</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="keyword">return</span> <span class="string">'error'</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> token.isdigit():</span><br><span class="line">            stack.append(token)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">try</span>:</span><br><span class="line">                num2, num1 = int(stack.pop()), int(stack.pop())</span><br><span class="line">                stack.append(operator(token, num1, num2))</span><br><span class="line">            <span class="comment"># stack에 계산에 필요한 숫자가 부족한 경우 예외 처리</span></span><br><span class="line">            <span class="keyword">except</span> IndexError:</span><br><span class="line">                <span class="keyword">return</span> <span class="string">'error'</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">T = int(input())</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> test_case <span class="keyword">in</span> range(<span class="number">1</span>, T+<span class="number">1</span>):</span><br><span class="line">    <span class="comment"># 연산코드 입력</span></span><br><span class="line">    operation_code = list(input().split())</span><br><span class="line">    ans = calc_code(operation_code)</span><br><span class="line"></span><br><span class="line">    print(<span class="string">'#&#123;&#125; &#123;&#125;'</span>.format(test_case, ans))</span><br></pre></td></tr></table></figure>
-          </div>
-
 <hr>
-<h1 id="4875번-미로"><a href="#4875번-미로" class="headerlink" title="4875번 - 미로"></a>4875번 - 미로</h1><div class="note ">
-            <ul><li>시간 : 10개 테스트케이스를 합쳐서 Python의 경우 2초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
+<h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><h2 id="loops"><a href="#loops" class="headerlink" title="loops"></a>loops</h2><p>N 개의 정수를 입력 받고, 그 정수들의 제곱을 출력하는 문제<br>정수마다 한 줄씩 띄워야함!</p>
+<div class="note no-icon">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">n = int(input())</span><br><span class="line"></span><br><span class="line">ans = [i ** <span class="number">2</span> <span class="keyword">for</span> i <span class="keyword">in</span> range(n)]</span><br><span class="line"><span class="keyword">for</span> idx <span class="keyword">in</span> range(n):</span><br><span class="line">    print(ans[idx]) </span><br></pre></td></tr></table></figure>
           </div>
 
-<blockquote>
-<p>백트래킹을 활용한 미로 탐색</p>
-</blockquote>
 <div class="note success">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">backtracking</span><span class="params">(x, y)</span>:</span></span><br><span class="line">    <span class="comment"># 시계방향 (우, 하, 좌, 상)</span></span><br><span class="line">    dx = [<span class="number">1</span>, <span class="number">0</span>, <span class="number">-1</span>, <span class="number">0</span>]</span><br><span class="line">    dy = [<span class="number">0</span>, <span class="number">-1</span>, <span class="number">0</span>, <span class="number">1</span>]</span><br><span class="line">    <span class="keyword">global</span> isPath</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> maze[y][x] == <span class="number">3</span>:</span><br><span class="line">        isPath = <span class="number">1</span></span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line"></span><br><span class="line">    visited.append((x, y))</span><br><span class="line">    <span class="comment">#path.append((x, y))</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">4</span>):</span><br><span class="line">        nextX = x + dx[i]</span><br><span class="line">        nextY = y + dy[i]</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 방문하지 않았고, 범위를 벗어나지 않으며, 벽(1)이 아닌 곳</span></span><br><span class="line">        <span class="keyword">if</span> (nextX, nextY) <span class="keyword">not</span> <span class="keyword">in</span> visited <span class="keyword">and</span> (<span class="number">0</span>&lt;=nextX&lt;N <span class="keyword">and</span> <span class="number">0</span>&lt;=nextY&lt;N) <span class="keyword">and</span> maze[nextY][nextX] != <span class="number">1</span>:</span><br><span class="line">            backtracking(nextX, nextY)</span><br><span class="line">            <span class="comment">#path.pop()</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">findStart</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">for</span> y <span class="keyword">in</span> range(N):</span><br><span class="line">        <span class="keyword">for</span> x <span class="keyword">in</span> range(N):</span><br><span class="line">            <span class="keyword">if</span> maze[y][x]==<span class="number">2</span>:</span><br><span class="line">                <span class="keyword">return</span> x, y</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">T = int(input())</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> test_case <span class="keyword">in</span> range(<span class="number">1</span>, T+<span class="number">1</span>):</span><br><span class="line">    <span class="comment"># 미로의 크기</span></span><br><span class="line">    N = int(input())</span><br><span class="line">    maze = [[int(num) <span class="keyword">for</span> num <span class="keyword">in</span> input()] <span class="keyword">for</span> _ <span class="keyword">in</span> range(N)]</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 시작점 찾기</span></span><br><span class="line">    startX, startY = findStart()</span><br><span class="line"></span><br><span class="line">    visited = []</span><br><span class="line">    path = []</span><br><span class="line">    isPath = <span class="number">0</span></span><br><span class="line">    backtracking(startX, startY)</span><br><span class="line"></span><br><span class="line">    print(<span class="string">'#&#123;&#125; &#123;&#125;'</span>.format(test_case, isPath))</span><br></pre></td></tr></table></figure>
+            <p>언패킹을 사용해서 한 줄로 코딩 가능!</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(*[num**<span class="number">2</span> <span class="keyword">for</span> num <span class="keyword">in</span> range(n)], sep=<span class="string">'\n'</span>) </span><br></pre></td></tr></table></figure><p>혹은 리스트에 담아서 출력하면 됨</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">[print(i**<span class="number">2</span>) <span class="keyword">for</span> i <span class="keyword">in</span> range(n)] </span><br></pre></td></tr></table></figure>
           </div>
 
-<hr>
-<h1 id="4880번-토너먼트-카드게임"><a href="#4880번-토너먼트-카드게임" class="headerlink" title="4880번 - 토너먼트 카드게임"></a>4880번 - 토너먼트 카드게임</h1><div class="note ">
-            <ul><li>시간 : 10개 테스트케이스를 합쳐서 Python의 경우 2초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
+
+<h2 id="if-else"><a href="#if-else" class="headerlink" title="if-else"></a>if-else</h2><p>홀수 이거나, 6 에서 20 사이의 숫자이면 ‘Weird’를 출력<br>그 외에는 ‘Not Weird’ 출력</p>
+<div class="note no-icon">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">n = int(input().strip())</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> n % <span class="number">2</span> == <span class="number">0</span>:</span><br><span class="line">    <span class="keyword">if</span> <span class="number">2</span> &lt;= n &lt;= <span class="number">5</span>:</span><br><span class="line">        print(<span class="string">'Not Weird'</span>)</span><br><span class="line">    <span class="keyword">elif</span> <span class="number">6</span> &lt;= n &lt;= <span class="number">20</span>:</span><br><span class="line">        print(<span class="string">'Weird'</span>)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        print(<span class="string">'Not Weird'</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    print(<span class="string">'Weird'</span>) </span><br></pre></td></tr></table></figure>
           </div>
 
-<blockquote>
-<p>이긴 카드의 번호가 아닌 이긴 학생의 번호를 출력해야 함</p>
-</blockquote>
 <div class="note success">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">winner</span><span class="params">(left, right)</span>:</span></span><br><span class="line">    player1 = card_no[left<span class="number">-1</span>]</span><br><span class="line">    player2 = card_no[right<span class="number">-1</span>]</span><br><span class="line">    win = <span class="string">''</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> player1 &lt; player2:</span><br><span class="line">        <span class="keyword">if</span> player2 == <span class="number">3</span> <span class="keyword">and</span> player1 == <span class="number">1</span>:</span><br><span class="line">            win = left</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            win = right</span><br><span class="line">    <span class="keyword">elif</span> player1 &gt; player2:</span><br><span class="line">        <span class="keyword">if</span> player1 == <span class="number">3</span> <span class="keyword">and</span> player2 == <span class="number">1</span>:</span><br><span class="line">            win = right</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            win = left</span><br><span class="line">    <span class="keyword">elif</span> player1 == player2:</span><br><span class="line">        win = left</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> win</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">tournament</span><span class="params">(start, end)</span>:</span></span><br><span class="line">    mid = (start+end)//<span class="number">2</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> start == end:</span><br><span class="line">        <span class="keyword">return</span> start</span><br><span class="line"></span><br><span class="line">    left = tournament(start, mid)</span><br><span class="line">    right = tournament(mid+<span class="number">1</span>, end)</span><br><span class="line">    <span class="keyword">return</span> winner(left, right)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">T = int(input())</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> test_case <span class="keyword">in</span> range(<span class="number">1</span>, T+<span class="number">1</span>):</span><br><span class="line">    <span class="comment"># 인원수 입력</span></span><br><span class="line">    N = int(input())</span><br><span class="line">    <span class="comment"># 카드 입력</span></span><br><span class="line">    card_no = [int(num) <span class="keyword">for</span> num <span class="keyword">in</span> input().split()]</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 절반씩 분할정복하는 재귀호출 함수</span></span><br><span class="line">    ans = tournament(<span class="number">1</span>, N)</span><br><span class="line"></span><br><span class="line">    print(<span class="string">'#&#123;&#125; &#123;&#125;'</span>.format(test_case, ans))</span><br></pre></td></tr></table></figure>
+            <p>dict 자료형을 사용하면 if-else문을 사용하지 않고도 표현 가능</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">n = int(input().strip())</span><br><span class="line">check = &#123;<span class="literal">True</span>: <span class="string">'Not Weird'</span>, <span class="literal">False</span>: <span class="string">'Weird'</span>&#125;</span><br><span class="line"></span><br><span class="line">print(check[n % <span class="number">2</span> == <span class="number">0</span> <span class="keyword">and</span> (n <span class="keyword">in</span> range(<span class="number">2</span>, <span class="number">6</span>) <span class="keyword">or</span> n &gt; <span class="number">20</span>)]) </span><br></pre></td></tr></table></figure>
           </div>
-
-<hr>
-<h1 id="4881번-배열-최소-합"><a href="#4881번-배열-최소-합" class="headerlink" title="4881번 - 배열 최소 합"></a>4881번 - 배열 최소 합</h1><div class="note ">
-            <ul><li>시간 : 10개 테스트케이스를 합쳐서 Python의 경우 2초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
-          </div>
-
-<blockquote>
-<p>n-queen 문제와 비슷</p>
-</blockquote>
-<div class="note success">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">calc_sum</span><span class="params">(y)</span>:</span></span><br><span class="line">    <span class="keyword">global</span> sub_sum, min_sum</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> sub_sum &gt; min_sum:</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> y == N:</span><br><span class="line">        <span class="keyword">if</span> sub_sum &lt; min_sum:</span><br><span class="line">            min_sum = sub_sum</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> x <span class="keyword">in</span> range(N):</span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> visited[x]:</span><br><span class="line">            visited[x] = <span class="literal">True</span></span><br><span class="line">            sub_sum += array_2d[y][x]</span><br><span class="line">            calc_sum(y+<span class="number">1</span>)</span><br><span class="line">            visited[x] = <span class="literal">False</span></span><br><span class="line">            sub_sum -= array_2d[y][x]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">T = int(input())</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> test_case <span class="keyword">in</span> range(<span class="number">1</span>, T+<span class="number">1</span>):</span><br><span class="line">    <span class="comment"># 배열 길이 입력</span></span><br><span class="line">    N = int(input())</span><br><span class="line">    array_2d = [[int(num) <span class="keyword">for</span> num <span class="keyword">in</span> input().split()] <span class="keyword">for</span> _ <span class="keyword">in</span> range(N)]</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 합의 최대</span></span><br><span class="line">    sub_sum, min_sum = <span class="number">0</span>, <span class="number">10</span>*<span class="number">10</span></span><br><span class="line">    <span class="comment"># 방문 체크</span></span><br><span class="line">    visited = [<span class="number">0</span>] * N</span><br><span class="line">    calc_sum(<span class="number">0</span>)</span><br><span class="line"></span><br><span class="line">    print(<span class="string">'#&#123;&#125; &#123;&#125;'</span>.format(test_case, min_sum))</span><br></pre></td></tr></table></figure>
-          </div>
-
-<hr>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
           
         
@@ -1010,7 +1025,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left" aria-label="이전 페이지"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/18/">18</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right" aria-label="다음 페이지"></i></a>
+    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left" aria-label="이전 페이지"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/20/">20</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right" aria-label="다음 페이지"></i></a>
   </nav>
 
 
@@ -1054,7 +1069,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">54</span>
+                    <span class="site-state-item-count">59</span>
                     <span class="site-state-item-name">포스트</span>
                   </a>
                 </div>
@@ -1101,7 +1116,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">12</span>
+                      
+                    
+                    <span class="site-state-item-count">13</span>
                     <span class="site-state-item-name">카테고리</span>
                   </a>
                 </div>
@@ -1301,12 +1318,38 @@
 
 
 
-  <div class="theme-info">Theme – <span class="exturl theme-link" data-url="aHR0cHM6Ly90aGVtZS1uZXh0Lm9yZw==">NexT.Gemini</span> v7.2.0</div>
+  <div class="theme-info">Theme – <span class="exturl theme-link" data-url="aHR0cHM6Ly90aGVtZS1uZXh0Lm9yZw==">NexT.Mist</span> v7.2.0</div>
 
 
 
 
         
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-user"></i>
+    </span>
+    <span class="site-uv" title="Total Visitors">
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+  
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-eye"></i>
+    </span>
+    <span class="site-pv" title="Total Views">
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
 
 
 
@@ -1390,9 +1433,7 @@
   
 
 
-  <script src="/js/affix.js?v=7.2.0"></script>
-
-  <script src="/js/schemes/pisces.js?v=7.2.0"></script>
+  <script src="/js/schemes/muse.js?v=7.2.0"></script>
 
 
 
@@ -1438,6 +1479,102 @@
   
 
   
+  <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase-firestore.js"></script>
+  
+  <script>
+    (function () {
+
+      firebase.initializeApp({
+        apiKey: '',
+        projectId: ''
+      })
+
+      function getCount(doc, increaseCount) {
+        //increaseCount will be false when not in article page
+
+        return doc.get().then(function (d) {
+          var count
+          if (!d.exists) { //has no data, initialize count
+            if (increaseCount) {
+              doc.set({
+                count: 1
+              })
+              count = 1
+            }
+            else {
+              count = 0
+            }
+          }
+          else { //has data
+            count = d.data().count
+            if (increaseCount) {
+              if (!(window.localStorage && window.localStorage.getItem(title))) { //if first view this article
+                doc.set({ //increase count
+                  count: count + 1
+                })
+                count++
+              }
+            }
+          }
+          if (window.localStorage && increaseCount) { //mark as visited
+            localStorage.setItem(title, true)
+          }
+
+          return count
+        })
+      }
+
+      function appendCountTo(el) {
+        return function (count) {
+          $(el).append(
+            $('<span>').addClass('post-visitors-count').append(
+              $('<span>').addClass('post-meta-divider').text('|')
+            ).append(
+              $('<span>').addClass('post-meta-item-icon').append(
+                $('<i>').addClass('fa fa-users')
+              )
+              ).append($('<span>').text('Views ' + count))
+          )
+        }
+      }
+
+      var db = firebase.firestore()
+      var articles = db.collection('articles')
+
+      //https://hexo.io/docs/variables.html
+      var isPost = ''.length > 0
+      var isArchive = '' === 'true'
+      var isCategory = ''.length > 0
+      var isTag = ''.length > 0
+
+      if (isPost) { //is article page
+        var title = ''
+        var doc = articles.doc(title)
+
+        getCount(doc, true).then(appendCountTo($('.post-meta')))
+      }
+      else if (!isArchive && !isCategory && !isTag) { //is index page
+        var titles = [] //array to titles
+
+        var postsstr = 'titles.push("(PYTON) Numpy - Broadcasting");titles.push("(PYTHON) Day - 2");titles.push("(PYTHON) Day - 1");' //if you have a better way to get titles of posts, please change it
+        eval(postsstr)
+
+        var promises = titles.map(function (title) {
+          return articles.doc(title)
+        }).map(function (doc) {
+          return getCount(doc)
+        })
+        Promise.all(promises).then(function (counts) {
+          var metas = $('.post-meta')
+          counts.forEach(function (val, idx) {
+            appendCountTo(metas[idx])(val)
+          })
+        })
+      }
+    })()
+  </script>
+
 
   
 
