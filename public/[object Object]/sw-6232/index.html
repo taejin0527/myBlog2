@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="ko">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2">
+
+
+
+
+
+  <meta name="google-site-verification" content="1AoB1Oj70vYeXdFCLMbgUhTbU9kMwMXDsCNGRrqqvhM">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+
+<link rel="stylesheet" href="/css/main.css?v=7.2.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.2.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.2.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.2.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.2.0" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '7.2.0',
+    sidebar: {"position":"right","display":"post","offset":12,"onmobile":false},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    copycode: {"enable":true,"show_result":true,"style":"flat"},
+    fancybox: false,
+    fastclick: false,
+    lazyload: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    translation: {
+      copy_button: '복사',
+      copy_success: 'Copied',
+      copy_failure: 'Copy failed'
+    }
+  };
+</script>
+
+
+
+  <meta name="description" content="1번 - 6232번             시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내              나눗셈 몫으로 정수를 원하면 ‘//‘ 사용!               def is_palindrome(word):    word_list = list(wor">
+<meta name="keywords" content="파이썬,python,삼성,SW Academy">
+<meta property="og:type" content="article">
+<meta property="og:title" content="(SW Expert Academy) 문자열 - 6232번 6239번 6241번 6678번 6243번 6248번">
+<meta property="og:url" content="https://taejin0527.github.io/[object Object]/sw-6232/index.html">
+<meta property="og:site_name" content="AttackOnNunu">
+<meta property="og:description" content="1번 - 6232번             시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내              나눗셈 몫으로 정수를 원하면 ‘//‘ 사용!               def is_palindrome(word):    word_list = list(wor">
+<meta property="og:locale" content="ko">
+<meta property="og:updated_time" content="2020-02-14T08:04:51.702Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="(SW Expert Academy) 문자열 - 6232번 6239번 6241번 6678번 6243번 6248번">
+<meta name="twitter:description" content="1번 - 6232번             시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내              나눗셈 몫으로 정수를 원하면 ‘//‘ 사용!               def is_palindrome(word):    word_list = list(wor">
+
+
+
+  <link rel="alternate" href="/rss2.xml" title="AttackOnNunu" type="application/atom+xml">
+
+
+
+  
+  
+  <link rel="canonical" href="https://taejin0527.github.io/[object Object]/sw-6232/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>(SW Expert Academy) 문자열 - 6232번 6239번 6241번 6678번 6243번 6248번 | AttackOnNunu</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+  <!-- Google Adsense start -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-8226968057315512",
+    enable_page_level_ads: true
+  });
+</script>
+
+  <!-- Google Adsense end -->
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="ko">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">AttackOnNunu</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <h1 class="site-subtitle" itemprop="description">Once more into the fray</h1>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>홈</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>About</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>태그</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>카테고리</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>아카이브</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+</nav>
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/sw-6232/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="NUNU">
+      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="AttackOnNunu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">(SW Expert Academy) 문자열 - 6232번 6239번 6241번 6678번 6243번 6248번
+
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2019-08-05 12:35:38" itemprop="dateCreated datePublished" datetime="2019-08-05T12:35:38+09:00">2019-08-05</time>
+            </span>
+          
+
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/SW-아카데미/" itemprop="url" rel="index"><span itemprop="name">SW 아카데미</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">댓글: </span>
+                <a href="/[object Object]/sw-6232/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/sw-6232/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="1번-6232번"><a href="#1번-6232번" class="headerlink" title="1번 - 6232번"></a>1번 - 6232번</h1><div class="note ">
+            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
+          </div>
+
+<blockquote>
+<p>나눗셈 몫으로 정수를 원하면 ‘//‘ 사용!</p>
+</blockquote>
+<div class="note success">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">is_palindrome</span><span class="params">(word)</span>:</span></span><br><span class="line">    word_list = list(word)</span><br><span class="line">    length = len(word)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>,length//<span class="number">2</span>):</span><br><span class="line">        <span class="keyword">if</span> word_list[i] != word_list[length<span class="number">-1</span>-i]:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line"></span><br><span class="line">word = input()</span><br><span class="line">print(word)</span><br><span class="line"><span class="keyword">if</span>(is_palindrome(word)):</span><br><span class="line">    print(<span class="string">"입력하신 단어는 회문(Palindrome)입니다."</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    print(<span class="string">"입력하신 단어는 회문(Palindrome)이 아닙니다."</span>)</span><br></pre></td></tr></table></figure>
+          </div>
+
+<hr>
+<h1 id="2번-6239번"><a href="#2번-6239번" class="headerlink" title="2번 - 6239번"></a>2번 - 6239번</h1><div class="note ">
+            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
+          </div>
+
+<blockquote>
+<p>단어 역순 출력</p>
+</blockquote>
+<div class="note success">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(<span class="string">' '</span>.join(input().split(<span class="string">' '</span>)[::<span class="number">-1</span>]))</span><br></pre></td></tr></table></figure>
+          </div>
+
+<hr>
+<h1 id="3번-6241번"><a href="#3번-6241번" class="headerlink" title="3번 - 6241번"></a>3번 - 6241번</h1><div class="note ">
+            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
+          </div>
+
+<blockquote>
+</blockquote>
+<div class="note success">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">URL = <span class="string">'http://www.example.com/test?p=1&amp;q=2'</span></span><br><span class="line">protocol = URL[:URL.find(<span class="string">'://'</span>)]</span><br><span class="line">host = URL[URL.find(<span class="string">'://'</span>)+<span class="number">3</span>:URL.rfind(<span class="string">'/'</span>)]</span><br><span class="line">others = URL[URL.rfind(<span class="string">'/'</span>)+<span class="number">1</span>:]</span><br><span class="line"></span><br><span class="line">print(<span class="string">"protocol: &#123;&#125;\nhost: &#123;&#125;\nothers: &#123;&#125;"</span>.format(protocol,host,others))</span><br></pre></td></tr></table></figure>
+          </div>
+
+<hr>
+<h1 id="4번-6678번"><a href="#4번-6678번" class="headerlink" title="4번 - 6678번"></a>4번 - 6678번</h1><div class="note ">
+            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
+          </div>
+
+<blockquote>
+<p>아래와 같은 방법으로 제출하면 메모리 에러가 뜬다. 즉, 아무 입력 없이 엔터를 눌러도 종료되지 않고 계속 돌아간다는거 같은데<br>다른 IDE를 사용하여 프로그램을 돌려보면 정상적으로 작동된다</p>
+</blockquote>
+<div class="note success">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    words = input()</span><br><span class="line">    <span class="keyword">if</span> words==<span class="string">''</span>:</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">    print(<span class="string">"&gt;&gt; &#123;&#125;"</span>.format(words.upper()))</span><br></pre></td></tr></table></figure>
+          </div>
+
+<hr>
+<h1 id="5번-6243번"><a href="#5번-6243번" class="headerlink" title="5번 - 6243번"></a>5번 - 6243번</h1><div class="note ">
+            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
+          </div>
+
+<blockquote>
+<p>.split(‘ ‘)으로 공백 구분, set() 으로 중복값 없애고 sorted()로 순서를 정렬</p>
+</blockquote>
+<div class="note success">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(<span class="string">','</span>.join(sorted(list(set(input().split(<span class="string">' '</span>))))))</span><br></pre></td></tr></table></figure>
+          </div>
+
+<hr>
+<h1 id="7번-6248번"><a href="#7번-6248번" class="headerlink" title="7번 - 6248번"></a>7번 - 6248번</h1><div class="note ">
+            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
+          </div>
+
+<div class="note success">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">raw_str = list(input())</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>, len(raw_str), <span class="number">2</span>):</span><br><span class="line">    print(<span class="string">''</span>.join(raw_str[i]), end=<span class="string">''</span>)</span><br></pre></td></tr></table></figure>
+          </div>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+      
+    </div>
+
+    
+
+    
+      
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        
+          
+        
+        <div class="post-tags">
+          
+            <a href="/tags/파이썬/" rel="tag"># 파이썬</a>
+          
+            <a href="/tags/python/" rel="tag"># python</a>
+          
+            <a href="/tags/삼성/" rel="tag"># 삼성</a>
+          
+            <a href="/tags/SW-Academy/" rel="tag"># SW Academy</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/[object Object]/sw-6259/" rel="next" title="(SW Expert Academy) 셋, 딕셔너리 - 6259번 6260번 6261번 6262번">
+                <i class="fa fa-chevron-left"></i> (SW Expert Academy) 셋, 딕셔너리 - 6259번 6260번 6261번 6262번
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/[object Object]/sw-6203/" rel="prev" title="(SW Expert Academy) 객체지향 - 6203번 6208번 6217번 6223번">
+                (SW Expert Academy) 객체지향 - 6203번 6208번 6217번 6223번 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+      </div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            목차
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            흝어보기
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.gif" alt="NUNU">
+            
+              <p class="site-author-name" itemprop="name">NUNU</p>
+              <div class="site-description motion-element" itemprop="description">개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.</div>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">61</span>
+                    <span class="site-state-item-name">포스트</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                      <a href="/categories/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">13</span>
+                    <span class="site-state-item-name">카테고리</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                      <a href="/tags/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">50</span>
+                    <span class="site-state-item-name">태그</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/rss2.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1번-6232번"><span class="nav-text">1번 - 6232번</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2번-6239번"><span class="nav-text">2번 - 6239번</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3번-6241번"><span class="nav-text">3번 - 6241번</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4번-6678번"><span class="nav-text">4번 - 6678번</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5번-6243번"><span class="nav-text">5번 - 6243번</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#7번-6248번"><span class="nav-text">7번 - 6248번</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+      <!-- Adsense Sidebar -->
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- adsense_side -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8226968057315512" data-ad-slot="2956452829" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+      <!-- Adsense Sidebar -->
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">NUNU</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> v3.9.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme – <span class="exturl theme-link" data-url="aHR0cHM6Ly90aGVtZS1uZXh0Lm9yZw==">NexT.Mist</span> v7.2.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=3.4.1"></script>
+
+  
+  <script src="/lib/lazyload/lozad.min.js?v=1.10.0"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+
+
+  <script src="/js/utils.js?v=7.2.0"></script>
+
+  <script src="/js/motion.js?v=7.2.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/schemes/muse.js?v=7.2.0"></script>
+
+
+
+
+  
+  <script src="/js/scrollspy.js?v=7.2.0"></script>
+<script src="/js/post-details.js?v=7.2.0"></script>
+
+
+
+  <script src="/js/next-boot.js?v=7.2.0"></script>
+
+  
+
+  
+  <script src="/js/exturl.js?v=7.2.0"></script>
+
+
+  
+
+  
+
+  
+  
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://aon-1.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+
+
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://taejin0527.github.io/[object Object]/sw-6232/";
+    this.page.identifier = "[object Object]/sw-6232/";
+    this.page.title = '(SW Expert Academy) 문자열 - 6232번 6239번 6241번 6678번 6243번 6248번';
+    };
+  function loadComments() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://aon-1.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', '' + +new Date());
+    (d.head || d.body).appendChild(s);
+  }
+  
+    $(function() {
+      var offsetTop = $('#comments').offset().top - $(window).height();
+      if (offsetTop <= 0) {
+        // load directly when there's no a scrollbar
+        window.addEventListener('load', loadComments, false);
+      } else {
+        $(window).on('scroll.disqus_scroll', function() {
+          // offsetTop may changes because of manually resizing browser window or lazy loading images.
+          var offsetTop = $('#comments').offset().top - $(window).height();
+          var scrollTop = $(window).scrollTop();
+
+          // pre-load comments a bit? (margin or anything else)
+          if (offsetTop - scrollTop < 60) {
+            $(window).off('.disqus_scroll');
+            loadComments();
+          }
+        });
+      }
+    });
+  
+</script>
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"superSample":2,"width":200,"height":400,"position":"right","hOffset":0,"vOffset":-50,"mobile":{"show":false,"scale":0.5,"motion":true}}});</script></body>
+</html>
