@@ -112,7 +112,7 @@
 <meta property="og:site_name" content="AttackOnNunu">
 <meta property="og:description" content="Reference 문제 출처 - HackerRank 파이썬 연습 - Practice - Python 파이썬 기본 자료형 - w3schools.com  개인적인 생각과 상상으로 작성한 내용들이 포함되어 있습니다문제를 풀고 Discussion Tab을 참고하며 코드 스타일을 개선하려고 노력하고자 합니다    HackerRank Numpy 패키지와 관련된 내용은">
 <meta property="og:locale" content="ko">
-<meta property="og:updated_time" content="2020-02-14T08:57:36.692Z">
+<meta property="og:updated_time" content="2020-02-15T12:07:23.167Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="(PYTHON) Day - 4">
 <meta name="twitter:description" content="Reference 문제 출처 - HackerRank 파이썬 연습 - Practice - Python 파이썬 기본 자료형 - w3schools.com  개인적인 생각과 상상으로 작성한 내용들이 포함되어 있습니다문제를 풀고 Discussion Tab을 참고하며 코드 스타일을 개선하려고 노력하고자 합니다    HackerRank Numpy 패키지와 관련된 내용은">
@@ -425,6 +425,13 @@
 
                 
                 
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/HACKERRANK/" itemprop="url" rel="index"><span itemprop="name">HACKERRANK</span></a></span>
+
+                
+                
               
             </span>
           
@@ -627,7 +634,7 @@
 
 <h3 id="List-Comprehensions"><a href="#List-Comprehensions" class="headerlink" title="List Comprehensions"></a>List Comprehensions</h3><ul>
 <li><p>직육면체의 크기(차원)를 나타내는 세 정수 (x, y, z)를 입력 받고 비교값 N을 입력받는다<br>3차원 공간에서 해당 직육면체 범위 안의 값들 중 임의의 (i, j, k) 좌표를 가져왔을 때,<br>i + j + k의 값이 N과 다른 모든 좌표값을 출력하는 문제<br>(문제 설명부터 길다…)</p>
-<div class="tabs" id="예제-입/출력"><ul class="nav-tabs"><li class="tab active"><a href="#예제-입/출력-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#예제-입/출력-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane active" id="예제-입/출력-1"><p>1<br>1<br>1<br>2</p></div><div class="tab-pane" id="예제-입/출력-2"><p>[[0, 0, 0], [0, 0, 1], [0, 1, 0], [1, 0, 0], [1, 1, 1]]</p></div></div></div>
+<div class="tabs" id="example"><ul class="nav-tabs"><li class="tab active"><a href="#example-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane active" id="example-1"><p>1<br>1<br>1<br>2</p></div><div class="tab-pane" id="example-2"><p>[[0, 0, 0], [0, 0, 1], [0, 1, 0], [1, 0, 0], [1, 1, 1]]</p></div></div></div>
 
 <div class="note no-icon">
             <ul><li>python의 comprehension은 반복적으로 생성가능한 객체를 생성하는 방법이다<br>본 예제에서 사용되는 list 외에도 set, dict, generator expression에서 사용될 수 있다<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">x, y, z, n = (int(input()) <span class="keyword">for</span> _ <span class="keyword">in</span> range(<span class="number">4</span>))</span><br><span class="line"></span><br><span class="line">print([[i, j, k] <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>, x+<span class="number">1</span>) <span class="keyword">for</span> j <span class="keyword">in</span> range(<span class="number">0</span>, y+<span class="number">1</span>) <span class="keyword">for</span> k <span class="keyword">in</span> range(<span class="number">0</span>, z+<span class="number">1</span>) <span class="keyword">if</span> (i+j+k != n)])  </span><br></pre></td></tr></table></figure></li></ul>
@@ -640,7 +647,7 @@
 <li><p>Runner up이 2등을 말한다는걸 처음 알게 되었다<br>그냥 단순히 1등, 2등, 3등을 first prize, second prize, third prize로만 알고 있었는데<br>1등을 grand prize 혹은 winner라고 표현하듯이 2등도 runner up이라는 표현이 있었다<br>(3등까지 표현하고 싶다면, 2등을 first runner up 3등을 second runner up 이라고 한다)</p>
 </li>
 <li><p>몇 명의 주자가 있는지 n으로 입력 받고<br>각 주자들의 성적(score)을 배열에 입력 받아 2등의 성적을 출력하는 문제</p>
-<div class="tabs" id="예제-입/출력"><ul class="nav-tabs"><li class="tab active"><a href="#예제-입/출력-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#예제-입/출력-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane active" id="예제-입/출력-1"><p>5<br>2 3 6 6 5</p></div><div class="tab-pane" id="예제-입/출력-2"><p>5</p></div></div></div>
+<div class="tabs" id="example2"><ul class="nav-tabs"><li class="tab active"><a href="#example2-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example2-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane active" id="example2-1"><p>5<br>2 3 6 6 5</p></div><div class="tab-pane" id="example2-2"><p>5</p></div></div></div>
 
 <div class="note no-icon">
             <ul><li>2등만 찾으면 되기 때문에 최대값(1등)을 제거하고 다시 최대값을 찾는 방식으로 접근했다<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">n = int(input())</span><br><span class="line">arr = list(map(int, input().split()))</span><br><span class="line"></span><br><span class="line">winner_score = max(arr)</span><br><span class="line">runner_up_score = max([runner <span class="keyword">for</span> runner <span class="keyword">in</span> arr <span class="keyword">if</span> runner != winner_score])</span><br><span class="line">print(runner_up_score)  </span><br></pre></td></tr></table></figure></li></ul>
@@ -651,7 +658,7 @@
 </ul>
 <h3 id="Nested-Lists"><a href="#Nested-Lists" class="headerlink" title="Nested Lists"></a>Nested Lists</h3><ul>
 <li><p>물리 수업을 듣는 학생 수 N을 입력 받고, 학생 이름과 성적을 n번 반복하며 입력 받음<br>성적이 밑에서 2번째인 학생을 출력하는 문제 (성적이 같은 학생은 알파벳 순으로 출력)<br>(nested list를 사용해야 함)</p>
-<div class="tabs" id="예제-입/출력"><ul class="nav-tabs"><li class="tab active"><a href="#예제-입/출력-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#예제-입/출력-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane active" id="예제-입/출력-1"><p>5<br>Harry<br>37.21<br>Berry<br>37.21<br>Tina<br>37.2<br>Akriti<br>41<br>Harsh<br>39</p></div><div class="tab-pane" id="예제-입/출력-2"><p>Berry<br>Harry</p></div></div></div>
+<div class="tabs" id="example3"><ul class="nav-tabs"><li class="tab active"><a href="#example3-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example3-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane active" id="example3-1"><p>5<br>Harry<br>37.21<br>Berry<br>37.21<br>Tina<br>37.2<br>Akriti<br>41<br>Harsh<br>39</p></div><div class="tab-pane" id="example3-2"><p>Berry<br>Harry</p></div></div></div>
 
 <div class="note no-icon">
             <ul><li>dict 자료형으로 접근하려고 했는데 key, value로 정렬하는 등 아직 익숙하지 못해서 에러가 많이 발생함<br>2번째로 낮은 값을 찾는데 <code>set()</code> 집합을 이용하는 것이 좋다는 것을 복습함<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">  marksheet = []</span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span> _ <span class="keyword">in</span> range(<span class="number">0</span>,int(input())):</span><br><span class="line">      marksheet.append([input(), float(input())])</span><br><span class="line"></span><br><span class="line">  second_highest = sorted(list(set([marks <span class="keyword">for</span> name, marks <span class="keyword">in</span> marksheet])))[<span class="number">1</span>]</span><br><span class="line"></span><br><span class="line">  print(<span class="string">'\n'</span>.join([a <span class="keyword">for</span> a,b <span class="keyword">in</span> sorted(marksheet) <span class="keyword">if</span> b == second_highest]))  </span><br></pre></td></tr></table></figure></li></ul>
@@ -663,7 +670,7 @@
 <h3 id="Finding-the-percentage"><a href="#Finding-the-percentage" class="headerlink" title="Finding the percentage"></a>Finding the percentage</h3><ul>
 <li>학생 수 N을 입력 받고,<br>각 학생의 이름과 수학, 물리, 화학 성적을 입력 받는다<br>마지막 줄에 입력받은 학생의 이름의 성적의 평균을 출력하는 문제<br>(dict 자료형을 꼭 사용하라고 나와있다)</li>
 </ul>
-<div class="tabs" id="예제-입/출력"><ul class="nav-tabs"><li class="tab active"><a href="#예제-입/출력-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#예제-입/출력-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane active" id="예제-입/출력-1"><p>3<br>Krishna 67 68 69<br>Arjun 70 98 63<br>Malika 52 56 60<br>Malika</p></div><div class="tab-pane" id="예제-입/출력-2"><p>56.00</p></div></div></div>
+<div class="tabs" id="example4"><ul class="nav-tabs"><li class="tab active"><a href="#example4-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example4-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane active" id="example4-1"><p>3<br>Krishna 67 68 69<br>Arjun 70 98 63<br>Malika 52 56 60<br>Malika</p></div><div class="tab-pane" id="example4-2"><p>56.00</p></div></div></div>
 
 <div class="note no-icon">
             <ul><li>출력을 소수점 2번째 자리까지 지정해 줘야 하는 것을 주의!<br><code>{0:.2f}.format()</code> 복습 복습<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">  n = int(input())</span><br><span class="line">  student_marks = &#123;&#125;</span><br><span class="line">  <span class="keyword">for</span> _ <span class="keyword">in</span> range(n):</span><br><span class="line">      name, *line = input().split()</span><br><span class="line">      scores = list(map(float, line))</span><br><span class="line">      student_marks[name] = scores</span><br><span class="line">  query_name = input()</span><br><span class="line"></span><br><span class="line">  target = student_marks[query_name]</span><br><span class="line"></span><br><span class="line">  sum = <span class="number">0</span></span><br><span class="line">  <span class="keyword">for</span> num <span class="keyword">in</span> target:</span><br><span class="line">      sum += float(num)</span><br><span class="line"></span><br><span class="line">  print(<span class="string">"&#123;0:.2f&#125;"</span>.format(sum/len(target)))  </span><br></pre></td></tr></table></figure></li></ul>
@@ -807,7 +814,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">61</span>
+                    <span class="site-state-item-count">62</span>
                     <span class="site-state-item-name">포스트</span>
                   </a>
                 </div>
@@ -856,7 +863,11 @@
                     
                       
                     
-                    <span class="site-state-item-count">13</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">15</span>
                     <span class="site-state-item-name">카테고리</span>
                   </a>
                 </div>

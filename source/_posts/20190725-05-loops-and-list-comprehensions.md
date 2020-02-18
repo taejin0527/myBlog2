@@ -4,6 +4,7 @@ date: 2019-07-25 14:49:18
 categories:
   - LANGUAGE
   - PYTHON
+  - KAGGLE
 tags: [파이썬, 캐글, 튜토리얼, kaggle, programming language, python, language, loops, list comprehensions, tutorial]
 subtitle: Kaggle 홈페이지 Python 강좌 참고
 ---

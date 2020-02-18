@@ -4,6 +4,7 @@ date: 2019-07-26 22:11:36
 categories:
   - LANGUAGE
   - PYTHON
+  - KAGGLE
 tags: [파이썬, 캐글, 튜토리얼, kaggle, programming language, python, language, strings, dictionaries, tutorial]
 subtitle: Kaggle 홈페이지 Python 강좌 참고
 ---
