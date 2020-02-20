@@ -112,7 +112,7 @@
 <meta property="og:site_name" content="AttackOnNunu">
 <meta property="og:description" content="Reference 문제 출처 - HackerRank 파이썬 연습 - Practice - Python  개인적인 생각과 상상으로 작성한 내용들이 포함되어 있습니다문제를 풀고  Discussion Tab을 참고하며 코드 스타일을 개선하려고 노력하고자 합니다    HackerRankHackerRank의 Python 연습문제들은 아래와 같은 카테고리로 분류 된다:">
 <meta property="og:locale" content="ko">
-<meta property="og:updated_time" content="2020-02-18T09:40:03.182Z">
+<meta property="og:updated_time" content="2020-02-20T08:44:14.638Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="(PYTHON) Day - 7 Strings">
 <meta name="twitter:description" content="Reference 문제 출처 - HackerRank 파이썬 연습 - Practice - Python  개인적인 생각과 상상으로 작성한 내용들이 포함되어 있습니다문제를 풀고  Discussion Tab을 참고하며 코드 스타일을 개선하려고 노력하고자 합니다    HackerRankHackerRank의 Python 연습문제들은 아래와 같은 카테고리로 분류 된다:">
@@ -500,7 +500,53 @@
             <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><ul><li><a href="#Text-Alignment">Text Alignment</a></li><li><a href="#Text-Wrap">Text Wrap</a></li><li><a href="#Designer-Door-Mat">Designer Door Mat</a></li><li><a href="#Alphabet-Rangoli">Alphabet Rangoli</a>  </li><li><a href="#Capitalize!">Capitalize!</a></li><li><a href="#The-Minion-Game">The Minion Game</a></li><li><a href="#Merge-the-Tools!">Merge the Tools!</a>   </li></ul>
           </div>
 
-<h2 id="기본-개념"><a href="#기본-개념" class="headerlink" title="기본 개념"></a>기본 개념</h2><h3 id="Text-Alignment"><a href="#Text-Alignment" class="headerlink" title="Text Alignment"></a>Text Alignment</h3><h3 id="Text-Wrap"><a href="#Text-Wrap" class="headerlink" title="Text Wrap"></a>Text Wrap</h3><h3 id="Designer-Door-Mat"><a href="#Designer-Door-Mat" class="headerlink" title="Designer Door Mat"></a>Designer Door Mat</h3><h3 id="Alphabet-Rangoli"><a href="#Alphabet-Rangoli" class="headerlink" title="Alphabet Rangoli"></a>Alphabet Rangoli</h3><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+<h2 id="기본-개념"><a href="#기본-개념" class="headerlink" title="기본 개념"></a>기본 개념</h2><h3 id="Text-Alignment"><a href="#Text-Alignment" class="headerlink" title="Text Alignment"></a>Text Alignment</h3><div class="note info">
+            <p>다음 함수를 사용하여 문자열은 좌, 우, 중앙으로 정렬시킬 수 있다<br>width는 필수로 입력해야하고 공백을 채울 문자(fillchar)는 선택적으로 입력, 기본값은 space<br><code>str.ljust(width[, fillchar])</code> : 왼쪽 정렬<br><code>str.center(width[, fillchar])</code> : 오른쪽 정렬<br><code>str.rjust(width[, fillchar])</code> : 가운데 정렬</p>
+          </div>
+
+<div class="tabs" id="example1"><ul class="nav-tabs"><li class="tab active"><a href="#example1-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example1-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane active" id="example1-1"><p>  5</p></div><div class="tab-pane" id="example1-2"><pre>
+    H    
+   HHH   
+  HHHHH  
+ HHHHHHH
+HHHHHHHHH
+  HHHHH               HHHHH             
+  HHHHH               HHHHH             
+  HHHHH               HHHHH             
+  HHHHH               HHHHH             
+  HHHHH               HHHHH             
+  HHHHH               HHHHH             
+  HHHHHHHHHHHHHHHHHHHHHHHHH   
+  HHHHHHHHHHHHHHHHHHHHHHHHH   
+  HHHHHHHHHHHHHHHHHHHHHHHHH   
+  HHHHH               HHHHH             
+  HHHHH               HHHHH             
+  HHHHH               HHHHH             
+  HHHHH               HHHHH             
+  HHHHH               HHHHH             
+  HHHHH               HHHHH             
+                   HHHHHHHHH
+                    HHHHHHH  
+                     HHHHH   
+                      HHH    
+                       H  </pre></div></div></div>
+
+<div class="note success">
+            <p>Cone, Pillars, Belt 부분으로 나누어서 그림을 그려나가는 것이 흥미로웠다<br><span class="label danger"> 아래 코드는 해당 문제를 풀때 Editor에 자동으로 입력되어 있던 코드에서 ljust, rjust, center 함수만 끼워 넣은 것이다</span></p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#Replace all ______ with rjust, ljust or center.</span></span><br><span class="line"></span><br><span class="line">thickness = int(input()) <span class="comment">#This must be an odd number</span></span><br><span class="line">c = <span class="string">'H'</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#Top Cone</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(thickness):</span><br><span class="line">    print((c*i).rjust(thickness<span class="number">-1</span>)+c+(c*i).ljust(thickness<span class="number">-1</span>))</span><br><span class="line"></span><br><span class="line"><span class="comment">#Top Pillars</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(thickness+<span class="number">1</span>):</span><br><span class="line">    print((c*thickness).center(thickness*<span class="number">2</span>)+(c*thickness).center(thickness*<span class="number">6</span>))</span><br><span class="line"></span><br><span class="line"><span class="comment">#Middle Belt</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range((thickness+<span class="number">1</span>)//<span class="number">2</span>):</span><br><span class="line">    print((c*thickness*<span class="number">5</span>).center(thickness*<span class="number">6</span>))    </span><br><span class="line"></span><br><span class="line"><span class="comment">#Bottom Pillars</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(thickness+<span class="number">1</span>):</span><br><span class="line">    print((c*thickness).center(thickness*<span class="number">2</span>)+(c*thickness).center(thickness*<span class="number">6</span>))    </span><br><span class="line"></span><br><span class="line"><span class="comment">#Bottom Cone</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(thickness):</span><br><span class="line">    print(((c*(thickness-i<span class="number">-1</span>)).rjust(thickness)+c+(c*(thickness-i<span class="number">-1</span>)).ljust(thickness)).rjust(thickness*<span class="number">6</span>))   </span><br></pre></td></tr></table></figure><ul><li>재사용성을 생각했을 때, 각 부분들을 정의해 놓고 마지막에 출력할 때 필요한 부분들을 블럭을 조립하듯이 쌓으면 훨씬 깔끔한 것 같다</li></ul><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">width =int(input())</span><br><span class="line">c=<span class="string">'H'</span></span><br><span class="line"></span><br><span class="line">top_cone = [(c*(<span class="number">2</span>*i+<span class="number">1</span>)).center(<span class="number">2</span>*width) <span class="keyword">for</span> i <span class="keyword">in</span> range(width)]</span><br><span class="line">pillars = [(c*width + <span class="string">' '</span> * <span class="number">3</span> * width + c * width).center(<span class="number">6</span>*width) <span class="keyword">for</span> _ <span class="keyword">in</span> range(width+<span class="number">1</span>)]</span><br><span class="line">base = [(c*<span class="number">5</span>*width).center(<span class="number">6</span>*width) <span class="keyword">for</span> _ <span class="keyword">in</span> range(width/<span class="number">2</span>+<span class="number">1</span>)]</span><br><span class="line">bottom_cone = [r.rjust(<span class="number">6</span>*width) <span class="keyword">for</span> r <span class="keyword">in</span> cone[::<span class="number">-1</span>]]</span><br><span class="line"></span><br><span class="line">print(<span class="string">'\n'</span>.join(top_cone + pillars + base + pillars + bottom_cone)) </span><br></pre></td></tr></table></figure>
+          </div>
+
+<hr>
+<h3 id="Text-Wrap"><a href="#Text-Wrap" class="headerlink" title="Text Wrap"></a>Text Wrap</h3><div class="note info">
+            <p>문제 : 입력되는 문자열 S를 길이 w만큼 잘라서 출력<br>예제 : ‘ABCDEFGHIJKLIMNOQRSTUVWXYZ’를 4개씩 잘라서 ‘ABCD’, ‘EFGH’, … 로 출력</p>
+          </div>
+
+<div class="tabs" id="example2"><ul class="nav-tabs"><li class="tab active"><a href="#example2-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example2-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane active" id="example2-1"><p>ABCDEFGHIJKLIMNOQRSTUVWXYZ<br>4</p></div><div class="tab-pane" id="example2-2"><p>ABCD<br>EFGH<br>IJKL<br>IMNO<br>QRST<br>UVWX<br>YZ</p></div></div></div>
+
+<div class="note success">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">import</span> textwrap</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">wrap</span><span class="params">(string, max_width)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> <span class="string">'\n'</span>.join([string[i:i+max_width] <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>, len(string), max_width)])</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">text_wrap</span><span class="params">(string, max_width)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> <span class="string">'\n'</span>.join(textwrap.wrap(string, max_width))</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    string, max_width = input(), int(input())</span><br><span class="line"></span><br><span class="line">    start_1 = time.time()</span><br><span class="line">    result = wrap(string, max_width)</span><br><span class="line">    end_1 = time.time()</span><br><span class="line"></span><br><span class="line">    start_2 = time.time()</span><br><span class="line">    result_2 = text_wrap(string, max_width)</span><br><span class="line">    end_2 = time.time()</span><br><span class="line"></span><br><span class="line">    print(result, result == result_2, sep=<span class="string">'\n'</span>)</span><br><span class="line">    print(<span class="string">'list_comprehension: '</span>.ljust(<span class="number">20</span>), round((end_1 - start_1) * <span class="number">100</span>, <span class="number">8</span>))</span><br><span class="line">    print(<span class="string">'textwrap: '</span>.ljust(<span class="number">20</span>), round((end_2 - start_2) * <span class="number">100</span>, <span class="number">8</span>)) </span><br></pre></td></tr></table></figure><ul><li>7배 정도 느린데 굳이 textwrap 모듈을 사용해야 할까?</li></ul><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># input</span></span><br><span class="line">ABCDEFGHIJKLIMNOQRSTUVWXYZ</span><br><span class="line"><span class="number">4</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># output</span></span><br><span class="line">ABCD</span><br><span class="line">EFGH</span><br><span class="line">IJKL</span><br><span class="line">IMNO</span><br><span class="line">QRST</span><br><span class="line">UVWX</span><br><span class="line">YZ</span><br><span class="line"><span class="literal">True</span></span><br><span class="line">list_comprehension:  <span class="number">0.00259876</span></span><br><span class="line">textwrap:            <span class="number">0.01468658</span>   </span><br></pre></td></tr></table></figure>
+          </div>
+
+<h3 id="Designer-Door-Mat"><a href="#Designer-Door-Mat" class="headerlink" title="Designer Door Mat"></a>Designer Door Mat</h3><h3 id="Alphabet-Rangoli"><a href="#Alphabet-Rangoli" class="headerlink" title="Alphabet Rangoli"></a>Alphabet Rangoli</h3><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
       
     </div>
 
@@ -558,6 +604,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/[object Object]/PY-textwrap/" rel="prev" title="(PYTON) TextWrap">
+                (PYTON) TextWrap <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -635,7 +685,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">63</span>
+                    <span class="site-state-item-count">64</span>
                     <span class="site-state-item-name">포스트</span>
                   </a>
                 </div>
