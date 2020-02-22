@@ -107,14 +107,14 @@
   <meta name="description" content="Reference 문제 출처 - HackerRank 파이썬 연습 - Practice - Python  개인적인 생각과 상상으로 작성한 내용들이 포함되어 있습니다문제를 풀고  Discussion Tab을 참고하며 코드 스타일을 개선하려고 노력하고자 합니다    HackerRankHackerRank의 Python 연습문제들은 아래와 같은 카테고리로 분류 된다:">
 <meta name="keywords" content="파이썬,programming language,python,language">
 <meta property="og:type" content="article">
-<meta property="og:title" content="(PYTHON) Day - 7 Strings">
+<meta property="og:title" content="(PYTHON) Day - 7 Strings(3)">
 <meta property="og:url" content="https://taejin0527.github.io/[object Object]/PY-day7/index.html">
 <meta property="og:site_name" content="AttackOnNunu">
 <meta property="og:description" content="Reference 문제 출처 - HackerRank 파이썬 연습 - Practice - Python  개인적인 생각과 상상으로 작성한 내용들이 포함되어 있습니다문제를 풀고  Discussion Tab을 참고하며 코드 스타일을 개선하려고 노력하고자 합니다    HackerRankHackerRank의 Python 연습문제들은 아래와 같은 카테고리로 분류 된다:">
 <meta property="og:locale" content="ko">
-<meta property="og:updated_time" content="2020-02-20T08:44:14.638Z">
+<meta property="og:updated_time" content="2020-02-21T06:19:18.882Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="(PYTHON) Day - 7 Strings">
+<meta name="twitter:title" content="(PYTHON) Day - 7 Strings(3)">
 <meta name="twitter:description" content="Reference 문제 출처 - HackerRank 파이썬 연습 - Practice - Python  개인적인 생각과 상상으로 작성한 내용들이 포함되어 있습니다문제를 풀고  Discussion Tab을 참고하며 코드 스타일을 개선하려고 노력하고자 합니다    HackerRankHackerRank의 Python 연습문제들은 아래와 같은 카테고리로 분류 된다:">
 
 
@@ -135,7 +135,7 @@
   };
 </script>
 
-  <title>(PYTHON) Day - 7 Strings | AttackOnNunu</title>
+  <title>(PYTHON) Day - 7 Strings(3) | AttackOnNunu</title>
   
 
 
@@ -373,7 +373,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">(PYTHON) Day - 7 Strings
+          <h2 class="post-title" itemprop="name headline">(PYTHON) Day - 7 Strings(3)
 
               
             
@@ -497,7 +497,7 @@
 <br>
 
 <h1 id="Strings"><a href="#Strings" class="headerlink" title="Strings"></a>Strings</h1><div class="note primary">
-            <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><ul><li><a href="#Text-Alignment">Text Alignment</a></li><li><a href="#Text-Wrap">Text Wrap</a></li><li><a href="#Designer-Door-Mat">Designer Door Mat</a></li><li><a href="#Alphabet-Rangoli">Alphabet Rangoli</a>  </li><li><a href="#Capitalize!">Capitalize!</a></li><li><a href="#The-Minion-Game">The Minion Game</a></li><li><a href="#Merge-the-Tools!">Merge the Tools!</a>   </li></ul>
+            <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><ul><li><a href="#Text-Alignment">Text Alignment</a></li><li><a href="#Text-Wrap">Text Wrap</a></li><li><a href="#Designer-Door-Mat">Designer Door Mat</a></li><li><a href="#Alphabet-Rangoli">Alphabet Rangoli</a>  </li></ul>
           </div>
 
 <h2 id="기본-개념"><a href="#기본-개념" class="headerlink" title="기본 개념"></a>기본 개념</h2><h3 id="Text-Alignment"><a href="#Text-Alignment" class="headerlink" title="Text Alignment"></a>Text Alignment</h3><div class="note info">
@@ -546,7 +546,49 @@ HHHHHHHHH
             <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">import</span> textwrap</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">wrap</span><span class="params">(string, max_width)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> <span class="string">'\n'</span>.join([string[i:i+max_width] <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>, len(string), max_width)])</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">text_wrap</span><span class="params">(string, max_width)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> <span class="string">'\n'</span>.join(textwrap.wrap(string, max_width))</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    string, max_width = input(), int(input())</span><br><span class="line"></span><br><span class="line">    start_1 = time.time()</span><br><span class="line">    result = wrap(string, max_width)</span><br><span class="line">    end_1 = time.time()</span><br><span class="line"></span><br><span class="line">    start_2 = time.time()</span><br><span class="line">    result_2 = text_wrap(string, max_width)</span><br><span class="line">    end_2 = time.time()</span><br><span class="line"></span><br><span class="line">    print(result, result == result_2, sep=<span class="string">'\n'</span>)</span><br><span class="line">    print(<span class="string">'list_comprehension: '</span>.ljust(<span class="number">20</span>), round((end_1 - start_1) * <span class="number">100</span>, <span class="number">8</span>))</span><br><span class="line">    print(<span class="string">'textwrap: '</span>.ljust(<span class="number">20</span>), round((end_2 - start_2) * <span class="number">100</span>, <span class="number">8</span>)) </span><br></pre></td></tr></table></figure><ul><li>7배 정도 느린데 굳이 textwrap 모듈을 사용해야 할까?</li></ul><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># input</span></span><br><span class="line">ABCDEFGHIJKLIMNOQRSTUVWXYZ</span><br><span class="line"><span class="number">4</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># output</span></span><br><span class="line">ABCD</span><br><span class="line">EFGH</span><br><span class="line">IJKL</span><br><span class="line">IMNO</span><br><span class="line">QRST</span><br><span class="line">UVWX</span><br><span class="line">YZ</span><br><span class="line"><span class="literal">True</span></span><br><span class="line">list_comprehension:  <span class="number">0.00259876</span></span><br><span class="line">textwrap:            <span class="number">0.01468658</span>   </span><br></pre></td></tr></table></figure>
           </div>
 
-<h3 id="Designer-Door-Mat"><a href="#Designer-Door-Mat" class="headerlink" title="Designer Door Mat"></a>Designer Door Mat</h3><h3 id="Alphabet-Rangoli"><a href="#Alphabet-Rangoli" class="headerlink" title="Alphabet Rangoli"></a>Alphabet Rangoli</h3><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+<hr>
+<h3 id="Designer-Door-Mat"><a href="#Designer-Door-Mat" class="headerlink" title="Designer Door Mat"></a>Designer Door Mat</h3><div class="note info">
+            <p>문제 : 예제와 같은 NxM 크기의 디자인 패턴을 그리는 문제(가운데 welcome, 패턴에는 <code>-</code>, <code>|</code>, <code>.</code> 세개만 사용, N은 홀수이고 M의 크기는 N의 3배)<br>예제 : 디자인 패턴 참고</p>
+          </div>
+
+<div class="tabs" id="example3"><ul class="nav-tabs"><li class="tab active"><a href="#example3-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example3-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane active" id="example3-1"><p>9 27</p></div><div class="tab-pane" id="example3-2"><pre>
+------------.|.------------
+---------.|..|..|.---------
+------.|..|..|..|..|.------
+---.|..|..|..|..|..|..|.---
+----------WELCOME----------
+---.|..|..|..|..|..|..|.---
+------.|..|..|..|..|.------
+---------.|..|..|.---------
+------------.|.------------</pre></div></div></div>
+
+<div class="note success">
+            <p>위 <a href="#Text-Alignment">Text Alignment</a> 문제의 아이디어를 응용하여 패턴과 가운데 글자를 하나의 데이터로 정의하여 풀었음</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">N, M = map(int, input().split())</span><br><span class="line">pattern = [(<span class="string">'.|.'</span> * (<span class="number">2</span>*i+<span class="number">1</span>)).center(M, <span class="string">'-'</span>) <span class="keyword">for</span> i <span class="keyword">in</span> range(N//<span class="number">2</span>)]</span><br><span class="line">middle_pattern = <span class="string">'WELCOME'</span>.center(M, <span class="string">'-'</span>)</span><br><span class="line"></span><br><span class="line">print(<span class="string">'\n'</span>.join(pattern), middle_pattern, <span class="string">'\n'</span>.join(pattern[::<span class="number">-1</span>]), sep=<span class="string">'\n'</span>) </span><br></pre></td></tr></table></figure>
+          </div>
+
+<hr>
+<h3 id="Alphabet-Rangoli"><a href="#Alphabet-Rangoli" class="headerlink" title="Alphabet Rangoli"></a>Alphabet Rangoli</h3><div class="note info">
+            <p>문제 : Rangoli는 인도의 전통미술 패턴이다. 입력받는 N 크기의 랑골리 패턴을 그리는 문제<br>예제 : 랑골리 패턴 참고(크기가 커질수록 알파벳순으로 글자도 늘어남)</p>
+          </div>
+
+<div class="tabs" id="example4"><ul class="nav-tabs"><li class="tab active"><a href="#example4-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example4-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane active" id="example4-1"><p>5</p></div><div class="tab-pane" id="example4-2"><pre>
+--------e--------
+------e-d-e------
+----e-d-c-d-e----
+--e-d-c-b-c-d-e--
+e-d-c-b-a-b-c-d-e
+--e-d-c-b-c-d-e--
+----e-d-c-d-e----
+------e-d-e------
+--------e-------- </pre></div></div></div>
+
+<div class="note success">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> string</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">print_rangoli</span><span class="params">(size)</span>:</span></span><br><span class="line">  alpha = string.ascii_lowercase</span><br><span class="line">  L = []</span><br><span class="line">  <span class="keyword">for</span> i <span class="keyword">in</span> range(n):</span><br><span class="line">    s = <span class="string">"-"</span>.join(alpha[i:n])</span><br><span class="line">    L.append((s[::<span class="number">-1</span>]+s[<span class="number">1</span>:]).center(<span class="number">4</span>*n<span class="number">-3</span>, <span class="string">"-"</span>))</span><br><span class="line"></span><br><span class="line">  print(<span class="string">'\n'</span>.join(L[:<span class="number">0</span>:<span class="number">-1</span>]+L))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    n = int(input())</span><br><span class="line">    print_rangoli(n) </span><br></pre></td></tr></table></figure>
+          </div>
+
+<hr>
+<hr>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
       
     </div>
 
@@ -595,8 +637,8 @@ HHHHHHHHH
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/[object Object]/PY-day6/" rel="next" title="(PYTHON) Day - 6 Strings">
-                <i class="fa fa-chevron-left"></i> (PYTHON) Day - 6 Strings
+              <a href="/[object Object]/PY-day6/" rel="next" title="(PYTHON) Day - 6 Strings(2)">
+                <i class="fa fa-chevron-left"></i> (PYTHON) Day - 6 Strings(2)
               </a>
             
           </div>
@@ -685,7 +727,7 @@ HHHHHHHHH
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">64</span>
+                    <span class="site-state-item-count">65</span>
                     <span class="site-state-item-name">포스트</span>
                   </a>
                 </div>
@@ -1085,7 +1127,7 @@ HHHHHHHHH
   var disqus_config = function() {
     this.page.url = "https://taejin0527.github.io/[object Object]/PY-day7/";
     this.page.identifier = "[object Object]/PY-day7/";
-    this.page.title = '(PYTHON) Day - 7 Strings';
+    this.page.title = '(PYTHON) Day - 7 Strings(3)';
     };
   function loadComments() {
     var d = document, s = d.createElement('script');
