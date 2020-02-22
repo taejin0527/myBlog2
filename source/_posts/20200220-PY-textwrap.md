@@ -20,7 +20,7 @@ subtitle: 용어 정리
 ---
 
 {% note info %}
-[(PYTHON) Day - 7 Strings](https://taejin0527.github.io/[object%20Object]/PY-day7/#Text-Wrap)에서 **textwrap 패키지** 을 사용하는 문제가 있었습니다. 뭔가 용어에 대해 정확히 이해하고 넘어가야 해당 기능이 필요할 때 기억해내고 사용할 것 같아서 아래에 정리해 두려고 합니다.
+[(PYTHON) Day - 7 Strings](https://taejin0527.github.io/[object%20Object]/PY-day7/#Text-Wrap)에서 **textwrap 패키지** 를 사용하는 문제가 있었습니다. 뭔가 용어에 대해 정확히 이해하고 넘어가야 해당 기능이 필요할 때 기억해내고 사용할 것 같아서 아래에 정리해 두려고 합니다.
 {% endnote %}
 
 # Wrap?
@@ -105,7 +105,7 @@ word, 한글과 같은 문서 작성 프로그램과는 다르게 Excel과 같�
 동의어로 **word wrap** 이 있다
 {% endnote %}
 
----
+
 
 {% note info %}
 개인적으로 wraptext 혹은 wordwrap가 올바른 패키지 이름이지 않을까 하고 생각합니다. 왜 textwrap이 이름으로 채택되었는지 더 깊이 파고들지는 않겠습니다.
