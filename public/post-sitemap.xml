@@ -9,7 +9,15 @@
 
     <url>
         <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/PY-day8/</loc>
-        <lastmod>2020-02-22T10:57:38.620Z</lastmod>
+        <lastmod>2020-02-24T14:26:41.895Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/PY-string-formatting/</loc>
+        <lastmod>2020-02-24T13:40:16.775Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -160,7 +168,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/PY-is-operator/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/PY-namespace/</loc>
         <lastmod>2020-02-14T08:04:51.707Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -168,7 +176,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/PY-namespace/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/PY-is-operator/</loc>
         <lastmod>2020-02-14T08:04:51.707Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -184,6 +192,14 @@
     </url>
 
     <url>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/proj-o-day1/</loc>
+        <lastmod>2020-02-14T08:04:51.705Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/PY-Broadcasting/</loc>
         <lastmod>2020-02-14T08:04:51.705Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -192,8 +208,8 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/proj-o-day1/</loc>
-        <lastmod>2020-02-14T08:04:51.705Z</lastmod>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/sw-stack1/</loc>
+        <lastmod>2020-02-14T08:04:51.704Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -216,14 +232,6 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/sw-stack1/</loc>
-        <lastmod>2020-02-14T08:04:51.704Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/sw-queue/</loc>
         <lastmod>2020-02-14T08:04:51.704Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -232,7 +240,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/sw-6259/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/sw-list1/</loc>
         <lastmod>2020-02-14T08:04:51.703Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -248,7 +256,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/sw-list1/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/sw-6259/</loc>
         <lastmod>2020-02-14T08:04:51.703Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -272,7 +280,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/sw-6301/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/sw-6203/</loc>
         <lastmod>2020-02-14T08:04:51.702Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -280,7 +288,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/sw-6203/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/sw-6301/</loc>
         <lastmod>2020-02-14T08:04:51.702Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -312,7 +320,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/sw-6282/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/sw-6296/</loc>
         <lastmod>2020-02-14T08:04:51.701Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -320,7 +328,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/sw-6296/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/sw-6282/</loc>
         <lastmod>2020-02-14T08:04:51.701Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -344,7 +352,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/sw-6325/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/sw-6315/</loc>
         <lastmod>2020-02-14T08:04:51.700Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -360,16 +368,8 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/sw-6315/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/sw-6325/</loc>
         <lastmod>2020-02-14T08:04:51.700Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/sw-6242/</loc>
-        <lastmod>2020-02-14T08:04:51.699Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -385,6 +385,14 @@
 
     <url>
         <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/sw-6230/</loc>
+        <lastmod>2020-02-14T08:04:51.699Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/sw-6242/</loc>
         <lastmod>2020-02-14T08:04:51.699Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -408,7 +416,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/sw-6204/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/sw-6218/</loc>
         <lastmod>2020-02-14T08:04:51.698Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -416,7 +424,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/sw-6218/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/sw-6204/</loc>
         <lastmod>2020-02-14T08:04:51.698Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -432,7 +440,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/hexo-seo/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/hexo-adsense-1/</loc>
         <lastmod>2020-02-14T08:04:51.696Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -440,7 +448,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/hexo-adsense-1/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/hexo-seo/</loc>
         <lastmod>2020-02-14T08:04:51.696Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -456,7 +464,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/os-overview-2/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/os-overview/</loc>
         <lastmod>2020-02-14T08:04:51.694Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -464,7 +472,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/os-overview/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/os-overview-2/</loc>
         <lastmod>2020-02-14T08:04:51.694Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -480,7 +488,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/spring-module/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/cda-tutorial-1/</loc>
         <lastmod>2020-02-14T08:04:51.693Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -496,16 +504,8 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/cda-tutorial-1/</loc>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/spring-module/</loc>
         <lastmod>2020-02-14T08:04:51.693Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/cda-tutorial/</loc>
-        <lastmod>2020-02-14T08:04:51.692Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -521,6 +521,14 @@
 
     <url>
         <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/spring/</loc>
+        <lastmod>2020-02-14T08:04:51.692Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://taejin0527.github.io/%5Bobject%20Object%5D/cda-tutorial/</loc>
         <lastmod>2020-02-14T08:04:51.692Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
