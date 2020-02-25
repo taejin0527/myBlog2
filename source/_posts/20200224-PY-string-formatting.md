@@ -1,5 +1,5 @@
 ---
-title: PY string formatting
+title: (PYTON) 문자열 포맷팅
 date: 2020-02-24 22:39:14
 categories:
   - LANGUAGE

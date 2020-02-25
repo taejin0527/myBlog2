@@ -356,6 +356,199 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/hexo-backup/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="NUNU">
+      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="AttackOnNunu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/[object Object]/hexo-backup/" class="post-title-link" itemprop="url">(Hexo_NexT_Theme) 블로그 백업</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2020-02-14 17:59:51" itemprop="dateCreated datePublished" datetime="2020-02-14T17:59:51+09:00">2020-02-14</time>
+            </span>
+          
+
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/BLOG/" itemprop="url" rel="index"><span itemprop="name">BLOG</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/BLOG/HEXO-NEXT-THEME/" itemprop="url" rel="index"><span itemprop="name">HEXO-NEXT-THEME</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">댓글: </span>
+                <a href="/[object Object]/hexo-backup/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/hexo-backup/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <div class="note info">
+            <p>Github에 모든 파일을 다 올렸다고 생각했는데,<br>막상 <code>git clone</code> 을 해보니 테마 파일이 빠져있음을 알게 되었다.</p>
+          </div>
+
+<hr>
+<h1 id="사라진-hexo-theme-NexT"><a href="#사라진-hexo-theme-NexT" class="headerlink" title="사라진 hexo-theme-NexT"></a>사라진 hexo-theme-NexT</h1><p>연습삼아 모든 파일을 지우고 깃허브에 업로드한 데이터를 다운받고 실행시키는데 문제가 발생했다.</p>
+<p>hexo 자체의 문제는 없고 특정 태그를 인식 못하는 것을 보고 테마 설정에 문제 있는 것을 인지하였다.</p>
+<p><code>git clone</code> 을 통해 다운받은 폴더를 살펴보니 <code>hexo-theme-NexT</code> 폴더 안 내용이 비어있음을 발견했다.</p>
+<p>분명 <code>.gitignore</code> 파일에는 아무것도 작성하지 않고 모든 파일 및 디렉토리가 깃에 업로드 되도록 설정한 것 같은데,<br><code>themes</code> 폴더 안의 <code>hexo-theme-NexT</code> 내용이 제대로 업로드 되지 않음을 이번에 알게 되었다.</p>
+<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" data-src="/img/200214_github.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
+
+
+<h1 id="임기응변으로-해결"><a href="#임기응변으로-해결" class="headerlink" title="임기응변으로 해결"></a>임기응변으로 해결</h1><p>그래서 다시 <code>git clone https://github.com/theme-next/hexo-theme-next.git</code> 을 통해 테마를 다운 받아 넣었는데,<br>원본에서 조금 커스터마이즈했던 설정들 때문에 정상적으로 작동이 되지 않았다.</p>
+<p><code>_config.yml</code> 파일의 내용을 하나하나 수정할 수 밖에 없는 것 같아서<br>혹시나 하고 백업 파일로 남겨둔 기존 데이터를 그냥 덮어씌우는 방식으로 문제를 해결했다.</p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/PY-integer-caching/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -691,8 +884,8 @@
 <hr>
 <br>
 
-<div class="note no-icon">
-            <p>이메일로 받아보는 [PyTricks]에서 <code>is</code> 와 <code>==</code> 의 차이점에 대한 내용이 있길래 정리했습니다<br>아래 코드의 출력값이 본인의 예상과 다르거나 혹은 이해가 안 된다면 이번 기회에 확실히 짚고 넘어갑시다<br>  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>b = a</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a <span class="keyword">is</span> b</span><br><span class="line"><span class="literal">True</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a == b</span><br><span class="line"><span class="literal">True</span>  </span><br></pre></td></tr></table></figure></p><p>  “is” vs “==” (위 아래의 차이점을 아시겠나요?)</p>  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># a = [1, 2, 3]</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>c = list(a)</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a <span class="keyword">is</span> c</span><br><span class="line"><span class="literal">False</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a == c</span><br><span class="line"><span class="literal">True</span>  </span><br></pre></td></tr></table></figure>
+<div class="note info">
+            <p>이메일로 받아보는 [🐍PyTricks]에서 <code>is</code> 와 <code>==</code> 의 차이점에 대한 내용이 있길래 정리했습니다<br>아래 코드의 출력값이 본인의 예상과 다르거나 혹은 이해가 안 된다면 이번 기회에 확실히 짚고 넘어갑시다<br>  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>b = a</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a <span class="keyword">is</span> b</span><br><span class="line"><span class="literal">True</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a == b</span><br><span class="line"><span class="literal">True</span>  </span><br></pre></td></tr></table></figure></p><p>  “is” vs “==” (위 아래의 차이점을 아시겠나요?)</p>  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># a = [1, 2, 3]</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>c = list(a)</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a <span class="keyword">is</span> c</span><br><span class="line"><span class="literal">False</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a == c</span><br><span class="line"><span class="literal">True</span>  </span><br></pre></td></tr></table></figure>
           </div>
 
 <br>
@@ -788,248 +981,11 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/PY-namespace/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="NUNU">
-      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="AttackOnNunu">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/[object Object]/PY-namespace/" class="post-title-link" itemprop="url">(PYTON) Namespace</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">작성일</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2020-01-24 15:39:59" itemprop="dateCreated datePublished" datetime="2020-01-24T15:39:59+09:00">2020-01-24</time>
-            </span>
-          
-
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/" itemprop="url" rel="index"><span itemprop="name">LANGUAGE</span></a></span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/" itemprop="url" rel="index"><span itemprop="name">PYTHON</span></a></span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/TERMINOLOGY/" itemprop="url" rel="index"><span itemprop="name">TERMINOLOGY</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">댓글: </span>
-                <a href="/[object Object]/PY-namespace/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/PY-namespace/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          <br>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
-<li>옥스포드 사전? - <span class="exturl" data-url="aHR0cHM6Ly93d3cubGV4aWNvLmNvbS9kZWZpbml0aW9uL25hbWVzcGFjZQ==" title="https://www.lexico.com/definition/namespace">lexico.com<i class="fa fa-external-link"></i></span></li>
-<li>위키피디아 ‘네임스페이스’ - <span class="exturl" data-url="aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvTmFtZXNwYWNl" title="https://en.wikipedia.org/wiki/Namespace">wikipedia.org<i class="fa fa-external-link"></i></span></li>
-<li>이름공간이란? - <span class="exturl" data-url="aHR0cHM6Ly9weXRob24uYmFreWVvbm8ubmV0L2NoYXB0ZXItOC0zLmh0bWw=" title="https://python.bakyeono.net/chapter-8-3.html">파이썬 프로그래밍 입문서<i class="fa fa-external-link"></i></span></li>
-</ul>
-<blockquote>
-<p>개인적인 생각과 상상으로 작성한 내용들이 포함되어 있습니다</p>
-</blockquote>
-<hr>
-<br>
-
-<h1 id="Namespace"><a href="#Namespace" class="headerlink" title="Namespace?"></a>Namespace?</h1><blockquote>
-<p>생각보다 네임스페이스라는 용어를 자주 접하게 되어서 이참에 명확하게 정리해두고자 작성하게 되었습니다</p>
-</blockquote>
-<div class="note info">
-            <p><strong style="color:red">NOUN</strong><br>  <span style="color:green"><em>Computing</em></span><br>    A class of elements (e.g. addresses, file locations, etc.) in which each element has a name unique to that class, although it may be shared with elements in other classes.</p>
-          </div>
-
-<p>네임스페이스는 단어 그대로 name과 space가 합쳐져 이름을 가지는 공간이라는 뜻으로 컴퓨터학에서 사용되는 용어입니다</p>
-<p>쉽게 생각해서 어느 학교(프로그램)에 민수(객체)라는 이름을 가진 학생이 2명이 있다고 했을 때,<br>선생님이 그냥 “민수야 이것 좀 해봐” 라고 하면 둘 중 어느 민수를 지칭하는 건지 모릅니다<br>하지만 한 명의 민수는 1반에 속해있고 다른 민수는 8반에 속해있다고 하면 둘을 구분 지을 수 있습니다<br>여기서는 반이 네임스페이스의 역할을 한다고 볼 수 있습니다</p>
-<p>또 다른 예시로는,<br>‘python’ 이라는 용어는 컴퓨터학에서는 <strong>프로그래밍 언어</strong> 를 말하며 ‘파이썬’이라고 읽히지만<br>그리스 신화에서는 <strong>델토이 신탁소를 지배하는 거대한 뱀</strong> 을 가리키며 고대 그리스어로 ‘피톤’이라고 읽습니다<br>동물사전에는 <strong>비단 뱀</strong> 으로 정의됩니다 (google에서 이미지로 검색하면 비단 뱀 사진이 압도적으로 많습니다)</p>
-<blockquote>
-<p>파이썬 아이콘이 뱀 모양이기도 해서 오해할 수 있지만, 파이썬 언어의 창시자 귀도 반 로썸(Guido van Rossum)은 자신이 좋아하는 영국 코미디 프로인 ‘몬티 파이선의 날아다니는 서커스(Monty Python’s Flying Circus)’에서 영감을 얻었다고 합니다</p>
-</blockquote>
-<p>이렇게 한 단어 ‘python’은 여러 의미를 가지고 있는데 우리가 이들을 구분할 수 있는 이유는 무엇일까요?<br>본능적으로 알 수 있듯이, ‘python’이 <strong>컴퓨터</strong> 의 네임스페이스에 있으면 <strong>프로그래밍 언어</strong> 로,<br><strong>그리스 신화</strong> 의 네임스페이스에 있다면 <strong>거대한 뱀</strong> 으로, <strong>동물사전</strong> 이라는 네임스페이스면 <strong>비단 뱀</strong> 으로<br>우리는 인식할 수 있습니다.</p>
-<br>
-
-<h1 id="C-에서의-Namespace"><a href="#C-에서의-Namespace" class="headerlink" title="C++에서의 Namespace"></a>C++에서의 Namespace</h1><blockquote>
-<p>개인적으로 저는 C언어를 처음 배울 때 잘 몰라도 그냥 <code>#include &lt;stdio.h&gt;</code>를 입력 했었고,<br>  C++를 처음 배울 때도 일단 모르겠지만 <code>using namespace std</code>를 입력 했었던 것 같습니다</p>
-</blockquote>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">// This is how one brings a name into the current scope.  In this case, it's</span></span><br><span class="line"><span class="comment">// bringing them into global scope.</span></span><br><span class="line"><span class="keyword">using</span> <span class="built_in">std</span>::<span class="built_in">cout</span>;</span><br><span class="line"><span class="keyword">using</span> <span class="built_in">std</span>::<span class="built_in">endl</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> box1 &#123;</span><br><span class="line">    <span class="keyword">int</span> box_side = <span class="number">4</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> box2 &#123;</span><br><span class="line">    <span class="keyword">int</span> box_side = <span class="number">12</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> box_side = <span class="number">42</span>;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; box1::box_side &lt;&lt; <span class="built_in">endl</span>;  <span class="comment">// Outputs 4.</span></span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; box2::box_side &lt;&lt; <span class="built_in">endl</span>;  <span class="comment">// Outputs 12.</span></span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; box_side &lt;&lt; <span class="built_in">endl</span>;  <span class="comment">// Outputs 42.</span></span><br><span class="line">&#125;   </span><br></pre></td></tr></table></figure>
-
-<br>
-
-<h1 id="Python에서의-Namespace"><a href="#Python에서의-Namespace" class="headerlink" title="Python에서의 Namespace"></a>Python에서의 Namespace</h1><p>파이썬에서는 각각의 모듈(module)들이 네임스페이스 역할을 합니다.<br>모듈이 계층적인 패키지들에 속해있기 때문에 네임스페이스 또한 계층적인 성격을 띕니다.</p>
-<ul>
-<li>예를 들어, 2개의 함수 func1()과 func2() 그리고 1개의 클래스 class1을 가지는 모듈이 있다고 가정해 봅시다<br>모듈을 전체를 import하면 함수와 클래스 모두 잘 작동하는 것을 볼 수 있습니다<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># assume module a defines two functions : func1() and func2() and one class : class1</span></span><br><span class="line"><span class="keyword">import</span> modulea</span><br><span class="line"></span><br><span class="line">modulea.func1()</span><br><span class="line">modulea.func2()</span><br><span class="line">a = modulea.class1()  </span><br></pre></td></tr></table></figure>
-
-
-</li>
-</ul>
-<ul>
-<li>하지만 모듈 내의 특정한 함수만 import하면 현제 작업하고 있는 네임스페이스에는 func2() 함수와 class1이 없는 것으로 인식됩니다<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># assume modulea defines two functions : func1() and func2() and one class : class1</span></span><br><span class="line"><span class="keyword">from</span> modulea <span class="keyword">import</span> func1</span><br><span class="line"></span><br><span class="line">func1()</span><br><span class="line">func2() <span class="comment"># this will fail as an undefined name, as will the full name modulea.func2()</span></span><br><span class="line">a = class1() <span class="comment"># this will fail as an undefined name, as will the full name modulea.class1()  </span></span><br></pre></td></tr></table></figure>
-
-
-</li>
-</ul>
-<ul>
-<li>간혹 모듈의 이름이 너무 길어서 짧게 쓰고 싶을 때, <code>import ... as ...</code> 를 통해 임의로 이름을 바꿀 수 있습니다<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line">a = np.arange(<span class="number">1000</span>)  </span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
-          
-        
-      
-    </div>
-
-    
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left" aria-label="이전 페이지"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/22/">22</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right" aria-label="다음 페이지"></i></a>
+    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left" aria-label="이전 페이지"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/23/">23</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right" aria-label="다음 페이지"></i></a>
   </nav>
 
 
@@ -1073,7 +1029,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">66</span>
+                    <span class="site-state-item-count">67</span>
                     <span class="site-state-item-name">포스트</span>
                   </a>
                 </div>
