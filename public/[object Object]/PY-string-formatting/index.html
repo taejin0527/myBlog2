@@ -104,18 +104,18 @@
 
 
 
-  <meta name="description" content="Reference Python 공식 문서 - 7. Input and Output ‘wrap’ 사전적 의미 - Cambridge Dictionary">
+  <meta name="description" content="Reference Python 공식 문서 - 7. Input and Output                (본 내용에서 파일 입/출력은 생략하겠습니다)조금 과장되게 말해서 파이썬에서 입력과 출력은 input() 함수와 print() 함수만 알면 끝입니다.파이썬은 input() 함수를 통해 입력되는 모든 것을 string 자료형으로 통일시켜 마치 쌈 싸서">
 <meta name="keywords" content="파이썬,programming language,python,language">
 <meta property="og:type" content="article">
 <meta property="og:title" content="(PYTON) 문자열 포맷팅">
 <meta property="og:url" content="https://taejin0527.github.io/[object Object]/PY-string-formatting/index.html">
 <meta property="og:site_name" content="AttackOnNunu">
-<meta property="og:description" content="Reference Python 공식 문서 - 7. Input and Output ‘wrap’ 사전적 의미 - Cambridge Dictionary">
+<meta property="og:description" content="Reference Python 공식 문서 - 7. Input and Output                (본 내용에서 파일 입/출력은 생략하겠습니다)조금 과장되게 말해서 파이썬에서 입력과 출력은 input() 함수와 print() 함수만 알면 끝입니다.파이썬은 input() 함수를 통해 입력되는 모든 것을 string 자료형으로 통일시켜 마치 쌈 싸서">
 <meta property="og:locale" content="ko">
-<meta property="og:updated_time" content="2020-02-25T07:32:03.322Z">
+<meta property="og:updated_time" content="2020-02-29T08:36:26.165Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="(PYTON) 문자열 포맷팅">
-<meta name="twitter:description" content="Reference Python 공식 문서 - 7. Input and Output ‘wrap’ 사전적 의미 - Cambridge Dictionary">
+<meta name="twitter:description" content="Reference Python 공식 문서 - 7. Input and Output                (본 내용에서 파일 입/출력은 생략하겠습니다)조금 과장되게 말해서 파이썬에서 입력과 출력은 input() 함수와 print() 함수만 알면 끝입니다.파이썬은 input() 함수를 통해 입력되는 모든 것을 string 자료형으로 통일시켜 마치 쌈 싸서">
 
 
 
@@ -482,12 +482,26 @@
       
         <h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
 <li>Python 공식 문서 - <span class="exturl" data-url="aHR0cHM6Ly9kb2NzLnB5dGhvbi5vcmcvMy90dXRvcmlhbC9pbnB1dG91dHB1dC5odG1s" title="https://docs.python.org/3/tutorial/inputoutput.html">7. Input and Output<i class="fa fa-external-link"></i></span></li>
-<li>‘wrap’ 사전적 의미 - <span class="exturl" data-url="aHR0cHM6Ly9kaWN0aW9uYXJ5LmNhbWJyaWRnZS5vcmcva28vJUVDJTgyJUFDJUVDJUEwJTg0LyVFQyU5OCU4MSVFQyU5NiVCNC93cmFw" title="https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/wrap">Cambridge Dictionary<i class="fa fa-external-link"></i></span></li>
 </ul>
 <hr>
 <div class="note info">
-            
+            <p>(본 내용에서 파일 입/출력은 생략하겠습니다)<br>조금 과장되게 말해서 파이썬에서 입력과 출력은 <code>input()</code> 함수와 <code>print()</code> 함수만 알면 끝입니다.<br>파이썬은 <code>input()</code> 함수를 통해 입력되는 모든 것을 string 자료형으로 통일시켜 마치 쌈 싸서 한 입에 먹는 것 처럼 처리합니다. (이 한 뭉텅이의 입력 데이터를 연산의 필요에 따라 <code>int</code>, <code>list</code> 등의 다른 자료형으로 변환시키거나 특정 구분자로 <code>split()</code> 함수를 사용해 분리시키기도 합니다. 중요한건 들어올 때는 참 쉽다는 것입니다.)<br>어떻게 입력 받는지 보다 어떻게 출력 되는지가 더 중요하다는 것은 아닙니다. 하지만 ‘보기 좋은 떡이 먹기도 좋다’ 라는 속담이 있듯이 많은 사람들이 입력 보단 프로그램의 결과물인 출력 방법에 더 정성을 쏟는 것 같습니다.</p>
           </div>
+
+<img data-src="https://www.izscomic.com/wp-content/uploads/2016/06/Hard-to-escape.jpg">
+
+<p><del>마치 파이썬과 나의 관계…</del></p>
+<h1 id="String-Formatting"><a href="#String-Formatting" class="headerlink" title="String Formatting"></a>String Formatting</h1><ul>
+<li>Python 3.8 공식 문서를 보면 4가지 방법이 소개 되어 있습니다.</li>
+</ul>
+<h2 id="Formatted-String-Literals"><a href="#Formatted-String-Literals" class="headerlink" title="Formatted String Literals"></a>Formatted String Literals</h2><p>줄여서 <strong>f-strings</strong> 라고 불립니다.<br>문자열 <code>&#39;&#39;</code> 앞에 <code>f</code> 혹은 <code>F</code> 를 붙여서 사용합니다.<br><code>{expression}</code> 안의 <code>:</code></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> math</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(<span class="string">f'The value of pi is approximately <span class="subst">&#123;math.pi&#125;</span>.'</span>)</span><br><span class="line">The value of pi <span class="keyword">is</span> approximately <span class="number">3.141592653589793</span>.</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(F<span class="string">'The value of pi is approximately &#123;math.pi:.3f&#125;.'</span>)</span><br><span class="line">The value of pi <span class="keyword">is</span> approximately <span class="number">3.142</span>. </span><br></pre></td></tr></table></figure>
+
+<h2 id="str-format-Method"><a href="#str-format-Method" class="headerlink" title="str.format() Method"></a>str.format() Method</h2><h2 id="Manual-string-Formatting"><a href="#Manual-string-Formatting" class="headerlink" title="Manual string Formatting"></a>Manual string Formatting</h2><h2 id="Old-string-formatting"><a href="#Old-string-formatting" class="headerlink" title="Old string formatting"></a>Old string formatting</h2><figure class="highlight"><table><tr><td class="code"><pre><span class="line"><span class="comment"># example 1</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>text = <span class="string">'World!'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(<span class="string">'Hello %s'</span> % text)  </span><br><span class="line">Hello World!</span><br><span class="line"></span><br><span class="line"><span class="comment"># example 2</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>name = <span class="string">'Eric Idle'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>age = <span class="number">74</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>job = <span class="string">'comedian'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>affiliation = <span class="string">'Monty Python'</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(<span class="string">'Hello %s. You are %d. You are a %s. You were a member of %s'</span> % (name, age, job, affiliation))</span><br><span class="line">Hello Eric Idle. You are <span class="number">74.</span> You are a comedian. You were a member of Monty Python</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(<span class="string">'You are %s. Type? %s'</span> % (age, type(age)))  </span><br><span class="line">You are 74. Type? &lt;class 'int'&gt; </span><br></pre></td></tr></table></figure>
+
+<p>C 언어의 <code>printf</code> 방식과 비슷한 방법입니다.<br><strong>데이터 타입에 맞춰서 <code>%</code> 뒤에 오는 문자를 지정해 줘야하고 가독성이 떨어지는</strong> 단점이 있습니다.<br>(int 타입이지만 <code>%s</code> 를 사용해도 왜 정상적으로 출력되는 이유를 잘 모르겠습니다ㅠ 반대로하면 <span class="label danger">TypeError: %d format: a number is required, not type</span> 에러가 출력됩니다.)</p>
+<hr>
+<hr>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
       
     </div>
@@ -627,7 +641,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">67</span>
+                    <span class="site-state-item-count">68</span>
                     <span class="site-state-item-name">포스트</span>
                   </a>
                 </div>
@@ -846,7 +860,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Reference"><span class="nav-text">Reference</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Reference"><span class="nav-text">Reference</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#String-Formatting"><span class="nav-text">String Formatting</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Formatted-String-Literals"><span class="nav-text">Formatted String Literals</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#str-format-Method"><span class="nav-text">str.format() Method</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Manual-string-Formatting"><span class="nav-text">Manual string Formatting</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Old-string-formatting"><span class="nav-text">Old string formatting</span></a></li></ol></li></ol></div>
             
 
           </div>

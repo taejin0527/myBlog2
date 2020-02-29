@@ -154,3 +154,6 @@ Namespaces are one honking great idea -- let's do more of those! {% endcode %}
   SyntaxError: future feature test is not defined {% endcode %}
 
 `__future__` 모듈에 없는 임의의 모듈을 호출하면 그냥 선언되어 있지 않다고 왠지 모르게 밋밋한 답변을 볼 수 있습니다.
+
+---
+---
