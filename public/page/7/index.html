@@ -356,6 +356,222 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/PY-day1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="NUNU">
+      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="AttackOnNunu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/[object Object]/PY-day1/" class="post-title-link" itemprop="url">(PYTHON) Day - 1 Introduction</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2020-01-17 17:19:03" itemprop="dateCreated datePublished" datetime="2020-01-17T17:19:03+09:00">2020-01-17</time>
+            </span>
+          
+
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/" itemprop="url" rel="index"><span itemprop="name">LANGUAGE</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/" itemprop="url" rel="index"><span itemprop="name">PYTHON</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/HACKERRANK/" itemprop="url" rel="index"><span itemprop="name">HACKERRANK</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">댓글: </span>
+                <a href="/[object Object]/PY-day1/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/PY-day1/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <div class="note info">
+            <p>파이썬을 파이썬답게!</p>
+          </div>
+
+<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
+<li>문제 출처 - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vZGFzaGJvYXJk" title="https://www.hackerrank.com/dashboard">HackerRank<i class="fa fa-external-link"></i></span></li>
+<li>파이썬 연습 - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vZG9tYWlucy9weXRob24/ZmlsdGVycyU1QnN0YXR1cyU1RCU1QiU1RD11bnNvbHZlZCZiYWRnZV90eXBlPXB5dGhvbg==" title="https://www.hackerrank.com/domains/python?filters%5Bstatus%5D%5B%5D=unsolved&badge_type=python">Practice - Python<i class="fa fa-external-link"></i></span></li>
+</ul>
+<blockquote>
+<p>Python 기초를 탄탄히 다지자<br>문제를 풀고 <span class="label sucess">Discussion Tab</span>을 참고하며 코드 스타일을 개선하려고 노력하고자 합니다</p>
+</blockquote>
+<hr>
+<h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><h2 id="loops"><a href="#loops" class="headerlink" title="loops"></a>loops</h2><p>N 개의 정수를 입력 받고, 그 정수들의 제곱을 출력하는 문제<br>정수마다 한 줄씩 띄워야함!</p>
+<div class="note no-icon">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">n = int(input())</span><br><span class="line"></span><br><span class="line">ans = [i ** <span class="number">2</span> <span class="keyword">for</span> i <span class="keyword">in</span> range(n)]</span><br><span class="line"><span class="keyword">for</span> idx <span class="keyword">in</span> range(n):</span><br><span class="line">    print(ans[idx]) </span><br></pre></td></tr></table></figure>
+          </div>
+
+<div class="note success">
+            <p>언패킹을 사용해서 한 줄로 코딩 가능!</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(*[num**<span class="number">2</span> <span class="keyword">for</span> num <span class="keyword">in</span> range(n)], sep=<span class="string">'\n'</span>) </span><br></pre></td></tr></table></figure><p>혹은 리스트에 담아서 출력하면 됨</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">[print(i**<span class="number">2</span>) <span class="keyword">for</span> i <span class="keyword">in</span> range(n)] </span><br></pre></td></tr></table></figure>
+          </div>
+
+
+<h2 id="if-else"><a href="#if-else" class="headerlink" title="if-else"></a>if-else</h2><p>홀수 이거나, 6 에서 20 사이의 숫자이면 ‘Weird’를 출력<br>그 외에는 ‘Not Weird’ 출력</p>
+<div class="note no-icon">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">n = int(input().strip())</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> n % <span class="number">2</span> == <span class="number">0</span>:</span><br><span class="line">    <span class="keyword">if</span> <span class="number">2</span> &lt;= n &lt;= <span class="number">5</span>:</span><br><span class="line">        print(<span class="string">'Not Weird'</span>)</span><br><span class="line">    <span class="keyword">elif</span> <span class="number">6</span> &lt;= n &lt;= <span class="number">20</span>:</span><br><span class="line">        print(<span class="string">'Weird'</span>)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        print(<span class="string">'Not Weird'</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    print(<span class="string">'Weird'</span>) </span><br></pre></td></tr></table></figure>
+          </div>
+
+<div class="note success">
+            <p>dict 자료형을 사용하면 if-else문을 사용하지 않고도 표현 가능</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">n = int(input().strip())</span><br><span class="line">check = &#123;<span class="literal">True</span>: <span class="string">'Not Weird'</span>, <span class="literal">False</span>: <span class="string">'Weird'</span>&#125;</span><br><span class="line"></span><br><span class="line">print(check[n % <span class="number">2</span> == <span class="number">0</span> <span class="keyword">and</span> (n <span class="keyword">in</span> range(<span class="number">2</span>, <span class="number">6</span>) <span class="keyword">or</span> n &gt; <span class="number">20</span>)]) </span><br></pre></td></tr></table></figure>
+          </div>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/blog-management/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -707,231 +923,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/sw-linked-list/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="NUNU">
-      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="AttackOnNunu">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/[object Object]/sw-linked-list/" class="post-title-link" itemprop="url">(파이썬 S/W 문제해결 기본) Linked List - 5108번 5110번</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">작성일</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2019-09-05 16:10:07" itemprop="dateCreated datePublished" datetime="2019-09-05T16:10:07+09:00">2019-09-05</time>
-            </span>
-          
-
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/SW-아카데미/" itemprop="url" rel="index"><span itemprop="name">SW 아카데미</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">댓글: </span>
-                <a href="/[object Object]/sw-linked-list/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/sw-linked-list/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          <br>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="5108번-숫자-추가"><a href="#5108번-숫자-추가" class="headerlink" title="5108번 - 숫자 추가"></a>5108번 - 숫자 추가</h1><div class="note ">
-            <ul><li>시간 : 10개 테스트케이스를 합쳐서 Python의 경우 2초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
-          </div>
-
-<blockquote>
-<p>list.insert(self, index, object) 함수를 사용하여 쉽게 리스트의 해당 인덱스에 숫자 삽입</p>
-</blockquote>
-<div class="note success">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">addNum</span><span class="params">(m)</span>:</span></span><br><span class="line">    <span class="keyword">for</span> _ <span class="keyword">in</span> range(M):</span><br><span class="line">        <span class="comment"># 추가할 인덱스와 숫자 입력</span></span><br><span class="line">        idx, num = map(int, input().split())</span><br><span class="line">        mySeq.insert(idx, num)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">printNum</span><span class="params">(l)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> mySeq[l]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">T = int(input())</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> test_case <span class="keyword">in</span> range(<span class="number">1</span>, T+<span class="number">1</span>):</span><br><span class="line">    <span class="comment"># 수열의 길이 N, 추가 횟수 M, 출력할 인덱스 번호 L</span></span><br><span class="line">    N, M, L = map(int, input().split())</span><br><span class="line">    mySeq = [int(num) <span class="keyword">for</span> num <span class="keyword">in</span> input().split()]</span><br><span class="line"></span><br><span class="line">    addNum(M)</span><br><span class="line">    ans = printNum(L)</span><br><span class="line"></span><br><span class="line">    print(<span class="string">'#&#123;&#125; &#123;&#125;'</span>.format(test_case, ans))</span><br></pre></td></tr></table></figure>
-          </div>
-
-<hr>
-<h1 id="5110번-수열-합치기"><a href="#5110번-수열-합치기" class="headerlink" title="5110번 - 수열 합치기"></a>5110번 - 수열 합치기</h1><div class="note ">
-            <ul><li>시간 : 10개 테스트케이스를 합쳐서 Python의 경우 2초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
-          </div>
-
-<blockquote>
-<p>단순 리스트를 그대로 사용할 경우 테스트 케이스 10개 중 9개만 통과하고 1개는 제한시간 초과가 뜬다</p>
-</blockquote>
-<div class="note danger">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">mergeSeqLists</span><span class="params">()</span>:</span></span><br><span class="line">    finalSeq = []</span><br><span class="line"></span><br><span class="line">    finalSeq.extend(myLists[<span class="number">0</span>])</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> idx <span class="keyword">in</span> range(<span class="number">1</span>, M):</span><br><span class="line">        ptr = len(finalSeq)</span><br><span class="line">        <span class="keyword">for</span> i, num <span class="keyword">in</span> enumerate(finalSeq):</span><br><span class="line">            <span class="keyword">if</span> myLists[idx][<span class="number">0</span>] &lt; num:</span><br><span class="line">                ptr = i</span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line"></span><br><span class="line">        finalSeq = finalSeq[:ptr] + myLists[idx] + finalSeq[ptr:]</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> finalSeq</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">T = int(input())</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> test_case <span class="keyword">in</span> range(<span class="number">1</span>, T+<span class="number">1</span>):</span><br><span class="line">    <span class="comment"># 수열의 길이 N, 수열의 개수 M</span></span><br><span class="line">    N, M = map(int, input().split())</span><br><span class="line">    <span class="comment"># 전체 수열을 저장할 리스트</span></span><br><span class="line">    myLists = [[int(num) <span class="keyword">for</span> num <span class="keyword">in</span> input().split()] <span class="keyword">for</span> _ <span class="keyword">in</span> range(M)]</span><br><span class="line"></span><br><span class="line">    ans = mergeSeqLists()</span><br><span class="line"></span><br><span class="line">    print(<span class="string">'#&#123;&#125; '</span>.format(test_case), end=<span class="string">''</span>)</span><br><span class="line">    print(<span class="string">' '</span>.join(str(n) <span class="keyword">for</span> n <span class="keyword">in</span> ans[<span class="number">-1</span>:<span class="number">-11</span>:<span class="number">-1</span>]))</span><br><span class="line">    <span class="comment">#print('#&#123;&#125; &#123;&#125;'.format(test_case, ans[:10]))</span></span><br></pre></td></tr></table></figure>
-          </div>
-
-<blockquote>
-<p>연결 리스트(Linked list)를 사용하여 성능을 끌어올리자</p>
-</blockquote>
-<div class="note success">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
-          </div>
-
-<hr>
-<h1 id="5120번-암호"><a href="#5120번-암호" class="headerlink" title="5120번 - 암호"></a>5120번 - 암호</h1><div class="note ">
-            <ul><li>시간 : 10개 테스트케이스를 합쳐서 Python의 경우 2초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
-          </div>
-
-<blockquote>
-</blockquote>
-<div class="note success">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
-          </div>
-
-<hr>
-<h1 id="5122번-수열-편집"><a href="#5122번-수열-편집" class="headerlink" title="5122번 - 수열 편집"></a>5122번 - 수열 편집</h1><div class="note ">
-            <ul><li>시간 : 10개 테스트케이스를 합쳐서 Python의 경우 2초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
-          </div>
-
-<blockquote>
-</blockquote>
-<div class="note success">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
-          </div>
-
-<hr>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
-          
-        
-      
-    </div>
-
-    
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -980,7 +971,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">68</span>
+                    <span class="site-state-item-count">69</span>
                     <span class="site-state-item-name">포스트</span>
                   </a>
                 </div>

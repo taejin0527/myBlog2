@@ -1,5 +1,5 @@
 ---
-title: (PYTON) Namespace
+title: (PYTHON) Namespace
 date: 2020-01-24 15:39:59
 categories:
   - LANGUAGE

@@ -1,5 +1,5 @@
 ---
-title: (PYTON) is 와 == 의 차이?
+title: (PYTHON) is 와 == 의 차이?
 date: 2020-01-31 15:02:07
 categories:
   - LANGUAGE

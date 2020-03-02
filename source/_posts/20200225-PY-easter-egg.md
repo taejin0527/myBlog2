@@ -1,5 +1,5 @@
 ---
-title: (PYTON) 파이썬의 easter egg
+title: (PYTHON) 파이썬의 easter egg
 date: 2020-02-25 16:28:32
 categories:
   - LANGUAGE

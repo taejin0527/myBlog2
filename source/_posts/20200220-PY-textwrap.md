@@ -1,5 +1,5 @@
 ---
-title: (PYTON) TextWrap
+title: (PYTHON) TextWrap
 date: 2020-02-20 00:29:17
 categories:
   - LANGUAGE
