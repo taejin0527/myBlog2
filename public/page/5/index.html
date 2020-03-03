@@ -356,6 +356,495 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/PY-is-operator/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="NUNU">
+      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="AttackOnNunu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/[object Object]/PY-is-operator/" class="post-title-link" itemprop="url">(PYTHON) is 와 == 의 차이?</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2020-01-31 15:02:07" itemprop="dateCreated datePublished" datetime="2020-01-31T15:02:07+09:00">2020-01-31</time>
+            </span>
+          
+
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/" itemprop="url" rel="index"><span itemprop="name">LANGUAGE</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/" itemprop="url" rel="index"><span itemprop="name">PYTHON</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/TERMINOLOGY/" itemprop="url" rel="index"><span itemprop="name">TERMINOLOGY</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">댓글: </span>
+                <a href="/[object Object]/PY-is-operator/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/PY-is-operator/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
+<li>Is there a difference between “==” and “is”? - <span class="exturl" data-url="aHR0cHM6Ly9zdGFja292ZXJmbG93LmNvbS9xdWVzdGlvbnMvMTMyOTg4L2lzLXRoZXJlLWEtZGlmZmVyZW5jZS1iZXR3ZWVuLWFuZC1pcw==" title="https://stackoverflow.com/questions/132988/is-there-a-difference-between-and-is">stackoverflow.com<i class="fa fa-external-link"></i></span></li>
+<li>The difference between ‘is’ and ‘==’ in Python - <span class="exturl" data-url="aHR0cHM6Ly9kYmFkZXIub3JnL2Jsb2cvZGlmZmVyZW5jZS1iZXR3ZWVuLWlzLWFuZC1lcXVhbHMtaW4tcHl0aG9u" title="https://dbader.org/blog/difference-between-is-and-equals-in-python">dbader.org<i class="fa fa-external-link"></i></span></li>
+<li>Python Operators - <span class="exturl" data-url="aHR0cHM6Ly93d3cucHJvZ3JhbWl6LmNvbS9weXRob24tcHJvZ3JhbW1pbmcvb3BlcmF0b3Jz" title="https://www.programiz.com/python-programming/operators">programiz.com<i class="fa fa-external-link"></i></span></li>
+<li>페이스ID vs 일란성쌍둥이 - <span class="exturl" data-url="aHR0cHM6Ly93d3cuc2lzYWpvdXJuYWwuY29tL25ld3MvYXJ0aWNsZVZpZXcuaHRtbD9pZHhubz0xNzE5OTE=" title="https://www.sisajournal.com/news/articleView.html?idxno=171991">sisajournal.com<i class="fa fa-external-link"></i></span></li>
+</ul>
+<blockquote>
+<p>개인적인 생각과 상상으로 작성한 내용들이 포함되어 있습니다</p>
+</blockquote>
+<hr>
+<br>
+
+<div class="note info">
+            <p>이메일로 받아보는 [🐍PyTricks]에서 <code>is</code> 와 <code>==</code> 의 차이점에 대한 내용이 있길래 정리했습니다<br>아래 코드의 출력값이 본인의 예상과 다르거나 혹은 이해가 안 된다면 이번 기회에 확실히 짚고 넘어갑시다<br>  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>b = a</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a <span class="keyword">is</span> b</span><br><span class="line"><span class="literal">True</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a == b</span><br><span class="line"><span class="literal">True</span>  </span><br></pre></td></tr></table></figure></p><p>  “is” vs “==” (위 아래의 차이점을 아시겠나요?)</p>  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># a = [1, 2, 3]</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>c = list(a)</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a <span class="keyword">is</span> c</span><br><span class="line"><span class="literal">False</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a == c</span><br><span class="line"><span class="literal">True</span>  </span><br></pre></td></tr></table></figure>
+          </div>
+
+<br>
+
+<h1 id="Operators-in-Python"><a href="#Operators-in-Python" class="headerlink" title="Operators in Python"></a>Operators in Python</h1><blockquote>
+<p>둘의 차이점을 알아보기 전에 Python의 연산자들에는 어떤 것들이 있는지 큰 틀만 알아보겠습니다<br>자세한 내용은 다음에 기회가 있으면 정리하겠습니다</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>x + y</span><br><span class="line"><span class="number">9</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>여기서 <code>x</code>와 <code>y</code>는 <strong>피연산자(operand)</strong> 라고 부르고 그 사이 <code>+</code>가 <strong>연산자(operator)</strong> 가 됩니다<br>위 예제의 덧셈 연산자 외에도 파이썬에는 다양한 연산자들이 존재합니다</li>
+</ul>
+<div class="note primary">
+            <h2 id="Python-Operators"><a href="#Python-Operators" class="headerlink" title="Python Operators"></a>Python Operators</h2><ul><li><strong>Arithmetic operators</strong><ul><li><code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>%</code>, <code>//</code>, <code>**</code>  </li></ul></li><li><strong style="color:blue">Comparison operators</strong><ul><li><code>&gt;</code>, <code>&lt;</code>, <code>==</code>, <code>!=</code>, <code>&gt;=</code>, <code>&lt;=</code></li></ul></li><li><strong>Logical(Boolean) operators</strong><ul><li><code>and</code>, <code>or</code>, <code>not</code></li></ul></li><li><strong>Bitwise operators</strong><ul><li><code>&amp;</code>, <code>|</code>, <code>~</code>, <code>^</code>, <code>&gt;&gt;</code>, <code>&lt;&lt;</code></li></ul></li><li><strong>Assignment operators</strong><ul><li><code>=</code>, <code>+=</code>, <code>-=</code>, <code>*=</code>, <code>/=</code>, <code>%=</code>, <code>//=</code>, <code>**=</code>, <code>&amp;=</code>, <code>|=</code>, <code>^=</code>, <code>&gt;&gt;=</code>, <code>&lt;&lt;=</code></li></ul></li><li><strong>Special operators</strong> (Python에서 제공하는 특별한 연산자들)<ul><li><strong style="color:blue">Identity operators</strong><ul><li><code>is</code>, <code>is not</code></li></ul></li><li><strong>Membership operators</strong><ul><li><code>in</code>, <code>not in</code></li></ul></li></ul></li></ul>
+          </div>
+
+<br>
+
+<h1 id="Equality-Comparison-Operators"><a href="#Equality-Comparison-Operators" class="headerlink" title="Equality Comparison Operators"></a>Equality Comparison Operators</h1><p>Python에서는 같음을 비교(equality comparison)할 때 <code>==</code>와 <code>is</code> 2가지 연산자(operator)를 사용할 수 있습니다<br>결론부터 이야기하면 두 연사자의 차이점은 <strong>Equality</strong> 와 <strong>Identity</strong> 의 비교라는 것 입니다</p>
+<p>요즘 최신 스마트폰은 대부분 ‘페이스ID’ 기능을 제공하고 있습니다.<br>이전의 ‘터치ID’의 인식 오류 확률인 1/50000 보다 20배 성능이 뛰어난 1/1000000의 확률로 훨씬 보안이 뛰어나다고 알려져 있습니다<br>하지만 정말 똑같이 생긴 일란성 쌍둥이가 있을 때 페이스ID의 보안은 쉽게 뚫리지 않을까 하는 의구심이 들지 않나요?</p>
+<p>쉽게 생각해서 페이스ID의 원리는 스마트폰에 등록된 얼굴 데이터와 카메라, 적외선 센서 등으로 입력되는 데이터를 비교하는 것 입니다<br>일란성 쌍둥이가 너무 똑같이 생겨서 입력되는 데이터 값이 거의 똑같다면 이론상 페이스ID로 서로의 스마트폰 잠금을 해제할 수 있을 것 입니다<br>이처럼 두 데이터가 같은 값(value)을 가지는지 비교하는 것을 <strong>Equality comparison</strong> 이라고 합니다</p>
+<p>하지만 아무리 일란성 쌍둥이라고 해도 두 사람은 엄밀히 다른 사람입니다<br>간단하게는 주민등록 번호 등으로 구분할 수 있고, 한쪽만 가지고 있는 점이나 흉터 등과 같은 차별적인 특징으로도 구분할 수 있을 것 입니다<br>각 사람마다의 고유성(Identity)을 구분하는 것을 <strong>Identity comparison</strong> 이라고 합니다</p>
+<p>파이썬에서 두 피연산자들의 데이터 혹은 값이 같은지를 비교하고 싶을 때, <code>==</code> 연산자를 사용하고<br>고유값(파이썬에서는 객체마다 고유한 상수 ‘id’값을 가집니다)을 비교하고 싶을 때, <code>is</code> 연산자를 사용합니다</p>
+<h2 id="동등성-Equality"><a href="#동등성-Equality" class="headerlink" title="동등성 Equality =="></a>동등성 Equality <code>==</code></h2><ul>
+<li>피연산자들의 <strong>데이터/값(value)</strong> 이 같은지를 비교합니다</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>b = a</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a <span class="keyword">is</span> b</span><br><span class="line"><span class="literal">True</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a == b</span><br><span class="line"><span class="literal">True</span>  </span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="동일성-Identity-is"><a href="#동일성-Identity-is" class="headerlink" title="동일성 Identity is"></a>동일성 Identity <code>is</code></h2><ul>
+<li>피연산자들의 <strong>주소/고유한 상수(ID)</strong> 가 같은지 비교합니다</li>
+</ul>
+<blockquote>
+<p><code>id()</code> 의 반환값이 실제 메모리상의 주소는 아닙니다<br>하지만 해당 객체를 가리키는 유일한 상수입니다</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># a = [1, 2, 3]</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>c = list(a)</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a <span class="keyword">is</span> c</span><br><span class="line"><span class="literal">False</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a == c</span><br><span class="line"><span class="literal">True</span>  </span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>is</code> 연산자는 객체(object)의 id값을 <code>==</code> 연산자로 확인하는 것이라고 생각하시면 됩니다</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a <span class="keyword">is</span> c</span><br><span class="line"><span class="literal">False</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>id(a) == id(c)</span><br><span class="line"><span class="literal">False</span>  </span><br></pre></td></tr></table></figure>
+
+<br>
+
+<h1 id="결론"><a href="#결론" class="headerlink" title="결론"></a>결론</h1><p><code>is</code> 연산자는 다음 2가지 상황에서만 사용하는 것을 권장</p>
+<ul>
+<li>피연산자들이 <strong>같은 객체</strong> 인지 확인할 때</li>
+<li>객체가 <code>True</code>, <code>False</code>, <code>None</code> 와 같은 파이썬 상수와 비교할 때</li>
+</ul>
+<hr>
+<hr>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/PY-namespace/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="NUNU">
+      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="AttackOnNunu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/[object Object]/PY-namespace/" class="post-title-link" itemprop="url">(PYTHON) Namespace</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2020-01-24 15:39:59" itemprop="dateCreated datePublished" datetime="2020-01-24T15:39:59+09:00">2020-01-24</time>
+            </span>
+          
+
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/" itemprop="url" rel="index"><span itemprop="name">LANGUAGE</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/" itemprop="url" rel="index"><span itemprop="name">PYTHON</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/TERMINOLOGY/" itemprop="url" rel="index"><span itemprop="name">TERMINOLOGY</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">댓글: </span>
+                <a href="/[object Object]/PY-namespace/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/PY-namespace/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
+<li>옥스포드 사전? - <span class="exturl" data-url="aHR0cHM6Ly93d3cubGV4aWNvLmNvbS9kZWZpbml0aW9uL25hbWVzcGFjZQ==" title="https://www.lexico.com/definition/namespace">lexico.com<i class="fa fa-external-link"></i></span></li>
+<li>위키피디아 ‘네임스페이스’ - <span class="exturl" data-url="aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvTmFtZXNwYWNl" title="https://en.wikipedia.org/wiki/Namespace">wikipedia.org<i class="fa fa-external-link"></i></span></li>
+<li>이름공간이란? - <span class="exturl" data-url="aHR0cHM6Ly9weXRob24uYmFreWVvbm8ubmV0L2NoYXB0ZXItOC0zLmh0bWw=" title="https://python.bakyeono.net/chapter-8-3.html">파이썬 프로그래밍 입문서<i class="fa fa-external-link"></i></span></li>
+</ul>
+<blockquote>
+<p>개인적인 생각과 상상으로 작성한 내용들이 포함되어 있습니다</p>
+</blockquote>
+<hr>
+<br>
+
+<h1 id="Namespace"><a href="#Namespace" class="headerlink" title="Namespace?"></a>Namespace?</h1><blockquote>
+<p>생각보다 네임스페이스라는 용어를 자주 접하게 되어서 이참에 명확하게 정리해두고자 작성하게 되었습니다</p>
+</blockquote>
+<div class="note info">
+            <p><strong style="color:red">NOUN</strong><br>  <span style="color:green"><em>Computing</em></span><br>    A class of elements (e.g. addresses, file locations, etc.) in which each element has a name unique to that class, although it may be shared with elements in other classes.</p>
+          </div>
+
+<p>네임스페이스는 단어 그대로 name과 space가 합쳐져 이름을 가지는 공간이라는 뜻으로 컴퓨터학에서 사용되는 용어입니다</p>
+<p>쉽게 생각해서 어느 학교(프로그램)에 민수(객체)라는 이름을 가진 학생이 2명이 있다고 했을 때,<br>선생님이 그냥 “민수야 이것 좀 해봐” 라고 하면 둘 중 어느 민수를 지칭하는 건지 모릅니다<br>하지만 한 명의 민수는 1반에 속해있고 다른 민수는 8반에 속해있다고 하면 둘을 구분 지을 수 있습니다<br>여기서는 반이 네임스페이스의 역할을 한다고 볼 수 있습니다</p>
+<p>또 다른 예시로는,<br>‘python’ 이라는 용어는 컴퓨터학에서는 <strong>프로그래밍 언어</strong> 를 말하며 ‘파이썬’이라고 읽히지만<br>그리스 신화에서는 <strong>델토이 신탁소를 지배하는 거대한 뱀</strong> 을 가리키며 고대 그리스어로 ‘피톤’이라고 읽습니다<br>동물사전에는 <strong>비단 뱀</strong> 으로 정의됩니다 (google에서 이미지로 검색하면 비단 뱀 사진이 압도적으로 많습니다)</p>
+<blockquote>
+<p>파이썬 아이콘이 뱀 모양이기도 해서 오해할 수 있지만, 파이썬 언어의 창시자 귀도 반 로썸(Guido van Rossum)은 자신이 좋아하는 영국 코미디 프로인 ‘몬티 파이선의 날아다니는 서커스(Monty Python’s Flying Circus)’에서 영감을 얻었다고 합니다</p>
+</blockquote>
+<p>이렇게 한 단어 ‘python’은 여러 의미를 가지고 있는데 우리가 이들을 구분할 수 있는 이유는 무엇일까요?<br>본능적으로 알 수 있듯이, ‘python’이 <strong>컴퓨터</strong> 의 네임스페이스에 있으면 <strong>프로그래밍 언어</strong> 로,<br><strong>그리스 신화</strong> 의 네임스페이스에 있다면 <strong>거대한 뱀</strong> 으로, <strong>동물사전</strong> 이라는 네임스페이스면 <strong>비단 뱀</strong> 으로<br>우리는 인식할 수 있습니다.</p>
+<br>
+
+<h1 id="C-에서의-Namespace"><a href="#C-에서의-Namespace" class="headerlink" title="C++에서의 Namespace"></a>C++에서의 Namespace</h1><blockquote>
+<p>개인적으로 저는 C언어를 처음 배울 때 잘 몰라도 그냥 <code>#include &lt;stdio.h&gt;</code>를 입력 했었고,<br>  C++를 처음 배울 때도 일단 모르겠지만 <code>using namespace std</code>를 입력 했었던 것 같습니다</p>
+</blockquote>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">// This is how one brings a name into the current scope.  In this case, it's</span></span><br><span class="line"><span class="comment">// bringing them into global scope.</span></span><br><span class="line"><span class="keyword">using</span> <span class="built_in">std</span>::<span class="built_in">cout</span>;</span><br><span class="line"><span class="keyword">using</span> <span class="built_in">std</span>::<span class="built_in">endl</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> box1 &#123;</span><br><span class="line">    <span class="keyword">int</span> box_side = <span class="number">4</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> box2 &#123;</span><br><span class="line">    <span class="keyword">int</span> box_side = <span class="number">12</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> box_side = <span class="number">42</span>;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; box1::box_side &lt;&lt; <span class="built_in">endl</span>;  <span class="comment">// Outputs 4.</span></span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; box2::box_side &lt;&lt; <span class="built_in">endl</span>;  <span class="comment">// Outputs 12.</span></span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; box_side &lt;&lt; <span class="built_in">endl</span>;  <span class="comment">// Outputs 42.</span></span><br><span class="line">&#125;   </span><br></pre></td></tr></table></figure>
+
+<br>
+
+<h1 id="Python에서의-Namespace"><a href="#Python에서의-Namespace" class="headerlink" title="Python에서의 Namespace"></a>Python에서의 Namespace</h1><p>파이썬에서는 각각의 모듈(module)들이 네임스페이스 역할을 합니다.<br>모듈이 계층적인 패키지들에 속해있기 때문에 네임스페이스 또한 계층적인 성격을 띕니다.</p>
+<ul>
+<li>예를 들어, 2개의 함수 func1()과 func2() 그리고 1개의 클래스 class1을 가지는 모듈이 있다고 가정해 봅시다<br>모듈을 전체를 import하면 함수와 클래스 모두 잘 작동하는 것을 볼 수 있습니다<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># assume module a defines two functions : func1() and func2() and one class : class1</span></span><br><span class="line"><span class="keyword">import</span> modulea</span><br><span class="line"></span><br><span class="line">modulea.func1()</span><br><span class="line">modulea.func2()</span><br><span class="line">a = modulea.class1()  </span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ul>
+<ul>
+<li>하지만 모듈 내의 특정한 함수만 import하면 현제 작업하고 있는 네임스페이스에는 func2() 함수와 class1이 없는 것으로 인식됩니다<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># assume modulea defines two functions : func1() and func2() and one class : class1</span></span><br><span class="line"><span class="keyword">from</span> modulea <span class="keyword">import</span> func1</span><br><span class="line"></span><br><span class="line">func1()</span><br><span class="line">func2() <span class="comment"># this will fail as an undefined name, as will the full name modulea.func2()</span></span><br><span class="line">a = class1() <span class="comment"># this will fail as an undefined name, as will the full name modulea.class1()  </span></span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ul>
+<ul>
+<li>간혹 모듈의 이름이 너무 길어서 짧게 쓰고 싶을 때, <code>import ... as ...</code> 를 통해 임의로 이름을 바꿀 수 있습니다<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line">a = np.arange(<span class="number">1000</span>)  </span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/PY-input/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -563,648 +1052,11 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/PY-day5/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="NUNU">
-      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="AttackOnNunu">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/[object Object]/PY-day5/" class="post-title-link" itemprop="url">(PYTHON) Day - 5 Strings(1)</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">작성일</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2020-01-23 17:08:56" itemprop="dateCreated datePublished" datetime="2020-01-23T17:08:56+09:00">2020-01-23</time>
-            </span>
-          
-
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/" itemprop="url" rel="index"><span itemprop="name">LANGUAGE</span></a></span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/" itemprop="url" rel="index"><span itemprop="name">PYTHON</span></a></span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/HACKERRANK/" itemprop="url" rel="index"><span itemprop="name">HACKERRANK</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">댓글: </span>
-                <a href="/[object Object]/PY-day5/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/PY-day5/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          <br>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
-<li>문제 출처 - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vZGFzaGJvYXJk" title="https://www.hackerrank.com/dashboard">HackerRank<i class="fa fa-external-link"></i></span></li>
-<li>파이썬 연습 - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vZG9tYWlucy9weXRob24/ZmlsdGVycyU1QnN0YXR1cyU1RCU1QiU1RD11bnNvbHZlZCZiYWRnZV90eXBlPXB5dGhvbg==" title="https://www.hackerrank.com/domains/python?filters%5Bstatus%5D%5B%5D=unsolved&badge_type=python">Practice - Python<i class="fa fa-external-link"></i></span></li>
-</ul>
-<p>개인적인 생각과 상상으로 작성한 내용들이 포함되어 있습니다<br>문제를 풀고 <span class="label success"> Discussion Tab</span>을 참고하며 코드 스타일을 개선하려고 노력하고자 합니다</p>
-<hr>
-<br>
-
-<h1 id="HackerRank"><a href="#HackerRank" class="headerlink" title="HackerRank"></a>HackerRank</h1><blockquote>
-<p>Numpy 패키지와 관련된 내용은 수학적 내용들과 함께 다루기 위해 나중에 다시 정리하기로 했다.</p>
-</blockquote>
-<p>HackerRank의 Python 연습문제들은 아래와 같은 카테고리로 분류 된다:</p>
-<div class="note default">
-            <h2 id="Subdomain"><a href="#Subdomain" class="headerlink" title="Subdomain"></a>Subdomain</h2><ul><li><del>Introduction</del></li><li><del>Basic Data Types</del></li><li><strong style="color:blue">Strings</strong></li><li>Sets</li><li>Math</li><li>Itertools</li><li>Collections</li><li>Date and Time</li><li>Errors and Exceptions</li><li>Classes</li><li>Built-Ins</li><li>Python Functionals</li><li>Regex and Parsing</li><li>XML</li><li>Closures and Decorators</li><li>Numpy</li><li>Debugging</li></ul>
-          </div>
-
-<hr>
-<br>
-
-<h1 id="Strings"><a href="#Strings" class="headerlink" title="Strings"></a>Strings</h1><div class="note primary">
-            <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><ul><li><a href="#sWAP-cASE">sWAP cASE</a></li><li><a href="#String-Split-and-Join">String Split and Join</a></li><li><a href="#What's-Your-Name">What’s Your Name?</a>  </li></ul>
-          </div>
-
-<h2 id="기본-개념"><a href="#기본-개념" class="headerlink" title="기본 개념"></a>기본 개념</h2><h3 id="sWAP-cASE"><a href="#sWAP-cASE" class="headerlink" title="sWAP cASE"></a>sWAP cASE</h3><div class="note info">
-            <p>대문자는 소문자로, 소문자는 대문자로 바꾸는 문제</p>
-          </div>
-
-<div class="tabs" id="example1"><ul class="nav-tabs"><li class="tab active"><a href="#example1-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example1-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane active" id="example1-1"><p>HackerRank.com presents “Pythonist 2”.</p></div><div class="tab-pane" id="example1-2"><p>hACKERrANK.COM PRESENTS “pYTHONIST 2”.</p></div></div></div>
-
-<div class="note no-icon">
-            <p>반사적으로 떠오르는 풀이 방법, 문자열의 문자 하나하나를 반복문을 통해 확인하며 대소문자를 바꿈<br><span class="label danger"> 하지만 이는 굉장히 비효율적인 방법이다</span><br>String 타입은 immutable하기 때문에, 반복문을 지나면서 기존의 ans 변수가 수정되는 것이 아니라<br>새로운 String 객체를 만들어서 ans 변수에 선언되는 것이다</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">swap_case</span><span class="params">(s)</span>:</span></span><br><span class="line">  ans = <span class="string">""</span></span><br><span class="line">  <span class="keyword">for</span> letter <span class="keyword">in</span> s:</span><br><span class="line">      <span class="keyword">if</span> letter.isupper() <span class="keyword">is</span> <span class="literal">True</span>:</span><br><span class="line">          ans += letter.lower()</span><br><span class="line">      <span class="keyword">else</span>:</span><br><span class="line">          ans += letter.upper()</span><br><span class="line">  <span class="keyword">return</span> ans</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">  s = input()</span><br><span class="line">  result = swap_case(s)</span><br><span class="line">  print(result) </span><br></pre></td></tr></table></figure>
-          </div>
-
-<div class="note success">
-            <p>list comprehension을 사용한 방법과,<br>내장함수 <code>swapcase()</code> 를 사용하는 방법도 있다</p><p>각 수행시간을 측정해보면, list를 사용한 것이 가장 빠른 것을 알 수 있다</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">  <span class="keyword">import</span> time</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">swap_case_1</span><span class="params">(s)</span>:</span></span><br><span class="line">    ans = <span class="string">""</span></span><br><span class="line">    <span class="keyword">for</span> letter <span class="keyword">in</span> s:</span><br><span class="line">        <span class="keyword">if</span> letter.isupper() <span class="keyword">is</span> <span class="literal">True</span>:</span><br><span class="line">            ans += letter.lower()</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            ans += letter.upper()</span><br><span class="line">    <span class="keyword">return</span> ans</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">swap_case_2</span><span class="params">(s)</span>:</span></span><br><span class="line">    ans = [i.lower() <span class="keyword">if</span> i.isupper() <span class="keyword">else</span> i.upper() <span class="keyword">for</span> i <span class="keyword">in</span> s]</span><br><span class="line">    <span class="keyword">return</span> <span class="string">''</span>.join(ans)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">swap_case_3</span><span class="params">(s)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> s.swapcase()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    s = input()</span><br><span class="line"></span><br><span class="line">    start_1 = time.time()</span><br><span class="line">    result_1 = swap_case_1(s)</span><br><span class="line">    end_1 = time.time()</span><br><span class="line"></span><br><span class="line">    start_2 = time.time()</span><br><span class="line">    result_2 = swap_case_1(s)</span><br><span class="line">    end_2 = time.time()</span><br><span class="line"></span><br><span class="line">    start_3 = time.time()</span><br><span class="line">    result_3 = swap_case_1(s)</span><br><span class="line">    end_3 = time.time()</span><br><span class="line"></span><br><span class="line">    print(<span class="string">'result_1: '</span>, end_1 - start_1)  <span class="comment"># 5.4836273193359375e-05</span></span><br><span class="line">    print(<span class="string">'result_2: '</span>, end_2 - start_2)  <span class="comment"># 2.574920654296875e-05</span></span><br><span class="line">    print(<span class="string">'result_3: '</span>, end_3 - start_3)  <span class="comment"># 4.9114227294921875e-05  </span></span><br></pre></td></tr></table></figure>
-          </div>
-
-<hr>
-<h3 id="String-Split-and-Join"><a href="#String-Split-and-Join" class="headerlink" title="String Split and Join"></a>String Split and Join</h3><div class="note info">
-            <p>입력되는 문자열의 띄어쓰기 부분을 <code>-</code> 문자로 대체하는 문제<br><code>split()</code> 과 <code>join()</code> 함수를 사용하는 간단한 문제</p>
-          </div>
-
-<div class="tabs" id="example2"><ul class="nav-tabs"><li class="tab active"><a href="#example2-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example2-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane active" id="example2-1"><p>this is a string   </p></div><div class="tab-pane" id="example2-2"><p>this-is-a-string</p></div></div></div>
-
-<div class="note no-icon">
-            <p><code>split()</code> 함수는 파라미터 값 주어진 구분자(delimiter)로 문자열을 잘라 <span class="label danger"> list 타입</span> 으로 반환한다<br>(default값은 ‘ ‘ 공백이다)<br><code>join()</code> 함수는 문자열을 붙여주는데, 문자 사이 특정한 구분자를 넣고 싶으면 함수 앞에 (<code>&#39;&#39;.join()</code> 여기서 ‘’ 부분) 넣어주면 된다</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">split_and_join</span><span class="params">(line)</span>:</span></span><br><span class="line">  letters = line.split()</span><br><span class="line">  <span class="keyword">return</span> <span class="string">'-'</span>.join(letters)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">  line = input()</span><br><span class="line">  result = split_and_join(line)</span><br><span class="line">  print(result) </span><br></pre></td></tr></table></figure>
-          </div>
-
-<div class="note success">
-            <p><code>join()</code> 함수를 사용하지 않아도,<br><code>print()</code> 함수 안에서 unpacking을 통해 문자열을 합칠 수 있다<br>(<code>join()</code> 함수를 사용하지 않는 것이 실행속도가 더 빠른 것을 볼 수 있다)</p><blockquote><p>letters = [‘a’, ‘b’, ‘c’, ‘d’] 가 있을 때,<br>print(*letters) 를 하면<br>print(‘a’, ‘b’, ‘c’, ‘d’) 로 해석되기 때문에<br>a b c d 로 출력된다</p></blockquote><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">split_and_join</span><span class="params">(line)</span>:</span></span><br><span class="line">    letters = line.split()</span><br><span class="line">    <span class="keyword">return</span> <span class="string">'-'</span>.join(letters)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    line = input()</span><br><span class="line">    start_1 = time.time()</span><br><span class="line">    print(split_and_join(line))</span><br><span class="line">    end_1 = time.time()</span><br><span class="line"></span><br><span class="line">    start_2 = time.time()</span><br><span class="line">    print(*line.split(), sep=<span class="string">'-'</span>)</span><br><span class="line">    end_2 = time.time()</span><br><span class="line"></span><br><span class="line">    print(<span class="string">'result_1: '</span>, end_1 - start_1) <span class="comment"># 7.891654968261719e-05</span></span><br><span class="line">    print(<span class="string">'result_2: '</span>, end_2 - start_2) <span class="comment"># 5.412101745605469e-05 </span></span><br></pre></td></tr></table></figure>
-          </div>
-
-<p>**</p>
-<hr>
-<h3 id="What’s-Your-Name"><a href="#What’s-Your-Name" class="headerlink" title="What’s Your Name"></a>What’s Your Name</h3><div class="note info">
-            <p>이름(first name, last name)을 입력받고 아래 문장에 넣어서 출력하는 문제<br>Hello <code>firstname</code> <code>lastname</code>! You just delved into python.</p>
-          </div>
-
-<div class="tabs" id="example3"><ul class="nav-tabs"><li class="tab active"><a href="#example3-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example3-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane active" id="example3-1"><p>Ross<br>Taylor   </p></div><div class="tab-pane" id="example3-2"><p>Hello Ross Taylor! You just delved into python.</p></div></div></div>
-
-<div class="note success">
-            <p><code>format()</code> 함수를 사용하는 간단한 문제</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">print_full_name</span><span class="params">(a, b)</span>:</span></span><br><span class="line">  print(<span class="string">'Hello &#123;&#125; &#123;&#125;! You just delved into python.'</span>.format(a, b))</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">  first_name = input()</span><br><span class="line">  last_name = input()</span><br><span class="line">  print_full_name(first_name, last_name) </span><br></pre></td></tr></table></figure>
-          </div>
-
-<div class="note no-icon">
-            <p>old한 방식으로 <code>%</code>를 사용하는 방법과 그냥 쉼표 <code>,</code> 로 구분하는 방법이 있지만<br>그냥 <code>format()</code> 함수를 사용하는게 자료형을 생각하지 않아도 되고 가독성도 좋다</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">print_full_name</span><span class="params">(a, b)</span>:</span></span><br><span class="line">  print(<span class="string">'(Hello %s %s! You just delved into python.'</span>) % (a, b))</span><br><span class="line">  <span class="comment"># 쉼표로 구분할 때 띄워쓰기가 들어가는 것을 주의! + 기호로 띄워쓰기를 생략할 수 있다</span></span><br><span class="line">  <span class="comment"># print("Hello",a,b+"! You just delved into python.")</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">  first_name = input()</span><br><span class="line">  last_name = input()</span><br><span class="line">  print_full_name(first_name, last_name) </span><br></pre></td></tr></table></figure>
-          </div>
-
-<hr>
-<hr>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
-          
-        
-      
-    </div>
-
-    
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/PY-day4/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="NUNU">
-      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="AttackOnNunu">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/[object Object]/PY-day4/" class="post-title-link" itemprop="url">(PYTHON) Day - 4 Basic Data Types</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">작성일</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2020-01-22 15:10:24" itemprop="dateCreated datePublished" datetime="2020-01-22T15:10:24+09:00">2020-01-22</time>
-            </span>
-          
-
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/" itemprop="url" rel="index"><span itemprop="name">LANGUAGE</span></a></span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/" itemprop="url" rel="index"><span itemprop="name">PYTHON</span></a></span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/HACKERRANK/" itemprop="url" rel="index"><span itemprop="name">HACKERRANK</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">댓글: </span>
-                <a href="/[object Object]/PY-day4/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/PY-day4/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          <br>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
-<li>문제 출처 - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vZGFzaGJvYXJk" title="https://www.hackerrank.com/dashboard">HackerRank<i class="fa fa-external-link"></i></span></li>
-<li>파이썬 연습 - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vZG9tYWlucy9weXRob24/ZmlsdGVycyU1QnN0YXR1cyU1RCU1QiU1RD11bnNvbHZlZCZiYWRnZV90eXBlPXB5dGhvbg==" title="https://www.hackerrank.com/domains/python?filters%5Bstatus%5D%5B%5D=unsolved&badge_type=python">Practice - Python<i class="fa fa-external-link"></i></span></li>
-<li>파이썬 기본 자료형 - <span class="exturl" data-url="aHR0cHM6Ly93d3cudzNzY2hvb2xzLmNvbS9weXRob24vcHl0aG9uX2RhdGF0eXBlcy5hc3A=" title="https://www.w3schools.com/python/python_datatypes.asp">w3schools.com<i class="fa fa-external-link"></i></span></li>
-</ul>
-<p>개인적인 생각과 상상으로 작성한 내용들이 포함되어 있습니다<br>문제를 풀고 <span class="label success">Discussion Tab</span>을 참고하며 코드 스타일을 개선하려고 노력하고자 합니다</p>
-<hr>
-<br>
-
-<h1 id="HackerRank"><a href="#HackerRank" class="headerlink" title="HackerRank"></a>HackerRank</h1><blockquote>
-<p>Numpy 패키지와 관련된 내용은 수학적 내용들과 함께 다루기 위해 나중에 다시 정리하기로 했다.</p>
-</blockquote>
-<p>HackerRank의 Python 연습문제들은 아래와 같은 카테고리로 분류 된다:</p>
-<div class="note default">
-            <h2 id="Subdomain"><a href="#Subdomain" class="headerlink" title="Subdomain"></a>Subdomain</h2><ul><li><del>Introduction</del></li><li><strong style="color:blue">Basic Data Types</strong></li><li>Strings</li><li>Sets</li><li>Math</li><li>Itertools</li><li>Collections</li><li>Date and Time</li><li>Errors and Exceptions</li><li>Classes</li><li>Built-Ins</li><li>Python Functionals</li><li>Regex and Parsing</li><li>XML</li><li>Closures and Decorators</li><li>Numpy</li><li>Debugging</li></ul>
-          </div>
-
-<hr>
-<br>
-
-<h1 id="Basic-Data-Types"><a href="#Basic-Data-Types" class="headerlink" title="Basic Data Types"></a>Basic Data Types</h1><div class="note primary">
-            <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><ul><li><a href="#Lists">Lists</a></li><li><a href="#Tuples">Tuples</a></li><li><a href="#List-Comprehensions">List Comprehensions</a></li><li><a href="#Find-the-Runner-Up-Score">Find the Runner-Up Score!</a></li><li><a href="#Nested-Lists">Nested Lists</a></li><li><a href="#Finding-the-percentage">Finding the percentage</a></li></ul>
-          </div>
-
-<h2 id="개념-공부"><a href="#개념-공부" class="headerlink" title="개념 공부"></a>개념 공부</h2><p>파이썬의 기본 데이터 타입들에 대해 알아보자</p>
-<div class="tabs" id="python-내장-데이터-타입"><ul class="nav-tabs"><li class="tab"><a href="#python-내장-데이터-타입-1"><i class="fa fa-archive"></i>Built-in Data Types</a></li><li class="tab"><a href="#python-내장-데이터-타입-2"><i class="fa fa-archive"></i>Getting the Data Type</a></li><li class="tab"><a href="#python-내장-데이터-타입-3"><i class="fa fa-Python"></i>Setting the Data Type</a></li></ul><div class="tab-content"><div class="tab-pane" id="python-내장-데이터-타입-1"><table>
-<thead>
-<tr>
-<th align="center">categories</th>
-<th align="right">python code</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">Text Type:</td>
-<td align="right"><span style="color:red; text-align:right">str</span></td>
-</tr>
-<tr>
-<td align="center">Numeric Types:</td>
-<td align="right"><span style="color:red; text-align:right">int, float, complex</span></td>
-</tr>
-<tr>
-<td align="center">Sequence Types:</td>
-<td align="right"><span style="color:red">list, tuple, range</span></td>
-</tr>
-<tr>
-<td align="center">Mapping Type:</td>
-<td align="right"><span style="color:red">dict</span></td>
-</tr>
-<tr>
-<td align="center">Set Types:</td>
-<td align="right"><span style="color:red">set, frozenset</span></td>
-</tr>
-<tr>
-<td align="center">Boolean Type:</td>
-<td align="right"><span style="color:red">bool</span></td>
-</tr>
-<tr>
-<td align="center">Binary Types:</td>
-<td align="right"><span style="color:red">bytes, bytearray, memoryview</span></td>
-</tr>
-</tbody></table></div><div class="tab-pane" id="python-내장-데이터-타입-2"><ul>
-<li><strong>type()</strong> 함수를 통해 객체의 데이터 타입을 알 수 있다<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x = <span class="number">5</span></span><br><span class="line">print(type(x))</span><br><span class="line"><span class="comment"># output</span></span><br><span class="line"><span class="comment"># &lt;class 'int'&gt;  </span></span><br></pre></td></tr></table></figure>
-</li>
-</ul></div><div class="tab-pane" id="python-내장-데이터-타입-3"><ul>
-<li>Python에서는 <strong>변수에 값을 할당하면</strong> 자동으로 데이터 타입이 결정된다.</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th align="center">Example</th>
-<th align="right">Data type</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">x = “Hello World”</td>
-<td align="right"><strong>str</strong></td>
-</tr>
-<tr>
-<td align="center">x = 20</td>
-<td align="right"><strong>int</strong></td>
-</tr>
-<tr>
-<td align="center">x = 20.5</td>
-<td align="right"><strong>float</strong></td>
-</tr>
-<tr>
-<td align="center">x = 1j</td>
-<td align="right"><strong>complex</strong></td>
-</tr>
-<tr>
-<td align="center">x = [“apple”, “banana”, “cherry”]</td>
-<td align="right"><strong>list</strong></td>
-</tr>
-<tr>
-<td align="center">x = (“apple”, “banana”, “cherry”)</td>
-<td align="right"><strong>tuple</strong></td>
-</tr>
-<tr>
-<td align="center">x = range(6)</td>
-<td align="right"><strong>range</strong></td>
-</tr>
-<tr>
-<td align="center">x = {“name” : “John”, “age” : 36}</td>
-<td align="right"><strong>dict</strong></td>
-</tr>
-<tr>
-<td align="center">x = {“apple”, “banana”, “cherry”}</td>
-<td align="right"><strong>set</strong></td>
-</tr>
-<tr>
-<td align="center">x = frozenset({“apple”, “banana”, “cherry”})</td>
-<td align="right"><strong>frozenset</strong></td>
-</tr>
-<tr>
-<td align="center">x = True</td>
-<td align="right"><strong>bool</strong></td>
-</tr>
-<tr>
-<td align="center">x = b”Hello”</td>
-<td align="right"><strong>bytes</strong></td>
-</tr>
-<tr>
-<td align="center">x = bytearray(5)</td>
-<td align="right"><strong>bytearray</strong></td>
-</tr>
-<tr>
-<td align="center">x = memoryview(bytes(5))</td>
-<td align="right"><strong>memoryview</strong></td>
-</tr>
-</tbody></table></div></div></div>
-
-<h3 id="Lists"><a href="#Lists" class="headerlink" title="Lists"></a>Lists</h3><ul>
-<li><strong>INPUT</strong><br>입력받을 커맨드 개수 n을 입력받는다<br>n 줄에 거쳐 커맨드를 입력받는다<blockquote>
-<p>1 insert i e: Insert integer  at position .<br>2 print: Print the list.<br>3 remove e: Delete the first occurrence of integer .<br>4 append e: Insert integer  at the end of the list.<br>5 sort: Sort the list.<br>6 pop: Pop the last element from the list.<br>7 reverse: Reverse the list.</p>
-</blockquote>
-</li>
-</ul>
-<div class="note no-icon">
-            <p>if-else문이나 switch문을 사용하면 되는 간단한 예제<br>하지만 python에는 switch문이 없기 때문에 dict 자료형으로 정리해서 적용하는 스타일로 코딩</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">N = int(input())</span><br><span class="line"></span><br><span class="line">my_list = []</span><br><span class="line">command = &#123;</span><br><span class="line">    <span class="string">'insert'</span>: my_list.insert,</span><br><span class="line">    <span class="string">'print'</span>: <span class="keyword">lambda</span> : print(my_list),</span><br><span class="line">    <span class="string">'remove'</span>: my_list.remove,</span><br><span class="line">    <span class="string">'append'</span>: my_list.append,</span><br><span class="line">    <span class="string">'sort'</span>: my_list.sort,</span><br><span class="line">    <span class="string">'pop'</span>: my_list.pop,</span><br><span class="line">    <span class="string">'reverse'</span>: my_list.reverse</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">for</span> _ <span class="keyword">in</span> range(N):</span><br><span class="line">    usr_c, *args = input().split()</span><br><span class="line"></span><br><span class="line">    command[usr_c](*map(int, args))  </span><br></pre></td></tr></table></figure>
-          </div>
-
-<div class="note success">
-            <p>@lordmauve 사용자의 말에 따르면,</p><ul><li>‘if/else문’ 은 많은 반복성과 유지/보수성이 떨어진다</li><li>‘eval()’ 함수를 사용하는 것은 보안과 성능 면에서 모두 떨어진다</li><li>‘dict 자료형’ 에 명령어들을 담아서 사용하는 것은 나쁘지 않으나,<br>모든 메소드들을 정확히 입력해야하며 약간의 반복성을 띈다</li><li>확장성을 위해 ‘getattr()’를 사용하는 것을 권장 <del>(하는데 아직은 잘 이해가 안된다)</del><br>(print() 메소드를 따로 설정하는 것을 봤을 때,<br>아마 내장함수 list의 네임스페이스에 명령어들이 이미 포함되어 있어서 그런 것 같다)</li></ul><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">mylist = []</span><br><span class="line"><span class="keyword">for</span> _ <span class="keyword">in</span> range(int(input())):</span><br><span class="line">    inst = input().split()</span><br><span class="line">    <span class="keyword">if</span> inst[<span class="number">0</span>] == <span class="string">'print'</span>:</span><br><span class="line">        print(mylist)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        getattr(mylist, inst[<span class="number">0</span>])(*map(int, inst[<span class="number">1</span>:])) </span><br></pre></td></tr></table></figure>
-          </div>
-
-<h3 id="Tuples"><a href="#Tuples" class="headerlink" title="Tuples"></a>Tuples</h3><ul>
-<li><strong>tuple</strong> 보다는 <code>hash()</code> 함수에 대해 궁금해지는 문제…</li>
-</ul>
-<div class="note no-icon">
-            <ul><li>tuple의 해시 값을 알아내는 문제<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">  n = int(input())</span><br><span class="line">  integer_list = tuple(map(int, input().split()))</span><br><span class="line"></span><br><span class="line">  print(hash(integer_list))  </span><br></pre></td></tr></table></figure></li></ul>
-          </div>
-
-<h3 id="List-Comprehensions"><a href="#List-Comprehensions" class="headerlink" title="List Comprehensions"></a>List Comprehensions</h3><ul>
-<li><p>직육면체의 크기(차원)를 나타내는 세 정수 (x, y, z)를 입력 받고 비교값 N을 입력받는다<br>3차원 공간에서 해당 직육면체 범위 안의 값들 중 임의의 (i, j, k) 좌표를 가져왔을 때,<br>i + j + k의 값이 N과 다른 모든 좌표값을 출력하는 문제<br>(문제 설명부터 길다…)</p>
-<div class="tabs" id="example"><ul class="nav-tabs"><li class="tab active"><a href="#example-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane active" id="example-1"><p>1<br>1<br>1<br>2</p></div><div class="tab-pane" id="example-2"><p>[[0, 0, 0], [0, 0, 1], [0, 1, 0], [1, 0, 0], [1, 1, 1]]</p></div></div></div>
-
-<div class="note no-icon">
-            <ul><li>python의 comprehension은 반복적으로 생성가능한 객체를 생성하는 방법이다<br>본 예제에서 사용되는 list 외에도 set, dict, generator expression에서 사용될 수 있다<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">x, y, z, n = (int(input()) <span class="keyword">for</span> _ <span class="keyword">in</span> range(<span class="number">4</span>))</span><br><span class="line"></span><br><span class="line">print([[i, j, k] <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>, x+<span class="number">1</span>) <span class="keyword">for</span> j <span class="keyword">in</span> range(<span class="number">0</span>, y+<span class="number">1</span>) <span class="keyword">for</span> k <span class="keyword">in</span> range(<span class="number">0</span>, z+<span class="number">1</span>) <span class="keyword">if</span> (i+j+k != n)])  </span><br></pre></td></tr></table></figure></li></ul>
-          </div>
-
-
-</li>
-</ul>
-<h3 id="Find-the-Runner-Up-Score"><a href="#Find-the-Runner-Up-Score" class="headerlink" title="Find the Runner-Up Score"></a>Find the Runner-Up Score</h3><ul>
-<li><p>Runner up이 2등을 말한다는걸 처음 알게 되었다<br>그냥 단순히 1등, 2등, 3등을 first prize, second prize, third prize로만 알고 있었는데<br>1등을 grand prize 혹은 winner라고 표현하듯이 2등도 runner up이라는 표현이 있었다<br>(3등까지 표현하고 싶다면, 2등을 first runner up 3등을 second runner up 이라고 한다)</p>
-</li>
-<li><p>몇 명의 주자가 있는지 n으로 입력 받고<br>각 주자들의 성적(score)을 배열에 입력 받아 2등의 성적을 출력하는 문제</p>
-<div class="tabs" id="example2"><ul class="nav-tabs"><li class="tab active"><a href="#example2-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example2-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane active" id="example2-1"><p>5<br>2 3 6 6 5</p></div><div class="tab-pane" id="example2-2"><p>5</p></div></div></div>
-
-<div class="note no-icon">
-            <ul><li>2등만 찾으면 되기 때문에 최대값(1등)을 제거하고 다시 최대값을 찾는 방식으로 접근했다<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">n = int(input())</span><br><span class="line">arr = list(map(int, input().split()))</span><br><span class="line"></span><br><span class="line">winner_score = max(arr)</span><br><span class="line">runner_up_score = max([runner <span class="keyword">for</span> runner <span class="keyword">in</span> arr <span class="keyword">if</span> runner != winner_score])</span><br><span class="line">print(runner_up_score)  </span><br></pre></td></tr></table></figure></li></ul>
-          </div>
-
-
-</li>
-</ul>
-<h3 id="Nested-Lists"><a href="#Nested-Lists" class="headerlink" title="Nested Lists"></a>Nested Lists</h3><ul>
-<li><p>물리 수업을 듣는 학생 수 N을 입력 받고, 학생 이름과 성적을 n번 반복하며 입력 받음<br>성적이 밑에서 2번째인 학생을 출력하는 문제 (성적이 같은 학생은 알파벳 순으로 출력)<br>(nested list를 사용해야 함)</p>
-<div class="tabs" id="example3"><ul class="nav-tabs"><li class="tab active"><a href="#example3-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example3-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane active" id="example3-1"><p>5<br>Harry<br>37.21<br>Berry<br>37.21<br>Tina<br>37.2<br>Akriti<br>41<br>Harsh<br>39</p></div><div class="tab-pane" id="example3-2"><p>Berry<br>Harry</p></div></div></div>
-
-<div class="note no-icon">
-            <ul><li>dict 자료형으로 접근하려고 했는데 key, value로 정렬하는 등 아직 익숙하지 못해서 에러가 많이 발생함<br>2번째로 낮은 값을 찾는데 <code>set()</code> 집합을 이용하는 것이 좋다는 것을 복습함<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">  marksheet = []</span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span> _ <span class="keyword">in</span> range(<span class="number">0</span>,int(input())):</span><br><span class="line">      marksheet.append([input(), float(input())])</span><br><span class="line"></span><br><span class="line">  second_highest = sorted(list(set([marks <span class="keyword">for</span> name, marks <span class="keyword">in</span> marksheet])))[<span class="number">1</span>]</span><br><span class="line"></span><br><span class="line">  print(<span class="string">'\n'</span>.join([a <span class="keyword">for</span> a,b <span class="keyword">in</span> sorted(marksheet) <span class="keyword">if</span> b == second_highest]))  </span><br></pre></td></tr></table></figure></li></ul>
-          </div>
-
-
-</li>
-</ul>
-<h3 id="Finding-the-percentage"><a href="#Finding-the-percentage" class="headerlink" title="Finding the percentage"></a>Finding the percentage</h3><ul>
-<li>학생 수 N을 입력 받고,<br>각 학생의 이름과 수학, 물리, 화학 성적을 입력 받는다<br>마지막 줄에 입력받은 학생의 이름의 성적의 평균을 출력하는 문제<br>(dict 자료형을 꼭 사용하라고 나와있다)</li>
-</ul>
-<div class="tabs" id="example4"><ul class="nav-tabs"><li class="tab active"><a href="#example4-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example4-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane active" id="example4-1"><p>3<br>Krishna 67 68 69<br>Arjun 70 98 63<br>Malika 52 56 60<br>Malika</p></div><div class="tab-pane" id="example4-2"><p>56.00</p></div></div></div>
-
-<div class="note no-icon">
-            <ul><li>출력을 소수점 2번째 자리까지 지정해 줘야 하는 것을 주의!<br><code>{0:.2f}.format()</code> 복습 복습<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">  n = int(input())</span><br><span class="line">  student_marks = &#123;&#125;</span><br><span class="line">  <span class="keyword">for</span> _ <span class="keyword">in</span> range(n):</span><br><span class="line">      name, *line = input().split()</span><br><span class="line">      scores = list(map(float, line))</span><br><span class="line">      student_marks[name] = scores</span><br><span class="line">  query_name = input()</span><br><span class="line"></span><br><span class="line">  target = student_marks[query_name]</span><br><span class="line"></span><br><span class="line">  sum = <span class="number">0</span></span><br><span class="line">  <span class="keyword">for</span> num <span class="keyword">in</span> target:</span><br><span class="line">      sum += float(num)</span><br><span class="line"></span><br><span class="line">  print(<span class="string">"&#123;0:.2f&#125;"</span>.format(sum/len(target)))  </span><br></pre></td></tr></table></figure></li></ul>
-          </div>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
-          
-        
-      
-    </div>
-
-    
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/4/"><i class="fa fa-angle-left" aria-label="이전 페이지"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><span class="page-number current">5</span><a class="page-number" href="/page/6/">6</a><span class="space">&hellip;</span><a class="page-number" href="/page/23/">23</a><a class="extend next" rel="next" href="/page/6/"><i class="fa fa-angle-right" aria-label="다음 페이지"></i></a>
+    <a class="extend prev" rel="prev" href="/page/4/"><i class="fa fa-angle-left" aria-label="이전 페이지"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><span class="page-number current">5</span><a class="page-number" href="/page/6/">6</a><span class="space">&hellip;</span><a class="page-number" href="/page/24/">24</a><a class="extend next" rel="next" href="/page/6/"><i class="fa fa-angle-right" aria-label="다음 페이지"></i></a>
   </nav>
 
 
@@ -1248,7 +1100,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">69</span>
+                    <span class="site-state-item-count">71</span>
                     <span class="site-state-item-name">포스트</span>
                   </a>
                 </div>

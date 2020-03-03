@@ -18,6 +18,8 @@ subtitle: 용어 정리
 - 파이썬 선 번역 - [kenial.tistory.com](https://kenial.tistory.com/903)
 - sytax error not a chance - [stackoverflow.com](https://stackoverflow.com/questions/17811855/syntax-error-not-a-chance)
 
+> 개인적인 생각과 상상으로 작성한 내용들이 포함되어 있습니다
+
 ---
 
 {% note info %}

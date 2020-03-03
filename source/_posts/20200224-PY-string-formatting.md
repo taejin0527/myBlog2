@@ -13,6 +13,8 @@ subtitle: 용어 정리
 
 - Python 공식 문서 - [7. Input and Output](https://docs.python.org/3/tutorial/inputoutput.html)
 
+> 개인적인 생각과 상상으로 작성한 내용들이 포함되어 있습니다
+
 ---
 
 {% note info %}
