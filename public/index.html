@@ -356,6 +356,233 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/PY-day15/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="NUNU">
+      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="AttackOnNunu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/[object Object]/PY-day15/" class="post-title-link" itemprop="url">(PYTHON) Day - 15 Itertools(2)</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2020-03-06 16:50:48" itemprop="dateCreated datePublished" datetime="2020-03-06T16:50:48+09:00">2020-03-06</time>
+            </span>
+          
+
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/" itemprop="url" rel="index"><span itemprop="name">LANGUAGE</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/" itemprop="url" rel="index"><span itemprop="name">PYTHON</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/HACKERRANK/" itemprop="url" rel="index"><span itemprop="name">HACKERRANK</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">댓글: </span>
+                <a href="/[object Object]/PY-day15/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/PY-day15/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
+<li>문제 출처 - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vZGFzaGJvYXJk" title="https://www.hackerrank.com/dashboard">HackerRank<i class="fa fa-external-link"></i></span></li>
+<li>파이썬 연습 - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vZG9tYWlucy9weXRob24/ZmlsdGVycyU1QnN0YXR1cyU1RCU1QiU1RD11bnNvbHZlZCZiYWRnZV90eXBlPXB5dGhvbg==" title="https://www.hackerrank.com/domains/python?filters%5Bstatus%5D%5B%5D=unsolved&badge_type=python">Practice - Python<i class="fa fa-external-link"></i></span></li>
+</ul>
+<p>개인적인 생각과 상상으로 작성한 내용들이 포함되어 있습니다<br>문제를 풀고 <span class="label success"> Discussion Tab</span>을 참고하며 코드 스타일을 개선하려고 노력하고자 합니다</p>
+<hr>
+<h1 id="HackerRank"><a href="#HackerRank" class="headerlink" title="HackerRank"></a>HackerRank</h1><div class="spoiler collapsed">
+    <div class="spoiler-title">
+        HackerRank의 Python 연습문제들은 아래와 같은 카테고리로 분류 된다
+    </div>
+    <div class="spoiler-content">
+        <h2 id="Subdomain"><a href="#Subdomain" class="headerlink" title="Subdomain"></a>Subdomain</h2><ul>
+<li><del>Introduction</del></li>
+<li><del>Basic Data Types</del></li>
+<li><del>Strings</del></li>
+<li><del>Sets</del></li>
+<li><del>Math</del></li>
+<li><strong style="color:blue">Itertools</strong></li>
+<li>Collections</li>
+<li>Date and Time</li>
+<li>Errors and Exceptions</li>
+<li>Classes</li>
+<li>Built-Ins</li>
+<li>Python Functionals</li>
+<li>Regex and Parsing</li>
+<li>XML</li>
+<li>Closures and Decorators</li>
+<li>Numpy</li>
+<li>Debugging</li>
+</ul>
+
+    </div>
+</div>
+
+<hr>
+<h1 id="Itertools"><a href="#Itertools" class="headerlink" title="Itertools"></a>Itertools</h1><div class="note no-icon">
+            <div class="note primary no-icon">            <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><ul><li><a href="#itertools-product">itertools.product()</a></li><li><a href="#itertools-permutations">itertools.permutations()</a></li><li><a href="#itertools-combinations">itertools.combinations()</a></li><li><a href="#itertools-combinations-with-replacement">itertools.combinations_with_replacement()</a></li><li><a href="#Compress-the-String">Compress the String!</a></li><li><a href="#Iterables-and-Iterators">Iterables and Iterators</a></li><li><a href="#Maximize-It">Maximize It!</a></li></ul>          </div><hr><h2 id="itertools-product"><a href="#itertools-product" class="headerlink" title="itertools.product()"></a>itertools.product()</h2><h2 id="itertools-permutations"><a href="#itertools-permutations" class="headerlink" title="itertools.permutations()"></a>itertools.permutations()</h2><h2 id="itertools-combinations"><a href="#itertools-combinations" class="headerlink" title="itertools.combinations()"></a>itertools.combinations()</h2><h2 id="itertools-combinations-with-replacement"><a href="#itertools-combinations-with-replacement" class="headerlink" title="itertools.combinations_with_replacement()"></a>itertools.combinations_with_replacement()</h2><h2 id="Compress-the-String"><a href="#Compress-the-String" class="headerlink" title="Compress the String!"></a>Compress the String!</h2><h2 id="Iterables-and-Iterators"><a href="#Iterables-and-Iterators" class="headerlink" title="Iterables and Iterators"></a>Iterables and Iterators</h2><h2 id="Maximize-It"><a href="#Maximize-It" class="headerlink" title="Maximize It!"></a>Maximize It!</h2>
+          </div>
+
+<hr>
+<hr>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/PY-day14/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -376,7 +603,7 @@
           <h2 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/[object Object]/PY-day14/" class="post-title-link" itemprop="url">(PYTHON) Day - 14 Itertools</a>
+                <a href="/[object Object]/PY-day14/" class="post-title-link" itemprop="url">(PYTHON) Day - 14 Itertools(1)</a>
               
             
           </h2>
@@ -520,7 +747,7 @@
 
 <hr>
 <h1 id="Itertools"><a href="#Itertools" class="headerlink" title="Itertools"></a>Itertools</h1><div class="note no-icon">
-            <div class="note primary no-icon">            <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><ul><li><a href="#itertools-product">itertools.product()</a></li><li><a href="#itertools-permutations">itertools.permutations()</a></li><li><a href="#itertools-combinations">itertools.combinations()</a></li><li><a href="#itertools-combinations-with-replacement">itertools.combinations_with_replacement()</a></li><li><a href="#Compress-the-String">Compress the String!</a></li><li><a href="#Iterables-and-Iterators">Iterables and Iterators</a></li><li><a href="#Maximize-It">Maximize It!</a></li></ul>          </div><hr><h2 id="itertools-product"><a href="#itertools-product" class="headerlink" title="itertools.product()"></a>itertools.product()</h2><h2 id="itertools-permutations"><a href="#itertools-permutations" class="headerlink" title="itertools.permutations()"></a>itertools.permutations()</h2><h2 id="itertools-combinations"><a href="#itertools-combinations" class="headerlink" title="itertools.combinations()"></a>itertools.combinations()</h2><h2 id="itertools-combinations-with-replacement"><a href="#itertools-combinations-with-replacement" class="headerlink" title="itertools.combinations_with_replacement()"></a>itertools.combinations_with_replacement()</h2><h2 id="Compress-the-String"><a href="#Compress-the-String" class="headerlink" title="Compress the String!"></a>Compress the String!</h2><h2 id="Iterables-and-Iterators"><a href="#Iterables-and-Iterators" class="headerlink" title="Iterables and Iterators"></a>Iterables and Iterators</h2><h2 id="Maximize-It"><a href="#Maximize-It" class="headerlink" title="Maximize It!"></a>Maximize It!</h2>
+            <div class="note primary no-icon">            <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><p>다음 장에서…</p>          </div><hr><div class="note no-icon">            <h2 id="기본-개념"><a href="#기본-개념" class="headerlink" title="기본 개념"></a>기본 개념</h2><p><span class="label warning"> <strong>Itertools</strong></span><br>itertools 모듈을 사용하면 빠르고 효율적으로 메모리를 사용하는 반복자를 사용할 수 있다.<br>모듈의 함수들은 다음과 같이 크게 3가지 용도로 구분할 수 있다.</p><p><span class="label warning"> <strong>Infinite Iterators</strong></span><br><span class="label primary"> 무한으로 반복</span>할수 있는 함수로 3가지가 있다.</p><table><thead><tr><th>Iterator</th><th>Arguments</th><th>Results</th><th>Example</th></tr></thead><tbody><tr><td>count()</td><td>start, [step]</td><td>start, start+step, start+2*step, …</td><td>count(10) –&gt; 10 11 12 13 14 …</td></tr><tr><td>cycle()</td><td>p</td><td>p0, p1, … plast, p0, p1, …</td><td>cycle(‘ABCD’) –&gt; A B C D A B C D …</td></tr><tr><td>repeat()</td><td>elem [,n]</td><td>elem, elem, elem, … endlessly or up to n times</td><td>repeat(10, 3) –&gt; 10 10 10</td></tr></tbody></table><p><span class="label warning"> <strong>Iterators that Terminate</strong></span><br>itertools 모듈 대부분의 비중을 차지하는 이 12개의 함수들은 <span class="label primary"> 유한번 반복</span>하는 함수들이다.</p><table><thead><tr><th>Iterator</th><th>Arguments</th><th>Results</th><th>Example</th></tr></thead><tbody><tr><td>accumulate()</td><td>p [,func]</td><td>p0, p0+p1, p0+p1+p2, …</td><td>accumulate([1,2,3,4,5]) –&gt; 1 3 6 10 15</td></tr><tr><td>chain()</td><td>p, q, …</td><td>p0, p1, … plast, q0, q1, …</td><td>chain(‘ABC’, ‘DEF’) –&gt; A B C D E F</td></tr><tr><td>chain.from_iterable()</td><td>iterable</td><td>p0, p1, … plast, q0, q1, …</td><td>chain.from_iterable([‘ABC’, ‘DEF’]) –&gt; A B C D E F</td></tr><tr><td>compress()</td><td>data, selectors</td><td>(d[0] if s[0]), (d[1] if s[1]), …</td><td>compress(‘ABCDEF’, [1,0,1,0,1,1]) –&gt; A C E F</td></tr><tr><td>dropwhile()</td><td>pred, seq</td><td>seq[n], seq[n+1], starting when pred fails</td><td>dropwhile(lambda x: x&lt;5, [1,4,6,4,1]) –&gt; 6 4 1</td></tr><tr><td>filterfalse()</td><td>pred, seq</td><td>elements of seq where pred(elem) is false</td><td>filterfalse(lambda x: x%2, range(10)) –&gt; 0 2 4 6 8</td></tr><tr><td>groupby()</td><td>iterable[, key]</td><td>sub-iterators grouped by value of key(v)</td><td></td></tr><tr><td>islice()</td><td>seq, [start,] stop [, step]</td><td>elements from seq[start:stop:step]</td><td>islice(‘ABCDEFG’, 2, None) –&gt; C D E F G</td></tr><tr><td>starmap()</td><td>func, seq</td><td>func(<em>seq[0]), func(</em>seq[1]), …</td><td>starmap(pow, [(2,5), (3,2), (10,3)]) –&gt; 32 9 1000</td></tr><tr><td>takewhile()</td><td>pred, seq</td><td>seq[0], seq[1], until pred fails</td><td>takewhile(lambda x: x&lt;5, [1,4,6,4,1]) –&gt; 1 4</td></tr><tr><td>tee()</td><td>it, n</td><td>it1, it2, … itn  splits one iterator into n</td><td></td></tr><tr><td>zip_longest()</td><td>p, q, …</td><td>(p[0], q[0]), (p[1], q[1]), …</td><td>zip_longest(‘ABCD’, ‘xy’, fillvalue=’-‘) –&gt; Ax By C- D-</td></tr></tbody></table><p><span class="label warning"> <strong>Combinatoric Generators</strong></span><br>데이터들의 <span class="label primary"> 순열과 조합</span>(combination &amp; permutation)을 만드는 함수로 4가지가 있다.</p><table><thead><tr><th>Iterator</th><th>Arguments</th><th>Results</th><th>Example</th></tr></thead><tbody><tr><td>product()</td><td>p, q, … [repeat=1]</td><td>cartesian product, equivalent to a nested for-loop</td><td>AA AB AC AD BA BB BC BD CA CB CC CD DA DB DC DD</td></tr><tr><td>permutations()</td><td>p[, r]</td><td>r-length tuples, all possible orderings, no repeated elements</td><td>AB AC AD BA BC BD CA CB CD DA DB DC</td></tr><tr><td>combinations()</td><td>p, r</td><td>r-length tuples, in sorted order, no repeated elements</td><td>AB AC AD BC BD CD</td></tr><tr><td>combinations_with_replacement()</td><td>p, r</td><td>r-length tuples, in sorted order, with repeated elements</td><td>AA AB AC AD BB BC BD CC CD DD</td></tr></tbody></table><hr><h2 id="자세한-학습-참고"><a href="#자세한-학습-참고" class="headerlink" title="자세한 학습 (참고)"></a>자세한 학습 (참고)</h2><p><span class="exturl" data-url="aHR0cHM6Ly9ueXUtY2RzLmdpdGh1Yi5pby9weXRob24taXRlcnRvb2xzLw==" title="https://nyu-cds.github.io/python-itertools/">The itertools Module<i class="fa fa-external-link"></i></span></p>          </div>
           </div>
 
 <hr>
@@ -583,7 +810,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/PY-day-13/">
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/PY-day13/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="NUNU">
@@ -603,7 +830,7 @@
           <h2 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/[object Object]/PY-day-13/" class="post-title-link" itemprop="url">(PYTHON) Day - 13 Math(2)</a>
+                <a href="/[object Object]/PY-day13/" class="post-title-link" itemprop="url">(PYTHON) Day - 13 Math(2)</a>
               
             
           </h2>
@@ -675,8 +902,8 @@
                 </span>
             
                 <span class="post-meta-item-text">댓글: </span>
-                <a href="/[object Object]/PY-day-13/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/PY-day-13/" itemprop="commentCount"></span>
+                <a href="/[object Object]/PY-day13/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/PY-day13/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -795,234 +1022,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/PY-pow-vs-mathpow/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="NUNU">
-      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="AttackOnNunu">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/[object Object]/PY-pow-vs-mathpow/" class="post-title-link" itemprop="url">(PYTHON) pow() vs math.pow()</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">작성일</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2020-03-02 22:37:17" itemprop="dateCreated datePublished" datetime="2020-03-02T22:37:17+09:00">2020-03-02</time>
-            </span>
-          
-
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/" itemprop="url" rel="index"><span itemprop="name">LANGUAGE</span></a></span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/" itemprop="url" rel="index"><span itemprop="name">PYTHON</span></a></span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/TERMINOLOGY/" itemprop="url" rel="index"><span itemprop="name">TERMINOLOGY</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">댓글: </span>
-                <a href="/[object Object]/PY-pow-vs-mathpow/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/PY-pow-vs-mathpow/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          <br>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
-<li>Difference between pow() and math.pow()- <span class="exturl" data-url="aHR0cHM6Ly9zdGFja292ZXJmbG93LmNvbS9xdWVzdGlvbnMvMTAyODI2NzQvZGlmZmVyZW5jZS1iZXR3ZWVuLXRoZS1idWlsdC1pbi1wb3ctYW5kLW1hdGgtcG93LWZvci1mbG9hdHMtaW4tcHl0aG9u" title="https://stackoverflow.com/questions/10282674/difference-between-the-built-in-pow-and-math-pow-for-floats-in-python">stackoverflow.com<i class="fa fa-external-link"></i></span></li>
-<li>Python pow - <span class="exturl" data-url="aHR0cHM6Ly93d3cuam91cm5hbGRldi5jb20vMjMwMDIvcHl0aG9uLXBvdw==" title="https://www.journaldev.com/23002/python-pow">journaldev.com<i class="fa fa-external-link"></i></span></li>
-<li>파이썬에서 제곱을 할때요 - <span class="exturl" data-url="aHR0cHM6Ly9lZHUuZ29vcm0uaW8vcW5hLzIwMTM=" title="https://edu.goorm.io/qna/2013">edu.groom.io<i class="fa fa-external-link"></i></span></li>
-<li>Built-in pow() - <span class="exturl" data-url="aHR0cHM6Ly9kb2NzLnB5dGhvbi5vcmcvMy9saWJyYXJ5L2Z1bmN0aW9ucy5odG1sI3Bvdw==" title="https://docs.python.org/3/library/functions.html#pow">Python Documentation<i class="fa fa-external-link"></i></span></li>
-<li>Math pow() - <span class="exturl" data-url="aHR0cHM6Ly9kb2NzLnB5dGhvbi5vcmcvMy9saWJyYXJ5L21hdGguaHRtbCNtYXRoLnBvdw==" title="https://docs.python.org/3/library/math.html#math.pow">Python Documentation<i class="fa fa-external-link"></i></span></li>
-</ul>
-<blockquote>
-<p>개인적인 생각과 상상으로 작성한 내용들이 포함되어 있습니다</p>
-</blockquote>
-<hr>
-<div class="note info">
-            <p><span class="label primary"> math 모듈</span>을 살펴보다가 기본 내장함수 <code>pow()</code>가 있는데 왜 굳이 <code>math.pow()</code>를 정의해 뒀을까 궁금해서 검색한 내용들을 정리해봤습니다.</p><img style="display:block; margin-left: auto; margin-right: auto;" data-src="https://imgs.xkcd.com/comics/powers_of_one.png"><blockquote><p>짧은 다큐멘터리 <span class="exturl" data-url="aHR0cHM6Ly95b3V0dS5iZS8wZktCaHZEanV5MA==" title="https://youtu.be/0fKBhvDjuy0">Youtube링크 - Powers of Ten™ (1977)<i class="fa fa-external-link"></i></span>를 패러디한 만화입니다</p></blockquote>
-          </div>
-
-<h1 id="단순한-비교"><a href="#단순한-비교" class="headerlink" title="단순한 비교"></a>단순한 비교</h1><div class="note no-icon">
-            <p>두 함수의 정의를 봤을 때, 내장함수 <code>pow()</code>에만 augment 하나가 더 옵션으로 들어갈 수 있는 것을 볼 수 있습니다.</p><div class="note primary no-icon">            <p>pow(base, exp[, mod])<br>math.pow(x, y)</p>          </div><p>코드를 작성해서 확인해봐도 둘은 분명히 다른 함수인 것을 알 수 있습니다.</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> math</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(pow <span class="keyword">is</span> math.pow)</span><br><span class="line"><span class="literal">False</span> </span><br></pre></td></tr></table></figure>
-          </div>
-
-<br>
-
-<h1 id="Built-in-pow"><a href="#Built-in-pow" class="headerlink" title="Built-in pow()"></a>Built-in pow()</h1><div class="note no-icon">
-            <p><code>pow(base, exp)</code> 이렇게 2개의 인자(augment)만 주어진다면 밑(base)의 지수(exp)승(또는, base의 exp제곱)한 값을 반환합니다. 반환되는 값의 자료형은 인자들의 자료형을 따라 Integer, Float, Complex number 등으로 결정됩니다.<br><mark><code>base ** exp</code>는 <code>pow(base, exp)</code>와 똑같은 기능을 합니다.</mark></p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(pow(<span class="number">10</span>, <span class="number">2</span>))</span><br><span class="line"><span class="number">100</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(pow(<span class="number">10.0</span>, <span class="number">2</span>))</span><br><span class="line"><span class="number">100.0</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(pow(<span class="number">2</span> + <span class="number">3j</span>, <span class="number">2</span>))</span><br><span class="line"><span class="number">-5</span>+<span class="number">12j</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(pow(<span class="number">0b11</span>, <span class="number">2</span>))  <span class="comment"># 0b11 = 3</span></span><br><span class="line"><span class="number">9</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(pow(<span class="number">100.0</span>, <span class="number">2</span>, <span class="number">3</span>))</span><br><span class="line">TypeError: pow() <span class="number">3</span>rd argument <span class="keyword">not</span> allowed unless all arguments are integers</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(pow(<span class="number">100</span>, <span class="number">-1</span>, <span class="number">2</span>))</span><br><span class="line">ValueError: pow() <span class="number">2</span>nd argument cannot be negative when <span class="number">3</span>rd argument specified </span><br></pre></td></tr></table></figure><p><code>pow(base, exp, mod)</code> 세번째 인자[, mod]를 입력하면 base의 exp제곱한 값에 mod를 나눈 나머지 값을 반환합니다. 특히 세번째 인자가 있을 때, base와 exp는 정수형이여야 하고 exp는 양수 값이여야 합니다. <mark><code>pow(base, exp, mod)</code>를 사용하는 것이 <code>pow(base, exp) % mod</code>로 계산하는 것 보다 효율적입니다.</mark></p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(pow(<span class="number">10</span>, <span class="number">2</span>, <span class="number">3</span>))  <span class="comment"># 10^2 % 3</span></span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(pow(<span class="number">10</span>, <span class="number">2</span>) % <span class="number">3</span>)</span><br><span class="line"><span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(pow(<span class="number">0b11</span>, <span class="number">2</span>, <span class="number">2</span>))   <span class="comment"># 9^2 % 2</span></span><br><span class="line"><span class="number">1</span> </span><br></pre></td></tr></table></figure>
-          </div>
-
-
-<h1 id="math-pow"><a href="#math-pow" class="headerlink" title="math.pow()"></a>math.pow()</h1><div class="note no-icon">
-            <p><code>math.pow(x, y)</code> 함수는 순수하게 거듭제곱의 연산 기능만 제공합니다.<br><code>pow(base, exp)</code> 함수 혹은 <code>**</code> 연산자와 다른 점으로 <code>math.pow(x,y)</code> 함수는 <span class="label danger"> 두 인자를 float 형으로 바꾼다는 점</span>입니다.</p><ul><li><code>pow(1.0, x)</code>이나 <code>pow(x, 0.0)</code>의 결과값은 무조건 1.0을 반환합니다.(x가 0이거나 NaN 값이라도)</li></ul><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> math</span><br><span class="line"></span><br><span class="line">inf = float(<span class="string">"inf"</span>)</span><br><span class="line">NaN = float(<span class="string">"nan"</span>)</span><br><span class="line">p = [inf, -inf, NaN, <span class="number">0.0</span>, <span class="number">-0.0</span>, <span class="number">0</span>]</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> x <span class="keyword">in</span> p:</span><br><span class="line">    print(<span class="string">"x is"</span>, <span class="string">f'<span class="subst">&#123;x:<span class="number">4</span>&#125;</span> /'</span>, <span class="string">"pow(1.0, x)="</span>, math.pow(<span class="number">1.0</span>, x), <span class="string">"pow(x, 0.0)="</span>, math.pow(x, <span class="number">0.0</span>)) </span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x <span class="keyword">is</span>  inf / pow(<span class="number">1.0</span>, x)= <span class="number">1.0</span> pow(x, <span class="number">0.0</span>)= <span class="number">1.0</span></span><br><span class="line">x <span class="keyword">is</span> -inf / pow(<span class="number">1.0</span>, x)= <span class="number">1.0</span> pow(x, <span class="number">0.0</span>)= <span class="number">1.0</span></span><br><span class="line">x <span class="keyword">is</span>  nan / pow(<span class="number">1.0</span>, x)= <span class="number">1.0</span> pow(x, <span class="number">0.0</span>)= <span class="number">1.0</span></span><br><span class="line">x <span class="keyword">is</span>  <span class="number">0.0</span> / pow(<span class="number">1.0</span>, x)= <span class="number">1.0</span> pow(x, <span class="number">0.0</span>)= <span class="number">1.0</span></span><br><span class="line">x <span class="keyword">is</span> <span class="number">-0.0</span> / pow(<span class="number">1.0</span>, x)= <span class="number">1.0</span> pow(x, <span class="number">0.0</span>)= <span class="number">1.0</span></span><br><span class="line">x <span class="keyword">is</span>    <span class="number">0</span> / pow(<span class="number">1.0</span>, x)= <span class="number">1.0</span> pow(x, <span class="number">0.0</span>)= <span class="number">1.0</span> </span><br></pre></td></tr></table></figure><ul><li><code>pow(x, y)</code>에서 x와 y가 finite하고, x가 음수이고, y가 정수가 아니면 <span class="label danger"> ValueError</span>를 반환합니다.</li></ul><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">vals = [(<span class="number">1.23</span>, <span class="number">3.33</span>), (<span class="number">-1.23</span>, <span class="number">2.0</span>), (<span class="number">-1.23</span>, <span class="number">-3.33</span>)]</span><br><span class="line"><span class="keyword">for</span> x, y <span class="keyword">in</span> vals:</span><br><span class="line">    print(<span class="string">f"x is <span class="subst">&#123;x&#125;</span>, y is <span class="subst">&#123;y&#125;</span> /"</span>, math.pow(x, y))  </span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x <span class="keyword">is</span> <span class="number">1.23</span>, y <span class="keyword">is</span> <span class="number">3.33</span> / <span class="number">1.9924343529238528</span></span><br><span class="line">x <span class="keyword">is</span> <span class="number">-1.23</span>, y <span class="keyword">is</span> <span class="number">2.0</span> / <span class="number">1.5129</span></span><br><span class="line">ValueError: math domain error </span><br></pre></td></tr></table></figure>
-          </div>
-
-
-<h1 id="수행시간-비교"><a href="#수행시간-비교" class="headerlink" title="수행시간 비교"></a>수행시간 비교</h1><div class="note no-icon">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># executionTime.py written in PyCharm</span></span><br><span class="line"><span class="keyword">from</span> timeit <span class="keyword">import</span> timeit</span><br><span class="line"></span><br><span class="line">print(<span class="string">'Int ** Int'</span>.ljust(<span class="number">30</span>), timeit(<span class="string">'7 ** 5'</span>))</span><br><span class="line">print(<span class="string">'pow(Int, Int)'</span>.ljust(<span class="number">30</span>), timeit(<span class="string">'pow(7, 5)'</span>))</span><br><span class="line">print(<span class="string">'math.pow(Int, Int)'</span>.ljust(<span class="number">30</span>), timeit(<span class="string">'math.pow(7, 5)'</span>, setup=<span class="string">'import math'</span>))</span><br><span class="line">print()</span><br><span class="line">print(<span class="string">'float ** float'</span>.ljust(<span class="number">30</span>), timeit(<span class="string">'7.0 ** 5.0'</span>))</span><br><span class="line">print(<span class="string">'pow(float, float)'</span>.ljust(<span class="number">30</span>), timeit(<span class="string">'pow(7.0, 5.0)'</span>))</span><br><span class="line">print(<span class="string">'math.pow(float, float)'</span>.ljust(<span class="number">30</span>), timeit(<span class="string">'math.pow(7.0, 5.0)'</span>, setup=<span class="string">'import math'</span>)) </span><br></pre></td></tr></table></figure><p><span class="label primary"> <code>**</code> 연산자가 큰 차이로 가장 빠르고 <code>pow()</code>와 <code>math.pow()</code>는 비슷비슷한 시간을 가집니다.</span></p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">Int ** Int                     <span class="number">0.012045001</span></span><br><span class="line">pow(Int, Int)                  <span class="number">0.497163934</span></span><br><span class="line">math.pow(Int, Int)             <span class="number">0.24036590000000002</span></span><br><span class="line"></span><br><span class="line">float ** float                 <span class="number">0.012131208999999976</span></span><br><span class="line">pow(float, float)              <span class="number">0.156296341</span></span><br><span class="line">math.pow(float, float)         <span class="number">0.21024002100000005</span> </span><br></pre></td></tr></table></figure>
-          </div>
-
-
-<h1 id="결론"><a href="#결론" class="headerlink" title="결론"></a>결론</h1><div class="note info no-icon">
-            <p>입력되는 인자의 자료형과 상관없이 반환값을 무조건 실수형(float)으로 받고 싶을 때 <code>math.pow()</code> 함수를 사용하는 것이 좋습니다.</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>timeit(<span class="string">'float(i) ** j'</span>, setup=<span class="string">'i, j = 7, 5'</span>)</span><br><span class="line"><span class="number">0.7610865891750791</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>timeit(<span class="string">'i ** float(j)'</span>, setup=<span class="string">'i, j = 7, 5'</span>)</span><br><span class="line"><span class="number">0.7930400942188385</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>timeit(<span class="string">'float(i ** j)'</span>, setup=<span class="string">'i, j = 7, 5'</span>)</span><br><span class="line"><span class="number">0.8946636625872202</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>timeit(<span class="string">'math.pow(i, j)'</span>, setup=<span class="string">'import math; i, j = 7, 5'</span>)</span><br><span class="line"><span class="number">0.5699394063529439</span>  </span><br></pre></td></tr></table></figure><p>위 코드 결과와 같이, 정수형으로 반환되는 <code>**</code> 연산(혹은 <code>pow()</code>) 결과를 <code>float()</code> 함수로 형변환 하는 것 보다 <code>math.pow()</code> 함수가 더 빠른 것을 볼 수 있습니다.</p><p><span class="label danger"> 특별한 경우가 아니고 간단한 연산에 필요하다면 <code>**</code> 연산자를 사용하는 것이 가장 좋을 듯 합니다</span></p>
-          </div>
-
-<hr>
-<hr>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
-          
-        
-      
-    </div>
-
-    
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1071,7 +1070,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">73</span>
+                    <span class="site-state-item-count">74</span>
                     <span class="site-state-item-name">포스트</span>
                   </a>
                 </div>

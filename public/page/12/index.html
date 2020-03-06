@@ -356,6 +356,226 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/sw-6203/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="NUNU">
+      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="AttackOnNunu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/[object Object]/sw-6203/" class="post-title-link" itemprop="url">(SW Expert Academy) 객체지향 - 6203번 6208번 6217번 6223번</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2019-08-05 16:18:28" itemprop="dateCreated datePublished" datetime="2019-08-05T16:18:28+09:00">2019-08-05</time>
+            </span>
+          
+
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/SW-아카데미/" itemprop="url" rel="index"><span itemprop="name">SW 아카데미</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">댓글: </span>
+                <a href="/[object Object]/sw-6203/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/sw-6203/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="1번-6203번"><a href="#1번-6203번" class="headerlink" title="1번 - 6203번"></a>1번 - 6203번</h1><div class="note ">
+            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
+          </div>
+
+<blockquote>
+<p>성적 총합 출력</p>
+</blockquote>
+<div class="note success">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">subject</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, kor, eng, math)</span>:</span></span><br><span class="line">        self.__kor = kor</span><br><span class="line">        self.__eng = eng</span><br><span class="line">        self.__math = math</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">total</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> self.__kor+self.__eng+self.__math</span><br><span class="line"></span><br><span class="line">score = input().split(<span class="string">', '</span>)</span><br><span class="line"></span><br><span class="line">stduent = subject(int(score[<span class="number">0</span>]),int(score[<span class="number">1</span>]),int(score[<span class="number">2</span>]))</span><br><span class="line">print(<span class="string">"국어, 영어, 수학의 총점: &#123;&#125;"</span>.format(stduent.total()))</span><br></pre></td></tr></table></figure>
+          </div>
+
+<hr>
+<h1 id="2번-6208번"><a href="#2번-6208번" class="headerlink" title="2번 - 6208번"></a>2번 - 6208번</h1><div class="note ">
+            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
+          </div>
+
+<blockquote>
+<p>국적 두 번 출력</p>
+</blockquote>
+<div class="note success">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Korean</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">printNationality</span><span class="params">(self)</span>:</span></span><br><span class="line">        print(<span class="string">"대한민국"</span>)</span><br><span class="line"></span><br><span class="line">korean = Korean()</span><br><span class="line">korean.printNationality()</span><br><span class="line">korean.printNationality()</span><br></pre></td></tr></table></figure>
+          </div>
+
+<hr>
+<h1 id="3번-6217번"><a href="#3번-6217번" class="headerlink" title="3번 - 6217번"></a>3번 - 6217번</h1><div class="note ">
+            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
+          </div>
+
+<blockquote>
+<p>이렇게 하는게 맞는건지 잘 모르겠다…</p>
+</blockquote>
+<div class="note success">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Student</span>:</span></span><br><span class="line">    <span class="string">"""Parnet/Super class"""</span></span><br><span class="line">    _name1 = <span class="string">"홍길동"</span></span><br><span class="line">    _name2 = <span class="string">"이순신"</span></span><br><span class="line"></span><br><span class="line"><span class="meta">    @property</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">name</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> self._name</span><br><span class="line"></span><br><span class="line"><span class="meta">    @name.setter</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">name</span><span class="params">(self, name)</span>:</span></span><br><span class="line">        self._name = name</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">show</span><span class="params">(self)</span>:</span></span><br><span class="line">        print(<span class="string">"이름: "</span>+self._name1)</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">GraduateStudent</span><span class="params">(Student)</span>:</span></span><br><span class="line">    <span class="string">"""Child/Sub class"""</span></span><br><span class="line">    __major = <span class="string">"컴퓨터"</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></span><br><span class="line">        self.__name = super()._name2</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">show</span><span class="params">(self)</span>:</span></span><br><span class="line">        print(<span class="string">"이름: &#123;&#125;, 전공: &#123;&#125;"</span>.format(self.__name, self.__major))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Student().show()</span><br><span class="line">GraduateStudent().show()</span><br></pre></td></tr></table></figure>
+          </div>
+
+<hr>
+<h1 id="4번-6223번"><a href="#4번-6223번" class="headerlink" title="4번 - 6223번"></a>4번 - 6223번</h1><div class="note ">
+            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
+          </div>
+
+<blockquote>
+<p>원의 면적을 구할 때, 파이(pi)를 파이썬의 math를 사용하여 계산하려 했지만 출력 결과는 소수점 둘째 자리까지인데 버림이 되어있다.<br>round() 를 사용하여 반올림하면 결과값이 다르게 나와서 파이를 3.14로 계산 하였다.<br>round() 함수에서 반올림은 사사오입 원칙을 따른다는 것을 기억!!</p>
+</blockquote>
+<div class="note success">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> math</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Circle</span>:</span></span><br><span class="line">    __radius = <span class="number">2</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">area</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> <span class="number">3.14</span>*(self.__radius**<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line">print(<span class="string">"원의 면적: &#123;&#125;"</span>.format(Circle().area()))</span><br></pre></td></tr></table></figure>
+          </div>
+
+<hr>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/sw-6232/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -792,234 +1012,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/sw-6254/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="NUNU">
-      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="AttackOnNunu">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/[object Object]/sw-6254/" class="post-title-link" itemprop="url">(SW Expert Academy) 셋, 딕셔너리 - 6254번 6255번 6256번 6257번 6258번</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">작성일</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2019-08-04 23:22:11" itemprop="dateCreated datePublished" datetime="2019-08-04T23:22:11+09:00">2019-08-04</time>
-            </span>
-          
-
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/SW-아카데미/" itemprop="url" rel="index"><span itemprop="name">SW 아카데미</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">댓글: </span>
-                <a href="/[object Object]/sw-6254/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/sw-6254/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          <br>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="2번-6254번"><a href="#2번-6254번" class="headerlink" title="2번 - 6254번"></a>2번 - 6254번</h1><div class="note ">
-            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
-          </div>
-
-<blockquote>
-<p>등록된 학생 이름 출력</p>
-</blockquote>
-<div class="note success">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">find_student</span><span class="params">(name, student_dict)</span>:</span></span><br><span class="line">    <span class="keyword">if</span> name <span class="keyword">in</span> student_dict:</span><br><span class="line">        print(<span class="string">"&#123;&#125;의 전화번호는 &#123;&#125;입니다."</span>.format(name, student_dict[name]))</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        print(<span class="string">"등록된 학생이 아닙니다."</span>)</span><br><span class="line"></span><br><span class="line">student = &#123;</span><br><span class="line">    <span class="string">'홍길동'</span>:<span class="string">'010-1111-1111'</span>,</span><br><span class="line">    <span class="string">'이순신'</span>:<span class="string">'010-1111-2222'</span>,</span><br><span class="line">    <span class="string">'강감찬'</span>:<span class="string">'010-1111-3333'</span>&#125;</span><br><span class="line"></span><br><span class="line">notice = <span class="string">"아래 학생들의 전화번호를 조회할 수 있습니다.\n홍길동\n이순신\n강감찬\n전화번호를 조회하고자 하는 학생의 이름을 입력하십시오."</span></span><br><span class="line">print(notice)</span><br><span class="line">name = input()</span><br><span class="line">find_student(name,student)</span><br></pre></td></tr></table></figure>
-          </div>
-
-<hr>
-<h1 id="3번-6255번"><a href="#3번-6255번" class="headerlink" title="3번 - 6255번"></a>3번 - 6255번</h1><div class="note ">
-            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
-          </div>
-
-<blockquote>
-<p>정렬 함수의 사용법을 새롭게 익혔다</p>
-</blockquote>
-<div class="note success">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">furniture = &#123;<span class="string">"TV"</span>: <span class="number">2000000</span>,</span><br><span class="line">         <span class="string">"냉장고"</span>: <span class="number">1500000</span>,</span><br><span class="line">         <span class="string">"책상"</span>: <span class="number">350000</span>,</span><br><span class="line">         <span class="string">"노트북"</span>: <span class="number">1200000</span>,</span><br><span class="line">         <span class="string">"가스레인지"</span>: <span class="number">200000</span>,</span><br><span class="line">         <span class="string">"세탁기"</span>: <span class="number">1000000</span>&#125;</span><br><span class="line"></span><br><span class="line">r_dict = &#123;r: furniture[r] <span class="keyword">for</span> r <span class="keyword">in</span> sorted(furniture, key=furniture.get, reverse=<span class="literal">True</span>)&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> key, value <span class="keyword">in</span> r_dict.items():</span><br><span class="line">    print(<span class="string">"&#123;&#125;: &#123;&#125;"</span>.format(key, value))</span><br></pre></td></tr></table></figure>
-          </div>
-
-<hr>
-<h1 id="4번-6256번"><a href="#4번-6256번" class="headerlink" title="4번 - 6256번"></a>4번 - 6256번</h1><div class="note ">
-            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
-          </div>
-
-<blockquote>
-<p>출력할 때 마다 순서가 바뀌기 때문에 Test를 한번에 통과하기 위해서 출력은 그냥 문제에 나와있는 그대로 적어서 제출했다</p>
-</blockquote>
-<div class="note success">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = &#123;<span class="string">'아메리카노'</span>: <span class="number">1900</span>, <span class="string">'카페모카'</span>: <span class="number">3300</span>, <span class="string">'에스프레소'</span>: <span class="number">1900</span>, <span class="string">'카페라떼'</span>: <span class="number">2500</span>, <span class="string">'카푸치노'</span>: <span class="number">2500</span>, <span class="string">'바닐라라떼'</span>: <span class="number">2900</span>&#125;</span><br><span class="line">b = &#123;<span class="string">'헤이즐럿라떼'</span>: <span class="number">2900</span>, <span class="string">'카페모카'</span>: <span class="number">3300</span>, <span class="string">'밀크커피'</span>: <span class="number">3300</span>, <span class="string">'아메리카노'</span>: <span class="number">1900</span>, <span class="string">'샷크린티라떼'</span>: <span class="number">3300</span>&#125;</span><br><span class="line"></span><br><span class="line">c = &#123;key: value <span class="keyword">for</span> key, value <span class="keyword">in</span> b.items()|a.items()&#125;</span><br><span class="line">d = &#123;(key, value) <span class="keyword">for</span> key, value <span class="keyword">in</span> c.items() <span class="keyword">if</span> value&gt;<span class="number">3000</span>&#125;</span><br><span class="line">print(d)</span><br></pre></td></tr></table></figure>
-          </div>
-
-<hr>
-<h1 id="5번-6257번"><a href="#5번-6257번" class="headerlink" title="5번 - 6257번"></a>5번 - 6257번</h1><div class="note ">
-            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
-          </div>
-
-<blockquote>
-<p>모든 공백제거 : str.replace(“ “, “”)<br>양끝 공백만 제거 : str.strip()</p>
-</blockquote>
-<div class="note success">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">fruit = [<span class="string">'   apple    '</span>,<span class="string">'banana'</span>,<span class="string">'  melon'</span>]</span><br><span class="line">fruit_dict = &#123;key.replace(<span class="string">" "</span>,<span class="string">""</span>): len(key.replace(<span class="string">" "</span>,<span class="string">""</span>)) <span class="keyword">for</span> key <span class="keyword">in</span> fruit&#125;</span><br><span class="line"></span><br><span class="line">print(fruit_dict)</span><br></pre></td></tr></table></figure>
-          </div>
-
-<hr>
-<h1 id="6번-6258번"><a href="#6번-6258번" class="headerlink" title="6번 - 6258번"></a>6번 - 6258번</h1><div class="note ">
-            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
-          </div>
-
-
-<div class="note success">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">num = int(input())</span><br><span class="line">num_dict = &#123;n: n**<span class="number">2</span> <span class="keyword">for</span> n <span class="keyword">in</span> range(<span class="number">1</span>,num+<span class="number">1</span>)&#125;</span><br><span class="line"></span><br><span class="line">print(num_dict)</span><br></pre></td></tr></table></figure>
-          </div>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
-          
-        
-      
-    </div>
-
-    
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1068,7 +1060,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">73</span>
+                    <span class="site-state-item-count">74</span>
                     <span class="site-state-item-name">포스트</span>
                   </a>
                 </div>

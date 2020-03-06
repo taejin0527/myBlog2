@@ -107,14 +107,14 @@
   <meta name="description" content="Reference 문제 출처 - HackerRank 파이썬 연습 - Practice - Python  개인적인 생각과 상상으로 작성한 내용들이 포함되어 있습니다문제를 풀고  Discussion Tab을 참고하며 코드 스타일을 개선하려고 노력하고자 합니다  HackerRank              HackerRank의 Python 연습문제들은 아래와 같은">
 <meta name="keywords" content="파이썬,programming language,python,language">
 <meta property="og:type" content="article">
-<meta property="og:title" content="(PYTHON) Day - 14 Itertools">
+<meta property="og:title" content="(PYTHON) Day - 14 Itertools(1)">
 <meta property="og:url" content="https://taejin0527.github.io/[object Object]/PY-day14/index.html">
 <meta property="og:site_name" content="AttackOnNunu">
 <meta property="og:description" content="Reference 문제 출처 - HackerRank 파이썬 연습 - Practice - Python  개인적인 생각과 상상으로 작성한 내용들이 포함되어 있습니다문제를 풀고  Discussion Tab을 참고하며 코드 스타일을 개선하려고 노력하고자 합니다  HackerRank              HackerRank의 Python 연습문제들은 아래와 같은">
 <meta property="og:locale" content="ko">
-<meta property="og:updated_time" content="2020-03-04T11:40:39.049Z">
+<meta property="og:updated_time" content="2020-03-06T08:54:42.909Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="(PYTHON) Day - 14 Itertools">
+<meta name="twitter:title" content="(PYTHON) Day - 14 Itertools(1)">
 <meta name="twitter:description" content="Reference 문제 출처 - HackerRank 파이썬 연습 - Practice - Python  개인적인 생각과 상상으로 작성한 내용들이 포함되어 있습니다문제를 풀고  Discussion Tab을 참고하며 코드 스타일을 개선하려고 노력하고자 합니다  HackerRank              HackerRank의 Python 연습문제들은 아래와 같은">
 
 
@@ -135,7 +135,7 @@
   };
 </script>
 
-  <title>(PYTHON) Day - 14 Itertools | AttackOnNunu</title>
+  <title>(PYTHON) Day - 14 Itertools(1) | AttackOnNunu</title>
   
 
 
@@ -373,7 +373,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">(PYTHON) Day - 14 Itertools
+          <h2 class="post-title" itemprop="name headline">(PYTHON) Day - 14 Itertools(1)
 
               
             
@@ -516,7 +516,7 @@
 
 <hr>
 <h1 id="Itertools"><a href="#Itertools" class="headerlink" title="Itertools"></a>Itertools</h1><div class="note no-icon">
-            <div class="note primary no-icon">            <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><ul><li><a href="#itertools-product">itertools.product()</a></li><li><a href="#itertools-permutations">itertools.permutations()</a></li><li><a href="#itertools-combinations">itertools.combinations()</a></li><li><a href="#itertools-combinations-with-replacement">itertools.combinations_with_replacement()</a></li><li><a href="#Compress-the-String">Compress the String!</a></li><li><a href="#Iterables-and-Iterators">Iterables and Iterators</a></li><li><a href="#Maximize-It">Maximize It!</a></li></ul>          </div><hr><h2 id="itertools-product"><a href="#itertools-product" class="headerlink" title="itertools.product()"></a>itertools.product()</h2><h2 id="itertools-permutations"><a href="#itertools-permutations" class="headerlink" title="itertools.permutations()"></a>itertools.permutations()</h2><h2 id="itertools-combinations"><a href="#itertools-combinations" class="headerlink" title="itertools.combinations()"></a>itertools.combinations()</h2><h2 id="itertools-combinations-with-replacement"><a href="#itertools-combinations-with-replacement" class="headerlink" title="itertools.combinations_with_replacement()"></a>itertools.combinations_with_replacement()</h2><h2 id="Compress-the-String"><a href="#Compress-the-String" class="headerlink" title="Compress the String!"></a>Compress the String!</h2><h2 id="Iterables-and-Iterators"><a href="#Iterables-and-Iterators" class="headerlink" title="Iterables and Iterators"></a>Iterables and Iterators</h2><h2 id="Maximize-It"><a href="#Maximize-It" class="headerlink" title="Maximize It!"></a>Maximize It!</h2>
+            <div class="note primary no-icon">            <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><p>다음 장에서…</p>          </div><hr><div class="note no-icon">            <h2 id="기본-개념"><a href="#기본-개념" class="headerlink" title="기본 개념"></a>기본 개념</h2><p><span class="label warning"> <strong>Itertools</strong></span><br>itertools 모듈을 사용하면 빠르고 효율적으로 메모리를 사용하는 반복자를 사용할 수 있다.<br>모듈의 함수들은 다음과 같이 크게 3가지 용도로 구분할 수 있다.</p><p><span class="label warning"> <strong>Infinite Iterators</strong></span><br><span class="label primary"> 무한으로 반복</span>할수 있는 함수로 3가지가 있다.</p><table><thead><tr><th>Iterator</th><th>Arguments</th><th>Results</th><th>Example</th></tr></thead><tbody><tr><td>count()</td><td>start, [step]</td><td>start, start+step, start+2*step, …</td><td>count(10) –&gt; 10 11 12 13 14 …</td></tr><tr><td>cycle()</td><td>p</td><td>p0, p1, … plast, p0, p1, …</td><td>cycle(‘ABCD’) –&gt; A B C D A B C D …</td></tr><tr><td>repeat()</td><td>elem [,n]</td><td>elem, elem, elem, … endlessly or up to n times</td><td>repeat(10, 3) –&gt; 10 10 10</td></tr></tbody></table><p><span class="label warning"> <strong>Iterators that Terminate</strong></span><br>itertools 모듈 대부분의 비중을 차지하는 이 12개의 함수들은 <span class="label primary"> 유한번 반복</span>하는 함수들이다.</p><table><thead><tr><th>Iterator</th><th>Arguments</th><th>Results</th><th>Example</th></tr></thead><tbody><tr><td>accumulate()</td><td>p [,func]</td><td>p0, p0+p1, p0+p1+p2, …</td><td>accumulate([1,2,3,4,5]) –&gt; 1 3 6 10 15</td></tr><tr><td>chain()</td><td>p, q, …</td><td>p0, p1, … plast, q0, q1, …</td><td>chain(‘ABC’, ‘DEF’) –&gt; A B C D E F</td></tr><tr><td>chain.from_iterable()</td><td>iterable</td><td>p0, p1, … plast, q0, q1, …</td><td>chain.from_iterable([‘ABC’, ‘DEF’]) –&gt; A B C D E F</td></tr><tr><td>compress()</td><td>data, selectors</td><td>(d[0] if s[0]), (d[1] if s[1]), …</td><td>compress(‘ABCDEF’, [1,0,1,0,1,1]) –&gt; A C E F</td></tr><tr><td>dropwhile()</td><td>pred, seq</td><td>seq[n], seq[n+1], starting when pred fails</td><td>dropwhile(lambda x: x&lt;5, [1,4,6,4,1]) –&gt; 6 4 1</td></tr><tr><td>filterfalse()</td><td>pred, seq</td><td>elements of seq where pred(elem) is false</td><td>filterfalse(lambda x: x%2, range(10)) –&gt; 0 2 4 6 8</td></tr><tr><td>groupby()</td><td>iterable[, key]</td><td>sub-iterators grouped by value of key(v)</td><td></td></tr><tr><td>islice()</td><td>seq, [start,] stop [, step]</td><td>elements from seq[start:stop:step]</td><td>islice(‘ABCDEFG’, 2, None) –&gt; C D E F G</td></tr><tr><td>starmap()</td><td>func, seq</td><td>func(<em>seq[0]), func(</em>seq[1]), …</td><td>starmap(pow, [(2,5), (3,2), (10,3)]) –&gt; 32 9 1000</td></tr><tr><td>takewhile()</td><td>pred, seq</td><td>seq[0], seq[1], until pred fails</td><td>takewhile(lambda x: x&lt;5, [1,4,6,4,1]) –&gt; 1 4</td></tr><tr><td>tee()</td><td>it, n</td><td>it1, it2, … itn  splits one iterator into n</td><td></td></tr><tr><td>zip_longest()</td><td>p, q, …</td><td>(p[0], q[0]), (p[1], q[1]), …</td><td>zip_longest(‘ABCD’, ‘xy’, fillvalue=’-‘) –&gt; Ax By C- D-</td></tr></tbody></table><p><span class="label warning"> <strong>Combinatoric Generators</strong></span><br>데이터들의 <span class="label primary"> 순열과 조합</span>(combination &amp; permutation)을 만드는 함수로 4가지가 있다.</p><table><thead><tr><th>Iterator</th><th>Arguments</th><th>Results</th><th>Example</th></tr></thead><tbody><tr><td>product()</td><td>p, q, … [repeat=1]</td><td>cartesian product, equivalent to a nested for-loop</td><td>AA AB AC AD BA BB BC BD CA CB CC CD DA DB DC DD</td></tr><tr><td>permutations()</td><td>p[, r]</td><td>r-length tuples, all possible orderings, no repeated elements</td><td>AB AC AD BA BC BD CA CB CD DA DB DC</td></tr><tr><td>combinations()</td><td>p, r</td><td>r-length tuples, in sorted order, no repeated elements</td><td>AB AC AD BC BD CD</td></tr><tr><td>combinations_with_replacement()</td><td>p, r</td><td>r-length tuples, in sorted order, with repeated elements</td><td>AA AB AC AD BB BC BD CC CD DD</td></tr></tbody></table><hr><h2 id="자세한-학습-참고"><a href="#자세한-학습-참고" class="headerlink" title="자세한 학습 (참고)"></a>자세한 학습 (참고)</h2><p><span class="exturl" data-url="aHR0cHM6Ly9ueXUtY2RzLmdpdGh1Yi5pby9weXRob24taXRlcnRvb2xzLw==" title="https://nyu-cds.github.io/python-itertools/">The itertools Module<i class="fa fa-external-link"></i></span></p>          </div>
           </div>
 
 <hr>
@@ -570,7 +570,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/[object Object]/PY-day-13/" rel="next" title="(PYTHON) Day - 13 Math(2)">
+              <a href="/[object Object]/PY-day13/" rel="next" title="(PYTHON) Day - 13 Math(2)">
                 <i class="fa fa-chevron-left"></i> (PYTHON) Day - 13 Math(2)
               </a>
             
@@ -579,6 +579,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/[object Object]/PY-day15/" rel="prev" title="(PYTHON) Day - 15 Itertools(2)">
+                (PYTHON) Day - 15 Itertools(2) <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -656,7 +660,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">73</span>
+                    <span class="site-state-item-count">74</span>
                     <span class="site-state-item-name">포스트</span>
                   </a>
                 </div>
@@ -875,7 +879,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Reference"><span class="nav-text">Reference</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#HackerRank"><span class="nav-text">HackerRank</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Subdomain"><span class="nav-text">Subdomain</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Itertools"><span class="nav-text">Itertools</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Problem"><span class="nav-text">Problem</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#itertools-product"><span class="nav-text">itertools.product()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#itertools-permutations"><span class="nav-text">itertools.permutations()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#itertools-combinations"><span class="nav-text">itertools.combinations()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#itertools-combinations-with-replacement"><span class="nav-text">itertools.combinations_with_replacement()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Compress-the-String"><span class="nav-text">Compress the String!</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Iterables-and-Iterators"><span class="nav-text">Iterables and Iterators</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Maximize-It"><span class="nav-text">Maximize It!</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Reference"><span class="nav-text">Reference</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#HackerRank"><span class="nav-text">HackerRank</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Subdomain"><span class="nav-text">Subdomain</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Itertools"><span class="nav-text">Itertools</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Problem"><span class="nav-text">Problem</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#기본-개념"><span class="nav-text">기본 개념</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#자세한-학습-참고"><span class="nav-text">자세한 학습 (참고)</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -1056,7 +1060,7 @@
   var disqus_config = function() {
     this.page.url = "https://taejin0527.github.io/[object Object]/PY-day14/";
     this.page.identifier = "[object Object]/PY-day14/";
-    this.page.title = '(PYTHON) Day - 14 Itertools';
+    this.page.title = '(PYTHON) Day - 14 Itertools(1)';
     };
   function loadComments() {
     var d = document, s = d.createElement('script');

@@ -356,6 +356,220 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/sw-6290/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="NUNU">
+      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="AttackOnNunu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/[object Object]/sw-6290/" class="post-title-link" itemprop="url">(SW Expert Academy) 리스트, 튜플 - 6290번 6292번 6293번 6295번</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2019-08-01 23:40:54" itemprop="dateCreated datePublished" datetime="2019-08-01T23:40:54+09:00">2019-08-01</time>
+            </span>
+          
+
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/SW-아카데미/" itemprop="url" rel="index"><span itemprop="name">SW 아카데미</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">댓글: </span>
+                <a href="/[object Object]/sw-6290/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/sw-6290/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="14번-6290번"><a href="#14번-6290번" class="headerlink" title="14번 - 6290번"></a>14번 - 6290번</h1><div class="note ">
+            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
+          </div>
+
+<blockquote>
+<p>입력에는 ‘뜨겁다’ 라는 단어가 있는데 dicBase의 단어 범위가 쌍자음을 포함하지 않고 있어서 출력에서 제외된다<br>(‘다’, ‘띻’) 식으로 범위만 수정해주면 출력값에도 쌍자음 단어들이 포함될 것이다.</p>
+</blockquote>
+<div class="note success">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">dicBase = ((<span class="string">'가'</span>,<span class="string">'깋'</span>), (<span class="string">'나'</span>,<span class="string">'닣'</span>), (<span class="string">'다'</span>,<span class="string">'딯'</span>), (<span class="string">'라'</span>,<span class="string">'맇'</span>), (<span class="string">'마'</span>,<span class="string">'밓'</span>), (<span class="string">'바'</span>,<span class="string">'빟'</span>), (<span class="string">'사'</span>,<span class="string">'싷'</span>),</span><br><span class="line">            (<span class="string">'아'</span>,<span class="string">'잏'</span>), (<span class="string">'자'</span>,<span class="string">'짛'</span>), (<span class="string">'차'</span>,<span class="string">'칳'</span>), (<span class="string">'카'</span>,<span class="string">'킿'</span>), (<span class="string">'타'</span>,<span class="string">'팋'</span>), (<span class="string">'파'</span>,<span class="string">'핗'</span>), (<span class="string">'하'</span>,<span class="string">'힣'</span>))</span><br><span class="line"></span><br><span class="line">inputWord = [<span class="string">'막'</span>, <span class="string">'부모님'</span>, <span class="string">'비용'</span>, <span class="string">'비행기'</span>, <span class="string">'원래'</span>, <span class="string">'처리'</span>, <span class="string">'최초'</span>, <span class="string">'꼴'</span>, <span class="string">'좀'</span>, <span class="string">'들다'</span>, <span class="string">'싶다'</span>,</span><br><span class="line">            <span class="string">'수출'</span>, <span class="string">'계시다'</span>, <span class="string">'다'</span>, <span class="string">'뒤'</span>, <span class="string">'듣다'</span>, <span class="string">'함께'</span>, <span class="string">'아이'</span>, <span class="string">'무척'</span>, <span class="string">'보이다'</span>, <span class="string">'가지다'</span>, <span class="string">'그'</span>,</span><br><span class="line">            <span class="string">'자르다'</span>, <span class="string">'데리다'</span>, <span class="string">'마리'</span>, <span class="string">'개'</span>, <span class="string">'정도'</span>, <span class="string">'옳다'</span>, <span class="string">'놀이'</span>,<span class="string">'뜨겁다'</span>]</span><br><span class="line"></span><br><span class="line">result = [[word <span class="keyword">for</span> word <span class="keyword">in</span> inputWord <span class="keyword">if</span> (word &gt;= base[<span class="number">0</span>]) <span class="keyword">is</span> (word &lt;= base[<span class="number">1</span>])] <span class="keyword">for</span> base <span class="keyword">in</span> dicBase]</span><br><span class="line"></span><br><span class="line">print(result)</span><br></pre></td></tr></table></figure>
+          </div>
+
+<hr>
+<h1 id="16번-6292번"><a href="#16번-6292번" class="headerlink" title="16번 - 6292번"></a>16번 - 6292번</h1><div class="note ">
+            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
+          </div>
+
+
+<div class="note success">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">num_list = [int(n) <span class="keyword">for</span> n <span class="keyword">in</span> input().split(<span class="string">', '</span>)]</span><br><span class="line">num_tuple = tuple(num_list)</span><br><span class="line">print(num_list)</span><br><span class="line">print(num_tuple)</span><br></pre></td></tr></table></figure>
+          </div>
+
+<hr>
+<h1 id="17번-6293번"><a href="#17번-6293번" class="headerlink" title="17번 - 6293번"></a>17번 - 6293번</h1><div class="note ">
+            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
+          </div>
+
+
+<div class="note success">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> math <span class="keyword">import</span> pi</span><br><span class="line"></span><br><span class="line">num_list = [int(n)*pi*<span class="number">2</span> <span class="keyword">for</span> n <span class="keyword">in</span> input().split(<span class="string">', '</span>)]</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> num_list[:<span class="number">-1</span>]:</span><br><span class="line">    print(<span class="string">"&#123;:0.2f&#125;, "</span>.format(i), end=<span class="string">''</span>)</span><br><span class="line">print(<span class="string">"&#123;:0.2f&#125;"</span>.format(num_list[<span class="number">-1</span>]))</span><br></pre></td></tr></table></figure>
+          </div>
+
+<hr>
+<h1 id="18번-6295번"><a href="#18번-6295번" class="headerlink" title="18번 - 6295번"></a>18번 - 6295번</h1><div class="note ">
+            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
+          </div>
+
+<blockquote>
+<p>list comprehension으로 한 줄에 끝내려고 삽질하다가 콤마 ‘,’ 단위로 입력 받는 방법을 잘 모르겠어서 그냥 list에 저장하였다.</p>
+</blockquote>
+<div class="note success">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">num = input().split(<span class="string">', '</span>)</span><br><span class="line">matrix = [[row*col <span class="keyword">for</span> col <span class="keyword">in</span> range(int(num[<span class="number">1</span>]))] <span class="keyword">for</span> row <span class="keyword">in</span> range(int(num[<span class="number">0</span>]))]</span><br><span class="line"></span><br><span class="line">print(matrix)</span><br></pre></td></tr></table></figure>
+          </div>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/sw-6282/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -796,216 +1010,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/sw-6315/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="NUNU">
-      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="AttackOnNunu">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/[object Object]/sw-6315/" class="post-title-link" itemprop="url">(SW Expert Academy) 내장함수 - 6315번 6316번 6317번 6318번</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">작성일</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2019-07-30 17:22:28" itemprop="dateCreated datePublished" datetime="2019-07-30T17:22:28+09:00">2019-07-30</time>
-            </span>
-          
-
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/SW-아카데미/" itemprop="url" rel="index"><span itemprop="name">SW 아카데미</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">댓글: </span>
-                <a href="/[object Object]/sw-6315/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/sw-6315/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          <br>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="8번-6315번"><a href="#8번-6315번" class="headerlink" title="8번 - 6315번"></a>8번 - 6315번</h1><div class="note ">
-            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
-          </div>
-
-
-<div class="note success">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(list(map(<span class="keyword">lambda</span> x: x**<span class="number">2</span>, list(range(<span class="number">1</span>,<span class="number">11</span>)))))</span><br></pre></td></tr></table></figure>
-          </div>
-
-<hr>
-<h1 id="9번-6316번"><a href="#9번-6316번" class="headerlink" title="9번 - 6316번"></a>9번 - 6316번</h1><div class="note ">
-            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
-          </div>
-
-<blockquote>
-<p>점점 가독성이 떨어지는…</p>
-</blockquote>
-<div class="note success">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(list(map(<span class="keyword">lambda</span> y: y**<span class="number">2</span>, list((filter(<span class="keyword">lambda</span> x: x%<span class="number">2</span>==<span class="number">0</span>, list(range(<span class="number">1</span>,<span class="number">11</span>))))))))</span><br></pre></td></tr></table></figure>
-          </div>
-
-<hr>
-<h1 id="10번-6317번"><a href="#10번-6317번" class="headerlink" title="10번 - 6317번"></a>10번 - 6317번</h1><div class="note ">
-            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
-          </div>
-
-<div class="note success">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">input_list = (<span class="number">3</span>, <span class="number">5</span>, <span class="number">4</span>, <span class="number">1</span>, <span class="number">8</span>, <span class="number">10</span>, <span class="number">2</span>)</span><br><span class="line"></span><br><span class="line">print(<span class="string">"max&#123;&#125; =&gt; &#123;&#125;"</span>.format(input_list, max(input_list)))</span><br></pre></td></tr></table></figure>
-          </div>
-
-<hr>
-<h1 id="11번-6318번"><a href="#11번-6318번" class="headerlink" title="11번 - 6318번"></a>11번 - 6318번</h1><div class="note ">
-            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
-          </div>
-
-<div class="note success">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">input_dict = enumerate(&#123;<span class="string">'a'</span>:<span class="number">0</span>, <span class="string">'b'</span>:<span class="number">1</span>, <span class="string">'c'</span>:<span class="number">2</span>, <span class="string">'d'</span>:<span class="number">3</span>, <span class="string">'e'</span>:<span class="number">4</span>, <span class="string">'f'</span>:<span class="number">5</span>&#125;)</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i, value <span class="keyword">in</span> input_dict:</span><br><span class="line">    print(<span class="string">"&#123;&#125;: &#123;&#125;"</span>.format(value, i))</span><br></pre></td></tr></table></figure>
-          </div>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
-          
-        
-      
-    </div>
-
-    
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1054,7 +1058,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">73</span>
+                    <span class="site-state-item-count">74</span>
                     <span class="site-state-item-name">포스트</span>
                   </a>
                 </div>

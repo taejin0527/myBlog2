@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="ko">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2">
+
+
+
+
+
+  <meta name="google-site-verification" content="1AoB1Oj70vYeXdFCLMbgUhTbU9kMwMXDsCNGRrqqvhM">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+
+<link rel="stylesheet" href="/css/main.css?v=7.2.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.2.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.2.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.2.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.2.0" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '7.2.0',
+    sidebar: {"position":"right","display":"post","offset":12,"onmobile":false},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    copycode: {"enable":true,"show_result":true,"style":"flat"},
+    fancybox: false,
+    fastclick: false,
+    lazyload: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    translation: {
+      copy_button: '복사',
+      copy_success: 'Copied',
+      copy_failure: 'Copy failed'
+    }
+  };
+</script>
+
+
+
+  <meta name="description" content="Reference 문제 출처 - HackerRank 파이썬 연습 - Practice - Python math 모듈 - YUN DAE HEE githubpage  개인적인 생각과 상상으로 작성한 내용들이 포함되어 있습니다문제를 풀고  Discussion Tab을 참고하며 코드 스타일을 개선하려고 노력하고자 합니다  HackerRank">
+<meta name="keywords" content="파이썬,programming language,python,language">
+<meta property="og:type" content="article">
+<meta property="og:title" content="(PYTHON) Day - 12 Math(1)">
+<meta property="og:url" content="https://taejin0527.github.io/[object Object]/PY-day12/index.html">
+<meta property="og:site_name" content="AttackOnNunu">
+<meta property="og:description" content="Reference 문제 출처 - HackerRank 파이썬 연습 - Practice - Python math 모듈 - YUN DAE HEE githubpage  개인적인 생각과 상상으로 작성한 내용들이 포함되어 있습니다문제를 풀고  Discussion Tab을 참고하며 코드 스타일을 개선하려고 노력하고자 합니다  HackerRank">
+<meta property="og:locale" content="ko">
+<meta property="og:updated_time" content="2020-03-04T07:38:05.006Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="(PYTHON) Day - 12 Math(1)">
+<meta name="twitter:description" content="Reference 문제 출처 - HackerRank 파이썬 연습 - Practice - Python math 모듈 - YUN DAE HEE githubpage  개인적인 생각과 상상으로 작성한 내용들이 포함되어 있습니다문제를 풀고  Discussion Tab을 참고하며 코드 스타일을 개선하려고 노력하고자 합니다  HackerRank">
+
+
+
+  <link rel="alternate" href="/rss2.xml" title="AttackOnNunu" type="application/atom+xml">
+
+
+
+  
+  
+  <link rel="canonical" href="https://taejin0527.github.io/[object Object]/PY-day12/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>(PYTHON) Day - 12 Math(1) | AttackOnNunu</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+  <!-- Google Adsense start -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-8226968057315512",
+    enable_page_level_ads: true
+  });
+</script>
+
+  <!-- Google Adsense end -->
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="ko">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">AttackOnNunu</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <h1 class="site-subtitle" itemprop="description">Once more into the fray</h1>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>홈</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>About</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>태그</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>카테고리</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>아카이브</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+</nav>
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/PY-day12/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="NUNU">
+      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="AttackOnNunu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">(PYTHON) Day - 12 Math(1)
+
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2020-03-02 16:31:37" itemprop="dateCreated datePublished" datetime="2020-03-02T16:31:37+09:00">2020-03-02</time>
+            </span>
+          
+
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/" itemprop="url" rel="index"><span itemprop="name">LANGUAGE</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/" itemprop="url" rel="index"><span itemprop="name">PYTHON</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/HACKERRANK/" itemprop="url" rel="index"><span itemprop="name">HACKERRANK</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">댓글: </span>
+                <a href="/[object Object]/PY-day12/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/PY-day12/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
+<li>문제 출처 - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vZGFzaGJvYXJk" title="https://www.hackerrank.com/dashboard">HackerRank<i class="fa fa-external-link"></i></span></li>
+<li>파이썬 연습 - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vZG9tYWlucy9weXRob24/ZmlsdGVycyU1QnN0YXR1cyU1RCU1QiU1RD11bnNvbHZlZCZiYWRnZV90eXBlPXB5dGhvbg==" title="https://www.hackerrank.com/domains/python?filters%5Bstatus%5D%5B%5D=unsolved&badge_type=python">Practice - Python<i class="fa fa-external-link"></i></span></li>
+<li>math 모듈 - <span class="exturl" data-url="aHR0cHM6Ly8wNzY5MjMuZ2l0aHViLmlvL3Bvc3RzL1B5dGhvbi03Lw==" title="https://076923.github.io/posts/Python-7/">YUN DAE HEE githubpage<i class="fa fa-external-link"></i></span></li>
+</ul>
+<p>개인적인 생각과 상상으로 작성한 내용들이 포함되어 있습니다<br>문제를 풀고 <span class="label success"> Discussion Tab</span>을 참고하며 코드 스타일을 개선하려고 노력하고자 합니다</p>
+<hr>
+<h1 id="HackerRank"><a href="#HackerRank" class="headerlink" title="HackerRank"></a>HackerRank</h1>  <div class="spoiler collapsed">
+    <div class="spoiler-title">
+        HackerRank의 Python 연습문제들은 아래와 같은 카테고리로 분류 된다
+    </div>
+    <div class="spoiler-content">
+        <h2 id="Subdomain"><a href="#Subdomain" class="headerlink" title="Subdomain"></a>Subdomain</h2><ul>
+<li><del>Introduction</del></li>
+<li><del>Basic Data Types</del></li>
+<li><del>Strings</del></li>
+<li><del>Sets</del></li>
+<li><strong style="color:blue">Math</strong></li>
+<li>Itertools</li>
+<li>Collections</li>
+<li>Date and Time</li>
+<li>Errors and Exceptions</li>
+<li>Classes</li>
+<li>Built-Ins</li>
+<li>Python Functionals</li>
+<li>Regex and Parsing</li>
+<li>XML</li>
+<li>Closures and Decorators</li>
+<li>Numpy</li>
+<li>Debugging</li>
+</ul>
+
+    </div>
+</div>
+
+<hr>
+<h1 id="Math"><a href="#Math" class="headerlink" title="Math"></a>Math</h1><div class="note no-icon">
+            <div class="note primary no-icon">            <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><ul><li><a href="#Polar-Coordinates">Polar Coordinates</a></li></ul>          </div><hr><div class="note no-icon">            <h2 id="기본-개념"><a href="#기본-개념" class="headerlink" title="기본 개념"></a>기본 개념</h2><p><span class="label warning"> <strong>수학 관련 Built-in functions</strong></span></p><div class="note no-icon">            <p><span class="label primary"><strong>abs(x)</strong></span><br>인자 x의 절대값을 반환합니다.</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>abs(<span class="number">-2</span>)</span><br><span class="line"><span class="number">2</span> </span><br></pre></td></tr></table></figure><p><span class="label primary"><strong>divmod(a, b)</strong></span><br>복소수가 아닌 인자 a, b에 대한 나눗셈의 몫과 나머지를 반환합니다. 즉, 결과값이 (a//b, a%b)와 같습니다.</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>divmod(<span class="number">5</span>, <span class="number">3</span>)</span><br><span class="line">(<span class="number">1</span>, <span class="number">2</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>divmod(<span class="number">8.0</span>, <span class="number">2.0</span>)</span><br><span class="line">(<span class="number">4.0</span>, <span class="number">0.0</span>) </span><br></pre></td></tr></table></figure><p><span class="label primary"><strong>min(iterable, *[, key, default])</strong></span> or <span class="label primary"><strong>min(arg1, arg2, *args[, key])</strong></span><br><span class="label primary"><strong>max(iterable, *[, key, default])</strong></span> or <span class="label primary"><strong>max(arg1, arg2, *args[, key])</strong></span><br>각각 최소값, 최대값을 구하는 함수입니다.</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">findMax</span><span class="params">(num)</span>:</span></span><br><span class="line">   rem = <span class="number">0</span></span><br><span class="line">   <span class="keyword">while</span>(num):</span><br><span class="line">     rem = num%<span class="number">10</span></span><br><span class="line">     <span class="keyword">return</span> rem</span><br><span class="line"></span><br><span class="line"><span class="comment"># using max(arg1, arg2, *args, key)</span></span><br><span class="line">print(<span class="string">'Number with max remainder is:'</span>, max(<span class="number">11</span>,<span class="number">48</span>,<span class="number">33</span>,<span class="number">17</span>,<span class="number">19</span>, key=findMax))</span><br><span class="line"></span><br><span class="line"><span class="comment"># using max(iterable, key)</span></span><br><span class="line">num = [<span class="number">11</span>,<span class="number">48</span>,<span class="number">33</span>,<span class="number">17</span>]</span><br><span class="line">print(<span class="string">'Number with max remainder is:'</span>, max(num, key=findMax)) </span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">Number <span class="keyword">with</span> max remainder <span class="keyword">is</span>: <span class="number">19</span></span><br><span class="line">Number <span class="keyword">with</span> max remainder <span class="keyword">is</span>: <span class="number">48</span>  </span><br></pre></td></tr></table></figure><p><span class="label primary"><strong>sum(iterable, /, start=0)</strong></span><br>iterable의 숫자들을 왼쪽부터 차례로 더하여 start의 값에 합한 값을 반환합니다. 즉, 전체합을 반환합니다.</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>numbers = [<span class="number">2.5</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">-5</span>]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="comment"># start 인자가 생략된 경우</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>numbers_sum = sum(numbers)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(numbers_sum)</span><br><span class="line"><span class="number">4.5</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="comment"># start = 10</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>numbers_sum = sum(numbers, <span class="number">10</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(numbers_sum)</span><br><span class="line"><span class="number">14.5</span>  </span><br></pre></td></tr></table></figure><p><span class="label primary"><strong>pow(base, exp[, mod])</strong></span><br>밑(base)의 지수(exp)만큼 거듭제곱한 값을 반환합니다. 옵션으로 mod 인자가 있는 경우 거듭제곱 값을 mod로 나눈 나머지를 반환합니다.</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>pow(<span class="number">38</span>, <span class="number">-1</span>, mod=<span class="number">97</span>)</span><br><span class="line"><span class="number">23</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">23</span> * <span class="number">38</span> % <span class="number">97</span> == <span class="number">1</span></span><br><span class="line"><span class="literal">True</span>  </span><br></pre></td></tr></table></figure><p><span class="label primary"><strong>round(number[, ndigits])</strong></span><br>반올림한 값을 반환합니다.</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="comment">#ndigits 인자 즉, 소수점 자리를 생략한 경우</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>round(<span class="number">1</span>)</span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>round(<span class="number">1.4</span>)</span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>round(<span class="number">1.6</span>)</span><br><span class="line"><span class="number">2</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="comment">#소수점 자리를 명시한 경우</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>round(<span class="number">1.343</span>,<span class="number">2</span>)</span><br><span class="line"><span class="number">1.34</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>round(<span class="number">1.346</span>,<span class="number">2</span>)</span><br><span class="line"><span class="number">1.35</span>  </span><br></pre></td></tr></table></figure>          </div><p><span class="label warning"> <strong>Math module</strong></span></p><p>수학적 계산과 관련된 함수들을 제공하는 모듈(복소수는 <code>cmath</code> 모듈이 따로 존재)<br>내가 사용하는 환경 3.7.6v에서는 50개의 함수가 있다(작성일 기준 최신버전 3.8에서는 55개가 있음)</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># test.py written in PyCharm</span></span><br><span class="line"><span class="keyword">import</span> math</span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"></span><br><span class="line">s = dir(math)</span><br><span class="line">mod = [n <span class="keyword">for</span> n <span class="keyword">in</span> s <span class="keyword">if</span> <span class="keyword">not</span> n.startswith(<span class="string">'_'</span>)]</span><br><span class="line"></span><br><span class="line">print(<span class="string">'Python 버전:'</span>, sys.version)</span><br><span class="line">print()</span><br><span class="line">print(<span class="string">'function 개수:'</span>, len(mod))</span><br><span class="line">print(mod)  </span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Python 버전: 3.7.6</span><br><span class="line">[Clang 10.0.0 (clang-1000.11.45.5)]</span><br><span class="line"></span><br><span class="line">function 개수: 50</span><br><span class="line">[&apos;acos&apos;, &apos;acosh&apos;, &apos;asin&apos;, &apos;asinh&apos;, &apos;atan&apos;, &apos;atan2&apos;, &apos;atanh&apos;, &apos;ceil&apos;, &apos;copysign&apos;, &apos;cos&apos;, &apos;cosh&apos;, &apos;degrees&apos;, &apos;e&apos;, &apos;erf&apos;, &apos;erfc&apos;, &apos;exp&apos;, &apos;expm1&apos;, &apos;fabs&apos;, &apos;factorial&apos;, &apos;floor&apos;, &apos;fmod&apos;, &apos;frexp&apos;, &apos;fsum&apos;, &apos;gamma&apos;, &apos;gcd&apos;, &apos;hypot&apos;, &apos;inf&apos;, &apos;isclose&apos;, &apos;isfinite&apos;, &apos;isinf&apos;, &apos;isnan&apos;, &apos;ldexp&apos;, &apos;lgamma&apos;, &apos;log&apos;, &apos;log10&apos;, &apos;log1p&apos;, &apos;log2&apos;, &apos;modf&apos;, &apos;nan&apos;, &apos;pi&apos;, &apos;pow&apos;, &apos;radians&apos;, &apos;remainder&apos;, &apos;sin&apos;, &apos;sinh&apos;, &apos;sqrt&apos;, &apos;tan&apos;, &apos;tanh&apos;, &apos;tau&apos;, &apos;trunc&apos;]  </span><br></pre></td></tr></table></figure><p><span class="label primary">표현 함수</span></p><table><thead><tr><th>함수</th><th>설명</th></tr></thead><tbody><tr><td>ceil(x)</td><td>올림</td></tr><tr><td>floor(x)</td><td>내림</td></tr><tr><td>trunc(x)</td><td>절사</td></tr></tbody></table><span class="label primary"> 삼각 함수</span><table><thead><tr><th>함수</th><th>설명</th></tr></thead><tbody><tr><td>cos(x)</td><td>코사인</td></tr><tr><td>sin(x)</td><td>사인</td></tr><tr><td>tan(x)</td><td>탄젠트</td></tr><tr><td>acos(x)</td><td>아크코사인</td></tr><tr><td>asin(x)</td><td>아크사인</td></tr><tr><td>atan(x)</td><td>아크탄젠트</td></tr><tr><td>atan2(x, y)</td><td>x/y 아크탄젠트</td></tr></tbody></table><span class="label primary">하이퍼볼릭 함수</span><table><thead><tr><th>함수</th><th>설명</th></tr></thead><tbody><tr><td>cosh(x)</td><td>하이퍼볼릭 코사인</td></tr><tr><td>sinh(x)</td><td>하이퍼볼릭 사인</td></tr><tr><td>tanh(x)</td><td>하이퍼볼릭 탄젠트</td></tr><tr><td>acosh(x)</td><td>하이퍼볼릭 아크코사인</td></tr><tr><td>asinh(x)</td><td>하이퍼볼릭 아크사인</td></tr><tr><td>atanh(x)</td><td>하이퍼볼릭 아크탄젠트</td></tr></tbody></table><span class="label primary">각도변환 함수</span><table><thead><tr><th>함수</th><th>설명</th></tr></thead><tbody><tr><td>degrees(x)</td><td>60분법으로 변환</td></tr><tr><td>radians(x)</td><td>호도법으로 변환</td></tr></tbody></table><span class="label primary">논리 함수</span><table><thead><tr><th>함수</th><th>설명</th></tr></thead><tbody><tr><td>isclose(x, y, rel_tol=z)</td><td>x와 y가 (z*1e+02)% 내외로 가까우면 True, 아니면 False</td></tr><tr><td>isinf(x)</td><td>x가 inf이면 True, 아니면 False</td></tr><tr><td>isfinite(x)</td><td>x가 inf, nan이면 False, 아니면 True</td></tr><tr><td>isnan(x)</td><td>x가 nan이면 True, 아니면 False</td></tr></tbody></table><span class="label primary">로그 함수</span><table><thead><tr><th>함수</th><th>설명</th></tr></thead><tbody><tr><td>log(x, y)</td><td>y를 밑으로 하는 x 로그</td></tr><tr><td>log10(x)</td><td>10을 밑으로 하는 x로그</td></tr><tr><td>log1p(x)</td><td>e를 밑으로 하는 x+1로그</td></tr><tr><td>log2(x)</td><td>2를 밑으로 하는 x로그</td></tr></tbody></table><span class="label primary">연산 함수</span><table><thead><tr><th>함수</th><th>설명</th></tr></thead><tbody><tr><td>pow(x, y)</td><td>x의 y승</td></tr><tr><td>sqrt(x)</td><td>루트 x</td></tr><tr><td>erf(x)</td><td>오차함수</td></tr><tr><td>erfc(x)</td><td>여오차함수</td></tr><tr><td>exp(x)</td><td>e의 x승</td></tr><tr><td>expm1</td><td>e의 x-1승</td></tr><tr><td>frexp(x)</td><td>x를 (가수부, 지수부)로 반환</td></tr><tr><td>ldexp(x, y)</td><td>x*(2^y)</td></tr><tr><td>gamma(x)</td><td>감마함수</td></tr><tr><td>lgamma(x)</td><td>감마함수의 자연로그</td></tr><tr><td>factorial(x)</td><td>팩토리얼</td></tr><tr><td>fsum([x, y, z, …])</td><td>리스트의 합</td></tr><tr><td>fmod(x, y)</td><td>x를 y로 나눈 나머지</td></tr><tr><td>fabs(x)</td><td>절대값</td></tr><tr><td>gcd(x, y)</td><td>x와 y의 최대공약수</td></tr><tr><td>hypot(x, y)</td><td>유클리드 놈을 반환</td></tr><tr><td>modf(x)</td><td>x를 (소수부, 정수부)로 반환</td></tr><tr><td>copysign(x, y)</td><td>y의 부호를 사용하는 x를 반환</td></tr></tbody></table><span class="label primary">상수 함수</span><table><thead><tr><th align="center">함수</th><th align="center">설명</th></tr></thead><tbody><tr><td align="center">e</td><td align="center">e</td></tr><tr><td align="center">pi</td><td align="center">π</td></tr><tr><td align="center">tau</td><td align="center">τ</td></tr><tr><td align="center">inf</td><td align="center">∞</td></tr><tr><td align="center">nan</td><td align="center">Not a Number</td></tr></tbody></table><p><span class="exturl" data-url="aHR0cHM6Ly9kb2NzLnB5dGhvbi5vcmcvMy9saWJyYXJ5L21hdGguaHRtbA==" title="https://docs.python.org/3/library/math.html">Python 3.8.2 Documentation - Math<i class="fa fa-external-link"></i></span></p><span class="label warning"> **Polar Coordinates**</span><p><span class="exturl" data-url="aHR0cHM6Ly9rby53aWtpcGVkaWEub3JnL3dpa2kvJUVBJUI3JUI5JUVDJUEyJThDJUVEJTkxJTlDJUVBJUIzJTg0IyVFQiVCMyVCNSVFQyU4NiU4QyVFQyU4OCU5OF8lRUMlQjIlQjQlRUElQjMlODQ=" title="https://ko.wikipedia.org/wiki/%EA%B7%B9%EC%A2%8C%ED%91%9C%EA%B3%84#%EB%B3%B5%EC%86%8C%EC%88%98_%EC%B2%B4%EA%B3%84">극좌표계 - 위키피디아<i class="fa fa-external-link"></i></span></p>          </div><hr><h2 id="Polar-Coordinates"><a href="#Polar-Coordinates" class="headerlink" title="Polar Coordinates"></a>Polar Coordinates</h2><br><div class="note info">            <p>문제 : 복소수를 극좌표로 표현하는 문제<br>입력 : 복소수 z;<br>출력 : z를 극좌표에 표현했을 때의 r, ϕ를 출력<br><img data-src="https://s3.amazonaws.com/hr-challenge-images/9951/1440141121-5b051fd241-Capture.PNG"></p><blockquote><p>r : Distance from  to origin, i.e.,<br>ϕ : Counter clockwise angle measured from the positive -axis to the line segment</p></blockquote>          </div><div class="tabs" id="example1"><ul class="nav-tabs"><li class="tab"><a href="#example1-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example1-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane" id="example1-1"><p>  1+2j</p></div><div class="tab-pane" id="example1-2"><p>2.23606797749979<br>1.1071487177940904</p></div></div></div><div class="note success no-icon">            <p><code>polar(x)</code> 함수는 <code>abs(x)</code>, <code>phase(x)</code> 의 값을 반환한다<br>즉, 위 그림에서의 r(점까지의 거리), ϕ(위상) 에 해당한다<br>자세한 설명은 - <span class="exturl" data-url="aHR0cHM6Ly9kb2NzLnB5dGhvbi5vcmcvMi9saWJyYXJ5L2NtYXRoLmh0bWwjY21hdGgucG9sYXI=" title="https://docs.python.org/2/library/cmath.html#cmath.polar">cmath 모듈<i class="fa fa-external-link"></i></span></p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> cmath</span><br><span class="line"></span><br><span class="line">z = complex(input())</span><br><span class="line">print(*cmath.polar(z), sep=<span class="string">'\n'</span>)  </span><br></pre></td></tr></table></figure>          </div>
+          </div>
+
+<hr>
+<hr>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+      
+    </div>
+
+    
+
+    
+      
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        
+          
+        
+        <div class="post-tags">
+          
+            <a href="/tags/파이썬/" rel="tag"># 파이썬</a>
+          
+            <a href="/tags/programming-language/" rel="tag"># programming language</a>
+          
+            <a href="/tags/python/" rel="tag"># python</a>
+          
+            <a href="/tags/language/" rel="tag"># language</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/[object Object]/PY-day11/" rel="next" title="(PYTHON) Day - 11 Sets(3)">
+                <i class="fa fa-chevron-left"></i> (PYTHON) Day - 11 Sets(3)
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/[object Object]/PY-pow-vs-mathpow/" rel="prev" title="(PYTHON) pow() vs math.pow()">
+                (PYTHON) pow() vs math.pow() <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+      </div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            목차
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            흝어보기
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.gif" alt="NUNU">
+            
+              <p class="site-author-name" itemprop="name">NUNU</p>
+              <div class="site-description motion-element" itemprop="description">개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.</div>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">74</span>
+                    <span class="site-state-item-name">포스트</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                      <a href="/categories/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">15</span>
+                    <span class="site-state-item-name">카테고리</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                      <a href="/tags/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">50</span>
+                    <span class="site-state-item-name">태그</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/rss2.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Reference"><span class="nav-text">Reference</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#HackerRank"><span class="nav-text">HackerRank</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Subdomain"><span class="nav-text">Subdomain</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Math"><span class="nav-text">Math</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Problem"><span class="nav-text">Problem</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#기본-개념"><span class="nav-text">기본 개념</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Polar-Coordinates"><span class="nav-text">Polar Coordinates</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+      <!-- Adsense Sidebar -->
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- adsense_side -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8226968057315512" data-ad-slot="2956452829" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+      <!-- Adsense Sidebar -->
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">NUNU</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> v3.9.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme – <span class="exturl theme-link" data-url="aHR0cHM6Ly90aGVtZS1uZXh0Lm9yZw==">NexT.Mist</span> v7.2.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=3.4.1"></script>
+
+  
+  <script src="/lib/lazyload/lozad.min.js?v=1.10.0"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+
+
+  <script src="/js/utils.js?v=7.2.0"></script>
+
+  <script src="/js/motion.js?v=7.2.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/schemes/muse.js?v=7.2.0"></script>
+
+
+
+
+  
+  <script src="/js/scrollspy.js?v=7.2.0"></script>
+<script src="/js/post-details.js?v=7.2.0"></script>
+
+
+
+  <script src="/js/next-boot.js?v=7.2.0"></script>
+
+  
+
+  
+  <script src="/js/exturl.js?v=7.2.0"></script>
+
+
+  
+
+  
+
+  
+  
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://aon-1.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+
+
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://taejin0527.github.io/[object Object]/PY-day12/";
+    this.page.identifier = "[object Object]/PY-day12/";
+    this.page.title = '(PYTHON) Day - 12 Math(1)';
+    };
+  function loadComments() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://aon-1.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', '' + +new Date());
+    (d.head || d.body).appendChild(s);
+  }
+  
+    $(function() {
+      var offsetTop = $('#comments').offset().top - $(window).height();
+      if (offsetTop <= 0) {
+        // load directly when there's no a scrollbar
+        window.addEventListener('load', loadComments, false);
+      } else {
+        $(window).on('scroll.disqus_scroll', function() {
+          // offsetTop may changes because of manually resizing browser window or lazy loading images.
+          var offsetTop = $('#comments').offset().top - $(window).height();
+          var scrollTop = $(window).scrollTop();
+
+          // pre-load comments a bit? (margin or anything else)
+          if (offsetTop - scrollTop < 60) {
+            $(window).off('.disqus_scroll');
+            loadComments();
+          }
+        });
+      }
+    });
+  
+</script>
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"superSample":2,"width":200,"height":400,"position":"right","hOffset":0,"vOffset":-50,"mobile":{"show":false,"scale":0.5,"motion":true}}});</script></body>
+</html>
