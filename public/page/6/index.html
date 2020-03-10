@@ -356,6 +356,254 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/PY-day8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="NUNU">
+      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="AttackOnNunu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/[object Object]/PY-day8/" class="post-title-link" itemprop="url">(PYTHON) Day - 8 Strings(4)</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2020-02-21 13:45:48" itemprop="dateCreated datePublished" datetime="2020-02-21T13:45:48+09:00">2020-02-21</time>
+            </span>
+          
+
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/" itemprop="url" rel="index"><span itemprop="name">LANGUAGE</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/" itemprop="url" rel="index"><span itemprop="name">PYTHON</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/HACKERRANK/" itemprop="url" rel="index"><span itemprop="name">HACKERRANK</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">댓글: </span>
+                <a href="/[object Object]/PY-day8/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/PY-day8/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
+<li>문제 출처 - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vZGFzaGJvYXJk" title="https://www.hackerrank.com/dashboard">HackerRank<i class="fa fa-external-link"></i></span></li>
+<li>파이썬 연습 - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vZG9tYWlucy9weXRob24/ZmlsdGVycyU1QnN0YXR1cyU1RCU1QiU1RD11bnNvbHZlZCZiYWRnZV90eXBlPXB5dGhvbg==" title="https://www.hackerrank.com/domains/python?filters%5Bstatus%5D%5B%5D=unsolved&badge_type=python">Practice - Python<i class="fa fa-external-link"></i></span></li>
+</ul>
+<p>개인적인 생각과 상상으로 작성한 내용들이 포함되어 있습니다<br>문제를 풀고 <span class="label success"> Discussion Tab</span>을 참고하며 코드 스타일을 개선하려고 노력하고자 합니다</p>
+<hr>
+<br>
+
+<h1 id="HackerRank"><a href="#HackerRank" class="headerlink" title="HackerRank"></a>HackerRank</h1><p>HackerRank의 Python 연습문제들은 아래와 같은 카테고리로 분류 된다:</p>
+<div class="note default">
+            <h2 id="Subdomain"><a href="#Subdomain" class="headerlink" title="Subdomain"></a>Subdomain</h2><ul><li><del>Introduction</del></li><li><del>Basic Data Types</del></li><li><strong style="color:blue">Strings</strong></li><li>Sets</li><li>Math</li><li>Itertools</li><li>Collections</li><li>Date and Time</li><li>Errors and Exceptions</li><li>Classes</li><li>Built-Ins</li><li>Python Functionals</li><li>Regex and Parsing</li><li>XML</li><li>Closures and Decorators</li><li>Numpy</li><li>Debugging</li></ul>
+          </div>
+
+<hr>
+<br>
+
+<h1 id="Strings"><a href="#Strings" class="headerlink" title="Strings"></a>Strings</h1><div class="note primary">
+            <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><ul><li><a href="#Capitalize!">Capitalize!</a></li><li><a href="#The-Minion-Game">The Minion Game</a></li><li><a href="#Merge-the-Tools!">Merge the Tools!</a>   </li></ul>
+          </div>
+
+<h2 id="기본-개념"><a href="#기본-개념" class="headerlink" title="기본 개념"></a>기본 개념</h2><h3 id="Capitalize"><a href="#Capitalize" class="headerlink" title="Capitalize!"></a>Capitalize!</h3><div class="note info">
+            <p>문제 : 사람 이름의 첫 문자를 대문자로 바꾸는 문제</p>
+          </div>
+
+<div class="tabs" id="example1"><ul class="nav-tabs"><li class="tab active"><a href="#example1-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example1-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane active" id="example1-1"><p>chris alan</p></div><div class="tab-pane" id="example1-2"><p>Chris Alan</p></div></div></div>
+
+<div class="note success">
+            <p><span class="label default"> os 패키지는 표준 라이브러리를 다루면서 한번 정리할 예정</span></p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">solve</span><span class="params">(s)</span>:</span></span><br><span class="line">  <span class="keyword">return</span> <span class="string">' '</span>.join(i.capitalize() <span class="keyword">for</span> i <span class="keyword">in</span> s.split(<span class="string">' '</span>))</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    fptr = open(os.environ[<span class="string">'OUTPUT_PATH'</span>], <span class="string">'w'</span>)</span><br><span class="line"></span><br><span class="line">    s = input()</span><br><span class="line"></span><br><span class="line">    result = solve(s)</span><br><span class="line"></span><br><span class="line">    fptr.write(result + <span class="string">'\n'</span>)</span><br><span class="line"></span><br><span class="line">    fptr.close()  </span><br></pre></td></tr></table></figure>
+          </div>
+
+<hr>
+<h3 id="The-Minion-Game"><a href="#The-Minion-Game" class="headerlink" title="The Minion Game"></a>The Minion Game</h3><div class="note info">
+            <p>문제 : 문자열 S를 입력받으면 두 사람(Stuart, Kevin) 각각 자음(consonant), 모음(vowel)으로 시작하는 단어 조합의 총 개수를 비교하여 큰 사람의 이름과 그 숫자를 출력하는 문제<br>예제 : ‘BANANA’에서 ‘ANA’는 2번 나타나기 때문에 score는 2가 된다. 아래 그림을 참고<br><img alt="minion game" data-src="https://s3.amazonaws.com/hr-challenge-images/9693/1450330231-04db904008-banana.png"></p>
+          </div>
+
+<div class="tabs" id="example2"><ul class="nav-tabs"><li class="tab active"><a href="#example2-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example2-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane active" id="example2-1"><p>BANANA</p></div><div class="tab-pane" id="example2-2"><p>Stuart 12</p></div></div></div>
+
+<div class="note default">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">minion_game</span><span class="params">(string)</span>:</span></span><br><span class="line">  player = &#123;<span class="string">'Stuart'</span>: <span class="number">0</span>, <span class="string">'Kevin'</span>: <span class="number">0</span>&#125;</span><br><span class="line">  vowels = <span class="string">'AEIOU'</span></span><br><span class="line"></span><br><span class="line">  str_l = len(string)</span><br><span class="line">  <span class="keyword">for</span> i, c <span class="keyword">in</span> enumerate(string):</span><br><span class="line">    <span class="keyword">if</span> c <span class="keyword">in</span> vowels:</span><br><span class="line">      player[<span class="string">'Kevin'</span>] += str_l - i</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">      player[<span class="string">'Stuart'</span>] += str_l - i</span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> player[<span class="string">'Stuart'</span>] == player[<span class="string">'Kevin'</span>]:</span><br><span class="line">    print(<span class="string">'Draw'</span>)</span><br><span class="line">  <span class="keyword">elif</span> player[<span class="string">'Stuart'</span>] &gt; player[<span class="string">'Kevin'</span>]:</span><br><span class="line">    print(<span class="string">'Stuart'</span>, player[<span class="string">'Stuart'</span>])</span><br><span class="line">  <span class="keyword">else</span>:</span><br><span class="line">    print(<span class="string">'Kevin'</span>, player[<span class="string">'Kevin'</span>])</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    s = input()</span><br><span class="line">    minion_game(s) </span><br></pre></td></tr></table></figure>
+          </div>
+
+<div class="note success">
+            <p>Several optimizations.</p><ul><li><p>Use frozenset for the vowels. This is the fastest to lookup in.</p></li><li><p>Iterate through characters instead of indexing</p></li><li><p>Iterate q reverse to avoid a subtraction in each sum</p></li><li><p>Avoid repeated calls to len</p></li><li><p>Only calculate Kevins score the hard way. Use the fact that the total number of substrings is n * (n + 1) / 2 and find Stuart’s score by subtracting Kevin’s from the total number of substrings.</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">minion_game</span><span class="params">(s)</span>:</span></span><br><span class="line">  V = frozenset(<span class="string">"AEIOU"</span>)</span><br><span class="line">  n = len(s)</span><br><span class="line">  ksc = sum(q <span class="keyword">for</span> c, q <span class="keyword">in</span> zip(s, range(n, <span class="number">0</span>, <span class="number">-1</span>)) <span class="keyword">if</span> c <span class="keyword">in</span> V)</span><br><span class="line">  ssc = n * (n + <span class="number">1</span>) // <span class="number">2</span> - ksc</span><br><span class="line">  <span class="keyword">if</span> ksc &gt; ssc:</span><br><span class="line">      print(<span class="string">"Kevin &#123;:d&#125;"</span>.format(ksc))</span><br><span class="line">  <span class="keyword">elif</span> ssc &gt; ksc:</span><br><span class="line">      print(<span class="string">"Stuart &#123;:d&#125;"</span>.format(ssc))</span><br><span class="line">  <span class="keyword">else</span>:</span><br><span class="line">      print(<span class="string">"Draw"</span>)</span><br></pre></td></tr></table></figure></li></ul>
+          </div>
+
+<hr>
+<h3 id="Merge-the-Tools"><a href="#Merge-the-Tools" class="headerlink" title="Merge the Tools!"></a>Merge the Tools!</h3><div class="note info">
+            <p>입력 : 문자열 s와 정수 k를 입력받는다(k는 문자열 길이(n)의 약수)<br>출력 : k의 배수에 위치한 문자를 기준으로 sub-문자열을 구분하고 반복되는 문자는 삭제해서 출력<br>예제 : 문자열 ‘AABCAAADA’에서 길이 3으로 자르면 ‘AAB’ ‘CAA’ ‘ADA’ 3개의 sub-문자열로 나뉘고 여기서 중복되는 문자를 제거하면 ‘AB’ ‘CA’ ‘AD’가 된다</p>
+          </div>
+
+<div class="tabs" id="example3"><ul class="nav-tabs"><li class="tab active"><a href="#example3-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example3-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane active" id="example3-1"><p>AABCAAADA<br>3   </p></div><div class="tab-pane" id="example3-2"><p>AB<br>CA<br>AD</p></div></div></div>
+
+<div class="note default">
+            <p>문제의 조건을 직접 충실히 확인하는 기초적인 방법</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">merge_the_tools</span><span class="params">(string, k)</span>:</span></span><br><span class="line">sub_str = []</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(len(string)):</span><br><span class="line">  <span class="keyword">if</span> string[i] <span class="keyword">not</span> <span class="keyword">in</span> sub_str:</span><br><span class="line">    sub_str.extend(string[i])</span><br><span class="line">  <span class="keyword">if</span> (i+<span class="number">1</span>) % k == <span class="number">0</span>:</span><br><span class="line">    print(<span class="string">''</span>.join(sub_str))</span><br><span class="line">    <span class="keyword">del</span> sub_str[:]</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    string, k = input(), int(input())</span><br><span class="line">    merge_the_tools(string, k) </span><br></pre></td></tr></table></figure>
+          </div>
+
+<div class="note success">
+            <p><del>main 함수일 때 실행한다는 코드는 생략</del></p><ul><li><p>textwrap은 지난 문제에서 다뤘지만 OrderedDict 패키지는 처음봤지만 이런 방법도 있다</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> collections <span class="keyword">import</span> OrderedDict</span><br><span class="line"><span class="keyword">import</span> textwrap</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">merge_the_tools</span><span class="params">(string, k)</span>:</span></span><br><span class="line">  b=textwrap.wrap(string,k)</span><br><span class="line">  <span class="keyword">for</span> i <span class="keyword">in</span> range (len(b)):</span><br><span class="line">    print(<span class="string">""</span>.join(OrderedDict.fromkeys(b[i]))) </span><br></pre></td></tr></table></figure></li><li><p>가장 인기가 높은 해답</p></li><li><p><span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vY2hhbGxlbmdlcy9tZXJnZS10aGUtdG9vbHMvZm9ydW0=" title="https://www.hackerrank.com/challenges/merge-the-tools/forum">Discussion forum<i class="fa fa-external-link"></i></span> 참고!</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">S, N = input(), int(input())</span><br><span class="line"><span class="keyword">for</span> part <span class="keyword">in</span> zip(*[iter(S)] * N):</span><br><span class="line">    d = dict()</span><br><span class="line">    print(<span class="string">''</span>.join([ d.setdefault(c, c) <span class="keyword">for</span> c <span class="keyword">in</span> part <span class="keyword">if</span> c <span class="keyword">not</span> <span class="keyword">in</span> d ])) </span><br></pre></td></tr></table></figure></li></ul>
+          </div>
+
+<hr>
+<hr>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/PY-textwrap/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -878,253 +1126,11 @@ e-d-c-b-a-b-c-d-e
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/PY-day6/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="NUNU">
-      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="AttackOnNunu">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/[object Object]/PY-day6/" class="post-title-link" itemprop="url">(PYTHON) Day - 6 Strings(2)</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">작성일</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2020-02-15 21:46:41" itemprop="dateCreated datePublished" datetime="2020-02-15T21:46:41+09:00">2020-02-15</time>
-            </span>
-          
-
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/" itemprop="url" rel="index"><span itemprop="name">LANGUAGE</span></a></span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/" itemprop="url" rel="index"><span itemprop="name">PYTHON</span></a></span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/HACKERRANK/" itemprop="url" rel="index"><span itemprop="name">HACKERRANK</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">댓글: </span>
-                <a href="/[object Object]/PY-day6/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/PY-day6/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          <br>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
-<li>문제 출처 - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vZGFzaGJvYXJk" title="https://www.hackerrank.com/dashboard">HackerRank<i class="fa fa-external-link"></i></span></li>
-<li>파이썬 연습 - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vZG9tYWlucy9weXRob24/ZmlsdGVycyU1QnN0YXR1cyU1RCU1QiU1RD11bnNvbHZlZCZiYWRnZV90eXBlPXB5dGhvbg==" title="https://www.hackerrank.com/domains/python?filters%5Bstatus%5D%5B%5D=unsolved&badge_type=python">Practice - Python<i class="fa fa-external-link"></i></span></li>
-</ul>
-<p>개인적인 생각과 상상으로 작성한 내용들이 포함되어 있습니다<br>문제를 풀고 <span class="label success"> Discussion Tab</span>을 참고하며 코드 스타일을 개선하려고 노력하고자 합니다</p>
-<hr>
-<br>
-
-<h1 id="HackerRank"><a href="#HackerRank" class="headerlink" title="HackerRank"></a>HackerRank</h1><p>HackerRank의 Python 연습문제들은 아래와 같은 카테고리로 분류 된다:</p>
-<div class="note default">
-            <h2 id="Subdomain"><a href="#Subdomain" class="headerlink" title="Subdomain"></a>Subdomain</h2><ul><li><del>Introduction</del></li><li><del>Basic Data Types</del></li><li><strong style="color:blue">Strings</strong></li><li>Sets</li><li>Math</li><li>Itertools</li><li>Collections</li><li>Date and Time</li><li>Errors and Exceptions</li><li>Classes</li><li>Built-Ins</li><li>Python Functionals</li><li>Regex and Parsing</li><li>XML</li><li>Closures and Decorators</li><li>Numpy</li><li>Debugging</li></ul>
-          </div>
-
-<hr>
-<br>
-
-<h1 id="Strings"><a href="#Strings" class="headerlink" title="Strings"></a>Strings</h1><div class="note primary">
-            <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><ul><li><a href="#Mutations">Mutations</a></li><li><a href="#Find-a-string">Find a string</a></li><li><a href="#String-Validators">String Validators</a></li></ul>
-          </div>
-
-<h2 id="기본-개념"><a href="#기본-개념" class="headerlink" title="기본 개념"></a>기본 개념</h2><h3 id="Mutations"><a href="#Mutations" class="headerlink" title="Mutations"></a>Mutations</h3><div class="note info">
-            <p>list형은 mutable하지만, tuple형은 immutable하다<br>immutable한 string 변수가 있을 때, 이를 수정하려면 어떻게 해야할까?<br>예제 : 5번째 위치의 ‘a’ 문자를 ‘k’로 바꿔라</p>
-          </div>
-
-<div class="tabs" id="example1"><ul class="nav-tabs"><li class="tab active"><a href="#example1-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example1-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane active" id="example1-1"><p>abracadabra<br>5 k</p></div><div class="tab-pane" id="example1-2"><p>abrackdabra</p></div></div></div>
-
-<div class="note success">
-            <p>5가지 방법으로 문제를 해결해보고 각각의 시간을 측정해보았다<br><span class="label danger"> 결과를 보면 <code>&#39;&#39;.join()</code> 함수만 사용한 방법이(아래 코드의 4번째 <code>slice_join_2</code>) 가장 수행속도가 빠르다</span></p><p>당연하지만 되도록이면 <code>list()</code>, <code>format()</code> 함수를 사용하거나, 반복문(list comprehension 안에 반복문을 사용)을 사용하지 않는 것이 5~10배 정도 수행시간을 단축시킬 수 있다</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">string_to_list</span><span class="params">(string, position, character)</span>:</span></span><br><span class="line">    string_li = list(string)</span><br><span class="line">    string_li[position] = character</span><br><span class="line">    string = <span class="string">''</span>.join(string_li)</span><br><span class="line">    <span class="keyword">return</span>  string</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">string_format</span><span class="params">(string, position, character)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> (<span class="string">"&#123;&#125;&#123;&#125;&#123;&#125;"</span>.format(string[:position], character, string[position + <span class="number">1</span>:]))</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">slice_join_1</span><span class="params">(string, position, character)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> string[:position] + character + string[position+<span class="number">1</span>:]</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">slice_join_2</span><span class="params">(string, position, character)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> character.join([string[:position], string[position+<span class="number">1</span>:]])</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">comprehension_1</span><span class="params">(string, position, character)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> <span class="string">''</span>.join([character <span class="keyword">if</span> i == position <span class="keyword">else</span> string[i] <span class="keyword">for</span> i <span class="keyword">in</span> range(len(string))])</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">comprehension_2</span><span class="params">(string, position, character)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> <span class="string">''</span>.join([c <span class="keyword">if</span> p != position <span class="keyword">else</span> character <span class="keyword">for</span> p, c <span class="keyword">in</span> enumerate(string)])</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    s = input()</span><br><span class="line">    i, c = input().split()</span><br><span class="line">    p = int(i)</span><br><span class="line"></span><br><span class="line">    start_1 = time.time()</span><br><span class="line">    s_1 = string_to_list(s, p, c)</span><br><span class="line">    end_1 = time.time()</span><br><span class="line"></span><br><span class="line">    start_2 = time.time()</span><br><span class="line">    s_2 = string_format(s, p, c)</span><br><span class="line">    end_2 = time.time()</span><br><span class="line"></span><br><span class="line">    start_3 = time.time()</span><br><span class="line">    s_3 = slice_join_1(s, p, c)</span><br><span class="line">    end_3 = time.time()</span><br><span class="line"></span><br><span class="line">    start_4 = time.time()</span><br><span class="line">    s_4 = slice_join_1(s, p, c)</span><br><span class="line">    end_4 = time.time()</span><br><span class="line"></span><br><span class="line">    start_5 = time.time()</span><br><span class="line">    s_5 = comprehension_1(s, p, c)</span><br><span class="line">    end_5 = time.time()</span><br><span class="line"></span><br><span class="line">    start_6 = time.time()</span><br><span class="line">    s_6 = comprehension_2(s, p, c)</span><br><span class="line">    end_6 = time.time()</span><br><span class="line"></span><br><span class="line">    print(s_1, s_1 == (s_2 <span class="keyword">and</span> s_3 <span class="keyword">and</span> s_4 <span class="keyword">and</span> s_5 <span class="keyword">and</span> s_6))</span><br><span class="line"></span><br><span class="line">    print(<span class="string">'string_to_list: '</span>.ljust(<span class="number">20</span>), round((end_1 - start_1) * <span class="number">100</span>, <span class="number">8</span>))</span><br><span class="line">    print(<span class="string">'string_format: '</span>.ljust(<span class="number">20</span>), round((end_2 - start_2) * <span class="number">100</span>, <span class="number">8</span>))</span><br><span class="line">    print(<span class="string">'slice_join_1: '</span>.ljust(<span class="number">20</span>), round((end_3 - start_3) * <span class="number">100</span>, <span class="number">8</span>))</span><br><span class="line">    print(<span class="string">'slice_join_2: '</span>.ljust(<span class="number">20</span>), round((end_4 - start_4) * <span class="number">100</span>, <span class="number">8</span>))</span><br><span class="line">    print(<span class="string">'comprehension_1: '</span>.ljust(<span class="number">20</span>), round((end_5 - start_5) * <span class="number">100</span>, <span class="number">8</span>))</span><br><span class="line">    print(<span class="string">'comprehension_2: '</span>.ljust(<span class="number">20</span>), round((end_6 - start_6) * <span class="number">100</span>, <span class="number">8</span>)) </span><br></pre></td></tr></table></figure><ul><li>수행시간이 워낙 빠르다보니 부동소수점 e로 표현이 되는데 한눈에 파악하기 어려워 임의로 100을 곱하고 반올림하였다<br>(참고: e앞에 부분이 가수부, e뒤에 부분이 지수부이며 밑수는 10이라는 의미<br>14e2는 14 x 10^2이므로 1400, 123e-3이라면 123 x 10^-3 = 123 x 0.001 = 0.123이다)</li></ul><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># input</span></span><br><span class="line">abracadabra</span><br><span class="line"><span class="number">5</span> k</span><br><span class="line"></span><br><span class="line"><span class="comment"># output</span></span><br><span class="line">abrackdabra <span class="literal">True</span></span><br><span class="line">string_to_list:      <span class="number">0.00178814</span></span><br><span class="line">string_format:       <span class="number">0.00100136</span></span><br><span class="line">slice_join_1:        <span class="number">0.00040531</span></span><br><span class="line">slice_join_2:        <span class="number">0.0002861</span></span><br><span class="line">comprehension_1:     <span class="number">0.00193119</span></span><br><span class="line">comprehension_2:     <span class="number">0.00107288</span>  </span><br></pre></td></tr></table></figure>
-          </div>
-
-
-<hr>
-<h3 id="Find-a-string"><a href="#Find-a-string" class="headerlink" title="Find a string"></a>Find a string</h3><div class="note info">
-            <p>예제 : ABCDCDC에서 CDC가 몇 번 나타나는가</p>
-          </div>
-
-<div class="tabs" id="example2"><ul class="nav-tabs"><li class="tab active"><a href="#example2-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example2-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane active" id="example2-1"><p>ABCDCDC<br>CDC</p></div><div class="tab-pane" id="example2-2"><p>2</p></div></div></div>
-
-<div class="note success">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">count_substring</span><span class="params">(string, sub_string)</span>:</span></span><br><span class="line">    cnt = <span class="number">0</span></span><br><span class="line">    sub_len = len(sub_string)</span><br><span class="line">    loop_len = len(string) - sub_len + <span class="number">1</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(loop_len):</span><br><span class="line">        <span class="keyword">if</span> string[i:i + sub_len] == sub_string:</span><br><span class="line">            cnt += <span class="number">1</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> cnt</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">list_comprehension</span><span class="params">(string, sub_string)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> sum([<span class="number">1</span> <span class="keyword">for</span> i <span class="keyword">in</span> range(len(string) - len(sub_string) + <span class="number">1</span>) <span class="keyword">if</span> string[i:i + len(sub_string)] == sub_string])</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">list_comprehension_2</span><span class="params">(string, sub_string)</span>:</span></span><br><span class="line">    s_len = len(string)</span><br><span class="line">    sub_len = len(sub_string)</span><br><span class="line">    <span class="keyword">return</span> sum([<span class="number">1</span> <span class="keyword">for</span> i <span class="keyword">in</span> range(s_len - sub_len + <span class="number">1</span>) <span class="keyword">if</span> string[i:i + sub_len] == sub_string])</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    string = input().strip()</span><br><span class="line">    sub_string = input().strip()</span><br><span class="line"></span><br><span class="line">    start_1 = time.time()</span><br><span class="line">    count = count_substring(string, sub_string)</span><br><span class="line">    end_1 = time.time()</span><br><span class="line"></span><br><span class="line">    start_2 = time.time()</span><br><span class="line">    count_1 = list_comprehension(string, sub_string)</span><br><span class="line">    end_2 = time.time()</span><br><span class="line"></span><br><span class="line">    start_3 = time.time()</span><br><span class="line">    count_2 = list_comprehension_2(string, sub_string)</span><br><span class="line">    end_3 = time.time()</span><br><span class="line"></span><br><span class="line">    print(count, list(map(<span class="keyword">lambda</span> x: x == count, [count_1, count_2])))</span><br><span class="line">    print(<span class="string">'count_substring: '</span>.ljust(<span class="number">20</span>), round((end_1 - start_1) * <span class="number">100</span>, <span class="number">8</span>))</span><br><span class="line">    print(<span class="string">'list_1: '</span>.ljust(<span class="number">20</span>), round((end_2 - start_2) * <span class="number">100</span>, <span class="number">8</span>))</span><br><span class="line">    print(<span class="string">'list_2: '</span>.ljust(<span class="number">20</span>), round((end_3 - start_3) * <span class="number">100</span>, <span class="number">8</span>)) </span><br></pre></td></tr></table></figure><ul><li>list comprehension을 사용하는 것이 아주 미세하게 빠르다</li></ul><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># input</span></span><br><span class="line">ABCDCDC</span><br><span class="line">CDC</span><br><span class="line"></span><br><span class="line"><span class="comment"># output</span></span><br><span class="line"><span class="number">2</span> [<span class="literal">True</span>, <span class="literal">True</span>]</span><br><span class="line">count_substring:     <span class="number">0.00219345</span></span><br><span class="line">list_1:              <span class="number">0.00197887</span></span><br><span class="line">list_2:              <span class="number">0.00190735</span>  </span><br></pre></td></tr></table></figure>
-          </div>
-
-
-<hr>
-<h3 id="String-Validators"><a href="#String-Validators" class="headerlink" title="String Validators"></a>String Validators</h3><div class="note info">
-            <p>아래 함수들은 각각 문자열이 해당 범위에 속하는지 확인한다<br><code>str.isalnum()</code> : alphanumeric(a-z, A-Z and 0-9)<br><code>str.isalpha()</code> : alphabetical (a-z and A-Z)<br><code>str.isdigit()</code> : 숫자 (0-9)<br><code>str.islower()</code> : 소문자 (a-z)<br><code>str.isupper()</code> : 대문자 (A-Z)</p><p>예제 : 입력되는 문자열이 alphanumeric, alphabetical, digits, lowercase와 uppercase를 가지는지 True/False로 출력</p>
-          </div>
-
-<div class="tabs" id="example3"><ul class="nav-tabs"><li class="tab active"><a href="#example3-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example3-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane active" id="example3-1"><p>qA2</p></div><div class="tab-pane" id="example3-2"><p>True<br>True<br>True<br>True<br>True</p></div></div></div>
-
-<div class="note success">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">  s = input()</span><br><span class="line"></span><br><span class="line">  <span class="string">'''깔끔한 코딩</span></span><br><span class="line"><span class="string">  for method in [str.isalnum, str.isalpha, str.isdigit, str.islower, str.isupper]:</span></span><br><span class="line"><span class="string">      print any(method(c) for c in s)</span></span><br><span class="line"><span class="string">  '''</span></span><br><span class="line"></span><br><span class="line">  print(any(c.isalnum() <span class="keyword">for</span> c <span class="keyword">in</span> s))</span><br><span class="line">  print(any(c.isalpha() <span class="keyword">for</span> c <span class="keyword">in</span> s))</span><br><span class="line">  print(any(c.isdigit() <span class="keyword">for</span> c <span class="keyword">in</span> s))</span><br><span class="line">  print(any(c.islower() <span class="keyword">for</span> c <span class="keyword">in</span> s))</span><br><span class="line">  print(any(c.isupper() <span class="keyword">for</span> c <span class="keyword">in</span> s)) </span><br></pre></td></tr></table></figure>
-          </div>
-
-<hr>
-<hr>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
-          
-        
-      
-    </div>
-
-    
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/5/"><i class="fa fa-angle-left" aria-label="이전 페이지"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/">7</a><span class="space">&hellip;</span><a class="page-number" href="/page/26/">26</a><a class="extend next" rel="next" href="/page/7/"><i class="fa fa-angle-right" aria-label="다음 페이지"></i></a>
+    <a class="extend prev" rel="prev" href="/page/5/"><i class="fa fa-angle-left" aria-label="이전 페이지"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/">7</a><span class="space">&hellip;</span><a class="page-number" href="/page/27/">27</a><a class="extend next" rel="next" href="/page/7/"><i class="fa fa-angle-right" aria-label="다음 페이지"></i></a>
   </nav>
 
 
@@ -1168,7 +1174,7 @@ e-d-c-b-a-b-c-d-e
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">78</span>
+                    <span class="site-state-item-count">79</span>
                     <span class="site-state-item-name">포스트</span>
                   </a>
                 </div>

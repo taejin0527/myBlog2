@@ -356,6 +356,230 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/sw-6308/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="NUNU">
+      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="AttackOnNunu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/[object Object]/sw-6308/" class="post-title-link" itemprop="url">(SW Expert Academy) 내장함수 - 6308번 6311번 6312번 6313번 6314번</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2019-07-30 16:08:09" itemprop="dateCreated datePublished" datetime="2019-07-30T16:08:09+09:00">2019-07-30</time>
+            </span>
+          
+
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/SW-아카데미/" itemprop="url" rel="index"><span itemprop="name">SW 아카데미</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">댓글: </span>
+                <a href="/[object Object]/sw-6308/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/sw-6308/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="1번-6308번"><a href="#1번-6308번" class="headerlink" title="1번 - 6308번"></a>1번 - 6308번</h1><div class="note ">
+            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
+          </div>
+
+<blockquote>
+<p>문제의 입출력에서 ‘올해’’를 기준으로 20살이 100가 되는게 2099년이기 때문에 ‘올해’=2018년 임을 알 수 있다.<br>지금 날짜를 적용시키고 싶다면 그냥 datetime.now()를 쓰면 된다.</p>
+</blockquote>
+<div class="note success">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> datetime <span class="keyword">import</span> datetime, date</span><br><span class="line"></span><br><span class="line">name = input()</span><br><span class="line">age = int(input())</span><br><span class="line">now = date(<span class="number">2018</span>, <span class="number">1</span>, <span class="number">1</span>).year</span><br><span class="line"></span><br><span class="line">print(<span class="string">"&#123;&#125;(은)는 &#123;&#125;년에 100세가 될 것입니다."</span>.format(name, now-age+<span class="number">101</span>))</span><br></pre></td></tr></table></figure>
+          </div>
+
+<hr>
+<h1 id="4번-6311번"><a href="#4번-6311번" class="headerlink" title="4번 - 6311번"></a>4번 - 6311번</h1><div class="note ">
+            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
+          </div>
+
+<blockquote>
+<p>2,3번 문제는 없음<br>조금 더 간결하게 풀 수 있지 않을까? 아쉽다</p>
+</blockquote>
+<div class="note success">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> datetime <span class="keyword">import</span> datetime, date</span><br><span class="line"></span><br><span class="line">name = input()</span><br><span class="line">age = int(input())</span><br><span class="line">now = date(<span class="number">2018</span>, <span class="number">1</span>, <span class="number">1</span>).year</span><br><span class="line"></span><br><span class="line">print(<span class="string">"&#123;&#125;(은)는 &#123;&#125;년에 100세가 될 것입니다."</span>.format(name, now-age+<span class="number">101</span>))</span><br></pre></td></tr></table></figure>
+          </div>
+
+<hr>
+<h1 id="5번-6312번"><a href="#5번-6312번" class="headerlink" title="5번 - 6312번"></a>5번 - 6312번</h1><div class="note ">
+            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
+          </div>
+
+<blockquote>
+<p>정확하게 무엇을 요구하는지 이해를 못하겠다…<br>SKIP</p>
+</blockquote>
+<hr>
+<h1 id="6번-6313번"><a href="#6번-6313번" class="headerlink" title="6번 - 6313번"></a>6번 - 6313번</h1><div class="note ">
+            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
+          </div>
+
+
+<div class="note success">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">value = int(input())</span><br><span class="line"></span><br><span class="line">print(<span class="string">"ASCII &#123;&#125; =&gt; &#123;&#125;"</span>.format(value, chr(value)))</span><br></pre></td></tr></table></figure>
+          </div>
+
+<hr>
+<h1 id="7번-6314번"><a href="#7번-6314번" class="headerlink" title="7번 - 6314번"></a>7번 - 6314번</h1><div class="note ">
+            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
+          </div>
+
+<blockquote>
+<p>한줄이면 끝</p>
+</blockquote>
+<div class="note success">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(list(filter(<span class="keyword">lambda</span> x: x%<span class="number">2</span>==<span class="number">0</span>, list(range(<span class="number">1</span>,<span class="number">11</span>)))))</span><br><span class="line"></span><br><span class="line"><span class="comment"># int_list = list(range(1,11))</span></span><br><span class="line"><span class="comment"># even_list = list(filter(lambda x:x%2==0, int_list))</span></span><br><span class="line"><span class="comment"># print(even_list)</span></span><br></pre></td></tr></table></figure>
+          </div>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/sw-6325/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -807,217 +1031,11 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/sw-6249/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="NUNU">
-      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="AttackOnNunu">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/[object Object]/sw-6249/" class="post-title-link" itemprop="url">(SW Expert Academy) 흐름과 제어 반복 - 6249번 6251번 6253번</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">작성일</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2019-07-28 23:54:52" itemprop="dateCreated datePublished" datetime="2019-07-28T23:54:52+09:00">2019-07-28</time>
-            </span>
-          
-
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/SW-아카데미/" itemprop="url" rel="index"><span itemprop="name">SW 아카데미</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">댓글: </span>
-                <a href="/[object Object]/sw-6249/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/sw-6249/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          <br>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="10번-6249번"><a href="#10번-6249번" class="headerlink" title="10번 - 6249번"></a>10번 - 6249번</h1><div class="note ">
-            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
-          </div>
-
-<blockquote>
-<p>솔직히 출력값에 띄여쓰기 한칸 차이난다고 오답처리 하는건 좀…</p>
-</blockquote>
-<div class="note success">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">num = input()</span><br><span class="line">num_list = [<span class="number">0</span>] * <span class="number">10</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 또는  num_list = [0 for i in range(10)]</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> n <span class="keyword">in</span> str(num):</span><br><span class="line">    num_list[int(n)]+=<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">10</span>):</span><br><span class="line">    print(i, end=<span class="string">' '</span>)</span><br><span class="line">print()</span><br><span class="line">ans=<span class="string">''</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">10</span>):</span><br><span class="line">    ans += str(num_list[i]) + <span class="string">" "</span></span><br><span class="line"></span><br><span class="line">print(ans[:<span class="number">-1</span>])</span><br></pre></td></tr></table></figure>
-          </div>
-
-<hr>
-<h1 id="11번-6251번"><a href="#11번-6251번" class="headerlink" title="11번 - 6251번"></a>11번 - 6251번</h1><div class="note ">
-            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
-          </div>
-
-<blockquote>
-<p>반복</p>
-</blockquote>
-<div class="note success">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">5</span>):</span><br><span class="line">    print(<span class="string">"&#123;&#125;&#123;&#125;"</span>.format(<span class="string">" "</span>*(<span class="number">4</span>-i), <span class="string">"*"</span>*(i+<span class="number">1</span>)))</span><br></pre></td></tr></table></figure>
-          </div>
-
-<hr>
-<h1 id="13번-6253번"><a href="#13번-6253번" class="headerlink" title="13번 - 6253번"></a>13번 - 6253번</h1><div class="note ">
-            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
-          </div>
-
-<blockquote>
-<p>12번 문제 없음<br>내장함수를 쓰면 2줄만에 끝남 (주석 부분)<br>굳이 직접 연산하면 아래와 같음 (파이썬은 동적으로 타입을 정하기 때문에 몫을 구할 때 ‘//‘ 연산자를 사용해야함. ‘/‘ 사용시 실수형으로 바뀜)</p>
-</blockquote>
-<div class="note success">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># x = bin(int(input()))</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># print(x[2:])</span></span><br><span class="line"></span><br><span class="line">x = int(input())</span><br><span class="line"></span><br><span class="line">binary=<span class="string">''</span></span><br><span class="line"></span><br><span class="line">print(x)</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    <span class="keyword">if</span>(x==<span class="number">1</span>):</span><br><span class="line">        binary += <span class="string">'1'</span></span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    binary += str(x%<span class="number">2</span>)</span><br><span class="line">    x //= <span class="number">2</span></span><br><span class="line">    print(x)</span><br><span class="line"></span><br><span class="line">print(x)</span><br><span class="line">print(binary[::<span class="number">-1</span>])</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-          </div>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
-          
-        
-      
-    </div>
-
-    
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/16/"><i class="fa fa-angle-left" aria-label="이전 페이지"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/16/">16</a><span class="page-number current">17</span><a class="page-number" href="/page/18/">18</a><span class="space">&hellip;</span><a class="page-number" href="/page/26/">26</a><a class="extend next" rel="next" href="/page/18/"><i class="fa fa-angle-right" aria-label="다음 페이지"></i></a>
+    <a class="extend prev" rel="prev" href="/page/16/"><i class="fa fa-angle-left" aria-label="이전 페이지"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/16/">16</a><span class="page-number current">17</span><a class="page-number" href="/page/18/">18</a><span class="space">&hellip;</span><a class="page-number" href="/page/27/">27</a><a class="extend next" rel="next" href="/page/18/"><i class="fa fa-angle-right" aria-label="다음 페이지"></i></a>
   </nav>
 
 
@@ -1061,7 +1079,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">78</span>
+                    <span class="site-state-item-count">79</span>
                     <span class="site-state-item-name">포스트</span>
                   </a>
                 </div>
