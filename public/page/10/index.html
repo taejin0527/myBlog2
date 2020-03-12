@@ -356,6 +356,233 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/PY-day3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="NUNU">
+      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="AttackOnNunu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/[object Object]/PY-day3/" class="post-title-link" itemprop="url">(PYTHON) Day - 3</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2020-01-21 15:10:05" itemprop="dateCreated datePublished" datetime="2020-01-21T15:10:05+09:00">2020-01-21</time>
+            </span>
+          
+
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/" itemprop="url" rel="index"><span itemprop="name">LANGUAGE</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/" itemprop="url" rel="index"><span itemprop="name">PYTHON</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/HACKERRANK/" itemprop="url" rel="index"><span itemprop="name">HACKERRANK</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">댓글: </span>
+                <a href="/[object Object]/PY-day3/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/PY-day3/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
+<li>문제 출처 - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vZGFzaGJvYXJk" title="https://www.hackerrank.com/dashboard">HackerRank<i class="fa fa-external-link"></i></span></li>
+<li>파이썬 연습 - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vZG9tYWlucy9weXRob24/ZmlsdGVycyU1QnN0YXR1cyU1RCU1QiU1RD11bnNvbHZlZCZiYWRnZV90eXBlPXB5dGhvbg==" title="https://www.hackerrank.com/domains/python?filters%5Bstatus%5D%5B%5D=unsolved&badge_type=python">Practice - Python<i class="fa fa-external-link"></i></span></li>
+</ul>
+<blockquote>
+<p>개인적인 생각과 상상으로 작성한 내용들이 포함되어 있습니<br>문제를 풀고 <span class="label sucess">Discussion Tab</span>을 참고하며 코드 스타일을 개선하려고 노력하고자 합니다</p>
+</blockquote>
+<hr>
+<h1 id="HackerRank"><a href="#HackerRank" class="headerlink" title="HackerRank"></a>HackerRank</h1><h2 id="Mean-Var-Std"><a href="#Mean-Var-Std" class="headerlink" title="Mean, Var, Std"></a>Mean, Var, Std</h2><p>평균, 분산, 표준편차를 구하는 문제</p>
+<div class="note no-icon">
+            <ul><li>HackerRank 의 답안 출력 양식이 numpy 1.13 버전을 사용하고 있는데<br>현제 Python3 numpy는 1.14 버전이기 때문에 PASS하기 위해 버전을 맞춰준다<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy</span><br><span class="line"></span><br><span class="line">numpy.set_printoptions(legacy=<span class="string">'1.13'</span>)</span><br><span class="line">N, M = map(int, input().split())</span><br><span class="line"></span><br><span class="line">my_array = numpy.array([input().split() <span class="keyword">for</span> _ <span class="keyword">in</span> range(N)], int)</span><br><span class="line">print(numpy.mean(my_array, axis = <span class="number">1</span>))</span><br><span class="line">print(numpy.var(my_array, axis = <span class="number">0</span>))</span><br><span class="line">print(numpy.std(my_array))  </span><br></pre></td></tr></table></figure></li></ul>
+          </div>
+
+<div class="note success">
+            <ul><li>N*M을 입력 받지만 M은 필요 없으므로 N만 입력 받는 식으로 2줄 코딩<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">n = np.array([input().split() <span class="keyword">for</span> _ <span class="keyword">in</span> range(int(input().split()[<span class="number">0</span>]))],int)</span><br><span class="line">print(np.mean(n,axis=<span class="number">1</span>),np.var(n,axis=<span class="number">0</span>),np.std(n),sep=<span class="string">"\n"</span>) </span><br></pre></td></tr></table></figure></li></ul>
+          </div>
+
+
+<h2 id="Sum-Product"><a href="#Sum-Product" class="headerlink" title="Sum, Product"></a>Sum, Product</h2><p>덧셈과 곱셈을 구하는 문제</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy</span><br><span class="line"></span><br><span class="line"><span class="comment"># sum 덧셈 default 값이 none과 동일</span></span><br><span class="line">my_array = numpy.array([ [<span class="number">1</span>, <span class="number">2</span>], [<span class="number">3</span>, <span class="number">4</span>] ])</span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> numpy.sum(my_array, axis = <span class="number">0</span>)         <span class="comment">#Output : [4 6]</span></span><br><span class="line"><span class="keyword">print</span> numpy.sum(my_array, axis = <span class="number">1</span>)         <span class="comment">#Output : [3 7]</span></span><br><span class="line"><span class="keyword">print</span> numpy.sum(my_array, axis = <span class="literal">None</span>)      <span class="comment">#Output : 10</span></span><br><span class="line"><span class="keyword">print</span> numpy.sum(my_array)                   <span class="comment">#Output : 10</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># product 곱셈 (덧셈과 같음 0축이 열, 1축이 행으로 곱함)</span></span><br><span class="line"><span class="keyword">print</span> numpy.prod(my_array, axis = <span class="number">0</span>)            <span class="comment">#Output : [3 8]</span></span><br><span class="line"><span class="keyword">print</span> numpy.prod(my_array, axis = <span class="number">1</span>)            <span class="comment">#Output : [ 2 12]</span></span><br><span class="line"><span class="keyword">print</span> numpy.prod(my_array, axis = <span class="literal">None</span>)         <span class="comment">#Output : 24</span></span><br><span class="line"><span class="keyword">print</span> numpy.prod(my_array)                      <span class="comment">#Output : 24</span></span><br></pre></td></tr></table></figure>
+
+<div class="note no-icon">
+            <ul><li>입력 받은 행렬의 각 열의 합을 먼저 구하고 그 합들의 곱을 최종적으로 출력하는 문제<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line">N, M = map(int, input().split())</span><br><span class="line"></span><br><span class="line">my_array = np.array([input().split() <span class="keyword">for</span> _ <span class="keyword">in</span> range(N)], int)</span><br><span class="line">print(np.prod(np.sum(my_array, axis=<span class="number">0</span>)))  </span><br></pre></td></tr></table></figure></li></ul>
+          </div>
+
+
+<h2 id="Dot-Cross"><a href="#Dot-Cross" class="headerlink" title="Dot, Cross"></a>Dot, Cross</h2><p>내적, 외적을 구하는 문제</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy</span><br><span class="line"></span><br><span class="line"><span class="comment"># dot 내적</span></span><br><span class="line">A = numpy.array([ <span class="number">1</span>, <span class="number">2</span> ])</span><br><span class="line">B = numpy.array([ <span class="number">3</span>, <span class="number">4</span> ])</span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> numpy.dot(A, B)       <span class="comment">#Output : 11</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># cross 외적</span></span><br><span class="line">A = numpy.array([ <span class="number">1</span>, <span class="number">2</span> ])</span><br><span class="line">B = numpy.array([ <span class="number">3</span>, <span class="number">4</span> ])</span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> numpy.cross(A, B)     <span class="comment">#Output : -2</span></span><br></pre></td></tr></table></figure>
+
+<div class="note no-icon">
+            <ul><li>2개의 행렬을 입력 받고 내적만 하는 문제<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy</span><br><span class="line"></span><br><span class="line">N = int(input())</span><br><span class="line"></span><br><span class="line">array_A = numpy.array([input().split() <span class="keyword">for</span> _ <span class="keyword">in</span> range(N)], int)</span><br><span class="line">array_B = numpy.array([input().split() <span class="keyword">for</span> _ <span class="keyword">in</span> range(N)], int)</span><br><span class="line"></span><br><span class="line">print(numpy.dot(array_A, array_B))  </span><br></pre></td></tr></table></figure></li></ul>
+          </div>
+
+
+
+<h2 id="Inner-Outer"><a href="#Inner-Outer" class="headerlink" title="Inner, Outer"></a>Inner, Outer</h2><p>두 벡터의 내적(inner product)은 「.」(dot)으로 표기하며, 이래서 점곱(dot product)이라고도 말한다. 혹은 (a, b)와 같이 표기하기도 한다.<br>결과값이 스칼라이기 때문에 스칼라곱(scalar product)이라고도 하며, 계산할 때 한쪽 벡터의 코사인값을 사용하기 때문에<br>(즉, 한쪽 벡터에 직사광선을 쪼였을 때 그 그림자에 해당하는 코사인값을 사용) 영사곱(projection product)이라고도 말한다.</p>
+<p>똑같은 개념을 두고 왜 이리 표현하는 말들이 많은지 의아할 수도 있는데, 대수학, 기하학, 물리학 등의 학문영역별로 명칭, 표기가 다르다는 정도만 이해하면 된다.<br>최적화에서도 민감도분석할 때 보면 수학자는 쌍대변수(dual variable)이라고 말하는데 경제학자들은 잠재가격(shadow price)라고 말한다.</p>
+<p>외적 또한 cross product 혹은 outer product라고 한다<br>자세한 설명은 아래 링크를 통해 반복 복습!!<br><span class="exturl" data-url="aHR0cHM6Ly9yZnJpZW5kLnRpc3RvcnkuY29tLzE0Nj9jYXRlZ29yeT02MDY3NTE=" title="https://rfriend.tistory.com/146?category=606751">https://rfriend.tistory.com/146?category=606751<i class="fa fa-external-link"></i></span></p>
+<div class="note no-icon">
+            <ul><li>내적 외적하는 문제<br>입력에 대한 2가지 코딩 스타일<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line">A = np.array(list(map(int,input().split())))</span><br><span class="line"><span class="comment"># 1차원 리스트를 만들고 싶기 때문에 []를 생략함!</span></span><br><span class="line">B = np.array(input().split(), int)</span><br><span class="line"></span><br><span class="line">print(np.inner(A,B), np.outer(A, B), sep=<span class="string">'\n'</span>) </span><br></pre></td></tr></table></figure></li></ul>
+          </div>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/PY-Broadcasting/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -819,222 +1046,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/PY-day1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="NUNU">
-      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="AttackOnNunu">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/[object Object]/PY-day1/" class="post-title-link" itemprop="url">(PYTHON) Day - 1 Introduction</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">작성일</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2020-01-17 17:19:03" itemprop="dateCreated datePublished" datetime="2020-01-17T17:19:03+09:00">2020-01-17</time>
-            </span>
-          
-
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/" itemprop="url" rel="index"><span itemprop="name">LANGUAGE</span></a></span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/" itemprop="url" rel="index"><span itemprop="name">PYTHON</span></a></span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/HACKERRANK/" itemprop="url" rel="index"><span itemprop="name">HACKERRANK</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">댓글: </span>
-                <a href="/[object Object]/PY-day1/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/PY-day1/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          <br>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <div class="note info">
-            <p>파이썬을 파이썬답게!</p>
-          </div>
-
-<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
-<li>문제 출처 - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vZGFzaGJvYXJk" title="https://www.hackerrank.com/dashboard">HackerRank<i class="fa fa-external-link"></i></span></li>
-<li>파이썬 연습 - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vZG9tYWlucy9weXRob24/ZmlsdGVycyU1QnN0YXR1cyU1RCU1QiU1RD11bnNvbHZlZCZiYWRnZV90eXBlPXB5dGhvbg==" title="https://www.hackerrank.com/domains/python?filters%5Bstatus%5D%5B%5D=unsolved&badge_type=python">Practice - Python<i class="fa fa-external-link"></i></span></li>
-</ul>
-<blockquote>
-<p>Python 기초를 탄탄히 다지자<br>문제를 풀고 <span class="label sucess">Discussion Tab</span>을 참고하며 코드 스타일을 개선하려고 노력하고자 합니다</p>
-</blockquote>
-<hr>
-<h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><h2 id="loops"><a href="#loops" class="headerlink" title="loops"></a>loops</h2><p>N 개의 정수를 입력 받고, 그 정수들의 제곱을 출력하는 문제<br>정수마다 한 줄씩 띄워야함!</p>
-<div class="note no-icon">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">n = int(input())</span><br><span class="line"></span><br><span class="line">ans = [i ** <span class="number">2</span> <span class="keyword">for</span> i <span class="keyword">in</span> range(n)]</span><br><span class="line"><span class="keyword">for</span> idx <span class="keyword">in</span> range(n):</span><br><span class="line">    print(ans[idx]) </span><br></pre></td></tr></table></figure>
-          </div>
-
-<div class="note success">
-            <p>언패킹을 사용해서 한 줄로 코딩 가능!</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(*[num**<span class="number">2</span> <span class="keyword">for</span> num <span class="keyword">in</span> range(n)], sep=<span class="string">'\n'</span>) </span><br></pre></td></tr></table></figure><p>혹은 리스트에 담아서 출력하면 됨</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">[print(i**<span class="number">2</span>) <span class="keyword">for</span> i <span class="keyword">in</span> range(n)] </span><br></pre></td></tr></table></figure>
-          </div>
-
-
-<h2 id="if-else"><a href="#if-else" class="headerlink" title="if-else"></a>if-else</h2><p>홀수 이거나, 6 에서 20 사이의 숫자이면 ‘Weird’를 출력<br>그 외에는 ‘Not Weird’ 출력</p>
-<div class="note no-icon">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">n = int(input().strip())</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> n % <span class="number">2</span> == <span class="number">0</span>:</span><br><span class="line">    <span class="keyword">if</span> <span class="number">2</span> &lt;= n &lt;= <span class="number">5</span>:</span><br><span class="line">        print(<span class="string">'Not Weird'</span>)</span><br><span class="line">    <span class="keyword">elif</span> <span class="number">6</span> &lt;= n &lt;= <span class="number">20</span>:</span><br><span class="line">        print(<span class="string">'Weird'</span>)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        print(<span class="string">'Not Weird'</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    print(<span class="string">'Weird'</span>) </span><br></pre></td></tr></table></figure>
-          </div>
-
-<div class="note success">
-            <p>dict 자료형을 사용하면 if-else문을 사용하지 않고도 표현 가능</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">n = int(input().strip())</span><br><span class="line">check = &#123;<span class="literal">True</span>: <span class="string">'Not Weird'</span>, <span class="literal">False</span>: <span class="string">'Weird'</span>&#125;</span><br><span class="line"></span><br><span class="line">print(check[n % <span class="number">2</span> == <span class="number">0</span> <span class="keyword">and</span> (n <span class="keyword">in</span> range(<span class="number">2</span>, <span class="number">6</span>) <span class="keyword">or</span> n &gt; <span class="number">20</span>)]) </span><br></pre></td></tr></table></figure>
-          </div>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
-          
-        
-      
-    </div>
-
-    
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1083,7 +1094,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">80</span>
+                    <span class="site-state-item-count">81</span>
                     <span class="site-state-item-name">포스트</span>
                   </a>
                 </div>
