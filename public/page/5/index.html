@@ -356,6 +356,462 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/PY-pow-vs-mathpow/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="NUNU">
+      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="AttackOnNunu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/[object Object]/PY-pow-vs-mathpow/" class="post-title-link" itemprop="url">(PYTHON) pow() vs math.pow()</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2020-03-02 22:37:17" itemprop="dateCreated datePublished" datetime="2020-03-02T22:37:17+09:00">2020-03-02</time>
+            </span>
+          
+
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/" itemprop="url" rel="index"><span itemprop="name">LANGUAGE</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/" itemprop="url" rel="index"><span itemprop="name">PYTHON</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/TERMINOLOGY/" itemprop="url" rel="index"><span itemprop="name">TERMINOLOGY</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">댓글: </span>
+                <a href="/[object Object]/PY-pow-vs-mathpow/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/PY-pow-vs-mathpow/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
+<li>Difference between pow() and math.pow()- <span class="exturl" data-url="aHR0cHM6Ly9zdGFja292ZXJmbG93LmNvbS9xdWVzdGlvbnMvMTAyODI2NzQvZGlmZmVyZW5jZS1iZXR3ZWVuLXRoZS1idWlsdC1pbi1wb3ctYW5kLW1hdGgtcG93LWZvci1mbG9hdHMtaW4tcHl0aG9u" title="https://stackoverflow.com/questions/10282674/difference-between-the-built-in-pow-and-math-pow-for-floats-in-python">stackoverflow.com<i class="fa fa-external-link"></i></span></li>
+<li>Python pow - <span class="exturl" data-url="aHR0cHM6Ly93d3cuam91cm5hbGRldi5jb20vMjMwMDIvcHl0aG9uLXBvdw==" title="https://www.journaldev.com/23002/python-pow">journaldev.com<i class="fa fa-external-link"></i></span></li>
+<li>파이썬에서 제곱을 할때요 - <span class="exturl" data-url="aHR0cHM6Ly9lZHUuZ29vcm0uaW8vcW5hLzIwMTM=" title="https://edu.goorm.io/qna/2013">edu.groom.io<i class="fa fa-external-link"></i></span></li>
+<li>Built-in pow() - <span class="exturl" data-url="aHR0cHM6Ly9kb2NzLnB5dGhvbi5vcmcvMy9saWJyYXJ5L2Z1bmN0aW9ucy5odG1sI3Bvdw==" title="https://docs.python.org/3/library/functions.html#pow">Python Documentation<i class="fa fa-external-link"></i></span></li>
+<li>Math pow() - <span class="exturl" data-url="aHR0cHM6Ly9kb2NzLnB5dGhvbi5vcmcvMy9saWJyYXJ5L21hdGguaHRtbCNtYXRoLnBvdw==" title="https://docs.python.org/3/library/math.html#math.pow">Python Documentation<i class="fa fa-external-link"></i></span></li>
+</ul>
+<blockquote>
+<p>개인적인 생각과 상상으로 작성한 내용들이 포함되어 있습니다</p>
+</blockquote>
+<hr>
+<div class="note info">
+            <p><span class="label primary"> math 모듈</span>을 살펴보다가 기본 내장함수 <code>pow()</code>가 있는데 왜 굳이 <code>math.pow()</code>를 정의해 뒀을까 궁금해서 검색한 내용들을 정리해봤습니다.</p><img style="display:block; margin-left: auto; margin-right: auto;" data-src="https://imgs.xkcd.com/comics/powers_of_one.png"><blockquote><p>짧은 다큐멘터리 <span class="exturl" data-url="aHR0cHM6Ly95b3V0dS5iZS8wZktCaHZEanV5MA==" title="https://youtu.be/0fKBhvDjuy0">Youtube링크 - Powers of Ten™ (1977)<i class="fa fa-external-link"></i></span>를 패러디한 만화입니다</p></blockquote>
+          </div>
+
+<h1 id="단순한-비교"><a href="#단순한-비교" class="headerlink" title="단순한 비교"></a>단순한 비교</h1><div class="note no-icon">
+            <p>두 함수의 정의를 봤을 때, 내장함수 <code>pow()</code>에만 augment 하나가 더 옵션으로 들어갈 수 있는 것을 볼 수 있습니다.</p><div class="note primary no-icon">            <p>pow(base, exp[, mod])<br>math.pow(x, y)</p>          </div><p>코드를 작성해서 확인해봐도 둘은 분명히 다른 함수인 것을 알 수 있습니다.</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> math</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(pow <span class="keyword">is</span> math.pow)</span><br><span class="line"><span class="literal">False</span> </span><br></pre></td></tr></table></figure>
+          </div>
+
+<br>
+
+<h1 id="Built-in-pow"><a href="#Built-in-pow" class="headerlink" title="Built-in pow()"></a>Built-in pow()</h1><div class="note no-icon">
+            <p><code>pow(base, exp)</code> 이렇게 2개의 인자(augment)만 주어진다면 밑(base)의 지수(exp)승(또는, base의 exp제곱)한 값을 반환합니다. 반환되는 값의 자료형은 인자들의 자료형을 따라 Integer, Float, Complex number 등으로 결정됩니다.<br><mark><code>base ** exp</code>는 <code>pow(base, exp)</code>와 똑같은 기능을 합니다.</mark></p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(pow(<span class="number">10</span>, <span class="number">2</span>))</span><br><span class="line"><span class="number">100</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(pow(<span class="number">10.0</span>, <span class="number">2</span>))</span><br><span class="line"><span class="number">100.0</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(pow(<span class="number">2</span> + <span class="number">3j</span>, <span class="number">2</span>))</span><br><span class="line"><span class="number">-5</span>+<span class="number">12j</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(pow(<span class="number">0b11</span>, <span class="number">2</span>))  <span class="comment"># 0b11 = 3</span></span><br><span class="line"><span class="number">9</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(pow(<span class="number">100.0</span>, <span class="number">2</span>, <span class="number">3</span>))</span><br><span class="line">TypeError: pow() <span class="number">3</span>rd argument <span class="keyword">not</span> allowed unless all arguments are integers</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(pow(<span class="number">100</span>, <span class="number">-1</span>, <span class="number">2</span>))</span><br><span class="line">ValueError: pow() <span class="number">2</span>nd argument cannot be negative when <span class="number">3</span>rd argument specified </span><br></pre></td></tr></table></figure><p><code>pow(base, exp, mod)</code> 세번째 인자[, mod]를 입력하면 base의 exp제곱한 값에 mod를 나눈 나머지 값을 반환합니다. 특히 세번째 인자가 있을 때, base와 exp는 정수형이여야 하고 exp는 양수 값이여야 합니다. <mark><code>pow(base, exp, mod)</code>를 사용하는 것이 <code>pow(base, exp) % mod</code>로 계산하는 것 보다 효율적입니다.</mark></p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(pow(<span class="number">10</span>, <span class="number">2</span>, <span class="number">3</span>))  <span class="comment"># 10^2 % 3</span></span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(pow(<span class="number">10</span>, <span class="number">2</span>) % <span class="number">3</span>)</span><br><span class="line"><span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(pow(<span class="number">0b11</span>, <span class="number">2</span>, <span class="number">2</span>))   <span class="comment"># 9^2 % 2</span></span><br><span class="line"><span class="number">1</span> </span><br></pre></td></tr></table></figure>
+          </div>
+
+
+<h1 id="math-pow"><a href="#math-pow" class="headerlink" title="math.pow()"></a>math.pow()</h1><div class="note no-icon">
+            <p><code>math.pow(x, y)</code> 함수는 순수하게 거듭제곱의 연산 기능만 제공합니다.<br><code>pow(base, exp)</code> 함수 혹은 <code>**</code> 연산자와 다른 점으로 <code>math.pow(x,y)</code> 함수는 <span class="label danger"> 두 인자를 float 형으로 바꾼다는 점</span>입니다.</p><ul><li><code>pow(1.0, x)</code>이나 <code>pow(x, 0.0)</code>의 결과값은 무조건 1.0을 반환합니다.(x가 0이거나 NaN 값이라도)</li></ul><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> math</span><br><span class="line"></span><br><span class="line">inf = float(<span class="string">"inf"</span>)</span><br><span class="line">NaN = float(<span class="string">"nan"</span>)</span><br><span class="line">p = [inf, -inf, NaN, <span class="number">0.0</span>, <span class="number">-0.0</span>, <span class="number">0</span>]</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> x <span class="keyword">in</span> p:</span><br><span class="line">    print(<span class="string">"x is"</span>, <span class="string">f'<span class="subst">&#123;x:<span class="number">4</span>&#125;</span> /'</span>, <span class="string">"pow(1.0, x)="</span>, math.pow(<span class="number">1.0</span>, x), <span class="string">"pow(x, 0.0)="</span>, math.pow(x, <span class="number">0.0</span>)) </span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x <span class="keyword">is</span>  inf / pow(<span class="number">1.0</span>, x)= <span class="number">1.0</span> pow(x, <span class="number">0.0</span>)= <span class="number">1.0</span></span><br><span class="line">x <span class="keyword">is</span> -inf / pow(<span class="number">1.0</span>, x)= <span class="number">1.0</span> pow(x, <span class="number">0.0</span>)= <span class="number">1.0</span></span><br><span class="line">x <span class="keyword">is</span>  nan / pow(<span class="number">1.0</span>, x)= <span class="number">1.0</span> pow(x, <span class="number">0.0</span>)= <span class="number">1.0</span></span><br><span class="line">x <span class="keyword">is</span>  <span class="number">0.0</span> / pow(<span class="number">1.0</span>, x)= <span class="number">1.0</span> pow(x, <span class="number">0.0</span>)= <span class="number">1.0</span></span><br><span class="line">x <span class="keyword">is</span> <span class="number">-0.0</span> / pow(<span class="number">1.0</span>, x)= <span class="number">1.0</span> pow(x, <span class="number">0.0</span>)= <span class="number">1.0</span></span><br><span class="line">x <span class="keyword">is</span>    <span class="number">0</span> / pow(<span class="number">1.0</span>, x)= <span class="number">1.0</span> pow(x, <span class="number">0.0</span>)= <span class="number">1.0</span> </span><br></pre></td></tr></table></figure><ul><li><code>pow(x, y)</code>에서 x와 y가 finite하고, x가 음수이고, y가 정수가 아니면 <span class="label danger"> ValueError</span>를 반환합니다.</li></ul><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">vals = [(<span class="number">1.23</span>, <span class="number">3.33</span>), (<span class="number">-1.23</span>, <span class="number">2.0</span>), (<span class="number">-1.23</span>, <span class="number">-3.33</span>)]</span><br><span class="line"><span class="keyword">for</span> x, y <span class="keyword">in</span> vals:</span><br><span class="line">    print(<span class="string">f"x is <span class="subst">&#123;x&#125;</span>, y is <span class="subst">&#123;y&#125;</span> /"</span>, math.pow(x, y))  </span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x <span class="keyword">is</span> <span class="number">1.23</span>, y <span class="keyword">is</span> <span class="number">3.33</span> / <span class="number">1.9924343529238528</span></span><br><span class="line">x <span class="keyword">is</span> <span class="number">-1.23</span>, y <span class="keyword">is</span> <span class="number">2.0</span> / <span class="number">1.5129</span></span><br><span class="line">ValueError: math domain error </span><br></pre></td></tr></table></figure>
+          </div>
+
+
+<h1 id="수행시간-비교"><a href="#수행시간-비교" class="headerlink" title="수행시간 비교"></a>수행시간 비교</h1><div class="note no-icon">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># executionTime.py written in PyCharm</span></span><br><span class="line"><span class="keyword">from</span> timeit <span class="keyword">import</span> timeit</span><br><span class="line"></span><br><span class="line">print(<span class="string">'Int ** Int'</span>.ljust(<span class="number">30</span>), timeit(<span class="string">'7 ** 5'</span>))</span><br><span class="line">print(<span class="string">'pow(Int, Int)'</span>.ljust(<span class="number">30</span>), timeit(<span class="string">'pow(7, 5)'</span>))</span><br><span class="line">print(<span class="string">'math.pow(Int, Int)'</span>.ljust(<span class="number">30</span>), timeit(<span class="string">'math.pow(7, 5)'</span>, setup=<span class="string">'import math'</span>))</span><br><span class="line">print()</span><br><span class="line">print(<span class="string">'float ** float'</span>.ljust(<span class="number">30</span>), timeit(<span class="string">'7.0 ** 5.0'</span>))</span><br><span class="line">print(<span class="string">'pow(float, float)'</span>.ljust(<span class="number">30</span>), timeit(<span class="string">'pow(7.0, 5.0)'</span>))</span><br><span class="line">print(<span class="string">'math.pow(float, float)'</span>.ljust(<span class="number">30</span>), timeit(<span class="string">'math.pow(7.0, 5.0)'</span>, setup=<span class="string">'import math'</span>)) </span><br></pre></td></tr></table></figure><p><span class="label primary"> <code>**</code> 연산자가 큰 차이로 가장 빠르고 <code>pow()</code>와 <code>math.pow()</code>는 비슷비슷한 시간을 가집니다.</span></p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">Int ** Int                     <span class="number">0.012045001</span></span><br><span class="line">pow(Int, Int)                  <span class="number">0.497163934</span></span><br><span class="line">math.pow(Int, Int)             <span class="number">0.24036590000000002</span></span><br><span class="line"></span><br><span class="line">float ** float                 <span class="number">0.012131208999999976</span></span><br><span class="line">pow(float, float)              <span class="number">0.156296341</span></span><br><span class="line">math.pow(float, float)         <span class="number">0.21024002100000005</span> </span><br></pre></td></tr></table></figure>
+          </div>
+
+
+<h1 id="결론"><a href="#결론" class="headerlink" title="결론"></a>결론</h1><div class="note info no-icon">
+            <p>입력되는 인자의 자료형과 상관없이 반환값을 무조건 실수형(float)으로 받고 싶을 때 <code>math.pow()</code> 함수를 사용하는 것이 좋습니다.</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>timeit(<span class="string">'float(i) ** j'</span>, setup=<span class="string">'i, j = 7, 5'</span>)</span><br><span class="line"><span class="number">0.7610865891750791</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>timeit(<span class="string">'i ** float(j)'</span>, setup=<span class="string">'i, j = 7, 5'</span>)</span><br><span class="line"><span class="number">0.7930400942188385</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>timeit(<span class="string">'float(i ** j)'</span>, setup=<span class="string">'i, j = 7, 5'</span>)</span><br><span class="line"><span class="number">0.8946636625872202</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>timeit(<span class="string">'math.pow(i, j)'</span>, setup=<span class="string">'import math; i, j = 7, 5'</span>)</span><br><span class="line"><span class="number">0.5699394063529439</span>  </span><br></pre></td></tr></table></figure><p>위 코드 결과와 같이, 정수형으로 반환되는 <code>**</code> 연산(혹은 <code>pow()</code>) 결과를 <code>float()</code> 함수로 형변환 하는 것 보다 <code>math.pow()</code> 함수가 더 빠른 것을 볼 수 있습니다.</p><p><span class="label danger"> 특별한 경우가 아니고 간단한 연산에 필요하다면 <code>**</code> 연산자를 사용하는 것이 가장 좋을 듯 합니다</span></p>
+          </div>
+
+<hr>
+<hr>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/PY-day12/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="NUNU">
+      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="AttackOnNunu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/[object Object]/PY-day12/" class="post-title-link" itemprop="url">(PYTHON) Day - 12 Math(1)</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2020-03-02 16:31:37" itemprop="dateCreated datePublished" datetime="2020-03-02T16:31:37+09:00">2020-03-02</time>
+            </span>
+          
+
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/" itemprop="url" rel="index"><span itemprop="name">LANGUAGE</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/" itemprop="url" rel="index"><span itemprop="name">PYTHON</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/HACKERRANK/" itemprop="url" rel="index"><span itemprop="name">HACKERRANK</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">댓글: </span>
+                <a href="/[object Object]/PY-day12/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/PY-day12/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
+<li>문제 출처 - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vZGFzaGJvYXJk" title="https://www.hackerrank.com/dashboard">HackerRank<i class="fa fa-external-link"></i></span></li>
+<li>파이썬 연습 - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vZG9tYWlucy9weXRob24/ZmlsdGVycyU1QnN0YXR1cyU1RCU1QiU1RD11bnNvbHZlZCZiYWRnZV90eXBlPXB5dGhvbg==" title="https://www.hackerrank.com/domains/python?filters%5Bstatus%5D%5B%5D=unsolved&badge_type=python">Practice - Python<i class="fa fa-external-link"></i></span></li>
+<li>math 모듈 - <span class="exturl" data-url="aHR0cHM6Ly8wNzY5MjMuZ2l0aHViLmlvL3Bvc3RzL1B5dGhvbi03Lw==" title="https://076923.github.io/posts/Python-7/">YUN DAE HEE githubpage<i class="fa fa-external-link"></i></span></li>
+</ul>
+<p>개인적인 생각과 상상으로 작성한 내용들이 포함되어 있습니다<br>문제를 풀고 <span class="label success"> Discussion Tab</span>을 참고하며 코드 스타일을 개선하려고 노력하고자 합니다</p>
+<hr>
+<h1 id="HackerRank"><a href="#HackerRank" class="headerlink" title="HackerRank"></a>HackerRank</h1>  <div class="spoiler collapsed">
+    <div class="spoiler-title">
+        HackerRank의 Python 연습문제들은 아래와 같은 카테고리로 분류 된다
+    </div>
+    <div class="spoiler-content">
+        <h2 id="Subdomain"><a href="#Subdomain" class="headerlink" title="Subdomain"></a>Subdomain</h2><ul>
+<li><del>Introduction</del></li>
+<li><del>Basic Data Types</del></li>
+<li><del>Strings</del></li>
+<li><del>Sets</del></li>
+<li><strong style="color:blue">Math</strong></li>
+<li>Itertools</li>
+<li>Collections</li>
+<li>Date and Time</li>
+<li>Errors and Exceptions</li>
+<li>Classes</li>
+<li>Built-Ins</li>
+<li>Python Functionals</li>
+<li>Regex and Parsing</li>
+<li>XML</li>
+<li>Closures and Decorators</li>
+<li>Numpy</li>
+<li>Debugging</li>
+</ul>
+
+    </div>
+</div>
+
+<hr>
+<h1 id="Math"><a href="#Math" class="headerlink" title="Math"></a>Math</h1><div class="note no-icon">
+            <div class="note primary no-icon">            <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><ul><li><a href="#Polar-Coordinates">Polar Coordinates</a></li></ul>          </div><hr><div class="note no-icon">            <h2 id="기본-개념"><a href="#기본-개념" class="headerlink" title="기본 개념"></a>기본 개념</h2><p><span class="label warning"> <strong>수학 관련 Built-in functions</strong></span></p><div class="note no-icon">            <p><span class="label primary"><strong>abs(x)</strong></span><br>인자 x의 절대값을 반환합니다.</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>abs(<span class="number">-2</span>)</span><br><span class="line"><span class="number">2</span> </span><br></pre></td></tr></table></figure><p><span class="label primary"><strong>divmod(a, b)</strong></span><br>복소수가 아닌 인자 a, b에 대한 나눗셈의 몫과 나머지를 반환합니다. 즉, 결과값이 (a//b, a%b)와 같습니다.</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>divmod(<span class="number">5</span>, <span class="number">3</span>)</span><br><span class="line">(<span class="number">1</span>, <span class="number">2</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>divmod(<span class="number">8.0</span>, <span class="number">2.0</span>)</span><br><span class="line">(<span class="number">4.0</span>, <span class="number">0.0</span>) </span><br></pre></td></tr></table></figure><p><span class="label primary"><strong>min(iterable, *[, key, default])</strong></span> or <span class="label primary"><strong>min(arg1, arg2, *args[, key])</strong></span><br><span class="label primary"><strong>max(iterable, *[, key, default])</strong></span> or <span class="label primary"><strong>max(arg1, arg2, *args[, key])</strong></span><br>각각 최소값, 최대값을 구하는 함수입니다.</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">findMax</span><span class="params">(num)</span>:</span></span><br><span class="line">   rem = <span class="number">0</span></span><br><span class="line">   <span class="keyword">while</span>(num):</span><br><span class="line">     rem = num%<span class="number">10</span></span><br><span class="line">     <span class="keyword">return</span> rem</span><br><span class="line"></span><br><span class="line"><span class="comment"># using max(arg1, arg2, *args, key)</span></span><br><span class="line">print(<span class="string">'Number with max remainder is:'</span>, max(<span class="number">11</span>,<span class="number">48</span>,<span class="number">33</span>,<span class="number">17</span>,<span class="number">19</span>, key=findMax))</span><br><span class="line"></span><br><span class="line"><span class="comment"># using max(iterable, key)</span></span><br><span class="line">num = [<span class="number">11</span>,<span class="number">48</span>,<span class="number">33</span>,<span class="number">17</span>]</span><br><span class="line">print(<span class="string">'Number with max remainder is:'</span>, max(num, key=findMax)) </span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">Number <span class="keyword">with</span> max remainder <span class="keyword">is</span>: <span class="number">19</span></span><br><span class="line">Number <span class="keyword">with</span> max remainder <span class="keyword">is</span>: <span class="number">48</span>  </span><br></pre></td></tr></table></figure><p><span class="label primary"><strong>sum(iterable, /, start=0)</strong></span><br>iterable의 숫자들을 왼쪽부터 차례로 더하여 start의 값에 합한 값을 반환합니다. 즉, 전체합을 반환합니다.</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>numbers = [<span class="number">2.5</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">-5</span>]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="comment"># start 인자가 생략된 경우</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>numbers_sum = sum(numbers)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(numbers_sum)</span><br><span class="line"><span class="number">4.5</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="comment"># start = 10</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>numbers_sum = sum(numbers, <span class="number">10</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(numbers_sum)</span><br><span class="line"><span class="number">14.5</span>  </span><br></pre></td></tr></table></figure><p><span class="label primary"><strong>pow(base, exp[, mod])</strong></span><br>밑(base)의 지수(exp)만큼 거듭제곱한 값을 반환합니다. 옵션으로 mod 인자가 있는 경우 거듭제곱 값을 mod로 나눈 나머지를 반환합니다.</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>pow(<span class="number">38</span>, <span class="number">-1</span>, mod=<span class="number">97</span>)</span><br><span class="line"><span class="number">23</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">23</span> * <span class="number">38</span> % <span class="number">97</span> == <span class="number">1</span></span><br><span class="line"><span class="literal">True</span>  </span><br></pre></td></tr></table></figure><p><span class="label primary"><strong>round(number[, ndigits])</strong></span><br>반올림한 값을 반환합니다.</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="comment">#ndigits 인자 즉, 소수점 자리를 생략한 경우</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>round(<span class="number">1</span>)</span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>round(<span class="number">1.4</span>)</span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>round(<span class="number">1.6</span>)</span><br><span class="line"><span class="number">2</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="comment">#소수점 자리를 명시한 경우</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>round(<span class="number">1.343</span>,<span class="number">2</span>)</span><br><span class="line"><span class="number">1.34</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>round(<span class="number">1.346</span>,<span class="number">2</span>)</span><br><span class="line"><span class="number">1.35</span>  </span><br></pre></td></tr></table></figure>          </div><p><span class="label warning"> <strong>Math module</strong></span></p><p>수학적 계산과 관련된 함수들을 제공하는 모듈(복소수는 <code>cmath</code> 모듈이 따로 존재)<br>내가 사용하는 환경 3.7.6v에서는 50개의 함수가 있다(작성일 기준 최신버전 3.8에서는 55개가 있음)</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># test.py written in PyCharm</span></span><br><span class="line"><span class="keyword">import</span> math</span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"></span><br><span class="line">s = dir(math)</span><br><span class="line">mod = [n <span class="keyword">for</span> n <span class="keyword">in</span> s <span class="keyword">if</span> <span class="keyword">not</span> n.startswith(<span class="string">'_'</span>)]</span><br><span class="line"></span><br><span class="line">print(<span class="string">'Python 버전:'</span>, sys.version)</span><br><span class="line">print()</span><br><span class="line">print(<span class="string">'function 개수:'</span>, len(mod))</span><br><span class="line">print(mod)  </span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Python 버전: 3.7.6</span><br><span class="line">[Clang 10.0.0 (clang-1000.11.45.5)]</span><br><span class="line"></span><br><span class="line">function 개수: 50</span><br><span class="line">[&apos;acos&apos;, &apos;acosh&apos;, &apos;asin&apos;, &apos;asinh&apos;, &apos;atan&apos;, &apos;atan2&apos;, &apos;atanh&apos;, &apos;ceil&apos;, &apos;copysign&apos;, &apos;cos&apos;, &apos;cosh&apos;, &apos;degrees&apos;, &apos;e&apos;, &apos;erf&apos;, &apos;erfc&apos;, &apos;exp&apos;, &apos;expm1&apos;, &apos;fabs&apos;, &apos;factorial&apos;, &apos;floor&apos;, &apos;fmod&apos;, &apos;frexp&apos;, &apos;fsum&apos;, &apos;gamma&apos;, &apos;gcd&apos;, &apos;hypot&apos;, &apos;inf&apos;, &apos;isclose&apos;, &apos;isfinite&apos;, &apos;isinf&apos;, &apos;isnan&apos;, &apos;ldexp&apos;, &apos;lgamma&apos;, &apos;log&apos;, &apos;log10&apos;, &apos;log1p&apos;, &apos;log2&apos;, &apos;modf&apos;, &apos;nan&apos;, &apos;pi&apos;, &apos;pow&apos;, &apos;radians&apos;, &apos;remainder&apos;, &apos;sin&apos;, &apos;sinh&apos;, &apos;sqrt&apos;, &apos;tan&apos;, &apos;tanh&apos;, &apos;tau&apos;, &apos;trunc&apos;]  </span><br></pre></td></tr></table></figure><p><span class="label primary">표현 함수</span></p><table><thead><tr><th>함수</th><th>설명</th></tr></thead><tbody><tr><td>ceil(x)</td><td>올림</td></tr><tr><td>floor(x)</td><td>내림</td></tr><tr><td>trunc(x)</td><td>절사</td></tr></tbody></table><span class="label primary"> 삼각 함수</span><table><thead><tr><th>함수</th><th>설명</th></tr></thead><tbody><tr><td>cos(x)</td><td>코사인</td></tr><tr><td>sin(x)</td><td>사인</td></tr><tr><td>tan(x)</td><td>탄젠트</td></tr><tr><td>acos(x)</td><td>아크코사인</td></tr><tr><td>asin(x)</td><td>아크사인</td></tr><tr><td>atan(x)</td><td>아크탄젠트</td></tr><tr><td>atan2(x, y)</td><td>x/y 아크탄젠트</td></tr></tbody></table><span class="label primary">하이퍼볼릭 함수</span><table><thead><tr><th>함수</th><th>설명</th></tr></thead><tbody><tr><td>cosh(x)</td><td>하이퍼볼릭 코사인</td></tr><tr><td>sinh(x)</td><td>하이퍼볼릭 사인</td></tr><tr><td>tanh(x)</td><td>하이퍼볼릭 탄젠트</td></tr><tr><td>acosh(x)</td><td>하이퍼볼릭 아크코사인</td></tr><tr><td>asinh(x)</td><td>하이퍼볼릭 아크사인</td></tr><tr><td>atanh(x)</td><td>하이퍼볼릭 아크탄젠트</td></tr></tbody></table><span class="label primary">각도변환 함수</span><table><thead><tr><th>함수</th><th>설명</th></tr></thead><tbody><tr><td>degrees(x)</td><td>60분법으로 변환</td></tr><tr><td>radians(x)</td><td>호도법으로 변환</td></tr></tbody></table><span class="label primary">논리 함수</span><table><thead><tr><th>함수</th><th>설명</th></tr></thead><tbody><tr><td>isclose(x, y, rel_tol=z)</td><td>x와 y가 (z*1e+02)% 내외로 가까우면 True, 아니면 False</td></tr><tr><td>isinf(x)</td><td>x가 inf이면 True, 아니면 False</td></tr><tr><td>isfinite(x)</td><td>x가 inf, nan이면 False, 아니면 True</td></tr><tr><td>isnan(x)</td><td>x가 nan이면 True, 아니면 False</td></tr></tbody></table><span class="label primary">로그 함수</span><table><thead><tr><th>함수</th><th>설명</th></tr></thead><tbody><tr><td>log(x, y)</td><td>y를 밑으로 하는 x 로그</td></tr><tr><td>log10(x)</td><td>10을 밑으로 하는 x로그</td></tr><tr><td>log1p(x)</td><td>e를 밑으로 하는 x+1로그</td></tr><tr><td>log2(x)</td><td>2를 밑으로 하는 x로그</td></tr></tbody></table><span class="label primary">연산 함수</span><table><thead><tr><th>함수</th><th>설명</th></tr></thead><tbody><tr><td>pow(x, y)</td><td>x의 y승</td></tr><tr><td>sqrt(x)</td><td>루트 x</td></tr><tr><td>erf(x)</td><td>오차함수</td></tr><tr><td>erfc(x)</td><td>여오차함수</td></tr><tr><td>exp(x)</td><td>e의 x승</td></tr><tr><td>expm1</td><td>e의 x-1승</td></tr><tr><td>frexp(x)</td><td>x를 (가수부, 지수부)로 반환</td></tr><tr><td>ldexp(x, y)</td><td>x*(2^y)</td></tr><tr><td>gamma(x)</td><td>감마함수</td></tr><tr><td>lgamma(x)</td><td>감마함수의 자연로그</td></tr><tr><td>factorial(x)</td><td>팩토리얼</td></tr><tr><td>fsum([x, y, z, …])</td><td>리스트의 합</td></tr><tr><td>fmod(x, y)</td><td>x를 y로 나눈 나머지</td></tr><tr><td>fabs(x)</td><td>절대값</td></tr><tr><td>gcd(x, y)</td><td>x와 y의 최대공약수</td></tr><tr><td>hypot(x, y)</td><td>유클리드 놈을 반환</td></tr><tr><td>modf(x)</td><td>x를 (소수부, 정수부)로 반환</td></tr><tr><td>copysign(x, y)</td><td>y의 부호를 사용하는 x를 반환</td></tr></tbody></table><span class="label primary">상수 함수</span><table><thead><tr><th align="center">함수</th><th align="center">설명</th></tr></thead><tbody><tr><td align="center">e</td><td align="center">e</td></tr><tr><td align="center">pi</td><td align="center">π</td></tr><tr><td align="center">tau</td><td align="center">τ</td></tr><tr><td align="center">inf</td><td align="center">∞</td></tr><tr><td align="center">nan</td><td align="center">Not a Number</td></tr></tbody></table><p><span class="exturl" data-url="aHR0cHM6Ly9kb2NzLnB5dGhvbi5vcmcvMy9saWJyYXJ5L21hdGguaHRtbA==" title="https://docs.python.org/3/library/math.html">Python 3.8.2 Documentation - Math<i class="fa fa-external-link"></i></span></p><span class="label warning"> **Polar Coordinates**</span><p><span class="exturl" data-url="aHR0cHM6Ly9rby53aWtpcGVkaWEub3JnL3dpa2kvJUVBJUI3JUI5JUVDJUEyJThDJUVEJTkxJTlDJUVBJUIzJTg0IyVFQiVCMyVCNSVFQyU4NiU4QyVFQyU4OCU5OF8lRUMlQjIlQjQlRUElQjMlODQ=" title="https://ko.wikipedia.org/wiki/%EA%B7%B9%EC%A2%8C%ED%91%9C%EA%B3%84#%EB%B3%B5%EC%86%8C%EC%88%98_%EC%B2%B4%EA%B3%84">극좌표계 - 위키피디아<i class="fa fa-external-link"></i></span></p>          </div><hr><h2 id="Polar-Coordinates"><a href="#Polar-Coordinates" class="headerlink" title="Polar Coordinates"></a>Polar Coordinates</h2><br><div class="note info">            <p>문제 : 복소수를 극좌표로 표현하는 문제<br>입력 : 복소수 z;<br>출력 : z를 극좌표에 표현했을 때의 r, ϕ를 출력<br><img data-src="https://s3.amazonaws.com/hr-challenge-images/9951/1440141121-5b051fd241-Capture.PNG"></p><blockquote><p>r : Distance from  to origin, i.e.,<br>ϕ : Counter clockwise angle measured from the positive -axis to the line segment</p></blockquote>          </div><div class="tabs" id="example1"><ul class="nav-tabs"><li class="tab"><a href="#example1-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example1-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane" id="example1-1"><p>  1+2j</p></div><div class="tab-pane" id="example1-2"><p>2.23606797749979<br>1.1071487177940904</p></div></div></div><div class="note success no-icon">            <p><code>polar(x)</code> 함수는 <code>abs(x)</code>, <code>phase(x)</code> 의 값을 반환한다<br>즉, 위 그림에서의 r(점까지의 거리), ϕ(위상) 에 해당한다<br>자세한 설명은 - <span class="exturl" data-url="aHR0cHM6Ly9kb2NzLnB5dGhvbi5vcmcvMi9saWJyYXJ5L2NtYXRoLmh0bWwjY21hdGgucG9sYXI=" title="https://docs.python.org/2/library/cmath.html#cmath.polar">cmath 모듈<i class="fa fa-external-link"></i></span></p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> cmath</span><br><span class="line"></span><br><span class="line">z = complex(input())</span><br><span class="line">print(*cmath.polar(z), sep=<span class="string">'\n'</span>)  </span><br></pre></td></tr></table></figure>          </div>
+          </div>
+
+<hr>
+<hr>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/PY-day11/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -567,464 +1023,11 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/PY-day10/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="NUNU">
-      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="AttackOnNunu">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/[object Object]/PY-day10/" class="post-title-link" itemprop="url">(PYTHON) Day - 10 Sets(2)</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">작성일</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2020-02-29 20:09:08" itemprop="dateCreated datePublished" datetime="2020-02-29T20:09:08+09:00">2020-02-29</time>
-            </span>
-          
-
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/" itemprop="url" rel="index"><span itemprop="name">LANGUAGE</span></a></span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/" itemprop="url" rel="index"><span itemprop="name">PYTHON</span></a></span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/HACKERRANK/" itemprop="url" rel="index"><span itemprop="name">HACKERRANK</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">댓글: </span>
-                <a href="/[object Object]/PY-day10/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/PY-day10/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          <br>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
-<li>문제 출처 - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vZGFzaGJvYXJk" title="https://www.hackerrank.com/dashboard">HackerRank<i class="fa fa-external-link"></i></span></li>
-<li>파이썬 연습 - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vZG9tYWlucy9weXRob24/ZmlsdGVycyU1QnN0YXR1cyU1RCU1QiU1RD11bnNvbHZlZCZiYWRnZV90eXBlPXB5dGhvbg==" title="https://www.hackerrank.com/domains/python?filters%5Bstatus%5D%5B%5D=unsolved&badge_type=python">Practice - Python<i class="fa fa-external-link"></i></span></li>
-</ul>
-<p>개인적인 생각과 상상으로 작성한 내용들이 포함되어 있습니다<br>문제를 풀고 <span class="label success"> Discussion Tab</span>을 참고하며 코드 스타일을 개선하려고 노력하고자 합니다</p>
-<hr>
-<h1 id="HackerRank"><a href="#HackerRank" class="headerlink" title="HackerRank"></a>HackerRank</h1>  <div class="spoiler collapsed">
-    <div class="spoiler-title">
-        HackerRank의 Python 연습문제들은 아래와 같은 카테고리로 분류 된다
-    </div>
-    <div class="spoiler-content">
-        <h2 id="Subdomain"><a href="#Subdomain" class="headerlink" title="Subdomain"></a>Subdomain</h2><ul>
-<li><del>Introduction</del></li>
-<li><del>Basic Data Types</del></li>
-<li><del>Strings</del></li>
-<li><strong style="color:blue">Sets</strong></li>
-<li>Math</li>
-<li>Itertools</li>
-<li>Collections</li>
-<li>Date and Time</li>
-<li>Errors and Exceptions</li>
-<li>Classes</li>
-<li>Built-Ins</li>
-<li>Python Functionals</li>
-<li>Regex and Parsing</li>
-<li>XML</li>
-<li>Closures and Decorators</li>
-<li>Numpy</li>
-<li>Debugging</li>
-</ul>
-
-    </div>
-</div>
-
-<hr>
-<h1 id="Sets"><a href="#Sets" class="headerlink" title="Sets"></a>Sets</h1><div class="note no-icon">
-            <div class="note primary no-icon">            <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><ul><li><a href="#No-Idea!">No Idea!</a></li><li><a href="#Set-add">Set .add()</a></li><li><a href="#Set-discard-remove-amp-pop">Set .discard(), .remove() &amp; .pop()</a></li><li><a href="#Set-union-Operation">Set .union() Operation</a></li><li><a href="#Set-intersection-Operation">Set .intersection() Operation</a></li><li><a href="#Set-difference-Operation">Set .difference() Operation</a></li><li><a href="#Set-symmetric-difference-Operation">Set .symmetric_difference() Operation</a></li></ul>          </div><hr><h2 id="No-Idea"><a href="#No-Idea" class="headerlink" title="No Idea!"></a>No Idea!</h2><br><div class="note info">            <p>문제 : 비교를 위한 배열(N) 하나와 서로소 집합 A, B가 있을 때, N의 원소가 A에 있으면 happiness +1, B에 있으면 happiness -1<br>입력 : 원소 수 n, m을 입력; 차례로 N 배열의 n개 원소와 집합 A, B의 m개 원소를 입력<br>출력 : happiness의 값<br>예제 : N 배열 - (1, 5, 3) A 집합 - (3, 1) B 집합 - (5, 7)<br>     A 집합으로 인해 happiness +2, B 집합으로 인해 happiness -1, 최종 happiness = 1</p>          </div><div class="tabs" id="example1"><ul class="nav-tabs"><li class="tab"><a href="#example1-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example1-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane" id="example1-1"><p>3 2<br>1 5 3<br>3 1<br>5 7</p></div><div class="tab-pane" id="example1-2"><p>1</p></div></div></div><div class="note default no-icon">            <p><code>element in set_a</code> 표현으로 집합안에 원소가 존재하는지 확인할 수 있음</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">  n, m = map(int, input().split())</span><br><span class="line">  array_n = input().split()</span><br><span class="line">  set_a = &#123;e <span class="keyword">for</span> e <span class="keyword">in</span> input().split()&#125;</span><br><span class="line">  set_b = &#123;e <span class="keyword">for</span> e <span class="keyword">in</span> input().split()&#125;</span><br><span class="line"></span><br><span class="line">  happiness = <span class="number">0</span></span><br><span class="line">  <span class="keyword">for</span> element <span class="keyword">in</span> array_n:</span><br><span class="line">    <span class="keyword">if</span> element <span class="keyword">in</span> set_a:</span><br><span class="line">      happiness += <span class="number">1</span></span><br><span class="line">    <span class="keyword">if</span> element <span class="keyword">in</span> set_b:</span><br><span class="line">      happiness -= <span class="number">1</span></span><br><span class="line"></span><br><span class="line">  print(happiness)  </span><br></pre></td></tr></table></figure>          </div><div class="note success no-icon">            <p>굳이 int 형으로 변환하지 않아도 됨</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">n, m = input().split()</span><br><span class="line"></span><br><span class="line">array_n = input().split()</span><br><span class="line">A = set(input().split())</span><br><span class="line">B = set(input().split())</span><br><span class="line"></span><br><span class="line">print(sum([(i <span class="keyword">in</span> A) - (i <span class="keyword">in</span> B) <span class="keyword">for</span> i <span class="keyword">in</span> array_n]))  </span><br></pre></td></tr></table></figure>          </div><hr><h2 id="Set-add"><a href="#Set-add" class="headerlink" title="Set .add()"></a>Set .add()</h2><br><div class="note info">            <p>문제 : Rupal이 방문한 나라의 이름을 출력(중복 삭제)<br>입력 : 반복할 횟수 n을 입력; 나라 이름을 횟수만큼 반복해서 입력<br>출력 : 총 나라의 개수<br>예제 : 7번 다른 나라를 방문했는데 UK와 France는 중복됨; 즉 distinct country는 5가 됨</p>          </div><div class="tabs" id="example2"><ul class="nav-tabs"><li class="tab"><a href="#example2-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example2-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane" id="example2-1"><p>7<br>UK<br>China<br>USA<br>France<br>New Zealand<br>UK<br>France</p></div><div class="tab-pane" id="example2-2"><p>5</p></div></div></div><div class="note success no-icon">            <p><code>element in set_a</code> 표현으로 집합안에 원소가 존재하는지 확인할 수 있음</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">  n = int(input())</span><br><span class="line">  stamps = set([input() <span class="keyword">for</span> _ <span class="keyword">in</span> range(n)])</span><br><span class="line"></span><br><span class="line">  print(len(stamps))  </span><br></pre></td></tr></table></figure>          </div><hr><h2 id="Set-discard-remove-amp-pop"><a href="#Set-discard-remove-amp-pop" class="headerlink" title="Set .discard(), .remove() &amp; .pop()"></a>Set .discard(), .remove() &amp; .pop()</h2><br><div class="note info">            <p>문제 : 비교를 위한 배열(N) 하나와 서로소 집합 A, B가 있을 때, N의 원소가 A에 있으면 happiness +1, B에 있으면 happiness -1<br>입력 : 원소 수 n을 입력; 집합 s의 원소들 입력(모두 양의 정수, 9보다 작거나 같음); 명령어 수 N을 입력; 명령어 입력;<br>출력 : 최종 집합 s의 원소들 합<br>예제 : N 배열 - (1, 5, 3) A 집합 - (3, 1) B 집합 - (5, 7)<br>     A 집합으로 인해 happiness +2, B 집합으로 인해 happiness -1, 최종 happiness = 1</p>          </div><div class="tabs" id="example3"><ul class="nav-tabs"><li class="tab"><a href="#example3-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example3-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane" id="example3-1"><p>9<br>1 2 3 4 5 6 7 8 9<br>10<br>pop<br>remove 9<br>discard 9<br>discard 8<br>remove 7<br>pop<br>discard 6<br>remove 5<br>pop<br>discard 5</p></div><div class="tab-pane" id="example3-2"><p>4</p></div></div></div><div class="note success no-icon">            <p><code>eval()</code> 함수를 사용하면 쉽게 해결 가능</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">  n = int(input())</span><br><span class="line">  s = set(map(int, input().split()))</span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span> i <span class="keyword">in</span> range(int(input())):</span><br><span class="line">    eval(<span class="string">'s.&#123;0&#125;(&#123;1&#125;)'</span>.format(*input().split()+[<span class="string">''</span>]))</span><br><span class="line"></span><br><span class="line">  print(sum(s)) </span><br></pre></td></tr></table></figure>          </div><hr><h2 id="Set-union-Operation"><a href="#Set-union-Operation" class="headerlink" title="Set .union() Operation"></a>Set .union() Operation</h2><br><div class="note info">            <p>입력 : 학생 수 n 입력; 영어 신문을 구독하는 학생 번호 입력; 학생 수 b 입력; 프랑스 신문을 구독하는 학생 번호 입력<br>출력 : 영어 신문, 프랑스 신문 둘 중 하나라도 구독하는 학생 수<br>예제 : 영어 신문 구독하는 학생 번호 - (1 2 3 4 5 6 7 8 9) 프랑스 신문 - (10 1 2 3 11 21 55 6 8)<br>하나라도 구독하는 학생 번호 - (1 2 3 4 5 6 7 8 9 10 11 21 55)</p>          </div><div class="tabs" id="example4"><ul class="nav-tabs"><li class="tab"><a href="#example4-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example4-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane" id="example4-1"><p>9<br>1 2 3 4 5 6 7 8 9<br>9<br>10 1 2 3 11 21 55 6 8</p></div><div class="tab-pane" id="example4-2"><p>13</p></div></div></div><div class="note success no-icon">            <p><code>union()</code> 함수를 사용해서 합집합을 구함</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">  n = int(input())</span><br><span class="line">  eng_news = set(input().split())</span><br><span class="line">  b = int(input())</span><br><span class="line">  fra_news = set(input().split())</span><br><span class="line"></span><br><span class="line">  print(len(eng_news.union(fra_news)))  </span><br></pre></td></tr></table></figure>          </div><hr><h2 id="Set-intersection-Operation"><a href="#Set-intersection-Operation" class="headerlink" title="Set .intersection() Operation"></a>Set .intersection() Operation</h2><br><div class="note info">            <p>입력 : 이전 문제와 같음<br>출력 : 영어 신문, 프랑스 신문 둘 다 구독하는 학생 수<br>예제 : 둘 다 구독하는 학생 번호 - (1 2 3 6 8)</p>          </div><div class="tabs" id="example5"><ul class="nav-tabs"><li class="tab"><a href="#example5-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example5-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane" id="example5-1"><p>9<br>1 2 3 4 5 6 7 8 9<br>9<br>10 1 2 3 11 21 55 6 8</p></div><div class="tab-pane" id="example5-2"><p>5</p></div></div></div><div class="note success no-icon">            <p><code>intersection()</code> 함수를 사용해서 합집합을 구함</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">  n = int(input())</span><br><span class="line">  eng_news = set(input().split())</span><br><span class="line">  b = int(input())</span><br><span class="line">  fra_news = set(input().split())</span><br><span class="line"></span><br><span class="line">  print(len(eng_news.intersection(fra_news)))  </span><br></pre></td></tr></table></figure>          </div><hr><h2 id="Set-difference-Operation"><a href="#Set-difference-Operation" class="headerlink" title="Set .difference() Operation"></a>Set .difference() Operation</h2><br><div class="note info">            <p>입력 : 이전 문제와 같음<br>출력 : 영어 신문만 구독하는 학생 수<br>예제 : 영어 신문만 구독한 학생 번호 - (4 5 7 9)</p>          </div><div class="tabs" id="example6"><ul class="nav-tabs"><li class="tab"><a href="#example6-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example6-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane" id="example6-1"><p>9<br>1 2 3 4 5 6 7 8 9<br>9<br>10 1 2 3 11 21 55 6 8</p></div><div class="tab-pane" id="example6-2"><p>4</p></div></div></div><div class="note success no-icon">            <p><code>difference()</code> 함수를 사용안해도 <code>-</code> 해서 구할수도 있다</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">  n = int(input())</span><br><span class="line">  eng_news = set(input().split())</span><br><span class="line">  b = int(input())</span><br><span class="line">  fra_news = set(input().split())</span><br><span class="line"></span><br><span class="line">  print(len(eng_news.difference(fra_news)))</span><br><span class="line">  <span class="comment"># print(len(eng_news - fra_news)) </span></span><br></pre></td></tr></table></figure>          </div><hr><h2 id="Set-symmetric-difference-Operation"><a href="#Set-symmetric-difference-Operation" class="headerlink" title="Set .symmetric_difference() Operation"></a>Set .symmetric_difference() Operation</h2><br><div class="note info">            <p>입력 : 이전 문제와 같음<br>출력 : 영어 신문만 구독하거나 프랑스 신문만 구독한 학생 수<br>예제 : 둘 다 구독하는 학생 번호 - (4 5 7 9 10 11 21 55)</p>          </div><div class="tabs" id="example7"><ul class="nav-tabs"><li class="tab"><a href="#example7-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example7-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane" id="example7-1"><p>9<br>1 2 3 4 5 6 7 8 9<br>9<br>10 1 2 3 11 21 55 6 8</p></div><div class="tab-pane" id="example7-2"><p>8</p></div></div></div><div class="note success no-icon">            <p><code>symmetric_difference()</code> 함수를 사용</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">  n = int(input())</span><br><span class="line">  eng_news = set(input().split())</span><br><span class="line">  b = int(input())</span><br><span class="line">  fra_news = set(input().split())</span><br><span class="line"></span><br><span class="line">  print(len(eng_news.symmetric_difference(fra_news))) </span><br></pre></td></tr></table></figure>          </div>
-          </div>
-
-<hr>
-<hr>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
-          
-        
-      
-    </div>
-
-    
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/PY-day9/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="NUNU">
-      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="AttackOnNunu">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/[object Object]/PY-day9/" class="post-title-link" itemprop="url">(PYTHON) Day - 9 Sets(1)</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">작성일</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2020-02-28 17:29:32" itemprop="dateCreated datePublished" datetime="2020-02-28T17:29:32+09:00">2020-02-28</time>
-            </span>
-          
-
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/" itemprop="url" rel="index"><span itemprop="name">LANGUAGE</span></a></span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/" itemprop="url" rel="index"><span itemprop="name">PYTHON</span></a></span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/HACKERRANK/" itemprop="url" rel="index"><span itemprop="name">HACKERRANK</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">댓글: </span>
-                <a href="/[object Object]/PY-day9/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/PY-day9/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          <br>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
-<li>문제 출처 - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vZGFzaGJvYXJk" title="https://www.hackerrank.com/dashboard">HackerRank<i class="fa fa-external-link"></i></span></li>
-<li>파이썬 연습 - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vZG9tYWlucy9weXRob24/ZmlsdGVycyU1QnN0YXR1cyU1RCU1QiU1RD11bnNvbHZlZCZiYWRnZV90eXBlPXB5dGhvbg==" title="https://www.hackerrank.com/domains/python?filters%5Bstatus%5D%5B%5D=unsolved&badge_type=python">Practice - Python<i class="fa fa-external-link"></i></span></li>
-</ul>
-<p>개인적인 생각과 상상으로 작성한 내용들이 포함되어 있습니다<br>문제를 풀고 <span class="label success"> Discussion Tab</span>을 참고하며 코드 스타일을 개선하려고 노력하고자 합니다</p>
-<hr>
-<h1 id="HackerRank"><a href="#HackerRank" class="headerlink" title="HackerRank"></a>HackerRank</h1>  <div class="spoiler collapsed">
-    <div class="spoiler-title">
-        HackerRank의 Python 연습문제들은 아래와 같은 카테고리로 분류 된다
-    </div>
-    <div class="spoiler-content">
-        <h2 id="Subdomain"><a href="#Subdomain" class="headerlink" title="Subdomain"></a>Subdomain</h2><ul>
-<li><del>Introduction</del></li>
-<li><del>Basic Data Types</del></li>
-<li><del>Strings</del></li>
-<li><strong style="color:blue">Sets</strong></li>
-<li>Math</li>
-<li>Itertools</li>
-<li>Collections</li>
-<li>Date and Time</li>
-<li>Errors and Exceptions</li>
-<li>Classes</li>
-<li>Built-Ins</li>
-<li>Python Functionals</li>
-<li>Regex and Parsing</li>
-<li>XML</li>
-<li>Closures and Decorators</li>
-<li>Numpy</li>
-<li>Debugging</li>
-</ul>
-
-    </div>
-</div>
-
-<hr>
-<h1 id="Sets"><a href="#Sets" class="headerlink" title="Sets"></a>Sets</h1><div class="note no-icon">
-            <div class="note primary no-icon">            <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><ul><li><a href="#Introduction-to-Sets">Introduction to Sets</a></li><li><a href="#Symmetric-Difference">Symmetric Difference</a></li></ul>          </div><hr><div class="note no-icon">            <h2 id="기본-개념"><a href="#기본-개념" class="headerlink" title="기본 개념"></a>기본 개념</h2><ul><li>set 자료형은 크게 2가지 특징을 가진다<ul><li>정렬되지 않음(unordered collection of elements)</li><li>중복 데이터가 없음(without duplicate entries)</li></ul></li><li>‘membership testing’이나 ‘eliminating duplicate entries’ 등에 사용된다</li></ul><p><span class="label warning"> <strong>CREATING SETS</strong></span></p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">&gt;&gt; myset = &#123;<span class="number">1</span>, <span class="number">2</span>&#125; <span class="comment"># 값을 바로 선언하는 방법</span></span><br><span class="line">&gt;&gt; myset = set()  <span class="comment"># set 자료형 초기화</span></span><br><span class="line">&gt;&gt; myset = set([<span class="string">'a'</span>, <span class="string">'b'</span>]) <span class="comment"># list 를 set 자료형으로 변환</span></span><br><span class="line">&gt;&gt; myset</span><br><span class="line">&#123;<span class="string">'a'</span>, <span class="string">'b'</span>&#125;  </span><br></pre></td></tr></table></figure><p><span class="label warning"> <strong>MODIFYING SETS</strong></span><br><code>add()</code> 함수를 사용하는 방법과 <code>update()</code> 함수를 사용하는 방법이 있음</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">&gt;&gt; myset.add(<span class="string">'c'</span>)</span><br><span class="line">&gt;&gt; myset</span><br><span class="line">&#123;<span class="string">'a'</span>, <span class="string">'c'</span>, <span class="string">'b'</span>&#125;</span><br><span class="line">&gt;&gt; myset.add(<span class="string">'a'</span>) <span class="comment"># 'a' 데이터가 이미 있음으로 변화가 없음</span></span><br><span class="line">&gt;&gt; myset.add((<span class="number">5</span>, <span class="number">4</span>))</span><br><span class="line">&gt;&gt; myset</span><br><span class="line">&#123;<span class="string">'a'</span>, <span class="string">'c'</span>, <span class="string">'b'</span>, (<span class="number">5</span>, <span class="number">4</span>)&#125; </span><br></pre></td></tr></table></figure>  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">&gt;&gt; myset.update([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>]) <span class="comment"># update() 는 iterable한 객체에만 작동함</span></span><br><span class="line">&gt;&gt; myset</span><br><span class="line">&#123;<span class="string">'a'</span>, <span class="number">1</span>, <span class="string">'c'</span>, <span class="string">'b'</span>, <span class="number">4</span>, <span class="number">2</span>, (<span class="number">5</span>, <span class="number">4</span>), <span class="number">3</span>&#125;</span><br><span class="line">&gt;&gt; myset.update(&#123;<span class="number">1</span>, <span class="number">7</span>, <span class="number">8</span>&#125;)</span><br><span class="line">&gt;&gt; myset</span><br><span class="line">&#123;<span class="string">'a'</span>, <span class="number">1</span>, <span class="string">'c'</span>, <span class="string">'b'</span>, <span class="number">4</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">2</span>, (<span class="number">5</span>, <span class="number">4</span>), <span class="number">3</span>&#125;</span><br><span class="line">&gt;&gt; myset.update(&#123;<span class="number">1</span>, <span class="number">6</span>&#125;, [<span class="number">5</span>, <span class="number">13</span>])</span><br><span class="line">&gt;&gt; myset</span><br><span class="line">&#123;<span class="string">'a'</span>, <span class="number">1</span>, <span class="string">'c'</span>, <span class="string">'b'</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">2</span>, (<span class="number">5</span>, <span class="number">4</span>), <span class="number">13</span>, <span class="number">3</span>&#125; </span><br></pre></td></tr></table></figure><p><span class="label warning"> <strong>REMOVING ITEMS</strong></span><br><code>discard()</code> 함수와 <code>remove()</code> 함수가 있으며 하나의 인자(argument)를 전달받아 집합에서 제거함<br>해당 데이터가 없으면 <code>discard()</code> 는 아무것도 안하지만 <code>remove()</code> 는 <span class="label danger"> KeyError exception</span>을 발생시킴</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">&gt;&gt; myset.discard(<span class="number">10</span>)</span><br><span class="line">&gt;&gt; myset</span><br><span class="line">&#123;<span class="string">'a'</span>, <span class="number">1</span>, <span class="string">'c'</span>, <span class="string">'b'</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">2</span>, <span class="number">12</span>, (<span class="number">5</span>, <span class="number">4</span>), <span class="number">13</span>, <span class="number">11</span>, <span class="number">3</span>&#125;</span><br><span class="line">&gt;&gt; myset.remove(<span class="number">13</span>)</span><br><span class="line">&gt;&gt; myset</span><br><span class="line">&#123;<span class="string">'a'</span>, <span class="number">1</span>, <span class="string">'c'</span>, <span class="string">'b'</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">2</span>, <span class="number">12</span>, (<span class="number">5</span>, <span class="number">4</span>), <span class="number">11</span>, <span class="number">3</span>&#125; </span><br></pre></td></tr></table></figure>  <p><code>pop()</code> 함수는 임의의 값을 반환하고 삭제<br><code>clear()</code> 함수는 집합에 있는 모든 값을 삭제</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">&gt;&gt; myset.pop()</span><br><span class="line">&gt;&gt; myset</span><br><span class="line"><span class="number">1</span></span><br><span class="line">&gt;&gt; myset.clear()</span><br><span class="line">&gt;&gt; myset</span><br><span class="line">set() </span><br></pre></td></tr></table></figure><p><span class="label warning"> <strong>COMMON SET OPERATIONS</strong></span><br><code>union()</code>, <code>intersection()</code> 그리고 <code>difference()</code> 함수가 있음</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">&gt;&gt; a = &#123;<span class="number">2</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">9</span>&#125;</span><br><span class="line">&gt;&gt; b = &#123;<span class="number">2</span>, <span class="number">4</span>, <span class="number">11</span>, <span class="number">12</span>&#125;</span><br><span class="line">&gt;&gt; a.union(b) <span class="comment"># a와 b 집합의 합집합</span></span><br><span class="line">&#123;<span class="number">2</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">9</span>, <span class="number">11</span>, <span class="number">12</span>&#125;</span><br><span class="line">&gt;&gt; a.intersection(b) <span class="comment"># a와 b 집합의 교집합</span></span><br><span class="line">&#123;<span class="number">2</span>, <span class="number">4</span>&#125;</span><br><span class="line">&gt;&gt; a.difference(b) <span class="comment"># a와 b 집합의 차집합</span></span><br><span class="line">&#123;<span class="number">9</span>, <span class="number">5</span>&#125; </span><br></pre></td></tr></table></figure>            </div><hr><h2 id="Introduction-to-Sets"><a href="#Introduction-to-Sets" class="headerlink" title="Introduction to Sets"></a>Introduction to Sets</h2><br><div class="note info">            <p>문제 : Ms. Gabriel Williams 의 온실에 있는 나무들의 평균키를 구하라<br>입력 : 총 나무의 수 N과 각 나무의 키를 입력 받는다<br>출력 : 나무들의 평균키</p>          </div><div class="tabs" id="example1"><ul class="nav-tabs"><li class="tab"><a href="#example1-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example1-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane" id="example1-1"><p>10<br>161 182 161 154 176 170 167 171 170 174</p></div><div class="tab-pane" id="example1-2"><p>169.375</p></div></div></div><div class="note success no-icon">            <p>수행시간에 대한 최적화는 딱히 생각하지 않고 그냥 로직에 따라 구현</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">average</span><span class="params">(array)</span>:</span></span><br><span class="line">  Sum_of_distinct_heights = sum(set(array))</span><br><span class="line">  Total_number_of_distict_heights = len(set(array))</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> Sum_of_distinct_heights/Total_number_of_distict_heights</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    n = int(input())</span><br><span class="line">    arr = list(map(int, input().split()))</span><br><span class="line">    result = average(arr)</span><br><span class="line">    print(result) </span><br></pre></td></tr></table></figure>          </div><hr><h2 id="Symmetric-Difference"><a href="#Symmetric-Difference" class="headerlink" title="Symmetric Difference"></a>Symmetric Difference</h2><br><div class="note info">            <p>문제 : 두 집합의 대칭차(symmetric difference)를 오름차순으로 출력해라<br>입력 : 원소 개수 M, M개의 원소들, 원소 개수 N, N개의 원소들 (4줄 입력)<br>출력 : 대칭차를 한줄씩 출력</p>          </div><div class="tabs" id="example2"><ul class="nav-tabs"><li class="tab"><a href="#example2-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example2-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane" id="example2-1"><p>4<br>2 4 5 9<br>4<br>2 4 11 12</p></div><div class="tab-pane" id="example2-2"><p>5<br>9<br>11<br>12</p></div></div></div><div class="note default no-icon">            <p>대칭차를 구하는 함수 <code>symmetric_difference()</code> 를 사용</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Enter your code here. Read input from STDIN. Print output to STDOUT</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    M = int(input())</span><br><span class="line">    set_m = &#123;int(element) <span class="keyword">for</span> element <span class="keyword">in</span> input().split()&#125;</span><br><span class="line">    N = int(input())</span><br><span class="line">    set_n = &#123;int(element) <span class="keyword">for</span> element <span class="keyword">in</span> input().split()&#125;</span><br><span class="line"></span><br><span class="line">    print(*sorted(set_m.symmetric_difference(set_n)), sep=<span class="string">'\n'</span>) </span><br></pre></td></tr></table></figure>          </div><div class="note success no-icon">            <p>사실 1, 3번째 줄의 입력은 무의미하다<br>두개의 집합을 한줄로 입력 받는 방법을 기억해두자</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a,b = [set(input().split()) <span class="keyword">for</span> _ <span class="keyword">in</span> range(<span class="number">4</span>)][<span class="number">1</span>::<span class="number">2</span>]</span><br><span class="line">print(*sorted(a^b, key=int), sep=<span class="string">'\n'</span>)  </span><br></pre></td></tr></table></figure>          </div>
-          </div>
-<hr>
-<hr>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
-          
-        
-      
-    </div>
-
-    
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/4/"><i class="fa fa-angle-left" aria-label="이전 페이지"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><span class="page-number current">5</span><a class="page-number" href="/page/6/">6</a><span class="space">&hellip;</span><a class="page-number" href="/page/27/">27</a><a class="extend next" rel="next" href="/page/6/"><i class="fa fa-angle-right" aria-label="다음 페이지"></i></a>
+    <a class="extend prev" rel="prev" href="/page/4/"><i class="fa fa-angle-left" aria-label="이전 페이지"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><span class="page-number current">5</span><a class="page-number" href="/page/6/">6</a><span class="space">&hellip;</span><a class="page-number" href="/page/28/">28</a><a class="extend next" rel="next" href="/page/6/"><i class="fa fa-angle-right" aria-label="다음 페이지"></i></a>
   </nav>
 
 
@@ -1068,7 +1071,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">81</span>
+                    <span class="site-state-item-count">83</span>
                     <span class="site-state-item-name">포스트</span>
                   </a>
                 </div>
