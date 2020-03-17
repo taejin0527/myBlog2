@@ -356,6 +356,262 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/PY-day5/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="NUNU">
+      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="AttackOnNunu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/[object Object]/PY-day5/" class="post-title-link" itemprop="url">(PYTHON) Day - 5 Strings(1)</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2020-01-23 17:08:56" itemprop="dateCreated datePublished" datetime="2020-01-23T17:08:56+09:00">2020-01-23</time>
+            </span>
+          
+
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/" itemprop="url" rel="index"><span itemprop="name">LANGUAGE</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/" itemprop="url" rel="index"><span itemprop="name">PYTHON</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/HACKERRANK/" itemprop="url" rel="index"><span itemprop="name">HACKERRANK</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">댓글: </span>
+                <a href="/[object Object]/PY-day5/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/PY-day5/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
+<li>문제 출처 - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vZGFzaGJvYXJk" title="https://www.hackerrank.com/dashboard">HackerRank<i class="fa fa-external-link"></i></span></li>
+<li>파이썬 연습 - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vZG9tYWlucy9weXRob24/ZmlsdGVycyU1QnN0YXR1cyU1RCU1QiU1RD11bnNvbHZlZCZiYWRnZV90eXBlPXB5dGhvbg==" title="https://www.hackerrank.com/domains/python?filters%5Bstatus%5D%5B%5D=unsolved&badge_type=python">Practice - Python<i class="fa fa-external-link"></i></span></li>
+</ul>
+<p>개인적인 생각과 상상으로 작성한 내용들이 포함되어 있습니다<br>문제를 풀고 <span class="label success"> Discussion Tab</span>을 참고하며 코드 스타일을 개선하려고 노력하고자 합니다</p>
+<hr>
+<br>
+
+<h1 id="HackerRank"><a href="#HackerRank" class="headerlink" title="HackerRank"></a>HackerRank</h1><blockquote>
+<p>Numpy 패키지와 관련된 내용은 수학적 내용들과 함께 다루기 위해 나중에 다시 정리하기로 했다.</p>
+</blockquote>
+<p>HackerRank의 Python 연습문제들은 아래와 같은 카테고리로 분류 된다:</p>
+<div class="note default">
+            <h2 id="Subdomain"><a href="#Subdomain" class="headerlink" title="Subdomain"></a>Subdomain</h2><ul><li><del>Introduction</del></li><li><del>Basic Data Types</del></li><li><strong style="color:blue">Strings</strong></li><li>Sets</li><li>Math</li><li>Itertools</li><li>Collections</li><li>Date and Time</li><li>Errors and Exceptions</li><li>Classes</li><li>Built-Ins</li><li>Python Functionals</li><li>Regex and Parsing</li><li>XML</li><li>Closures and Decorators</li><li>Numpy</li><li>Debugging</li></ul>
+          </div>
+
+<hr>
+<br>
+
+<h1 id="Strings"><a href="#Strings" class="headerlink" title="Strings"></a>Strings</h1><div class="note primary">
+            <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><ul><li><a href="#sWAP-cASE">sWAP cASE</a></li><li><a href="#String-Split-and-Join">String Split and Join</a></li><li><a href="#What's-Your-Name">What’s Your Name?</a>  </li></ul>
+          </div>
+
+<h2 id="기본-개념"><a href="#기본-개념" class="headerlink" title="기본 개념"></a>기본 개념</h2><h3 id="sWAP-cASE"><a href="#sWAP-cASE" class="headerlink" title="sWAP cASE"></a>sWAP cASE</h3><div class="note info">
+            <p>대문자는 소문자로, 소문자는 대문자로 바꾸는 문제</p>
+          </div>
+
+<div class="tabs" id="example1"><ul class="nav-tabs"><li class="tab active"><a href="#example1-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example1-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane active" id="example1-1"><p>HackerRank.com presents “Pythonist 2”.</p></div><div class="tab-pane" id="example1-2"><p>hACKERrANK.COM PRESENTS “pYTHONIST 2”.</p></div></div></div>
+
+<div class="note no-icon">
+            <p>반사적으로 떠오르는 풀이 방법, 문자열의 문자 하나하나를 반복문을 통해 확인하며 대소문자를 바꿈<br><span class="label danger"> 하지만 이는 굉장히 비효율적인 방법이다</span><br>String 타입은 immutable하기 때문에, 반복문을 지나면서 기존의 ans 변수가 수정되는 것이 아니라<br>새로운 String 객체를 만들어서 ans 변수에 선언되는 것이다</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">swap_case</span><span class="params">(s)</span>:</span></span><br><span class="line">  ans = <span class="string">""</span></span><br><span class="line">  <span class="keyword">for</span> letter <span class="keyword">in</span> s:</span><br><span class="line">      <span class="keyword">if</span> letter.isupper() <span class="keyword">is</span> <span class="literal">True</span>:</span><br><span class="line">          ans += letter.lower()</span><br><span class="line">      <span class="keyword">else</span>:</span><br><span class="line">          ans += letter.upper()</span><br><span class="line">  <span class="keyword">return</span> ans</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">  s = input()</span><br><span class="line">  result = swap_case(s)</span><br><span class="line">  print(result) </span><br></pre></td></tr></table></figure>
+          </div>
+
+<div class="note success">
+            <p>list comprehension을 사용한 방법과,<br>내장함수 <code>swapcase()</code> 를 사용하는 방법도 있다</p><p>각 수행시간을 측정해보면, list를 사용한 것이 가장 빠른 것을 알 수 있다</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">  <span class="keyword">import</span> time</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">swap_case_1</span><span class="params">(s)</span>:</span></span><br><span class="line">    ans = <span class="string">""</span></span><br><span class="line">    <span class="keyword">for</span> letter <span class="keyword">in</span> s:</span><br><span class="line">        <span class="keyword">if</span> letter.isupper() <span class="keyword">is</span> <span class="literal">True</span>:</span><br><span class="line">            ans += letter.lower()</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            ans += letter.upper()</span><br><span class="line">    <span class="keyword">return</span> ans</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">swap_case_2</span><span class="params">(s)</span>:</span></span><br><span class="line">    ans = [i.lower() <span class="keyword">if</span> i.isupper() <span class="keyword">else</span> i.upper() <span class="keyword">for</span> i <span class="keyword">in</span> s]</span><br><span class="line">    <span class="keyword">return</span> <span class="string">''</span>.join(ans)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">swap_case_3</span><span class="params">(s)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> s.swapcase()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    s = input()</span><br><span class="line"></span><br><span class="line">    start_1 = time.time()</span><br><span class="line">    result_1 = swap_case_1(s)</span><br><span class="line">    end_1 = time.time()</span><br><span class="line"></span><br><span class="line">    start_2 = time.time()</span><br><span class="line">    result_2 = swap_case_1(s)</span><br><span class="line">    end_2 = time.time()</span><br><span class="line"></span><br><span class="line">    start_3 = time.time()</span><br><span class="line">    result_3 = swap_case_1(s)</span><br><span class="line">    end_3 = time.time()</span><br><span class="line"></span><br><span class="line">    print(<span class="string">'result_1: '</span>, end_1 - start_1)  <span class="comment"># 5.4836273193359375e-05</span></span><br><span class="line">    print(<span class="string">'result_2: '</span>, end_2 - start_2)  <span class="comment"># 2.574920654296875e-05</span></span><br><span class="line">    print(<span class="string">'result_3: '</span>, end_3 - start_3)  <span class="comment"># 4.9114227294921875e-05  </span></span><br></pre></td></tr></table></figure>
+          </div>
+
+<hr>
+<h3 id="String-Split-and-Join"><a href="#String-Split-and-Join" class="headerlink" title="String Split and Join"></a>String Split and Join</h3><div class="note info">
+            <p>입력되는 문자열의 띄어쓰기 부분을 <code>-</code> 문자로 대체하는 문제<br><code>split()</code> 과 <code>join()</code> 함수를 사용하는 간단한 문제</p>
+          </div>
+
+<div class="tabs" id="example2"><ul class="nav-tabs"><li class="tab active"><a href="#example2-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example2-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane active" id="example2-1"><p>this is a string   </p></div><div class="tab-pane" id="example2-2"><p>this-is-a-string</p></div></div></div>
+
+<div class="note no-icon">
+            <p><code>split()</code> 함수는 파라미터 값 주어진 구분자(delimiter)로 문자열을 잘라 <span class="label danger"> list 타입</span> 으로 반환한다<br>(default값은 ‘ ‘ 공백이다)<br><code>join()</code> 함수는 문자열을 붙여주는데, 문자 사이 특정한 구분자를 넣고 싶으면 함수 앞에 (<code>&#39;&#39;.join()</code> 여기서 ‘’ 부분) 넣어주면 된다</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">split_and_join</span><span class="params">(line)</span>:</span></span><br><span class="line">  letters = line.split()</span><br><span class="line">  <span class="keyword">return</span> <span class="string">'-'</span>.join(letters)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">  line = input()</span><br><span class="line">  result = split_and_join(line)</span><br><span class="line">  print(result) </span><br></pre></td></tr></table></figure>
+          </div>
+
+<div class="note success">
+            <p><code>join()</code> 함수를 사용하지 않아도,<br><code>print()</code> 함수 안에서 unpacking을 통해 문자열을 합칠 수 있다<br>(<code>join()</code> 함수를 사용하지 않는 것이 실행속도가 더 빠른 것을 볼 수 있다)</p><blockquote><p>letters = [‘a’, ‘b’, ‘c’, ‘d’] 가 있을 때,<br>print(*letters) 를 하면<br>print(‘a’, ‘b’, ‘c’, ‘d’) 로 해석되기 때문에<br>a b c d 로 출력된다</p></blockquote><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">split_and_join</span><span class="params">(line)</span>:</span></span><br><span class="line">    letters = line.split()</span><br><span class="line">    <span class="keyword">return</span> <span class="string">'-'</span>.join(letters)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    line = input()</span><br><span class="line">    start_1 = time.time()</span><br><span class="line">    print(split_and_join(line))</span><br><span class="line">    end_1 = time.time()</span><br><span class="line"></span><br><span class="line">    start_2 = time.time()</span><br><span class="line">    print(*line.split(), sep=<span class="string">'-'</span>)</span><br><span class="line">    end_2 = time.time()</span><br><span class="line"></span><br><span class="line">    print(<span class="string">'result_1: '</span>, end_1 - start_1) <span class="comment"># 7.891654968261719e-05</span></span><br><span class="line">    print(<span class="string">'result_2: '</span>, end_2 - start_2) <span class="comment"># 5.412101745605469e-05 </span></span><br></pre></td></tr></table></figure>
+          </div>
+
+<p>**</p>
+<hr>
+<h3 id="What’s-Your-Name"><a href="#What’s-Your-Name" class="headerlink" title="What’s Your Name"></a>What’s Your Name</h3><div class="note info">
+            <p>이름(first name, last name)을 입력받고 아래 문장에 넣어서 출력하는 문제<br>Hello <code>firstname</code> <code>lastname</code>! You just delved into python.</p>
+          </div>
+
+<div class="tabs" id="example3"><ul class="nav-tabs"><li class="tab active"><a href="#example3-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example3-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane active" id="example3-1"><p>Ross<br>Taylor   </p></div><div class="tab-pane" id="example3-2"><p>Hello Ross Taylor! You just delved into python.</p></div></div></div>
+
+<div class="note success">
+            <p><code>format()</code> 함수를 사용하는 간단한 문제</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">print_full_name</span><span class="params">(a, b)</span>:</span></span><br><span class="line">  print(<span class="string">'Hello &#123;&#125; &#123;&#125;! You just delved into python.'</span>.format(a, b))</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">  first_name = input()</span><br><span class="line">  last_name = input()</span><br><span class="line">  print_full_name(first_name, last_name) </span><br></pre></td></tr></table></figure>
+          </div>
+
+<div class="note no-icon">
+            <p>old한 방식으로 <code>%</code>를 사용하는 방법과 그냥 쉼표 <code>,</code> 로 구분하는 방법이 있지만<br>그냥 <code>format()</code> 함수를 사용하는게 자료형을 생각하지 않아도 되고 가독성도 좋다</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">print_full_name</span><span class="params">(a, b)</span>:</span></span><br><span class="line">  print(<span class="string">'(Hello %s %s! You just delved into python.'</span>) % (a, b))</span><br><span class="line">  <span class="comment"># 쉼표로 구분할 때 띄워쓰기가 들어가는 것을 주의! + 기호로 띄워쓰기를 생략할 수 있다</span></span><br><span class="line">  <span class="comment"># print("Hello",a,b+"! You just delved into python.")</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">  first_name = input()</span><br><span class="line">  last_name = input()</span><br><span class="line">  print_full_name(first_name, last_name) </span><br></pre></td></tr></table></figure>
+          </div>
+
+<hr>
+<hr>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/PY-day4/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -949,245 +1205,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/PY-Broadcasting/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="NUNU">
-      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="AttackOnNunu">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/[object Object]/PY-Broadcasting/" class="post-title-link" itemprop="url">(PYTHON) Numpy - Broadcasting</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">작성일</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2020-01-20 22:19:41" itemprop="dateCreated datePublished" datetime="2020-01-20T22:19:41+09:00">2020-01-20</time>
-            </span>
-          
-
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/" itemprop="url" rel="index"><span itemprop="name">LANGUAGE</span></a></span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/" itemprop="url" rel="index"><span itemprop="name">PYTHON</span></a></span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/TERMINOLOGY/" itemprop="url" rel="index"><span itemprop="name">TERMINOLOGY</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">댓글: </span>
-                <a href="/[object Object]/PY-Broadcasting/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/PY-Broadcasting/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          <br>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
-<li><p>Broadcasting, 브로드캐스팅- <span class="exturl" data-url="aHR0cDovL3d3dy5rdHdvcmQuY28ua3Ivd29yZC9hYmJyX3ZpZXcucGhwP21fdGVtcDE9NjI5" title="http://www.ktword.co.kr/word/abbr_view.php?m_temp1=629">정보통신기술용어해설<i class="fa fa-external-link"></i></span></p>
-</li>
-<li><p>Broadcasting arrays in Numpy - <span class="exturl" data-url="aHR0cHM6Ly9lbGkudGhlZ3JlZW5wbGFjZS5uZXQvMjAxNS9icm9hZGNhc3RpbmctYXJyYXlzLWluLW51bXB5Lw==" title="https://eli.thegreenplace.net/2015/broadcasting-arrays-in-numpy/">Eli Bendersky’s website<i class="fa fa-external-link"></i></span></p>
-</li>
-<li><p>Array Broadcasting in NumPy - <span class="exturl" data-url="aHR0cHM6Ly9kb2NzLnNjaXB5Lm9yZy9kb2MvbnVtcHkvdXNlci90aGVvcnkuYnJvYWRjYXN0aW5nLmh0bWwjYXJyYXktYnJvYWRjYXN0aW5nLWluLW51bXB5" title="https://docs.scipy.org/doc/numpy/user/theory.broadcasting.html#array-broadcasting-in-numpy">SciPy.org<i class="fa fa-external-link"></i></span></p>
-</li>
-<li><p>The foundation of scientific python - <span class="exturl" data-url="aHR0cHM6Ly93d3cub3JlaWxseS5jb20vbGlicmFyeS92aWV3L2VsZWdhbnQtc2NpcHkvOTc4MTQ5MTkyMjkyNy9jaDAxLmh0bWw=" title="https://www.oreilly.com/library/view/elegant-scipy/9781491922927/ch01.html">oreilly.com<i class="fa fa-external-link"></i></span></p>
-</li>
-</ul>
-<hr>
-<h1 id="Numpy"><a href="#Numpy" class="headerlink" title="Numpy"></a>Numpy</h1><h2 id="broadcasting"><a href="#broadcasting" class="headerlink" title="broadcasting"></a>broadcasting</h2><p>흔히 방송과 관련해서 ‘브로드캐스트(broadcast)’라는 용어를 자주 들었을 것 입니다.<br><strong>‘TV나 신문과 같은 전송매체를 통해 대중에게 정보를 전송하는 행위’</strong> 라고 일반적으로 정의합니다.<br>혹은 네트워크 과목을 배우셨으면 유니캐스트(unicast), 멀티캐스트(multicast)를 같이 떠올리시며<br><strong>단일 노드로부터 해당 네트워크의 모든 노드에게 패킷/프레임을 전파하는 것</strong> 으로 이해하실 수 있습니다.</p>
-<p><img alt="broadcast" data-src="https://www.researchgate.net/profile/Rosangela_Penteado/publication/280610232/figure/fig7/AS:267926301311009@1440890016756/0-Broadcast-multicast-and-unicast-interactions.png"></p>
-<p>Python의 Numpy 패키지에서는 해당 용어를 조금 다르게 정의합니다.</p>
-<div class="note info">
-            <p>“Broadcasting is the process of making arrays to have compatible shapes for arithmetic operations.”</p><p>Broadcasting은 <strong>서로 다른 구조(shape)를 가진 배열의 산술 연산이 가능하도록 차원을 맞춰주는 것</strong> 을 말합니다.</p>
-          </div>
-
-<p>아시다 싶이 행렬의 덧셈과 뺄셈은 각 행렬이 같은 구조일 때만 가능합니다.<br>행렬의 곱셈에서는 앞 행렬의 열(column)의 수와 뒷 행렬의 행(row)의 수가 같으면 연산이 가능합니다.</p>
-<p>아래 예제는 3-차원 벡터 2개의 곱셈을 연산하는 코드로 아무런 문제 없이 결과값이 출력되는 것을 볼 수 있습니다.</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> numpy <span class="keyword">import</span> array</span><br><span class="line">a = array([<span class="number">1.0</span>, <span class="number">2.0</span>, <span class="number">3.0</span>])</span><br><span class="line">b = array([<span class="number">2.0</span>, <span class="number">2.0</span>, <span class="number">2.0</span>])</span><br><span class="line">a * b</span><br><span class="line"></span><br><span class="line"><span class="comment"># output</span></span><br><span class="line"><span class="comment"># array([ 2.,  4.,  6.])</span></span><br></pre></td></tr></table></figure>  
-
-<p>하지만 만약 3-차원 벡터와 스칼라 값의 곱셈을 연산하는 코드를 실행하면 어떻게 될까요?</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> numpy <span class="keyword">import</span> array</span><br><span class="line">a = array([<span class="number">1.0</span>, <span class="number">2.0</span>, <span class="number">3.0</span>])</span><br><span class="line">b = <span class="number">2.0</span></span><br><span class="line">a * b</span><br><span class="line"></span><br><span class="line"><span class="comment"># output</span></span><br><span class="line"><span class="comment"># array([ 2.,  4.,  6.])</span></span><br></pre></td></tr></table></figure>  
-
-<p>이 또한 별 문제 없이 정상적으로 결과값을 출력한다는 것을 볼 수 있습니다.</p>
-<p>행렬의 연산은 같은 크기(차원)일 때만 가능한데<br>위 코드가 정상적으로 동작한다는 것을 보니 내부적으로 연산을 위해 스칼라 값을 같은 차원의 벡터 값으로 변환했다는 것을 유추할 수 있습니다.<br>즉, Numpy에서는 브로드캐스팅을 통해 두 행렬 간 연산이 가능하도록 아래 그림과 같이 상대적으로 작은 행렬의 차원(크기)을 큰 행렬과 맞춰주는 것 입니다.</p>
-<p><img alt="figure1" data-src="https://docs.scipy.org/doc/numpy/_images/theory.broadcast_1.gif"></p>
-<h2 id="broadcasting-rule"><a href="#broadcasting-rule" class="headerlink" title="broadcasting rule"></a>broadcasting rule</h2><p><span style="color:red">그렇다고 이 브로드캐스팅이 만능인 것은 아닙니다.</span><br>최소한의 조건은 만족해야 동작하는데 이러한 조건을 <strong>broadcasting rule</strong> 이라고 합니다.</p>
-<div class="note info">
-            <p>“In order to broadcast, the size of the trailing axes for both arrays in an operation must either be the same size or one of them must be one.”</p><p>Broadcasting이 허용되려면, 각 행의 크기(차원)가 같거나 둘 중 하나라도 1이면 됩니다.</p>
-          </div>
-
-<p>정의만으로는 이해가 잘 안되지만 몇 가지 예제를 보시면 매우 간단하다는 것을 깨닫게 될 것입니다.</p>
-<div class="note success">
-            <table><thead><tr><th align="center"></th><th align="center"></th><th align="right"></th></tr></thead><tbody><tr><td align="center">A <br> B</td><td align="center">(2d array) <br> (1d array)</td><td align="right">4 x    3 <br> &emsp;&nbsp; 3</td></tr><tr><td align="center">Result</td><td align="center">(2d array)</td><td align="right">4 x 3</td></tr><tr><td align="center">A <br> B</td><td align="center">(2d array) <br> (1d array)</td><td align="right">4 x    3 <br> &emsp;&nbsp; 1</td></tr><tr><td align="center">Result</td><td align="center">(2d array)</td><td align="right">4 x 3</td></tr><tr><td align="center">A <br> B</td><td align="center">(4d array) <br> (3d array)</td><td align="right">8 x    1 x    6 x    1 <br> &emsp;&nbsp; 7 x    1 x    5</td></tr><tr><td align="center">Result</td><td align="center">(4d array)</td><td align="right">8 x    7 x    6 x    5</td></tr><tr><td align="center">A <br> B</td><td align="center">(3d array) <br> (3d array)</td><td align="right">15 x 3 x 5 <br> &emsp;&emsp;  3 x 1</td></tr><tr><td align="center">Result</td><td align="center">(3d array)</td><td align="right">15 x 3 x 5</td></tr></tbody></table>
-          </div>
-
-<div class="note danger">
-            <table><thead><tr><th align="center"></th><th align="center"></th><th align="right"></th></tr></thead><tbody><tr><td align="center">A <br> B</td><td align="center">(1d array) <br> (1d array)</td><td align="right">3 <br> 4</td></tr><tr><td align="center">Result</td><td align="center">error</td><td align="right">error</td></tr><tr><td align="center">A <br> B</td><td align="center">(3d array) <br> (2d array)</td><td align="right">8 x 4 x 3 <br> &emsp;&nbsp; 2 x 1</td></tr><tr><td align="center">Result</td><td align="center">error</td><td align="right">error</td></tr></tbody></table>
-          </div>
-
-
-<p><img alt="figure2" data-src="https://docs.scipy.org/doc/numpy/_images/theory.broadcast_2.gif"></p>
-<p><img alt="figure2" data-src="https://docs.scipy.org/doc/numpy/_images/theory.broadcast_3.gif"></p>
-<p><img alt="figure2" data-src="https://docs.scipy.org/doc/numpy/_images/theory.broadcast_4.gif"></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> numpy <span class="keyword">import</span> array</span><br><span class="line">a = array([[ <span class="number">0.0</span>,  <span class="number">0.0</span>,  <span class="number">0.0</span>],</span><br><span class="line">            [<span class="number">10.0</span>, <span class="number">10.0</span>, <span class="number">10.0</span>],</span><br><span class="line">            [<span class="number">20.0</span>, <span class="number">20.0</span>, <span class="number">20.0</span>],</span><br><span class="line">            [<span class="number">30.0</span>, <span class="number">30.0</span>, <span class="number">30.0</span>]])</span><br><span class="line">b = array([<span class="number">1.0</span>, <span class="number">2.0</span>, <span class="number">3.0</span>])</span><br><span class="line">a + b</span><br><span class="line"></span><br><span class="line"><span class="comment"># output</span></span><br><span class="line"><span class="comment"># array([[  1.,   2.,   3.],</span></span><br><span class="line"><span class="comment">#       [ 11.,  12.,  13.],</span></span><br><span class="line"><span class="comment">#       [ 21.,  22.,  23.],</span></span><br><span class="line"><span class="comment">#       [ 31.,  32.,  33.]])</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> numpy <span class="keyword">import</span> array, newaxis</span><br><span class="line">a = array([<span class="number">0.0</span>, <span class="number">10.0</span>, <span class="number">20.0</span>, <span class="number">30.0</span>])</span><br><span class="line">b = array([<span class="number">1.0</span>, <span class="number">2.0</span>, <span class="number">3.0</span>])</span><br><span class="line">a[:,newaxis] + b</span><br><span class="line"></span><br><span class="line"><span class="comment"># output</span></span><br><span class="line"><span class="comment"># array([[  1.,   2.,   3.],</span></span><br><span class="line"><span class="comment">#       [ 11.,  12.,  13.],</span></span><br><span class="line"><span class="comment">#       [ 21.,  22.,  23.],</span></span><br><span class="line"><span class="comment">#       [ 31.,  32.,  33.]])</span></span><br></pre></td></tr></table></figure>
-
-<hr>
-<h1 id="N-dimensional-arrays"><a href="#N-dimensional-arrays" class="headerlink" title="N-dimensional arrays"></a>N-dimensional arrays</h1><p>Numpy에서 차원에 따라 axis가 조금씩 헷갈리기 때문에 그림을 잘 기억하도록 하자</p>
-<p><img alt="dimensional arrays" data-src="https://www.oreilly.com/library/view/elegant-scipy/9781491922927/assets/elsp_0105.png"></p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
-          
-        
-      
-    </div>
-
-    
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1236,7 +1253,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">85</span>
+                    <span class="site-state-item-count">86</span>
                     <span class="site-state-item-name">포스트</span>
                   </a>
                 </div>
