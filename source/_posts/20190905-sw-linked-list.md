@@ -51,7 +51,7 @@ for test_case in range(1, T+1):
 - 메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내
 {% endnote %}
 
-> 단순 리스트를 그대로 사용할 경우 테스트 케이스 10개 중 9개만 통과하고 1개는 제한시간 초과가 뜬다
+> 테스트 케이스 10개 중 9개만 통과하고 1개는 제한시간 초과가 뜬다
 
 {% note danger %}
 {% code lang:python %}
@@ -88,11 +88,34 @@ for test_case in range(1, T+1):
 {% endcode %}
 {% endnote %}
 
-> 연결 리스트(Linked list)를 사용하여 성능을 끌어올리자
-
 {% note success %}
 {% code lang:python %}
+def mergeSeqLists():
+    first_seq = list(map(int, input().split()))
 
+    for _ in range(M - 1):
+        seq_len = len(first_seq)
+        next_seq = list(map(int, input().split()))
+
+        for i in range(seq_len):
+            if first_seq[i] > next_seq[0]:
+                first_seq[i:0] = next_seq
+                break
+
+        if seq_len == len(first_seq):
+            first_seq.extend(next_seq)
+
+    return first_seq
+
+
+T = int(input())
+for test_case in range(1, T+1):
+    N, M = map(int, input().split())
+
+    ans = mergeSeqLists()
+
+    print('#{} '.format(test_case), end='')
+    print(' '.join(str(n) for n in ans[-1:-11:-1]))
 {% endcode %}
 {% endnote %}
 
@@ -105,11 +128,38 @@ for test_case in range(1, T+1):
 - 메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내
 {% endnote %}
 
->
+> pivot을 정할 때 pivot = (pivot + M) % len(pwd) 이렇게 나머지를 이용하면 리스트의 시작과 끝이 0으로 똑같다. pivot이 마지막에 있을 때만 특수한 조건으로 해당 값을 더하기 때문에 주의해야한다.
 
 {% note success %}
 {% code lang:python %}
+def crypto(pwd):
+    pivot = 0
+    start_num = pwd[pivot]
 
+    for _ in range(1, K + 1):
+        pivot += M
+
+        if pivot > len(pwd):
+            pivot -= len(pwd)
+
+        if pivot == len(pwd):
+            pwd.append(pwd[-1] + start_num)
+        else:
+            pwd.insert(pivot, pwd[pivot - 1] + pwd[pivot])
+
+    return pwd
+
+
+T = int(input())
+
+for test_case in range(1, T + 1):
+    N, M, K = map(int, input().split())
+    password = list(map(int, input().split()))
+
+    encrypted = list(reversed(crypto(password)))
+
+    print(f'#{test_case}', end=' ')
+    print(*encrypted[:10])
 {% endcode %}
 {% endnote %}
 
@@ -122,11 +172,35 @@ for test_case in range(1, T+1):
 - 메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내
 {% endnote %}
 
->
+> 편집이 끝난 후 L이 존재하지 않는 경우를 주의
 
 {% note success %}
 {% code lang:python %}
+def modify_seq():
+    for _ in range(M):
+        command, *args = input().split()
 
+        if command == 'I':
+            seq.insert(int(args[0]), int(args[1]))
+        elif command == 'D':
+            seq.pop(int(args[0]))
+        elif command == 'C':
+            seq[int(args[0])] = int(args[1])
+
+    try:
+        return seq[L]
+    except IndexError:
+        return -1
+
+
+T = int(input())
+
+for test_case in range(1, T+1):
+    # 수열의 길이 N, 추가 횟수 M, 출력할 인덱스 번호 L
+    N, M, L = map(int, input().split())
+    seq = list(map(int, input().split()))
+
+    print(f'#{test_case} {modify_seq()}')
 {% endcode %}
 {% endnote %}
 

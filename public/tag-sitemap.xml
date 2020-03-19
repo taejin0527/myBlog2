@@ -3,6 +3,41 @@
 
 
     <url>
+        <loc>https://taejin0527.github.io/tags/linked-list/</loc>
+        <lastmod>2020-03-19T15:05:51.486Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://taejin0527.github.io/tags/SW-Academy/</loc>
+        <lastmod>2020-03-19T15:05:51.486Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://taejin0527.github.io/tags/%EC%82%BC%EC%84%B1/</loc>
+        <lastmod>2020-03-19T15:05:51.486Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://taejin0527.github.io/tags/python/</loc>
+        <lastmod>2020-03-19T15:05:51.486Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://taejin0527.github.io/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC/</loc>
+        <lastmod>2020-03-19T15:05:51.486Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://taejin0527.github.io/tags/%EC%88%98%ED%95%99%EB%AC%B8%EC%A0%9C/</loc>
         <lastmod>2020-03-19T08:29:19.703Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -31,21 +66,7 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/tags/python/</loc>
-        <lastmod>2020-03-18T05:51:20.443Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://taejin0527.github.io/tags/programming-language/</loc>
-        <lastmod>2020-03-18T05:51:20.443Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://taejin0527.github.io/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC/</loc>
         <lastmod>2020-03-18T05:51:20.443Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -185,13 +206,6 @@
     </url>
 
     <url>
-        <loc>https://taejin0527.github.io/tags/linked-list/</loc>
-        <lastmod>2020-02-14T08:04:51.704Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://taejin0527.github.io/tags/queue/</loc>
         <lastmod>2020-02-14T08:04:51.704Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -200,20 +214,6 @@
 
     <url>
         <loc>https://taejin0527.github.io/tags/stack/</loc>
-        <lastmod>2020-02-14T08:04:51.704Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://taejin0527.github.io/tags/SW-Academy/</loc>
-        <lastmod>2020-02-14T08:04:51.704Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://taejin0527.github.io/tags/%EC%82%BC%EC%84%B1/</loc>
         <lastmod>2020-02-14T08:04:51.704Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
