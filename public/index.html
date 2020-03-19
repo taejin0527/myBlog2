@@ -356,7 +356,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/Euler-day1/">
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/Euler-002/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="NUNU">
@@ -376,7 +376,202 @@
           <h2 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/[object Object]/Euler-day1/" class="post-title-link" itemprop="url">(Problem) 001 Multiples of 3 and 5</a>
+                <a href="/[object Object]/Euler-002/" class="post-title-link" itemprop="url">(Problem) 002 Even Fibonacci numbers</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2020-03-19 16:26:18" itemprop="dateCreated datePublished" datetime="2020-03-19T16:26:18+09:00">2020-03-19</time>
+            </span>
+          
+
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Project-Euler/" itemprop="url" rel="index"><span itemprop="name">Project Euler</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">댓글: </span>
+                <a href="/[object Object]/Euler-002/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/Euler-002/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Project-Euler"><a href="#Project-Euler" class="headerlink" title="Project Euler"></a>Project Euler</h1><ul>
+<li>공식 홈페이지 - <span class="exturl" data-url="aHR0cHM6Ly9wcm9qZWN0ZXVsZXIubmV0Lw==" title="https://projecteuler.net/">projecteuler.net<i class="fa fa-external-link"></i></span></li>
+<li>한글 번역 - <span class="exturl" data-url="aHR0cDovL2V1bGVyLnN5bmFwLmNvLmtyL3Byb2JfZGV0YWlsLnBocD9pZD0x" title="http://euler.synap.co.kr/prob_detail.php?id=1">projecteuler @kr<i class="fa fa-external-link"></i></span></li>
+<li>(HackerRank) ProjectEuler+ - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vY29udGVzdHMvcHJvamVjdGV1bGVyL2NoYWxsZW5nZXM=" title="https://www.hackerrank.com/contests/projecteuler/challenges">hackerrank.com<i class="fa fa-external-link"></i></span></li>
+</ul>
+<h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><div class="spoiler collapsed">
+    <div class="spoiler-title">
+        Problem list
+    </div>
+    <div class="spoiler-content">
+        <ul>
+<li>No 2 : <span class="exturl" data-url="aHR0cHM6Ly9wcm9qZWN0ZXVsZXIubmV0L3Byb2JsZW09Mg==" title="https://projecteuler.net/problem=2">Even Fibonacci numbers<i class="fa fa-external-link"></i></span><ul>
+<li>HackerRank : <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vY29udGVzdHMvcHJvamVjdGV1bGVyL2NoYWxsZW5nZXMvZXVsZXIwMDIvcHJvYmxlbT9pc0Z1bGxTY3JlZW49ZmFsc2U=" title="https://www.hackerrank.com/contests/projecteuler/challenges/euler002/problem?isFullScreen=false">Project Euler #2: Even Fibonacci numbers<i class="fa fa-external-link"></i></span></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</div>
+
+<div class="note no-icon">
+            <div class="note primary no-icon">            <h3 id="Even-Fibonacci-numbers"><a href="#Even-Fibonacci-numbers" class="headerlink" title="Even Fibonacci numbers"></a>Even Fibonacci numbers</h3><br><h4 id="problem-lt-번역-gt"><a href="#problem-lt-번역-gt" class="headerlink" title="problem  &lt;번역&gt;"></a>problem  &lt;번역&gt;</h4><img data-src="/img/Euler/Problem 2.png"><h4 id="solution"><a href="#solution" class="headerlink" title="solution"></a>solution</h4><p><span class="label warning"> Simple Code</span></p><div class="note success no-icon">            <p>문제에 충실하게 4백만(4,000,000) 보다 작은 피보나치 수열에서 짝수들의 합을 구했다<br>(짧게 코드를 구현할 수 있지만 가독성을 위해 피보나치 수열을 만들고 짝수들의 합을 구하는 함수를 따로 정의했다)</p>          </div><figure class="highlight python"><figcaption><span>002_Even_Fibonacci_numbers.py</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">fibonacci</span><span class="params">(max_num)</span>:</span></span><br><span class="line">    numbers = [<span class="number">1</span>, <span class="number">2</span>]</span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span> numbers[<span class="number">-1</span>] &lt; max_num:</span><br><span class="line">        numbers.append(numbers[<span class="number">-2</span>] + numbers[<span class="number">-1</span>])</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> numbers[:<span class="number">-1</span>]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sum_of_the_even_valued</span><span class="params">(numbers)</span>:</span></span><br><span class="line">    total = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> n <span class="keyword">in</span> numbers:</span><br><span class="line">        <span class="keyword">if</span> n % <span class="number">2</span> == <span class="number">0</span>:</span><br><span class="line">            total += n</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> total</span><br><span class="line"></span><br><span class="line">print(sum_of_the_even_valued(fibonacci(<span class="number">4000000</span>)))  </span><br></pre></td></tr></table></figure><hr><span class="label warning"> HackerRank</span><div class="note success no-icon">            <p>위 풀이 방식을 그대로 적용해도 문제 없이 모든 테스트 케이스를 통과한다.</p>          </div><figure class="highlight python"><figcaption><span>002_for_HacerRank.py</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">fibonacci</span><span class="params">(max_num)</span>:</span></span><br><span class="line">    numbers = [<span class="number">1</span>, <span class="number">2</span>]</span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span> numbers[<span class="number">-1</span>] &lt; max_num:</span><br><span class="line">        numbers.append(numbers[<span class="number">-2</span>] + numbers[<span class="number">-1</span>])</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> numbers[:<span class="number">-1</span>]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sum_of_the_even_valued</span><span class="params">(numbers)</span>:</span></span><br><span class="line">    total = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> n <span class="keyword">in</span> numbers:</span><br><span class="line">        <span class="keyword">if</span> n % <span class="number">2</span> == <span class="number">0</span>:</span><br><span class="line">            total += n</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> total</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    T = int(input())</span><br><span class="line">    <span class="keyword">for</span> _ <span class="keyword">in</span> range(T):</span><br><span class="line">        N = int(input())</span><br><span class="line">        print(fibonacci(N))</span><br><span class="line">        print(sum_of_the_even_valued(fibonacci(N))) </span><br></pre></td></tr></table></figure><div class="note success no-icon">            <p>하지만 짝수인 피보나치 수열들을 잘 살펴보면 [2, 8, 34, 144, 610, …]<br>8 = 2 * 4 + 0<br>34 = 8 * 4 + 2<br>144 = 34 * 4 + 8<br>610 = 144 * 4 + 34<br>즉,<br><code>다음 짝수 = 이전 짝수 * 4 + 전전 짝수</code><br>라는 규칙을 발견할 수 있다</p>          </div><figure class="highlight python"><figcaption><span>002_even_fibonnacci.py</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">even_fibonacci</span><span class="params">(max_num)</span>:</span></span><br><span class="line">    prev, cur, total = <span class="number">0</span>, <span class="number">2</span>, <span class="number">0</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span> cur &lt;= max_num:</span><br><span class="line">        total += cur</span><br><span class="line"></span><br><span class="line">        prev, cur = cur, cur * <span class="number">4</span> + prev</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> total</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    T = int(input())</span><br><span class="line">    <span class="keyword">for</span> _ <span class="keyword">in</span> range(T):</span><br><span class="line">        N = int(input())</span><br><span class="line">        print(even_fibonacci(N)) </span><br></pre></td></tr></table></figure>          </div><div class="note info">            <p>피보나치 수열에서 짝수들은 3칸씩 떨어져 있음을 알게되었다.<br>불필요하게 모든 피보나치 수열을 구하지 말자</p>          </div>
+          </div>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/Euler-001/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="NUNU">
+      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="AttackOnNunu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/[object Object]/Euler-001/" class="post-title-link" itemprop="url">(Problem) 001 Multiples of 3 and 5</a>
               
             
           </h2>
@@ -434,8 +629,8 @@
                 </span>
             
                 <span class="post-meta-item-text">댓글: </span>
-                <a href="/[object Object]/Euler-day1/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/Euler-day1/" itemprop="commentCount"></span>
+                <a href="/[object Object]/Euler-001/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/Euler-001/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -491,7 +686,7 @@
 </div>
 
 <div class="note no-icon">
-            <div class="note primary no-icon">            <h3 id="Multiples-of-3-and-5"><a href="#Multiples-of-3-and-5" class="headerlink" title="Multiples of 3 and 5"></a>Multiples of 3 and 5</h3><br><h4 id="problem-lt-번역-gt"><a href="#problem-lt-번역-gt" class="headerlink" title="problem  &lt;번역&gt;"></a>problem  &lt;번역&gt;</h4><div class="note primary no-icon">            <p>10보다 작은 자연수 중에서 3 또는 5의 배수는 3, 5, 6, 9 이고, 이것을 모두 더하면 23입니다.<br>1000보다 작은 자연수 중에서 3 또는 5의 배수를 모두 더하면 얼마일까요?</p>          </div><h4 id="solution"><a href="#solution" class="headerlink" title="solution"></a>solution</h4><span class="label warning"> Simple Code</span><div class="note success no-icon">            <p>반복문을 통해 3과 5로 나누어 떨어지는 것들만 조건문을 통해 합하면 된다</p>          </div><figure class="highlight python"><figcaption><span>001_multiples_of_3_and_5.py</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">multiples_3_5</span><span class="params">(N)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> sum([num <span class="keyword">for</span> num <span class="keyword">in</span> range(N) <span class="keyword">if</span> (num % <span class="number">3</span> == <span class="number">0</span> <span class="keyword">or</span> num % <span class="number">5</span> == <span class="number">0</span>)])</span><br><span class="line"></span><br><span class="line">print(multiples_3_5(<span class="number">1000</span>))  </span><br></pre></td></tr></table></figure><hr><span class="label warning"> HackerRank</span><div class="note danger no-icon">            <p>HackerRank에 등록된 테스트 케이스들은 해당 문제의 풀이를 조금 더 까다롭게 검사한다.<br>이번 문제에서 위 풀이를 사용하면 TestCase 2, 3에서 ‘Terminated due to timeout’ 에러를 발생 시킨다.(아래 코드는 테스트 케이스를 입력 받는 부분만 추가한 것)<br>즉, 최적화된 방법으로 문제를 풀어야 한다.</p>          </div><figure class="highlight python"><figcaption><span>Terminated due to timeout</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">multiples_3_5</span><span class="params">(N)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> sum([num <span class="keyword">for</span> num <span class="keyword">in</span> range(N) <span class="keyword">if</span> (num % <span class="number">3</span> == <span class="number">0</span> <span class="keyword">or</span> num % <span class="number">5</span> == <span class="number">0</span>)])</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    T = int(input())</span><br><span class="line">    <span class="keyword">for</span> _ <span class="keyword">in</span> range(T):</span><br><span class="line">        N = int(input())</span><br><span class="line">        print(multiples_3_5(N)) </span><br></pre></td></tr></table></figure><div class="note success no-icon">            <p>arithmetic sequence - <span class="exturl" data-url="aHR0cHM6Ly93d3cubWF0aHNpc2Z1bi5jb20vYWxnZWJyYS9zZXF1ZW5jZXMtc3Vtcy1hcml0aG1ldGljLmh0bWw=" title="https://www.mathsisfun.com/algebra/sequences-sums-arithmetic.html">mathsisfun.com<i class="fa fa-external-link"></i></span><br>반복문을 제거해서 시간 복잡도를 O(1)로 바꿔준다. (등차수열을 활용해 결과를 한번에 구한다)<br>주의할 것은 등차수열의 개수를 구할 때 <code>//</code> 연산자를 사용하는 것이 좋다.(<code>int((N-1)/3)</code> 이렇게 구하면 안된다)</p>          </div><figure class="highlight python"><figcaption><span>001_for_HacerRank.py</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">arithmetic_sequence</span><span class="params">(mul)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> mul * (mul + <span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">T = int(input())</span><br><span class="line"><span class="keyword">for</span> _ <span class="keyword">in</span> range(T):</span><br><span class="line">    N = int(input())</span><br><span class="line"></span><br><span class="line">    mul_3 = (N<span class="number">-1</span>) // <span class="number">3</span></span><br><span class="line">    mul_5 = (N<span class="number">-1</span>) // <span class="number">5</span></span><br><span class="line">    mul_15 = (N<span class="number">-1</span>) // <span class="number">15</span> <span class="comment"># lcm of 3, 5 = 15</span></span><br><span class="line">    print((<span class="number">3</span> * arithmetic_sequence(mul_3) + <span class="number">5</span> * arithmetic_sequence(mul_5) - <span class="number">15</span> * arithmetic_sequence(mul_15)) // <span class="number">2</span>) </span><br></pre></td></tr></table></figure>          </div><div class="note info">            <p>가독성(readability)을 생각했을 때, 반복문을 사용한 방법이 더 좋은 것 같지만 본 프로젝트의 의도가 수학적인 해결 방법을 고민해 보는 것이기 때문에 아래의 풀이 방법을 정확히 이해하는 것이 중요하다</p>          </div>
+            <div class="note primary no-icon">            <h3 id="Multiples-of-3-and-5"><a href="#Multiples-of-3-and-5" class="headerlink" title="Multiples of 3 and 5"></a>Multiples of 3 and 5</h3><br><h4 id="problem-lt-번역-gt"><a href="#problem-lt-번역-gt" class="headerlink" title="problem  &lt;번역&gt;"></a>problem  &lt;번역&gt;</h4><img data-src="/img/Euler/Problem 1.png"><h4 id="solution"><a href="#solution" class="headerlink" title="solution"></a>solution</h4><p><span class="label warning"> Simple Code</span></p><div class="note success no-icon">            <p>반복문을 통해 3과 5로 나누어 떨어지는 것들만 조건문을 통해 합하면 된다</p>          </div><figure class="highlight python"><figcaption><span>001_multiples_of_3_and_5.py</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">multiples_3_5</span><span class="params">(N)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> sum([num <span class="keyword">for</span> num <span class="keyword">in</span> range(N) <span class="keyword">if</span> (num % <span class="number">3</span> == <span class="number">0</span> <span class="keyword">or</span> num % <span class="number">5</span> == <span class="number">0</span>)])</span><br><span class="line"></span><br><span class="line">print(multiples_3_5(<span class="number">1000</span>))  </span><br></pre></td></tr></table></figure><hr><span class="label warning"> HackerRank</span><div class="note danger no-icon">            <p>HackerRank에 등록된 테스트 케이스들은 해당 문제의 풀이를 조금 더 까다롭게 검사한다.<br>이번 문제에서 위 풀이를 사용하면 TestCase 2, 3에서 ‘Terminated due to timeout’ 에러를 발생 시킨다.(아래 코드는 테스트 케이스를 입력 받는 부분만 추가한 것)<br>즉, 최적화된 방법으로 문제를 풀어야 한다.</p>          </div><figure class="highlight python"><figcaption><span>Terminated due to timeout</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">multiples_3_5</span><span class="params">(N)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> sum([num <span class="keyword">for</span> num <span class="keyword">in</span> range(N) <span class="keyword">if</span> (num % <span class="number">3</span> == <span class="number">0</span> <span class="keyword">or</span> num % <span class="number">5</span> == <span class="number">0</span>)])</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    T = int(input())</span><br><span class="line">    <span class="keyword">for</span> _ <span class="keyword">in</span> range(T):</span><br><span class="line">        N = int(input())</span><br><span class="line">        print(multiples_3_5(N)) </span><br></pre></td></tr></table></figure><div class="note success no-icon">            <p>arithmetic sequence - <span class="exturl" data-url="aHR0cHM6Ly93d3cubWF0aHNpc2Z1bi5jb20vYWxnZWJyYS9zZXF1ZW5jZXMtc3Vtcy1hcml0aG1ldGljLmh0bWw=" title="https://www.mathsisfun.com/algebra/sequences-sums-arithmetic.html">mathsisfun.com<i class="fa fa-external-link"></i></span><br>반복문을 제거해서 시간 복잡도를 O(1)로 바꿔준다. (등차수열을 활용해 결과를 한번에 구한다)<br>주의할 것은 등차수열의 개수를 구할 때 <code>//</code> 연산자를 사용하는 것이 좋다.(<code>int((N-1)/3)</code> 이렇게 구하면 안된다)</p>          </div><figure class="highlight python"><figcaption><span>001_for_HacerRank.py</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">arithmetic_sequence</span><span class="params">(mul)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> mul * (mul + <span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">T = int(input())</span><br><span class="line"><span class="keyword">for</span> _ <span class="keyword">in</span> range(T):</span><br><span class="line">    N = int(input())</span><br><span class="line"></span><br><span class="line">    mul_3 = (N<span class="number">-1</span>) // <span class="number">3</span></span><br><span class="line">    mul_5 = (N<span class="number">-1</span>) // <span class="number">5</span></span><br><span class="line">    mul_15 = (N<span class="number">-1</span>) // <span class="number">15</span> <span class="comment"># lcm of 3, 5 = 15</span></span><br><span class="line">    print((<span class="number">3</span> * arithmetic_sequence(mul_3) + <span class="number">5</span> * arithmetic_sequence(mul_5) - <span class="number">15</span> * arithmetic_sequence(mul_15)) // <span class="number">2</span>) </span><br></pre></td></tr></table></figure>          </div><div class="note info">            <p>가독성(readability)을 생각했을 때, 반복문을 사용한 방법이 더 좋은 것 같지만 본 프로젝트의 의도가 수학적인 해결 방법을 고민해 보는 것이기 때문에 아래의 풀이 방법을 정확히 이해하는 것이 중요하다</p>          </div>
           </div>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
           
@@ -764,230 +959,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/PY-day25/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="NUNU">
-      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="AttackOnNunu">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/[object Object]/PY-day25/" class="post-title-link" itemprop="url">(PYTHON) Day - 25 Closures and Decorators & Debugging</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">작성일</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2020-03-17 14:23:48" itemprop="dateCreated datePublished" datetime="2020-03-17T14:23:48+09:00">2020-03-17</time>
-            </span>
-          
-
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/" itemprop="url" rel="index"><span itemprop="name">LANGUAGE</span></a></span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/" itemprop="url" rel="index"><span itemprop="name">PYTHON</span></a></span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/HACKERRANK/" itemprop="url" rel="index"><span itemprop="name">HACKERRANK</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">댓글: </span>
-                <a href="/[object Object]/PY-day25/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/PY-day25/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          <br>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
-<li>문제 출처 - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vZGFzaGJvYXJk" title="https://www.hackerrank.com/dashboard">HackerRank<i class="fa fa-external-link"></i></span></li>
-<li>파이썬 연습 - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vZG9tYWlucy9weXRob24/ZmlsdGVycyU1QnN0YXR1cyU1RCU1QiU1RD11bnNvbHZlZCZiYWRnZV90eXBlPXB5dGhvbg==" title="https://www.hackerrank.com/domains/python?filters%5Bstatus%5D%5B%5D=unsolved&badge_type=python">Practice - Python<i class="fa fa-external-link"></i></span></li>
-</ul>
-<p>개인적인 생각과 상상으로 작성한 내용들이 포함되어 있습니다<br>문제를 풀고 <span class="label success"> Discussion Tab</span>을 참고하며 코드 스타일을 개선하려고 노력하고자 합니다</p>
-<hr>
-<h1 id="HackerRank"><a href="#HackerRank" class="headerlink" title="HackerRank"></a>HackerRank</h1><div class="spoiler collapsed">
-    <div class="spoiler-title">
-        HackerRank의 Python 연습문제들은 아래와 같은 카테고리로 분류 된다
-    </div>
-    <div class="spoiler-content">
-        <h2 id="Subdomain"><a href="#Subdomain" class="headerlink" title="Subdomain"></a>Subdomain</h2><ul>
-<li><del>Introduction</del></li>
-<li><del>Basic Data Types</del></li>
-<li><del>Strings</del></li>
-<li><del>Sets</del></li>
-<li><del>Math</del></li>
-<li><del>Itertools</del></li>
-<li><del>Collections</del></li>
-<li><del>Date and Time</del></li>
-<li><del>Errors and Exceptions</del></li>
-<li><del>Classes</del></li>
-<li><del>Built-Ins</del></li>
-<li><del>Python Functionals</del></li>
-<li><del>Regex and Parsing</del></li>
-<li><del>XML</del></li>
-<li><strong style="color:blue">Closures and Decorators</strong></li>
-<li>Numpy</li>
-<li><strong style="color:blue">Debugging</strong></li>
-</ul>
-
-    </div>
-</div>
-
-<hr>
-<h1 id="Closures-and-Decorators"><a href="#Closures-and-Decorators" class="headerlink" title="Closures and Decorators"></a>Closures and Decorators</h1><div class="note no-icon">
-            <div class="note primary no-icon">            <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><ul><li><a href="#Standardize-Mobile-Number-Using-Decorators">Standardize Mobile Number Using Decorators</a></li><li><a href="#Decorators-2-Name-Directory">Decorators 2 - Name Directory</a></li></ul>          </div><div class="note primary no-icon">            <p>파이썬의 기초를 다루고 있어서 그런지 클로저와 데코레이터를 깊이 다루지는 않는다</p><h2 id="기본개념"><a href="#기본개념" class="headerlink" title="기본개념"></a>기본개념</h2><p><span class="label warning"> 외부 참조</span><br>Understanding Python Decorators in 12 Easy Steps! - <span class="exturl" data-url="aHR0cDovL3NpbWVvbmZyYW5rbGluLmNvbS9ibG9nLzIwMTIvanVsLzEvcHl0aG9uLWRlY29yYXRvcnMtaW4tMTItc3RlcHMv" title="http://simeonfranklin.com/blog/2012/jul/1/python-decorators-in-12-steps/">Simeon Franklin<i class="fa fa-external-link"></i></span></p>          </div><h2 id="Standardize-Mobile-Number-Using-Decorators"><a href="#Standardize-Mobile-Number-Using-Decorators" class="headerlink" title="Standardize Mobile Number Using Decorators"></a>Standardize Mobile Number Using Decorators</h2><br><div class="note info">            <p>문제 : 전화번호를 양식에 맞게 수정하고 정렬해서 출력하는 문제<br>입력 : 전화번호는 10자리, 앞에 +91, 91, 0 등이 붙어서 입력될 수 있음<br>출력 : +91 xxxxx xxxxx 형식으로 출력</p>          </div><div class="tabs" id="cdexample1"><ul class="nav-tabs"><li class="tab"><a href="#cdexample1-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#cdexample1-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane" id="cdexample1-1"><figure class="highlight plain"><figcaption><span>input</span></figcaption><table><tr><td class="code"><pre><span class="line">3</span><br><span class="line">07895462130</span><br><span class="line">919875641230</span><br><span class="line">9195969878  </span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="cdexample1-2"><figure class="highlight plain"><figcaption><span>output</span></figcaption><table><tr><td class="code"><pre><span class="line">+91 78954 62130</span><br><span class="line">+91 91959 69878</span><br><span class="line">+91 98756 41230 </span><br></pre></td></tr></table></figure></div></div></div><div class="note success no-icon">            <p>앞에 +91, 91, 0 중 무엇이 오던 그냥 뒤에서 10자리만 생각하면 된다</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">wrapper</span><span class="params">(f)</span>:</span></span><br><span class="line">  <span class="function"><span class="keyword">def</span> <span class="title">fun</span><span class="params">(l)</span>:</span></span><br><span class="line">      f([<span class="string">f"+91 <span class="subst">&#123;num[<span class="number">-10</span>:<span class="number">-5</span>]&#125;</span> <span class="subst">&#123;num[<span class="number">-5</span>:]&#125;</span>"</span> <span class="keyword">for</span> num <span class="keyword">in</span> l])</span><br><span class="line">      <span class="comment"># f('+91 &#123;&#125; &#123;&#125;'.format(num[-10:-5], num[-5:]) for num in l)</span></span><br><span class="line">  <span class="keyword">return</span> fun</span><br><span class="line"></span><br><span class="line"><span class="meta">@wrapper</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sort_phone</span><span class="params">(l)</span>:</span></span><br><span class="line">    print(*sorted(l), sep=<span class="string">'\n'</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    l = [input() <span class="keyword">for</span> _ <span class="keyword">in</span> range(int(input()))]</span><br><span class="line">    sort_phone(l) </span><br></pre></td></tr></table></figure>          </div><hr><h2 id="Decorators-2-Name-Directory"><a href="#Decorators-2-Name-Directory" class="headerlink" title="Decorators 2 - Name Directory"></a>Decorators 2 - Name Directory</h2><br><div class="note info">            <p>문제 : 이름, 나이, 성별을 입력받았을 때 나이순으로 출력하며 성별에 따라 이름 앞을 변경하는 문제<br>입력 : 이름, 나이, 성별<br>출력 : 남성이면 Mr, 여성이면 Ms 를 붙인다</p>          </div><div class="tabs" id="cdexample2"><ul class="nav-tabs"><li class="tab"><a href="#cdexample2-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#cdexample2-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane" id="cdexample2-1"><figure class="highlight plain"><figcaption><span>input</span></figcaption><table><tr><td class="code"><pre><span class="line">3</span><br><span class="line">Mike Thomson 20 M</span><br><span class="line">Robert Bustle 32 M</span><br><span class="line">Andria Bustle 30 F  </span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="cdexample2-2"><figure class="highlight plain"><figcaption><span>output</span></figcaption><table><tr><td class="code"><pre><span class="line">Mr. Mike Thomson</span><br><span class="line">Ms. Andria Bustle</span><br><span class="line">Mr. Robert Bustle </span><br></pre></td></tr></table></figure></div></div></div><div class="note success no-icon">            <p>리스트를 나이 순으로 정렬하고 포맷을 변경한다</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> operator</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">person_lister</span><span class="params">(f)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">inner</span><span class="params">(people)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> map(f, sorted(people, key= <span class="keyword">lambda</span> x: int(x[<span class="number">2</span>])))</span><br><span class="line">    <span class="keyword">return</span> inner</span><br><span class="line"></span><br><span class="line"><span class="meta">@person_lister</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">name_format</span><span class="params">(person)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> (<span class="string">"Mr. "</span> <span class="keyword">if</span> person[<span class="number">3</span>] == <span class="string">"M"</span> <span class="keyword">else</span> <span class="string">"Ms. "</span>) + person[<span class="number">0</span>] + <span class="string">" "</span> + person[<span class="number">1</span>]</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    people = [input().split() <span class="keyword">for</span> i <span class="keyword">in</span> range(int(input()))]</span><br><span class="line">    print(*name_format(people), sep=<span class="string">'\n'</span>) </span><br></pre></td></tr></table></figure>          </div><hr><hr><h1 id="Debugging"><a href="#Debugging" class="headerlink" title="Debugging"></a>Debugging</h1><div class="note primary no-icon">            <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><ul><li><del><a href="#Words-Score">Words Score</a></del></li><li><del><a href="#Default-Arguments">Default Arguments</a></del></li></ul><p>소스코드가 주어지고 디버깅을 통해 오류를 찾아내는 문제들이여서 생략함</p>          </div>
-          </div>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
-          
-        
-      
-    </div>
-
-    
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1036,7 +1007,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">88</span>
+                    <span class="site-state-item-count">89</span>
                     <span class="site-state-item-name">포스트</span>
                   </a>
                 </div>
