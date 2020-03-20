@@ -356,6 +356,475 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/PY-day9/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="NUNU">
+      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="AttackOnNunu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/[object Object]/PY-day9/" class="post-title-link" itemprop="url">(PYTHON) Day - 9 Sets(1)</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2020-02-28 17:29:32" itemprop="dateCreated datePublished" datetime="2020-02-28T17:29:32+09:00">2020-02-28</time>
+            </span>
+          
+
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/" itemprop="url" rel="index"><span itemprop="name">LANGUAGE</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/" itemprop="url" rel="index"><span itemprop="name">PYTHON</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/HACKERRANK/" itemprop="url" rel="index"><span itemprop="name">HACKERRANK</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">댓글: </span>
+                <a href="/[object Object]/PY-day9/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/PY-day9/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
+<li>문제 출처 - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vZGFzaGJvYXJk" title="https://www.hackerrank.com/dashboard">HackerRank<i class="fa fa-external-link"></i></span></li>
+<li>파이썬 연습 - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vZG9tYWlucy9weXRob24/ZmlsdGVycyU1QnN0YXR1cyU1RCU1QiU1RD11bnNvbHZlZCZiYWRnZV90eXBlPXB5dGhvbg==" title="https://www.hackerrank.com/domains/python?filters%5Bstatus%5D%5B%5D=unsolved&badge_type=python">Practice - Python<i class="fa fa-external-link"></i></span></li>
+</ul>
+<p>개인적인 생각과 상상으로 작성한 내용들이 포함되어 있습니다<br>문제를 풀고 <span class="label success"> Discussion Tab</span>을 참고하며 코드 스타일을 개선하려고 노력하고자 합니다</p>
+<hr>
+<h1 id="HackerRank"><a href="#HackerRank" class="headerlink" title="HackerRank"></a>HackerRank</h1>  <div class="spoiler collapsed">
+    <div class="spoiler-title">
+        HackerRank의 Python 연습문제들은 아래와 같은 카테고리로 분류 된다
+    </div>
+    <div class="spoiler-content">
+        <h2 id="Subdomain"><a href="#Subdomain" class="headerlink" title="Subdomain"></a>Subdomain</h2><ul>
+<li><del>Introduction</del></li>
+<li><del>Basic Data Types</del></li>
+<li><del>Strings</del></li>
+<li><strong style="color:blue">Sets</strong></li>
+<li>Math</li>
+<li>Itertools</li>
+<li>Collections</li>
+<li>Date and Time</li>
+<li>Errors and Exceptions</li>
+<li>Classes</li>
+<li>Built-Ins</li>
+<li>Python Functionals</li>
+<li>Regex and Parsing</li>
+<li>XML</li>
+<li>Closures and Decorators</li>
+<li>Numpy</li>
+<li>Debugging</li>
+</ul>
+
+    </div>
+</div>
+
+<hr>
+<h1 id="Sets"><a href="#Sets" class="headerlink" title="Sets"></a>Sets</h1><div class="note no-icon">
+            <div class="note primary no-icon">            <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><ul><li><a href="#Introduction-to-Sets">Introduction to Sets</a></li><li><a href="#Symmetric-Difference">Symmetric Difference</a></li></ul>          </div><hr><div class="note no-icon">            <h2 id="기본-개념"><a href="#기본-개념" class="headerlink" title="기본 개념"></a>기본 개념</h2><ul><li>set 자료형은 크게 2가지 특징을 가진다<ul><li>정렬되지 않음(unordered collection of elements)</li><li>중복 데이터가 없음(without duplicate entries)</li></ul></li><li>‘membership testing’이나 ‘eliminating duplicate entries’ 등에 사용된다</li></ul><p><span class="label warning"> <strong>CREATING SETS</strong></span></p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">&gt;&gt; myset = &#123;<span class="number">1</span>, <span class="number">2</span>&#125; <span class="comment"># 값을 바로 선언하는 방법</span></span><br><span class="line">&gt;&gt; myset = set()  <span class="comment"># set 자료형 초기화</span></span><br><span class="line">&gt;&gt; myset = set([<span class="string">'a'</span>, <span class="string">'b'</span>]) <span class="comment"># list 를 set 자료형으로 변환</span></span><br><span class="line">&gt;&gt; myset</span><br><span class="line">&#123;<span class="string">'a'</span>, <span class="string">'b'</span>&#125;  </span><br></pre></td></tr></table></figure><p><span class="label warning"> <strong>MODIFYING SETS</strong></span><br><code>add()</code> 함수를 사용하는 방법과 <code>update()</code> 함수를 사용하는 방법이 있음</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">&gt;&gt; myset.add(<span class="string">'c'</span>)</span><br><span class="line">&gt;&gt; myset</span><br><span class="line">&#123;<span class="string">'a'</span>, <span class="string">'c'</span>, <span class="string">'b'</span>&#125;</span><br><span class="line">&gt;&gt; myset.add(<span class="string">'a'</span>) <span class="comment"># 'a' 데이터가 이미 있음으로 변화가 없음</span></span><br><span class="line">&gt;&gt; myset.add((<span class="number">5</span>, <span class="number">4</span>))</span><br><span class="line">&gt;&gt; myset</span><br><span class="line">&#123;<span class="string">'a'</span>, <span class="string">'c'</span>, <span class="string">'b'</span>, (<span class="number">5</span>, <span class="number">4</span>)&#125; </span><br></pre></td></tr></table></figure>  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">&gt;&gt; myset.update([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>]) <span class="comment"># update() 는 iterable한 객체에만 작동함</span></span><br><span class="line">&gt;&gt; myset</span><br><span class="line">&#123;<span class="string">'a'</span>, <span class="number">1</span>, <span class="string">'c'</span>, <span class="string">'b'</span>, <span class="number">4</span>, <span class="number">2</span>, (<span class="number">5</span>, <span class="number">4</span>), <span class="number">3</span>&#125;</span><br><span class="line">&gt;&gt; myset.update(&#123;<span class="number">1</span>, <span class="number">7</span>, <span class="number">8</span>&#125;)</span><br><span class="line">&gt;&gt; myset</span><br><span class="line">&#123;<span class="string">'a'</span>, <span class="number">1</span>, <span class="string">'c'</span>, <span class="string">'b'</span>, <span class="number">4</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">2</span>, (<span class="number">5</span>, <span class="number">4</span>), <span class="number">3</span>&#125;</span><br><span class="line">&gt;&gt; myset.update(&#123;<span class="number">1</span>, <span class="number">6</span>&#125;, [<span class="number">5</span>, <span class="number">13</span>])</span><br><span class="line">&gt;&gt; myset</span><br><span class="line">&#123;<span class="string">'a'</span>, <span class="number">1</span>, <span class="string">'c'</span>, <span class="string">'b'</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">2</span>, (<span class="number">5</span>, <span class="number">4</span>), <span class="number">13</span>, <span class="number">3</span>&#125; </span><br></pre></td></tr></table></figure><p><span class="label warning"> <strong>REMOVING ITEMS</strong></span><br><code>discard()</code> 함수와 <code>remove()</code> 함수가 있으며 하나의 인자(argument)를 전달받아 집합에서 제거함<br>해당 데이터가 없으면 <code>discard()</code> 는 아무것도 안하지만 <code>remove()</code> 는 <span class="label danger"> KeyError exception</span>을 발생시킴</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">&gt;&gt; myset.discard(<span class="number">10</span>)</span><br><span class="line">&gt;&gt; myset</span><br><span class="line">&#123;<span class="string">'a'</span>, <span class="number">1</span>, <span class="string">'c'</span>, <span class="string">'b'</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">2</span>, <span class="number">12</span>, (<span class="number">5</span>, <span class="number">4</span>), <span class="number">13</span>, <span class="number">11</span>, <span class="number">3</span>&#125;</span><br><span class="line">&gt;&gt; myset.remove(<span class="number">13</span>)</span><br><span class="line">&gt;&gt; myset</span><br><span class="line">&#123;<span class="string">'a'</span>, <span class="number">1</span>, <span class="string">'c'</span>, <span class="string">'b'</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">2</span>, <span class="number">12</span>, (<span class="number">5</span>, <span class="number">4</span>), <span class="number">11</span>, <span class="number">3</span>&#125; </span><br></pre></td></tr></table></figure>  <p><code>pop()</code> 함수는 임의의 값을 반환하고 삭제<br><code>clear()</code> 함수는 집합에 있는 모든 값을 삭제</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">&gt;&gt; myset.pop()</span><br><span class="line">&gt;&gt; myset</span><br><span class="line"><span class="number">1</span></span><br><span class="line">&gt;&gt; myset.clear()</span><br><span class="line">&gt;&gt; myset</span><br><span class="line">set() </span><br></pre></td></tr></table></figure><p><span class="label warning"> <strong>COMMON SET OPERATIONS</strong></span><br><code>union()</code>, <code>intersection()</code> 그리고 <code>difference()</code> 함수가 있음</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">&gt;&gt; a = &#123;<span class="number">2</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">9</span>&#125;</span><br><span class="line">&gt;&gt; b = &#123;<span class="number">2</span>, <span class="number">4</span>, <span class="number">11</span>, <span class="number">12</span>&#125;</span><br><span class="line">&gt;&gt; a.union(b) <span class="comment"># a와 b 집합의 합집합</span></span><br><span class="line">&#123;<span class="number">2</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">9</span>, <span class="number">11</span>, <span class="number">12</span>&#125;</span><br><span class="line">&gt;&gt; a.intersection(b) <span class="comment"># a와 b 집합의 교집합</span></span><br><span class="line">&#123;<span class="number">2</span>, <span class="number">4</span>&#125;</span><br><span class="line">&gt;&gt; a.difference(b) <span class="comment"># a와 b 집합의 차집합</span></span><br><span class="line">&#123;<span class="number">9</span>, <span class="number">5</span>&#125; </span><br></pre></td></tr></table></figure>            </div><hr><h2 id="Introduction-to-Sets"><a href="#Introduction-to-Sets" class="headerlink" title="Introduction to Sets"></a>Introduction to Sets</h2><br><div class="note info">            <p>문제 : Ms. Gabriel Williams 의 온실에 있는 나무들의 평균키를 구하라<br>입력 : 총 나무의 수 N과 각 나무의 키를 입력 받는다<br>출력 : 나무들의 평균키</p>          </div><div class="tabs" id="example1"><ul class="nav-tabs"><li class="tab"><a href="#example1-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example1-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane" id="example1-1"><p>10<br>161 182 161 154 176 170 167 171 170 174</p></div><div class="tab-pane" id="example1-2"><p>169.375</p></div></div></div><div class="note success no-icon">            <p>수행시간에 대한 최적화는 딱히 생각하지 않고 그냥 로직에 따라 구현</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">average</span><span class="params">(array)</span>:</span></span><br><span class="line">  Sum_of_distinct_heights = sum(set(array))</span><br><span class="line">  Total_number_of_distict_heights = len(set(array))</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> Sum_of_distinct_heights/Total_number_of_distict_heights</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    n = int(input())</span><br><span class="line">    arr = list(map(int, input().split()))</span><br><span class="line">    result = average(arr)</span><br><span class="line">    print(result) </span><br></pre></td></tr></table></figure>          </div><hr><h2 id="Symmetric-Difference"><a href="#Symmetric-Difference" class="headerlink" title="Symmetric Difference"></a>Symmetric Difference</h2><br><div class="note info">            <p>문제 : 두 집합의 대칭차(symmetric difference)를 오름차순으로 출력해라<br>입력 : 원소 개수 M, M개의 원소들, 원소 개수 N, N개의 원소들 (4줄 입력)<br>출력 : 대칭차를 한줄씩 출력</p>          </div><div class="tabs" id="example2"><ul class="nav-tabs"><li class="tab"><a href="#example2-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example2-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane" id="example2-1"><p>4<br>2 4 5 9<br>4<br>2 4 11 12</p></div><div class="tab-pane" id="example2-2"><p>5<br>9<br>11<br>12</p></div></div></div><div class="note default no-icon">            <p>대칭차를 구하는 함수 <code>symmetric_difference()</code> 를 사용</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Enter your code here. Read input from STDIN. Print output to STDOUT</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    M = int(input())</span><br><span class="line">    set_m = &#123;int(element) <span class="keyword">for</span> element <span class="keyword">in</span> input().split()&#125;</span><br><span class="line">    N = int(input())</span><br><span class="line">    set_n = &#123;int(element) <span class="keyword">for</span> element <span class="keyword">in</span> input().split()&#125;</span><br><span class="line"></span><br><span class="line">    print(*sorted(set_m.symmetric_difference(set_n)), sep=<span class="string">'\n'</span>) </span><br></pre></td></tr></table></figure>          </div><div class="note success no-icon">            <p>사실 1, 3번째 줄의 입력은 무의미하다<br>두개의 집합을 한줄로 입력 받는 방법을 기억해두자</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a,b = [set(input().split()) <span class="keyword">for</span> _ <span class="keyword">in</span> range(<span class="number">4</span>)][<span class="number">1</span>::<span class="number">2</span>]</span><br><span class="line">print(*sorted(a^b, key=int), sep=<span class="string">'\n'</span>)  </span><br></pre></td></tr></table></figure>          </div>
+          </div>
+<hr>
+<hr>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/PY-easter-egg/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="NUNU">
+      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="AttackOnNunu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/[object Object]/PY-easter-egg/" class="post-title-link" itemprop="url">(PYTHON) 파이썬의 easter egg</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2020-02-25 16:28:32" itemprop="dateCreated datePublished" datetime="2020-02-25T16:28:32+09:00">2020-02-25</time>
+            </span>
+          
+
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/" itemprop="url" rel="index"><span itemprop="name">LANGUAGE</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/" itemprop="url" rel="index"><span itemprop="name">PYTHON</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/TERMINOLOGY/" itemprop="url" rel="index"><span itemprop="name">TERMINOLOGY</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">댓글: </span>
+                <a href="/[object Object]/PY-easter-egg/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/PY-easter-egg/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
+<li>antigravity.py 소스코드 - <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3B5dGhvbi9jcHl0aG9uL2Jsb2IvbWFzdGVyL0xpYi9hbnRpZ3Jhdml0eS5weSNMNy1MMTc=" title="https://github.com/python/cpython/blob/master/Lib/antigravity.py#L7-L17">github.com/python/cpython/…<i class="fa fa-external-link"></i></span></li>
+<li>xkcd 링크 - <span class="exturl" data-url="aHR0cHM6Ly94a2NkLmNvbS8zNTMv" title="https://xkcd.com/353/">xkcd.com/353<i class="fa fa-external-link"></i></span></li>
+<li>python easter eggs - <span class="exturl" data-url="aHR0cHM6Ly9yZXBsLml0L3RhbGsvc2hhcmUvUHl0aG9uLUVhc3Rlci1FZ2cvMjU2MzQ=" title="https://repl.it/talk/share/Python-Easter-Egg/25634">repl.it/talk<i class="fa fa-external-link"></i></span></li>
+<li>Curated list of all the easter eggs and hidden jokes in Python - <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL09ya29IdW50ZXIvcHl0aG9uLWVhc3Rlci1lZ2dz" title="https://github.com/OrkoHunter/python-easter-eggs">github.com/OrkoHunter/<i class="fa fa-external-link"></i></span></li>
+<li>파이썬 선 번역 - <span class="exturl" data-url="aHR0cHM6Ly9rZW5pYWwudGlzdG9yeS5jb20vOTAz" title="https://kenial.tistory.com/903">kenial.tistory.com<i class="fa fa-external-link"></i></span></li>
+<li>sytax error not a chance - <span class="exturl" data-url="aHR0cHM6Ly9zdGFja292ZXJmbG93LmNvbS9xdWVzdGlvbnMvMTc4MTE4NTUvc3ludGF4LWVycm9yLW5vdC1hLWNoYW5jZQ==" title="https://stackoverflow.com/questions/17811855/syntax-error-not-a-chance">stackoverflow.com<i class="fa fa-external-link"></i></span></li>
+</ul>
+<blockquote>
+<p>개인적인 생각과 상상으로 작성한 내용들이 포함되어 있습니다</p>
+</blockquote>
+<hr>
+<div class="note info">
+            <p>이메일로 받아보는 [🐍PyTricks]를 통해서 CPython에 있는 이스터에그(easter egg) 하나를 알게되었습니다.</p>
+          </div>
+
+
+<h1 id="Antigravity"><a href="#Antigravity" class="headerlink" title="Antigravity"></a>Antigravity</h1><p>우선 [🐍PyTricks]를 통해 알게된 Antigravity 모듈을 먼저 알아보겠습니다.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> antigravity </span><br></pre></td></tr></table></figure>
+
+<p>antigravity 모듈을 호출하게되면 xkcd 홈페이지가 열리면서 짧은 만화를 볼 수 있습니다.</p>
+<div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 50%;"><img data-src="https://imgs.xkcd.com/comics/python.png"></div><div class="group-picture-column" style="width: 50%;"><img data-src="https://ww.namu.la/s/adb574b12427b293e0f08880f5c40746498afc9c3873d14a9bb9ee2bac99bfbd5a15f8aa6244ea78e60b378bb642b6cf5782ba40a7bd451368e5fe1171b0ae689515651c34fccaa0e505dd6673298c9432104cef2299ae62c57ddcde31793582"></div></div></div></div>
+
+<div style="text-align:center">(Left: 원본, Right: 한국어 번역)</div>
+
+<p>파이썬의 철학을 간결하고 재치있게 4컷 만화에 담았습니다.<br>여기서 끝이 아니라 <code>antigravity.py</code> 소스코드를 살펴보게 되면,</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> webbrowser</span><br><span class="line"><span class="keyword">import</span> hashlib</span><br><span class="line"></span><br><span class="line">webbrowser.open(<span class="string">"https://xkcd.com/353/"</span>)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">geohash</span><span class="params">(latitude, longitude, datedow)</span>:</span></span><br><span class="line">    <span class="string">'''Compute geohash() using the Munroe algorithm.</span></span><br><span class="line"><span class="string">    &gt;&gt;&gt; geohash(37.421542, -122.085589, b'2005-05-26-10458.68')</span></span><br><span class="line"><span class="string">    37.857713 -122.544543</span></span><br><span class="line"><span class="string">    '''</span></span><br><span class="line">    <span class="comment"># https://xkcd.com/426/</span></span><br><span class="line">    h = hashlib.md5(datedow).hexdigest()</span><br><span class="line">    p, q = [(<span class="string">'%f'</span> % float.fromhex(<span class="string">'0.'</span> + x)) <span class="keyword">for</span> x <span class="keyword">in</span> (h[:<span class="number">16</span>], h[<span class="number">16</span>:<span class="number">32</span>])]</span><br><span class="line">    print(<span class="string">'%d%s %d%s'</span> % (latitude, p[<span class="number">1</span>:], longitude, q[<span class="number">1</span>:])) </span><br></pre></td></tr></table></figure>
+
+<p><code>geohash()</code> 함수가 숨어있는 것을 확인할 수 있으며 이에 대한 설명은 xkcd 홈페이지에서 찾을 수 있습니다.</p>
+<img data-src="https://imgs.xkcd.com/comics/geohashing.png">
+
+<hr>
+<div class="note info">
+            <p>이참에 Python의 다른 이스터에그는 어떤 것들이 있는지 찾아보았습니다.</p>
+          </div>
+
+
+<h1 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World!"></a>Hello World!</h1><p>프로그래밍을 배우는 사람이라면 꼭 외치는 한마디가 있죠.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> __hello__</span><br><span class="line">Hello World! </span><br></pre></td></tr></table></figure>
+
+<h1 id="The-Zen-of-Python"><a href="#The-Zen-of-Python" class="headerlink" title="The Zen of Python"></a>The Zen of Python</h1><p><code>this</code> 모듈을 호출하면 파이썬의 철학 (the zen of python)의 전문을 바로 확인할 수 있습니다.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> this</span><br><span class="line"></span><br><span class="line">The Zen of Python, by Tim Peters</span><br><span class="line"></span><br><span class="line">Beautiful <span class="keyword">is</span> better than ugly.</span><br><span class="line">Explicit <span class="keyword">is</span> better than implicit.</span><br><span class="line">Simple <span class="keyword">is</span> better than complex.</span><br><span class="line">Complex <span class="keyword">is</span> better than complicated.</span><br><span class="line">Flat <span class="keyword">is</span> better than nested.</span><br><span class="line">Sparse <span class="keyword">is</span> better than dense.</span><br><span class="line">Readability counts.</span><br><span class="line">Special cases aren<span class="string">'t special enough to break the rules.</span></span><br><span class="line"><span class="string">Although practicality beats purity.</span></span><br><span class="line"><span class="string">Errors should never pass silently.</span></span><br><span class="line"><span class="string">Unless explicitly silenced.</span></span><br><span class="line"><span class="string">In the face of ambiguity, refuse the temptation to guess.</span></span><br><span class="line"><span class="string">There should be one-- and preferably only one --obvious way to do it.</span></span><br><span class="line"><span class="string">Although that way may not be obvious at first unless you'</span>re Dutch.</span><br><span class="line">Now <span class="keyword">is</span> better than never.</span><br><span class="line">Although never <span class="keyword">is</span> often better than right now.</span><br><span class="line">If the implementation <span class="keyword">is</span> hard to explain, it<span class="string">'s a bad idea.</span></span><br><span class="line"><span class="string">If the implementation is easy to explain, it may be a good idea.</span></span><br><span class="line"><span class="string">Namespaces are one honking great idea -- let'</span>s do more of those! </span><br></pre></td></tr></table></figure>
+
+<p>한글 번역은 다음과 같습니다. (임의로 앞에 번호를 붙였습니다)</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1 아름다움이 추함보다 좋다.</span><br><span class="line">2 명시가 암시보다 좋다.</span><br><span class="line">3 단순함이 복잡함보다 좋다.</span><br><span class="line">4 복잡함이 꼬인 것보다 좋다.</span><br><span class="line">5 수평이 계층보다 좋다.</span><br><span class="line">6 여유로운 것이 밀집한 것보다 좋다.</span><br><span class="line">7 가독성은 중요하다.</span><br><span class="line">8 특별한 경우라는 것은 규칙을 어겨야 할 정도로 특별한 것이 아니다.</span><br><span class="line">9 허나 실용성은 순수성에 우선한다.</span><br><span class="line">10 오류 앞에서 절대 침묵하지 말지어다.</span><br><span class="line">11 명시적으로 오류를 감추려는 의도가 아니라면.</span><br><span class="line">12 모호함을 앞에 두고, 이를 유추하겠다는 유혹을 버려라.</span><br><span class="line">13 어떤 일에든 명확한 - 바람직하며 유일한 - 방법이 존재한다.</span><br><span class="line">14 비록 그대가 우둔하여 그 방법이 처음에는 명확해 보이지 않을지라도.</span><br><span class="line">15 지금 하는게 아예 안하는 것보다 낫다.</span><br><span class="line">16 아예 안하는 것이 지금 당장 보다 나을 때도 있지만.</span><br><span class="line">17 구현 결과를 설명하기 어렵다면, 그 아이디어는 나쁘다.</span><br><span class="line">18 구현 결과를 설명하기 쉽다면, 그 아이디어는 좋은 아이디어일 수 있다.</span><br><span class="line">19 네임스페이스는 대박 좋은 아이디어다 -- 마구 남용해라! </span><br></pre></td></tr></table></figure>
+
+<span class="label primary"> 파이썬 핵심 개발자 Tim Peters가 제안한 가이드라인은 20개이며 빠진 내용은 “some bizarre Tim Peters in-joke.” 입니다. 누가 파이썬 창시자인 귀도 반 로섬에게 질문하고 들은 내용이라고 합니다</span>
+<p>삭제된 하나의 가이드라인은 무엇이죠? - <span class="exturl" data-url="aHR0cHM6Ly9zdGFja292ZXJmbG93LmNvbS9xdWVzdGlvbnMvNDUwNDQ4Ny90aGUtemVuLW9mLXB5dGhvbi1kaXN0aWxzLXRoZS1ndWlkaW5nLXByaW5jaXBsZXMtZm9yLXB5dGhvbi1pbnRvLTIwLWFwaG9yaXNtcy1idS80NTA0ODkx" title="https://stackoverflow.com/questions/4504487/the-zen-of-python-distils-the-guiding-principles-for-python-into-20-aphorisms-bu/4504891">stackoverflow<i class="fa fa-external-link"></i></span></p>
+<h1 id="C-style-braces"><a href="#C-style-braces" class="headerlink" title="C-style braces"></a>C-style braces</h1><p>아시다싶이 Python에서는 코드 블록을 구분할 때 괄호(brace)를 사용하지 않고 들여쓰기(indentation)를 사용합니다.<br>프로그래머 마다 각자 선호하는 코딩 스타일이 있고 이는 마치 종교처럼 나뉘어져 있습니다.<br>종교의 자유가 있듯이 파이썬에서도 괄호를 사용하는 코드 스타일을 허용해 줄까요?</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">from</span> __future__ <span class="keyword">import</span> braces</span><br><span class="line">  File <span class="string">"&lt;stdin&gt;"</span>, line <span class="number">1</span></span><br><span class="line">  SyntaxError: <span class="keyword">not</span> a chance </span><br></pre></td></tr></table></figure>
+
+<p><del>~ <strong>어림도 없지!!!</strong> ~</del><br><code>__future__</code> 모듈은 파이썬 2, 3 사이의 호환성 문제를 해결하기 위한 모듈입니다. 파이썬 2에서도 파이썬 3에서 사용하는 문법을 쓸수 있도록 해줍니다. 단어대로 해석하자면 미래에 사용되는 ~한 기능을 가져와서 사용하겠다가 되겠습니다.<br>괄호 사용을 선호하는 프로그래머를 위해 braces 기능을 넣어주겠지? 하는 마음에 모듈을 호출해보면 SyntaxError로 <span class="label danger">not a chance</span> 라고 그럴일은 없다고 단호하게 출력되는 것이 <em>유머</em> 입니다.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">from</span> __future__ <span class="keyword">import</span> test</span><br><span class="line">  File <span class="string">"&lt;stdin&gt;"</span>, line <span class="number">1</span></span><br><span class="line">  SyntaxError: future feature test <span class="keyword">is</span> <span class="keyword">not</span> defined </span><br></pre></td></tr></table></figure>
+
+<p><code>__future__</code> 모듈에 없는 임의의 모듈을 호출하면 그냥 선언되어 있지 않다고 왠지 모르게 밋밋한 답변을 볼 수 있습니다.</p>
+<hr>
+<hr>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/PY-string-formatting/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -584,502 +1053,11 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/PY-day8/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="NUNU">
-      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="AttackOnNunu">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/[object Object]/PY-day8/" class="post-title-link" itemprop="url">(PYTHON) Day - 8 Strings(4)</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">작성일</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2020-02-21 13:45:48" itemprop="dateCreated datePublished" datetime="2020-02-21T13:45:48+09:00">2020-02-21</time>
-            </span>
-          
-
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/" itemprop="url" rel="index"><span itemprop="name">LANGUAGE</span></a></span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/" itemprop="url" rel="index"><span itemprop="name">PYTHON</span></a></span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/HACKERRANK/" itemprop="url" rel="index"><span itemprop="name">HACKERRANK</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">댓글: </span>
-                <a href="/[object Object]/PY-day8/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/PY-day8/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          <br>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
-<li>문제 출처 - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vZGFzaGJvYXJk" title="https://www.hackerrank.com/dashboard">HackerRank<i class="fa fa-external-link"></i></span></li>
-<li>파이썬 연습 - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vZG9tYWlucy9weXRob24/ZmlsdGVycyU1QnN0YXR1cyU1RCU1QiU1RD11bnNvbHZlZCZiYWRnZV90eXBlPXB5dGhvbg==" title="https://www.hackerrank.com/domains/python?filters%5Bstatus%5D%5B%5D=unsolved&badge_type=python">Practice - Python<i class="fa fa-external-link"></i></span></li>
-</ul>
-<p>개인적인 생각과 상상으로 작성한 내용들이 포함되어 있습니다<br>문제를 풀고 <span class="label success"> Discussion Tab</span>을 참고하며 코드 스타일을 개선하려고 노력하고자 합니다</p>
-<hr>
-<br>
-
-<h1 id="HackerRank"><a href="#HackerRank" class="headerlink" title="HackerRank"></a>HackerRank</h1><p>HackerRank의 Python 연습문제들은 아래와 같은 카테고리로 분류 된다:</p>
-<div class="note default">
-            <h2 id="Subdomain"><a href="#Subdomain" class="headerlink" title="Subdomain"></a>Subdomain</h2><ul><li><del>Introduction</del></li><li><del>Basic Data Types</del></li><li><strong style="color:blue">Strings</strong></li><li>Sets</li><li>Math</li><li>Itertools</li><li>Collections</li><li>Date and Time</li><li>Errors and Exceptions</li><li>Classes</li><li>Built-Ins</li><li>Python Functionals</li><li>Regex and Parsing</li><li>XML</li><li>Closures and Decorators</li><li>Numpy</li><li>Debugging</li></ul>
-          </div>
-
-<hr>
-<br>
-
-<h1 id="Strings"><a href="#Strings" class="headerlink" title="Strings"></a>Strings</h1><div class="note primary">
-            <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><ul><li><a href="#Capitalize!">Capitalize!</a></li><li><a href="#The-Minion-Game">The Minion Game</a></li><li><a href="#Merge-the-Tools!">Merge the Tools!</a>   </li></ul>
-          </div>
-
-<h2 id="기본-개념"><a href="#기본-개념" class="headerlink" title="기본 개념"></a>기본 개념</h2><h3 id="Capitalize"><a href="#Capitalize" class="headerlink" title="Capitalize!"></a>Capitalize!</h3><div class="note info">
-            <p>문제 : 사람 이름의 첫 문자를 대문자로 바꾸는 문제</p>
-          </div>
-
-<div class="tabs" id="example1"><ul class="nav-tabs"><li class="tab active"><a href="#example1-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example1-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane active" id="example1-1"><p>chris alan</p></div><div class="tab-pane" id="example1-2"><p>Chris Alan</p></div></div></div>
-
-<div class="note success">
-            <p><span class="label default"> os 패키지는 표준 라이브러리를 다루면서 한번 정리할 예정</span></p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">solve</span><span class="params">(s)</span>:</span></span><br><span class="line">  <span class="keyword">return</span> <span class="string">' '</span>.join(i.capitalize() <span class="keyword">for</span> i <span class="keyword">in</span> s.split(<span class="string">' '</span>))</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    fptr = open(os.environ[<span class="string">'OUTPUT_PATH'</span>], <span class="string">'w'</span>)</span><br><span class="line"></span><br><span class="line">    s = input()</span><br><span class="line"></span><br><span class="line">    result = solve(s)</span><br><span class="line"></span><br><span class="line">    fptr.write(result + <span class="string">'\n'</span>)</span><br><span class="line"></span><br><span class="line">    fptr.close()  </span><br></pre></td></tr></table></figure>
-          </div>
-
-<hr>
-<h3 id="The-Minion-Game"><a href="#The-Minion-Game" class="headerlink" title="The Minion Game"></a>The Minion Game</h3><div class="note info">
-            <p>문제 : 문자열 S를 입력받으면 두 사람(Stuart, Kevin) 각각 자음(consonant), 모음(vowel)으로 시작하는 단어 조합의 총 개수를 비교하여 큰 사람의 이름과 그 숫자를 출력하는 문제<br>예제 : ‘BANANA’에서 ‘ANA’는 2번 나타나기 때문에 score는 2가 된다. 아래 그림을 참고<br><img alt="minion game" data-src="https://s3.amazonaws.com/hr-challenge-images/9693/1450330231-04db904008-banana.png"></p>
-          </div>
-
-<div class="tabs" id="example2"><ul class="nav-tabs"><li class="tab active"><a href="#example2-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example2-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane active" id="example2-1"><p>BANANA</p></div><div class="tab-pane" id="example2-2"><p>Stuart 12</p></div></div></div>
-
-<div class="note default">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">minion_game</span><span class="params">(string)</span>:</span></span><br><span class="line">  player = &#123;<span class="string">'Stuart'</span>: <span class="number">0</span>, <span class="string">'Kevin'</span>: <span class="number">0</span>&#125;</span><br><span class="line">  vowels = <span class="string">'AEIOU'</span></span><br><span class="line"></span><br><span class="line">  str_l = len(string)</span><br><span class="line">  <span class="keyword">for</span> i, c <span class="keyword">in</span> enumerate(string):</span><br><span class="line">    <span class="keyword">if</span> c <span class="keyword">in</span> vowels:</span><br><span class="line">      player[<span class="string">'Kevin'</span>] += str_l - i</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">      player[<span class="string">'Stuart'</span>] += str_l - i</span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> player[<span class="string">'Stuart'</span>] == player[<span class="string">'Kevin'</span>]:</span><br><span class="line">    print(<span class="string">'Draw'</span>)</span><br><span class="line">  <span class="keyword">elif</span> player[<span class="string">'Stuart'</span>] &gt; player[<span class="string">'Kevin'</span>]:</span><br><span class="line">    print(<span class="string">'Stuart'</span>, player[<span class="string">'Stuart'</span>])</span><br><span class="line">  <span class="keyword">else</span>:</span><br><span class="line">    print(<span class="string">'Kevin'</span>, player[<span class="string">'Kevin'</span>])</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    s = input()</span><br><span class="line">    minion_game(s) </span><br></pre></td></tr></table></figure>
-          </div>
-
-<div class="note success">
-            <p>Several optimizations.</p><ul><li><p>Use frozenset for the vowels. This is the fastest to lookup in.</p></li><li><p>Iterate through characters instead of indexing</p></li><li><p>Iterate q reverse to avoid a subtraction in each sum</p></li><li><p>Avoid repeated calls to len</p></li><li><p>Only calculate Kevins score the hard way. Use the fact that the total number of substrings is n * (n + 1) / 2 and find Stuart’s score by subtracting Kevin’s from the total number of substrings.</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">minion_game</span><span class="params">(s)</span>:</span></span><br><span class="line">  V = frozenset(<span class="string">"AEIOU"</span>)</span><br><span class="line">  n = len(s)</span><br><span class="line">  ksc = sum(q <span class="keyword">for</span> c, q <span class="keyword">in</span> zip(s, range(n, <span class="number">0</span>, <span class="number">-1</span>)) <span class="keyword">if</span> c <span class="keyword">in</span> V)</span><br><span class="line">  ssc = n * (n + <span class="number">1</span>) // <span class="number">2</span> - ksc</span><br><span class="line">  <span class="keyword">if</span> ksc &gt; ssc:</span><br><span class="line">      print(<span class="string">"Kevin &#123;:d&#125;"</span>.format(ksc))</span><br><span class="line">  <span class="keyword">elif</span> ssc &gt; ksc:</span><br><span class="line">      print(<span class="string">"Stuart &#123;:d&#125;"</span>.format(ssc))</span><br><span class="line">  <span class="keyword">else</span>:</span><br><span class="line">      print(<span class="string">"Draw"</span>)</span><br></pre></td></tr></table></figure></li></ul>
-          </div>
-
-<hr>
-<h3 id="Merge-the-Tools"><a href="#Merge-the-Tools" class="headerlink" title="Merge the Tools!"></a>Merge the Tools!</h3><div class="note info">
-            <p>입력 : 문자열 s와 정수 k를 입력받는다(k는 문자열 길이(n)의 약수)<br>출력 : k의 배수에 위치한 문자를 기준으로 sub-문자열을 구분하고 반복되는 문자는 삭제해서 출력<br>예제 : 문자열 ‘AABCAAADA’에서 길이 3으로 자르면 ‘AAB’ ‘CAA’ ‘ADA’ 3개의 sub-문자열로 나뉘고 여기서 중복되는 문자를 제거하면 ‘AB’ ‘CA’ ‘AD’가 된다</p>
-          </div>
-
-<div class="tabs" id="example3"><ul class="nav-tabs"><li class="tab active"><a href="#example3-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example3-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane active" id="example3-1"><p>AABCAAADA<br>3   </p></div><div class="tab-pane" id="example3-2"><p>AB<br>CA<br>AD</p></div></div></div>
-
-<div class="note default">
-            <p>문제의 조건을 직접 충실히 확인하는 기초적인 방법</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">merge_the_tools</span><span class="params">(string, k)</span>:</span></span><br><span class="line">sub_str = []</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(len(string)):</span><br><span class="line">  <span class="keyword">if</span> string[i] <span class="keyword">not</span> <span class="keyword">in</span> sub_str:</span><br><span class="line">    sub_str.extend(string[i])</span><br><span class="line">  <span class="keyword">if</span> (i+<span class="number">1</span>) % k == <span class="number">0</span>:</span><br><span class="line">    print(<span class="string">''</span>.join(sub_str))</span><br><span class="line">    <span class="keyword">del</span> sub_str[:]</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    string, k = input(), int(input())</span><br><span class="line">    merge_the_tools(string, k) </span><br></pre></td></tr></table></figure>
-          </div>
-
-<div class="note success">
-            <p><del>main 함수일 때 실행한다는 코드는 생략</del></p><ul><li><p>textwrap은 지난 문제에서 다뤘지만 OrderedDict 패키지는 처음봤지만 이런 방법도 있다</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> collections <span class="keyword">import</span> OrderedDict</span><br><span class="line"><span class="keyword">import</span> textwrap</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">merge_the_tools</span><span class="params">(string, k)</span>:</span></span><br><span class="line">  b=textwrap.wrap(string,k)</span><br><span class="line">  <span class="keyword">for</span> i <span class="keyword">in</span> range (len(b)):</span><br><span class="line">    print(<span class="string">""</span>.join(OrderedDict.fromkeys(b[i]))) </span><br></pre></td></tr></table></figure></li><li><p>가장 인기가 높은 해답</p></li><li><p><span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vY2hhbGxlbmdlcy9tZXJnZS10aGUtdG9vbHMvZm9ydW0=" title="https://www.hackerrank.com/challenges/merge-the-tools/forum">Discussion forum<i class="fa fa-external-link"></i></span> 참고!</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">S, N = input(), int(input())</span><br><span class="line"><span class="keyword">for</span> part <span class="keyword">in</span> zip(*[iter(S)] * N):</span><br><span class="line">    d = dict()</span><br><span class="line">    print(<span class="string">''</span>.join([ d.setdefault(c, c) <span class="keyword">for</span> c <span class="keyword">in</span> part <span class="keyword">if</span> c <span class="keyword">not</span> <span class="keyword">in</span> d ])) </span><br></pre></td></tr></table></figure></li></ul>
-          </div>
-
-<hr>
-<hr>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
-          
-        
-      
-    </div>
-
-    
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/PY-textwrap/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="NUNU">
-      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="AttackOnNunu">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/[object Object]/PY-textwrap/" class="post-title-link" itemprop="url">(PYTHON) TextWrap</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">작성일</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2020-02-20 00:29:17" itemprop="dateCreated datePublished" datetime="2020-02-20T00:29:17+09:00">2020-02-20</time>
-            </span>
-          
-
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/" itemprop="url" rel="index"><span itemprop="name">LANGUAGE</span></a></span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/" itemprop="url" rel="index"><span itemprop="name">PYTHON</span></a></span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/TERMINOLOGY/" itemprop="url" rel="index"><span itemprop="name">TERMINOLOGY</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">댓글: </span>
-                <a href="/[object Object]/PY-textwrap/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/PY-textwrap/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          <br>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
-<li>Python 공식 문서 - <span class="exturl" data-url="aHR0cHM6Ly9kb2NzLnB5dGhvbi5vcmcvMy44L2xpYnJhcnkvdGV4dHdyYXAuaHRtbA==" title="https://docs.python.org/3.8/library/textwrap.html">textwrap - Text wrapping and filling<i class="fa fa-external-link"></i></span></li>
-<li>‘wrap’ 사전적 의미 - <span class="exturl" data-url="aHR0cHM6Ly9kaWN0aW9uYXJ5LmNhbWJyaWRnZS5vcmcva28vJUVDJTgyJUFDJUVDJUEwJTg0LyVFQyU5OCU4MSVFQyU5NiVCNC93cmFw" title="https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/wrap">Cambridge Dictionary<i class="fa fa-external-link"></i></span></li>
-<li>‘text wrap’의 뜻 - <span class="exturl" data-url="aHR0cHM6Ly93d3cud2Vib3BlZGlhLmNvbS9URVJNL1QvdGV4dF93cmFwLmh0bWw=" title="https://www.webopedia.com/TERM/T/text_wrap.html">webopedia.com<i class="fa fa-external-link"></i></span></li>
-<li>‘wrap text’의 뜻 - <span class="exturl" data-url="aHR0cHM6Ly93d3cuY29tcHV0ZXJob3BlLmNvbS9qYXJnb24vdy93cmFwLXRleHQuaHRt" title="https://www.computerhope.com/jargon/w/wrap-text.htm">computerhope.com<i class="fa fa-external-link"></i></span></li>
-<li>‘word wrap’의 뜻 - <span class="exturl" data-url="aHR0cHM6Ly93d3cud2Vib3BlZGlhLmNvbS9URVJNL1cvd29yZF93cmFwLmh0bWw=" title="https://www.webopedia.com/TERM/W/word_wrap.html">webopedia.com<i class="fa fa-external-link"></i></span></li>
-</ul>
-<hr>
-<div class="note info">
-            <p><a href="https://taejin0527.github.io/[object%20Object]/PY-day7/#Text-Wrap">(PYTHON) Day - 7 Strings</a>에서 <strong>textwrap 패키지</strong> 를 사용하는 문제가 있었습니다. 뭔가 용어에 대해 정확히 이해하고 넘어가야 해당 기능이 필요할 때 기억해내고 사용할 것 같아서 아래에 정리해 두려고 합니다.</p>
-          </div>
-
-<h1 id="Wrap"><a href="#Wrap" class="headerlink" title="Wrap?"></a>Wrap?</h1><h2 id="Image-Search"><a href="#Image-Search" class="headerlink" title="Image Search"></a>Image Search</h2><div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 50%;"><img style="height:250px" data-src="https://www.landolakes.com/RecipeManagementSystem/media/Recipe-Media-Files/Recipes/Retail/x17/18745-italian-chicken-wraps-600x600.jpg"></div><div class="group-picture-column" style="width: 50%;"><img style="height:250px" data-src="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F2651C337537584241E"></div></div></div></div>
-
-<p>Google에 ‘wrap’이라는 단어를 이미지로 검색해보면 왼쪽 사진과 같은 음식 사진들로 가득찬 것을 보실 수 있습니다.<br>한국어로 ‘랩’이라고 검색하면 오른쪽 사진과 같은 비닐랩 사진이 많이 보이지만 비교적 다양한 사진들이 섞여 있습니다.<br>많은 사람들이 wrap이라는 단어를 들었을 때 음식이나 주방요품을 떠올리면서 무언가를 감싸는 의미를 갖는 다는 느낌을 받습니다.</p>
-<h2 id="Cambridge-Dictionary"><a href="#Cambridge-Dictionary" class="headerlink" title="Cambridge Dictionary"></a>Cambridge Dictionary</h2><div class="note ">
-            <p><strong>[Verb]</strong><br> <strong>to <span class="label primary">cover</span> or <span class="label primary">surround</span> something with paper, cloth, or other material</strong><br> <strong>to <span class="label primary">cover</span> someone with a piece of material in order to <span class="label primary">protect</span> them</strong></p>
-          </div>
-
-<p>영어사전에서 찾아봐도 위에서 예상한 것 처럼 ‘무언가를 감싸는 것’을 뜻한다는 것을 볼 수 있습니다.<br><code>cover</code>, <code>surround</code> 라는 단어에서 ‘덮는다’, ‘감싼다’라는 의미를 정확히 알 수 있는데, <code>protect</code> 라는 단어가 눈에 띄는군요.<br><br></p>
-<hr>
-<h1 id="Text-Wrap"><a href="#Text-Wrap" class="headerlink" title="Text Wrap?"></a>Text Wrap?</h1><p>‘text wrap’은 ‘plastic wrap’처럼 텍스트로 무언가를 감싸는 것을 뜻하는 것일까요?</p>
-<h2 id="Image-Search-1"><a href="#Image-Search-1" class="headerlink" title="Image Search"></a>Image Search</h2><div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 50%;"><img style="height:250px" data-src="https://indesignsecrets.com/wp-content/uploads/2009/01/text-wrap-final.jpg"></div><div class="group-picture-column" style="width: 50%;"><img style="height:250px" data-src="https://booksonthewall.com/wp-content/uploads/2015/09/alices_adventures_in_wonderland_new_slice_2.png"></div></div><div class="group-picture-row"><div class="group-picture-column" style="width: 50%;"><img style="height:350px" data-src="https://www.howtogeek.com/wp-content/uploads/2018/08/13-Wrap-and-Distance.png"></div><div class="group-picture-column" style="width: 50%;"><img style="height:350px" data-src="/img/text wrap.png"></div></div></div></div>
-
-<p>똑같이 Google 이미지 검색으로 ‘text wrap’을 찾아보면 위 사진처럼 특정 이미지에 맞춰 그 주위를 텍스트로 감싸는 것을 볼 수 있습니다. 이런 기능을 우리는 문서 작성 프로그램을 사용하며 자주 볼 수 있습니다. 한글로는 ‘텍스트 배치’라고 적혀있고 영어로 ‘text wrapping’이라고 적혀있는 것을 아래 사진을 통해 확인할 수 있습니다.</p>
-<h2 id="Webopedia"><a href="#Webopedia" class="headerlink" title="Webopedia"></a>Webopedia</h2><blockquote>
-<p><del>문득 Webo는 무엇을 뜻하는지 궁금해졌다. 백과사전을 뜻하는 Encyclopedia은 그리스어 Enkyklios Paideia(Complete Knowledge)에서 온 말이다. 이를 응용해서 Wikipedia는 wiki(인터넷 사용자 누구나 작성하고 수정할 수 있는) + pedia(지식)를 합친 뜻이 된다. 그렇다면 webo는 무슨 뜻이 있을까? 그냥 webpedia해도 되지않나? 왜 o가 들어갔지?</del></p>
-</blockquote>
-<p>(본문의 내용을 요약한 것입니다. 정확한 내용은 위 출처를 통해 확인하실 수 있습니다.)</p>
-<div class="note ">
-            <p>텍스트가 그래픽(이미지, 도표 등)을 감싸고 있는 것<br>HTML에서 &lt;img&gt; tag 안에 align=’left’ 혹은 ‘right’ 등을 선언함으로 텍스트 배치를 사용할 수 있다<br>동의어로 <strong>text flow</strong> 가 있다</p>
-          </div>
-
-<br>
-
-<hr>
-<div class="note info">
-            <p>하지만 문제에서 봤던 기능은 여기까지 알아본 내용과는 다른 것 같습니다. Python의 textwrap 패키지는 문단의 여백을 제어하는 기능인 것 같아서 조금 더 알아보겠습니다.</p>
-          </div>
-
-
-<h1 id="Wrap-Text"><a href="#Wrap-Text" class="headerlink" title="Wrap Text??"></a>Wrap Text??</h1><p>단어의 순서를 바꿔서 ‘wrap text’는 무언가로 텍스트를 감싸는 것을 뜻하는 것일까요?</p>
-<h2 id="Image-Search-2"><a href="#Image-Search-2" class="headerlink" title="Image Search"></a>Image Search</h2><div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 50%;"><img style="height:250px" data-src="https://www.computerhope.com/jargon/w/wrap-text.jpg"></div><div class="group-picture-column" style="width: 50%;"><img style="height:250px" data-src="https://www.computerhope.com/jargon/w/word-wrap.jpg"></div></div></div></div>
-
-<p>word, 한글과 같은 문서 작성 프로그램과는 다르게 Excel과 같은 spreadsheet 프로그램에서는 ‘wrap text’라는 기능을 제공합니다. 첫번째 사진에서 볼 수 있듯이 해당 기능은 텍스트를 셀 크기에 맞춰서 줄 바꿈을 실행합니다.</p>
-<h2 id="Webopedia-1"><a href="#Webopedia-1" class="headerlink" title="Webopedia"></a>Webopedia</h2><div class="note ">
-            <p>정해진 margin에 맞춰 강제로 텍스트의 형태를 바꾸는 것<br>동의어로 <strong>word wrap</strong> 이 있다</p>
-          </div>
-
-
-
-<div class="note info">
-            <p>개인적으로 wraptext 혹은 wordwrap가 올바른 패키지 이름이지 않을까 하고 생각합니다. 왜 textwrap이 이름으로 채택되었는지 더 깊이 파고들지는 않겠습니다.</p>
-          </div>
-
-<hr>
-<hr>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
-          
-        
-      
-    </div>
-
-    
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/8/"><i class="fa fa-angle-left" aria-label="이전 페이지"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><span class="page-number current">9</span><a class="page-number" href="/page/10/">10</a><span class="space">&hellip;</span><a class="page-number" href="/page/30/">30</a><a class="extend next" rel="next" href="/page/10/"><i class="fa fa-angle-right" aria-label="다음 페이지"></i></a>
+    <a class="extend prev" rel="prev" href="/page/8/"><i class="fa fa-angle-left" aria-label="이전 페이지"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><span class="page-number current">9</span><a class="page-number" href="/page/10/">10</a><span class="space">&hellip;</span><a class="page-number" href="/page/31/">31</a><a class="extend next" rel="next" href="/page/10/"><i class="fa fa-angle-right" aria-label="다음 페이지"></i></a>
   </nav>
 
 
@@ -1123,7 +1101,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">89</span>
+                    <span class="site-state-item-count">91</span>
                     <span class="site-state-item-name">포스트</span>
                   </a>
                 </div>

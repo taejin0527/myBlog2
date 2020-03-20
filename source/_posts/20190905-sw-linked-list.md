@@ -1,5 +1,5 @@
 ---
-title: (파이썬 S/W 문제해결 기본) Linked List - 5108번 5110번
+title: (파이썬 S/W 문제해결 기본) Linked List - 5108번 5110번 5120번 5122번
 date: 2019-09-05 16:10:07
 categories: SW 아카데미
 tags: [삼성, 파이썬, SW Academy, python, linked list]
