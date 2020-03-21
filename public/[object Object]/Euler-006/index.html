@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="ko">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2">
+
+
+
+
+
+  <meta name="google-site-verification" content="1AoB1Oj70vYeXdFCLMbgUhTbU9kMwMXDsCNGRrqqvhM">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+
+<link rel="stylesheet" href="/css/main.css?v=7.2.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.2.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.2.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.2.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.2.0" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '7.2.0',
+    sidebar: {"position":"right","display":"post","offset":12,"onmobile":false},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    copycode: {"enable":true,"show_result":true,"style":"flat"},
+    fancybox: false,
+    fastclick: false,
+    lazyload: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    translation: {
+      copy_button: '복사',
+      copy_success: 'Copied',
+      copy_failure: 'Copy failed'
+    }
+  };
+</script>
+
+
+
+  <meta name="description" content="Project Euler 공식 홈페이지 - projecteuler.net 한글 번역 - projecteuler @kr (HackerRank) ProjectEuler+ - hackerrank.com  Problem              Problem list                    No 6 : Sum square difference HackerR">
+<meta name="keywords" content="project euler,오일러 프로젝트,수학문제">
+<meta property="og:type" content="article">
+<meta property="og:title" content="(Problem) 006 Sum square difference">
+<meta property="og:url" content="https://taejin0527.github.io/[object Object]/Euler-006/index.html">
+<meta property="og:site_name" content="AttackOnNunu">
+<meta property="og:description" content="Project Euler 공식 홈페이지 - projecteuler.net 한글 번역 - projecteuler @kr (HackerRank) ProjectEuler+ - hackerrank.com  Problem              Problem list                    No 6 : Sum square difference HackerR">
+<meta property="og:locale" content="ko">
+<meta property="og:updated_time" content="2020-03-21T12:20:39.720Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="(Problem) 006 Sum square difference">
+<meta name="twitter:description" content="Project Euler 공식 홈페이지 - projecteuler.net 한글 번역 - projecteuler @kr (HackerRank) ProjectEuler+ - hackerrank.com  Problem              Problem list                    No 6 : Sum square difference HackerR">
+
+
+
+  <link rel="alternate" href="/rss2.xml" title="AttackOnNunu" type="application/atom+xml">
+
+
+
+  
+  
+  <link rel="canonical" href="https://taejin0527.github.io/[object Object]/Euler-006/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>(Problem) 006 Sum square difference | AttackOnNunu</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+  <!-- Google Adsense start -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-8226968057315512",
+    enable_page_level_ads: true
+  });
+</script>
+
+  <!-- Google Adsense end -->
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="ko">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">AttackOnNunu</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <h1 class="site-subtitle" itemprop="description">Once more into the fray</h1>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>홈</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>About</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>태그</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>카테고리</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>아카이브</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+</nav>
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/Euler-006/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="NUNU">
+      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="AttackOnNunu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">(Problem) 006 Sum square difference
+
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2020-03-21 19:26:28" itemprop="dateCreated datePublished" datetime="2020-03-21T19:26:28+09:00">2020-03-21</time>
+            </span>
+          
+
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Project-Euler/" itemprop="url" rel="index"><span itemprop="name">Project Euler</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">댓글: </span>
+                <a href="/[object Object]/Euler-006/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/Euler-006/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="Project-Euler"><a href="#Project-Euler" class="headerlink" title="Project Euler"></a>Project Euler</h1><ul>
+<li>공식 홈페이지 - <span class="exturl" data-url="aHR0cHM6Ly9wcm9qZWN0ZXVsZXIubmV0Lw==" title="https://projecteuler.net/">projecteuler.net<i class="fa fa-external-link"></i></span></li>
+<li>한글 번역 - <span class="exturl" data-url="aHR0cDovL2V1bGVyLnN5bmFwLmNvLmtyL3Byb2JfZGV0YWlsLnBocD9pZD0x" title="http://euler.synap.co.kr/prob_detail.php?id=1">projecteuler @kr<i class="fa fa-external-link"></i></span></li>
+<li>(HackerRank) ProjectEuler+ - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vY29udGVzdHMvcHJvamVjdGV1bGVyL2NoYWxsZW5nZXM=" title="https://www.hackerrank.com/contests/projecteuler/challenges">hackerrank.com<i class="fa fa-external-link"></i></span></li>
+</ul>
+<h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><div class="spoiler collapsed">
+    <div class="spoiler-title">
+        Problem list
+    </div>
+    <div class="spoiler-content">
+        <ul>
+<li>No 6 : <span class="exturl" data-url="aHR0cHM6Ly9wcm9qZWN0ZXVsZXIubmV0L3Byb2JsZW09Ng==" title="https://projecteuler.net/problem=6">Sum square difference<i class="fa fa-external-link"></i></span><ul>
+<li>HackerRank : <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vY29udGVzdHMvcHJvamVjdGV1bGVyL2NoYWxsZW5nZXMvZXVsZXIwMDYvcHJvYmxlbQ==" title="https://www.hackerrank.com/contests/projecteuler/challenges/euler006/problem">Project Euler #4: Sum square difference<i class="fa fa-external-link"></i></span></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</div>
+
+<div class="note no-icon">
+            <div class="note primary no-icon">            <h3 id="Sum-square-difference"><a href="#Sum-square-difference" class="headerlink" title="Sum square difference"></a>Sum square difference</h3><br><h4 id="problem-lt-번역-gt"><a href="#problem-lt-번역-gt" class="headerlink" title="problem  &lt;번역&gt;"></a>problem  &lt;번역&gt;</h4><img data-src="/img/Euler/Problem 6.png"><h4 id="solution"><a href="#solution" class="headerlink" title="solution"></a>solution</h4><p><span class="label warning"> Simple Code</span></p><div class="note success no-icon">            <p>컴퓨터는 연산이 빠르기 때문에 Brute Force한 방법으로 그냥 단순히 반복문을 통해 다 더하여 답을 구할 수도 있다.</p>          </div><figure class="highlight python"><figcaption><span>006_sum_square_difference.py</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sum_of_num</span><span class="params">(n)</span>:</span></span><br><span class="line">  total = <span class="number">0</span></span><br><span class="line">  <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, n+<span class="number">1</span>):</span><br><span class="line">      total += i</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> total**<span class="number">2</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sum_of_square_num</span><span class="params">(n)</span>:</span></span><br><span class="line">  total = <span class="number">0</span></span><br><span class="line">  <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, n+<span class="number">1</span>):</span><br><span class="line">      total += i**<span class="number">2</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> total</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">print(sum_of_num(<span class="number">100</span>) - sum_of_square_num(<span class="number">100</span>))  </span><br></pre></td></tr></table></figure><hr><span class="label warning"> HackerRank</span><div class="note success no-icon">            <p>하지만 조금이라도 효율적인 성능을 이끌어 내기 위해서는 수식을 이용한 풀이가 더 적당할 것 같다.<br>n까지의 단순 합은 n(n+1)/2와 같고<br>n까지의 제곱 합은 (2n+1)(n+1)n/6과 같다.<br><img data-src="/img/Euler/euler006.png"></p>          </div><figure class="highlight python"><figcaption><span>006_for_HacerRank.py</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sum_of_num</span><span class="params">(n)</span>:</span></span><br><span class="line">  total = n*(n + <span class="number">1</span>)//<span class="number">2</span></span><br><span class="line">  <span class="keyword">return</span> total**<span class="number">2</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sum_of_square_num</span><span class="params">(n)</span>:</span></span><br><span class="line">  <span class="keyword">return</span> (<span class="number">2</span>*n + <span class="number">1</span>)*(n + <span class="number">1</span>)*n//<span class="number">6</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">  <span class="keyword">for</span> _ <span class="keyword">in</span> range(int(input())):</span><br><span class="line">      num = int(input())</span><br><span class="line">      print(sum_of_num(num) - sum_of_square_num(num)) </span><br></pre></td></tr></table></figure>          </div><div class="note info">            <p>제곱의 합 공식</p>          </div>
+          </div>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+      
+    </div>
+
+    
+
+    
+      
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        
+          
+        
+        <div class="post-tags">
+          
+            <a href="/tags/project-euler/" rel="tag"># project euler</a>
+          
+            <a href="/tags/오일러-프로젝트/" rel="tag"># 오일러 프로젝트</a>
+          
+            <a href="/tags/수학문제/" rel="tag"># 수학문제</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/[object Object]/Euler-005/" rel="next" title="(Problem) 005 Smallest multiple">
+                <i class="fa fa-chevron-left"></i> (Problem) 005 Smallest multiple
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+      </div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            목차
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            흝어보기
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.gif" alt="NUNU">
+            
+              <p class="site-author-name" itemprop="name">NUNU</p>
+              <div class="site-description motion-element" itemprop="description">개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.</div>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">93</span>
+                    <span class="site-state-item-name">포스트</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                      <a href="/categories/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">15</span>
+                    <span class="site-state-item-name">카테고리</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                      <a href="/tags/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">50</span>
+                    <span class="site-state-item-name">태그</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/rss2.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Project-Euler"><span class="nav-text">Project Euler</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Problem"><span class="nav-text">Problem</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Sum-square-difference"><span class="nav-text">Sum square difference</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#problem-lt-번역-gt"><span class="nav-text">problem  &lt;번역&gt;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#solution"><span class="nav-text">solution</span></a></li></ol></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+      <!-- Adsense Sidebar -->
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- adsense_side -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8226968057315512" data-ad-slot="2956452829" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+      <!-- Adsense Sidebar -->
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">NUNU</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> v3.9.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme – <span class="exturl theme-link" data-url="aHR0cHM6Ly90aGVtZS1uZXh0Lm9yZw==">NexT.Mist</span> v7.2.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=3.4.1"></script>
+
+  
+  <script src="/lib/lazyload/lozad.min.js?v=1.10.0"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+
+
+  <script src="/js/utils.js?v=7.2.0"></script>
+
+  <script src="/js/motion.js?v=7.2.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/schemes/muse.js?v=7.2.0"></script>
+
+
+
+
+  
+  <script src="/js/scrollspy.js?v=7.2.0"></script>
+<script src="/js/post-details.js?v=7.2.0"></script>
+
+
+
+  <script src="/js/next-boot.js?v=7.2.0"></script>
+
+  
+
+  
+  <script src="/js/exturl.js?v=7.2.0"></script>
+
+
+  
+
+  
+
+  
+  
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://aon-1.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+
+
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://taejin0527.github.io/[object Object]/Euler-006/";
+    this.page.identifier = "[object Object]/Euler-006/";
+    this.page.title = '(Problem) 006 Sum square difference';
+    };
+  function loadComments() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://aon-1.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', '' + +new Date());
+    (d.head || d.body).appendChild(s);
+  }
+  
+    $(function() {
+      var offsetTop = $('#comments').offset().top - $(window).height();
+      if (offsetTop <= 0) {
+        // load directly when there's no a scrollbar
+        window.addEventListener('load', loadComments, false);
+      } else {
+        $(window).on('scroll.disqus_scroll', function() {
+          // offsetTop may changes because of manually resizing browser window or lazy loading images.
+          var offsetTop = $('#comments').offset().top - $(window).height();
+          var scrollTop = $(window).scrollTop();
+
+          // pre-load comments a bit? (margin or anything else)
+          if (offsetTop - scrollTop < 60) {
+            $(window).off('.disqus_scroll');
+            loadComments();
+          }
+        });
+      }
+    });
+  
+</script>
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"superSample":2,"width":200,"height":400,"position":"right","hOffset":0,"vOffset":-50,"mobile":{"show":false,"scale":0.5,"motion":true}}});</script></body>
+</html>
