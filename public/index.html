@@ -356,6 +356,396 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/Euler-008/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="NUNU">
+      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="AttackOnNunu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/[object Object]/Euler-008/" class="post-title-link" itemprop="url">(Problem) 008 Largest product in a series</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2020-03-23 13:51:54" itemprop="dateCreated datePublished" datetime="2020-03-23T13:51:54+09:00">2020-03-23</time>
+            </span>
+          
+
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Project-Euler/" itemprop="url" rel="index"><span itemprop="name">Project Euler</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">댓글: </span>
+                <a href="/[object Object]/Euler-008/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/Euler-008/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Project-Euler"><a href="#Project-Euler" class="headerlink" title="Project Euler"></a>Project Euler</h1><ul>
+<li>공식 홈페이지 - <span class="exturl" data-url="aHR0cHM6Ly9wcm9qZWN0ZXVsZXIubmV0Lw==" title="https://projecteuler.net/">projecteuler.net<i class="fa fa-external-link"></i></span></li>
+<li>한글 번역 - <span class="exturl" data-url="aHR0cDovL2V1bGVyLnN5bmFwLmNvLmtyL3Byb2JfZGV0YWlsLnBocD9pZD0x" title="http://euler.synap.co.kr/prob_detail.php?id=1">projecteuler @kr<i class="fa fa-external-link"></i></span></li>
+<li>(HackerRank) ProjectEuler+ - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vY29udGVzdHMvcHJvamVjdGV1bGVyL2NoYWxsZW5nZXM=" title="https://www.hackerrank.com/contests/projecteuler/challenges">hackerrank.com<i class="fa fa-external-link"></i></span></li>
+</ul>
+<h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><div class="spoiler collapsed">
+    <div class="spoiler-title">
+        Problem list
+    </div>
+    <div class="spoiler-content">
+        <ul>
+<li>No 8 : <span class="exturl" data-url="aHR0cHM6Ly9wcm9qZWN0ZXVsZXIubmV0L3Byb2JsZW09OA==" title="https://projecteuler.net/problem=8">Largest product in a series<i class="fa fa-external-link"></i></span><ul>
+<li>HackerRank : <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vY29udGVzdHMvcHJvamVjdGV1bGVyL2NoYWxsZW5nZXMvZXVsZXIwMDgvcHJvYmxlbQ==" title="https://www.hackerrank.com/contests/projecteuler/challenges/euler008/problem">Project Euler #8: Largest product in a series<i class="fa fa-external-link"></i></span></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</div>
+
+<div class="note no-icon">
+            <div class="note primary no-icon">            <h3 id="Largest-product-in-a-series"><a href="#Largest-product-in-a-series" class="headerlink" title="Largest product in a series"></a>Largest product in a series</h3><br><h4 id="problem-lt-번역-gt"><a href="#problem-lt-번역-gt" class="headerlink" title="problem  &lt;번역&gt;"></a>problem  &lt;번역&gt;</h4><img data-src="/img/Euler/Problem 8.png"><h4 id="solution"><a href="#solution" class="headerlink" title="solution"></a>solution</h4><p><span class="label warning"> Simple Code</span></p><div class="note success no-icon">            <p>모든 경우의 수를 다 비교하는 코드</p>          </div><figure class="highlight python"><figcaption><span>008_largest_product_in_a_series.py</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> functools <span class="keyword">import</span> reduce</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">strNum = <span class="string">"73167176531330624919225119674426574742355349194934\</span></span><br><span class="line"><span class="string">96983520312774506326239578318016984801869478851843\</span></span><br><span class="line"><span class="string">85861560789112949495459501737958331952853208805511\</span></span><br><span class="line"><span class="string">12540698747158523863050715693290963295227443043557\</span></span><br><span class="line"><span class="string">66896648950445244523161731856403098711121722383113\</span></span><br><span class="line"><span class="string">62229893423380308135336276614282806444486645238749\</span></span><br><span class="line"><span class="string">30358907296290491560440772390713810515859307960866\</span></span><br><span class="line"><span class="string">70172427121883998797908792274921901699720888093776\</span></span><br><span class="line"><span class="string">65727333001053367881220235421809751254540594752243\</span></span><br><span class="line"><span class="string">52584907711670556013604839586446706324415722155397\</span></span><br><span class="line"><span class="string">53697817977846174064955149290862569321978468622482\</span></span><br><span class="line"><span class="string">83972241375657056057490261407972968652414535100474\</span></span><br><span class="line"><span class="string">82166370484403199890008895243450658541227588666881\</span></span><br><span class="line"><span class="string">16427171479924442928230863465674813919123162824586\</span></span><br><span class="line"><span class="string">17866458359124566529476545682848912883142607690042\</span></span><br><span class="line"><span class="string">24219022671055626321111109370544217506941658960408\</span></span><br><span class="line"><span class="string">07198403850962455444362981230987879927244284909188\</span></span><br><span class="line"><span class="string">84580156166097919133875499200524063689912560717606\</span></span><br><span class="line"><span class="string">05886116467109405077541002256983155200055935729725\</span></span><br><span class="line"><span class="string">71636269561882670428252483600823257530420752963450"</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">largest_product_in_a_series</span><span class="params">(bigNum)</span>:</span></span><br><span class="line">  maxProduct = <span class="number">1</span></span><br><span class="line">  length = len(bigNum)</span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span> num <span class="keyword">in</span> range(<span class="number">0</span>, length):</span><br><span class="line">      product = reduce(<span class="keyword">lambda</span> x, y: int(x) * int(y), bigNum[num:num + <span class="number">13</span>])</span><br><span class="line"></span><br><span class="line">      <span class="keyword">if</span> int(product) &gt; maxProduct:</span><br><span class="line">          maxProduct = product</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> maxProduct</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">bigNum = strNum.replace(<span class="string">' '</span>, <span class="string">''</span>)</span><br><span class="line">print(largest_product_in_a_series(bigNum))</span><br></pre></td></tr></table></figure><hr><span class="label warning"> HackerRank</span><div class="note success no-icon">            <p>위 코드를 그대로 사용하면 Runtime Error가 뜨기 때문에 조금의 리팩토링을 했다</p>          </div><figure class="highlight python"><figcaption><span>008_for_HacerRank.py</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> functools <span class="keyword">import</span> reduce</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">largest_product_in_a_series</span><span class="params">(bigNum, k)</span>:</span></span><br><span class="line">  maxProduct = <span class="number">0</span></span><br><span class="line">  length = len(bigNum)</span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span> num <span class="keyword">in</span> range(length - k):</span><br><span class="line">      maxProduct = max(maxProduct, reduce(<span class="keyword">lambda</span> x, y: x * y, bigNum[num:num + k]))</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> maxProduct</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">  <span class="keyword">for</span> _ <span class="keyword">in</span> range(int(input())):</span><br><span class="line">      N, K = map(int, input().split())</span><br><span class="line">      strNum = input().strip()</span><br><span class="line">      bigNum = [int(x) <span class="keyword">for</span> x <span class="keyword">in</span> strNum]</span><br><span class="line"></span><br><span class="line">      print(largest_product_in_a_series(bigNum, K)) </span><br></pre></td></tr></table></figure>          </div><div class="note info">            <p>0을 마주쳤을 때, 특정 범위(HackerRank기준, K) 만큼 건너뛰는 방식을 취하면 조금이나마 성능 향상이 있을 것 같다</p>          </div>
+          </div>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/Euler-007/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="NUNU">
+      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="AttackOnNunu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/[object Object]/Euler-007/" class="post-title-link" itemprop="url">(Problem) 007 10001st prime</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2020-03-23 13:11:43" itemprop="dateCreated datePublished" datetime="2020-03-23T13:11:43+09:00">2020-03-23</time>
+            </span>
+          
+
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Project-Euler/" itemprop="url" rel="index"><span itemprop="name">Project Euler</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">댓글: </span>
+                <a href="/[object Object]/Euler-007/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/Euler-007/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Project-Euler"><a href="#Project-Euler" class="headerlink" title="Project Euler"></a>Project Euler</h1><ul>
+<li>공식 홈페이지 - <span class="exturl" data-url="aHR0cHM6Ly9wcm9qZWN0ZXVsZXIubmV0Lw==" title="https://projecteuler.net/">projecteuler.net<i class="fa fa-external-link"></i></span></li>
+<li>한글 번역 - <span class="exturl" data-url="aHR0cDovL2V1bGVyLnN5bmFwLmNvLmtyL3Byb2JfZGV0YWlsLnBocD9pZD0x" title="http://euler.synap.co.kr/prob_detail.php?id=1">projecteuler @kr<i class="fa fa-external-link"></i></span></li>
+<li>(HackerRank) ProjectEuler+ - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vY29udGVzdHMvcHJvamVjdGV1bGVyL2NoYWxsZW5nZXM=" title="https://www.hackerrank.com/contests/projecteuler/challenges">hackerrank.com<i class="fa fa-external-link"></i></span></li>
+</ul>
+<h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><div class="spoiler collapsed">
+    <div class="spoiler-title">
+        Problem list
+    </div>
+    <div class="spoiler-content">
+        <ul>
+<li>No 7 : <span class="exturl" data-url="aHR0cHM6Ly9wcm9qZWN0ZXVsZXIubmV0L3Byb2JsZW09Nw==" title="https://projecteuler.net/problem=7">10001st prime<i class="fa fa-external-link"></i></span><ul>
+<li>HackerRank : <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vY29udGVzdHMvcHJvamVjdGV1bGVyL2NoYWxsZW5nZXMvZXVsZXIwMDcvcHJvYmxlbQ==" title="https://www.hackerrank.com/contests/projecteuler/challenges/euler007/problem">Project Euler #7: 10001st prime<i class="fa fa-external-link"></i></span></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</div>
+
+<div class="note no-icon">
+            <div class="note primary no-icon">            <h3 id="10001st-prime"><a href="#10001st-prime" class="headerlink" title="10001st prime"></a>10001st prime</h3><br><h4 id="problem-lt-번역-gt"><a href="#problem-lt-번역-gt" class="headerlink" title="problem  &lt;번역&gt;"></a>problem  &lt;번역&gt;</h4><img data-src="/img/Euler/Problem 7.png"><h4 id="solution"><a href="#solution" class="headerlink" title="solution"></a>solution</h4><p><span class="label warning"> Simple Code</span></p><div class="note success no-icon">            <p>특정한 숫자가 소수인지 판별하는 것이 아니라 계속해서 소수를 찾아가면서 몇 번째인지 찾는게 어려웠다ㅠ<br>굉장히 Brute Force 적인 방식으로 풀었다(그래서 시간이 오래 걸린다)</p>          </div><figure class="highlight python"><figcaption><span>007_10001st_prime.py</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">nth_prime</span><span class="params">(idx)</span>:</span></span><br><span class="line">  primes = [<span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line">  pivot = <span class="number">6</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">while</span> len(primes) &lt; idx:</span><br><span class="line">      is_prime = <span class="literal">True</span></span><br><span class="line">      <span class="keyword">for</span> prime <span class="keyword">in</span> primes:</span><br><span class="line">          <span class="keyword">if</span> int(pivot<span class="number">-1</span>) % int(prime) == <span class="number">0</span>:    <span class="comment"># 5, 11, 17, ...</span></span><br><span class="line">              is_prime = <span class="literal">False</span></span><br><span class="line">              <span class="keyword">break</span></span><br><span class="line"></span><br><span class="line">      <span class="keyword">if</span> is_prime:</span><br><span class="line">          primes.append(pivot<span class="number">-1</span>)</span><br><span class="line"></span><br><span class="line">      is_prime = <span class="literal">True</span></span><br><span class="line">      <span class="keyword">for</span> prime <span class="keyword">in</span> primes:</span><br><span class="line">          <span class="keyword">if</span> int(pivot+<span class="number">1</span>) % int(prime) == <span class="number">0</span>:    <span class="comment"># 7, 13, 19, ...</span></span><br><span class="line">              is_prime = <span class="literal">False</span></span><br><span class="line">              <span class="keyword">break</span></span><br><span class="line"></span><br><span class="line">      <span class="keyword">if</span> is_prime:</span><br><span class="line">          primes.append(pivot+<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">      pivot += <span class="number">6</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> primes[<span class="number">-1</span>]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">print(nth_prime(<span class="number">10001</span>))  </span><br></pre></td></tr></table></figure><div class="note success no-icon">            <p>sympy 모듈을 사용하면 매우 간단하게 구현 가능하다</p>          </div><figure class="highlight python"><figcaption><span>007_with_sympy.py</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> sympy <span class="keyword">import</span> prime</span><br><span class="line"></span><br><span class="line">print(prime(<span class="number">10001</span>)) </span><br></pre></td></tr></table></figure><hr><span class="label warning"> HackerRank</span><div class="note success no-icon">            <p>해커랭크 풀이</p>          </div><figure class="highlight python"><figcaption><span>007_for_HacerRank.py</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sieve_of_eratosthenes</span><span class="params">(n)</span>:</span></span><br><span class="line">    sieve = &#123;&#125;</span><br><span class="line">    prime = <span class="number">2</span></span><br><span class="line">    cnt = <span class="number">0</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span> cnt &lt; n:</span><br><span class="line">        <span class="keyword">if</span> prime <span class="keyword">not</span> <span class="keyword">in</span> sieve:</span><br><span class="line">            <span class="keyword">yield</span> prime</span><br><span class="line">            cnt += <span class="number">1</span></span><br><span class="line">            sieve[prime * prime] = [prime]</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">for</span> p <span class="keyword">in</span> sieve[prime]:</span><br><span class="line">                sieve.setdefault(p + prime, []).append(p)</span><br><span class="line">            <span class="keyword">del</span> sieve[prime]</span><br><span class="line">        prime += <span class="number">1</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    lin = []</span><br><span class="line">    <span class="keyword">for</span> _ <span class="keyword">in</span> range(int(input())):</span><br><span class="line">        lin.append(int(input()))</span><br><span class="line"></span><br><span class="line">    primes = list(sieve_of_eratosthenes(max(lin)))</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> lin:</span><br><span class="line">        print(primes[i - <span class="number">1</span>])</span><br></pre></td></tr></table></figure>          </div><div class="note info">            <p>생각보다 너무 어려웠다ㅠ</p>          </div>
+          </div>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/Euler-006/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -536,401 +926,11 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/Euler-005/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="NUNU">
-      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="AttackOnNunu">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/[object Object]/Euler-005/" class="post-title-link" itemprop="url">(Problem) 005 Smallest multiple</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">작성일</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2020-03-21 18:49:03" itemprop="dateCreated datePublished" datetime="2020-03-21T18:49:03+09:00">2020-03-21</time>
-            </span>
-          
-
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Project-Euler/" itemprop="url" rel="index"><span itemprop="name">Project Euler</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">댓글: </span>
-                <a href="/[object Object]/Euler-005/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/Euler-005/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          <br>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Project-Euler"><a href="#Project-Euler" class="headerlink" title="Project Euler"></a>Project Euler</h1><ul>
-<li>공식 홈페이지 - <span class="exturl" data-url="aHR0cHM6Ly9wcm9qZWN0ZXVsZXIubmV0Lw==" title="https://projecteuler.net/">projecteuler.net<i class="fa fa-external-link"></i></span></li>
-<li>한글 번역 - <span class="exturl" data-url="aHR0cDovL2V1bGVyLnN5bmFwLmNvLmtyL3Byb2JfZGV0YWlsLnBocD9pZD0x" title="http://euler.synap.co.kr/prob_detail.php?id=1">projecteuler @kr<i class="fa fa-external-link"></i></span></li>
-<li>(HackerRank) ProjectEuler+ - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vY29udGVzdHMvcHJvamVjdGV1bGVyL2NoYWxsZW5nZXM=" title="https://www.hackerrank.com/contests/projecteuler/challenges">hackerrank.com<i class="fa fa-external-link"></i></span></li>
-</ul>
-<h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><div class="spoiler collapsed">
-    <div class="spoiler-title">
-        Problem list
-    </div>
-    <div class="spoiler-content">
-        <ul>
-<li>No 5 : <span class="exturl" data-url="aHR0cHM6Ly9wcm9qZWN0ZXVsZXIubmV0L3Byb2JsZW09NQ==" title="https://projecteuler.net/problem=5">Smallest multiple<i class="fa fa-external-link"></i></span><ul>
-<li>HackerRank : <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vY29udGVzdHMvcHJvamVjdGV1bGVyL2NoYWxsZW5nZXMvZXVsZXIwMDUvcHJvYmxlbQ==" title="https://www.hackerrank.com/contests/projecteuler/challenges/euler005/problem">Project Euler #4: Smallest multiple<i class="fa fa-external-link"></i></span></li>
-</ul>
-</li>
-</ul>
-
-    </div>
-</div>
-
-<div class="note no-icon">
-            <div class="note primary no-icon">            <h3 id="Smallest-multiple"><a href="#Smallest-multiple" class="headerlink" title="Smallest multiple"></a>Smallest multiple</h3><br><h4 id="problem-lt-번역-gt"><a href="#problem-lt-번역-gt" class="headerlink" title="problem  &lt;번역&gt;"></a>problem  &lt;번역&gt;</h4><img data-src="/img/Euler/Problem 5.png"><h4 id="solution"><a href="#solution" class="headerlink" title="solution"></a>solution</h4><p><span class="label warning"> Simple Code</span></p><div class="note success no-icon">            <p>최소 공배수를 찾는 문제이다.<br>최대 공약수, 최소 공배수를 찾을 때 유클리드 호제법을 응용한 유클리드 알고리즘을 사용하면 쉽다.</p>          </div><figure class="highlight python"><figcaption><span>005_smallest_multiple.py</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">gcd</span><span class="params">(a, b)</span>:</span></span><br><span class="line">  <span class="keyword">while</span> b &gt; <span class="number">0</span>:</span><br><span class="line">      a, b = b, a % b</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> a</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">lcd</span><span class="params">(a, b)</span>:</span></span><br><span class="line">  <span class="keyword">return</span> a * b // gcd(a, b)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">smallest_multiple</span><span class="params">(n)</span>:</span></span><br><span class="line">  cur = <span class="number">1</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span> num <span class="keyword">in</span> range(<span class="number">1</span>, n+<span class="number">1</span>):</span><br><span class="line">      cur = lcd(cur, num)</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> cur</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">print(smallest_multiple(<span class="number">20</span>))  </span><br></pre></td></tr></table></figure><hr><span class="label warning"> HackerRank</span><div class="note success no-icon">            <p>테스트 케이스 입력 받는 부분만 추가해 주면 된다.</p>          </div><figure class="highlight python"><figcaption><span>005_for_HacerRank.py</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">gcd</span><span class="params">(a, b)</span>:</span></span><br><span class="line">  <span class="keyword">while</span> b &gt; <span class="number">0</span>:</span><br><span class="line">      a, b = b, a % b</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> a</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">lcd</span><span class="params">(a, b)</span>:</span></span><br><span class="line">  <span class="keyword">return</span> a * b // gcd(a, b)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">smallest_multiple</span><span class="params">(n)</span>:</span></span><br><span class="line">  cur = <span class="number">1</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span> num <span class="keyword">in</span> range(<span class="number">1</span>, n+<span class="number">1</span>):</span><br><span class="line">      cur = lcd(cur, num)</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> cur</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">  <span class="keyword">for</span> _ <span class="keyword">in</span> range(int(input())):</span><br><span class="line">      print(smallest_multiple(int(input()))) </span><br></pre></td></tr></table></figure><div class="note info">            <p>유클리드 호제법을 잘 이해하고 있다면 쉽게 풀 수 있는 문제이다.</p>          </div>          </div>
-          </div>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
-          
-        
-      
-    </div>
-
-    
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/Euler-004/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="NUNU">
-      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="AttackOnNunu">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/[object Object]/Euler-004/" class="post-title-link" itemprop="url">(Problem) 004 Largest palindrome product</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">작성일</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2020-03-20 20:29:06" itemprop="dateCreated datePublished" datetime="2020-03-20T20:29:06+09:00">2020-03-20</time>
-            </span>
-          
-
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Project-Euler/" itemprop="url" rel="index"><span itemprop="name">Project Euler</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">댓글: </span>
-                <a href="/[object Object]/Euler-004/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/Euler-004/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          <br>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Project-Euler"><a href="#Project-Euler" class="headerlink" title="Project Euler"></a>Project Euler</h1><ul>
-<li>공식 홈페이지 - <span class="exturl" data-url="aHR0cHM6Ly9wcm9qZWN0ZXVsZXIubmV0Lw==" title="https://projecteuler.net/">projecteuler.net<i class="fa fa-external-link"></i></span></li>
-<li>한글 번역 - <span class="exturl" data-url="aHR0cDovL2V1bGVyLnN5bmFwLmNvLmtyL3Byb2JfZGV0YWlsLnBocD9pZD0x" title="http://euler.synap.co.kr/prob_detail.php?id=1">projecteuler @kr<i class="fa fa-external-link"></i></span></li>
-<li>(HackerRank) ProjectEuler+ - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vY29udGVzdHMvcHJvamVjdGV1bGVyL2NoYWxsZW5nZXM=" title="https://www.hackerrank.com/contests/projecteuler/challenges">hackerrank.com<i class="fa fa-external-link"></i></span></li>
-</ul>
-<h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><div class="spoiler collapsed">
-    <div class="spoiler-title">
-        Problem list
-    </div>
-    <div class="spoiler-content">
-        <ul>
-<li>No 4 : <span class="exturl" data-url="aHR0cHM6Ly9wcm9qZWN0ZXVsZXIubmV0L3Byb2JsZW09NA==" title="https://projecteuler.net/problem=4">Largest palindrome product<i class="fa fa-external-link"></i></span><ul>
-<li>HackerRank : <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vY29udGVzdHMvcHJvamVjdGV1bGVyL2NoYWxsZW5nZXMvZXVsZXIwMDQvcHJvYmxlbQ==" title="https://www.hackerrank.com/contests/projecteuler/challenges/euler004/problem">Project Euler #4: Largest palindrome product<i class="fa fa-external-link"></i></span></li>
-</ul>
-</li>
-</ul>
-
-    </div>
-</div>
-
-<div class="note no-icon">
-            <div class="note primary no-icon">            <h3 id="Largest-palindrome-product"><a href="#Largest-palindrome-product" class="headerlink" title="Largest palindrome product"></a>Largest palindrome product</h3><br><h4 id="problem-lt-번역-gt"><a href="#problem-lt-번역-gt" class="headerlink" title="problem  &lt;번역&gt;"></a>problem  &lt;번역&gt;</h4><img data-src="/img/Euler/Problem 4.png"><h4 id="solution"><a href="#solution" class="headerlink" title="solution"></a>solution</h4><p><span class="label warning"> Simple Code</span></p><div class="note success no-icon">            <p>세자리 수 중 가장 큰 999부터 하나씩 곱해가며 가장 큰 수를 구한다.<br>큰 숫자 중 문자열 비교를 통해 숫자가 대칭인지 확인한다.</p>          </div><figure class="highlight python"><figcaption><span>004_largest_palindrome_product.py</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">largest_palindrome_product</span><span class="params">()</span>:</span></span><br><span class="line">  largest = <span class="number">0</span></span><br><span class="line">  <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">999</span>, <span class="number">100</span>, <span class="number">-1</span>):</span><br><span class="line">      <span class="keyword">for</span> j <span class="keyword">in</span> range(i, <span class="number">100</span>, <span class="number">-1</span>):</span><br><span class="line">          product = i * j</span><br><span class="line">          <span class="keyword">if</span> product &gt; largest:</span><br><span class="line">              s_product = str(product)</span><br><span class="line">              <span class="keyword">if</span> s_product == s_product[::<span class="number">-1</span>]:</span><br><span class="line">                  largest = product</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> largest</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">print(largest_palindrome_product())  </span><br></pre></td></tr></table></figure><hr><span class="label warning"> HackerRank</span><div class="note success no-icon">            <p>HackerRank 문제에서는 정수 N을 입력 받아 해당 정수보다 작은 palindrome number를 출력해야 한다.<br>그래서 리스트에 저장하고 역순으로 정렬하여 반복문을 통해 조건을 확인하는 방식으로 작성했다.</p>          </div><figure class="highlight python"><figcaption><span>004_for_HacerRank.py</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">largest_palindrome_product</span><span class="params">()</span>:</span></span><br><span class="line">  palindrome = []</span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">999</span>, <span class="number">100</span>, <span class="number">-1</span>):</span><br><span class="line">      <span class="keyword">for</span> j <span class="keyword">in</span> range(i, <span class="number">100</span>, <span class="number">-1</span>):</span><br><span class="line">          product = i * j</span><br><span class="line">          <span class="keyword">if</span> product <span class="keyword">not</span> <span class="keyword">in</span> palindrome:</span><br><span class="line">              s_product = str(product)</span><br><span class="line">              <span class="keyword">if</span> s_product == s_product[::<span class="number">-1</span>]:</span><br><span class="line">                  palindrome.append(product)</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> sorted(palindrome, reverse=<span class="literal">True</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">  palindromeList = largest_palindrome_product()</span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span> _ <span class="keyword">in</span> range(int(input())):</span><br><span class="line">      N = int(input())</span><br><span class="line">      <span class="keyword">for</span> p <span class="keyword">in</span> palindromeList:</span><br><span class="line">          <span class="keyword">if</span> p &lt; N:</span><br><span class="line">              print(p)</span><br><span class="line">              <span class="keyword">break</span></span><br></pre></td></tr></table></figure>          </div><div class="note info">            <p>palindrome number의 자리수가 짝수일 때, 11로 나누어 떨어진다.<br>예를 들어 a, b, c가 정수이고 a != 0 일 때,<br>N(6, a, b, c) = 100001 * a + 10010 * b + 1100 * c<br>= abccba      = 11 * (9091 * a + 910 * b + 100 * c)<br>N(8, a, b, c,d) = 10000001 * a + 1000010 * b + 100100 * c + 11000 * d<br>= abcddcba      = 11 * (909091 * a + 90910 * b + 9100 * c + 1000 * d)<br>임을 확인할 수 있다.</p><p>주의할 것은 해당 문제에서 세자리 수 2개를 곱한 값의 자리수가 꼭 짝수는 아니다.<br>예를 들어,<br>777 * 117 = 90909 (5자리)<br>812 * 104 = 84448 (5자리)<br>813 * 123 = 99999 (5자리)<br>이러한 palindrome number는 11로 나누어지지 않는다.</p><p>어쨌든 최대값을 구하는 것이기 때문에 위 내용을 활용해서 조금 더 최적화 시킬 수 있는데 아래의 링크에서 자세히 설명되어 있다.<br><span class="exturl" data-url="aHR0cHM6Ly93d3cueGFyZy5vcmcvcHV6emxlL3Byb2plY3QtZXVsZXIvcHJvYmxlbS00Lw==" title="https://www.xarg.org/puzzle/project-euler/problem-4/">Project Euler 4 Solution: Largest palindrome product<i class="fa fa-external-link"></i></span></p>          </div>
-          </div>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
-          
-        
-      
-    </div>
-
-    
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/31/">31</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="다음 페이지"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/32/">32</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="다음 페이지"></i></a>
   </nav>
 
 
@@ -974,7 +974,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">93</span>
+                    <span class="site-state-item-count">95</span>
                     <span class="site-state-item-name">포스트</span>
                   </a>
                 </div>
