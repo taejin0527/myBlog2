@@ -356,6 +356,396 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/Euler-010/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="NUNU">
+      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="AttackOnNunu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/[object Object]/Euler-010/" class="post-title-link" itemprop="url">(Problem) 010 Summation of primes</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2020-03-25 14:05:41" itemprop="dateCreated datePublished" datetime="2020-03-25T14:05:41+09:00">2020-03-25</time>
+            </span>
+          
+
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Project-Euler/" itemprop="url" rel="index"><span itemprop="name">Project Euler</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">댓글: </span>
+                <a href="/[object Object]/Euler-010/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/Euler-010/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Project-Euler"><a href="#Project-Euler" class="headerlink" title="Project Euler"></a>Project Euler</h1><ul>
+<li>공식 홈페이지 - <span class="exturl" data-url="aHR0cHM6Ly9wcm9qZWN0ZXVsZXIubmV0Lw==" title="https://projecteuler.net/">projecteuler.net<i class="fa fa-external-link"></i></span></li>
+<li>한글 번역 - <span class="exturl" data-url="aHR0cDovL2V1bGVyLnN5bmFwLmNvLmtyL3Byb2JfZGV0YWlsLnBocD9pZD0x" title="http://euler.synap.co.kr/prob_detail.php?id=1">projecteuler @kr<i class="fa fa-external-link"></i></span></li>
+<li>(HackerRank) ProjectEuler+ - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vY29udGVzdHMvcHJvamVjdGV1bGVyL2NoYWxsZW5nZXM=" title="https://www.hackerrank.com/contests/projecteuler/challenges">hackerrank.com<i class="fa fa-external-link"></i></span></li>
+</ul>
+<h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><div class="spoiler collapsed">
+    <div class="spoiler-title">
+        Problem list
+    </div>
+    <div class="spoiler-content">
+        <ul>
+<li>No 10 : <span class="exturl" data-url="aHR0cHM6Ly9wcm9qZWN0ZXVsZXIubmV0L3Byb2JsZW09MTA=" title="https://projecteuler.net/problem=10">Summation of primes<i class="fa fa-external-link"></i></span><ul>
+<li>HackerRank : <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vY29udGVzdHMvcHJvamVjdGV1bGVyL2NoYWxsZW5nZXMvZXVsZXIwMDEwL3Byb2JsZW0=" title="https://www.hackerrank.com/contests/projecteuler/challenges/euler0010/problem">Project Euler #4: Summation of primes<i class="fa fa-external-link"></i></span></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</div>
+
+<div class="note no-icon">
+            <div class="note primary no-icon">            <h3 id="Summation-of-primes"><a href="#Summation-of-primes" class="headerlink" title="Summation of primes"></a>Summation of primes</h3><br><h4 id="problem-lt-번역-gt"><a href="#problem-lt-번역-gt" class="headerlink" title="problem  &lt;번역&gt;"></a>problem  &lt;번역&gt;</h4><img data-src="/img/Euler/Problem 10.png"><h4 id="solution"><a href="#solution" class="headerlink" title="solution"></a>solution</h4><p><span class="label warning"> Simple Code</span></p><div class="note success no-icon">            <p>sympy 모듈을 사용하면 매우 간단하게 구할 수 있다. 매우 깔끔해서 좋다ㅎㅎㅎ<br>하지만 이렇게 답을 구하면 문제의 의미가 없어지기 때문에 소수를 구할 때 자주 사용했던 에라토스테네스의 체를 구현하겠다.</p>          </div><figure class="highlight python"><figcaption><span>010_summation_of_primes.py</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> sympy <span class="keyword">import</span> primerange</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">summation_of_primes</span><span class="params">(n)</span>:</span></span><br><span class="line">  <span class="keyword">return</span> sum(primerange(<span class="number">1</span>, n))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">print(summation_of_primes(<span class="number">2000000</span>))  </span><br></pre></td></tr></table></figure><figure class="highlight python"><figcaption><span>010_summation_of_primes_with_eratosthenes.py</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">summation_of_primes_with_eratosthenes</span><span class="params">(n)</span>:</span></span><br><span class="line">    sieve = [<span class="literal">True</span>] * (n + <span class="number">1</span>)</span><br><span class="line">    sieve[<span class="number">0</span>] = sieve[<span class="number">1</span>] = <span class="literal">False</span></span><br><span class="line">    total = <span class="number">0</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> prime, isPrime <span class="keyword">in</span> enumerate(sieve):</span><br><span class="line">        <span class="keyword">if</span> isPrime:</span><br><span class="line">            total += prime</span><br><span class="line">            <span class="keyword">for</span> idx <span class="keyword">in</span> range(prime*prime, n + <span class="number">1</span>, prime):</span><br><span class="line">                sieve[idx] = <span class="literal">False</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> total</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">print(summation_of_primes_with_eratosthenes(<span class="number">2000000</span>))  </span><br></pre></td></tr></table></figure><hr><span class="label warning"> HackerRank</span><div class="note success no-icon">            <p>으… 반복할 때마다 소수의 합을 계산하면 Test case 5, 6에서 Runtime error가 뜬다.<br>그래서 1,000,000 까지 소수의 합을 리스트에 미리 저장해 놓고 테스트 케이스마다 그 리스트의 해당 인덱스를 호출하는 식으로 통과했다.</p>          </div><figure class="highlight python"><figcaption><span>010_for_HacerRank.py</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">summation_of_primes_with_eratosthenes</span><span class="params">(n)</span>:</span></span><br><span class="line">  sieve = [<span class="literal">True</span>] * (n + <span class="number">1</span>)</span><br><span class="line">  sieve[<span class="number">0</span>] = sieve[<span class="number">1</span>] = <span class="literal">False</span></span><br><span class="line">  total = [<span class="number">0</span>] * (n + <span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span> prime, isPrime <span class="keyword">in</span> enumerate(sieve):</span><br><span class="line">      <span class="keyword">if</span> isPrime:</span><br><span class="line">          total[prime] += total[prime - <span class="number">1</span>] + prime</span><br><span class="line">          <span class="keyword">for</span> idx <span class="keyword">in</span> range(prime*prime, n + <span class="number">1</span>, prime):</span><br><span class="line">              sieve[idx] = <span class="literal">False</span></span><br><span class="line">      <span class="keyword">else</span>:</span><br><span class="line">          total[prime] = total[prime - <span class="number">1</span>]</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> total</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">  summations = summation_of_primes_with_eratosthenes(<span class="number">1000000</span>)</span><br><span class="line">  <span class="keyword">for</span> _ <span class="keyword">in</span> range(int(input())):</span><br><span class="line">      print(summations[int(input())])</span><br><span class="line"> </span><br></pre></td></tr></table></figure>          </div><div class="note info">            <p>더 좋은 방법이 있는 것인가…?</p>          </div>
+          </div>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/Euler-009/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="NUNU">
+      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="AttackOnNunu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/[object Object]/Euler-009/" class="post-title-link" itemprop="url">(Problem) 009 Special Pythagorean triplet</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2020-03-25 13:05:29" itemprop="dateCreated datePublished" datetime="2020-03-25T13:05:29+09:00">2020-03-25</time>
+            </span>
+          
+
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Project-Euler/" itemprop="url" rel="index"><span itemprop="name">Project Euler</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">댓글: </span>
+                <a href="/[object Object]/Euler-009/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/Euler-009/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Project-Euler"><a href="#Project-Euler" class="headerlink" title="Project Euler"></a>Project Euler</h1><ul>
+<li>공식 홈페이지 - <span class="exturl" data-url="aHR0cHM6Ly9wcm9qZWN0ZXVsZXIubmV0Lw==" title="https://projecteuler.net/">projecteuler.net<i class="fa fa-external-link"></i></span></li>
+<li>한글 번역 - <span class="exturl" data-url="aHR0cDovL2V1bGVyLnN5bmFwLmNvLmtyL3Byb2JfZGV0YWlsLnBocD9pZD0x" title="http://euler.synap.co.kr/prob_detail.php?id=1">projecteuler @kr<i class="fa fa-external-link"></i></span></li>
+<li>(HackerRank) ProjectEuler+ - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vY29udGVzdHMvcHJvamVjdGV1bGVyL2NoYWxsZW5nZXM=" title="https://www.hackerrank.com/contests/projecteuler/challenges">hackerrank.com<i class="fa fa-external-link"></i></span></li>
+</ul>
+<h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><div class="spoiler collapsed">
+    <div class="spoiler-title">
+        Problem list
+    </div>
+    <div class="spoiler-content">
+        <ul>
+<li>No 9 : <span class="exturl" data-url="aHR0cHM6Ly9wcm9qZWN0ZXVsZXIubmV0L3Byb2JsZW09OQ==" title="https://projecteuler.net/problem=9">Special Pythagorean triplet<i class="fa fa-external-link"></i></span><ul>
+<li>HackerRank : <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vY29udGVzdHMvcHJvamVjdGV1bGVyL2NoYWxsZW5nZXMvZXVsZXIwMDkvcHJvYmxlbQ==" title="https://www.hackerrank.com/contests/projecteuler/challenges/euler009/problem">Project Euler 9: Special Pythagorean triplet<i class="fa fa-external-link"></i></span></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</div>
+
+<div class="note no-icon">
+            <div class="note primary no-icon">            <h3 id="Special-Pythagorean-triplet"><a href="#Special-Pythagorean-triplet" class="headerlink" title="Special Pythagorean triplet"></a>Special Pythagorean triplet</h3><br><h4 id="problem-lt-번역-gt"><a href="#problem-lt-번역-gt" class="headerlink" title="problem  &lt;번역&gt;"></a>problem  &lt;번역&gt;</h4><img data-src="/img/Euler/Problem 9.png"><h4 id="solution"><a href="#solution" class="headerlink" title="solution"></a>solution</h4><p><span class="label warning"> Simple Code</span></p><div class="note success no-icon">            <p>a, b, c를 하나 하나 대입하면서 조건을 만족하는 답을 찾는 매우 단순한 풀이<br>O(n²)의 성능을 가진다.</p>          </div><figure class="highlight python"><figcaption><span>009_Even_Fibonacci_numbers.py</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">special_pythagorean_triplet</span><span class="params">(n)</span>:</span></span><br><span class="line">  <span class="comment"># condition 1. a^2 + b^2 = c^2  (직삼각형)</span></span><br><span class="line">  <span class="comment"># condition 2. a + b + c = n    (문제에서 n은 1000)</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span> a <span class="keyword">in</span> range(<span class="number">1</span>, n//<span class="number">2</span> + <span class="number">1</span>):</span><br><span class="line">      <span class="keyword">for</span> b <span class="keyword">in</span> range(<span class="number">1</span>, n//<span class="number">2</span> + <span class="number">1</span>):</span><br><span class="line">          c = n - a - b</span><br><span class="line">          <span class="keyword">if</span> a**<span class="number">2</span> + b**<span class="number">2</span> == c**<span class="number">2</span>:</span><br><span class="line">              <span class="keyword">return</span> a * b * c</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">print(special_pythagorean_triplet(<span class="number">1000</span>))</span><br></pre></td></tr></table></figure><hr><span class="label warning"> HackerRank</span><div class="note success no-icon">            <p>예상대로 O(n²)의 복잡도로는 모든 테스트 케이스를 통과할 수 없다. 또한 항상 해가 하나만 있는 것은 아니다.<br>한 개의 반복문만 사용하기 위해서 b도 a로 표현한다.<br><img data-src="/img/Euler/009_derivation.png"><br>정리하자면,<br>a = 1 ~ n//2 까지 대입<br>b = (a^2 - (a - n)^2) // 2(a-n) = n(2a-n) // 2(a-n)<br>c = n - a - b</p>          </div><figure class="highlight python"><figcaption><span>009_for_HacerRank.py</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">special_pythagorean_triplet</span><span class="params">(n)</span>:</span></span><br><span class="line">    <span class="comment"># condition 1. a^2 + b^2 = c^2  (직삼각형)</span></span><br><span class="line">    <span class="comment"># condition 2. a + b + c = n    (문제에서 n은 1000)</span></span><br><span class="line"></span><br><span class="line">    maxProduct = <span class="number">-1</span></span><br><span class="line">    <span class="keyword">for</span> a <span class="keyword">in</span> range(<span class="number">1</span>, n//<span class="number">2</span> + <span class="number">1</span>):</span><br><span class="line">        b = (n*(<span class="number">2</span>*a - n)) // (<span class="number">2</span>*a - <span class="number">2</span>*n)</span><br><span class="line">        c = n - a - b</span><br><span class="line">        <span class="keyword">if</span> a**<span class="number">2</span> + b**<span class="number">2</span> == c**<span class="number">2</span>:</span><br><span class="line">            product = a * b * c</span><br><span class="line">            maxProduct = product <span class="keyword">if</span> product &gt; maxProduct <span class="keyword">else</span> maxProduct</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> maxProduct <span class="keyword">if</span> maxProduct &gt; <span class="number">0</span> <span class="keyword">else</span> <span class="number">-1</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    <span class="keyword">for</span> _ <span class="keyword">in</span> range(int(input())):</span><br><span class="line">        print(special_pythagorean_triplet(int(input())))</span><br><span class="line"> </span><br></pre></td></tr></table></figure>          </div><div class="note info">            <p>가장 기본적인 성능 개선 방법: 반복문을 줄인다!</p>          </div>
+          </div>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/Euler-008/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -536,401 +926,11 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/Euler-007/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="NUNU">
-      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="AttackOnNunu">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/[object Object]/Euler-007/" class="post-title-link" itemprop="url">(Problem) 007 10001st prime</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">작성일</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2020-03-23 13:11:43" itemprop="dateCreated datePublished" datetime="2020-03-23T13:11:43+09:00">2020-03-23</time>
-            </span>
-          
-
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Project-Euler/" itemprop="url" rel="index"><span itemprop="name">Project Euler</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">댓글: </span>
-                <a href="/[object Object]/Euler-007/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/Euler-007/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          <br>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Project-Euler"><a href="#Project-Euler" class="headerlink" title="Project Euler"></a>Project Euler</h1><ul>
-<li>공식 홈페이지 - <span class="exturl" data-url="aHR0cHM6Ly9wcm9qZWN0ZXVsZXIubmV0Lw==" title="https://projecteuler.net/">projecteuler.net<i class="fa fa-external-link"></i></span></li>
-<li>한글 번역 - <span class="exturl" data-url="aHR0cDovL2V1bGVyLnN5bmFwLmNvLmtyL3Byb2JfZGV0YWlsLnBocD9pZD0x" title="http://euler.synap.co.kr/prob_detail.php?id=1">projecteuler @kr<i class="fa fa-external-link"></i></span></li>
-<li>(HackerRank) ProjectEuler+ - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vY29udGVzdHMvcHJvamVjdGV1bGVyL2NoYWxsZW5nZXM=" title="https://www.hackerrank.com/contests/projecteuler/challenges">hackerrank.com<i class="fa fa-external-link"></i></span></li>
-</ul>
-<h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><div class="spoiler collapsed">
-    <div class="spoiler-title">
-        Problem list
-    </div>
-    <div class="spoiler-content">
-        <ul>
-<li>No 7 : <span class="exturl" data-url="aHR0cHM6Ly9wcm9qZWN0ZXVsZXIubmV0L3Byb2JsZW09Nw==" title="https://projecteuler.net/problem=7">10001st prime<i class="fa fa-external-link"></i></span><ul>
-<li>HackerRank : <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vY29udGVzdHMvcHJvamVjdGV1bGVyL2NoYWxsZW5nZXMvZXVsZXIwMDcvcHJvYmxlbQ==" title="https://www.hackerrank.com/contests/projecteuler/challenges/euler007/problem">Project Euler #7: 10001st prime<i class="fa fa-external-link"></i></span></li>
-</ul>
-</li>
-</ul>
-
-    </div>
-</div>
-
-<div class="note no-icon">
-            <div class="note primary no-icon">            <h3 id="10001st-prime"><a href="#10001st-prime" class="headerlink" title="10001st prime"></a>10001st prime</h3><br><h4 id="problem-lt-번역-gt"><a href="#problem-lt-번역-gt" class="headerlink" title="problem  &lt;번역&gt;"></a>problem  &lt;번역&gt;</h4><img data-src="/img/Euler/Problem 7.png"><h4 id="solution"><a href="#solution" class="headerlink" title="solution"></a>solution</h4><p><span class="label warning"> Simple Code</span></p><div class="note success no-icon">            <p>특정한 숫자가 소수인지 판별하는 것이 아니라 계속해서 소수를 찾아가면서 몇 번째인지 찾는게 어려웠다ㅠ<br>굉장히 Brute Force 적인 방식으로 풀었다(그래서 시간이 오래 걸린다)</p>          </div><figure class="highlight python"><figcaption><span>007_10001st_prime.py</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">nth_prime</span><span class="params">(idx)</span>:</span></span><br><span class="line">  primes = [<span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line">  pivot = <span class="number">6</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">while</span> len(primes) &lt; idx:</span><br><span class="line">      is_prime = <span class="literal">True</span></span><br><span class="line">      <span class="keyword">for</span> prime <span class="keyword">in</span> primes:</span><br><span class="line">          <span class="keyword">if</span> int(pivot<span class="number">-1</span>) % int(prime) == <span class="number">0</span>:    <span class="comment"># 5, 11, 17, ...</span></span><br><span class="line">              is_prime = <span class="literal">False</span></span><br><span class="line">              <span class="keyword">break</span></span><br><span class="line"></span><br><span class="line">      <span class="keyword">if</span> is_prime:</span><br><span class="line">          primes.append(pivot<span class="number">-1</span>)</span><br><span class="line"></span><br><span class="line">      is_prime = <span class="literal">True</span></span><br><span class="line">      <span class="keyword">for</span> prime <span class="keyword">in</span> primes:</span><br><span class="line">          <span class="keyword">if</span> int(pivot+<span class="number">1</span>) % int(prime) == <span class="number">0</span>:    <span class="comment"># 7, 13, 19, ...</span></span><br><span class="line">              is_prime = <span class="literal">False</span></span><br><span class="line">              <span class="keyword">break</span></span><br><span class="line"></span><br><span class="line">      <span class="keyword">if</span> is_prime:</span><br><span class="line">          primes.append(pivot+<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">      pivot += <span class="number">6</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> primes[<span class="number">-1</span>]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">print(nth_prime(<span class="number">10001</span>))  </span><br></pre></td></tr></table></figure><div class="note success no-icon">            <p>sympy 모듈을 사용하면 매우 간단하게 구현 가능하다</p>          </div><figure class="highlight python"><figcaption><span>007_with_sympy.py</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> sympy <span class="keyword">import</span> prime</span><br><span class="line"></span><br><span class="line">print(prime(<span class="number">10001</span>)) </span><br></pre></td></tr></table></figure><hr><span class="label warning"> HackerRank</span><div class="note success no-icon">            <p>해커랭크 풀이</p>          </div><figure class="highlight python"><figcaption><span>007_for_HacerRank.py</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sieve_of_eratosthenes</span><span class="params">(n)</span>:</span></span><br><span class="line">    sieve = &#123;&#125;</span><br><span class="line">    prime = <span class="number">2</span></span><br><span class="line">    cnt = <span class="number">0</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span> cnt &lt; n:</span><br><span class="line">        <span class="keyword">if</span> prime <span class="keyword">not</span> <span class="keyword">in</span> sieve:</span><br><span class="line">            <span class="keyword">yield</span> prime</span><br><span class="line">            cnt += <span class="number">1</span></span><br><span class="line">            sieve[prime * prime] = [prime]</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">for</span> p <span class="keyword">in</span> sieve[prime]:</span><br><span class="line">                sieve.setdefault(p + prime, []).append(p)</span><br><span class="line">            <span class="keyword">del</span> sieve[prime]</span><br><span class="line">        prime += <span class="number">1</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    lin = []</span><br><span class="line">    <span class="keyword">for</span> _ <span class="keyword">in</span> range(int(input())):</span><br><span class="line">        lin.append(int(input()))</span><br><span class="line"></span><br><span class="line">    primes = list(sieve_of_eratosthenes(max(lin)))</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> lin:</span><br><span class="line">        print(primes[i - <span class="number">1</span>])</span><br></pre></td></tr></table></figure>          </div><div class="note info">            <p>생각보다 너무 어려웠다ㅠ</p>          </div>
-          </div>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
-          
-        
-      
-    </div>
-
-    
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/Euler-006/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="NUNU">
-      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="AttackOnNunu">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/[object Object]/Euler-006/" class="post-title-link" itemprop="url">(Problem) 006 Sum square difference</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">작성일</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2020-03-21 19:26:28" itemprop="dateCreated datePublished" datetime="2020-03-21T19:26:28+09:00">2020-03-21</time>
-            </span>
-          
-
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Project-Euler/" itemprop="url" rel="index"><span itemprop="name">Project Euler</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">댓글: </span>
-                <a href="/[object Object]/Euler-006/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/Euler-006/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          <br>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Project-Euler"><a href="#Project-Euler" class="headerlink" title="Project Euler"></a>Project Euler</h1><ul>
-<li>공식 홈페이지 - <span class="exturl" data-url="aHR0cHM6Ly9wcm9qZWN0ZXVsZXIubmV0Lw==" title="https://projecteuler.net/">projecteuler.net<i class="fa fa-external-link"></i></span></li>
-<li>한글 번역 - <span class="exturl" data-url="aHR0cDovL2V1bGVyLnN5bmFwLmNvLmtyL3Byb2JfZGV0YWlsLnBocD9pZD0x" title="http://euler.synap.co.kr/prob_detail.php?id=1">projecteuler @kr<i class="fa fa-external-link"></i></span></li>
-<li>(HackerRank) ProjectEuler+ - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vY29udGVzdHMvcHJvamVjdGV1bGVyL2NoYWxsZW5nZXM=" title="https://www.hackerrank.com/contests/projecteuler/challenges">hackerrank.com<i class="fa fa-external-link"></i></span></li>
-</ul>
-<h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><div class="spoiler collapsed">
-    <div class="spoiler-title">
-        Problem list
-    </div>
-    <div class="spoiler-content">
-        <ul>
-<li>No 6 : <span class="exturl" data-url="aHR0cHM6Ly9wcm9qZWN0ZXVsZXIubmV0L3Byb2JsZW09Ng==" title="https://projecteuler.net/problem=6">Sum square difference<i class="fa fa-external-link"></i></span><ul>
-<li>HackerRank : <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vY29udGVzdHMvcHJvamVjdGV1bGVyL2NoYWxsZW5nZXMvZXVsZXIwMDYvcHJvYmxlbQ==" title="https://www.hackerrank.com/contests/projecteuler/challenges/euler006/problem">Project Euler #4: Sum square difference<i class="fa fa-external-link"></i></span></li>
-</ul>
-</li>
-</ul>
-
-    </div>
-</div>
-
-<div class="note no-icon">
-            <div class="note primary no-icon">            <h3 id="Sum-square-difference"><a href="#Sum-square-difference" class="headerlink" title="Sum square difference"></a>Sum square difference</h3><br><h4 id="problem-lt-번역-gt"><a href="#problem-lt-번역-gt" class="headerlink" title="problem  &lt;번역&gt;"></a>problem  &lt;번역&gt;</h4><img data-src="/img/Euler/Problem 6.png"><h4 id="solution"><a href="#solution" class="headerlink" title="solution"></a>solution</h4><p><span class="label warning"> Simple Code</span></p><div class="note success no-icon">            <p>컴퓨터는 연산이 빠르기 때문에 Brute Force한 방법으로 그냥 단순히 반복문을 통해 다 더하여 답을 구할 수도 있다.</p>          </div><figure class="highlight python"><figcaption><span>006_sum_square_difference.py</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sum_of_num</span><span class="params">(n)</span>:</span></span><br><span class="line">  total = <span class="number">0</span></span><br><span class="line">  <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, n+<span class="number">1</span>):</span><br><span class="line">      total += i</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> total**<span class="number">2</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sum_of_square_num</span><span class="params">(n)</span>:</span></span><br><span class="line">  total = <span class="number">0</span></span><br><span class="line">  <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, n+<span class="number">1</span>):</span><br><span class="line">      total += i**<span class="number">2</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> total</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">print(sum_of_num(<span class="number">100</span>) - sum_of_square_num(<span class="number">100</span>))  </span><br></pre></td></tr></table></figure><hr><span class="label warning"> HackerRank</span><div class="note success no-icon">            <p>하지만 조금이라도 효율적인 성능을 이끌어 내기 위해서는 수식을 이용한 풀이가 더 적당할 것 같다.<br>n까지의 단순 합은 n(n+1)/2와 같고<br>n까지의 제곱 합은 (2n+1)(n+1)n/6과 같다.<br><img data-src="/img/Euler/euler006.png"></p>          </div><figure class="highlight python"><figcaption><span>006_for_HacerRank.py</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sum_of_num</span><span class="params">(n)</span>:</span></span><br><span class="line">  total = n*(n + <span class="number">1</span>)//<span class="number">2</span></span><br><span class="line">  <span class="keyword">return</span> total**<span class="number">2</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sum_of_square_num</span><span class="params">(n)</span>:</span></span><br><span class="line">  <span class="keyword">return</span> (<span class="number">2</span>*n + <span class="number">1</span>)*(n + <span class="number">1</span>)*n//<span class="number">6</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">  <span class="keyword">for</span> _ <span class="keyword">in</span> range(int(input())):</span><br><span class="line">      num = int(input())</span><br><span class="line">      print(sum_of_num(num) - sum_of_square_num(num)) </span><br></pre></td></tr></table></figure>          </div><div class="note info">            <p>제곱의 합 공식</p>          </div>
-          </div>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
-          
-        
-      
-    </div>
-
-    
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/32/">32</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="다음 페이지"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/33/">33</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="다음 페이지"></i></a>
   </nav>
 
 
@@ -974,7 +974,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">95</span>
+                    <span class="site-state-item-count">97</span>
                     <span class="site-state-item-name">포스트</span>
                   </a>
                 </div>

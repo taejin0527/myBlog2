@@ -15,11 +15,11 @@
 
 
 <html class="theme-next mist use-motion" lang="ko">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
-<meta name="theme-color" content="#222"/>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
 
 
 
@@ -29,19 +29,13 @@
     
     
   <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
-  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2"/>
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2">
 
 
 
 
 
-  <meta name="google-site-verification" content="1AoB1Oj70vYeXdFCLMbgUhTbU9kMwMXDsCNGRrqqvhM"/>
-
-
-
-
-
-
+  <meta name="google-site-verification" content="1AoB1Oj70vYeXdFCLMbgUhTbU9kMwMXDsCNGRrqqvhM">
 
 
 
@@ -51,9 +45,15 @@
 
 
 
-<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0"/>
 
-<link rel="stylesheet" href="/css/main.css?v=7.2.0"/>
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+
+<link rel="stylesheet" href="/css/main.css?v=7.2.0">
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.2.0">
@@ -118,13 +118,13 @@
 
 
 
-  <link rel="alternate" href="/rss2.xml" title="AttackOnNunu" type="application/atom+xml"/>
+  <link rel="alternate" href="/rss2.xml" title="AttackOnNunu" type="application/atom+xml">
 
 
 
   
   
-  <link rel="canonical" href="https://taejin0527.github.io/page/27/"/>
+  <link rel="canonical" href="https://taejin0527.github.io/page/27/">
 
 
 
@@ -244,7 +244,7 @@
 
     
 
-    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br/>홈</a>
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>홈</a>
 
   </li>
         
@@ -260,7 +260,7 @@
 
     
 
-    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br/>About</a>
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>About</a>
 
   </li>
         
@@ -276,7 +276,7 @@
 
     
 
-    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br/>태그</a>
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>태그</a>
 
   </li>
         
@@ -292,7 +292,7 @@
 
     
 
-    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br/>카테고리</a>
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>카테고리</a>
 
   </li>
         
@@ -308,7 +308,7 @@
 
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br/>아카이브</a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>아카이브</a>
 
   </li>
 
@@ -356,16 +356,539 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/04-lists/"/>
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/05-loops-and-list-comprehensions/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="NUNU"/>
-      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다."/>
-      <meta itemprop="image" content="/images/avatar.gif"/>
+      <meta itemprop="name" content="NUNU">
+      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="AttackOnNunu"/>
+      <meta itemprop="name" content="AttackOnNunu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/[object Object]/05-loops-and-list-comprehensions/" class="post-title-link" itemprop="url">(파이썬) 05 Loops and List Comprehensions</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2019-07-25 14:49:18" itemprop="dateCreated datePublished" datetime="2019-07-25T14:49:18+09:00">2019-07-25</time>
+            </span>
+          
+
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/" itemprop="url" rel="index"><span itemprop="name">LANGUAGE</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/" itemprop="url" rel="index"><span itemprop="name">PYTHON</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/KAGGLE/" itemprop="url" rel="index"><span itemprop="name">KAGGLE</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">댓글: </span>
+                <a href="/[object Object]/05-loops-and-list-comprehensions/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/05-loops-and-list-comprehensions/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
+<li>Kaggle 홈페이지 - <span class="exturl" data-url="aHR0cHM6Ly93d3cua2FnZ2xlLmNvbQ==" title="https://www.kaggle.com">Kaggle<i class="fa fa-external-link"></i></span></li>
+<li>9강 ‘Loops and List Comprehensions’ - <span class="exturl" data-url="aHR0cHM6Ly93d3cua2FnZ2xlLmNvbS9jb2xpbm1vcnJpcy9sb29wcy1hbmQtbGlzdC1jb21wcmVoZW5zaW9ucw==" title="https://www.kaggle.com/colinmorris/loops-and-list-comprehensions">Python Micro-Course Home Page<i class="fa fa-external-link"></i></span></li>
+</ul>
+<blockquote>
+<p>영어 실력이 부족하여 문맥이 이해가 가지 않는 부분은 원문을 참고하시길 바랍니다…<br>언젠가는 실력이 나아지기를…</p>
+</blockquote>
+<hr>
+<br>
+
+<h1 id="반복문-Loops"><a href="#반복문-Loops" class="headerlink" title="반복문(Loops)"></a>반복문(Loops)</h1><p>Loop는 반복적으로 코드를 실행해야 할 때 사용됩니다. 아래는 예제입니다:</p>
+<div class="note no-icon">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">planets = [<span class="string">'Mercury'</span>, <span class="string">'Venus'</span>, <span class="string">'Earth'</span>, <span class="string">'Mars'</span>, <span class="string">'Jupiter'</span>, <span class="string">'Saturn'</span>, <span class="string">'Uranus'</span>, <span class="string">'Neptune'</span>]</span><br><span class="line"><span class="keyword">for</span> planet <span class="keyword">in</span> planets:</span><br><span class="line">    print(planet, end=<span class="string">' '</span>) <span class="comment"># 같은 줄에 출력합니다. </span></span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Mercury Venus Earth Mars Jupiter Saturn Uranus Neptune  </span><br></pre></td></tr></table></figure>
+          </div>
+
+<p><code>for</code> 반복문에는</p>
+<ul>
+<li>사용할 변수 이름 (이 경우 <code>planet</code>)</li>
+<li>반복할 값들의 집합 (이 경우 <code>planets</code>)</li>
+</ul>
+<p>“<code>in</code>“ 이라는 단어를 사용하여 함께 연결합니다.</p>
+<p>“<code>in</code>“의 오른쪽에는 반복에 사용될 수 있다면 어떠한 객체라도 올 수 있습니다. 대체적으로 어떠한 그룹으로 생각될 수만 있다면 반복문에 사용될 수 있습니다.</p>
+<div class="tabs" id="loop_examples"><ul class="nav-tabs"><li class="tab active"><a href="#loop_examples-1"><i class="fa fa-eye"></i>tuple</a></li><li class="tab"><a href="#loop_examples-2"><i class="fa fa-eye"></i>string</a></li></ul><div class="tab-content"><div class="tab-pane active" id="loop_examples-1"><div class="note no-icon">
+            <p>lists 외에도 tuple의 요소들을 반복 할 수도 있습니다.</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">multiplicands = (<span class="number">2</span>, <span class="number">2</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">3</span>, <span class="number">5</span>)</span><br><span class="line">product = <span class="number">1</span></span><br><span class="line"><span class="keyword">for</span> mult <span class="keyword">in</span> multiplicands:</span><br><span class="line">    product = product * mult</span><br><span class="line">product </span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="number">360</span> </span><br></pre></td></tr></table></figure>
+          </div></div><div class="tab-pane" id="loop_examples-2"><div class="note no-icon">
+            <p>string 의 각 character 마다 반복문을 돌릴 수 있습니다.</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = <span class="string">'steganograpHy is the practicE of conceaLing a file, message, image, or video within another fiLe, message, image, Or video.'</span></span><br><span class="line">msg = <span class="string">''</span></span><br><span class="line"><span class="comment"># s 문자열의 대문자들을 출력. 한번에 하나씩</span></span><br><span class="line"><span class="keyword">for</span> char <span class="keyword">in</span> s:</span><br><span class="line">    <span class="keyword">if</span> char.isupper():</span><br><span class="line">        print(char, end=<span class="string">''</span>)   </span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">HELLO </span><br></pre></td></tr></table></figure>
+          </div></div></div></div>
+
+<h2 id="range"><a href="#range" class="headerlink" title="range()"></a>range()</h2><p><code>range()</code> 는 일련의 연속적인 숫자들을 반환하는 함수입니다. 이는 반복문을 작성하는데 매우 유용합니다.<br>예를 들어, 우리가 어떤 행동을 5번 반복하고자 한다면 아래와 같이 작성하면 됩니다:</p>
+<div class="note no-icon">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">5</span>):</span><br><span class="line">    print(<span class="string">"Doing important work. i ="</span>, i) </span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Doing important work. i = 0</span><br><span class="line">Doing important work. i = 1</span><br><span class="line">Doing important work. i = 2</span><br><span class="line">Doing important work. i = 3</span><br><span class="line">Doing important work. i = 4  </span><br></pre></td></tr></table></figure>
+          </div>
+
+<h2 id="while-loops"><a href="#while-loops" class="headerlink" title="while loops"></a>while loops</h2><p>파이썬에는 또 다른 반복문으로 특정 조건을 만족할 때까지 반복하는 <code>while</code> 이 있습니다.</p>
+<div class="note no-icon">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">i = <span class="number">0</span></span><br><span class="line"><span class="keyword">while</span> i &lt; <span class="number">10</span>:</span><br><span class="line">    print(i, end=<span class="string">' '</span>)</span><br><span class="line">    i += <span class="number">1</span>  </span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">0 1 2 3 4 5 6 7 8 9  </span><br></pre></td></tr></table></figure>
+          </div>
+
+<p><code>while</code> 반복문의 인자는 boolean 문으로 평가되고, False로 평가 될 때까지 반복문이 실행됩니다.</p>
+<hr>
+<br>
+
+<h1 id="리스트-내포-List-Comprehensions"><a href="#리스트-내포-List-Comprehensions" class="headerlink" title="리스트 내포(List Comprehensions)"></a>리스트 내포(List Comprehensions)</h1><blockquote>
+<p>리스트 컴프리핸션 이라고 영문 그대로 읽는 경우가 더 많은 것 같습니다…</p>
+</blockquote>
+<p>리스트 내포는 파이썬에서 가장 사랑받고 독특한 특징 중 하나입니다. 자잘한 설명보다는 그냥 몇 가지 예제들을 보는 것이 보다 이해하기 쉬울 것 같습니다.</p>
+<div class="tabs" id="list_comprehensions"><ul class="nav-tabs"><li class="tab active"><a href="#list_comprehensions-1"><i class="fa fa-eye"></i>WITH_LC</a></li><li class="tab"><a href="#list_comprehensions-2"><i class="fa fa-eye"></i>WITHOUT_LC</a></li></ul><div class="tab-content"><div class="tab-pane active" id="list_comprehensions-1"><div class="note no-icon">
+            <p>List comprehension 줄여서 LC라고 하겠습니다. <code>**</code> 은 파이썬 산술 연산자에서 제곱을 의미합니다.</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">squares = [n**<span class="number">2</span> <span class="keyword">for</span> n <span class="keyword">in</span> range(<span class="number">10</span>)]</span><br><span class="line">squares </span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">[<span class="number">0</span>, <span class="number">1</span>, <span class="number">4</span>, <span class="number">9</span>, <span class="number">16</span>, <span class="number">25</span>, <span class="number">36</span>, <span class="number">49</span>, <span class="number">64</span>, <span class="number">81</span>]  </span><br></pre></td></tr></table></figure>
+          </div></div><div class="tab-pane" id="list_comprehensions-2"><div class="note no-icon">
+            <p>LC 없이 작성하면 아래와 같습니다.</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">squares = []</span><br><span class="line"><span class="keyword">for</span> n <span class="keyword">in</span> range(<span class="number">10</span>):</span><br><span class="line">    squares.append(n**<span class="number">2</span>)</span><br><span class="line">squares  </span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">[<span class="number">0</span>, <span class="number">1</span>, <span class="number">4</span>, <span class="number">9</span>, <span class="number">16</span>, <span class="number">25</span>, <span class="number">36</span>, <span class="number">49</span>, <span class="number">64</span>, <span class="number">81</span>] </span><br></pre></td></tr></table></figure>
+          </div></div></div></div>
+
+<p><code>if</code> 조건을 추가 할 수도 있습니다:</p>
+<div class="note no-icon">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">short_planets = [planet <span class="keyword">for</span> planet <span class="keyword">in</span> planets <span class="keyword">if</span> len(planet) &lt; <span class="number">6</span>]</span><br><span class="line">short_planets </span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">[<span class="string">'Venus'</span>, <span class="string">'Earth'</span>, <span class="string">'Mars'</span>] </span><br></pre></td></tr></table></figure>
+          </div>
+
+<p>(SQL에 익숙하신 분이라면, “WHERE” 절과 비슷하다고 느끼셨을 겁니다.)<br>다음은 <code>if</code> 조건으로 필터링하고 loop 변수에 일부 변환을 적용하는 예제입니다:</p>
+<div class="tabs" id="if_condition"><ul class="nav-tabs"><li class="tab active"><a href="#if_condition-1"><i class="fa fa-eye"></i>SINGLE_LINE</a></li><li class="tab"><a href="#if_condition-2"><i class="fa fa-eye"></i>MULTI_LINE</a></li></ul><div class="tab-content"><div class="tab-pane active" id="if_condition-1"><div class="note no-icon">
+            <p>대문자로 바꾸고 뒤에 ‘!’를 추가합니다.</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># str.upper() 은 모두 대문자로 변환한 string을 반환합니다</span></span><br><span class="line">loud_short_planets = [planet.upper() + <span class="string">'!'</span> <span class="keyword">for</span> planet <span class="keyword">in</span> planets <span class="keyword">if</span> len(planet) &lt; <span class="number">6</span>]</span><br><span class="line">loud_short_planets </span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">[<span class="string">'VENUS!'</span>, <span class="string">'EARTH!'</span>, <span class="string">'MARS!'</span>] </span><br></pre></td></tr></table></figure>
+          </div></div><div class="tab-pane" id="if_condition-2"><div class="note no-icon">
+            <p>대부분의 경우 한줄로 작성하는 것을 선호하지만, 구조를 파악하기 쉽게 하기 위해 3줄로 나눠서 작성할 수도 있습니다.<br>(SQL과 비교하자면, 각 줄은 SELECT, FROM, WHERE로 생각할 수 있겠군요)</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">[</span><br><span class="line">    planet.upper() + <span class="string">'!'</span></span><br><span class="line">    <span class="keyword">for</span> planet <span class="keyword">in</span> planets</span><br><span class="line">    <span class="keyword">if</span> len(planet) &lt; <span class="number">6</span></span><br><span class="line">] </span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">[<span class="string">'VENUS!'</span>, <span class="string">'EARTH!'</span>, <span class="string">'MARS!'</span>] </span><br></pre></td></tr></table></figure>
+          </div></div></div></div>
+
+<p>표현식의 왼쪽에는 꼭 반복문의 변수를 포함할 필요가 없습니다(하지만 이런 경우는 매우 드뭅니다). 아래의 표현식이 어떤 결과를 출력할까요? “output” 탭을 눌러서 확인해 보세요.</p>
+<div class="tabs" id="if_example"><ul class="nav-tabs"><li class="tab active"><a href="#if_example-1"><i class="fa fa-code"></i>CODE</a></li><li class="tab"><a href="#if_example-2"><i class="fa fa-terminal"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane active" id="if_example-1"><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">[<span class="number">32</span> <span class="keyword">for</span> planet <span class="keyword">in</span> planets] </span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="if_example-2"><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">[<span class="number">32</span>, <span class="number">32</span>, <span class="number">32</span>, <span class="number">32</span>, <span class="number">32</span>, <span class="number">32</span>, <span class="number">32</span>, <span class="number">32</span>]  </span><br></pre></td></tr></table></figure></div></div></div>
+
+<p><code>min</code>, <code>max</code> 및 <code>sum</code> 과 같은 기능과 LC가 함께 사용되면 여러 줄로 작성된 코드를 한 줄의 매우 인상적인 코드로 표현할 수 있습니다.</p>
+<div class="tabs" id="lc_condition"><ul class="nav-tabs"><li class="tab active"><a href="#lc_condition-1"><i class="fa fa-eye"></i>ORIGINAL_CODE</a></li><li class="tab"><a href="#lc_condition-2"><i class="fa fa-eye"></i>ONE_LINE_CODE</a></li><li class="tab"><a href="#lc_condition-3"><i class="fa fa-eye"></i>SHORTER_CODE</a></li></ul><div class="tab-content"><div class="tab-pane active" id="lc_condition-1"><div class="note no-icon">
+            <p>예를 들어, 다음과 같이 음수의 개수를 세는 함수를 살펴보겠습니다:</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">count_negatives</span><span class="params">(nums)</span>:</span></span><br><span class="line">    <span class="string">"""Return the number of negative numbers in the given list.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    &gt;&gt;&gt; count_negatives([5, -1, -2, 0, 3])</span></span><br><span class="line"><span class="string">    2</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    n_negative = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> num <span class="keyword">in</span> nums:</span><br><span class="line">        <span class="keyword">if</span> num &lt; <span class="number">0</span>:</span><br><span class="line">            n_negative = n_negative + <span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> n_negative </span><br></pre></td></tr></table></figure>
+          </div></div><div class="tab-pane" id="lc_condition-2"><div class="note no-icon">
+            <p>LC를 사용하면 한 줄로 표현 가능합니다. 훨씬 보기 좋지 않은가요?</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">count_negatives</span><span class="params">(nums)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> len([num <span class="keyword">for</span> num <span class="keyword">in</span> nums <span class="keyword">if</span> num &lt; <span class="number">0</span>]) </span><br></pre></td></tr></table></figure>
+          </div></div><div class="tab-pane" id="lc_condition-3"><div class="note no-icon">
+            <p>만약 조금이라도 더 짧은 코드를 원하신다면 다음과 같이 표현할 수도 있습니다.</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">count_negatives</span><span class="params">(nums)</span>:</span></span><br><span class="line">    <span class="comment"># 기억하기: "booleans and conditionals" 연습문제에서, 파이썬의 별난 특징으로</span></span><br><span class="line">    <span class="comment"># True + True + False + True 는 3으로 계산한다는 점을 응용.</span></span><br><span class="line">    <span class="keyword">return</span> sum([num &lt; <span class="number">0</span> <span class="keyword">for</span> num <span class="keyword">in</span> nums]) </span><br></pre></td></tr></table></figure>
+          </div></div></div></div>
+
+<p>위 3가지 방법 중 어떤 것이 “최고의” 방법인지는 매우 주관적입니다. 보다 적은 코드로 문제를 해결하는 것이 항상 좋은 일이지만, <span class="exturl" data-url="aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvWmVuX29mX1B5dGhvbg==" title="https://en.wikipedia.org/wiki/Zen_of_Python">The Zen of Python<i class="fa fa-external-link"></i></span>에 적힌 다음 내용을 기억해 두는 것이 좋습니다.</p>
+<ul>
+<li>Readability counts. 가독성이 중요합니다.</li>
+<li>Explicit is better than implicit. 명확한 것이 암시적인 것보다 낫습니다.</li>
+</ul>
+<p>이러한 도구들을 사용하여 읽기 쉽고 간결한 프로그램을 짜도록 합시다. 하지만 둘 중 하나를 골라야하는 상황이 온다면, 다른 사람들이 읽고 이해하기 쉬운 코드를 짜는 것을 선호하도록 합시다.</p>
+<p><br><br><br></p>
+<h1 id="연습문제-Your-Turn"><a href="#연습문제-Your-Turn" class="headerlink" title="연습문제(Your Turn)"></a>연습문제(Your Turn)</h1><p><span class="exturl" data-url="aHR0cHM6Ly93d3cua2FnZ2xlLmNvbS9rZXJuZWxzL2ZvcmsvMTI3NTE3Nw==" title="https://www.kaggle.com/kernels/fork/1275177">loops and list comprehensions 예제<i class="fa fa-external-link"></i></span></p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/hexo-live2d/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="NUNU">
+      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="AttackOnNunu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/[object Object]/hexo-live2d/" class="post-title-link" itemprop="url">(Hexo_NexT_Theme) 마우스를 따라 움직이는 배경</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2019-07-22 16:52:28" itemprop="dateCreated datePublished" datetime="2019-07-22T16:52:28+09:00">2019-07-22</time>
+            </span>
+          
+
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/BLOG/" itemprop="url" rel="index"><span itemprop="name">BLOG</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/BLOG/HEXO-NEXT-THEME/" itemprop="url" rel="index"><span itemprop="name">HEXO-NEXT-THEME</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">댓글: </span>
+                <a href="/[object Object]/hexo-live2d/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/hexo-live2d/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <div class="note info">
+            <p>제 블로그에 적용되어 있는 테마는 Next 입니다. <span class="exturl" data-url="aHR0cDovL3RoZW1lLW5leHQuaWlzc25hbi5jb20v" title="http://theme-next.iissnan.com/">theme-next<i class="fa fa-external-link"></i></span><br>틈틈히 테마를 커스터마이즈 하고 있습니다.</p><p>이번 포스트에서는 배경에 마우스를 따라 움직이는 캐릭터를 적용하는 방법에 대해 적어 보겠습니다.</p>
+          </div>
+
+<hr>
+<h1 id="설치-Installation"><a href="#설치-Installation" class="headerlink" title="설치(Installation)"></a>설치(Installation)</h1><h2 id="hexo-helper-live2d"><a href="#hexo-helper-live2d" class="headerlink" title="hexo-helper-live2d"></a>hexo-helper-live2d</h2><p>블로그 디렉토리(기본 <code>hexo</code> 디렉토리)에서 Node Package Module(NPM)을 사용하여 <code>hexo-helper-live2d</code> 를 설치합니다.</p>
+<div class="note success no-icon">
+            <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install --save hexo-helper-live2d</span><br></pre></td></tr></table></figure>
+          </div>
+
+
+<h2 id="live2d-widget-model"><a href="#live2d-widget-model" class="headerlink" title="live2d-widget-model"></a>live2d-widget-model</h2><blockquote>
+<p>마음에 드는 모델의 assets을 가져와 적용할 수도 있지만, 그건 다음에 기회가 된다면 시도해 보기로 하겠습니다.</p>
+</blockquote>
+<p>아래의 기본적으로 제공해주는 Live2D 리소스 중에서 마음에 드는 모델을 골라 설치하겠습니다.</p>
+<div class="spoiler collapsed">
+    <div class="spoiler-title">
+        모델_리스트
+    </div>
+    <div class="spoiler-content">
+        <p>live2d-widget-model-chitose<br>live2d-widget-model-epsilon2_1<br>live2d-widget-model-gf<br>live2d-widget-model-haru/01 (use npm install –save live2d-widget-model-haru)<br>live2d-widget-model-haru/02 (use npm install –save live2d-widget-model-haru)<br>live2d-widget-model-haruto<br>live2d-widget-model-hibiki<br>live2d-widget-model-hijiki<br>live2d-widget-model-izumi<br>live2d-widget-model-koharu<br>live2d-widget-model-miku<br>live2d-widget-model-ni-j<br>live2d-widget-model-nico<br>live2d-widget-model-nietzsche<br>live2d-widget-model-nipsilon<br>live2d-widget-model-nito<br>live2d-widget-model-shizuku<br>live2d-widget-model-tororo<br>live2d-widget-model-tsumiki<br>live2d-widget-model-unitychan<br>live2d-widget-model-wanko<br>live2d-widget-model-z16</p>
+
+    </div>
+</div>
+
+<div class="spoiler collapsed">
+    <div class="spoiler-title">
+        모델_이미지_1
+    </div>
+    <div class="spoiler-content">
+        <p><strong>epsilon2_1</strong><br><span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" alt="epsilon" data-src="/img/gif/Epsilon2.1.gif"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span><br><strong>gf</strong><br><span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" alt="gf" data-src="/img/gif/gf.gif"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span><br><strong>haru</strong><br><span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" alt="haru" data-src="/img/gif/haru.gif"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span><br><strong>haruto</strong><br><span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" alt="haruto" data-src="/img/gif/haruto.gif"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span><br><strong>hibiki</strong><br><span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" alt="hibiki" data-src="/img/gif/hibiki.gif"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span><br><strong>koharu</strong><br><span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" alt="koharu" data-src="/img/gif/koharu.gif"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span><br><strong>miku</strong><br><span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" alt="miku" data-src="/img/gif/miku.gif"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span></p>
+
+    </div>
+</div>  
+<div class="spoiler collapsed">
+    <div class="spoiler-title">
+        모델_이미지_2
+    </div>
+    <div class="spoiler-content">
+        <p><strong>ni-j</strong><br><span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" alt="ni-j" data-src="/img/gif/ni-j.gif"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span><br><strong>nico</strong><br><span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" alt="nico" data-src="/img/gif/nico.gif"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span><br><strong>nietzche</strong><br><span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" alt="nietzche" data-src="/img/gif/nietzche.gif"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span><br><strong>nipsilon</strong><br><span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" alt="nipsilon" data-src="/img/gif/nipsilon.gif"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span><br><strong>nito</strong><br><span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" alt="nito" data-src="/img/gif/nito.gif"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span><br><strong>shizuku</strong><br><span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" alt="shizuku" data-src="/img/gif/shizuku.gif"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span></p>
+
+    </div>
+</div>    
+<div class="spoiler collapsed">
+    <div class="spoiler-title">
+        모델_이미지_3
+    </div>
+    <div class="spoiler-content">
+        <p><strong>tororo</strong><br><span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" alt="tororo" data-src="/img/gif/tororo.gif"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span><br><strong>tsumiki</strong><br><span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" alt="tsumiki" data-src="/img/gif/tsumiki.gif"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span><br><strong>Unitychan</strong><br><span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" alt="unitychan" data-src="/img/gif/Unitychan.gif"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span><br><strong>wanko</strong><br><span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" alt="wanko" data-src="/img/gif/wanko.gif"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span><br><strong>z16</strong><br><span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" alt="z16" data-src="/img/gif/z16.gif"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span></p>
+
+    </div>
+</div>
+
+<p>고르셨다면 똑같이 npm을 사용하여 설치해 주도록 하겠습니다.</p>
+<div class="note success no-icon">
+            <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install &#123;your model&apos;s package name&#125;</span><br></pre></td></tr></table></figure>저의 경우 wanko를 선택하였습니다.<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install --save live2d-widget-model-wanko</span><br></pre></td></tr></table></figure>
+          </div>
+
+<hr>
+<h1 id="설정-Config-setting"><a href="#설정-Config-setting" class="headerlink" title="설정(Config setting)"></a>설정(Config setting)</h1><p>블로그의 <code>_config.yml</code> 파일 혹은 테마의 <code>_config.yml</code> 중 편한 곳에 아래 속성을 추가합니다.<br><code>model</code> 의 <code>use</code> 부분에 사용할 모델명으로 수정하셔야 합니다.</p>
+<div class="note success no-icon">
+            <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">live2d:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  scriptFrom:</span> <span class="string">local</span></span><br><span class="line"><span class="attr">  pluginRootPath:</span> <span class="string">live2dw/</span></span><br><span class="line"><span class="attr">  pluginJsPath:</span> <span class="string">lib/</span></span><br><span class="line"><span class="attr">  pluginModelPath:</span> <span class="string">assets/</span></span><br><span class="line"><span class="attr">  tagMode:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">  log:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">  model:</span></span><br><span class="line"><span class="attr">    use:</span> <span class="string">live2d-widget-model-wanko</span> <span class="comment">#설치한 모델을 이곳에서 적용하셔야 합니다</span></span><br><span class="line"><span class="attr">  display:</span></span><br><span class="line"><span class="attr">    position:</span> <span class="string">right</span></span><br><span class="line"><span class="attr">    width:</span> <span class="number">150</span></span><br><span class="line"><span class="attr">    height:</span> <span class="number">300</span></span><br><span class="line"><span class="attr">  mobile:</span></span><br><span class="line"><span class="attr">    show:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  react:</span></span><br><span class="line"><span class="attr">    opacity:</span> <span class="number">0.7</span></span><br></pre></td></tr></table></figure>
+          </div>
+
+<p>더 자세한 설명은 깃허브에 가시면 보실 수 있습니다.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0VZSE4vaGV4by1oZWxwZXItbGl2ZTJkI2RldGFpbC1zZXR0aW5ncw==" title="https://github.com/EYHN/hexo-helper-live2d#detail-settings">Detail settings<i class="fa fa-external-link"></i></span></p>
+<hr>
+<h1 id="적용-Execute"><a href="#적용-Execute" class="headerlink" title="적용(Execute)"></a>적용(Execute)</h1><p><code>hexo clean</code> 을 통해 기존 작성되었던 public 폴더를 지워주시고 새롭게 <code>hexo generate</code> 실행하셔야 적용되는 것을 확인하실 수 있습니다.<br><code>hexo server</code> 로 로컬 환경에서 바로 확인하실 수도 있습니다.</p>
+<div class="note success no-icon">
+            <p><strong>koharu</strong> 모델을 한번 적용시켜 보았습니다.</p><p><span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" alt="sample" data-src="/img/live2d_koharu.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span></p>
+          </div>
+
+<br>
+
+<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0VZSE4vaGV4by1oZWxwZXItbGl2ZTJk" title="https://github.com/EYHN/hexo-helper-live2d">Github : hexo-helper-live2d<i class="fa fa-external-link"></i></span></p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/04-lists/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="NUNU">
+      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="AttackOnNunu">
     </span>
 
     
@@ -462,7 +985,7 @@
 
           
 
-          <br/>
+          <br>
           
 
           
@@ -688,458 +1211,11 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/hexo-adsense-1/"/>
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="NUNU"/>
-      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다."/>
-      <meta itemprop="image" content="/images/avatar.gif"/>
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="AttackOnNunu"/>
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/[object Object]/hexo-adsense-1/" class="post-title-link" itemprop="url">(Hexo_NexT_Theme) Hexo 블로그에 Google Adsense 설정_1</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">작성일</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2019-07-17 14:09:11" itemprop="dateCreated datePublished" datetime="2019-07-17T14:09:11+09:00">2019-07-17</time>
-            </span>
-          
-
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/BLOG/" itemprop="url" rel="index"><span itemprop="name">BLOG</span></a></span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/BLOG/HEXO-NEXT-THEME/" itemprop="url" rel="index"><span itemprop="name">HEXO-NEXT-THEME</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">댓글: </span>
-                <a href="/[object Object]/hexo-adsense-1/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/hexo-adsense-1/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          <br/>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <div class="note info">
-            <p>Hexo-NexT-Theme 에 구글 애드센스를 추가하는 방법에 대해 알아보겠습니다!</p>
-          </div>
-
-<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" data-src="/img/adsense/adsense_home.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
-
-<p>홈페이지에 접속하여 구글 계정으로 로그인하고 구글 애드센스에 가입하는 방법은 인터넷에 검색하면 금방 찾으실 수 있습니다.</p>
-<p>간략하게 설명드리자면 구글 검색엔진에 등록하는 것과 비슷한 방식으로 <u>광고를 등록하고자 하는 웹사이트 URL를 입력</u>하고 <u>이메일 주소를 입력</u>하면 됩니다.</p>
-<p>중요한 것은 <strong>애드센스 활성화</strong> 를 하기 위해서는 HTML 문서를 수정해야 하는데 하나하나 모든 포스트의 HTML 문서를 수정하는 것은 시간 낭비 같습니다.<br>(만약 <code>hexo clean</code>으로 초기화 하고 다시 <code>hexo generate</code> 하게되면 헛고생 한게 되니…)<br><code>hexo generate</code>를 통해 markdown 문서와 여러 javascript 파일들을 통해 포스트를 생성하기 때문에 <strong>javascript</strong> 를 손보면 해결될 것 같은 느낌이듭니다.</p>
-<h2 id="google-adsense-ejs-파일-생성"><a href="#google-adsense-ejs-파일-생성" class="headerlink" title="google_adsense.ejs 파일 생성"></a><code>google_adsense.ejs</code> 파일 생성</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">/themes/hexo-theme-next/layout/_custom/google_adsense.ejs</span><br></pre></td></tr></table></figure>
-
-<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" data-src="/img/adsense/theme_layout.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
-
-<p>테마가 설치된 경로의 <code>layout</code>폴더에 <code>_custom</code> 폴더가 없다면 생성하시고 있으시면 그 안에 <code>google_adsense.ejs</code> 파일을 새로 생성합니다.</p>
-<h2 id="Adsense-코드-복사"><a href="#Adsense-코드-복사" class="headerlink" title="Adsense 코드 복사"></a>Adsense 코드 복사</h2><p>생성된  <code>google_adsense.ejs</code> 파일에 사이트 검토를 위한 소스 코드를 복사 붙여 넣기합니다. (아래는 예시로 google_ad_client의 키 값이 없습니다)</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">&lt;script <span class="keyword">async</span> src=<span class="string">"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br><span class="line">&lt;script&gt;</span><br><span class="line">  (adsbygoogle = <span class="built_in">window</span>.adsbygoogle || []).push(&#123;</span><br><span class="line">    google_ad_client: <span class="string">"your key"</span>,</span><br><span class="line">    enable_page_level_ads: <span class="literal">true</span></span><br><span class="line">  &#125;);</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="layout-swig-파일의-수정"><a href="#layout-swig-파일의-수정" class="headerlink" title="_layout.swig 파일의  수정"></a><code>_layout.swig</code> 파일의 <head><meta name="generator" content="Hexo 3.9.0"> 수정</head></h2><p><code>_layout.swig</code> 파일이 블로그 포스트의 전체적인 레이아웃을 담당하고 있는 것을 알 수 있습니다.<br>여기 <head><meta name="generator" content="Hexo 3.9.0"></head> 태그 안에 저희가 생성한 javascript 파일을 넣으면 됩니다.</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- Google AdSense start --&gt;</span></span><br><span class="line">&#123;% include '_custom/google_adsense.ejs' %&#125;</span><br><span class="line"><span class="comment">&lt;!-- Google AdSense end --&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="hexo-generate-후-확인하기"><a href="#hexo-generate-후-확인하기" class="headerlink" title="hexo generate 후 확인하기"></a><code>hexo generate</code> 후 확인하기</h2><p><code>hexo g -d</code> 한 후 블로그의 소스코드 보기를 통해 저희가 작성한 코드가 잘 적용되어 있는지 확인할 수 있습니다.<br>구글 애드센스 사이트 검증을 요청하면 아래와 같은 화면을 보실 수 있습니다.</p>
-<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" data-src="/img/adsense/adsense_wait.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
-          
-        
-      
-    </div>
-
-    
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/hexo-seo/"/>
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="NUNU"/>
-      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다."/>
-      <meta itemprop="image" content="/images/avatar.gif"/>
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="AttackOnNunu"/>
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/[object Object]/hexo-seo/" class="post-title-link" itemprop="url">(Hexo_NexT_Theme) Hexo SEO - 검색 엔진 최적화</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">작성일</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2019-07-17 13:10:11" itemprop="dateCreated datePublished" datetime="2019-07-17T13:10:11+09:00">2019-07-17</time>
-            </span>
-          
-
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/BLOG/" itemprop="url" rel="index"><span itemprop="name">BLOG</span></a></span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/BLOG/HEXO-NEXT-THEME/" itemprop="url" rel="index"><span itemprop="name">HEXO-NEXT-THEME</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">댓글: </span>
-                <a href="/[object Object]/hexo-seo/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/hexo-seo/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          <br/>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <div class="note info">
-            <p>지금 이 순간에도 전세계적으로 수 많은 웹사이트, 웹페이지가 생성되기 때문에 그 중 나의 블로그를 혼자서 다른 사람들에게 노출시키는 것은 매우 어렵습니다.<br>사람들이 많이 찾는 곳, 즉 트래픽이 많이 몰리는 곳에 위치해야 사람들이 스쳐지나가기라도 하지 않을까요?<br>그렇다면 사람들이 무언가를 검색하고자 할때, 주로 어디를 찾을까요?<br>한국의 경우 네이버, 대부분의 해외에서는 구글을 가장 먼저 떠올릴 것입니다.</p>
-          </div>
-<hr>
-<h1 id="SEO-Search-Engine-Optimization"><a href="#SEO-Search-Engine-Optimization" class="headerlink" title="SEO(Search Engine Optimization)"></a>SEO(Search Engine Optimization)</h1><p>SEO 즉, 검색엔진 최적화란 무엇인지 왜 중요한지에 대해 간단히 알아보겠습니다.</p>
-<h2 id="What-is-SEO"><a href="#What-is-SEO" class="headerlink" title="What is SEO"></a>What is SEO</h2><div class="note default">
-            <p><strong>검색엔진 최적화</strong> 란, 검색엔진이 자료를 수집하고 순위를 매기는 방식 및 알고리즘에 맞게 웹 페이지를 구성하여 검색 결과 상위에 나올 수 있도록 하는 작업을 말합니다.</p><blockquote><p>검색엔진 알고리즘은 사이트 회사의 핵심 보안 사항으로 정확하게 알 수 있는 방법이 없다고 합니다. 즉, 구글과 네이버의 검색엔진 알고리즘이 다르기 때문에 우선순위나 배치가 다른 기준을 적용합니다. 다만 사람들이 오랫동안 검색엔진을 연구한 결과들로 최적화에 대한 다양한 방법론이 소개되고 있을 뿐입니다.</p></blockquote>
-          </div>
-
-<h2 id="Why-SEO"><a href="#Why-SEO" class="headerlink" title="Why SEO"></a>Why SEO</h2><span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" alt="Ads vs SEO" data-src="/img/Ads_SEO.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
-
-<span class="label danger">검색광고(Ads)</span>를 사용한다면 검색엔진의 상단에 노출되어 상대적으로 유리하지만 사용자가 광고를 클릭할 때마다 비용이 발생합니다.
-<p>개인적으로 소소하게 웹페이지를 운영하는 저희에게는 부담이되는 것은 사실입니다.</p>
-<p>반면 <span class="label success">SEO, 검색엔진 최적화</span>를 통해 비용을 들이지 않고 자연스럽게 검색엔진 사용자들을 사이트로 접근하게 유도할 수 있습니다.<br>물론 검색광고에 비해 즉각적인 피드백 없이 긴 시간의 기다림이 필요할 수도 있습니다. (꾸준히 관리하다보면 언젠가는 찾는 사람이 많아 지겠죠!)</p>
-<br>
-
-<div class="note info">
-            <p>제가 사용하는 Hexo에도 SEO와 관련된 플러그인이 많이 있습니다.<br>제 블로그에 적용시킨 플러그인들을 소개시켜 드리겠습니다.</p>
-          </div>
-
-<h1 id="Hexo-Plugin"><a href="#Hexo-Plugin" class="headerlink" title="Hexo-Plugin"></a>Hexo-Plugin</h1><p>제가 사용하는 Hexo-NexT-Theme 에는 기본적인 SEO 설정을 간편하게 해주는 기능을 제공하고 있습니다.<br><code>자세한 설명은 https://theme-next.org/docs/theme-settings/seo 에서 확인할 수 있습니다</code></p>
-<span class="label primary">theme config file</span> 즉, 테마가 설치된 경로의 `_config.yml` 에서 SEO 를 검색하면 보실 수 있습니다.
-<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" style="max-width: none; width: 70%;" data-src="/img/seo_setting.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
-
-<p>자동으로 표준 링크를 생성해주는 <strong>canonical</strong>, 검색엔진 최적화를 위한 <strong>seo</strong> 기능을 활성화 했습니다.<br>그리고 블로그의 포스트들에 있는 외부 링크들이 크롤러에 의해 수집되지 않도록 (nofollow 속성과 비슷) <strong>exturl</strong> 기능도 활성화 했습니다.</p>
-<p>구글의 웹마스터(webmaster)를 사용했지만 이미지에서는 verification key 값은 지웠습니다.<br>아래는 구글 검색엔진의 원활한 크롤링을 위해 추가로 설치한 RSS, sitemap, robotstxt 설치방법 입니다.</p>
-<h2 id="hexo-generator-feed"><a href="#hexo-generator-feed" class="headerlink" title="hexo-generator-feed"></a>hexo-generator-feed</h2><p><strong>npm (Node Package Manager)</strong> 으로 편하게 설치할 수 있습니다.</p>
-<p><strong>설치</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-feed --save</span><br></pre></td></tr></table></figure>
-
-<p><strong>사용</strong></p>
-<span class="label info">site config file</span>인 `_config.yml` 에 파일을 아래 내용을 추가합니다.
-<p>피드의 종류를 정할 수 있는데 만약 네이터 웹마스터툴을 사용하실 계획이라면 default 인 Atom 말고 RSS2를 권장합니다.</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">feed:</span><br><span class="line">  type: rss2     #피드의 종류(atom/rss2)</span><br><span class="line">  path: rss2.xml  #피드가 생성될 경로</span><br><span class="line">  limit: 20      #최신 포스트의 개수(0 또는 false 설정시 모든 포스트)</span><br></pre></td></tr></table></figure>
-
-
-<h2 id="hexo-generator-seo-friendly-sitemap"><a href="#hexo-generator-seo-friendly-sitemap" class="headerlink" title="hexo-generator-seo-friendly-sitemap"></a>hexo-generator-seo-friendly-sitemap</h2><p><strong>설치</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-seo-friendly-sitemap --save</span><br></pre></td></tr></table></figure>
-
-<p><strong>사용</strong><br>똑같이 <span class="label info">site config file</span>인 <code>_config.yml</code> 에 파일을 아래 내용을 추가합니다.</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sitemap:</span><br><span class="line">  path: sitemap.xml   #생성될 경로</span><br><span class="line">  tag: false          #sitemap에 tag 포함 여부</span><br><span class="line">  category: false     #sitemap에 category 포함 여부</span><br></pre></td></tr></table></figure>
-
-
-<h2 id="hexo-generator-robotstxt"><a href="#hexo-generator-robotstxt" class="headerlink" title="hexo-generator-robotstxt"></a>hexo-generator-robotstxt</h2><p><strong>설치</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-robotstxt --save</span><br></pre></td></tr></table></figure>
-
-<p><strong>사용</strong><br>똑같이 <span class="label info">site config file</span>인 <code>_config.yml</code> 에 파일을 아래 내용을 추가합니다.</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">robotstxt:</span><br><span class="line">  useragent: &quot;*&quot;</span><br><span class="line">  allow:</span><br><span class="line">    - /</span><br><span class="line">  sitemap:</span><br></pre></td></tr></table></figure>
-
-<p><br><br></p>
-<h1 id="Sign-up-for-Google-Search-console"><a href="#Sign-up-for-Google-Search-console" class="headerlink" title="Sign up for Google Search console"></a>Sign up for Google Search console</h1><span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" style="max-width: none; width: 60%;" data-src="/img/signUp_url.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
-
-<p style="text-align:center;">블로그의 주소를 입력하고 넘어갑니다</p>
-
-<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" style="max-width: none; width: 60%;" data-src="/img/url_config.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
-
-<p>HTML태그의 content 안의 내용을 앞서 설명한 <code>_config.yml</code> 파일 안의 <code>google_site_verification</code> 옆에 붙여 넣습니다</p>
-<p>이제 터미널에서 <strong>generate</strong> 하고 <strong>deploy</strong> 해주시면 됩니다</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
-
-<p style="text-align:center;">RSS와 sitemap이 등록되 있는 것을 확인할 수 있습니다</p>
-
-<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" data-src="/img/sitemap.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
-
-
-<p><br><br></p>
-<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><p><span class="exturl" data-url="aHR0cHM6Ly9pc2Vvbmdoby5naXRodWIuaW8vcG9zdHMvaGV4by1zZW8=" title="https://iseongho.github.io/posts/hexo-seo">Hexo SEO - 하루 만에 검색 엔진 최적화 시키기<i class="fa fa-external-link"></i></span></p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
-          
-        
-      
-    </div>
-
-    
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/26/"><i class="fa fa-angle-left" aria-label="이전 페이지"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/26/">26</a><span class="page-number current">27</span><a class="page-number" href="/page/28/">28</a><span class="space">&hellip;</span><a class="page-number" href="/page/32/">32</a><a class="extend next" rel="next" href="/page/28/"><i class="fa fa-angle-right" aria-label="다음 페이지"></i></a>
+    <a class="extend prev" rel="prev" href="/page/26/"><i class="fa fa-angle-left" aria-label="이전 페이지"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/26/">26</a><span class="page-number current">27</span><a class="page-number" href="/page/28/">28</a><span class="space">&hellip;</span><a class="page-number" href="/page/33/">33</a><a class="extend next" rel="next" href="/page/28/"><i class="fa fa-angle-right" aria-label="다음 페이지"></i></a>
   </nav>
 
 
@@ -1170,9 +1246,7 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image"
-                src="/images/avatar.gif"
-                alt="NUNU"/>
+              <img class="site-author-image" itemprop="image" src="/images/avatar.gif" alt="NUNU">
             
               <p class="site-author-name" itemprop="name">NUNU</p>
               <div class="site-description motion-element" itemprop="description">개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.</div>
@@ -1185,7 +1259,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">95</span>
+                    <span class="site-state-item-count">97</span>
                     <span class="site-state-item-name">포스트</span>
                   </a>
                 </div>
@@ -1400,12 +1474,7 @@
       <!-- Adsense Sidebar -->
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- adsense_side -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-8226968057315512"
-     data-ad-slot="2956452829"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8226968057315512" data-ad-slot="2956452829" data-ad-format="auto" data-full-width-responsive="true"></ins>
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
