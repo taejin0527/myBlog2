@@ -11,10 +11,8 @@
 
 
 
-  
 
-
-<html class="theme-next mist use-motion" lang="ko">
+<html class="theme-next mist" lang="ko">
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -79,14 +77,14 @@
     root: '/',
     scheme: 'Mist',
     version: '7.2.0',
-    sidebar: {"position":"right","display":"post","offset":12,"onmobile":false},
+    sidebar: {"position":"right","display":"post","offset":12,"onmobile":true},
     back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
     copycode: {"enable":true,"show_result":true,"style":"flat"},
     fancybox: false,
     fastclick: false,
     lazyload: true,
     tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     algolia: {
       applicationID: '',
       apiKey: '',
@@ -314,6 +312,14 @@
 
       
       
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>검색</a>
+        </li>
+      
     </ul>
   
 
@@ -322,6 +328,27 @@
 
   
 
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="Searching..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
   
 </nav>
 
@@ -340,6 +367,448 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/sw-6242/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="NUNU">
+      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="AttackOnNunu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/[object Object]/sw-6242/" class="post-title-link" itemprop="url">(SW Expert Academy) 흐름과 제어 반복 - 6242번 6244번 6246번 6247번</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2019-07-28 23:19:24" itemprop="dateCreated datePublished" datetime="2019-07-28T23:19:24+09:00">2019-07-28</time>
+            </span>
+          
+
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/SW-아카데미/" itemprop="url" rel="index"><span itemprop="name">SW 아카데미</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">댓글: </span>
+                <a href="/[object Object]/sw-6242/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/sw-6242/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="6번-6242번"><a href="#6번-6242번" class="headerlink" title="6번 - 6242번"></a>6번 - 6242번</h1><div class="note ">
+            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
+          </div>
+
+<blockquote>
+<p>“”.format() 형식 말고 “” % () 형식도 익숙해져야겠다<br>“”.format() 으로 출력했을 때 KeyError “‘A’” 오류 발생</p>
+</blockquote>
+<div class="note success">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">student = [<span class="string">'A'</span>, <span class="string">'A'</span>, <span class="string">'A'</span>, <span class="string">'O'</span>, <span class="string">'B'</span>, <span class="string">'B'</span>, <span class="string">'O'</span>, <span class="string">'AB'</span>, <span class="string">'AB'</span>, <span class="string">'O'</span>]</span><br><span class="line">a, b, o, ab = <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> blood <span class="keyword">in</span> student:</span><br><span class="line">    <span class="keyword">if</span>(blood==<span class="string">'A'</span>):</span><br><span class="line">        a+=<span class="number">1</span></span><br><span class="line">    <span class="keyword">if</span>(blood==<span class="string">'B'</span>):</span><br><span class="line">        b+=<span class="number">1</span></span><br><span class="line">    <span class="keyword">if</span>(blood==<span class="string">'O'</span>):</span><br><span class="line">        o+=<span class="number">1</span></span><br><span class="line">    <span class="keyword">if</span>(blood==<span class="string">'AB'</span>):</span><br><span class="line">        ab+=<span class="number">1</span></span><br><span class="line"></span><br><span class="line">print(<span class="string">"&#123;'A': %d, 'O': %d, 'B': %d, 'AB': %d&#125;"</span> % (a, o, b, ab))</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+          </div>
+
+<hr>
+<h1 id="7번-6244번"><a href="#7번-6244번" class="headerlink" title="7번 - 6244번"></a>7번 - 6244번</h1><div class="note ">
+            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
+          </div>
+
+<blockquote>
+<p>list 내장함수… 앞선 강의 내용에 없었던 것 같은데</p>
+</blockquote>
+<div class="note success">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">score = [<span class="number">85</span>, <span class="number">65</span>, <span class="number">77</span>, <span class="number">83</span>, <span class="number">75</span>, <span class="number">22</span>, <span class="number">98</span>, <span class="number">88</span>, <span class="number">38</span>, <span class="number">100</span>]</span><br><span class="line"></span><br><span class="line">sum=<span class="number">0</span></span><br><span class="line"><span class="keyword">while</span>(score):</span><br><span class="line">    x = score.pop()</span><br><span class="line">    <span class="keyword">if</span>(x&gt;=<span class="number">80</span>):</span><br><span class="line">        sum += x</span><br><span class="line"></span><br><span class="line">print(sum)</span><br></pre></td></tr></table></figure>
+          </div>
+
+<hr>
+<h1 id="8번-6246번"><a href="#8번-6246번" class="headerlink" title="8번 - 6246번"></a>8번 - 6246번</h1><div class="note ">
+            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
+          </div>
+
+<blockquote>
+<p>난의도가 너무 들쭉날쭉인거 같다</p>
+</blockquote>
+<div class="note success">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">i=<span class="number">5</span></span><br><span class="line"><span class="keyword">while</span>(i):</span><br><span class="line">    print(<span class="string">"*"</span> * i)</span><br><span class="line">    i-=<span class="number">1</span></span><br></pre></td></tr></table></figure>
+          </div>
+
+<hr>
+<h1 id="9번-6247번"><a href="#9번-6247번" class="headerlink" title="9번 - 6247번"></a>9번 - 6247번</h1><div class="note ">
+            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
+          </div>
+
+<blockquote>
+<p>난의도가 너무 들쭉날쭉인거 같다</p>
+</blockquote>
+<div class="note success">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">i, a, b = <span class="number">4</span>, <span class="number">7</span>, <span class="number">0</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span>(i):</span><br><span class="line">    print(<span class="string">"&#123;&#125;&#123;&#125;&#123;&#125;"</span>.format(<span class="string">" "</span>*b, <span class="string">"*"</span>*a, <span class="string">" "</span>*b))</span><br><span class="line">    a-=<span class="number">2</span>; b+=<span class="number">1</span></span><br><span class="line">    i-=<span class="number">1</span></span><br></pre></td></tr></table></figure>
+          </div>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/sw-6230/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="NUNU">
+      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="AttackOnNunu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/[object Object]/sw-6230/" class="post-title-link" itemprop="url">(SW Expert Academy) 흐름과 제어 반복 - 6230번 6231번 6234번 6238번 6240번</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2019-07-28 23:06:26" itemprop="dateCreated datePublished" datetime="2019-07-28T23:06:26+09:00">2019-07-28</time>
+            </span>
+          
+
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/SW-아카데미/" itemprop="url" rel="index"><span itemprop="name">SW 아카데미</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">댓글: </span>
+                <a href="/[object Object]/sw-6230/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/sw-6230/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="1번-6230번"><a href="#1번-6230번" class="headerlink" title="1번 - 6230번"></a>1번 - 6230번</h1><div class="note ">
+            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
+          </div>
+
+<blockquote>
+<p>웹페이지에 입력값이 없어서 제대로 채점이 이루어지는 것 같지가 않다..<br>아마 이렇게 작성하면 되지 않을까?</p>
+</blockquote>
+<div class="note success">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">5</span>):</span><br><span class="line">    score = int(input())</span><br><span class="line">    <span class="keyword">if</span>(score&lt;<span class="number">60</span>):</span><br><span class="line">        print(<span class="string">"&#123;&#125;번 학생은 &#123;&#125;점으로 불합격입니다."</span>.format(i+<span class="number">1</span>, score))</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        print(<span class="string">"&#123;&#125;번 학생은 &#123;&#125;점으로 합격입니다."</span>.format(i+<span class="number">1</span>, score))</span><br></pre></td></tr></table></figure>
+          </div>
+
+<hr>
+<h1 id="2번-6231번"><a href="#2번-6231번" class="headerlink" title="2번 - 6231번"></a>2번 - 6231번</h1><div class="note ">
+            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
+          </div>
+
+<div class="note success">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, <span class="number">101</span>):</span><br><span class="line">    print(i)</span><br></pre></td></tr></table></figure>
+          </div>
+
+<hr>
+<h1 id="3번-6234번"><a href="#3번-6234번" class="headerlink" title="3번 - 6234번"></a>3번 - 6234번</h1><div class="note ">
+            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
+          </div>
+
+<blockquote>
+<p>이것도 입력값이 없지만… 채점은 됨?</p>
+</blockquote>
+<div class="note success">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, <span class="number">101</span>):</span><br><span class="line">    <span class="keyword">if</span>(i%<span class="number">2</span>==<span class="number">0</span>):</span><br><span class="line">        print(<span class="string">"&#123;&#125; "</span>.format(i), end=<span class="string">''</span>)</span><br></pre></td></tr></table></figure>
+          </div>
+
+<hr>
+<h1 id="4번-6238번"><a href="#4번-6238번" class="headerlink" title="4번 - 6238번"></a>4번 - 6238번</h1><div class="note ">
+            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
+          </div>
+
+<blockquote>
+<p>조건문 없이 2칸씩 뛰는 방식으로 홀수 출력</p>
+</blockquote>
+<div class="note success">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">ans=<span class="string">''</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, <span class="number">101</span>, <span class="number">2</span>):</span><br><span class="line">        ans += str(i) +<span class="string">", "</span></span><br><span class="line"></span><br><span class="line">print(ans[:<span class="number">-2</span>])</span><br></pre></td></tr></table></figure>
+          </div>
+
+<hr>
+<h1 id="5번-6240번"><a href="#5번-6240번" class="headerlink" title="5번 - 6240번"></a>5번 - 6240번</h1><div class="note ">
+            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
+          </div>
+
+<div class="note success">
+            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">sum=<span class="number">0</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, <span class="number">101</span>):</span><br><span class="line">    <span class="keyword">if</span>(i%<span class="number">3</span>==<span class="number">0</span>):</span><br><span class="line">        sum += i</span><br><span class="line"></span><br><span class="line">print(<span class="string">"1부터 100사이의 숫자 중 3의 배수의 총합: &#123;&#125;"</span>.format(sum))</span><br></pre></td></tr></table></figure>
+          </div>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
     
       
 
@@ -548,448 +1017,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/sw-6218/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="NUNU">
-      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="AttackOnNunu">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/[object Object]/sw-6218/" class="post-title-link" itemprop="url">(SW Expert Academy) 흐름과 제어 If - 6218번 6219번 6220번 6221번</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">작성일</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2019-07-28 20:52:23" itemprop="dateCreated datePublished" datetime="2019-07-28T20:52:23+09:00">2019-07-28</time>
-            </span>
-          
-
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/SW-아카데미/" itemprop="url" rel="index"><span itemprop="name">SW 아카데미</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">댓글: </span>
-                <a href="/[object Object]/sw-6218/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/sw-6218/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          <br>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="1번-6218번"><a href="#1번-6218번" class="headerlink" title="1번 - 6218번"></a>1번 - 6218번</h1><div class="note ">
-            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
-          </div>
-
-<blockquote>
-<p>반복문은 뒤에 나오는거 같은데… if문만으로 풀 수 있…나..?</p>
-</blockquote>
-<div class="note success">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = int(input())</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, a+<span class="number">1</span>):</span><br><span class="line">    <span class="keyword">if</span>(a%i==<span class="number">0</span>):</span><br><span class="line">        print(<span class="string">"&#123;&#125;(은)는 &#123;&#125;의 약수입니다."</span>.format(i, a))</span><br></pre></td></tr></table></figure>
-          </div>
-
-<hr>
-<h1 id="2번-6219번"><a href="#2번-6219번" class="headerlink" title="2번 - 6219번"></a>2번 - 6219번</h1><div class="note ">
-            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
-          </div>
-
-
-<div class="note success">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = int(input())</span><br><span class="line">cnt=<span class="number">0</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, a+<span class="number">1</span>):</span><br><span class="line">    <span class="keyword">if</span>(a%i==<span class="number">0</span>):</span><br><span class="line">        cnt+=<span class="number">1</span></span><br><span class="line">        print(<span class="string">"&#123;&#125;(은)는 &#123;&#125;의 약수입니다."</span>.format(i, a))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>(cnt==<span class="number">2</span>):</span><br><span class="line">    print(<span class="string">"&#123;&#125;(은)는 1과 &#123;&#125;로만 나눌 수 있는 소수입니다."</span>.format(a, a))</span><br></pre></td></tr></table></figure>
-          </div>
-
-<hr>
-<h1 id="3번-6220번"><a href="#3번-6220번" class="headerlink" title="3번 - 6220번"></a>3번 - 6220번</h1><div class="note ">
-            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
-          </div>
-
-<blockquote>
-<p>ASCII 코드를 활용</p>
-</blockquote>
-<div class="note success">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = input()</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>(ord(a)&gt;<span class="number">96</span>):</span><br><span class="line">    print(<span class="string">"&#123;&#125; 는 소문자 입니다."</span>.format(a))</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    print(<span class="string">"&#123;&#125; 는 대문자 입니다."</span>.format(a))</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-          </div>
-
-<hr>
-<h1 id="4번-6221번"><a href="#4번-6221번" class="headerlink" title="4번 - 6221번"></a>4번 - 6221번</h1><div class="note ">
-            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
-          </div>
-
-<blockquote>
-<p>입력을 랜덤으로 주는게 아닌데 굳이 list를 사용해야 하는가…?</p>
-</blockquote>
-<div class="note success">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">Man1 = input()</span><br><span class="line">Man2 = input()</span><br><span class="line"></span><br><span class="line">RSP = [<span class="string">"가위"</span>, <span class="string">"바위"</span>, <span class="string">"보"</span>]</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>(Man1 == Man2):</span><br><span class="line">    print(<span class="string">"Result : Draw"</span>)</span><br><span class="line"><span class="keyword">elif</span>((Man1==RSP[<span class="number">0</span>] <span class="keyword">and</span> Man2==RSP[<span class="number">1</span>]) <span class="keyword">or</span> (Man1==RSP[<span class="number">1</span>] <span class="keyword">and</span> Man2==RSP[<span class="number">2</span>]) <span class="keyword">or</span> (Man1==RSP[<span class="number">2</span>] <span class="keyword">and</span> Man2==RSP[<span class="number">0</span>])):</span><br><span class="line">    print(<span class="string">"Result : Man2 Win!"</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    print(<span class="string">"Result : Man1 Win!"</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 직접 입력하는게 아니라 랜덤으로 값을 주고 싶다면...</span></span><br><span class="line"><span class="comment"># from random import *</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># RSP = ["가위", "바위", "보"]</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># Man1 = RSP[randrange(3)]</span></span><br><span class="line"><span class="comment"># Man2 = RSP[randrange(3)]</span></span><br></pre></td></tr></table></figure>
-          </div>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
-          
-        
-      
-    </div>
-
-    
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/sw-6204/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="NUNU">
-      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="AttackOnNunu">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/[object Object]/sw-6204/" class="post-title-link" itemprop="url">(SW Expert Academy) 연산자 - 6204번 6206번 6207번 6209번 6216번</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">작성일</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2019-07-28 17:28:42" itemprop="dateCreated datePublished" datetime="2019-07-28T17:28:42+09:00">2019-07-28</time>
-            </span>
-          
-
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/SW-아카데미/" itemprop="url" rel="index"><span itemprop="name">SW 아카데미</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">댓글: </span>
-                <a href="/[object Object]/sw-6204/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/sw-6204/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          <br>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="1번-6204번"><a href="#1번-6204번" class="headerlink" title="1번 - 6204번"></a>1번 - 6204번</h1><div class="note ">
-            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
-          </div>
-
-<blockquote>
-<p>뒤에 2, 3, 4번 문제도 똑같지만, 출력할 때 ‘=&gt;’ 뒤에 띄여쓰기 2칸이다<br>이 미묘한 차이 때문에 몇 번이나 오답으로 처리됨…ㅠ</p>
-</blockquote>
-<div class="note success">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = float(input())</span><br><span class="line"></span><br><span class="line">print(<span class="string">"%(ch).2f inch =&gt;  %(cm).2f cm"</span> % &#123;<span class="string">"ch"</span>: a, <span class="string">"cm"</span>: a*<span class="number">2.54</span>&#125;)</span><br></pre></td></tr></table></figure>
-          </div>
-
-<hr>
-<h1 id="2번-6206번"><a href="#2번-6206번" class="headerlink" title="2번 - 6206번"></a>2번 - 6206번</h1><div class="note ">
-            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
-          </div>
-
-
-<div class="note success">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = float(input())</span><br><span class="line"></span><br><span class="line">print(<span class="string">"%(kg).2f kg =&gt;  %(lb).2f lb"</span> % &#123;<span class="string">"kg"</span>: a, <span class="string">"lb"</span>: <span class="number">2.2046</span>*a&#125;)</span><br></pre></td></tr></table></figure>
-          </div>
-
-<hr>
-<h1 id="3번-6207번"><a href="#3번-6207번" class="headerlink" title="3번 - 6207번"></a>3번 - 6207번</h1><div class="note ">
-            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
-          </div>
-
-<blockquote>
-<p>섭씨를 화로 바꾸기 위해서 32를 빼고 1.8을 곱하고 32를 더함</p>
-</blockquote>
-<div class="note success">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = float(input())</span><br><span class="line"></span><br><span class="line">print(<span class="string">"%(dc).2f ℃ =&gt;  %(fc).2f ℉"</span> % &#123;<span class="string">"dc"</span>: a, <span class="string">"fc"</span>: a/<span class="number">100</span>*<span class="number">180</span>+<span class="number">32</span>&#125;)</span><br></pre></td></tr></table></figure>
-          </div>
-
-<hr>
-<h1 id="4번-6209번"><a href="#4번-6209번" class="headerlink" title="4번 - 6209번"></a>4번 - 6209번</h1><div class="note ">
-            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
-          </div>
-
-<blockquote>
-<p>화씨를 섭씨로 바꾸기 위해서 32를 빼고 100/180을 곱함</p>
-</blockquote>
-<div class="note success">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = float(input())</span><br><span class="line"></span><br><span class="line">print(<span class="string">"%(fc).2f ℉ =&gt;  %(dc).2f ℃"</span> % &#123;<span class="string">"fc"</span>: a, <span class="string">"dc"</span>: (a<span class="number">-32</span>)*<span class="number">100</span>/<span class="number">180</span>&#125;)</span><br></pre></td></tr></table></figure>
-          </div>
-
-<hr>
-<h1 id="5번-6216번"><a href="#5번-6216번" class="headerlink" title="5번 - 6216번"></a>5번 - 6216번</h1><div class="note ">
-            <ul><li>시간 : 1개 테스트케이스를 합쳐서 Python의 경우 1초</li><li>메모리 : 힙, 정적 메모리 합쳐서 256MB 이내, 스택 메모리 1MB 이내</li></ul>
-          </div>
-
-
-<div class="note success">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(<span class="string">"혼합된 소금물의 농도: &#123;0:.2f&#125;%"</span>.format(<span class="number">20</span>/<span class="number">3</span>))</span><br></pre></td></tr></table></figure>
-          </div>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
-          
-        
-      
-    </div>
-
-    
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1038,7 +1065,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">97</span>
+                    <span class="site-state-item-count">99</span>
                     <span class="site-state-item-name">포스트</span>
                   </a>
                 </div>
@@ -1091,7 +1118,13 @@
                     
                       
                     
-                    <span class="site-state-item-count">15</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">18</span>
                     <span class="site-state-item-name">카테고리</span>
                   </a>
                 </div>
@@ -1216,7 +1249,17 @@
                     
                       
                     
-                    <span class="site-state-item-count">50</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">55</span>
                     <span class="site-state-item-name">태그</span>
                   </a>
                 </div>
@@ -1340,9 +1383,6 @@
 
 
 
-  
-  
-
 
 
 
@@ -1361,18 +1401,10 @@
   
   <script src="/lib/lazyload/lozad.min.js?v=1.10.0"></script>
 
-  
-  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
 
 
 
   <script src="/js/utils.js?v=7.2.0"></script>
-
-  <script src="/js/motion.js?v=7.2.0"></script>
 
 
 
@@ -1419,6 +1451,326 @@
 
 
   
+  <script>
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url).replace(/\/{2,}/g, '/');
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x"></i></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x"></i></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
 
 
 

@@ -11,10 +11,8 @@
 
 
 
-  
 
-
-<html class="theme-next mist use-motion" lang="ko">
+<html class="theme-next mist" lang="ko">
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -79,14 +77,14 @@
     root: '/',
     scheme: 'Mist',
     version: '7.2.0',
-    sidebar: {"position":"right","display":"post","offset":12,"onmobile":false},
+    sidebar: {"position":"right","display":"post","offset":12,"onmobile":true},
     back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
     copycode: {"enable":true,"show_result":true,"style":"flat"},
     fancybox: false,
     fastclick: false,
     lazyload: true,
     tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     algolia: {
       applicationID: '',
       apiKey: '',
@@ -314,6 +312,14 @@
 
       
       
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>검색</a>
+        </li>
+      
     </ul>
   
 
@@ -322,6 +328,27 @@
 
   
 
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="Searching..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
   
 </nav>
 
@@ -340,6 +367,451 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/hexo-backup/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="NUNU">
+      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="AttackOnNunu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/[object Object]/hexo-backup/" class="post-title-link" itemprop="url">(Hexo_NexT_Theme) 블로그 백업</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2020-02-14 17:59:51" itemprop="dateCreated datePublished" datetime="2020-02-14T17:59:51+09:00">2020-02-14</time>
+            </span>
+          
+
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/BLOG/" itemprop="url" rel="index"><span itemprop="name">BLOG</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/BLOG/HEXO-NEXT-THEME/" itemprop="url" rel="index"><span itemprop="name">HEXO-NEXT-THEME</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">댓글: </span>
+                <a href="/[object Object]/hexo-backup/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/hexo-backup/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <div class="note info">
+            <p>Github에 모든 파일을 다 올렸다고 생각했는데,<br>막상 <code>git clone</code> 을 해보니 테마 파일이 빠져있음을 알게 되었다.</p>
+          </div>
+
+<hr>
+<h1 id="사라진-hexo-theme-NexT"><a href="#사라진-hexo-theme-NexT" class="headerlink" title="사라진 hexo-theme-NexT"></a>사라진 hexo-theme-NexT</h1><p>연습삼아 모든 파일을 지우고 깃허브에 업로드한 데이터를 다운받고 실행시키는데 문제가 발생했다.</p>
+<p>hexo 자체의 문제는 없고 특정 태그를 인식 못하는 것을 보고 테마 설정에 문제 있는 것을 인지하였다.</p>
+<p><code>git clone</code> 을 통해 다운받은 폴더를 살펴보니 <code>hexo-theme-NexT</code> 폴더 안 내용이 비어있음을 발견했다.</p>
+<p>분명 <code>.gitignore</code> 파일에는 아무것도 작성하지 않고 모든 파일 및 디렉토리가 깃에 업로드 되도록 설정한 것 같은데,<br><code>themes</code> 폴더 안의 <code>hexo-theme-NexT</code> 내용이 제대로 업로드 되지 않음을 이번에 알게 되었다.</p>
+<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" class="full-image" data-src="/img/200214_github.png"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
+
+
+<h1 id="임기응변으로-해결"><a href="#임기응변으로-해결" class="headerlink" title="임기응변으로 해결"></a>임기응변으로 해결</h1><p>그래서 다시 <code>git clone https://github.com/theme-next/hexo-theme-next.git</code> 을 통해 테마를 다운 받아 넣었는데,<br>원본에서 조금 커스터마이즈했던 설정들 때문에 정상적으로 작동이 되지 않았다.</p>
+<p><code>_config.yml</code> 파일의 내용을 하나하나 수정할 수 밖에 없는 것 같아서<br>혹시나 하고 백업 파일로 남겨둔 기존 데이터를 그냥 덮어씌우는 방식으로 문제를 해결했다.</p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/PY-is-operator/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="NUNU">
+      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="AttackOnNunu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/[object Object]/PY-is-operator/" class="post-title-link" itemprop="url">(PYTHON) is 와 == 의 차이?</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2020-01-31 15:02:07" itemprop="dateCreated datePublished" datetime="2020-01-31T15:02:07+09:00">2020-01-31</time>
+            </span>
+          
+
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/" itemprop="url" rel="index"><span itemprop="name">LANGUAGE</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/" itemprop="url" rel="index"><span itemprop="name">PYTHON</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/TERMINOLOGY/" itemprop="url" rel="index"><span itemprop="name">TERMINOLOGY</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">댓글: </span>
+                <a href="/[object Object]/PY-is-operator/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/PY-is-operator/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
+<li>Is there a difference between “==” and “is”? - <span class="exturl" data-url="aHR0cHM6Ly9zdGFja292ZXJmbG93LmNvbS9xdWVzdGlvbnMvMTMyOTg4L2lzLXRoZXJlLWEtZGlmZmVyZW5jZS1iZXR3ZWVuLWFuZC1pcw==" title="https://stackoverflow.com/questions/132988/is-there-a-difference-between-and-is">stackoverflow.com<i class="fa fa-external-link"></i></span></li>
+<li>The difference between ‘is’ and ‘==’ in Python - <span class="exturl" data-url="aHR0cHM6Ly9kYmFkZXIub3JnL2Jsb2cvZGlmZmVyZW5jZS1iZXR3ZWVuLWlzLWFuZC1lcXVhbHMtaW4tcHl0aG9u" title="https://dbader.org/blog/difference-between-is-and-equals-in-python">dbader.org<i class="fa fa-external-link"></i></span></li>
+<li>Python Operators - <span class="exturl" data-url="aHR0cHM6Ly93d3cucHJvZ3JhbWl6LmNvbS9weXRob24tcHJvZ3JhbW1pbmcvb3BlcmF0b3Jz" title="https://www.programiz.com/python-programming/operators">programiz.com<i class="fa fa-external-link"></i></span></li>
+<li>페이스ID vs 일란성쌍둥이 - <span class="exturl" data-url="aHR0cHM6Ly93d3cuc2lzYWpvdXJuYWwuY29tL25ld3MvYXJ0aWNsZVZpZXcuaHRtbD9pZHhubz0xNzE5OTE=" title="https://www.sisajournal.com/news/articleView.html?idxno=171991">sisajournal.com<i class="fa fa-external-link"></i></span></li>
+</ul>
+<blockquote>
+<p>개인적인 생각과 상상으로 작성한 내용들이 포함되어 있습니다</p>
+</blockquote>
+<hr>
+<br>
+
+<div class="note info">
+            <p>이메일로 받아보는 [🐍PyTricks]에서 <code>is</code> 와 <code>==</code> 의 차이점에 대한 내용이 있길래 정리했습니다<br>아래 코드의 출력값이 본인의 예상과 다르거나 혹은 이해가 안 된다면 이번 기회에 확실히 짚고 넘어갑시다<br>  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>b = a</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a <span class="keyword">is</span> b</span><br><span class="line"><span class="literal">True</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a == b</span><br><span class="line"><span class="literal">True</span>  </span><br></pre></td></tr></table></figure></p><p>  “is” vs “==” (위 아래의 차이점을 아시겠나요?)</p>  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># a = [1, 2, 3]</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>c = list(a)</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a <span class="keyword">is</span> c</span><br><span class="line"><span class="literal">False</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a == c</span><br><span class="line"><span class="literal">True</span>  </span><br></pre></td></tr></table></figure>
+          </div>
+
+<br>
+
+<h1 id="Operators-in-Python"><a href="#Operators-in-Python" class="headerlink" title="Operators in Python"></a>Operators in Python</h1><blockquote>
+<p>둘의 차이점을 알아보기 전에 Python의 연산자들에는 어떤 것들이 있는지 큰 틀만 알아보겠습니다<br>자세한 내용은 다음에 기회가 있으면 정리하겠습니다</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>x + y</span><br><span class="line"><span class="number">9</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>여기서 <code>x</code>와 <code>y</code>는 <strong>피연산자(operand)</strong> 라고 부르고 그 사이 <code>+</code>가 <strong>연산자(operator)</strong> 가 됩니다<br>위 예제의 덧셈 연산자 외에도 파이썬에는 다양한 연산자들이 존재합니다</li>
+</ul>
+<div class="note primary">
+            <h2 id="Python-Operators"><a href="#Python-Operators" class="headerlink" title="Python Operators"></a>Python Operators</h2><ul><li><strong>Arithmetic operators</strong><ul><li><code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>%</code>, <code>//</code>, <code>**</code>  </li></ul></li><li><strong style="color:blue">Comparison operators</strong><ul><li><code>&gt;</code>, <code>&lt;</code>, <code>==</code>, <code>!=</code>, <code>&gt;=</code>, <code>&lt;=</code></li></ul></li><li><strong>Logical(Boolean) operators</strong><ul><li><code>and</code>, <code>or</code>, <code>not</code></li></ul></li><li><strong>Bitwise operators</strong><ul><li><code>&amp;</code>, <code>|</code>, <code>~</code>, <code>^</code>, <code>&gt;&gt;</code>, <code>&lt;&lt;</code></li></ul></li><li><strong>Assignment operators</strong><ul><li><code>=</code>, <code>+=</code>, <code>-=</code>, <code>*=</code>, <code>/=</code>, <code>%=</code>, <code>//=</code>, <code>**=</code>, <code>&amp;=</code>, <code>|=</code>, <code>^=</code>, <code>&gt;&gt;=</code>, <code>&lt;&lt;=</code></li></ul></li><li><strong>Special operators</strong> (Python에서 제공하는 특별한 연산자들)<ul><li><strong style="color:blue">Identity operators</strong><ul><li><code>is</code>, <code>is not</code></li></ul></li><li><strong>Membership operators</strong><ul><li><code>in</code>, <code>not in</code></li></ul></li></ul></li></ul>
+          </div>
+
+<br>
+
+<h1 id="Equality-Comparison-Operators"><a href="#Equality-Comparison-Operators" class="headerlink" title="Equality Comparison Operators"></a>Equality Comparison Operators</h1><p>Python에서는 같음을 비교(equality comparison)할 때 <code>==</code>와 <code>is</code> 2가지 연산자(operator)를 사용할 수 있습니다<br>결론부터 이야기하면 두 연사자의 차이점은 <strong>Equality</strong> 와 <strong>Identity</strong> 의 비교라는 것 입니다</p>
+<p>요즘 최신 스마트폰은 대부분 ‘페이스ID’ 기능을 제공하고 있습니다.<br>이전의 ‘터치ID’의 인식 오류 확률인 1/50000 보다 20배 성능이 뛰어난 1/1000000의 확률로 훨씬 보안이 뛰어나다고 알려져 있습니다<br>하지만 정말 똑같이 생긴 일란성 쌍둥이가 있을 때 페이스ID의 보안은 쉽게 뚫리지 않을까 하는 의구심이 들지 않나요?</p>
+<p>쉽게 생각해서 페이스ID의 원리는 스마트폰에 등록된 얼굴 데이터와 카메라, 적외선 센서 등으로 입력되는 데이터를 비교하는 것 입니다<br>일란성 쌍둥이가 너무 똑같이 생겨서 입력되는 데이터 값이 거의 똑같다면 이론상 페이스ID로 서로의 스마트폰 잠금을 해제할 수 있을 것 입니다<br>이처럼 두 데이터가 같은 값(value)을 가지는지 비교하는 것을 <strong>Equality comparison</strong> 이라고 합니다</p>
+<p>하지만 아무리 일란성 쌍둥이라고 해도 두 사람은 엄밀히 다른 사람입니다<br>간단하게는 주민등록 번호 등으로 구분할 수 있고, 한쪽만 가지고 있는 점이나 흉터 등과 같은 차별적인 특징으로도 구분할 수 있을 것 입니다<br>각 사람마다의 고유성(Identity)을 구분하는 것을 <strong>Identity comparison</strong> 이라고 합니다</p>
+<p>파이썬에서 두 피연산자들의 데이터 혹은 값이 같은지를 비교하고 싶을 때, <code>==</code> 연산자를 사용하고<br>고유값(파이썬에서는 객체마다 고유한 상수 ‘id’값을 가집니다)을 비교하고 싶을 때, <code>is</code> 연산자를 사용합니다</p>
+<h2 id="동등성-Equality"><a href="#동등성-Equality" class="headerlink" title="동등성 Equality =="></a>동등성 Equality <code>==</code></h2><ul>
+<li>피연산자들의 <strong>데이터/값(value)</strong> 이 같은지를 비교합니다</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>b = a</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a <span class="keyword">is</span> b</span><br><span class="line"><span class="literal">True</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a == b</span><br><span class="line"><span class="literal">True</span>  </span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="동일성-Identity-is"><a href="#동일성-Identity-is" class="headerlink" title="동일성 Identity is"></a>동일성 Identity <code>is</code></h2><ul>
+<li>피연산자들의 <strong>주소/고유한 상수(ID)</strong> 가 같은지 비교합니다</li>
+</ul>
+<blockquote>
+<p><code>id()</code> 의 반환값이 실제 메모리상의 주소는 아닙니다<br>하지만 해당 객체를 가리키는 유일한 상수입니다</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># a = [1, 2, 3]</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>c = list(a)</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a <span class="keyword">is</span> c</span><br><span class="line"><span class="literal">False</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a == c</span><br><span class="line"><span class="literal">True</span>  </span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>is</code> 연산자는 객체(object)의 id값을 <code>==</code> 연산자로 확인하는 것이라고 생각하시면 됩니다</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a <span class="keyword">is</span> c</span><br><span class="line"><span class="literal">False</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>id(a) == id(c)</span><br><span class="line"><span class="literal">False</span>  </span><br></pre></td></tr></table></figure>
+
+<br>
+
+<h1 id="결론"><a href="#결론" class="headerlink" title="결론"></a>결론</h1><p><code>is</code> 연산자는 다음 2가지 상황에서만 사용하는 것을 권장</p>
+<ul>
+<li>피연산자들이 <strong>같은 객체</strong> 인지 확인할 때</li>
+<li>객체가 <code>True</code>, <code>False</code>, <code>None</code> 와 같은 파이썬 상수와 비교할 때</li>
+</ul>
+<hr>
+<hr>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
     
       
 
@@ -578,484 +1050,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/PY-input/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="NUNU">
-      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="AttackOnNunu">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/[object Object]/PY-input/" class="post-title-link" itemprop="url">(PYTHON) input() & raw_input()</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">작성일</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2020-01-23 17:46:15" itemprop="dateCreated datePublished" datetime="2020-01-23T17:46:15+09:00">2020-01-23</time>
-            </span>
-          
-
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/" itemprop="url" rel="index"><span itemprop="name">LANGUAGE</span></a></span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/" itemprop="url" rel="index"><span itemprop="name">PYTHON</span></a></span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/TERMINOLOGY/" itemprop="url" rel="index"><span itemprop="name">TERMINOLOGY</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">댓글: </span>
-                <a href="/[object Object]/PY-input/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/PY-input/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          <br>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
-<li>PEP 3111 - <span class="exturl" data-url="aHR0cHM6Ly9kb2NzLnB5dGhvbi5vcmcvMy93aGF0c25ldy8zLjAuaHRtbCNidWlsdGlucw==" title="https://docs.python.org/3/whatsnew/3.0.html#builtins">Python 3.8.1 Documentation<i class="fa fa-external-link"></i></span></li>
-<li>Python2 지원 종료 - <span class="exturl" data-url="aHR0cHM6Ly93d3cucHl0aG9uLm9yZy9kb2Mvc3Vuc2V0LXB5dGhvbi0yLw==" title="https://www.python.org/doc/sunset-python-2/">Sunsetting Python 2<i class="fa fa-external-link"></i></span></li>
-<li>파이썬 input - <span class="exturl" data-url="aHR0cHM6Ly9tLmJsb2cubmF2ZXIuY29tL1Bvc3RWaWV3Lm5obj9ibG9nSWQ9a3NnOTcwMzEmbG9nTm89MjIxMTI0NTE4Nzc1JnByb3h5UmVmZXJlcj1odHRwcyUzQSUyRiUyRnd3dy5nb29nbGUuY29tJTJG" title="https://m.blog.naver.com/PostView.nhn?blogId=ksg97031&logNo=221124518775&proxyReferer=https%3A%2F%2Fwww.google.com%2F">ksg97031님의 블로그<i class="fa fa-external-link"></i></span></li>
-</ul>
-<blockquote>
-<p>개인적인 생각과 상상으로 작성한 내용들이 포함되어 있습니다<br>PEP = Python Enhancement Proposals</p>
-</blockquote>
-<hr>
-<br>
-
-<p>다른 사람들의 코드를 읽다보면 <code>raw_input()</code> 함수를 사용하는 것을 생각보다 자주 볼 수 있다<br><code>input()</code> 함수와 <code>raw_input()</code> 함수의 차이는 무엇일까?</p>
-<h1 id="Python-2-3"><a href="#Python-2-3" class="headerlink" title="Python 2? 3?"></a>Python 2? 3?</h1><p>Python은 2.x 버전과 3.x 버전이 있고 서로 사소한 부분들에 있어 조금씩 차이가 나기 때문에 초보자 입장에서는 자꾸 헤매게된다</p>
-<p>2가지 버전이 같이 사용되었던 이유는,<br>2000년도에 Python 2.0을 공개하였고 성능 향상을 위한 지속적인 개선 과정 중 근본적인 변화가 필요하다고 느껴서 2006년 Python 3.0을 공개하게 되었다<br>하지만 언제나 새로운 것을 적용하는 것은 쉬운 일이 아니다<br>Python 2에서 3으로 업그레이드 해달라는 파이썬 재단의 수 많은 요청에도 기존 2버전에 익숙한 사용자들은 응하지 않았다<br>그래서 어쩔 수 없이 2가지 버전을 모두 지원하고 있었던 것이다<br>실제로 2008년, 공식적으로 2015년에 지원을 중단하겠다고 발표를 했었지만 많은 곳에서 업그레이드를 하지 않아 2014년, 지원 중단일을 2020년으로 미루기로 결정한 것이다</p>
-<p>(이제는 시계가 멈추었지만) <span class="exturl" data-url="aHR0cHM6Ly9weXRob25jbG9jay5vcmcv" title="https://pythonclock.org/">Python 2.7 will retire in…<i class="fa fa-external-link"></i></span><br>여기서 남은 시간을 볼 수 있었다</p>
-<blockquote>
-<p>이제 마음 편히 Python 3만 배우고 익히면 된다</p>
-</blockquote>
-<h1 id="Python-2의-입력-함수"><a href="#Python-2의-입력-함수" class="headerlink" title="Python 2의 입력 함수"></a>Python 2의 입력 함수</h1><ul>
-<li><code>input()</code><br>입력된 값의 형식에 맞게 <strong>자동으로 타입을 변환</strong> 시킨다<br>(문자열 값은 “”, ‘’을 붙여야 한다. 없으면 문자로 인식 못함)</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">obj = input(<span class="string">'입력해주세요: '</span>)</span><br><span class="line">print(type(obj))</span><br><span class="line">print(obj)</span><br><span class="line"></span><br><span class="line"><span class="comment"># output</span></span><br><span class="line"><span class="comment"># 입력해주세요: 'hi hi'</span></span><br><span class="line"><span class="comment"># &lt;type 'str'&gt;</span></span><br><span class="line"><span class="comment"># hi hi</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># 입력해주세요: hi hi</span></span><br><span class="line"><span class="comment"># SyntaxError: Unexpected EOF while parsing</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># 입력해주세요: 2010</span></span><br><span class="line"><span class="comment"># &lt;type 'int'&gt;</span></span><br><span class="line"><span class="comment"># 2010</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># 입력해주세요: 20.10</span></span><br><span class="line"><span class="comment"># &lt;type 'float'&gt;</span></span><br><span class="line"><span class="comment"># 20.10</span></span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><code>raw_input()</code><br>모든 입력 값을 문자열 타입으로 받는다</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">obj = raw_input(<span class="string">'입력해주세요: '</span>)</span><br><span class="line">print(type(obj))</span><br><span class="line">print(obj)</span><br><span class="line"></span><br><span class="line"><span class="comment"># output</span></span><br><span class="line"><span class="comment"># 입력해주세요: 'hi hi'</span></span><br><span class="line"><span class="comment"># &lt;type 'str'&gt;</span></span><br><span class="line"><span class="comment"># hi hi</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># 입력해주세요: 2010</span></span><br><span class="line"><span class="comment"># &lt;type 'str'&gt;</span></span><br><span class="line"><span class="comment"># 2010</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># 입력해주세요: 20.10</span></span><br><span class="line"><span class="comment"># &lt;type 'str'&gt;</span></span><br><span class="line"><span class="comment"># 20.10</span></span><br></pre></td></tr></table></figure>
-
-
-<h1 id="Python-3의-입력-함수"><a href="#Python-3의-입력-함수" class="headerlink" title="Python 3의 입력 함수"></a>Python 3의 입력 함수</h1><div class="note info">
-            <p><strong>결론부터 이야기 하자면 Python3에서는 input() 함수만 존재한다</strong><br>input() 함수는 모든 입력을 문자열 타입으로 받는다</p>
-          </div>
-
-<p>Python 2에서 3으로 바뀌면서 입력 함수에 변화가 있었다<br>Python 2에서는 input() 함수와 raw_input() 함수 2가지가 존재했다</p>
-<p>하지만 Python 3의 공식 문서를 살펴보면 <strong>PEP 3111</strong> 에 명시되어 있듯이<br>Python 2의 raw_input() 함수의 이름이 input() 으로 바뀐 것이다</p>
-<p><strong style="font-size:20px">없어진게 아니라 이름이 바뀐 것이다.<br> 즉, python 3의 input은 python 2의 raw_input 과 같은 기능을 한다</strong></p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
-          
-        
-      
-    </div>
-
-    
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/PY-day5/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="NUNU">
-      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="AttackOnNunu">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/[object Object]/PY-day5/" class="post-title-link" itemprop="url">(PYTHON) Day - 5 Strings(1)</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">작성일</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2020-01-23 17:08:56" itemprop="dateCreated datePublished" datetime="2020-01-23T17:08:56+09:00">2020-01-23</time>
-            </span>
-          
-
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/" itemprop="url" rel="index"><span itemprop="name">LANGUAGE</span></a></span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/" itemprop="url" rel="index"><span itemprop="name">PYTHON</span></a></span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/HACKERRANK/" itemprop="url" rel="index"><span itemprop="name">HACKERRANK</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">댓글: </span>
-                <a href="/[object Object]/PY-day5/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/PY-day5/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          <br>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
-<li>문제 출처 - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vZGFzaGJvYXJk" title="https://www.hackerrank.com/dashboard">HackerRank<i class="fa fa-external-link"></i></span></li>
-<li>파이썬 연습 - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vZG9tYWlucy9weXRob24/ZmlsdGVycyU1QnN0YXR1cyU1RCU1QiU1RD11bnNvbHZlZCZiYWRnZV90eXBlPXB5dGhvbg==" title="https://www.hackerrank.com/domains/python?filters%5Bstatus%5D%5B%5D=unsolved&badge_type=python">Practice - Python<i class="fa fa-external-link"></i></span></li>
-</ul>
-<p>개인적인 생각과 상상으로 작성한 내용들이 포함되어 있습니다<br>문제를 풀고 <span class="label success"> Discussion Tab</span>을 참고하며 코드 스타일을 개선하려고 노력하고자 합니다</p>
-<hr>
-<br>
-
-<h1 id="HackerRank"><a href="#HackerRank" class="headerlink" title="HackerRank"></a>HackerRank</h1><blockquote>
-<p>Numpy 패키지와 관련된 내용은 수학적 내용들과 함께 다루기 위해 나중에 다시 정리하기로 했다.</p>
-</blockquote>
-<p>HackerRank의 Python 연습문제들은 아래와 같은 카테고리로 분류 된다:</p>
-<div class="note default">
-            <h2 id="Subdomain"><a href="#Subdomain" class="headerlink" title="Subdomain"></a>Subdomain</h2><ul><li><del>Introduction</del></li><li><del>Basic Data Types</del></li><li><strong style="color:blue">Strings</strong></li><li>Sets</li><li>Math</li><li>Itertools</li><li>Collections</li><li>Date and Time</li><li>Errors and Exceptions</li><li>Classes</li><li>Built-Ins</li><li>Python Functionals</li><li>Regex and Parsing</li><li>XML</li><li>Closures and Decorators</li><li>Numpy</li><li>Debugging</li></ul>
-          </div>
-
-<hr>
-<br>
-
-<h1 id="Strings"><a href="#Strings" class="headerlink" title="Strings"></a>Strings</h1><div class="note primary">
-            <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><ul><li><a href="#sWAP-cASE">sWAP cASE</a></li><li><a href="#String-Split-and-Join">String Split and Join</a></li><li><a href="#What's-Your-Name">What’s Your Name?</a>  </li></ul>
-          </div>
-
-<h2 id="기본-개념"><a href="#기본-개념" class="headerlink" title="기본 개념"></a>기본 개념</h2><h3 id="sWAP-cASE"><a href="#sWAP-cASE" class="headerlink" title="sWAP cASE"></a>sWAP cASE</h3><div class="note info">
-            <p>대문자는 소문자로, 소문자는 대문자로 바꾸는 문제</p>
-          </div>
-
-<div class="tabs" id="example1"><ul class="nav-tabs"><li class="tab active"><a href="#example1-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example1-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane active" id="example1-1"><p>HackerRank.com presents “Pythonist 2”.</p></div><div class="tab-pane" id="example1-2"><p>hACKERrANK.COM PRESENTS “pYTHONIST 2”.</p></div></div></div>
-
-<div class="note no-icon">
-            <p>반사적으로 떠오르는 풀이 방법, 문자열의 문자 하나하나를 반복문을 통해 확인하며 대소문자를 바꿈<br><span class="label danger"> 하지만 이는 굉장히 비효율적인 방법이다</span><br>String 타입은 immutable하기 때문에, 반복문을 지나면서 기존의 ans 변수가 수정되는 것이 아니라<br>새로운 String 객체를 만들어서 ans 변수에 선언되는 것이다</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">swap_case</span><span class="params">(s)</span>:</span></span><br><span class="line">  ans = <span class="string">""</span></span><br><span class="line">  <span class="keyword">for</span> letter <span class="keyword">in</span> s:</span><br><span class="line">      <span class="keyword">if</span> letter.isupper() <span class="keyword">is</span> <span class="literal">True</span>:</span><br><span class="line">          ans += letter.lower()</span><br><span class="line">      <span class="keyword">else</span>:</span><br><span class="line">          ans += letter.upper()</span><br><span class="line">  <span class="keyword">return</span> ans</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">  s = input()</span><br><span class="line">  result = swap_case(s)</span><br><span class="line">  print(result) </span><br></pre></td></tr></table></figure>
-          </div>
-
-<div class="note success">
-            <p>list comprehension을 사용한 방법과,<br>내장함수 <code>swapcase()</code> 를 사용하는 방법도 있다</p><p>각 수행시간을 측정해보면, list를 사용한 것이 가장 빠른 것을 알 수 있다</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">  <span class="keyword">import</span> time</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">swap_case_1</span><span class="params">(s)</span>:</span></span><br><span class="line">    ans = <span class="string">""</span></span><br><span class="line">    <span class="keyword">for</span> letter <span class="keyword">in</span> s:</span><br><span class="line">        <span class="keyword">if</span> letter.isupper() <span class="keyword">is</span> <span class="literal">True</span>:</span><br><span class="line">            ans += letter.lower()</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            ans += letter.upper()</span><br><span class="line">    <span class="keyword">return</span> ans</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">swap_case_2</span><span class="params">(s)</span>:</span></span><br><span class="line">    ans = [i.lower() <span class="keyword">if</span> i.isupper() <span class="keyword">else</span> i.upper() <span class="keyword">for</span> i <span class="keyword">in</span> s]</span><br><span class="line">    <span class="keyword">return</span> <span class="string">''</span>.join(ans)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">swap_case_3</span><span class="params">(s)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> s.swapcase()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    s = input()</span><br><span class="line"></span><br><span class="line">    start_1 = time.time()</span><br><span class="line">    result_1 = swap_case_1(s)</span><br><span class="line">    end_1 = time.time()</span><br><span class="line"></span><br><span class="line">    start_2 = time.time()</span><br><span class="line">    result_2 = swap_case_1(s)</span><br><span class="line">    end_2 = time.time()</span><br><span class="line"></span><br><span class="line">    start_3 = time.time()</span><br><span class="line">    result_3 = swap_case_1(s)</span><br><span class="line">    end_3 = time.time()</span><br><span class="line"></span><br><span class="line">    print(<span class="string">'result_1: '</span>, end_1 - start_1)  <span class="comment"># 5.4836273193359375e-05</span></span><br><span class="line">    print(<span class="string">'result_2: '</span>, end_2 - start_2)  <span class="comment"># 2.574920654296875e-05</span></span><br><span class="line">    print(<span class="string">'result_3: '</span>, end_3 - start_3)  <span class="comment"># 4.9114227294921875e-05  </span></span><br></pre></td></tr></table></figure>
-          </div>
-
-<hr>
-<h3 id="String-Split-and-Join"><a href="#String-Split-and-Join" class="headerlink" title="String Split and Join"></a>String Split and Join</h3><div class="note info">
-            <p>입력되는 문자열의 띄어쓰기 부분을 <code>-</code> 문자로 대체하는 문제<br><code>split()</code> 과 <code>join()</code> 함수를 사용하는 간단한 문제</p>
-          </div>
-
-<div class="tabs" id="example2"><ul class="nav-tabs"><li class="tab active"><a href="#example2-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example2-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane active" id="example2-1"><p>this is a string   </p></div><div class="tab-pane" id="example2-2"><p>this-is-a-string</p></div></div></div>
-
-<div class="note no-icon">
-            <p><code>split()</code> 함수는 파라미터 값 주어진 구분자(delimiter)로 문자열을 잘라 <span class="label danger"> list 타입</span> 으로 반환한다<br>(default값은 ‘ ‘ 공백이다)<br><code>join()</code> 함수는 문자열을 붙여주는데, 문자 사이 특정한 구분자를 넣고 싶으면 함수 앞에 (<code>&#39;&#39;.join()</code> 여기서 ‘’ 부분) 넣어주면 된다</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">split_and_join</span><span class="params">(line)</span>:</span></span><br><span class="line">  letters = line.split()</span><br><span class="line">  <span class="keyword">return</span> <span class="string">'-'</span>.join(letters)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">  line = input()</span><br><span class="line">  result = split_and_join(line)</span><br><span class="line">  print(result) </span><br></pre></td></tr></table></figure>
-          </div>
-
-<div class="note success">
-            <p><code>join()</code> 함수를 사용하지 않아도,<br><code>print()</code> 함수 안에서 unpacking을 통해 문자열을 합칠 수 있다<br>(<code>join()</code> 함수를 사용하지 않는 것이 실행속도가 더 빠른 것을 볼 수 있다)</p><blockquote><p>letters = [‘a’, ‘b’, ‘c’, ‘d’] 가 있을 때,<br>print(*letters) 를 하면<br>print(‘a’, ‘b’, ‘c’, ‘d’) 로 해석되기 때문에<br>a b c d 로 출력된다</p></blockquote><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">split_and_join</span><span class="params">(line)</span>:</span></span><br><span class="line">    letters = line.split()</span><br><span class="line">    <span class="keyword">return</span> <span class="string">'-'</span>.join(letters)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    line = input()</span><br><span class="line">    start_1 = time.time()</span><br><span class="line">    print(split_and_join(line))</span><br><span class="line">    end_1 = time.time()</span><br><span class="line"></span><br><span class="line">    start_2 = time.time()</span><br><span class="line">    print(*line.split(), sep=<span class="string">'-'</span>)</span><br><span class="line">    end_2 = time.time()</span><br><span class="line"></span><br><span class="line">    print(<span class="string">'result_1: '</span>, end_1 - start_1) <span class="comment"># 7.891654968261719e-05</span></span><br><span class="line">    print(<span class="string">'result_2: '</span>, end_2 - start_2) <span class="comment"># 5.412101745605469e-05 </span></span><br></pre></td></tr></table></figure>
-          </div>
-
-<p>**</p>
-<hr>
-<h3 id="What’s-Your-Name"><a href="#What’s-Your-Name" class="headerlink" title="What’s Your Name"></a>What’s Your Name</h3><div class="note info">
-            <p>이름(first name, last name)을 입력받고 아래 문장에 넣어서 출력하는 문제<br>Hello <code>firstname</code> <code>lastname</code>! You just delved into python.</p>
-          </div>
-
-<div class="tabs" id="example3"><ul class="nav-tabs"><li class="tab active"><a href="#example3-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example3-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane active" id="example3-1"><p>Ross<br>Taylor   </p></div><div class="tab-pane" id="example3-2"><p>Hello Ross Taylor! You just delved into python.</p></div></div></div>
-
-<div class="note success">
-            <p><code>format()</code> 함수를 사용하는 간단한 문제</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">print_full_name</span><span class="params">(a, b)</span>:</span></span><br><span class="line">  print(<span class="string">'Hello &#123;&#125; &#123;&#125;! You just delved into python.'</span>.format(a, b))</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">  first_name = input()</span><br><span class="line">  last_name = input()</span><br><span class="line">  print_full_name(first_name, last_name) </span><br></pre></td></tr></table></figure>
-          </div>
-
-<div class="note no-icon">
-            <p>old한 방식으로 <code>%</code>를 사용하는 방법과 그냥 쉼표 <code>,</code> 로 구분하는 방법이 있지만<br>그냥 <code>format()</code> 함수를 사용하는게 자료형을 생각하지 않아도 되고 가독성도 좋다</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">print_full_name</span><span class="params">(a, b)</span>:</span></span><br><span class="line">  print(<span class="string">'(Hello %s %s! You just delved into python.'</span>) % (a, b))</span><br><span class="line">  <span class="comment"># 쉼표로 구분할 때 띄워쓰기가 들어가는 것을 주의! + 기호로 띄워쓰기를 생략할 수 있다</span></span><br><span class="line">  <span class="comment"># print("Hello",a,b+"! You just delved into python.")</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">  first_name = input()</span><br><span class="line">  last_name = input()</span><br><span class="line">  print_full_name(first_name, last_name) </span><br></pre></td></tr></table></figure>
-          </div>
-
-<hr>
-<hr>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
-          
-        
-      
-    </div>
-
-    
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1104,7 +1098,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">97</span>
+                    <span class="site-state-item-count">99</span>
                     <span class="site-state-item-name">포스트</span>
                   </a>
                 </div>
@@ -1157,7 +1151,13 @@
                     
                       
                     
-                    <span class="site-state-item-count">15</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">18</span>
                     <span class="site-state-item-name">카테고리</span>
                   </a>
                 </div>
@@ -1282,7 +1282,17 @@
                     
                       
                     
-                    <span class="site-state-item-count">50</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">55</span>
                     <span class="site-state-item-name">태그</span>
                   </a>
                 </div>
@@ -1406,9 +1416,6 @@
 
 
 
-  
-  
-
 
 
 
@@ -1427,18 +1434,10 @@
   
   <script src="/lib/lazyload/lozad.min.js?v=1.10.0"></script>
 
-  
-  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
 
 
 
   <script src="/js/utils.js?v=7.2.0"></script>
-
-  <script src="/js/motion.js?v=7.2.0"></script>
 
 
 
@@ -1485,6 +1484,326 @@
 
 
   
+  <script>
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url).replace(/\/{2,}/g, '/');
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x"></i></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x"></i></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
 
 
 

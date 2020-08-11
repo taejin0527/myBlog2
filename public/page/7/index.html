@@ -11,10 +11,8 @@
 
 
 
-  
 
-
-<html class="theme-next mist use-motion" lang="ko">
+<html class="theme-next mist" lang="ko">
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -79,14 +77,14 @@
     root: '/',
     scheme: 'Mist',
     version: '7.2.0',
-    sidebar: {"position":"right","display":"post","offset":12,"onmobile":false},
+    sidebar: {"position":"right","display":"post","offset":12,"onmobile":true},
     back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
     copycode: {"enable":true,"show_result":true,"style":"flat"},
     fancybox: false,
     fastclick: false,
     lazyload: true,
     tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     algolia: {
       applicationID: '',
       apiKey: '',
@@ -314,6 +312,14 @@
 
       
       
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>검색</a>
+        </li>
+      
     </ul>
   
 
@@ -322,6 +328,27 @@
 
   
 
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="Searching..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
   
 </nav>
 
@@ -340,6 +367,454 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/PY-day21/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="NUNU">
+      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="AttackOnNunu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/[object Object]/PY-day21/" class="post-title-link" itemprop="url">(PYTHON) Day - 21 Python Functionals</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2020-03-12 13:45:34" itemprop="dateCreated datePublished" datetime="2020-03-12T13:45:34+09:00">2020-03-12</time>
+            </span>
+          
+
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/" itemprop="url" rel="index"><span itemprop="name">LANGUAGE</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/" itemprop="url" rel="index"><span itemprop="name">PYTHON</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/HACKERRANK/" itemprop="url" rel="index"><span itemprop="name">HACKERRANK</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">댓글: </span>
+                <a href="/[object Object]/PY-day21/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/PY-day21/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
+<li>문제 출처 - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vZGFzaGJvYXJk" title="https://www.hackerrank.com/dashboard">HackerRank<i class="fa fa-external-link"></i></span></li>
+<li>파이썬 연습 - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vZG9tYWlucy9weXRob24/ZmlsdGVycyU1QnN0YXR1cyU1RCU1QiU1RD11bnNvbHZlZCZiYWRnZV90eXBlPXB5dGhvbg==" title="https://www.hackerrank.com/domains/python?filters%5Bstatus%5D%5B%5D=unsolved&badge_type=python">Practice - Python<i class="fa fa-external-link"></i></span></li>
+</ul>
+<p>개인적인 생각과 상상으로 작성한 내용들이 포함되어 있습니다<br>문제를 풀고 <span class="label success"> Discussion Tab</span>을 참고하며 코드 스타일을 개선하려고 노력하고자 합니다</p>
+<hr>
+<h1 id="HackerRank"><a href="#HackerRank" class="headerlink" title="HackerRank"></a>HackerRank</h1><div class="spoiler collapsed">
+    <div class="spoiler-title">
+        HackerRank의 Python 연습문제들은 아래와 같은 카테고리로 분류 된다
+    </div>
+    <div class="spoiler-content">
+        <h2 id="Subdomain"><a href="#Subdomain" class="headerlink" title="Subdomain"></a>Subdomain</h2><ul>
+<li><del>Introduction</del></li>
+<li><del>Basic Data Types</del></li>
+<li><del>Strings</del></li>
+<li><del>Sets</del></li>
+<li><del>Math</del></li>
+<li><del>Itertools</del></li>
+<li><del>Collections</del></li>
+<li><del>Date and Time</del></li>
+<li><del>Errors and Exceptions</del></li>
+<li><del>Classes</del></li>
+<li><del>Built-Ins</del></li>
+<li><strong style="color:blue">Python Functionals</strong></li>
+<li>Regex and Parsing</li>
+<li>XML</li>
+<li>Closures and Decorators</li>
+<li>Numpy</li>
+<li>Debugging</li>
+</ul>
+
+    </div>
+</div>
+
+<hr>
+<h1 id="Python-Functionals"><a href="#Python-Functionals" class="headerlink" title="Python Functionals"></a>Python Functionals</h1><div class="note no-icon">
+            <div class="note primary no-icon">            <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><ul><li><a href="#Map-and-Lambda-Function">Map and Lambda Function</a></li><li><a href="#Validating-Email-Addresses-With-a-Filter">Validating Email Addresses With a Filter</a></li><li><a href="#Reduce-Function">Reduce Function</a></li></ul>          </div><hr><h2 id="Map-and-Lambda-Function"><a href="#Map-and-Lambda-Function" class="headerlink" title="Map and Lambda Function"></a>Map and Lambda Function</h2><br><div class="note info">            <p>문제 : 피보나치 수열을 출력하는 문제<br>입력 : 수열의 길이<br>출력 : 피보나치 수열 리스트</p>          </div><div class="tabs" id="example1"><ul class="nav-tabs"><li class="tab"><a href="#example1-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example1-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane" id="example1-1"><p>5</p></div><div class="tab-pane" id="example1-2"><p>[0, 1, 1, 8, 27]</p></div></div></div><div class="note default no-icon">            <p>기본 형식에 맞춰서 문제를 풀면 다음과 같다</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">cube = <span class="keyword">lambda</span> x: x**<span class="number">3</span>  <span class="comment"># complete the lambda function</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">fibonacci</span><span class="params">(n)</span>:</span></span><br><span class="line">    <span class="comment"># return a list of fibonacci numbers</span></span><br><span class="line">    fibo = [<span class="number">0</span>, <span class="number">1</span>]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">2</span>, n):</span><br><span class="line">        fibo.append(fibo[i<span class="number">-1</span>]+fibo[i<span class="number">-2</span>])</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> fibo[<span class="number">0</span>:n]</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    n = int(input())</span><br><span class="line">    print(list(map(cube, fibonacci(n))))  </span><br></pre></td></tr></table></figure>          </div><div class="note success no-icon">            <p>피보나치 수열을 재귀함수로 풀면서 lambda 함수로 표현하면 다음과 같다</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">cube = <span class="keyword">lambda</span> x: x**<span class="number">3</span>  <span class="comment"># complete the lambda function</span></span><br><span class="line"></span><br><span class="line">fibonacci = <span class="keyword">lambda</span> x: x <span class="keyword">if</span> x &lt;= <span class="number">1</span> <span class="keyword">else</span> fibonacci(x<span class="number">-1</span>) + fibonacci(x<span class="number">-2</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    n = int(input())</span><br><span class="line">    print(list(map(cube, map(fibonacci, range(n)))))  </span><br></pre></td></tr></table></figure>          </div><hr><h2 id="Validating-Email-Addresses-With-a-Filter"><a href="#Validating-Email-Addresses-With-a-Filter" class="headerlink" title="Validating Email Addresses With a Filter"></a>Validating Email Addresses With a Filter</h2><br><div class="note info">            <p>문제 : 유효한 이메일 주소를 사전순으로 출력하는 문제<br>입력 : 이메일 개수 N; (N 반복) 이메일 주소<br>출력 : 사전순으로 정렬된 리스트로 출력<br>조건 :<br><code>username@websitename.extension</code> 형식을 따른다<br>username은 오직 문자, 숫자, 대시 그리고 언더스코어만 가질 수 있다<br>websitename은 오직 문자와 숫자만 가질 수 있다<br>extension의 최대 길이는 3 이다</p>          </div><div class="tabs" id="example2"><ul class="nav-tabs"><li class="tab"><a href="#example2-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example2-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane" id="example2-1"><p>3<br><span class="exturl" data-url="bWFpbHRvOmxhcmFAaGFja2VycmFuay5jb20=" title="mailto:lara@hackerrank.com">lara@hackerrank.com<i class="fa fa-external-link"></i></span><br><span class="exturl" data-url="bWFpbHRvOmJyaWFuLTIzQGhhY2tlcnJhbmsuY29t" title="mailto:brian-23@hackerrank.com">brian-23@hackerrank.com<i class="fa fa-external-link"></i></span><br><span class="exturl" data-url="bWFpbHRvOmJyaXR0c181NEBoYWNrZXJyYW5rLmNvbQ==" title="mailto:britts_54@hackerrank.com">britts_54@hackerrank.com<i class="fa fa-external-link"></i></span></p></div><div class="tab-pane" id="example2-2"><p>[‘brian-23@hackerrank.com’, ‘britts_54@hackerrank.com’, ‘lara@hackerrank.com’]</p></div></div></div><div class="note default no-icon">            <p><code>isalnum()</code> 함수를 사용하여 문자나 숫자로 이루어졌는지 확인할 수 있다</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">fun</span><span class="params">(s)</span>:</span></span><br><span class="line">  <span class="comment"># return True if s is a valid email, else return False</span></span><br><span class="line">  <span class="keyword">try</span>:</span><br><span class="line">      username, site = s.split(<span class="string">'@'</span>)</span><br><span class="line">      websitename, extension = site.split(<span class="string">'.'</span>)</span><br><span class="line">  <span class="keyword">except</span>:</span><br><span class="line">      <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line"></span><br><span class="line">  username = <span class="string">''</span>.join(i <span class="keyword">for</span> i <span class="keyword">in</span> username <span class="keyword">if</span> i <span class="keyword">not</span> <span class="keyword">in</span> <span class="string">"-_"</span>)</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> username.isalnum() <span class="keyword">and</span> websitename.isalnum() <span class="keyword">and</span> len(extension) &lt;= <span class="number">3</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">filter_mail</span><span class="params">(emails)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> list(filter(fun, emails))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    n = int(input())</span><br><span class="line">    emails = []</span><br><span class="line">    <span class="keyword">for</span> _ <span class="keyword">in</span> range(n):</span><br><span class="line">        emails.append(input())</span><br><span class="line"></span><br><span class="line">    filtered_emails = filter_mail(emails)</span><br><span class="line">    filtered_emails.sort()</span><br><span class="line">    print(filtered_emails)</span><br></pre></td></tr></table></figure>          </div><div class="note success no-icon">            <p>정규표현식을 사용하면서 <code>and</code> 연산자가 아닌 <code>all</code> 연산자로 마지막을 확인하는 방법(fun 함수만 작성 이하 동일)</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">fun</span><span class="params">(s)</span>:</span></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        user,website,domain=re.split(<span class="string">'\@|\.'</span>,s)</span><br><span class="line">    <span class="keyword">except</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">    processed=user.replace(<span class="string">'-'</span>,<span class="string">''</span>).replace(<span class="string">'_'</span>,<span class="string">''</span>)</span><br><span class="line">    <span class="keyword">return</span> all( [processed.isalnum(), website.isalnum(), len(domain)&lt;=<span class="number">3</span>] ) </span><br></pre></td></tr></table></figure>          </div><p>__</p><hr><h2 id="Reduce-Function"><a href="#Reduce-Function" class="headerlink" title="Reduce Function"></a>Reduce Function</h2><br><div class="note info">            <p>문제 : (분수로 표현되는)유리수들의 곱셈 결과를 출력하는 문제<br>입력 : 유리수 개수 n; (n 반복) 분자, 분모 형식으로 입력;<br>출력 : 곱셈의 결과</p>          </div><div class="tabs" id="example3"><ul class="nav-tabs"><li class="tab"><a href="#example3-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example3-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane" id="example3-1"><p>3<br>1 2<br>3 4<br>10 6</p></div><div class="tab-pane" id="example3-2"><p>5 8</p></div></div></div><div class="note success no-icon">            <p><code>reduce()</code> 함수 안에서 lambda 식을 사용하지 않고도 operator 모듈을 사용해서 구현할 수 있는 것을 배웠다</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> fractions <span class="keyword">import</span> Fraction</span><br><span class="line"><span class="keyword">from</span> functools <span class="keyword">import</span> reduce</span><br><span class="line"><span class="comment"># from operator import mul</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">product</span><span class="params">(fracs)</span>:</span></span><br><span class="line">    t = reduce(<span class="keyword">lambda</span> x, y: x * y, fracs)</span><br><span class="line">    <span class="comment"># t = reduce(mul, fracs)</span></span><br><span class="line">    <span class="keyword">return</span> t.numerator, t.denominator</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    fracs = []</span><br><span class="line">    <span class="keyword">for</span> _ <span class="keyword">in</span> range(int(input())):</span><br><span class="line">        fracs.append(Fraction(*map(int, input().split())))</span><br><span class="line">    result = product(fracs)</span><br><span class="line">    print(*result) </span><br></pre></td></tr></table></figure>          </div>
+          </div>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/PY-day20/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="NUNU">
+      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="AttackOnNunu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/[object Object]/PY-day20/" class="post-title-link" itemprop="url">(PYTHON) Day - 20 Built-Ins</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2020-03-11 22:07:09" itemprop="dateCreated datePublished" datetime="2020-03-11T22:07:09+09:00">2020-03-11</time>
+            </span>
+          
+
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/" itemprop="url" rel="index"><span itemprop="name">LANGUAGE</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/" itemprop="url" rel="index"><span itemprop="name">PYTHON</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/HACKERRANK/" itemprop="url" rel="index"><span itemprop="name">HACKERRANK</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">댓글: </span>
+                <a href="/[object Object]/PY-day20/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/PY-day20/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
+<li>문제 출처 - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vZGFzaGJvYXJk" title="https://www.hackerrank.com/dashboard">HackerRank<i class="fa fa-external-link"></i></span></li>
+<li>파이썬 연습 - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vZG9tYWlucy9weXRob24/ZmlsdGVycyU1QnN0YXR1cyU1RCU1QiU1RD11bnNvbHZlZCZiYWRnZV90eXBlPXB5dGhvbg==" title="https://www.hackerrank.com/domains/python?filters%5Bstatus%5D%5B%5D=unsolved&badge_type=python">Practice - Python<i class="fa fa-external-link"></i></span></li>
+</ul>
+<p>개인적인 생각과 상상으로 작성한 내용들이 포함되어 있습니다<br>문제를 풀고 <span class="label success"> Discussion Tab</span>을 참고하며 코드 스타일을 개선하려고 노력하고자 합니다</p>
+<hr>
+<h1 id="HackerRank"><a href="#HackerRank" class="headerlink" title="HackerRank"></a>HackerRank</h1><div class="spoiler collapsed">
+    <div class="spoiler-title">
+        HackerRank의 Python 연습문제들은 아래와 같은 카테고리로 분류 된다
+    </div>
+    <div class="spoiler-content">
+        <h2 id="Subdomain"><a href="#Subdomain" class="headerlink" title="Subdomain"></a>Subdomain</h2><ul>
+<li><del>Introduction</del></li>
+<li><del>Basic Data Types</del></li>
+<li><del>Strings</del></li>
+<li><del>Sets</del></li>
+<li><del>Math</del></li>
+<li><del>Itertools</del></li>
+<li><del>Collections</del></li>
+<li><del>Date and Time</del></li>
+<li><del>Errors and Exceptions</del></li>
+<li><del>Classes</del></li>
+<li><strong style="color:blue">Built-Ins</strong></li>
+<li>Python Functionals</li>
+<li>Regex and Parsing</li>
+<li>XML</li>
+<li>Closures and Decorators</li>
+<li>Numpy</li>
+<li>Debugging</li>
+</ul>
+
+    </div>
+</div>
+
+<hr>
+<h1 id="Built-Ins"><a href="#Built-Ins" class="headerlink" title="Built-Ins"></a>Built-Ins</h1><div class="note no-icon">
+            <div class="note primary no-icon">            <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><ul><li><a href="#Zipped">Zipped!</a></li><li><a href="#Input">Input()</a></li><li><a href="#Python-Evaluation">Python Evaluation</a></li><li><a href="#Athlete-Sort">Athlete Sort</a></li><li><a href="#Any-or-All">Any or All</a></li><li><a href="#ginortS">ginortS</a></li></ul>          </div><hr><h2 id="Zipped"><a href="#Zipped" class="headerlink" title="Zipped!"></a>Zipped!</h2><br><div class="note info">            <p>문제 : 학생들의 성적 평균을 구하는 문제<br>입력 : 학생수 N, 과목수 X; (X 반복) 과목당 학생들의 성적 score;<br>출력 : 과목별 평균</p><p>mark sheet은 다음과 같다</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">Student ID → ___1_____2_____3_____4_____5__               </span><br><span class="line">Subject <span class="number">1</span>   |  <span class="number">89</span>    <span class="number">90</span>    <span class="number">78</span>    <span class="number">93</span>    <span class="number">80</span></span><br><span class="line">Subject <span class="number">2</span>   |  <span class="number">90</span>    <span class="number">91</span>    <span class="number">85</span>    <span class="number">88</span>    <span class="number">86</span>  </span><br><span class="line">Subject <span class="number">3</span>   |  <span class="number">91</span>    <span class="number">92</span>    <span class="number">83</span>    <span class="number">89</span>    <span class="number">90.5</span></span><br><span class="line">            |______________________________</span><br><span class="line">Average        <span class="number">90</span>    <span class="number">91</span>    <span class="number">82</span>    <span class="number">90</span>    <span class="number">85.5</span> </span><br></pre></td></tr></table></figure>          </div><div class="tabs" id="example1"><ul class="nav-tabs"><li class="tab"><a href="#example1-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example1-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane" id="example1-1"><p>5 3<br>89 90 78 93 80<br>90 91 85 88 86<br>91 92 83 89 90.5</p></div><div class="tab-pane" id="example1-2"><p>90.0<br>91.0<br>82.0<br>90.0<br>85.5   </p></div></div></div><div class="note success no-icon">            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">N, X = map(int, input().split())</span><br><span class="line">subjects = []</span><br><span class="line"><span class="keyword">for</span> _ <span class="keyword">in</span> range(X):</span><br><span class="line">    subjects.append(map(float, input().split()))</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> scores <span class="keyword">in</span> zip(*subjects):</span><br><span class="line">    print(sum(scores)/len(scores)) </span><br></pre></td></tr></table></figure>          </div><hr><h2 id="Input"><a href="#Input" class="headerlink" title="Input()"></a>Input()</h2><br><div class="note info">            <p>문제 : 입력받은 x와 k의 값이 식을 만족하는지 확인하는 문제<br>입력 : x, k; 다항식 P;<br>출력 : 다항식에 x의 값을 대입했을 때 k와 같으면 True, 아니면 False 출력</p>          </div><div class="tabs" id="example2"><ul class="nav-tabs"><li class="tab"><a href="#example2-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example2-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane" id="example2-1"><p>1 4<br>x<strong>3 + x</strong>2 + x + 1</p></div><div class="tab-pane" id="example2-2"><p>True</p></div></div></div><div class="note success no-icon">            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x, k = map(int, input().split())</span><br><span class="line">print(eval(input()) == k)</span><br></pre></td></tr></table></figure>          </div><hr><h2 id="Python-Evaluation"><a href="#Python-Evaluation" class="headerlink" title="Python Evaluation"></a>Python Evaluation</h2><br><div class="note info">            <p>문제 : 단순히 <code>eval()</code> 함수를 사용하면 되는 문제<br>입력 : 실행할 표현식<br>출력 : 표현식의 결과값</p>          </div><div class="tabs" id="example3"><ul class="nav-tabs"><li class="tab"><a href="#example3-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example3-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane" id="example3-1"><p>print(2 + 3)</p></div><div class="tab-pane" id="example3-2"><p>5</p></div></div></div><div class="note success no-icon">            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">eval(input()) </span><br></pre></td></tr></table></figure>          </div><hr><h2 id="Athlete-Sort"><a href="#Athlete-Sort" class="headerlink" title="Athlete Sort"></a>Athlete Sort</h2><br><div class="note info">            <p>문제 : 데이터를 k번째 속성을 기준으로 정렬하는 문제<br>입력 : 데이터수 N, 속성수 M; (N 반복) 데이터 입력; 기준이 될 속성 K;<br>출력 : k번째 원소 기준으로 정렬된 결과값</p><p><img alt="example" data-src="https://s3.amazonaws.com/hr-assets/0/1514874268-6fabad07aa-AthleteSort2.png"></p>          </div><div class="tabs" id="example4"><ul class="nav-tabs"><li class="tab"><a href="#example4-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example4-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane" id="example4-1"><p>5 3<br>10 2 5<br>7 1 0<br>9 9 9<br>1 23 12<br>6 5 9<br>1</p></div><div class="tab-pane" id="example4-2"><p>7 1 0<br>10 2 5<br>6 5 9<br>9 9 9<br>1 23 12</p></div></div></div><div class="note success no-icon">            <p>정렬할 때, key를 잘 신경써주면 쉽게 풀리는 문제</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">N, M = map(int, input().split())</span><br><span class="line">data = [input().split() <span class="keyword">for</span> _ <span class="keyword">in</span> range(N)]</span><br><span class="line">k = int(input())</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> d <span class="keyword">in</span> sorted(data, key=<span class="keyword">lambda</span> d: int(d[k])):</span><br><span class="line">    print(*d) </span><br></pre></td></tr></table></figure>          </div><hr><h2 id="Any-or-All"><a href="#Any-or-All" class="headerlink" title="Any or All"></a>Any or All</h2><br><div class="note info">            <p>문제 : 입력받은 정수들이 모두 양수인지 확인하고 대칭수(palindromic number)가 있는지 확인하는 문제<br>입력 : 정수의 개수 N; 정수들;<br>출력 : True/False</p>          </div><div class="tabs" id="example5"><ul class="nav-tabs"><li class="tab"><a href="#example5-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example5-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane" id="example5-1"><p>5<br>12 9 61 5 14</p></div><div class="tab-pane" id="example5-2"><p>True</p></div></div></div><div class="note success no-icon">            <p>commet</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">_, numbers = input(), input().split()</span><br><span class="line">print(all(map(<span class="keyword">lambda</span> x: int(x)&gt;=<span class="number">0</span>, numbers)) <span class="keyword">and</span> any(map(<span class="keyword">lambda</span> x: x==x[::<span class="number">-1</span>], numbers)))</span><br><span class="line"></span><br><span class="line"><span class="comment"># 혹은</span></span><br><span class="line">_, numbers = input(),input().split()</span><br><span class="line">print(all(int(x)&gt;<span class="number">0</span> <span class="keyword">for</span> x <span class="keyword">in</span> numbers) <span class="keyword">and</span> any(x==x[::<span class="number">-1</span>] <span class="keyword">for</span> x <span class="keyword">in</span> numbers)) </span><br></pre></td></tr></table></figure>          </div><hr><h2 id="ginortS"><a href="#ginortS" class="headerlink" title="ginortS"></a>ginortS</h2><br><div class="note info">            <p>문제 : 조건에 맞게 문자열을 재정렬 하는 문제<br>입력 : 문자열 S<br>조건 : 소문자 &gt; 대문자 &gt; 숫자 순으로 정렬한다. 홀수가 짝수 앞에 온다.<br>출력 : 새로 정렬된 문자열</p><p><img alt="ginortS" data-src="http://i.imgur.com/u7WkSk7.gif"></p>          </div><div class="tabs" id="example6"><ul class="nav-tabs"><li class="tab"><a href="#example6-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example6-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane" id="example6-1"><p>Sorting1234</p></div><div class="tab-pane" id="example6-2"><p>ginortS1324</p></div></div></div><div class="note success no-icon">            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">getKey</span><span class="params">(x)</span>:</span></span><br><span class="line">    <span class="keyword">if</span> x.islower():</span><br><span class="line">        <span class="keyword">return</span>(<span class="number">1</span>,x)</span><br><span class="line">    <span class="keyword">elif</span> x.isupper():</span><br><span class="line">        <span class="keyword">return</span>(<span class="number">2</span>,x)</span><br><span class="line">    <span class="keyword">elif</span> x.isdigit() :</span><br><span class="line">        <span class="keyword">if</span> int(x)%<span class="number">2</span>==<span class="number">1</span>:</span><br><span class="line">            <span class="keyword">return</span>(<span class="number">3</span>,x)</span><br><span class="line">        <span class="keyword">else</span> :</span><br><span class="line">            <span class="keyword">return</span>(<span class="number">4</span>,x)</span><br><span class="line"></span><br><span class="line">print(*sorted(input(),key=getKey),sep=<span class="string">''</span>)   </span><br></pre></td></tr></table></figure>          </div>
+          </div>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
     
       
 
@@ -565,459 +1040,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/PY-day19-1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="NUNU">
-      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="AttackOnNunu">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/[object Object]/PY-day19-1/" class="post-title-link" itemprop="url">(PYTHON) Day - 19 Errors and Exceptions</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">작성일</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2020-03-10 12:57:51" itemprop="dateCreated datePublished" datetime="2020-03-10T12:57:51+09:00">2020-03-10</time>
-            </span>
-          
-
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/" itemprop="url" rel="index"><span itemprop="name">LANGUAGE</span></a></span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/" itemprop="url" rel="index"><span itemprop="name">PYTHON</span></a></span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/HACKERRANK/" itemprop="url" rel="index"><span itemprop="name">HACKERRANK</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">댓글: </span>
-                <a href="/[object Object]/PY-day19-1/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/PY-day19-1/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          <br>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
-<li>문제 출처 - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vZGFzaGJvYXJk" title="https://www.hackerrank.com/dashboard">HackerRank<i class="fa fa-external-link"></i></span></li>
-<li>파이썬 연습 - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vZG9tYWlucy9weXRob24/ZmlsdGVycyU1QnN0YXR1cyU1RCU1QiU1RD11bnNvbHZlZCZiYWRnZV90eXBlPXB5dGhvbg==" title="https://www.hackerrank.com/domains/python?filters%5Bstatus%5D%5B%5D=unsolved&badge_type=python">Practice - Python<i class="fa fa-external-link"></i></span></li>
-</ul>
-<p>개인적인 생각과 상상으로 작성한 내용들이 포함되어 있습니다<br>문제를 풀고 <span class="label success"> Discussion Tab</span>을 참고하며 코드 스타일을 개선하려고 노력하고자 합니다</p>
-<hr>
-<h1 id="HackerRank"><a href="#HackerRank" class="headerlink" title="HackerRank"></a>HackerRank</h1><div class="spoiler collapsed">
-    <div class="spoiler-title">
-        HackerRank의 Python 연습문제들은 아래와 같은 카테고리로 분류 된다
-    </div>
-    <div class="spoiler-content">
-        <h2 id="Subdomain"><a href="#Subdomain" class="headerlink" title="Subdomain"></a>Subdomain</h2><ul>
-<li><del>Introduction</del></li>
-<li><del>Basic Data Types</del></li>
-<li><del>Strings</del></li>
-<li><del>Sets</del></li>
-<li><del>Math</del></li>
-<li><del>Itertools</del></li>
-<li><del>Collections</del></li>
-<li><del>Date and Time</del></li>
-<li><strong style="color:blue">Errors and Exceptions</strong></li>
-<li>Classes</li>
-<li>Built-Ins</li>
-<li>Python Functionals</li>
-<li>Regex and Parsing</li>
-<li>XML</li>
-<li>Closures and Decorators</li>
-<li>Numpy</li>
-<li>Debugging</li>
-</ul>
-
-    </div>
-</div>
-
-<hr>
-<h1 id="Erros-and-Exceptions"><a href="#Erros-and-Exceptions" class="headerlink" title="Erros and Exceptions"></a>Erros and Exceptions</h1><div class="note primary no-icon">
-            <h2 id="기본-개념"><a href="#기본-개념" class="headerlink" title="기본 개념"></a>기본 개념</h2><p>에러에는 크게 두 종류가 있다 -&gt; <span class="label danger"> Syntax errors, Exceptions</span></p><h3 id="Syntax-Errors"><a href="#Syntax-Errors" class="headerlink" title="Syntax Errors"></a>Syntax Errors</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">while</span> <span class="literal">True</span> print(<span class="string">'Hello world'</span>)</span><br><span class="line">  File <span class="string">"&lt;stdin&gt;"</span>, line <span class="number">1</span></span><br><span class="line">    <span class="keyword">while</span> <span class="literal">True</span> print(<span class="string">'Hello world'</span>)</span><br><span class="line">                   ^</span><br><span class="line">SyntaxError: invalid syntax </span><br></pre></td></tr></table></figure><p>파이썬을 문법을 배우면서 아마 가장 자주 접하게 되는 에러. 표현식에 문법적인 오류가 있으면 에러가 발생하는 지점을 작은 화살표로 표시하며 에러 메세지를 반환한다.<br>위 예제에서는 <code>print()</code> 함수에서 이전에 <code>:</code>이 빠져있는 것을 감지하고 에러를 반환한다.</p><h3 id="Exceptions"><a href="#Exceptions" class="headerlink" title="Exceptions"></a>Exceptions</h3><p><img alt="execption" data-src="https://s3.amazonaws.com/hr-assets/forumImages/1504521289-d951417fb9-exceptions.png"></p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">10</span> * (<span class="number">1</span>/<span class="number">0</span>)</span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">"&lt;stdin&gt;"</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">ZeroDivisionError: division by zero</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">4</span> + spam*<span class="number">3</span></span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">"&lt;stdin&gt;"</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">NameError: name <span class="string">'spam'</span> <span class="keyword">is</span> <span class="keyword">not</span> defined</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">'2'</span> + <span class="number">2</span></span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">"&lt;stdin&gt;"</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">TypeError: Can<span class="string">'t convert '</span>int<span class="string">' object to str implicitly </span></span><br></pre></td></tr></table></figure><p>표현식이 문법적으로 올바르다 해도 실행 중 에러를 발생시킬 수 있다. 이러한 에러들을 Exceptions(예외)라고 한다.<br>위 예제에서는 ZeroDivisionError, NameError, TypeError 세 종류의 예외를 보여준다.</p><h3 id="Handling-Exceptions"><a href="#Handling-Exceptions" class="headerlink" title="Handling Exceptions"></a>Handling Exceptions</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="function"><span class="keyword">def</span> <span class="title">this_fails</span><span class="params">()</span>:</span></span><br><span class="line"><span class="meta">... </span>    x = <span class="number">1</span>/<span class="number">0</span></span><br><span class="line">...</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">try</span>:</span><br><span class="line"><span class="meta">... </span>    this_fails()</span><br><span class="line"><span class="meta">... </span><span class="keyword">except</span> ZeroDivisionError <span class="keyword">as</span> err:</span><br><span class="line"><span class="meta">... </span>    print(<span class="string">'Handling run-time error:'</span>, err)</span><br><span class="line">...</span><br><span class="line">Handling run-time error: division by zero </span><br></pre></td></tr></table></figure><p>try-except 문을 통해 예외를 처리할 수 있다.</p>
-          </div>
-
-<hr>
-<div class="note no-icon">
-            <div class="note primary no-icon">            <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><ul><li><a href="#Exceptions">Exceptions</a></li><li><a href="#Incorrect-Regex">Incorrect Regex</a></li></ul>          </div><h2 id="Exceptions"><a href="#Exceptions" class="headerlink" title="Exceptions"></a>Exceptions</h2><br><div class="note info">            <p>문제 : a/b의 값을 구하는 문제<br>입력 : 테스트케이스 수 t; (t 반복)a, b;<br>출력 : a/b의 값(예외의 경우 에러코드 출력)</p>          </div><div class="tabs" id="example1"><ul class="nav-tabs"><li class="tab"><a href="#example1-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example1-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane" id="example1-1"><p>3<br>1 0<br>2 $<br>3 1</p></div><div class="tab-pane" id="example1-2"><p>Error Code: integer division or modulo by zero<br>Error Code: invalid literal for int() with base 10: ‘$’<br>3</p></div></div></div><div class="note success no-icon">            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> t <span class="keyword">in</span> range(int(input())):</span><br><span class="line">  <span class="keyword">try</span>:</span><br><span class="line">      a, b = map(int, input().split())</span><br><span class="line">      print(a//b)</span><br><span class="line"></span><br><span class="line">  <span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">      print(<span class="string">f'Error Code: <span class="subst">&#123;e&#125;</span>'</span>) </span><br></pre></td></tr></table></figure>          </div><hr><h2 id="Incorrect-Regex"><a href="#Incorrect-Regex" class="headerlink" title="Incorrect Regex"></a>Incorrect Regex</h2><br><div class="note info">            <p>문제 : 문자열 S가 유효한 표현식(regex)인지 확인하는 문제<br>입력 : 테스트케이스 수 T; (T 반복) 문자열 S;<br>출력 : 참/거짓으로 출력</p>          </div><div class="tabs" id="example2"><ul class="nav-tabs"><li class="tab"><a href="#example2-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example2-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane" id="example2-1"><p>2<br>.<em>+<br>.</em>+</p></div><div class="tab-pane" id="example2-2"><p>True<br>False</p></div></div></div><div class="note success no-icon">            <p>정규표현식을 다루는 re 모듈을 사용하여 문자열을 컴파일해보고 결과에 따라 참/거짓을 출력</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> t <span class="keyword">in</span> range(int(input())):</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        S = input()</span><br><span class="line">        re.compile(S)</span><br><span class="line">        print(<span class="string">'True'</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">except</span> re.error:</span><br><span class="line">        print(<span class="string">'False'</span>) </span><br></pre></td></tr></table></figure>          </div>
-          </div>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
-          
-        
-      
-    </div>
-
-    
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/PY-day18/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="NUNU">
-      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="AttackOnNunu">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/[object Object]/PY-day18/" class="post-title-link" itemprop="url">(PYTHON) Day - 18 Date and Time</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">작성일</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2020-03-09 21:39:34" itemprop="dateCreated datePublished" datetime="2020-03-09T21:39:34+09:00">2020-03-09</time>
-            </span>
-          
-
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/" itemprop="url" rel="index"><span itemprop="name">LANGUAGE</span></a></span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/" itemprop="url" rel="index"><span itemprop="name">PYTHON</span></a></span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/HACKERRANK/" itemprop="url" rel="index"><span itemprop="name">HACKERRANK</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">댓글: </span>
-                <a href="/[object Object]/PY-day18/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/PY-day18/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          <br>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
-<li>문제 출처 - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vZGFzaGJvYXJk" title="https://www.hackerrank.com/dashboard">HackerRank<i class="fa fa-external-link"></i></span></li>
-<li>파이썬 연습 - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vZG9tYWlucy9weXRob24/ZmlsdGVycyU1QnN0YXR1cyU1RCU1QiU1RD11bnNvbHZlZCZiYWRnZV90eXBlPXB5dGhvbg==" title="https://www.hackerrank.com/domains/python?filters%5Bstatus%5D%5B%5D=unsolved&badge_type=python">Practice - Python<i class="fa fa-external-link"></i></span></li>
-</ul>
-<p>개인적인 생각과 상상으로 작성한 내용들이 포함되어 있습니다<br>문제를 풀고 <span class="label success"> Discussion Tab</span>을 참고하며 코드 스타일을 개선하려고 노력하고자 합니다</p>
-<hr>
-<h1 id="HackerRank"><a href="#HackerRank" class="headerlink" title="HackerRank"></a>HackerRank</h1><div class="spoiler collapsed">
-    <div class="spoiler-title">
-        HackerRank의 Python 연습문제들은 아래와 같은 카테고리로 분류 된다
-    </div>
-    <div class="spoiler-content">
-        <h2 id="Subdomain"><a href="#Subdomain" class="headerlink" title="Subdomain"></a>Subdomain</h2><ul>
-<li><del>Introduction</del></li>
-<li><del>Basic Data Types</del></li>
-<li><del>Strings</del></li>
-<li><del>Sets</del></li>
-<li><del>Math</del></li>
-<li><del>Itertools</del></li>
-<li><del>Collections</del></li>
-<li><strong style="color:blue">Date and Time</strong></li>
-<li>Errors and Exceptions</li>
-<li>Classes</li>
-<li>Built-Ins</li>
-<li>Python Functionals</li>
-<li>Regex and Parsing</li>
-<li>XML</li>
-<li>Closures and Decorators</li>
-<li>Numpy</li>
-<li>Debugging</li>
-</ul>
-
-    </div>
-</div>
-
-<hr>
-<h1 id="Date-and-Time"><a href="#Date-and-Time" class="headerlink" title="Date and Time"></a>Date and Time</h1><div class="note no-icon">
-            <div class="note primary no-icon">            <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><ul><li><a href="#Calendar-Module">Calendar Module</a></li><li><a href="#Time-Delta">Time Delta</a></li></ul>          </div><hr><h2 id="기본-개념"><a href="#기본-개념" class="headerlink" title="기본 개념"></a>기본 개념</h2><div class="note primary no-icon">            <p><span class="label warning"> Calendar 모듈</span></p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> calendar <span class="keyword">as</span> ca</span><br><span class="line"></span><br><span class="line"><span class="comment"># firstweekday는 달력의 시작 요일을 설정(0=월요일 ~ 6=일요일)</span></span><br><span class="line"><span class="comment"># formatmonth는 원하는 년도와 달력을 설정</span></span><br><span class="line">print(ca.TextCalendar(firstweekday=<span class="number">6</span>).formatmonth(<span class="number">2020</span>, <span class="number">3</span>)) </span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">March <span class="number">2020</span></span><br><span class="line">Su Mo Tu We Th Fr Sa</span><br><span class="line"><span class="number">1</span>  <span class="number">2</span>  <span class="number">3</span>  <span class="number">4</span>  <span class="number">5</span>  <span class="number">6</span>  <span class="number">7</span></span><br><span class="line"><span class="number">8</span>  <span class="number">9</span> <span class="number">10</span> <span class="number">11</span> <span class="number">12</span> <span class="number">13</span> <span class="number">14</span></span><br><span class="line"><span class="number">15</span> <span class="number">16</span> <span class="number">17</span> <span class="number">18</span> <span class="number">19</span> <span class="number">20</span> <span class="number">21</span></span><br><span class="line"><span class="number">22</span> <span class="number">23</span> <span class="number">24</span> <span class="number">25</span> <span class="number">26</span> <span class="number">27</span> <span class="number">28</span></span><br><span class="line"><span class="number">29</span> <span class="number">30</span> <span class="number">31</span>  </span><br></pre></td></tr></table></figure>          </div><h2 id="Calendar-Module"><a href="#Calendar-Module" class="headerlink" title="Calendar Module"></a>Calendar Module</h2><br><div class="note info">            <p>문제 : 입력 날짜의 요일을 출력하는 문제<br>입력 : MM DD YYYY 형식으로 날짜 입력<br>출력 : 해당 요일을 대문자로 출력</p>          </div><div class="tabs" id="example1"><ul class="nav-tabs"><li class="tab"><a href="#example1-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example1-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane" id="example1-1"><p>08 05 2015</p></div><div class="tab-pane" id="example1-2"><p>WEDNESDAY</p></div></div></div><div class="note success no-icon">            <p>calender 모듈을 사용하면 날짜와 관련된 문제들을 매우 쉽게 해결할 수 있다<br><code>calendar.day_name</code> 메소드 클래스에는 월요일부터 일요일까지의 이름이 담겨있다<br><code>calendar.weekday(year, month, day)</code> 함수는 해당 날짜의 요일 정보를 int 값으로 반환한다</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> calendar</span><br><span class="line"></span><br><span class="line">mm, dd, yy = map(int, input().split())</span><br><span class="line">date = calendar.weekday(yy, mm, dd)</span><br><span class="line"></span><br><span class="line">print(calendar.day_name[date].upper()) </span><br></pre></td></tr></table></figure>          </div><hr><h2 id="Time-Delta"><a href="#Time-Delta" class="headerlink" title="Time Delta"></a>Time Delta</h2><br><div class="note info">            <p>입력 : Day dd Mon yyyy hh:mm:ss +xxxx 형식<br>출력 : abs(t1 - t2) 의 값</p>          </div><div class="tabs" id="example1"><ul class="nav-tabs"><li class="tab"><a href="#example1-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example1-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane" id="example1-1"><p>2<br>Sun 10 May 2015 13:54:36 -0700<br>Sun 10 May 2015 13:54:36 -0000<br>Sat 02 May 2015 19:54:36 +0530<br>Fri 01 May 2015 13:54:36 -0000</p></div><div class="tab-pane" id="example1-2"><p>25200<br>88200</p></div></div></div><div class="note success no-icon">            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> datetime <span class="keyword">import</span> datetime</span><br><span class="line"><span class="keyword">for</span> _ <span class="keyword">in</span> range(int(input())):</span><br><span class="line">    t1=datetime.strptime(input(),<span class="string">'%a %d %b %Y %H:%M:%S %z'</span>)</span><br><span class="line">    t2=datetime.strptime(input(),<span class="string">'%a %d %b %Y %H:%M:%S %z'</span>)</span><br><span class="line">    <span class="keyword">print</span> (int(abs((t1-t2).total_seconds()))) </span><br></pre></td></tr></table></figure>          </div>
-          </div>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
-          
-        
-      
-    </div>
-
-    
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1066,7 +1088,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">97</span>
+                    <span class="site-state-item-count">99</span>
                     <span class="site-state-item-name">포스트</span>
                   </a>
                 </div>
@@ -1119,7 +1141,13 @@
                     
                       
                     
-                    <span class="site-state-item-count">15</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">18</span>
                     <span class="site-state-item-name">카테고리</span>
                   </a>
                 </div>
@@ -1244,7 +1272,17 @@
                     
                       
                     
-                    <span class="site-state-item-count">50</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">55</span>
                     <span class="site-state-item-name">태그</span>
                   </a>
                 </div>
@@ -1368,9 +1406,6 @@
 
 
 
-  
-  
-
 
 
 
@@ -1389,18 +1424,10 @@
   
   <script src="/lib/lazyload/lozad.min.js?v=1.10.0"></script>
 
-  
-  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
 
 
 
   <script src="/js/utils.js?v=7.2.0"></script>
-
-  <script src="/js/motion.js?v=7.2.0"></script>
 
 
 
@@ -1447,6 +1474,326 @@
 
 
   
+  <script>
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url).replace(/\/{2,}/g, '/');
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x"></i></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x"></i></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
 
 
 

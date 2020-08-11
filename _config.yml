@@ -153,3 +153,21 @@ live2d:
         show: false
         scale: 0.5
         motion: true
+
+## 내부 검색
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
+
+
+## Emoji
+## https://github.com/next-theme/hexo-filter-emoji
+## Cheat sheet
+## https://www.webfx.com/tools/emoji-cheat-sheet/
+emoji:
+  enable: true
+  className: github-emoji
+  styles:
+  customEmojis:

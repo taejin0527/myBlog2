@@ -11,10 +11,8 @@
 
 
 
-  
 
-
-<html class="theme-next mist use-motion" lang="ko">
+<html class="theme-next mist" lang="ko">
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -79,14 +77,14 @@
     root: '/',
     scheme: 'Mist',
     version: '7.2.0',
-    sidebar: {"position":"right","display":"post","offset":12,"onmobile":false},
+    sidebar: {"position":"right","display":"post","offset":12,"onmobile":true},
     back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
     copycode: {"enable":true,"show_result":true,"style":"flat"},
     fancybox: false,
     fastclick: false,
     lazyload: true,
     tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     algolia: {
       applicationID: '',
       apiKey: '',
@@ -314,6 +312,14 @@
 
       
       
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>검색</a>
+        </li>
+      
     </ul>
   
 
@@ -322,6 +328,27 @@
 
   
 
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="Searching..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
   
 </nav>
 
@@ -340,6 +367,492 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/PY-easter-egg/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="NUNU">
+      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="AttackOnNunu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/[object Object]/PY-easter-egg/" class="post-title-link" itemprop="url">(PYTHON) 파이썬의 easter egg</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2020-02-25 16:28:32" itemprop="dateCreated datePublished" datetime="2020-02-25T16:28:32+09:00">2020-02-25</time>
+            </span>
+          
+
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/" itemprop="url" rel="index"><span itemprop="name">LANGUAGE</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/" itemprop="url" rel="index"><span itemprop="name">PYTHON</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/TERMINOLOGY/" itemprop="url" rel="index"><span itemprop="name">TERMINOLOGY</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">댓글: </span>
+                <a href="/[object Object]/PY-easter-egg/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/PY-easter-egg/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
+<li>antigravity.py 소스코드 - <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3B5dGhvbi9jcHl0aG9uL2Jsb2IvbWFzdGVyL0xpYi9hbnRpZ3Jhdml0eS5weSNMNy1MMTc=" title="https://github.com/python/cpython/blob/master/Lib/antigravity.py#L7-L17">github.com/python/cpython/…<i class="fa fa-external-link"></i></span></li>
+<li>xkcd 링크 - <span class="exturl" data-url="aHR0cHM6Ly94a2NkLmNvbS8zNTMv" title="https://xkcd.com/353/">xkcd.com/353<i class="fa fa-external-link"></i></span></li>
+<li>python easter eggs - <span class="exturl" data-url="aHR0cHM6Ly9yZXBsLml0L3RhbGsvc2hhcmUvUHl0aG9uLUVhc3Rlci1FZ2cvMjU2MzQ=" title="https://repl.it/talk/share/Python-Easter-Egg/25634">repl.it/talk<i class="fa fa-external-link"></i></span></li>
+<li>Curated list of all the easter eggs and hidden jokes in Python - <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL09ya29IdW50ZXIvcHl0aG9uLWVhc3Rlci1lZ2dz" title="https://github.com/OrkoHunter/python-easter-eggs">github.com/OrkoHunter/<i class="fa fa-external-link"></i></span></li>
+<li>파이썬 선 번역 - <span class="exturl" data-url="aHR0cHM6Ly9rZW5pYWwudGlzdG9yeS5jb20vOTAz" title="https://kenial.tistory.com/903">kenial.tistory.com<i class="fa fa-external-link"></i></span></li>
+<li>sytax error not a chance - <span class="exturl" data-url="aHR0cHM6Ly9zdGFja292ZXJmbG93LmNvbS9xdWVzdGlvbnMvMTc4MTE4NTUvc3ludGF4LWVycm9yLW5vdC1hLWNoYW5jZQ==" title="https://stackoverflow.com/questions/17811855/syntax-error-not-a-chance">stackoverflow.com<i class="fa fa-external-link"></i></span></li>
+</ul>
+<blockquote>
+<p>개인적인 생각과 상상으로 작성한 내용들이 포함되어 있습니다</p>
+</blockquote>
+<hr>
+<div class="note info">
+            <p>이메일로 받아보는 [🐍PyTricks]를 통해서 CPython에 있는 이스터에그(easter egg) 하나를 알게되었습니다.</p>
+          </div>
+
+
+<h1 id="Antigravity"><a href="#Antigravity" class="headerlink" title="Antigravity"></a>Antigravity</h1><p>우선 [🐍PyTricks]를 통해 알게된 Antigravity 모듈을 먼저 알아보겠습니다.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> antigravity </span><br></pre></td></tr></table></figure>
+
+<p>antigravity 모듈을 호출하게되면 xkcd 홈페이지가 열리면서 짧은 만화를 볼 수 있습니다.</p>
+<div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 50%;"><img data-src="https://imgs.xkcd.com/comics/python.png"></div><div class="group-picture-column" style="width: 50%;"><img data-src="https://ww.namu.la/s/adb574b12427b293e0f08880f5c40746498afc9c3873d14a9bb9ee2bac99bfbd5a15f8aa6244ea78e60b378bb642b6cf5782ba40a7bd451368e5fe1171b0ae689515651c34fccaa0e505dd6673298c9432104cef2299ae62c57ddcde31793582"></div></div></div></div>
+
+<div style="text-align:center">(Left: 원본, Right: 한국어 번역)</div>
+
+<p>파이썬의 철학을 간결하고 재치있게 4컷 만화에 담았습니다.<br>여기서 끝이 아니라 <code>antigravity.py</code> 소스코드를 살펴보게 되면,</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> webbrowser</span><br><span class="line"><span class="keyword">import</span> hashlib</span><br><span class="line"></span><br><span class="line">webbrowser.open(<span class="string">"https://xkcd.com/353/"</span>)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">geohash</span><span class="params">(latitude, longitude, datedow)</span>:</span></span><br><span class="line">    <span class="string">'''Compute geohash() using the Munroe algorithm.</span></span><br><span class="line"><span class="string">    &gt;&gt;&gt; geohash(37.421542, -122.085589, b'2005-05-26-10458.68')</span></span><br><span class="line"><span class="string">    37.857713 -122.544543</span></span><br><span class="line"><span class="string">    '''</span></span><br><span class="line">    <span class="comment"># https://xkcd.com/426/</span></span><br><span class="line">    h = hashlib.md5(datedow).hexdigest()</span><br><span class="line">    p, q = [(<span class="string">'%f'</span> % float.fromhex(<span class="string">'0.'</span> + x)) <span class="keyword">for</span> x <span class="keyword">in</span> (h[:<span class="number">16</span>], h[<span class="number">16</span>:<span class="number">32</span>])]</span><br><span class="line">    print(<span class="string">'%d%s %d%s'</span> % (latitude, p[<span class="number">1</span>:], longitude, q[<span class="number">1</span>:])) </span><br></pre></td></tr></table></figure>
+
+<p><code>geohash()</code> 함수가 숨어있는 것을 확인할 수 있으며 이에 대한 설명은 xkcd 홈페이지에서 찾을 수 있습니다.</p>
+<img data-src="https://imgs.xkcd.com/comics/geohashing.png">
+
+<hr>
+<div class="note info">
+            <p>이참에 Python의 다른 이스터에그는 어떤 것들이 있는지 찾아보았습니다.</p>
+          </div>
+
+
+<h1 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World!"></a>Hello World!</h1><p>프로그래밍을 배우는 사람이라면 꼭 외치는 한마디가 있죠.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> __hello__</span><br><span class="line">Hello World! </span><br></pre></td></tr></table></figure>
+
+<h1 id="The-Zen-of-Python"><a href="#The-Zen-of-Python" class="headerlink" title="The Zen of Python"></a>The Zen of Python</h1><p><code>this</code> 모듈을 호출하면 파이썬의 철학 (the zen of python)의 전문을 바로 확인할 수 있습니다.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> this</span><br><span class="line"></span><br><span class="line">The Zen of Python, by Tim Peters</span><br><span class="line"></span><br><span class="line">Beautiful <span class="keyword">is</span> better than ugly.</span><br><span class="line">Explicit <span class="keyword">is</span> better than implicit.</span><br><span class="line">Simple <span class="keyword">is</span> better than complex.</span><br><span class="line">Complex <span class="keyword">is</span> better than complicated.</span><br><span class="line">Flat <span class="keyword">is</span> better than nested.</span><br><span class="line">Sparse <span class="keyword">is</span> better than dense.</span><br><span class="line">Readability counts.</span><br><span class="line">Special cases aren<span class="string">'t special enough to break the rules.</span></span><br><span class="line"><span class="string">Although practicality beats purity.</span></span><br><span class="line"><span class="string">Errors should never pass silently.</span></span><br><span class="line"><span class="string">Unless explicitly silenced.</span></span><br><span class="line"><span class="string">In the face of ambiguity, refuse the temptation to guess.</span></span><br><span class="line"><span class="string">There should be one-- and preferably only one --obvious way to do it.</span></span><br><span class="line"><span class="string">Although that way may not be obvious at first unless you'</span>re Dutch.</span><br><span class="line">Now <span class="keyword">is</span> better than never.</span><br><span class="line">Although never <span class="keyword">is</span> often better than right now.</span><br><span class="line">If the implementation <span class="keyword">is</span> hard to explain, it<span class="string">'s a bad idea.</span></span><br><span class="line"><span class="string">If the implementation is easy to explain, it may be a good idea.</span></span><br><span class="line"><span class="string">Namespaces are one honking great idea -- let'</span>s do more of those! </span><br></pre></td></tr></table></figure>
+
+<p>한글 번역은 다음과 같습니다. (임의로 앞에 번호를 붙였습니다)</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1 아름다움이 추함보다 좋다.</span><br><span class="line">2 명시가 암시보다 좋다.</span><br><span class="line">3 단순함이 복잡함보다 좋다.</span><br><span class="line">4 복잡함이 꼬인 것보다 좋다.</span><br><span class="line">5 수평이 계층보다 좋다.</span><br><span class="line">6 여유로운 것이 밀집한 것보다 좋다.</span><br><span class="line">7 가독성은 중요하다.</span><br><span class="line">8 특별한 경우라는 것은 규칙을 어겨야 할 정도로 특별한 것이 아니다.</span><br><span class="line">9 허나 실용성은 순수성에 우선한다.</span><br><span class="line">10 오류 앞에서 절대 침묵하지 말지어다.</span><br><span class="line">11 명시적으로 오류를 감추려는 의도가 아니라면.</span><br><span class="line">12 모호함을 앞에 두고, 이를 유추하겠다는 유혹을 버려라.</span><br><span class="line">13 어떤 일에든 명확한 - 바람직하며 유일한 - 방법이 존재한다.</span><br><span class="line">14 비록 그대가 우둔하여 그 방법이 처음에는 명확해 보이지 않을지라도.</span><br><span class="line">15 지금 하는게 아예 안하는 것보다 낫다.</span><br><span class="line">16 아예 안하는 것이 지금 당장 보다 나을 때도 있지만.</span><br><span class="line">17 구현 결과를 설명하기 어렵다면, 그 아이디어는 나쁘다.</span><br><span class="line">18 구현 결과를 설명하기 쉽다면, 그 아이디어는 좋은 아이디어일 수 있다.</span><br><span class="line">19 네임스페이스는 대박 좋은 아이디어다 -- 마구 남용해라! </span><br></pre></td></tr></table></figure>
+
+<span class="label primary"> 파이썬 핵심 개발자 Tim Peters가 제안한 가이드라인은 20개이며 빠진 내용은 “some bizarre Tim Peters in-joke.” 입니다. 누가 파이썬 창시자인 귀도 반 로섬에게 질문하고 들은 내용이라고 합니다</span>
+<p>삭제된 하나의 가이드라인은 무엇이죠? - <span class="exturl" data-url="aHR0cHM6Ly9zdGFja292ZXJmbG93LmNvbS9xdWVzdGlvbnMvNDUwNDQ4Ny90aGUtemVuLW9mLXB5dGhvbi1kaXN0aWxzLXRoZS1ndWlkaW5nLXByaW5jaXBsZXMtZm9yLXB5dGhvbi1pbnRvLTIwLWFwaG9yaXNtcy1idS80NTA0ODkx" title="https://stackoverflow.com/questions/4504487/the-zen-of-python-distils-the-guiding-principles-for-python-into-20-aphorisms-bu/4504891">stackoverflow<i class="fa fa-external-link"></i></span></p>
+<h1 id="C-style-braces"><a href="#C-style-braces" class="headerlink" title="C-style braces"></a>C-style braces</h1><p>아시다싶이 Python에서는 코드 블록을 구분할 때 괄호(brace)를 사용하지 않고 들여쓰기(indentation)를 사용합니다.<br>프로그래머 마다 각자 선호하는 코딩 스타일이 있고 이는 마치 종교처럼 나뉘어져 있습니다.<br>종교의 자유가 있듯이 파이썬에서도 괄호를 사용하는 코드 스타일을 허용해 줄까요?</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">from</span> __future__ <span class="keyword">import</span> braces</span><br><span class="line">  File <span class="string">"&lt;stdin&gt;"</span>, line <span class="number">1</span></span><br><span class="line">  SyntaxError: <span class="keyword">not</span> a chance </span><br></pre></td></tr></table></figure>
+
+<p><del>~ <strong>어림도 없지!!!</strong> ~</del><br><code>__future__</code> 모듈은 파이썬 2, 3 사이의 호환성 문제를 해결하기 위한 모듈입니다. 파이썬 2에서도 파이썬 3에서 사용하는 문법을 쓸수 있도록 해줍니다. 단어대로 해석하자면 미래에 사용되는 ~한 기능을 가져와서 사용하겠다가 되겠습니다.<br>괄호 사용을 선호하는 프로그래머를 위해 braces 기능을 넣어주겠지? 하는 마음에 모듈을 호출해보면 SyntaxError로 <span class="label danger">not a chance</span> 라고 그럴일은 없다고 단호하게 출력되는 것이 <em>유머</em> 입니다.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">from</span> __future__ <span class="keyword">import</span> test</span><br><span class="line">  File <span class="string">"&lt;stdin&gt;"</span>, line <span class="number">1</span></span><br><span class="line">  SyntaxError: future feature test <span class="keyword">is</span> <span class="keyword">not</span> defined </span><br></pre></td></tr></table></figure>
+
+<p><code>__future__</code> 모듈에 없는 임의의 모듈을 호출하면 그냥 선언되어 있지 않다고 왠지 모르게 밋밋한 답변을 볼 수 있습니다.</p>
+<hr>
+<hr>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/PY-string-formatting/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="NUNU">
+      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="AttackOnNunu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/[object Object]/PY-string-formatting/" class="post-title-link" itemprop="url">(PYTHON) 문자열 포맷팅</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2020-02-24 22:39:14" itemprop="dateCreated datePublished" datetime="2020-02-24T22:39:14+09:00">2020-02-24</time>
+            </span>
+          
+
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/" itemprop="url" rel="index"><span itemprop="name">LANGUAGE</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/" itemprop="url" rel="index"><span itemprop="name">PYTHON</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/TERMINOLOGY/" itemprop="url" rel="index"><span itemprop="name">TERMINOLOGY</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">댓글: </span>
+                <a href="/[object Object]/PY-string-formatting/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/PY-string-formatting/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
+<li>Python 공식 문서 - <span class="exturl" data-url="aHR0cHM6Ly9kb2NzLnB5dGhvbi5vcmcvMy90dXRvcmlhbC9pbnB1dG91dHB1dC5odG1s" title="https://docs.python.org/3/tutorial/inputoutput.html">7. Input and Output<i class="fa fa-external-link"></i></span></li>
+</ul>
+<blockquote>
+<p>개인적인 생각과 상상으로 작성한 내용들이 포함되어 있습니다</p>
+</blockquote>
+<hr>
+<div class="note info">
+            <p>(본 내용에서 파일 입/출력은 생략하겠습니다)<br>조금 과장되게 말해서 파이썬에서 입력과 출력은 <code>input()</code> 함수와 <code>print()</code> 함수만 알면 끝입니다.<br>파이썬은 <code>input()</code> 함수를 통해 입력되는 모든 것을 string 자료형으로 통일시켜 마치 쌈 싸서 한 입에 먹는 것 처럼 처리합니다. (이 한 뭉텅이의 입력 데이터를 연산의 필요에 따라 <code>int</code>, <code>list</code> 등의 다른 자료형으로 변환시키거나 특정 구분자로 <code>split()</code> 함수를 사용해 분리시키기도 합니다. 중요한건 들어올 때는 참 쉽다는 것입니다.)<br>어떻게 입력 받는지 보다 어떻게 출력 되는지가 더 중요하다는 것은 아닙니다. 하지만 ‘보기 좋은 떡이 먹기도 좋다’ 라는 속담이 있듯이 많은 사람들이 입력 보단 프로그램의 결과물인 출력 방법에 더 정성을 쏟는 것 같습니다.</p>
+          </div>
+
+<img data-src="https://www.izscomic.com/wp-content/uploads/2016/06/Hard-to-escape.jpg">
+
+
+<h1 id="String-Formatting"><a href="#String-Formatting" class="headerlink" title="String Formatting"></a>String Formatting</h1><ul>
+<li>Python 3.8 공식 문서를 보면 3가지 방법이 소개 되어 있습니다.(manual formatting 생략)</li>
+</ul>
+<h2 id="Formatted-String-Literals"><a href="#Formatted-String-Literals" class="headerlink" title="Formatted String Literals"></a>Formatted String Literals</h2><p>줄여서 <strong>f-strings</strong> 라고 불립니다. <mark>파이썬 3.6 버전 이상</mark>부터 지원합니다.<br>문자열 <code>&#39;&#39;</code> 앞에 <code>f</code> 혹은 <code>F</code> 를 붙여서 사용하며 변수는 <code>{}</code> 안에 변수명으로 호출합니다.(<code>{}</code> 안의 공간을 format field라고 부릅니다.)</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> math</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(<span class="string">f'The value of pi is approximately <span class="subst">&#123;math.pi&#125;</span>.'</span>)</span><br><span class="line">The value of pi <span class="keyword">is</span> approximately <span class="number">3.141592653589793</span>. </span><br></pre></td></tr></table></figure>
+
+<p><code>{expression}</code> 안에 <code>:</code> 뒤에 optional format specifier를 지정할 수 있습니다.</p>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="comment"># optional format specifier 지정</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(F<span class="string">'The value of pi is approximately &#123;math.pi:.3f&#125;.'</span>)</span><br><span class="line">The value of pi <span class="keyword">is</span> approximately <span class="number">3.142</span>.</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="comment"># 문자열의 공간을 지정할 수 도 있습니다</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>table = &#123;<span class="string">'Sjoerd'</span>: <span class="number">4127</span>, <span class="string">'Jack'</span>: <span class="number">4098</span>, <span class="string">'Dcab'</span>: <span class="number">7678</span>&#125;</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">for</span> name, phone <span class="keyword">in</span> table.items():</span><br><span class="line"><span class="meta">... </span>    print(<span class="string">f'<span class="subst">&#123;name:<span class="number">10</span>&#125;</span> ==&gt; <span class="subst">&#123;phone:<span class="number">10</span>d&#125;</span>'</span>)</span><br><span class="line">...</span><br><span class="line">Sjoerd     ==&gt;       4127</span><br><span class="line">Jack       ==&gt;       4098</span><br><span class="line">Dcab       ==&gt;       7678</span><br></pre></td></tr></table></figure>
+
+
+<p><code>{}</code> 안에서 기본적인 산술 연산이 가능합니다.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a, b = <span class="number">5</span>, <span class="number">7</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(<span class="string">f'<span class="subst">&#123;a + b&#125;</span>'</span>)</span><br><span class="line"><span class="number">12</span>  </span><br></pre></td></tr></table></figure>
+
+<p>호출할 변수를 나중에 선언하는 것도 가능합니다.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>h = <span class="string">f'Hello <span class="subst">&#123;w&#125;</span>'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>w = <span class="string">'World!'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(h)</span><br><span class="line">Hello World!  </span><br></pre></td></tr></table></figure>
+
+
+<h2 id="str-format-Method"><a href="#str-format-Method" class="headerlink" title="str.format() Method"></a>str.format() Method</h2><p>문자열 <code>&#39;&#39;</code> 뒤에 <code>.format()</code> 함수를 붙여 사용하는 방법입니다.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(<span class="string">'We are the &#123;&#125; who say "&#123;&#125;!"'</span>.format(<span class="string">'knights'</span>, <span class="string">'Ni'</span>))</span><br><span class="line">We are the knights who say <span class="string">"Ni!"</span>  </span><br></pre></td></tr></table></figure>
+
+<p><code>format()</code> 함수 안에 있는 객체들이 format field 즉, <code>{}</code> 안의 내용으로 대입됩니다. Format field 안에 번호를 붙여줌으로 객체들의 순서를 바꿀 수도 있습니다.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(<span class="string">'&#123;0&#125; and &#123;1&#125;'</span>.format(<span class="string">'spam'</span>, <span class="string">'eggs'</span>))</span><br><span class="line">spam <span class="keyword">and</span> eggs</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(<span class="string">'&#123;1&#125; and &#123;0&#125;'</span>.format(<span class="string">'spam'</span>, <span class="string">'eggs'</span>))</span><br><span class="line">eggs <span class="keyword">and</span> spam </span><br></pre></td></tr></table></figure>
+
+<p>Format field에는 숫자뿐만이 아니라 keyword 이름으로 넣을 수 있습니다.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(<span class="string">'The story of &#123;0&#125;, &#123;1&#125;, and &#123;other&#125;.'</span>.format(<span class="string">'Bill'</span>, <span class="string">'Manfred'</span>, other=<span class="string">'Georg'</span>))</span><br><span class="line">The story of Bill, Manfred, <span class="keyword">and</span> Georg. </span><br></pre></td></tr></table></figure>
+
+
+<h2 id="Old-string-formatting"><a href="#Old-string-formatting" class="headerlink" title="Old string formatting"></a>Old string formatting</h2><p>C 언어의 <code>printf</code> 방식과 비슷한 방법입니다.<br><strong>데이터 타입에 맞춰서 <code>%</code> 뒤에 오는 문자를 지정해 줘야하고 가독성이 떨어지는</strong> 단점이 있습니다.<br>(int 타입이지만 <code>%s</code> 를 사용해도 왜 정상적으로 출력되는 이유를 잘 모르겠습니다ㅠ 반대로하면 <span class="label danger">TypeError: %d format: a number is required, not type</span> 에러가 출력됩니다.)</p>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line"><span class="comment"># example 1</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>text = <span class="string">'World!'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(<span class="string">'Hello %s'</span> % text)  </span><br><span class="line">Hello World!</span><br><span class="line"></span><br><span class="line"><span class="comment"># example 2</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>name = <span class="string">'Eric Idle'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>age = <span class="number">74</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>job = <span class="string">'comedian'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>affiliation = <span class="string">'Monty Python'</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(<span class="string">'Hello %s. You are %d. You are a %s. You were a member of %s'</span> % (name, age, job, affiliation))</span><br><span class="line">Hello Eric Idle. You are <span class="number">74.</span> You are a comedian. You were a member of Monty Python</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(<span class="string">'You are %s. Type? %s'</span> % (age, type(age)))  </span><br><span class="line">You are 74. Type? &lt;class 'int'&gt; </span><br></pre></td></tr></table></figure>
+
+<h1 id="비교"><a href="#비교" class="headerlink" title="비교"></a>비교</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># time.py written in PyCharm</span></span><br><span class="line"><span class="keyword">from</span> timeit <span class="keyword">import</span> timeit</span><br><span class="line"></span><br><span class="line">print(<span class="string">'f-string: '</span>, timeit(<span class="string">"f'&#123;name&#125; is &#123;age&#125;'"</span>, setup=<span class="string">'name = "Guido"; age=64'</span>))</span><br><span class="line">print(<span class="string">'format(): '</span>, timeit(<span class="string">"'&#123;&#125; is &#123;&#125;'.format(name, age)"</span>, setup=<span class="string">'name = "Guido"; age=64'</span>))</span><br><span class="line">print(<span class="string">'% operator:'</span>, timeit(<span class="string">"'%s is %s' % (name, age)"</span>, setup=<span class="string">'name = "Guido"; age=64'</span>))  </span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">f-string:  <span class="number">0.22740733000000002</span></span><br><span class="line">format():  <span class="number">0.471766373</span></span><br><span class="line">% operator: <span class="number">0.3950569239999999</span>  </span><br></pre></td></tr></table></figure>
+
+<p><strong>f-string</strong> 방식이 가장 빠른 것을 확인할 수 있습니다.</p>
+<h1 id="결론"><a href="#결론" class="headerlink" title="결론"></a>결론</h1><div class="note info">
+            <p>Formatted String Literals 즉, f-string 사용을 권장합니다.</p>
+          </div>
+
+
+
+<hr>
+<hr>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
     
       
 
@@ -589,543 +1102,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/PY-textwrap/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="NUNU">
-      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="AttackOnNunu">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/[object Object]/PY-textwrap/" class="post-title-link" itemprop="url">(PYTHON) TextWrap</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">작성일</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2020-02-20 00:29:17" itemprop="dateCreated datePublished" datetime="2020-02-20T00:29:17+09:00">2020-02-20</time>
-            </span>
-          
-
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/" itemprop="url" rel="index"><span itemprop="name">LANGUAGE</span></a></span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/" itemprop="url" rel="index"><span itemprop="name">PYTHON</span></a></span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/TERMINOLOGY/" itemprop="url" rel="index"><span itemprop="name">TERMINOLOGY</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">댓글: </span>
-                <a href="/[object Object]/PY-textwrap/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/PY-textwrap/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          <br>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
-<li>Python 공식 문서 - <span class="exturl" data-url="aHR0cHM6Ly9kb2NzLnB5dGhvbi5vcmcvMy44L2xpYnJhcnkvdGV4dHdyYXAuaHRtbA==" title="https://docs.python.org/3.8/library/textwrap.html">textwrap - Text wrapping and filling<i class="fa fa-external-link"></i></span></li>
-<li>‘wrap’ 사전적 의미 - <span class="exturl" data-url="aHR0cHM6Ly9kaWN0aW9uYXJ5LmNhbWJyaWRnZS5vcmcva28vJUVDJTgyJUFDJUVDJUEwJTg0LyVFQyU5OCU4MSVFQyU5NiVCNC93cmFw" title="https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/wrap">Cambridge Dictionary<i class="fa fa-external-link"></i></span></li>
-<li>‘text wrap’의 뜻 - <span class="exturl" data-url="aHR0cHM6Ly93d3cud2Vib3BlZGlhLmNvbS9URVJNL1QvdGV4dF93cmFwLmh0bWw=" title="https://www.webopedia.com/TERM/T/text_wrap.html">webopedia.com<i class="fa fa-external-link"></i></span></li>
-<li>‘wrap text’의 뜻 - <span class="exturl" data-url="aHR0cHM6Ly93d3cuY29tcHV0ZXJob3BlLmNvbS9qYXJnb24vdy93cmFwLXRleHQuaHRt" title="https://www.computerhope.com/jargon/w/wrap-text.htm">computerhope.com<i class="fa fa-external-link"></i></span></li>
-<li>‘word wrap’의 뜻 - <span class="exturl" data-url="aHR0cHM6Ly93d3cud2Vib3BlZGlhLmNvbS9URVJNL1cvd29yZF93cmFwLmh0bWw=" title="https://www.webopedia.com/TERM/W/word_wrap.html">webopedia.com<i class="fa fa-external-link"></i></span></li>
-</ul>
-<hr>
-<div class="note info">
-            <p><a href="https://taejin0527.github.io/[object%20Object]/PY-day7/#Text-Wrap">(PYTHON) Day - 7 Strings</a>에서 <strong>textwrap 패키지</strong> 를 사용하는 문제가 있었습니다. 뭔가 용어에 대해 정확히 이해하고 넘어가야 해당 기능이 필요할 때 기억해내고 사용할 것 같아서 아래에 정리해 두려고 합니다.</p>
-          </div>
-
-<h1 id="Wrap"><a href="#Wrap" class="headerlink" title="Wrap?"></a>Wrap?</h1><h2 id="Image-Search"><a href="#Image-Search" class="headerlink" title="Image Search"></a>Image Search</h2><div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 50%;"><img style="height:250px" data-src="https://www.landolakes.com/RecipeManagementSystem/media/Recipe-Media-Files/Recipes/Retail/x17/18745-italian-chicken-wraps-600x600.jpg"></div><div class="group-picture-column" style="width: 50%;"><img style="height:250px" data-src="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F2651C337537584241E"></div></div></div></div>
-
-<p>Google에 ‘wrap’이라는 단어를 이미지로 검색해보면 왼쪽 사진과 같은 음식 사진들로 가득찬 것을 보실 수 있습니다.<br>한국어로 ‘랩’이라고 검색하면 오른쪽 사진과 같은 비닐랩 사진이 많이 보이지만 비교적 다양한 사진들이 섞여 있습니다.<br>많은 사람들이 wrap이라는 단어를 들었을 때 음식이나 주방요품을 떠올리면서 무언가를 감싸는 의미를 갖는 다는 느낌을 받습니다.</p>
-<h2 id="Cambridge-Dictionary"><a href="#Cambridge-Dictionary" class="headerlink" title="Cambridge Dictionary"></a>Cambridge Dictionary</h2><div class="note ">
-            <p><strong>[Verb]</strong><br> <strong>to <span class="label primary">cover</span> or <span class="label primary">surround</span> something with paper, cloth, or other material</strong><br> <strong>to <span class="label primary">cover</span> someone with a piece of material in order to <span class="label primary">protect</span> them</strong></p>
-          </div>
-
-<p>영어사전에서 찾아봐도 위에서 예상한 것 처럼 ‘무언가를 감싸는 것’을 뜻한다는 것을 볼 수 있습니다.<br><code>cover</code>, <code>surround</code> 라는 단어에서 ‘덮는다’, ‘감싼다’라는 의미를 정확히 알 수 있는데, <code>protect</code> 라는 단어가 눈에 띄는군요.<br><br></p>
-<hr>
-<h1 id="Text-Wrap"><a href="#Text-Wrap" class="headerlink" title="Text Wrap?"></a>Text Wrap?</h1><p>‘text wrap’은 ‘plastic wrap’처럼 텍스트로 무언가를 감싸는 것을 뜻하는 것일까요?</p>
-<h2 id="Image-Search-1"><a href="#Image-Search-1" class="headerlink" title="Image Search"></a>Image Search</h2><div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 50%;"><img style="height:250px" data-src="https://indesignsecrets.com/wp-content/uploads/2009/01/text-wrap-final.jpg"></div><div class="group-picture-column" style="width: 50%;"><img style="height:250px" data-src="https://booksonthewall.com/wp-content/uploads/2015/09/alices_adventures_in_wonderland_new_slice_2.png"></div></div><div class="group-picture-row"><div class="group-picture-column" style="width: 50%;"><img style="height:350px" data-src="https://www.howtogeek.com/wp-content/uploads/2018/08/13-Wrap-and-Distance.png"></div><div class="group-picture-column" style="width: 50%;"><img style="height:350px" data-src="/img/text wrap.png"></div></div></div></div>
-
-<p>똑같이 Google 이미지 검색으로 ‘text wrap’을 찾아보면 위 사진처럼 특정 이미지에 맞춰 그 주위를 텍스트로 감싸는 것을 볼 수 있습니다. 이런 기능을 우리는 문서 작성 프로그램을 사용하며 자주 볼 수 있습니다. 한글로는 ‘텍스트 배치’라고 적혀있고 영어로 ‘text wrapping’이라고 적혀있는 것을 아래 사진을 통해 확인할 수 있습니다.</p>
-<h2 id="Webopedia"><a href="#Webopedia" class="headerlink" title="Webopedia"></a>Webopedia</h2><blockquote>
-<p><del>문득 Webo는 무엇을 뜻하는지 궁금해졌다. 백과사전을 뜻하는 Encyclopedia은 그리스어 Enkyklios Paideia(Complete Knowledge)에서 온 말이다. 이를 응용해서 Wikipedia는 wiki(인터넷 사용자 누구나 작성하고 수정할 수 있는) + pedia(지식)를 합친 뜻이 된다. 그렇다면 webo는 무슨 뜻이 있을까? 그냥 webpedia해도 되지않나? 왜 o가 들어갔지?</del></p>
-</blockquote>
-<p>(본문의 내용을 요약한 것입니다. 정확한 내용은 위 출처를 통해 확인하실 수 있습니다.)</p>
-<div class="note ">
-            <p>텍스트가 그래픽(이미지, 도표 등)을 감싸고 있는 것<br>HTML에서 &lt;img&gt; tag 안에 align=’left’ 혹은 ‘right’ 등을 선언함으로 텍스트 배치를 사용할 수 있다<br>동의어로 <strong>text flow</strong> 가 있다</p>
-          </div>
-
-<br>
-
-<hr>
-<div class="note info">
-            <p>하지만 문제에서 봤던 기능은 여기까지 알아본 내용과는 다른 것 같습니다. Python의 textwrap 패키지는 문단의 여백을 제어하는 기능인 것 같아서 조금 더 알아보겠습니다.</p>
-          </div>
-
-
-<h1 id="Wrap-Text"><a href="#Wrap-Text" class="headerlink" title="Wrap Text??"></a>Wrap Text??</h1><p>단어의 순서를 바꿔서 ‘wrap text’는 무언가로 텍스트를 감싸는 것을 뜻하는 것일까요?</p>
-<h2 id="Image-Search-2"><a href="#Image-Search-2" class="headerlink" title="Image Search"></a>Image Search</h2><div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 50%;"><img style="height:250px" data-src="https://www.computerhope.com/jargon/w/wrap-text.jpg"></div><div class="group-picture-column" style="width: 50%;"><img style="height:250px" data-src="https://www.computerhope.com/jargon/w/word-wrap.jpg"></div></div></div></div>
-
-<p>word, 한글과 같은 문서 작성 프로그램과는 다르게 Excel과 같은 spreadsheet 프로그램에서는 ‘wrap text’라는 기능을 제공합니다. 첫번째 사진에서 볼 수 있듯이 해당 기능은 텍스트를 셀 크기에 맞춰서 줄 바꿈을 실행합니다.</p>
-<h2 id="Webopedia-1"><a href="#Webopedia-1" class="headerlink" title="Webopedia"></a>Webopedia</h2><div class="note ">
-            <p>정해진 margin에 맞춰 강제로 텍스트의 형태를 바꾸는 것<br>동의어로 <strong>word wrap</strong> 이 있다</p>
-          </div>
-
-
-
-<div class="note info">
-            <p>개인적으로 wraptext 혹은 wordwrap가 올바른 패키지 이름이지 않을까 하고 생각합니다. 왜 textwrap이 이름으로 채택되었는지 더 깊이 파고들지는 않겠습니다.</p>
-          </div>
-
-<hr>
-<hr>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
-          
-        
-      
-    </div>
-
-    
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/PY-day7/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="NUNU">
-      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="AttackOnNunu">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/[object Object]/PY-day7/" class="post-title-link" itemprop="url">(PYTHON) Day - 7 Strings(3)</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">작성일</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2020-02-18 18:20:38" itemprop="dateCreated datePublished" datetime="2020-02-18T18:20:38+09:00">2020-02-18</time>
-            </span>
-          
-
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/" itemprop="url" rel="index"><span itemprop="name">LANGUAGE</span></a></span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/" itemprop="url" rel="index"><span itemprop="name">PYTHON</span></a></span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/PYTHON/HACKERRANK/" itemprop="url" rel="index"><span itemprop="name">HACKERRANK</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">댓글: </span>
-                <a href="/[object Object]/PY-day7/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/PY-day7/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          <br>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
-<li>문제 출처 - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vZGFzaGJvYXJk" title="https://www.hackerrank.com/dashboard">HackerRank<i class="fa fa-external-link"></i></span></li>
-<li>파이썬 연습 - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vZG9tYWlucy9weXRob24/ZmlsdGVycyU1QnN0YXR1cyU1RCU1QiU1RD11bnNvbHZlZCZiYWRnZV90eXBlPXB5dGhvbg==" title="https://www.hackerrank.com/domains/python?filters%5Bstatus%5D%5B%5D=unsolved&badge_type=python">Practice - Python<i class="fa fa-external-link"></i></span></li>
-</ul>
-<p>개인적인 생각과 상상으로 작성한 내용들이 포함되어 있습니다<br>문제를 풀고 <span class="label success"> Discussion Tab</span>을 참고하며 코드 스타일을 개선하려고 노력하고자 합니다</p>
-<hr>
-<br>
-
-<h1 id="HackerRank"><a href="#HackerRank" class="headerlink" title="HackerRank"></a>HackerRank</h1><p>HackerRank의 Python 연습문제들은 아래와 같은 카테고리로 분류 된다:</p>
-<div class="note default">
-            <h2 id="Subdomain"><a href="#Subdomain" class="headerlink" title="Subdomain"></a>Subdomain</h2><ul><li><del>Introduction</del></li><li><del>Basic Data Types</del></li><li><strong style="color:blue">Strings</strong></li><li>Sets</li><li>Math</li><li>Itertools</li><li>Collections</li><li>Date and Time</li><li>Errors and Exceptions</li><li>Classes</li><li>Built-Ins</li><li>Python Functionals</li><li>Regex and Parsing</li><li>XML</li><li>Closures and Decorators</li><li>Numpy</li><li>Debugging</li></ul>
-          </div>
-
-<hr>
-<br>
-
-<h1 id="Strings"><a href="#Strings" class="headerlink" title="Strings"></a>Strings</h1><div class="note primary">
-            <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><ul><li><a href="#Text-Alignment">Text Alignment</a></li><li><a href="#Text-Wrap">Text Wrap</a></li><li><a href="#Designer-Door-Mat">Designer Door Mat</a></li><li><a href="#Alphabet-Rangoli">Alphabet Rangoli</a>  </li></ul>
-          </div>
-
-<h2 id="기본-개념"><a href="#기본-개념" class="headerlink" title="기본 개념"></a>기본 개념</h2><h3 id="Text-Alignment"><a href="#Text-Alignment" class="headerlink" title="Text Alignment"></a>Text Alignment</h3><div class="note info">
-            <p>다음 함수를 사용하여 문자열은 좌, 우, 중앙으로 정렬시킬 수 있다<br>width는 필수로 입력해야하고 공백을 채울 문자(fillchar)는 선택적으로 입력, 기본값은 space<br><code>str.ljust(width[, fillchar])</code> : 왼쪽 정렬<br><code>str.center(width[, fillchar])</code> : 오른쪽 정렬<br><code>str.rjust(width[, fillchar])</code> : 가운데 정렬</p>
-          </div>
-
-<div class="tabs" id="example1"><ul class="nav-tabs"><li class="tab active"><a href="#example1-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example1-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane active" id="example1-1"><p>  5</p></div><div class="tab-pane" id="example1-2"><pre>
-    H    
-   HHH   
-  HHHHH  
- HHHHHHH
-HHHHHHHHH
-  HHHHH               HHHHH             
-  HHHHH               HHHHH             
-  HHHHH               HHHHH             
-  HHHHH               HHHHH             
-  HHHHH               HHHHH             
-  HHHHH               HHHHH             
-  HHHHHHHHHHHHHHHHHHHHHHHHH   
-  HHHHHHHHHHHHHHHHHHHHHHHHH   
-  HHHHHHHHHHHHHHHHHHHHHHHHH   
-  HHHHH               HHHHH             
-  HHHHH               HHHHH             
-  HHHHH               HHHHH             
-  HHHHH               HHHHH             
-  HHHHH               HHHHH             
-  HHHHH               HHHHH             
-                   HHHHHHHHH
-                    HHHHHHH  
-                     HHHHH   
-                      HHH    
-                       H  </pre></div></div></div>
-
-<div class="note success">
-            <p>Cone, Pillars, Belt 부분으로 나누어서 그림을 그려나가는 것이 흥미로웠다<br><span class="label danger"> 아래 코드는 해당 문제를 풀때 Editor에 자동으로 입력되어 있던 코드에서 ljust, rjust, center 함수만 끼워 넣은 것이다</span></p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#Replace all ______ with rjust, ljust or center.</span></span><br><span class="line"></span><br><span class="line">thickness = int(input()) <span class="comment">#This must be an odd number</span></span><br><span class="line">c = <span class="string">'H'</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#Top Cone</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(thickness):</span><br><span class="line">    print((c*i).rjust(thickness<span class="number">-1</span>)+c+(c*i).ljust(thickness<span class="number">-1</span>))</span><br><span class="line"></span><br><span class="line"><span class="comment">#Top Pillars</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(thickness+<span class="number">1</span>):</span><br><span class="line">    print((c*thickness).center(thickness*<span class="number">2</span>)+(c*thickness).center(thickness*<span class="number">6</span>))</span><br><span class="line"></span><br><span class="line"><span class="comment">#Middle Belt</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range((thickness+<span class="number">1</span>)//<span class="number">2</span>):</span><br><span class="line">    print((c*thickness*<span class="number">5</span>).center(thickness*<span class="number">6</span>))    </span><br><span class="line"></span><br><span class="line"><span class="comment">#Bottom Pillars</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(thickness+<span class="number">1</span>):</span><br><span class="line">    print((c*thickness).center(thickness*<span class="number">2</span>)+(c*thickness).center(thickness*<span class="number">6</span>))    </span><br><span class="line"></span><br><span class="line"><span class="comment">#Bottom Cone</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(thickness):</span><br><span class="line">    print(((c*(thickness-i<span class="number">-1</span>)).rjust(thickness)+c+(c*(thickness-i<span class="number">-1</span>)).ljust(thickness)).rjust(thickness*<span class="number">6</span>))   </span><br></pre></td></tr></table></figure><ul><li>재사용성을 생각했을 때, 각 부분들을 정의해 놓고 마지막에 출력할 때 필요한 부분들을 블럭을 조립하듯이 쌓으면 훨씬 깔끔한 것 같다</li></ul><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">width =int(input())</span><br><span class="line">c=<span class="string">'H'</span></span><br><span class="line"></span><br><span class="line">top_cone = [(c*(<span class="number">2</span>*i+<span class="number">1</span>)).center(<span class="number">2</span>*width) <span class="keyword">for</span> i <span class="keyword">in</span> range(width)]</span><br><span class="line">pillars = [(c*width + <span class="string">' '</span> * <span class="number">3</span> * width + c * width).center(<span class="number">6</span>*width) <span class="keyword">for</span> _ <span class="keyword">in</span> range(width+<span class="number">1</span>)]</span><br><span class="line">base = [(c*<span class="number">5</span>*width).center(<span class="number">6</span>*width) <span class="keyword">for</span> _ <span class="keyword">in</span> range(width/<span class="number">2</span>+<span class="number">1</span>)]</span><br><span class="line">bottom_cone = [r.rjust(<span class="number">6</span>*width) <span class="keyword">for</span> r <span class="keyword">in</span> cone[::<span class="number">-1</span>]]</span><br><span class="line"></span><br><span class="line">print(<span class="string">'\n'</span>.join(top_cone + pillars + base + pillars + bottom_cone)) </span><br></pre></td></tr></table></figure>
-          </div>
-
-<hr>
-<h3 id="Text-Wrap"><a href="#Text-Wrap" class="headerlink" title="Text Wrap"></a>Text Wrap</h3><div class="note info">
-            <p>문제 : 입력되는 문자열 S를 길이 w만큼 잘라서 출력<br>예제 : ‘ABCDEFGHIJKLIMNOQRSTUVWXYZ’를 4개씩 잘라서 ‘ABCD’, ‘EFGH’, … 로 출력</p>
-          </div>
-
-<div class="tabs" id="example2"><ul class="nav-tabs"><li class="tab active"><a href="#example2-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example2-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane active" id="example2-1"><p>ABCDEFGHIJKLIMNOQRSTUVWXYZ<br>4</p></div><div class="tab-pane" id="example2-2"><p>ABCD<br>EFGH<br>IJKL<br>IMNO<br>QRST<br>UVWX<br>YZ</p></div></div></div>
-
-<div class="note success">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">import</span> textwrap</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">wrap</span><span class="params">(string, max_width)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> <span class="string">'\n'</span>.join([string[i:i+max_width] <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>, len(string), max_width)])</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">text_wrap</span><span class="params">(string, max_width)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> <span class="string">'\n'</span>.join(textwrap.wrap(string, max_width))</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    string, max_width = input(), int(input())</span><br><span class="line"></span><br><span class="line">    start_1 = time.time()</span><br><span class="line">    result = wrap(string, max_width)</span><br><span class="line">    end_1 = time.time()</span><br><span class="line"></span><br><span class="line">    start_2 = time.time()</span><br><span class="line">    result_2 = text_wrap(string, max_width)</span><br><span class="line">    end_2 = time.time()</span><br><span class="line"></span><br><span class="line">    print(result, result == result_2, sep=<span class="string">'\n'</span>)</span><br><span class="line">    print(<span class="string">'list_comprehension: '</span>.ljust(<span class="number">20</span>), round((end_1 - start_1) * <span class="number">100</span>, <span class="number">8</span>))</span><br><span class="line">    print(<span class="string">'textwrap: '</span>.ljust(<span class="number">20</span>), round((end_2 - start_2) * <span class="number">100</span>, <span class="number">8</span>)) </span><br></pre></td></tr></table></figure><ul><li>7배 정도 느린데 굳이 textwrap 모듈을 사용해야 할까?</li></ul><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># input</span></span><br><span class="line">ABCDEFGHIJKLIMNOQRSTUVWXYZ</span><br><span class="line"><span class="number">4</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># output</span></span><br><span class="line">ABCD</span><br><span class="line">EFGH</span><br><span class="line">IJKL</span><br><span class="line">IMNO</span><br><span class="line">QRST</span><br><span class="line">UVWX</span><br><span class="line">YZ</span><br><span class="line"><span class="literal">True</span></span><br><span class="line">list_comprehension:  <span class="number">0.00259876</span></span><br><span class="line">textwrap:            <span class="number">0.01468658</span>   </span><br></pre></td></tr></table></figure>
-          </div>
-
-<hr>
-<h3 id="Designer-Door-Mat"><a href="#Designer-Door-Mat" class="headerlink" title="Designer Door Mat"></a>Designer Door Mat</h3><div class="note info">
-            <p>문제 : 예제와 같은 NxM 크기의 디자인 패턴을 그리는 문제(가운데 welcome, 패턴에는 <code>-</code>, <code>|</code>, <code>.</code> 세개만 사용, N은 홀수이고 M의 크기는 N의 3배)<br>예제 : 디자인 패턴 참고</p>
-          </div>
-
-<div class="tabs" id="example3"><ul class="nav-tabs"><li class="tab active"><a href="#example3-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example3-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane active" id="example3-1"><p>9 27</p></div><div class="tab-pane" id="example3-2"><pre>
-------------.|.------------
----------.|..|..|.---------
-------.|..|..|..|..|.------
----.|..|..|..|..|..|..|.---
-----------WELCOME----------
----.|..|..|..|..|..|..|.---
-------.|..|..|..|..|.------
----------.|..|..|.---------
-------------.|.------------</pre></div></div></div>
-
-<div class="note success">
-            <p>위 <a href="#Text-Alignment">Text Alignment</a> 문제의 아이디어를 응용하여 패턴과 가운데 글자를 하나의 데이터로 정의하여 풀었음</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">N, M = map(int, input().split())</span><br><span class="line">pattern = [(<span class="string">'.|.'</span> * (<span class="number">2</span>*i+<span class="number">1</span>)).center(M, <span class="string">'-'</span>) <span class="keyword">for</span> i <span class="keyword">in</span> range(N//<span class="number">2</span>)]</span><br><span class="line">middle_pattern = <span class="string">'WELCOME'</span>.center(M, <span class="string">'-'</span>)</span><br><span class="line"></span><br><span class="line">print(<span class="string">'\n'</span>.join(pattern), middle_pattern, <span class="string">'\n'</span>.join(pattern[::<span class="number">-1</span>]), sep=<span class="string">'\n'</span>) </span><br></pre></td></tr></table></figure>
-          </div>
-
-<hr>
-<h3 id="Alphabet-Rangoli"><a href="#Alphabet-Rangoli" class="headerlink" title="Alphabet Rangoli"></a>Alphabet Rangoli</h3><div class="note info">
-            <p>문제 : Rangoli는 인도의 전통미술 패턴이다. 입력받는 N 크기의 랑골리 패턴을 그리는 문제<br>예제 : 랑골리 패턴 참고(크기가 커질수록 알파벳순으로 글자도 늘어남)</p>
-          </div>
-
-<div class="tabs" id="example4"><ul class="nav-tabs"><li class="tab active"><a href="#example4-1"><i class="fa fa-code"></i>INPUT</a></li><li class="tab"><a href="#example4-2"><i class="fa fa-code"></i>OUTPUT</a></li></ul><div class="tab-content"><div class="tab-pane active" id="example4-1"><p>5</p></div><div class="tab-pane" id="example4-2"><pre>
---------e--------
-------e-d-e------
-----e-d-c-d-e----
---e-d-c-b-c-d-e--
-e-d-c-b-a-b-c-d-e
---e-d-c-b-c-d-e--
-----e-d-c-d-e----
-------e-d-e------
---------e-------- </pre></div></div></div>
-
-<div class="note success">
-            <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> string</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">print_rangoli</span><span class="params">(size)</span>:</span></span><br><span class="line">  alpha = string.ascii_lowercase</span><br><span class="line">  L = []</span><br><span class="line">  <span class="keyword">for</span> i <span class="keyword">in</span> range(n):</span><br><span class="line">    s = <span class="string">"-"</span>.join(alpha[i:n])</span><br><span class="line">    L.append((s[::<span class="number">-1</span>]+s[<span class="number">1</span>:]).center(<span class="number">4</span>*n<span class="number">-3</span>, <span class="string">"-"</span>))</span><br><span class="line"></span><br><span class="line">  print(<span class="string">'\n'</span>.join(L[:<span class="number">0</span>:<span class="number">-1</span>]+L))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    n = int(input())</span><br><span class="line">    print_rangoli(n) </span><br></pre></td></tr></table></figure>
-          </div>
-
-<hr>
-<hr>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
-          
-        
-      
-    </div>
-
-    
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1174,7 +1150,7 @@ e-d-c-b-a-b-c-d-e
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">97</span>
+                    <span class="site-state-item-count">99</span>
                     <span class="site-state-item-name">포스트</span>
                   </a>
                 </div>
@@ -1227,7 +1203,13 @@ e-d-c-b-a-b-c-d-e
                     
                       
                     
-                    <span class="site-state-item-count">15</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">18</span>
                     <span class="site-state-item-name">카테고리</span>
                   </a>
                 </div>
@@ -1352,7 +1334,17 @@ e-d-c-b-a-b-c-d-e
                     
                       
                     
-                    <span class="site-state-item-count">50</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">55</span>
                     <span class="site-state-item-name">태그</span>
                   </a>
                 </div>
@@ -1476,9 +1468,6 @@ e-d-c-b-a-b-c-d-e
 
 
 
-  
-  
-
 
 
 
@@ -1497,18 +1486,10 @@ e-d-c-b-a-b-c-d-e
   
   <script src="/lib/lazyload/lozad.min.js?v=1.10.0"></script>
 
-  
-  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
 
 
 
   <script src="/js/utils.js?v=7.2.0"></script>
-
-  <script src="/js/motion.js?v=7.2.0"></script>
 
 
 
@@ -1555,6 +1536,326 @@ e-d-c-b-a-b-c-d-e
 
 
   
+  <script>
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url).replace(/\/{2,}/g, '/');
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x"></i></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x"></i></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
 
 
 
