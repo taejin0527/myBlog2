@@ -77,8 +77,8 @@
     root: '/',
     scheme: 'Mist',
     version: '7.2.0',
-    sidebar: {"position":"right","display":"post","offset":12,"onmobile":true},
-    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    sidebar: {"position":"right","display":"hide","offset":12,"onmobile":true},
+    back2top: {"enable":true,"sidebar":true,"scrollpercent":false},
     copycode: {"enable":true,"show_result":true,"style":"flat"},
     fancybox: false,
     fastclick: false,
@@ -102,18 +102,18 @@
 
 
 
-  <meta name="description" content="Reference Fast I/O in Java in Competitive Programming - geeksforgeeks.com   Competitive Programming을 위한 자바의 빠른 입출력">
-<meta name="keywords" content="programming language,language,자바,java">
+  <meta name="description" content="Reference 스트림(Stream) 이란? - 정보통신기술용어해설 스트림(Stream)이란 - 프로그래머의 블로그 Java IO : Input-output in Java with Examples - geeksforgeeks.com Java IO Stream - studytonight.com               자바의 입출력과 관련해서 이것저것 찾아">
+<meta name="keywords" content="programming language,language,자바,java,terminology">
 <meta property="og:type" content="article">
-<meta property="og:title" content="(JAVA) Competitive programming을 위한 Java의 빠른 입출력">
-<meta property="og:url" content="https://taejin0527.github.io/[object Object]/JAVA-fast-io/index.html">
+<meta property="og:title" content="Stream 이란?">
+<meta property="og:url" content="https://taejin0527.github.io/[object Object]/JAVA-20200812-stream/index.html">
 <meta property="og:site_name" content="AttackOnNunu">
-<meta property="og:description" content="Reference Fast I/O in Java in Competitive Programming - geeksforgeeks.com   Competitive Programming을 위한 자바의 빠른 입출력">
+<meta property="og:description" content="Reference 스트림(Stream) 이란? - 정보통신기술용어해설 스트림(Stream)이란 - 프로그래머의 블로그 Java IO : Input-output in Java with Examples - geeksforgeeks.com Java IO Stream - studytonight.com               자바의 입출력과 관련해서 이것저것 찾아">
 <meta property="og:locale" content="ko">
-<meta property="og:updated_time" content="2020-08-11T11:12:58.894Z">
+<meta property="og:updated_time" content="2020-08-12T02:26:11.715Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="(JAVA) Competitive programming을 위한 Java의 빠른 입출력">
-<meta name="twitter:description" content="Reference Fast I/O in Java in Competitive Programming - geeksforgeeks.com   Competitive Programming을 위한 자바의 빠른 입출력">
+<meta name="twitter:title" content="Stream 이란?">
+<meta name="twitter:description" content="Reference 스트림(Stream) 이란? - 정보통신기술용어해설 스트림(Stream)이란 - 프로그래머의 블로그 Java IO : Input-output in Java with Examples - geeksforgeeks.com Java IO Stream - studytonight.com               자바의 입출력과 관련해서 이것저것 찾아">
 
 
 
@@ -123,7 +123,7 @@
 
   
   
-  <link rel="canonical" href="https://taejin0527.github.io/[object Object]/JAVA-fast-io/">
+  <link rel="canonical" href="https://taejin0527.github.io/[object Object]/JAVA-20200812-stream/">
 
 
 
@@ -133,7 +133,7 @@
   };
 </script>
 
-  <title>(JAVA) Competitive programming을 위한 Java의 빠른 입출력 | AttackOnNunu</title>
+  <title>Stream 이란? | AttackOnNunu</title>
   
 
 
@@ -383,12 +383,12 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/JAVA-fast-io/">
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/JAVA-20200812-stream/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="NUNU">
       <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/img/jjang.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -400,7 +400,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">(JAVA) Competitive programming을 위한 Java의 빠른 입출력
+          <h2 class="post-title" itemprop="name headline">Stream 이란?
 
               
             
@@ -426,7 +426,7 @@
                 
               
 
-              <time title="Post created: 2020-08-11 19:33:56" itemprop="dateCreated datePublished" datetime="2020-08-11T19:33:56+09:00">2020-08-11</time>
+              <time title="Post created: 2020-08-12 10:54:46" itemprop="dateCreated datePublished" datetime="2020-08-12T10:54:46+09:00">2020-08-12</time>
             </span>
           
 
@@ -473,8 +473,8 @@
                 </span>
             
                 <span class="post-meta-item-text">댓글: </span>
-                <a href="/[object Object]/JAVA-fast-io/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/JAVA-fast-io/" itemprop="commentCount"></span>
+                <a href="/[object Object]/JAVA-20200812-stream/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/JAVA-20200812-stream/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -508,15 +508,44 @@
 
       
         <h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
-<li>Fast I/O in Java in Competitive Programming - <span class="exturl" data-url="aHR0cHM6Ly93d3cuZ2Vla3Nmb3JnZWVrcy5vcmcvZmFzdC1pby1pbi1qYXZhLWluLWNvbXBldGl0aXZlLXByb2dyYW1taW5nLw==" title="https://www.geeksforgeeks.org/fast-io-in-java-in-competitive-programming/">geeksforgeeks.com<i class="fa fa-external-link"></i></span></li>
+<li>스트림(Stream) 이란? - <span class="exturl" data-url="aHR0cDovL3d3dy5rdHdvcmQuY28ua3IvYWJicl92aWV3LnBocD9tX3RlbXAxPTEzMTE=" title="http://www.ktword.co.kr/abbr_view.php?m_temp1=1311">정보통신기술용어해설<i class="fa fa-external-link"></i></span></li>
+<li>스트림(Stream)이란 - <span class="exturl" data-url="aHR0cHM6Ly9nZW5lc2lzOC50aXN0b3J5LmNvbS8yMzA/Y2F0ZWdvcnk9MTA3OTUy" title="https://genesis8.tistory.com/230?category=107952">프로그래머의 블로그<i class="fa fa-external-link"></i></span></li>
+<li>Java IO : Input-output in Java with Examples - <span class="exturl" data-url="aHR0cHM6Ly93d3cuZ2Vla3Nmb3JnZWVrcy5vcmcvamF2YS1pby1pbnB1dC1vdXRwdXQtaW4tamF2YS13aXRoLWV4YW1wbGVzLw==" title="https://www.geeksforgeeks.org/java-io-input-output-in-java-with-examples/">geeksforgeeks.com<i class="fa fa-external-link"></i></span></li>
+<li>Java IO Stream - <span class="exturl" data-url="aHR0cHM6Ly93d3cuc3R1ZHl0b25pZ2h0LmNvbS9qYXZhL2phdmEtaW8tc3RyZWFtLnBocA==" title="https://www.studytonight.com/java/java-io-stream.php">studytonight.com<i class="fa fa-external-link"></i></span></li>
 </ul>
-<blockquote>
-<p>Competitive Programming을 위한 자바의 빠른 입출력</p>
-</blockquote>
-<hr>
-<br>
+<div class="note info">
+            <p>자바의 입출력과 관련해서 이것저것 찾아보다가 stream에 대해 잘 이해해두면 좋을 것 같아 정리하게 되었다.<br>(JDK 8에서 Stream API가 추가되기도 했고… 여러모로 정확한 개념 이해가 중요할 것 같다)</p>
+          </div>
 
 <a id="more"></a>
+
+<hr>
+<h1 id="I-O-Stream"><a href="#I-O-Stream" class="headerlink" title="I/O Stream"></a>I/O Stream</h1><p><img alt="i/o operation" data-src="https://media.geeksforgeeks.org/wp-content/uploads/20191126125125/Java-Input-Output-Stream.jpg"></p>
+<p>이렇게 프로그래밍 언어들은 스트림(stream)을 통해 데이터를 입력받고 출력한다.</p>
+<p><strong>정보통신기술용어해설</strong> 에 따르면,</p>
+<div class="note 스트림이란?">
+            <h3 id="Stream이란"><a href="#Stream이란" class="headerlink" title="Stream이란?"></a>Stream이란?</h3><p>※ 영어 뜻으로는, <code>흐르는 시냇물</code>등을 의미</p><p>ㅇ [데이터 관점]</p><ul><li>일반적으로, 데이터,패킷,비트 등의 일련의 연속성을 갖는 흐름을 의미<br> . 음성,영상,텍스트 등의 작은 데이터 조각들이 하나의 줄기를 이루며,<br> . 순서대로 물 흐르듯이 전송되는 데이터 열(列)</li></ul>
+          </div>
+
+
+<p>Stream 즉, 시냇물은 연속적이고 흐르는 것이 핵심이고 이 용어가 사용되는 곳에 따라 해석이 조금 확장되는 것 같다</p>
+<p>예를 들어, 음료수와 그 음료수에 빨대가 꽂혀 있다고 하자.<br>빨대를 쭉 빨아 당기면 음료수가 빨대에 모이게 되고, 계속 빨아 당기면 입안으로 음료수가 들어오게 된다.<br>여기서 음료수는 입력 받고자하는 데이터가 되고 빨대는 스트림, 입은 프로그램으로 생각해볼 수 있다.<br>(반대는… 상상에 맡긴다)</p>
+<p>데이터를 운반하는데 사용되는 연결통로같은 개념이라면 왜 굳이 스트림이라는 단어를 사용했을까?<br>이는 데이터가 물의 흐름과 같이 흘러가고 <strong>물이 한쪽 방향으로만 흐르는 것</strong> 같이 데이터가 <strong>단방향 통신</strong> 만 가능하기 때문이다.<br>즉 하나의 스트림으로 입력과 출력을 동시에 처리할 수 없다.</p>
+<p><img alt="io stream" data-src="https://i.stack.imgur.com/5WrVE.png"></p>
+<div class="note ">
+            <p>ㅇ 스트림 사용 이유</p><ul><li>물리 디스크상의 파일,장치들을 통일된 방식으로 다루기 위한 가상적인 개념<br> . 따라서, 스트림은 어디서 나왔는지 어디로 가는지 신경을 쓸 필요없이 자유롭게<br>   어떤 장치,프로세스,파일들과 연결될 수 있어 프로그래머에게 많은 편리성 줌</li></ul>
+          </div>
+
+<hr>
+<h2 id="Java에서-Stream-종류"><a href="#Java에서-Stream-종류" class="headerlink" title="Java에서 Stream 종류"></a>Java에서 Stream 종류</h2><h3 id="1-Operation-타입에-따른-스트림"><a href="#1-Operation-타입에-따른-스트림" class="headerlink" title="1. Operation 타입에 따른 스트림"></a>1. Operation 타입에 따른 스트림</h3><ul>
+<li>Input Stream</li>
+</ul>
+<p><img alt="input stream" data-src="https://media.geeksforgeeks.org/wp-content/uploads/20191126132719/Java-Input-Stream.png"></p>
+<ul>
+<li>Output Stream</li>
+</ul>
+<p><img alt="output stream" data-src="https://media.geeksforgeeks.org/wp-content/uploads/20191126133237/Java-Output-Stream.png"></p>
+<h3 id="2-File-타입에-따른-스트림"><a href="#2-File-타입에-따른-스트림" class="headerlink" title="2. File 타입에 따른 스트림"></a>2. File 타입에 따른 스트림</h3><p><img alt="file stream" data-src="https://media.geeksforgeeks.org/wp-content/uploads/20191127121553/Java-stream-classification-filetype2.png"></p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
       
     </div>
@@ -555,6 +584,8 @@
           
             <a href="/tags/java/" rel="tag"># java</a>
           
+            <a href="/tags/terminology/" rel="tag"># terminology</a>
+          
         </div>
       
 
@@ -566,8 +597,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/[object Object]/Euler-010/" rel="next" title="(Problem) 010 Summation of primes">
-                <i class="fa fa-chevron-left"></i> (Problem) 010 Summation of primes
+              <a href="/[object Object]/생각-cp-ps/" rel="next" title="Competitive Programming">
+                <i class="fa fa-chevron-left"></i> Competitive Programming
               </a>
             
           </div>
@@ -575,10 +606,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/[object Object]/생각-cp-ps/" rel="prev" title="Competitive Programming">
-                Competitive Programming <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -643,7 +670,7 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image" src="/images/avatar.gif" alt="NUNU">
+              <img class="site-author-image" itemprop="image" src="/img/jjang.png" alt="NUNU">
             
               <p class="site-author-name" itemprop="name">NUNU</p>
               <div class="site-description motion-element" itemprop="description">개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.</div>
@@ -656,7 +683,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">99</span>
+                    <span class="site-state-item-count">100</span>
                     <span class="site-state-item-name">포스트</span>
                   </a>
                 </div>
@@ -850,7 +877,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">55</span>
+                      
+                    
+                    <span class="site-state-item-count">56</span>
                     <span class="site-state-item-name">태그</span>
                   </a>
                 </div>
@@ -872,6 +901,16 @@
           
 
           
+             <div class="cc-license motion-element" itemprop="license">
+              
+              
+                
+              
+              
+              
+              <span class="exturl cc-opacity" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9rbw=="><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></span>
+             </div>
+          
 
           
           
@@ -891,7 +930,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Reference"><span class="nav-text">Reference</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Reference"><span class="nav-text">Reference</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#I-O-Stream"><span class="nav-text">I/O Stream</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Stream이란"><span class="nav-text">Stream이란?</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Java에서-Stream-종류"><span class="nav-text">Java에서 Stream 종류</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Operation-타입에-따른-스트림"><span class="nav-text">1. Operation 타입에 따른 스트림</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-File-타입에-따른-스트림"><span class="nav-text">2. File 타입에 따른 스트림</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -899,6 +938,11 @@
       <!--/noindex-->
       
 
+      
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          
+        </div>
       
 
       <!-- Adsense Sidebar -->
@@ -960,11 +1004,6 @@
       </div>
     </footer>
 
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
     
 
     
@@ -1059,9 +1098,9 @@
 
 <script>
   var disqus_config = function() {
-    this.page.url = "https://taejin0527.github.io/[object Object]/JAVA-fast-io/";
-    this.page.identifier = "[object Object]/JAVA-fast-io/";
-    this.page.title = '(JAVA) Competitive programming을 위한 Java의 빠른 입출력';
+    this.page.url = "https://taejin0527.github.io/[object Object]/JAVA-20200812-stream/";
+    this.page.identifier = "[object Object]/JAVA-20200812-stream/";
+    this.page.title = 'Stream 이란?';
     };
   function loadComments() {
     var d = document, s = d.createElement('script');

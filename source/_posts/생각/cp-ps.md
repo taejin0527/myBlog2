@@ -1,6 +1,5 @@
 ---
 title: Competitive Programming
-p: /생각/cp-ps
 date: 2020-08-11 20:06:30
 categories:
   - 잡생각
@@ -10,10 +9,11 @@ subtitle: CP와 PS
 
 # Reference
 
-- ko_osaga's comment - [luckytoilet's blog](http://codeforces.com/blog/entry/49289#comment-332844)
+- Are programming competitions a good use of time? - [Lucky's Note](https://luckytoilet.wordpress.com/2016/12/23/are-programming-competitions-a-good-use-of-time/)
+- ko_osaga's comment - [codeforces.com](http://codeforces.com/blog/entry/49289#comment-332844)
 
 ---
 
-:tada: 
+:tada:
 
 <!-- more -->

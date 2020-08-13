@@ -77,8 +77,8 @@
     root: '/',
     scheme: 'Mist',
     version: '7.2.0',
-    sidebar: {"position":"right","display":"post","offset":12,"onmobile":true},
-    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    sidebar: {"position":"right","display":"hide","offset":12,"onmobile":true},
+    back2top: {"enable":true,"sidebar":true,"scrollpercent":false},
     copycode: {"enable":true,"show_result":true,"style":"flat"},
     fancybox: false,
     fastclick: false,
@@ -383,12 +383,213 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/JAVA-20200812-stream/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="NUNU">
+      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
+      <meta itemprop="image" content="/img/jjang.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="AttackOnNunu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/[object Object]/JAVA-20200812-stream/" class="post-title-link" itemprop="url">Stream 이란?</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2020-08-12 10:54:46" itemprop="dateCreated datePublished" datetime="2020-08-12T10:54:46+09:00">2020-08-12</time>
+            </span>
+          
+
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/" itemprop="url" rel="index"><span itemprop="name">LANGUAGE</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/JAVA/" itemprop="url" rel="index"><span itemprop="name">JAVA</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LANGUAGE/JAVA/TERMINOLOGY/" itemprop="url" rel="index"><span itemprop="name">TERMINOLOGY</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">댓글: </span>
+                <a href="/[object Object]/JAVA-20200812-stream/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/JAVA-20200812-stream/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
+<li>스트림(Stream) 이란? - <span class="exturl" data-url="aHR0cDovL3d3dy5rdHdvcmQuY28ua3IvYWJicl92aWV3LnBocD9tX3RlbXAxPTEzMTE=" title="http://www.ktword.co.kr/abbr_view.php?m_temp1=1311">정보통신기술용어해설<i class="fa fa-external-link"></i></span></li>
+<li>스트림(Stream)이란 - <span class="exturl" data-url="aHR0cHM6Ly9nZW5lc2lzOC50aXN0b3J5LmNvbS8yMzA/Y2F0ZWdvcnk9MTA3OTUy" title="https://genesis8.tistory.com/230?category=107952">프로그래머의 블로그<i class="fa fa-external-link"></i></span></li>
+<li>Java IO : Input-output in Java with Examples - <span class="exturl" data-url="aHR0cHM6Ly93d3cuZ2Vla3Nmb3JnZWVrcy5vcmcvamF2YS1pby1pbnB1dC1vdXRwdXQtaW4tamF2YS13aXRoLWV4YW1wbGVzLw==" title="https://www.geeksforgeeks.org/java-io-input-output-in-java-with-examples/">geeksforgeeks.com<i class="fa fa-external-link"></i></span></li>
+<li>Java IO Stream - <span class="exturl" data-url="aHR0cHM6Ly93d3cuc3R1ZHl0b25pZ2h0LmNvbS9qYXZhL2phdmEtaW8tc3RyZWFtLnBocA==" title="https://www.studytonight.com/java/java-io-stream.php">studytonight.com<i class="fa fa-external-link"></i></span></li>
+</ul>
+<div class="note info">
+            <p>자바의 입출력과 관련해서 이것저것 찾아보다가 stream에 대해 잘 이해해두면 좋을 것 같아 정리하게 되었다.<br>(JDK 8에서 Stream API가 추가되기도 했고… 여러모로 정확한 개념 이해가 중요할 것 같다)</p>
+          </div>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/[object Object]/JAVA-20200812-stream/#more" rel="contents">
+                더 읽어보기 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/생각-cp-ps/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="NUNU">
       <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/img/jjang.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -497,10 +698,11 @@
       
         
           <h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
-<li>ko_osaga’s comment - <span class="exturl" data-url="aHR0cDovL2NvZGVmb3JjZXMuY29tL2Jsb2cvZW50cnkvNDkyODkjY29tbWVudC0zMzI4NDQ=" title="http://codeforces.com/blog/entry/49289#comment-332844">luckytoilet’s blog<i class="fa fa-external-link"></i></span></li>
+<li>Are programming competitions a good use of time? - <span class="exturl" data-url="aHR0cHM6Ly9sdWNreXRvaWxldC53b3JkcHJlc3MuY29tLzIwMTYvMTIvMjMvYXJlLXByb2dyYW1taW5nLWNvbXBldGl0aW9ucy1hLWdvb2QtdXNlLW9mLXRpbWUv" title="https://luckytoilet.wordpress.com/2016/12/23/are-programming-competitions-a-good-use-of-time/">Lucky’s Note<i class="fa fa-external-link"></i></span></li>
+<li>ko_osaga’s comment - <span class="exturl" data-url="aHR0cDovL2NvZGVmb3JjZXMuY29tL2Jsb2cvZW50cnkvNDkyODkjY29tbWVudC0zMzI4NDQ=" title="http://codeforces.com/blog/entry/49289#comment-332844">codeforces.com<i class="fa fa-external-link"></i></span></li>
 </ul>
 <hr>
-<p><span class="github-emoji" alias="tada" style fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f389.png?v8">&#x1f389;</span> </p>
+<p><span class="github-emoji" alias="tada" style fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f389.png?v8">&#x1f389;</span></p>
           <!--noindex-->
           
             <div class="post-button text-center">
@@ -566,12 +768,12 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/JAVA-fast-io/">
+    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/JAVA-20200811-fast-io/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="NUNU">
       <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/img/jjang.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -586,7 +788,7 @@
           <h2 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/[object Object]/JAVA-fast-io/" class="post-title-link" itemprop="url">(JAVA) Competitive programming을 위한 Java의 빠른 입출력</a>
+                <a href="/[object Object]/JAVA-20200811-fast-io/" class="post-title-link" itemprop="url">(JAVA) Competitive programming을 위한 Java의 빠른 입출력</a>
               
             
           </h2>
@@ -658,8 +860,8 @@
                 </span>
             
                 <span class="post-meta-item-text">댓글: </span>
-                <a href="/[object Object]/JAVA-fast-io/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/JAVA-fast-io/" itemprop="commentCount"></span>
+                <a href="/[object Object]/JAVA-20200811-fast-io/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/JAVA-20200811-fast-io/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -695,213 +897,20 @@
         
           <h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
 <li>Fast I/O in Java in Competitive Programming - <span class="exturl" data-url="aHR0cHM6Ly93d3cuZ2Vla3Nmb3JnZWVrcy5vcmcvZmFzdC1pby1pbi1qYXZhLWluLWNvbXBldGl0aXZlLXByb2dyYW1taW5nLw==" title="https://www.geeksforgeeks.org/fast-io-in-java-in-competitive-programming/">geeksforgeeks.com<i class="fa fa-external-link"></i></span></li>
+<li>Java IO : Input-output in Java with Examples - <span class="exturl" data-url="aHR0cHM6Ly93d3cuZ2Vla3Nmb3JnZWVrcy5vcmcvamF2YS1pby1pbnB1dC1vdXRwdXQtaW4tamF2YS13aXRoLWV4YW1wbGVzLw==" title="https://www.geeksforgeeks.org/java-io-input-output-in-java-with-examples/">geeksforgeeks.com<i class="fa fa-external-link"></i></span></li>
+<li>입력 속도 비교 - <span class="exturl" data-url="aHR0cHM6Ly93d3cuYWNtaWNwYy5uZXQvYmxvZy9zZWFyY2gvJUVDJTlFJTg1JUVCJUEwJUE1KyVFQyU4NiU4RCVFQiU4RiU4NCslRUIlQjklODQlRUElQjUlOTA=" title="https://www.acmicpc.net/blog/search/%EC%9E%85%EB%A0%A5+%EC%86%8D%EB%8F%84+%EB%B9%84%EA%B5%90">acmicpc.net<i class="fa fa-external-link"></i></span></li>
+<li>출력 속도 비교 - <span class="exturl" data-url="aHR0cHM6Ly93d3cuYWNtaWNwYy5uZXQvYmxvZy92aWV3LzU3" title="https://www.acmicpc.net/blog/view/57">acmicpc.net<i class="fa fa-external-link"></i></span></li>
 </ul>
-<blockquote>
-<p>Competitive Programming을 위한 자바의 빠른 입출력</p>
-</blockquote>
 <hr>
 <br>
+
+<div class="note info">
+            <p>Problem Solving(PS)에서 입출력은 매우 중요하다고 생각한다.<br>물론 어떤 자료구조와 알고리즘으로 문제를 해결할지도 매우 중요하고 핵심적인 부분이지만, 입력이 없으면 쓸모가 없고 출력이 없으면 의미가 없다. 또한 가끔 Online Judge 사이트를 통해 알고리즘 문제를 풀다 보면 입출력 속도 차이로 통과하거나 하지 못하는 경우도 있다.</p><p>그래서 JAVA의 입출력과 관련해서 한 번 정리해보려고 한다. <span class="github-emoji" alias="thumbsup" style fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f44d.png?v8">&#x1f44d;</span></p>
+          </div>
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/[object Object]/JAVA-fast-io/#more" rel="contents">
-                더 읽어보기 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://taejin0527.github.io/[object Object]/Euler-010/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="NUNU">
-      <meta itemprop="description" content="개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="AttackOnNunu">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/[object Object]/Euler-010/" class="post-title-link" itemprop="url">(Problem) 010 Summation of primes</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">작성일</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2020-03-25 14:05:41" itemprop="dateCreated datePublished" datetime="2020-03-25T14:05:41+09:00">2020-03-25</time>
-            </span>
-          
-
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Project-Euler/" itemprop="url" rel="index"><span itemprop="name">Project Euler</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">댓글: </span>
-                <a href="/[object Object]/Euler-010/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="[object Object]/Euler-010/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          <br>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h1 id="Project-Euler"><a href="#Project-Euler" class="headerlink" title="Project Euler"></a>Project Euler</h1><ul>
-<li>공식 홈페이지 - <span class="exturl" data-url="aHR0cHM6Ly9wcm9qZWN0ZXVsZXIubmV0Lw==" title="https://projecteuler.net/">projecteuler.net<i class="fa fa-external-link"></i></span></li>
-<li>한글 번역 - <span class="exturl" data-url="aHR0cDovL2V1bGVyLnN5bmFwLmNvLmtyL3Byb2JfZGV0YWlsLnBocD9pZD0x" title="http://euler.synap.co.kr/prob_detail.php?id=1">projecteuler @kr<i class="fa fa-external-link"></i></span></li>
-<li>(HackerRank) ProjectEuler+ - <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vY29udGVzdHMvcHJvamVjdGV1bGVyL2NoYWxsZW5nZXM=" title="https://www.hackerrank.com/contests/projecteuler/challenges">hackerrank.com<i class="fa fa-external-link"></i></span></li>
-</ul>
-<h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><div class="spoiler collapsed">
-    <div class="spoiler-title">
-        Problem list
-    </div>
-    <div class="spoiler-content">
-        <ul>
-<li>No 10 : <span class="exturl" data-url="aHR0cHM6Ly9wcm9qZWN0ZXVsZXIubmV0L3Byb2JsZW09MTA=" title="https://projecteuler.net/problem=10">Summation of primes<i class="fa fa-external-link"></i></span><ul>
-<li>HackerRank : <span class="exturl" data-url="aHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vY29udGVzdHMvcHJvamVjdGV1bGVyL2NoYWxsZW5nZXMvZXVsZXIwMDEwL3Byb2JsZW0=" title="https://www.hackerrank.com/contests/projecteuler/challenges/euler0010/problem">Project Euler #4: Summation of primes<i class="fa fa-external-link"></i></span></li>
-</ul>
-</li>
-</ul>
-
-    </div>
-</div>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/[object Object]/Euler-010/#more" rel="contents">
+              <a class="btn" href="/[object Object]/JAVA-20200811-fast-io/#more" rel="contents">
                 더 읽어보기 &raquo;
               </a>
             </div>
@@ -952,7 +961,7 @@
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/33/">33</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="다음 페이지"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/34/">34</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="다음 페이지"></i></a>
   </nav>
 
 
@@ -983,7 +992,7 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image" src="/images/avatar.gif" alt="NUNU">
+              <img class="site-author-image" itemprop="image" src="/img/jjang.png" alt="NUNU">
             
               <p class="site-author-name" itemprop="name">NUNU</p>
               <div class="site-description motion-element" itemprop="description">개인적으로 공부하면서 정리한 내용들을 블로그에 남기고 있습니다.</div>
@@ -996,7 +1005,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">99</span>
+                    <span class="site-state-item-count">100</span>
                     <span class="site-state-item-name">포스트</span>
                   </a>
                 </div>
@@ -1190,7 +1199,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">55</span>
+                      
+                    
+                    <span class="site-state-item-count">56</span>
                     <span class="site-state-item-name">태그</span>
                   </a>
                 </div>
@@ -1212,6 +1223,16 @@
           
 
           
+             <div class="cc-license motion-element" itemprop="license">
+              
+              
+                
+              
+              
+              
+              <span class="exturl cc-opacity" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9rbw=="><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></span>
+             </div>
+          
 
           
           
@@ -1222,6 +1243,11 @@
 
       
 
+      
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          
+        </div>
       
 
       <!-- Adsense Sidebar -->
@@ -1283,11 +1309,6 @@
       </div>
     </footer>
 
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
     
 
     
